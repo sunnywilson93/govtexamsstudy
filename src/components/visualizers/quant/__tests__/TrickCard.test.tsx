@@ -48,4 +48,17 @@ describe('TrickCard', () => {
     render(<TrickCard trick={noFormula} />)
     expect(screen.queryByText('Net% = a + b + ab/100')).not.toBeInTheDocument()
   })
+
+  it('renders Mental Math badge for mental-math type', () => {
+    const mentalTrick: QuantTrick = {
+      id: 'mental-01',
+      topic: 'percentage',
+      type: 'mental-math',
+      title: 'Mental Trick',
+      description: 'A mental math trick',
+      example: { problem: 'Q', solution: 'A' },
+    }
+    render(<TrickCard trick={mentalTrick} />)
+    expect(screen.getByText('Mental Math')).toBeInTheDocument()
+  })
 })

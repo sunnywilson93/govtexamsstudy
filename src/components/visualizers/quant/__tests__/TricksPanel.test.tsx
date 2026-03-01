@@ -29,7 +29,8 @@ describe('TricksPanel', () => {
 
   it('renders Mental Math section heading', () => {
     render(<TricksPanel tricks={mockTricks} />)
-    expect(screen.getByText('Mental Math')).toBeInTheDocument()
+    const elements = screen.getAllByText('Mental Math')
+    expect(elements.length).toBeGreaterThan(0)
   })
 
   it('renders each trick card', () => {
