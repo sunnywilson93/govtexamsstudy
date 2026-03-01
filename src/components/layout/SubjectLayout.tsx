@@ -80,7 +80,8 @@ export function SubjectLayout({
       <div className="flex gap-6">
         {/* Desktop sidebar */}
         <aside className="hidden w-56 shrink-0 lg:block" aria-label="Subject navigation">
-          <nav className="sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto rounded-lg border border-border-primary bg-bg-secondary p-3">
+          <div className="sticky top-20">
+          <nav className="overflow-y-auto rounded-lg border border-border-primary bg-bg-secondary p-3" style={{ maxHeight: 'calc(100vh - 5rem)' }}>
             {groups.map((group, gi) => (
               <div key={gi} className={gi > 0 ? 'mt-3' : undefined}>
                 {group.name && (
@@ -113,6 +114,7 @@ export function SubjectLayout({
               </div>
             ))}
           </nav>
+          </div>
         </aside>
 
         <div className="min-w-0 flex-1">
