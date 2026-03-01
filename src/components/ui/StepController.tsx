@@ -53,7 +53,7 @@ export function StepController({
       )}
 
       <span className="min-w-[80px] text-center text-sm tabular-nums text-text-secondary">
-        Step {currentStep} of {totalSteps}
+        Step {currentStep + 1} of {totalSteps}
       </span>
 
       <button

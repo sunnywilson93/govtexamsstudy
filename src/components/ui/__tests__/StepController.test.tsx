@@ -6,7 +6,7 @@ import { StepController } from '../StepController'
 describe('StepController', () => {
   it('renders current step and total', () => {
     render(<StepController currentStep={2} totalSteps={5} onStepChange={() => {}} />)
-    expect(screen.getByText('Step 2 of 5')).toBeInTheDocument()
+    expect(screen.getByText('Step 3 of 5')).toBeInTheDocument()
   })
 
   it('calls onStepChange with next step', async () => {
