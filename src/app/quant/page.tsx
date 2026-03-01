@@ -140,6 +140,7 @@ const SECTIONS: Section[] = [
 export default function QuantPage() {
   return (
     <div className="space-y-8">
+      <h1 className="text-2xl font-bold" style={{ color: '#3b82f6' }}>Quantitative Aptitude</h1>
       <p className="text-text-secondary">
         Master arithmetic, algebra, and geometry with step-by-step visual solvers. Each topic
         covers core concepts, exam shortcuts, and animated practice problems.

@@ -6,6 +6,7 @@ export default function QuantLayout({ children }: { children: React.ReactNode })
       subjectName="Quantitative Aptitude"
       subjectColor="#3b82f6"
       subjectSlug="quant"
+      showHeading={false}
       links={[
         { href: '/quant/percentage', label: 'Percentage', group: 'Arithmetic' },
         { href: '/quant/profit-loss', label: 'Profit, Loss & Discount', group: 'Arithmetic' },

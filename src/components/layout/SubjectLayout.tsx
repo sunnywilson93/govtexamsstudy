@@ -17,6 +17,7 @@ interface SubjectLayoutProps {
   subjectSlug: string
   children: React.ReactNode
   links: NavLink[]
+  showHeading?: boolean
 }
 
 function groupLinks(links: NavLink[]) {
@@ -42,6 +43,7 @@ export function SubjectLayout({
   subjectSlug,
   children,
   links,
+  showHeading = true,
 }: SubjectLayoutProps) {
   const pathname = usePathname()
   const router = useRouter()
@@ -73,9 +75,11 @@ export function SubjectLayout({
         )}
       </nav>
 
-      <h1 className="mb-6 text-2xl font-bold text-text-primary">
-        <span style={{ color: subjectColor }}>{subjectName}</span>
-      </h1>
+      {showHeading && (
+        <h1 className="mb-6 text-2xl font-bold text-text-primary">
+          <span style={{ color: subjectColor }}>{subjectName}</span>
+        </h1>
+      )}
 
       <div className="flex gap-6">
         {/* Desktop sidebar */}
@@ -95,7 +99,7 @@ export function SubjectLayout({
                       <Link
                         href={link.href}
                         className={clsx(
-                          'block rounded-md px-3 py-2 text-sm no-underline transition-colors',
+                          'block rounded-md px-3 py-1 text-sm no-underline transition-colors',
                           pathname === link.href
                             ? 'font-medium text-text-primary'
                             : 'text-text-secondary hover:bg-bg-tertiary hover:text-text-primary'
