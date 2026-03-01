@@ -1,7 +1,11 @@
+import { SyllogismVisualizer } from '@/components/visualizers/reasoning/SyllogismVisualizer'
+import { syllogismProblems } from '@/data/reasoning/syllogism-problems'
+
 export default function SyllogismPage() {
   return (
-    <div className="flex items-center justify-center min-h-[400px]">
-      <p className="text-text-secondary text-lg">Syllogism Venn Builder — Coming Soon</p>
+    <div>
+      <h1 className="text-2xl font-bold mb-6">Syllogism Venn Diagram Builder</h1>
+      <SyllogismVisualizer problems={syllogismProblems} />
     </div>
   )
 }

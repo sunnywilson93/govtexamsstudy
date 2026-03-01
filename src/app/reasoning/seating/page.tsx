@@ -1,7 +1,11 @@
+import { SeatingVisualizer } from '@/components/visualizers/reasoning/SeatingVisualizer'
+import { seatingProblems } from '@/data/reasoning/seating-problems'
+
 export default function SeatingPage() {
   return (
-    <div className="flex items-center justify-center min-h-[400px]">
-      <p className="text-text-secondary text-lg">Seating Arrangement — Coming Soon</p>
+    <div>
+      <h1 className="text-2xl font-bold mb-6">Seating Arrangement Solver</h1>
+      <SeatingVisualizer problems={seatingProblems} />
     </div>
   )
 }
