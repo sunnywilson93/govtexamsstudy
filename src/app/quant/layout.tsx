@@ -7,21 +7,21 @@ export default function QuantLayout({ children }: { children: React.ReactNode })
       subjectColor="#3b82f6"
       subjectSlug="quant"
       links={[
-        { href: '/quant/percentage', label: 'Percentage' },
-        { href: '/quant/profit-loss', label: 'Profit, Loss & Discount' },
-        { href: '/quant/ratio', label: 'Ratio & Proportion' },
-        { href: '/quant/time-speed-distance', label: 'Time, Speed & Distance' },
-        { href: '/quant/time-work', label: 'Time & Work' },
-        { href: '/quant/number-system', label: 'Number System' },
-        { href: '/quant/average', label: 'Average' },
-        { href: '/quant/simple-compound-interest', label: 'Simple & Compound Interest' },
-        { href: '/quant/mixture-alligation', label: 'Mixture & Alligation' },
-        { href: '/quant/mensuration', label: 'Mensuration' },
-        { href: '/quant/algebra', label: 'Algebra' },
-        { href: '/quant/trigonometry', label: 'Trigonometry' },
-        { href: '/quant/data-interpretation', label: 'Data Interpretation' },
-        { href: '/quant/statistics-probability', label: 'Statistics & Probability' },
-        { href: '/quant/geometry', label: 'Geometry Visualizer' },
+        { href: '/quant/percentage', label: 'Percentage', group: 'Arithmetic' },
+        { href: '/quant/profit-loss', label: 'Profit, Loss & Discount', group: 'Arithmetic' },
+        { href: '/quant/ratio', label: 'Ratio & Proportion', group: 'Arithmetic' },
+        { href: '/quant/time-speed-distance', label: 'Time, Speed & Distance', group: 'Arithmetic' },
+        { href: '/quant/time-work', label: 'Time & Work', group: 'Arithmetic' },
+        { href: '/quant/number-system', label: 'Number System', group: 'Advanced' },
+        { href: '/quant/average', label: 'Average', group: 'Advanced' },
+        { href: '/quant/simple-compound-interest', label: 'SI & CI', group: 'Advanced' },
+        { href: '/quant/mixture-alligation', label: 'Mixture & Alligation', group: 'Advanced' },
+        { href: '/quant/mensuration', label: 'Mensuration', group: 'Advanced' },
+        { href: '/quant/algebra', label: 'Algebra', group: 'Higher Maths' },
+        { href: '/quant/trigonometry', label: 'Trigonometry', group: 'Higher Maths' },
+        { href: '/quant/data-interpretation', label: 'Data Interpretation', group: 'Higher Maths' },
+        { href: '/quant/statistics-probability', label: 'Statistics & Probability', group: 'Higher Maths' },
+        { href: '/quant/geometry', label: 'Geometry Visualizer', group: 'Visualizer' },
       ]}
     >
       {children}
