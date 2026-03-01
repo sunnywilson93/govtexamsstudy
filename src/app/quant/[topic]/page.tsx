@@ -36,6 +36,21 @@ import { siCiProblems } from '@/data/quant/problems/simple-compound-interest-pro
 import { mixtureAlligationProblems } from '@/data/quant/problems/mixture-alligation-problems'
 import { mensurationProblems } from '@/data/quant/problems/mensuration-problems'
 
+import { algebraConcept } from '@/data/quant/concepts/algebra'
+import { trigonometryConcept } from '@/data/quant/concepts/trigonometry'
+import { dataInterpretationConcept } from '@/data/quant/concepts/data-interpretation'
+import { statisticsProbabilityConcept } from '@/data/quant/concepts/statistics-probability'
+
+import { algebraTricks } from '@/data/quant/tricks/algebra'
+import { trigonometryTricks } from '@/data/quant/tricks/trigonometry'
+import { dataInterpretationTricks } from '@/data/quant/tricks/data-interpretation'
+import { statisticsProbabilityTricks } from '@/data/quant/tricks/statistics-probability'
+
+import { algebraProblems } from '@/data/quant/problems/algebra-problems'
+import { trigonometryProblems } from '@/data/quant/problems/trigonometry-problems'
+import { dataInterpretationProblems } from '@/data/quant/problems/data-interpretation-problems'
+import { statisticsProbabilityProblems } from '@/data/quant/problems/statistics-probability-problems'
+
 interface TopicData {
   concept: QuantConcept
   tricks: QuantTrick[]
@@ -124,6 +139,34 @@ const TOPIC_DATA: Record<string, TopicData> = {
     label: 'Mensuration',
     description:
       'Master 2D and 3D shapes for SSC CGL Tier 2. Area, volume, surface area, and shape conversion problems.',
+  },
+  algebra: {
+    concept: algebraConcept,
+    tricks: algebraTricks,
+    problems: algebraProblems,
+    label: 'Algebra',
+    description: 'Linear and quadratic equations, algebraic identities, remainder theorem, and inequalities for SSC CGL and UPSC CSAT.',
+  },
+  trigonometry: {
+    concept: trigonometryConcept,
+    tricks: trigonometryTricks,
+    problems: trigonometryProblems,
+    label: 'Trigonometry',
+    description: 'Trig ratios, standard value table, Pythagorean identities, heights and distances for SSC CGL and CDS.',
+  },
+  'data-interpretation': {
+    concept: dataInterpretationConcept,
+    tricks: dataInterpretationTricks,
+    problems: dataInterpretationProblems,
+    label: 'Data Interpretation',
+    description: 'Tables, bar charts, pie charts, line graphs, and caselets for SSC CGL Tier 2, IBPS PO, and SBI PO.',
+  },
+  'statistics-probability': {
+    concept: statisticsProbabilityConcept,
+    tricks: statisticsProbabilityTricks,
+    problems: statisticsProbabilityProblems,
+    label: 'Statistics & Probability',
+    description: 'Mean, median, mode, variance, probability rules, permutations and combinations for SSC CGL Tier 2 and IBPS PO.',
   },
 }
 

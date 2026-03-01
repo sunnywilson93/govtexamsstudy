@@ -69,6 +69,30 @@ const TOPICS = [
     hasTabs: true,
   },
   {
+    href: '/quant/algebra',
+    title: 'Algebra',
+    description: 'Linear equations, quadratic roots, algebraic identities, and the remainder theorem.',
+    hasTabs: true,
+  },
+  {
+    href: '/quant/trigonometry',
+    title: 'Trigonometry',
+    description: 'SOHCAHTOA, standard values, Pythagorean identities, complementary angles, and heights & distances.',
+    hasTabs: true,
+  },
+  {
+    href: '/quant/data-interpretation',
+    title: 'Data Interpretation',
+    description: 'Tables, bar charts, pie charts, line graphs, and caselet DI with approximation tricks.',
+    hasTabs: true,
+  },
+  {
+    href: '/quant/statistics-probability',
+    title: 'Statistics & Probability',
+    description: 'Mean/median/mode, variance, probability rules, P&C, and the complement rule.',
+    hasTabs: true,
+  },
+  {
     href: '/quant/geometry',
     title: 'Geometry Visualizer',
     description: 'Interactive shapes — area, perimeter, and formula proofs with animation.',

@@ -17,6 +17,10 @@ export default function QuantLayout({ children }: { children: React.ReactNode })
         { href: '/quant/simple-compound-interest', label: 'Simple & Compound Interest' },
         { href: '/quant/mixture-alligation', label: 'Mixture & Alligation' },
         { href: '/quant/mensuration', label: 'Mensuration' },
+        { href: '/quant/algebra', label: 'Algebra' },
+        { href: '/quant/trigonometry', label: 'Trigonometry' },
+        { href: '/quant/data-interpretation', label: 'Data Interpretation' },
+        { href: '/quant/statistics-probability', label: 'Statistics & Probability' },
         { href: '/quant/geometry', label: 'Geometry Visualizer' },
       ]}
     >
