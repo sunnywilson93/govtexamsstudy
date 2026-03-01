@@ -79,7 +79,21 @@ src/
 /                              Home — Hero + BentoSubjectGrid (#subjects) + Featured Visualizers (4 cards) + How It Works (3 steps) + CTA
 /quant                         Quantitative Aptitude hub
 /quant/step-solver             Step-by-step problem solver
-/quant/geometry                Interactive geometry visualizer
+/quant/percentage              Percentage concepts + tricks (Phase 1)
+/quant/profit-loss             Profit, Loss & Discount (Phase 1)
+/quant/ratio                   Ratio & Proportion (Phase 1)
+/quant/time-speed-distance     Time, Speed & Distance (Phase 1)
+/quant/time-work               Time & Work + Pipes (Phase 1)
+/quant/number-system           Number System + HCF/LCM (Phase 2)
+/quant/average                 Averages (Phase 2)
+/quant/simple-compound-interest Simple & Compound Interest (Phase 2)
+/quant/mixture-alligation      Mixture & Alligation (Phase 2)
+/quant/mensuration             Mensuration 2D/3D (Phase 2)
+/quant/algebra                 Algebra — equations & identities (Phase 3)
+/quant/geometry                Interactive geometry visualizer (Phase 3)
+/quant/trigonometry            Trigonometry + heights & distances (Phase 3)
+/quant/data-interpretation     Data Interpretation — tables, charts (Phase 3)
+/quant/statistics-probability  Statistics & Probability (Phase 3)
 /reasoning                     Reasoning & Logic hub
 /reasoning/seating             Seating arrangement solver
 /reasoning/syllogism           Venn diagram builder
@@ -157,6 +171,7 @@ src/
 - `MathProblem { id, topic, title, question, steps[], answer, difficulty }`
 - `MathStep { id, operation, expression, result, explanation, variables }`
 - `GeometryShape { id, type, properties, formulas[] }`
+- `QuantTopic` union — 15 values: `"percentage" | "profit-loss" | "ratio" | "time-speed-distance" | "time-work" | "number-system" | "average" | "simple-compound-interest" | "mixture-alligation" | "mensuration" | "algebra" | "geometry" | "trigonometry" | "data-interpretation" | "statistics-probability"`; Phase 1: first 5; Phase 2: next 5; Phase 3: last 5; see `docs/plans/2026-03-01-quant-syllabus.md`
 
 **Reasoning**
 - `SeatingProblem { id, type, clues[], people[], steps[], solution }`
@@ -239,4 +254,5 @@ src/
 **Success targets:** 50K MAU in 6 months; 5+ min avg. time on visualizer pages; 100K monthly organic visits in 12 months
 
 **Plan documents:** `docs/plans/` holds approved implementation plan and product roadmap; consult before adding new routes or modules
+- `docs/plans/2026-03-01-quant-syllabus.md` — approved quant syllabus; 15 topics across 3 phases; each topic structured as 5 Concepts + 5 Tricks + 5 Problem Types; exams targeted: SSC CGL/CHSL, IBPS PO/Clerk, SBI PO, RRB NTPC, CDS, UPSC CSAT
 <!-- END AUTO-MANAGED -->

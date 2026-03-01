@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { describe, it, expect, beforeEach } from 'vitest'
 import { StepSolver } from '../StepSolver'
-import { percentageProblems } from '@/data/quant/percentage-problems'
+import { percentageProblems } from '@/data/quant/problems/percentage-problems'
 import { useVisualizerStore } from '@/store/visualizerStore'
 
 beforeEach(() => {

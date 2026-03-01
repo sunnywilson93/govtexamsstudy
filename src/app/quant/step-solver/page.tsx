@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     'Solve arithmetic, algebra and percentage problems with animated step-by-step breakdowns for government exam preparation.',
 }
-import { percentageProblems } from '@/data/quant/percentage-problems'
+import { percentageProblems } from '@/data/quant/problems/percentage-problems'
 
 export default function StepSolverPage() {
   return (
