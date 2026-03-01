@@ -9,7 +9,7 @@ interface TrickCardProps {
 
 const TYPE_LABEL: Record<QuantTrick['type'], string> = {
   'formula-shortcut': 'Formula Shortcut',
-  'mental-math': 'Mental Math',
+  'mental-math': 'Mental Trick',
 }
 
 const TYPE_STYLE: Record<QuantTrick['type'], string> = {
