@@ -39,6 +39,36 @@ const TOPICS = [
     hasTabs: true,
   },
   {
+    href: '/quant/number-system',
+    title: 'Number System',
+    description: 'HCF, LCM, remainders, last-digit cyclicity, trailing zeros, and divisibility rules.',
+    hasTabs: true,
+  },
+  {
+    href: '/quant/average',
+    title: 'Average',
+    description: 'Weighted average, replacement effect, wrong entry correction, and consecutive sequences.',
+    hasTabs: true,
+  },
+  {
+    href: '/quant/simple-compound-interest',
+    title: 'Simple & Compound Interest',
+    description: 'SI/CI formulas, CI−SI shortcut, half-yearly compounding, and Rule of 72.',
+    hasTabs: true,
+  },
+  {
+    href: '/quant/mixture-alligation',
+    title: 'Mixture & Alligation',
+    description: 'Alligation cross, repeated dilution formula, mixing ratios, and concentration problems.',
+    hasTabs: true,
+  },
+  {
+    href: '/quant/mensuration',
+    title: 'Mensuration',
+    description: '2D and 3D shapes — area, volume, surface area, percentage change, and shape recasting.',
+    hasTabs: true,
+  },
+  {
     href: '/quant/geometry',
     title: 'Geometry Visualizer',
     description: 'Interactive shapes — area, perimeter, and formula proofs with animation.',

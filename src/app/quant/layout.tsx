@@ -12,6 +12,11 @@ export default function QuantLayout({ children }: { children: React.ReactNode })
         { href: '/quant/ratio', label: 'Ratio & Proportion' },
         { href: '/quant/time-speed-distance', label: 'Time, Speed & Distance' },
         { href: '/quant/time-work', label: 'Time & Work' },
+        { href: '/quant/number-system', label: 'Number System' },
+        { href: '/quant/average', label: 'Average' },
+        { href: '/quant/simple-compound-interest', label: 'Simple & Compound Interest' },
+        { href: '/quant/mixture-alligation', label: 'Mixture & Alligation' },
+        { href: '/quant/mensuration', label: 'Mensuration' },
         { href: '/quant/geometry', label: 'Geometry Visualizer' },
       ]}
     >

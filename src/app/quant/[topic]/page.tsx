@@ -8,18 +8,33 @@ import { profitLossConcept } from '@/data/quant/concepts/profit-loss'
 import { ratioConcept } from '@/data/quant/concepts/ratio'
 import { tsdConcept } from '@/data/quant/concepts/time-speed-distance'
 import { timeWorkConcept } from '@/data/quant/concepts/time-work'
+import { numberSystemConcept } from '@/data/quant/concepts/number-system'
+import { averageConcept } from '@/data/quant/concepts/average'
+import { siCiConcept } from '@/data/quant/concepts/simple-compound-interest'
+import { mixtureAlligationConcept } from '@/data/quant/concepts/mixture-alligation'
+import { mensurationConcept } from '@/data/quant/concepts/mensuration'
 
 import { percentageTricks } from '@/data/quant/tricks/percentage'
 import { profitLossTricks } from '@/data/quant/tricks/profit-loss'
 import { ratioTricks } from '@/data/quant/tricks/ratio'
 import { tsdTricks } from '@/data/quant/tricks/time-speed-distance'
 import { timeWorkTricks } from '@/data/quant/tricks/time-work'
+import { numberSystemTricks } from '@/data/quant/tricks/number-system'
+import { averageTricks } from '@/data/quant/tricks/average'
+import { siCiTricks } from '@/data/quant/tricks/simple-compound-interest'
+import { mixtureAlligationTricks } from '@/data/quant/tricks/mixture-alligation'
+import { mensurationTricks } from '@/data/quant/tricks/mensuration'
 
 import { percentageProblems } from '@/data/quant/problems/percentage-problems'
 import { profitLossProblems } from '@/data/quant/problems/profit-loss-problems'
 import { ratioProblems } from '@/data/quant/problems/ratio-problems'
 import { tsdProblems } from '@/data/quant/problems/time-speed-distance-problems'
 import { timeWorkProblems } from '@/data/quant/problems/time-work-problems'
+import { numberSystemProblems } from '@/data/quant/problems/number-system-problems'
+import { averageProblems } from '@/data/quant/problems/average-problems'
+import { siCiProblems } from '@/data/quant/problems/simple-compound-interest-problems'
+import { mixtureAlligationProblems } from '@/data/quant/problems/mixture-alligation-problems'
+import { mensurationProblems } from '@/data/quant/problems/mensuration-problems'
 
 interface TopicData {
   concept: QuantConcept
@@ -69,6 +84,46 @@ const TOPIC_DATA: Record<string, TopicData> = {
     label: 'Time & Work',
     description:
       'Master Time & Work and Pipes & Cisterns for SSC and IBPS exams. LCM method, efficiency tricks, and problems.',
+  },
+  'number-system': {
+    concept: numberSystemConcept,
+    tricks: numberSystemTricks,
+    problems: numberSystemProblems,
+    label: 'Number System',
+    description:
+      'Master HCF, LCM, remainders, and number properties for SSC CGL and RRB NTPC. Divisibility rules, factorials, and last-digit tricks.',
+  },
+  average: {
+    concept: averageConcept,
+    tricks: averageTricks,
+    problems: averageProblems,
+    label: 'Average',
+    description:
+      'Learn average concepts for competitive exams. Weighted average, replacement effect, and wrong entry correction with practice problems.',
+  },
+  'simple-compound-interest': {
+    concept: siCiConcept,
+    tricks: siCiTricks,
+    problems: siCiProblems,
+    label: 'Simple & Compound Interest',
+    description:
+      'Master SI and CI for banking and SSC exams. CI−SI difference shortcut, half-yearly compounding, and Rule of 72.',
+  },
+  'mixture-alligation': {
+    concept: mixtureAlligationConcept,
+    tricks: mixtureAlligationTricks,
+    problems: mixtureAlligationProblems,
+    label: 'Mixture & Alligation',
+    description:
+      'Learn alligation rule, repeated dilution, and mixture ratio problems for SSC CGL and IBPS PO exams.',
+  },
+  mensuration: {
+    concept: mensurationConcept,
+    tricks: mensurationTricks,
+    problems: mensurationProblems,
+    label: 'Mensuration',
+    description:
+      'Master 2D and 3D shapes for SSC CGL Tier 2. Area, volume, surface area, and shape conversion problems.',
   },
 }
 
