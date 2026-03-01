@@ -135,6 +135,42 @@ const SECTIONS: Section[] = [
       },
     ],
   },
+  {
+    heading: 'Miscellaneous',
+    subheading: 'High-frequency topics across all exams',
+    topics: [
+      {
+        href: '/quant/surds-indices',
+        title: 'Surds & Indices',
+        description: 'Laws of indices, negative/fractional exponents, surd simplification, and rationalisation.',
+        hasTabs: true,
+      },
+      {
+        href: '/quant/partnership',
+        title: 'Partnership',
+        description: 'Simple and compound partnership, equivalent capital method, working vs sleeping partners.',
+        hasTabs: true,
+      },
+      {
+        href: '/quant/ages',
+        title: 'Problems on Ages',
+        description: 'Present age setup, ratio method, past/future age conditions, and multi-person problems.',
+        hasTabs: true,
+      },
+      {
+        href: '/quant/simplification',
+        title: 'Simplification',
+        description: 'BODMAS rule, approximation for banking exams, fraction operations, and square roots.',
+        hasTabs: true,
+      },
+      {
+        href: '/quant/sequences-series',
+        title: 'Sequences & Series',
+        description: 'AP/GP nth term, sum formulas, special series, and number series patterns.',
+        hasTabs: true,
+      },
+    ],
+  },
 ]
 
 export default function QuantPage() {

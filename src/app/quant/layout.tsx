@@ -23,6 +23,11 @@ export default function QuantLayout({ children }: { children: React.ReactNode })
         { href: '/quant/data-interpretation', label: 'Data Interpretation', group: 'Higher Maths' },
         { href: '/quant/statistics-probability', label: 'Statistics & Probability', group: 'Higher Maths' },
         { href: '/quant/geometry', label: 'Geometry Visualizer', group: 'Visualizer' },
+        { href: '/quant/surds-indices', label: 'Surds & Indices', group: 'Phase 4' },
+        { href: '/quant/partnership', label: 'Partnership', group: 'Phase 4' },
+        { href: '/quant/ages', label: 'Problems on Ages', group: 'Phase 4' },
+        { href: '/quant/simplification', label: 'Simplification', group: 'Phase 4' },
+        { href: '/quant/sequences-series', label: 'Sequences & Series', group: 'Phase 4' },
       ]}
     >
       {children}

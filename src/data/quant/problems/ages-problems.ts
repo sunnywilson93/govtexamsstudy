@@ -1,0 +1,197 @@
+import type { MathProblem } from "@/types/quant"
+
+export const agesProblems: MathProblem[] = [
+  {
+    id: "age-01",
+    topic: "ages",
+    title: "Present age from condition",
+    question:
+      "A is 6 years older than B. The sum of their ages is 36. Find the present ages of A and B.",
+    difficulty: "easy",
+    answer: "A = 21, B = 15",
+    steps: [
+      {
+        id: 1,
+        operation: "Assign variable",
+        expression: "Let B's age = x. Then A's age = x + 6.",
+        result: "B = x, A = x + 6",
+        explanation: "A is 6 years older than B.",
+        variables: {},
+      },
+      {
+        id: 2,
+        operation: "Form equation from sum",
+        expression: "x + (x + 6) = 36 → 2x + 6 = 36",
+        result: "2x = 30",
+        explanation: "Sum of their ages = 36.",
+        variables: {},
+      },
+      {
+        id: 3,
+        operation: "Solve",
+        expression: "x = 15",
+        result: "B = 15, A = 15 + 6 = 21",
+        explanation: "Divide 30 by 2.",
+        variables: { bAge: 15, aAge: 21 },
+      },
+    ],
+  },
+  {
+    id: "age-02",
+    topic: "ages",
+    title: "Ages using ratio",
+    question:
+      "The ratio of ages of father and son is 7:2. The sum of their ages is 54. Find their ages.",
+    difficulty: "easy",
+    answer: "Father = 42, Son = 12",
+    steps: [
+      {
+        id: 1,
+        operation: "Assign ratio variable",
+        expression: "Father = 7k, Son = 2k",
+        result: "7k + 2k = 54",
+        explanation: "Use k-method for ratio.",
+        variables: {},
+      },
+      {
+        id: 2,
+        operation: "Find k",
+        expression: "9k = 54 → k = 6",
+        result: "k = 6",
+        explanation: "Divide 54 by 9 (sum of ratio parts).",
+        variables: { k: 6 },
+      },
+      {
+        id: 3,
+        operation: "Find ages",
+        expression: "Father = 7 × 6 = 42; Son = 2 × 6 = 12",
+        result: "Father = 42, Son = 12",
+        explanation: "Multiply k by each ratio part.",
+        variables: { father: 42, son: 12 },
+      },
+    ],
+  },
+  {
+    id: "age-03",
+    topic: "ages",
+    title: "Age n years ago",
+    question:
+      "Father's present age is 40 years and son's is 10 years. After how many years will father's age be 3 times son's age?",
+    difficulty: "medium",
+    answer: "5 years",
+    steps: [
+      {
+        id: 1,
+        operation: "Set up future ages",
+        expression: "Let n = years from now. Father: 40+n, Son: 10+n",
+        result: "40+n = 3(10+n)",
+        explanation: "Father's age will be 3 times son's.",
+        variables: {},
+      },
+      {
+        id: 2,
+        operation: "Expand and solve",
+        expression: "40+n = 30+3n → 10 = 2n → n = 5",
+        result: "n = 5",
+        explanation:
+          "Subtract n from both sides, then 30 from both sides.",
+        variables: { years: 5 },
+      },
+      {
+        id: 3,
+        operation: "Verify",
+        expression: "After 5 years: Father = 45, Son = 15. 45 = 3 × 15 ✓",
+        result: "5 years from now",
+        explanation: "Check: 45 is indeed 3 times 15.",
+        variables: {},
+      },
+    ],
+  },
+  {
+    id: "age-04",
+    topic: "ages",
+    title: "Years ago ratio",
+    question:
+      "The ratio of A's age to B's age is 5:3. Four years ago, this ratio was 3:1. Find their current ages.",
+    difficulty: "medium",
+    answer: "A = 10, B = 6",
+    steps: [
+      {
+        id: 1,
+        operation: "Set present ages",
+        expression: "A = 5k, B = 3k",
+        result: "5k and 3k",
+        explanation: "Apply k-method.",
+        variables: {},
+      },
+      {
+        id: 2,
+        operation: "Apply condition 4 years ago",
+        expression: "(5k − 4)/(3k − 4) = 3/1",
+        result: "5k − 4 = 3(3k − 4)",
+        explanation: "Cross multiply.",
+        variables: {},
+      },
+      {
+        id: 3,
+        operation: "Solve",
+        expression: "5k − 4 = 9k − 12 → 8 = 4k → k = 2",
+        result: "k = 2",
+        explanation: "Rearrange: 12 − 4 = 9k − 5k.",
+        variables: { k: 2 },
+      },
+      {
+        id: 4,
+        operation: "Find ages",
+        expression: "A = 5×2 = 10, B = 3×2 = 6",
+        result: "A = 10, B = 6",
+        explanation: "Substitute k = 2.",
+        variables: { aAge: 10, bAge: 6 },
+      },
+    ],
+  },
+  {
+    id: "age-05",
+    topic: "ages",
+    title: "Three-person age problem",
+    question:
+      "The average age of A, B, and C is 24 years. A is 2 years younger than B, and C is 4 years younger than B. Find each person's age.",
+    difficulty: "hard",
+    answer: "A = 24, B = 26, C = 22",
+    steps: [
+      {
+        id: 1,
+        operation: "Express in terms of B",
+        expression: "A = B − 2; C = B − 4",
+        result: "A = B−2, C = B−4",
+        explanation: "Use B as anchor variable.",
+        variables: {},
+      },
+      {
+        id: 2,
+        operation: "Form equation from average",
+        expression: "(A + B + C)/3 = 24 → A + B + C = 72",
+        result: "A + B + C = 72",
+        explanation: "Average × count = sum.",
+        variables: { total: 72 },
+      },
+      {
+        id: 3,
+        operation: "Substitute and solve",
+        expression:
+          "(B−2) + B + (B−4) = 72 → 3B − 6 = 72 → 3B = 78 → B = 26",
+        result: "B = 26",
+        explanation: "Collect like terms.",
+        variables: { bAge: 26 },
+      },
+      {
+        id: 4,
+        operation: "Find A and C",
+        expression: "A = 26 − 2 = 24; C = 26 − 4 = 22",
+        result: "A = 24, B = 26, C = 22",
+        explanation: "Substitute B = 26.",
+        variables: { aAge: 24, cAge: 22 },
+      },
+    ],
+  },
+]

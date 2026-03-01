@@ -33,6 +33,11 @@ export type QuantTopic =
   | "trigonometry"
   | "data-interpretation"
   | "statistics-probability"
+  | "surds-indices"
+  | "partnership"
+  | "ages"
+  | "simplification"
+  | "sequences-series"
 
 export interface GeometryShape {
   id: string

@@ -40,16 +40,31 @@ import { algebraConcept } from '@/data/quant/concepts/algebra'
 import { trigonometryConcept } from '@/data/quant/concepts/trigonometry'
 import { dataInterpretationConcept } from '@/data/quant/concepts/data-interpretation'
 import { statisticsProbabilityConcept } from '@/data/quant/concepts/statistics-probability'
+import { surdsConcept } from '@/data/quant/concepts/surds-indices'
+import { partnershipConcept } from '@/data/quant/concepts/partnership'
+import { agesConcept } from '@/data/quant/concepts/ages'
+import { simplificationConcept } from '@/data/quant/concepts/simplification'
+import { sequencesSeriesConcept } from '@/data/quant/concepts/sequences-series'
 
 import { algebraTricks } from '@/data/quant/tricks/algebra'
 import { trigonometryTricks } from '@/data/quant/tricks/trigonometry'
 import { dataInterpretationTricks } from '@/data/quant/tricks/data-interpretation'
 import { statisticsProbabilityTricks } from '@/data/quant/tricks/statistics-probability'
+import { surdsTricks } from '@/data/quant/tricks/surds-indices'
+import { partnershipTricks } from '@/data/quant/tricks/partnership'
+import { agesTricks } from '@/data/quant/tricks/ages'
+import { simplificationTricks } from '@/data/quant/tricks/simplification'
+import { sequencesSeriesTricks } from '@/data/quant/tricks/sequences-series'
 
 import { algebraProblems } from '@/data/quant/problems/algebra-problems'
 import { trigonometryProblems } from '@/data/quant/problems/trigonometry-problems'
 import { dataInterpretationProblems } from '@/data/quant/problems/data-interpretation-problems'
 import { statisticsProbabilityProblems } from '@/data/quant/problems/statistics-probability-problems'
+import { surdsProblems } from '@/data/quant/problems/surds-indices-problems'
+import { partnershipProblems } from '@/data/quant/problems/partnership-problems'
+import { agesProblems } from '@/data/quant/problems/ages-problems'
+import { simplificationProblems } from '@/data/quant/problems/simplification-problems'
+import { sequencesSeriesProblems } from '@/data/quant/problems/sequences-series-problems'
 
 interface TopicData {
   concept: QuantConcept
@@ -167,6 +182,41 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: statisticsProbabilityProblems,
     label: 'Statistics & Probability',
     description: 'Mean, median, mode, variance, probability rules, permutations and combinations for SSC CGL Tier 2 and IBPS PO.',
+  },
+  'surds-indices': {
+    concept: surdsConcept,
+    tricks: surdsTricks,
+    problems: surdsProblems,
+    label: 'Surds & Indices',
+    description: 'Laws of indices, fractional exponents, simplifying surds, and rationalisation for SSC CGL, RRB NTPC, and CDS.',
+  },
+  partnership: {
+    concept: partnershipConcept,
+    tricks: partnershipTricks,
+    problems: partnershipProblems,
+    label: 'Partnership',
+    description: 'Simple and compound partnership, equivalent capital, working vs sleeping partners for SSC CGL, IBPS PO, and SBI PO.',
+  },
+  ages: {
+    concept: agesConcept,
+    tricks: agesTricks,
+    problems: agesProblems,
+    label: 'Problems on Ages',
+    description: 'Present age equations, ratio method, past/future age conditions for SSC CGL, IBPS PO, and all major competitive exams.',
+  },
+  simplification: {
+    concept: simplificationConcept,
+    tricks: simplificationTricks,
+    problems: simplificationProblems,
+    label: 'Simplification',
+    description: 'BODMAS rule, approximation techniques, fraction and square root simplification for IBPS PO, SBI PO, and SSC CHSL.',
+  },
+  'sequences-series': {
+    concept: sequencesSeriesConcept,
+    tricks: sequencesSeriesTricks,
+    problems: sequencesSeriesProblems,
+    label: 'Sequences & Series',
+    description: 'AP/GP formulas, nth term, sum of series, and special series for SSC CGL, IBPS PO, CDS, and UPSC CSAT.',
   },
 }
 
