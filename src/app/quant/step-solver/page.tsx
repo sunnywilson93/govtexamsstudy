@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import { StepSolver } from '@/components/visualizers/quant/StepSolver'
+
+export const metadata: Metadata = {
+  title: 'Step-by-Step Math Problem Solver',
+  description:
+    'Solve arithmetic, algebra and percentage problems with animated step-by-step breakdowns for government exam preparation.',
+}
 import { percentageProblems } from '@/data/quant/percentage-problems'
 
 export default function StepSolverPage() {

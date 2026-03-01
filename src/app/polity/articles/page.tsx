@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import { articles } from '@/data/polity/articles'
+
+export const metadata: Metadata = {
+  title: 'Constitutional Articles Explorer',
+  description:
+    'Browse all constitutional articles with linked amendments and landmark cases for government exam preparation.',
+}
 import { amendments } from '@/data/polity/amendments'
 import { landmarkCases } from '@/data/polity/landmark-cases'
 import { ArticleExplorer } from '@/components/visualizers/polity/ArticleExplorer'

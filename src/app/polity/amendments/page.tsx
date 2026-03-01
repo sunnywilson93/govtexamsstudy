@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import { amendments } from '@/data/polity/amendments'
+
+export const metadata: Metadata = {
+  title: 'Amendment Timeline',
+  description:
+    'Explore constitutional amendments on an interactive timeline with impact analysis for government exam preparation.',
+}
 import { AmendmentTimeline } from '@/components/visualizers/polity/AmendmentTimeline'
 
 export default function AmendmentsPage() {

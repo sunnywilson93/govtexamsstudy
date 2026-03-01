@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'General Science - Interactive Explorers',
+  description:
+    'Interactive periodic table, human body systems explorer and key science concepts for government exam preparation.',
+}
 
 const VISUALIZERS = [
   {

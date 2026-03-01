@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Quantitative Aptitude - Interactive Math Visualizer',
+  description:
+    'Master arithmetic, algebra, geometry and data interpretation with step-by-step visual solvers for government exam preparation.',
+}
 
 const VISUALIZERS = [
   {

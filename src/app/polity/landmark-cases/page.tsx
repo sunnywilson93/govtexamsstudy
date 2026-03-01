@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import { landmarkCases } from '@/data/polity/landmark-cases'
+
+export const metadata: Metadata = {
+  title: 'Landmark Supreme Court Cases',
+  description:
+    'Study Supreme Court landmark cases and their connections to constitutional articles for government exam preparation.',
+}
 import { CaseExplorer } from '@/components/visualizers/polity/CaseExplorer'
 
 export default function LandmarkCasesPage() {

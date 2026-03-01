@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import { BudgetTreemap } from '@/components/visualizers/economics/BudgetTreemap'
+
+export const metadata: Metadata = {
+  title: 'Union Budget Visualizer',
+  description:
+    "Explore India's Union Budget with interactive treemaps and drill-down subcategories for government exam preparation.",
+}
 import { budgetItems } from '@/data/economics/budget-2025'
 
 export default function BudgetPage() {

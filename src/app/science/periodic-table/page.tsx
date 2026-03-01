@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import { elements } from '@/data/science/elements'
+
+export const metadata: Metadata = {
+  title: 'Interactive Periodic Table',
+  description:
+    'Explore all 118 elements with category filters, search, and exam-relevant facts for government exam preparation.',
+}
 import { PeriodicTable } from '@/components/visualizers/science/PeriodicTable'
 
 export default function PeriodicTablePage() {

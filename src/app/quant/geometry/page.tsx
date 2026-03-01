@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import { GeometryVisualizer } from '@/components/visualizers/quant/GeometryVisualizer'
+
+export const metadata: Metadata = {
+  title: 'Interactive Geometry Visualizer',
+  description:
+    'Explore geometric shapes, angles, and transformations with interactive diagrams for government exam preparation.',
+}
 
 export default function GeometryPage() {
   return (

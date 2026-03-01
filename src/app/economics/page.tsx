@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Economics - Policy Flow Diagrams',
+  description:
+    'Visualize monetary and fiscal policy flows, budget breakdowns and economic concepts for government exam preparation.',
+}
 
 const VISUALIZERS = [
   {

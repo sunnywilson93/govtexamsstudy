@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Indian History - Interactive Timeline',
+  description:
+    'Navigate a zoomable timeline from the Indus Valley to modern India with cause-effect chains for government exam preparation.',
+}
 
 const VISUALIZERS = [
   {

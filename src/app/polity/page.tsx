@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Indian Polity - Interactive Constitutional Explorer',
+  description:
+    'Explore the Constitution interactively with articles, amendments, landmark cases and their connections for government exam preparation.',
+}
 
 const VISUALIZERS = [
   {

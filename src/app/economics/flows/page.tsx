@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import { PolicyFlowDiagram } from '@/components/visualizers/economics/PolicyFlowDiagram'
+
+export const metadata: Metadata = {
+  title: 'Monetary & Fiscal Policy Flows',
+  description:
+    'Walk through how monetary and fiscal policy decisions ripple through the economy step by step for government exam preparation.',
+}
 import { policyFlows } from '@/data/economics/policy-flows'
 
 export default function FlowsPage() {

@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Geography - Interactive India Map',
+  description:
+    "Explore India's physical and political geography on an interactive layered map for government exam preparation.",
+}
 
 const VISUALIZERS = [
   {

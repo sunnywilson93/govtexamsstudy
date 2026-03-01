@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import { bodySystems } from '@/data/science/body-systems'
+
+export const metadata: Metadata = {
+  title: 'Human Body Systems Explorer',
+  description:
+    'Explore major body systems, their organs, diseases, and exam-relevant facts through an interactive body diagram.',
+}
 import { BodySystemExplorer } from '@/components/visualizers/science/BodySystemExplorer'
 
 export default function HumanBodyPage() {

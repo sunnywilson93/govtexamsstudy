@@ -1,4 +1,11 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Reasoning & Logic - Visual Problem Solving',
+  description:
+    'Solve seating arrangements, syllogisms and number series with animated visual deductions for government exam preparation.',
+}
 
 const VISUALIZERS = [
   {

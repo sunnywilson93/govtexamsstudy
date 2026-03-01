@@ -17,9 +17,42 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'GovtExamsStudy — Visual Learning for Government Exams',
+  title: {
+    default: 'GovtExamsStudy - Free Interactive Visual Learning for Govt Exams',
+    template: '%s | GovtExamsStudy',
+  },
   description:
-    'Interactive visual learning platform for UPSC, SSC, and government exam preparation.',
+    "India's first free interactive visual learning platform for UPSC, SSC, Banking, Railways, and all government exam preparation. Learn through interactive visualizations.",
+  keywords: [
+    'govt exam preparation',
+    'UPSC preparation',
+    'SSC preparation',
+    'interactive learning',
+    'visual study',
+    'free exam preparation',
+    'government exam',
+    'competitive exam India',
+  ],
+  authors: [{ name: 'GovtExamsStudy' }],
+  openGraph: {
+    title: 'GovtExamsStudy - Free Interactive Visual Learning',
+    description:
+      "India's first free interactive visual learning platform for government exams.",
+    url: 'https://govtexamsstudy.org',
+    siteName: 'GovtExamsStudy',
+    type: 'website',
+    locale: 'en_IN',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'GovtExamsStudy - Free Interactive Visual Learning',
+    description:
+      'Learn for govt exams through interactive visualizations. 100% Free.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({

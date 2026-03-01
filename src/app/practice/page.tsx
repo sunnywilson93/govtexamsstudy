@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
   Calculator,
@@ -8,6 +9,12 @@ import {
   TrendingUp,
   Atom,
 } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Practice Arena - MCQ Practice',
+  description:
+    'Practice topic-wise MCQs across all subjects with instant feedback and visual explanations for government exam preparation.',
+}
 
 const PRACTICE_SUBJECTS = [
   {
