@@ -1,7 +1,6 @@
 import { Lock } from 'lucide-react'
 import { clsx } from 'clsx'
-
-type BadgeLevel = 'none' | 'bronze' | 'silver' | 'gold'
+import type { BadgeLevel } from '@/types/shared'
 
 interface BadgeProps {
   level: BadgeLevel
