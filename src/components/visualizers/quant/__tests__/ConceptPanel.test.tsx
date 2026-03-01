@@ -14,6 +14,7 @@ const mockConcept: QuantConcept = {
       whenToUse: 'When a value increases or decreases.',
     },
   ],
+  examTags: ['SSC CGL', 'IBPS PO'],
   examRelevance: 'Appears in 3–4 questions per SSC/banking paper.',
 }
 
@@ -42,5 +43,11 @@ describe('ConceptPanel', () => {
   it('renders the exam relevance note', () => {
     render(<ConceptPanel concept={mockConcept} />)
     expect(screen.getByText(/3–4 questions/)).toBeInTheDocument()
+  })
+
+  it('renders exam tags as chips', () => {
+    render(<ConceptPanel concept={mockConcept} />)
+    expect(screen.getByText('SSC CGL')).toBeInTheDocument()
+    expect(screen.getByText('IBPS PO')).toBeInTheDocument()
   })
 })

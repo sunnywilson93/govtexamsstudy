@@ -34,6 +34,7 @@ export const timeWorkConcept: QuantConcept = {
       whenToUse: "When one pipe fills and another drains simultaneously.",
     },
   ],
+  examTags: ["SSC CGL", "SSC CHSL", "IBPS PO", "IBPS Clerk", "SBI PO", "RRB NTPC"],
   examRelevance:
     "Time & Work appears in every banking exam (IBPS PO/Clerk, SBI PO) and SSC CGL. Pipes & Cisterns is a direct sub-type tested separately in harder papers.",
 }

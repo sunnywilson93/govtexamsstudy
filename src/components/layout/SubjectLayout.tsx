@@ -32,9 +32,19 @@ export function SubjectLayout({
           Home
         </Link>
         <ChevronRight size={14} className="text-text-muted" />
-        <span className="font-medium" style={{ color: subjectColor }}>
-          {subjectName}
-        </span>
+        {pathname === `/${subjectSlug}` ? (
+          <span className="font-medium" style={{ color: subjectColor }}>
+            {subjectName}
+          </span>
+        ) : (
+          <Link
+            href={`/${subjectSlug}`}
+            className="font-medium no-underline transition-colors hover:opacity-80"
+            style={{ color: subjectColor }}
+          >
+            {subjectName}
+          </Link>
+        )}
       </nav>
 
       <h1 className="mb-6 text-2xl font-bold text-text-primary">

@@ -34,6 +34,7 @@ export const ratioConcept: QuantConcept = {
       whenToUse: "When asked to find x such that a:b :: b:x.",
     },
   ],
+  examTags: ["SSC CGL", "SSC CHSL", "RRB NTPC", "IBPS PO", "IBPS Clerk"],
   examRelevance:
     "Ratio & Proportion underlies age problems, partnership, and mixture questions — all high-frequency topics in SSC CGL, RRB NTPC, and IBPS Clerk exams.",
 }

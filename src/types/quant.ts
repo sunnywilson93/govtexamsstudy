@@ -59,6 +59,7 @@ export interface QuantConcept {
   description: string
   keyIdea: string
   formulas: ConceptFormula[]
+  examTags: string[]
   examRelevance: string
 }
 

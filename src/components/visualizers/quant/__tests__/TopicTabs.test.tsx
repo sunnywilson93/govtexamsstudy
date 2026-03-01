@@ -8,6 +8,7 @@ const mockConcept: QuantConcept = {
   description: 'desc',
   keyIdea: 'key idea',
   formulas: [],
+  examTags: ['SSC CGL'],
   examRelevance: 'relevance',
 }
 const mockTricks: QuantTrick[] = []

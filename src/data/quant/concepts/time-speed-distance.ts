@@ -35,6 +35,7 @@ export const tsdConcept: QuantConcept = {
       whenToUse: "For any problem involving a boat moving with or against a river current.",
     },
   ],
+  examTags: ["SSC CGL", "SSC CHSL", "RRB NTPC", "UPSC CSAT", "IBPS PO"],
   examRelevance:
     "TSD is one of the most tested topics in SSC CGL, RRB NTPC, and UPSC CSAT — typically 3–5 questions per paper across trains, boats, and average speed variants.",
 }

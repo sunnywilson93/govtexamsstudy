@@ -38,10 +38,20 @@ export function ConceptPanel({ concept }: ConceptPanelProps) {
       </div>
 
       <div className="rounded-lg bg-bg-secondary px-4 py-3">
-        <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-1">
-          Exam Relevance
+        <p className="text-xs font-semibold uppercase tracking-wider text-text-muted mb-2">
+          Relevant Exams
         </p>
-        <p className="text-sm text-text-secondary">{concept.examRelevance}</p>
+        <div className="flex flex-wrap gap-2 mb-2">
+          {concept.examTags.map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full bg-subject-quant-light px-3 py-0.5 text-xs font-medium text-subject-quant-dark"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+        <p className="text-xs text-text-muted">{concept.examRelevance}</p>
       </div>
     </div>
   )

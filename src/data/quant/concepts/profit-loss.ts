@@ -34,6 +34,7 @@ export const profitLossConcept: QuantConcept = {
       whenToUse: "When a dishonest dealer uses a lighter weight to give less goods.",
     },
   ],
+  examTags: ["SSC CGL", "SSC CGL Tier 2", "SSC CHSL", "IBPS PO", "IBPS Clerk", "SBI PO"],
   examRelevance:
     "Profit & Loss is present in virtually every SSC and banking exam. Dishonest dealer and successive discount variants are frequently tested in SSC CGL Tier 2.",
 }

@@ -34,6 +34,7 @@ export const percentageConcept: QuantConcept = {
       whenToUse: "When one of the two values is easier to work with as the base.",
     },
   ],
+  examTags: ["SSC CGL", "SSC CHSL", "IBPS PO", "IBPS Clerk", "SBI PO", "RRB NTPC"],
   examRelevance:
     "Percentage appears in 3–4 questions in every SSC CGL, IBPS PO, and SBI PO paper. It is also the foundation for Profit & Loss and SI/CI topics.",
 }
