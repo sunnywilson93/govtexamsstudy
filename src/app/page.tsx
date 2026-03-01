@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import type { LucideProps } from 'lucide-react'
 import {
   Calculator,
   Brain,
@@ -37,7 +38,7 @@ const STATS = [
   { value: '100%', label: 'Free', icon: BarChart3 },
 ]
 
-const FEATURE_ICONS: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+const FEATURE_ICONS: Record<string, React.ComponentType<LucideProps>> = {
   Quant: Calculator,
   Polity: Landmark,
   Geography: Globe2,
