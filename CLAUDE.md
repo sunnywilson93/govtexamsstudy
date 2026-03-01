@@ -208,6 +208,7 @@ src/
 - `BudgetTreemap` (`src/components/visualizers/economics/BudgetTreemap.tsx`) — implemented; accepts `items: BudgetItem[]` sourced from `@/data/economics/budget-2025`
 - `dashboard/page.tsx` — `'use client'`; top-level layout: `max-w-7xl space-y-8 px-4 py-8`; `computeSubjectAverages` is a local non-exported helper — do not import from elsewhere
 - `dashboard/layout.tsx` — server component; exports `metadata` only; passes children through unchanged
+- `economics/layout.tsx` — wraps with `SubjectLayout`; `subjectName="Indian Economy"` (not "Economics" or the slug); `subjectColor="#14b8a6"`; links to `/economics/flows` and `/economics/budget`
 - `economics/page.tsx` — hub page shows both visualizers (flows, budget) with "Coming Soon" badges even though sub-routes are implemented; badge is a UI affordance, not a gate
 
 ### Testing
