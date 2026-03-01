@@ -166,6 +166,10 @@ src/
 ### SEO Infrastructure
 - `src/app/sitemap.ts` — auto-generates sitemap; priority 1.0 for `/`, 0.8 for subject hubs, 0.6 for sub-routes
 - `src/app/robots.ts` — blocks `/api/` paths
+
+### Analytics
+- Google Analytics 4 (GA4) — Measurement ID `G-GPQEH3V7KN`; `GA_MEASUREMENT_ID` constant defined at module level in `src/app/layout.tsx`
+- Two `next/script` tags with `strategy="afterInteractive"` placed inside explicit `<head>` in `RootLayout`: GTM script loader + inline `gtag('config', ...)` init
 <!-- END AUTO-MANAGED -->
 
 <!-- AUTO-MANAGED: patterns -->
