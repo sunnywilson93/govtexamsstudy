@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@theme {
+  /* Clear Tailwind default colors */
+  --color-*: initial;
+
+  /* === Fonts === */
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* === Background === */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8fafc;
+  --color-bg-tertiary: #f1f5f9;
+  --color-bg-elevated: #ffffff;
+
+  /* === Text === */
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94a3b8;
+  --color-text-bright: #000000;
+
+  /* === Core === */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* === Gray scale === */
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
+
+  /* === Primary (Indigo) === */
+  --color-primary: #4f46e5;
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+
+  /* === Secondary (Amber) === */
+  --color-secondary: #f59e0b;
+  --color-secondary-50: #fffbeb;
+  --color-secondary-100: #fef3c7;
+  --color-secondary-200: #fde68a;
+  --color-secondary-300: #fcd34d;
+  --color-secondary-400: #fbbf24;
+  --color-secondary-500: #f59e0b;
+  --color-secondary-600: #d97706;
+  --color-secondary-700: #b45309;
+  --color-secondary-800: #92400e;
+  --color-secondary-900: #78350f;
+
+  /* === Subject Colors === */
+
+  /* Quant = Blue */
+  --color-subject-quant: #3b82f6;
+  --color-subject-quant-light: #dbeafe;
+  --color-subject-quant-dark: #1d4ed8;
+
+  /* Reasoning = Purple */
+  --color-subject-reasoning: #8b5cf6;
+  --color-subject-reasoning-light: #ede9fe;
+  --color-subject-reasoning-dark: #6d28d9;
+
+  /* Polity = Red */
+  --color-subject-polity: #ef4444;
+  --color-subject-polity-light: #fee2e2;
+  --color-subject-polity-dark: #b91c1c;
+
+  /* History = Amber */
+  --color-subject-history: #f59e0b;
+  --color-subject-history-light: #fef3c7;
+  --color-subject-history-dark: #b45309;
+
+  /* Geography = Green */
+  --color-subject-geography: #22c55e;
+  --color-subject-geography-light: #dcfce7;
+  --color-subject-geography-dark: #15803d;
+
+  /* Economics = Teal */
+  --color-subject-economics: #14b8a6;
+  --color-subject-economics-light: #ccfbf1;
+  --color-subject-economics-dark: #0f766e;
+
+  /* Science = Cyan */
+  --color-subject-science: #06b6d4;
+  --color-subject-science-light: #cffafe;
+  --color-subject-science-dark: #0e7490;
+
+  /* === Border === */
+  --color-border-primary: #e2e8f0;
+  --color-border-secondary: #cbd5e1;
+
+  /* === Spacing === */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+
+  /* === Border Radius === */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* === Shadows === */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+  /* === Transitions === */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* === Font sizes === */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* === Font weights === */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* === Line heights === */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* === Border widths === */
+  --border-width-1: 1px;
+  --border-width-2: 2px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background: var(--color-bg-primary);
+}
