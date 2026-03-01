@@ -19,13 +19,20 @@ export interface MathStep {
 
 export type QuantTopic =
   | "percentage"
-  | "ratio"
   | "profit-loss"
+  | "ratio"
   | "time-speed-distance"
   | "time-work"
+  | "number-system"
+  | "average"
+  | "simple-compound-interest"
+  | "mixture-alligation"
+  | "mensuration"
   | "algebra"
   | "geometry"
-  | "number-system"
+  | "trigonometry"
+  | "data-interpretation"
+  | "statistics-probability"
 
 export interface GeometryShape {
   id: string
@@ -38,4 +45,33 @@ export interface GeometryFormula {
   name: string
   formula: string
   steps: MathStep[]
+}
+
+export interface ConceptFormula {
+  name: string
+  formula: string
+  whenToUse: string
+}
+
+export interface QuantConcept {
+  topic: QuantTopic
+  title: string
+  description: string
+  keyIdea: string
+  formulas: ConceptFormula[]
+  examRelevance: string
+}
+
+export interface QuantTrick {
+  id: string
+  topic: QuantTopic
+  type: "formula-shortcut" | "mental-math"
+  title: string
+  description: string
+  formula?: string
+  example: {
+    problem: string
+    solution: string
+  }
+  timeSaved?: string
 }
