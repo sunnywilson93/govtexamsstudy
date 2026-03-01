@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Flame, Menu, X } from 'lucide-react'
+import { Flame, Menu, X, BookOpen } from 'lucide-react'
 import { clsx } from 'clsx'
 import { useProgressStore } from '@/store/progressStore'
 
@@ -21,6 +21,9 @@ const NAV_LINKS: NavLink[] = [
   { href: '/geography', label: 'Geography', colorClass: 'hover:text-subject-geography' },
   { href: '/economics', label: 'Economics', colorClass: 'hover:text-subject-economics' },
   { href: '/science', label: 'Science', colorClass: 'hover:text-subject-science' },
+]
+
+const UTIL_LINKS: NavLink[] = [
   { href: '/practice', label: 'Practice', colorClass: 'hover:text-primary' },
   { href: '/dashboard', label: 'Dashboard', colorClass: 'hover:text-primary' },
 ]
@@ -32,21 +35,25 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border-primary bg-bg-primary/95 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2.5">
         <Link
           href="/"
-          className="text-xl font-bold text-text-primary no-underline transition-colors hover:text-primary"
+          className="flex items-center gap-2 text-lg font-bold text-text-primary no-underline transition-colors hover:text-primary"
         >
-          GovtExamsStudy
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+            <BookOpen size={16} />
+          </div>
+          <span className="hidden sm:inline">GovtExamsStudy</span>
+          <span className="sm:hidden">GES</span>
         </Link>
 
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
+        <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Main navigation">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={clsx(
-                'rounded-md px-3 py-1.5 text-sm font-medium no-underline transition-colors',
+                'rounded-md px-2.5 py-1.5 text-[13px] font-medium no-underline transition-colors',
                 pathname.startsWith(link.href)
                   ? 'bg-bg-tertiary text-text-primary'
                   : 'text-text-secondary',
@@ -56,13 +63,32 @@ export function Header() {
               {link.label}
             </Link>
           ))}
+
+          <div className="mx-1.5 h-4 w-px bg-border-primary" />
+
+          {UTIL_LINKS.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={clsx(
+                'rounded-md px-2.5 py-1.5 text-[13px] font-medium no-underline transition-colors',
+                pathname.startsWith(link.href)
+                  ? 'bg-bg-tertiary text-text-primary'
+                  : 'text-text-secondary',
+                link.colorClass
+              )}
+            >
+              {link.label}
+            </Link>
+          ))}
+
           {streak > 0 && (
             <Link
               href="/dashboard"
-              className="ml-1 flex items-center gap-1 rounded-md px-2 py-1.5 text-sm font-medium text-secondary-600 no-underline transition-colors hover:bg-secondary-50"
+              className="ml-1 flex items-center gap-1 rounded-full bg-secondary-50 px-2.5 py-1 text-xs font-semibold text-secondary-700 no-underline transition-colors hover:bg-secondary-100"
               aria-label={`${streak} day streak`}
             >
-              <Flame size={14} />
+              <Flame size={12} />
               <span className="font-mono">{streak}</span>
             </Link>
           )}
@@ -74,7 +100,7 @@ export function Header() {
           aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
           aria-expanded={mobileMenuOpen}
         >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
@@ -83,8 +109,8 @@ export function Header() {
           className="border-t border-border-primary bg-bg-primary px-4 pb-4 lg:hidden"
           aria-label="Mobile navigation"
         >
-          <div className="flex flex-col gap-1 pt-2">
-            {NAV_LINKS.map((link) => (
+          <div className="flex flex-col gap-0.5 pt-2">
+            {[...NAV_LINKS, ...UTIL_LINKS].map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
