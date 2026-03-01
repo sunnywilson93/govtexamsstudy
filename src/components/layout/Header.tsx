@@ -3,8 +3,9 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu, X } from 'lucide-react'
+import { Flame, Menu, X } from 'lucide-react'
 import { clsx } from 'clsx'
+import { useProgressStore } from '@/store/progressStore'
 
 interface NavLink {
   href: string
@@ -27,6 +28,7 @@ const NAV_LINKS: NavLink[] = [
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()
+  const streak = useProgressStore((s) => s.streak)
 
   return (
     <header className="sticky top-0 z-50 border-b border-border-primary bg-bg-primary/95 backdrop-blur-sm">
@@ -54,6 +56,16 @@ export function Header() {
               {link.label}
             </Link>
           ))}
+          {streak > 0 && (
+            <Link
+              href="/dashboard"
+              className="ml-1 flex items-center gap-1 rounded-md px-2 py-1.5 text-sm font-medium text-secondary-600 no-underline transition-colors hover:bg-secondary-50"
+              aria-label={`${streak} day streak`}
+            >
+              <Flame size={14} />
+              <span className="font-mono">{streak}</span>
+            </Link>
+          )}
         </nav>
 
         <button
