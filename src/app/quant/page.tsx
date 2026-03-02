@@ -171,6 +171,84 @@ const SECTIONS: Section[] = [
       },
     ],
   },
+  {
+    heading: 'Applied Problems',
+    subheading: 'Motion, proportion, and number topics from R.S. Aggarwal',
+    topics: [
+      {
+        href: '/quant/decimal-fractions',
+        title: 'Decimal Fractions',
+        description: 'Decimal operations, fraction conversion, recurring decimals, and approximation.',
+        hasTabs: true,
+      },
+      {
+        href: '/quant/square-cube-roots',
+        title: 'Square & Cube Roots',
+        description: 'Finding roots, estimation methods, perfect square shortcuts, and cube root tricks.',
+        hasTabs: true,
+      },
+      {
+        href: '/quant/chain-rule',
+        title: 'Chain Rule',
+        description: 'Direct and inverse proportion chains, multi-variable work and cost problems.',
+        hasTabs: true,
+      },
+      {
+        href: '/quant/boats-streams',
+        title: 'Boats & Streams',
+        description: 'Upstream/downstream speed, still water and stream speed formulas.',
+        hasTabs: true,
+      },
+      {
+        href: '/quant/problems-on-trains',
+        title: 'Problems on Trains',
+        description: 'Crossing a pole, platform, and another train — relative speed and length problems.',
+        hasTabs: true,
+      },
+      {
+        href: '/quant/races-games',
+        title: 'Races & Games',
+        description: 'Beat by distance/time, head start, three-runner chain, and games of skill points.',
+        hasTabs: true,
+      },
+    ],
+  },
+  {
+    heading: 'Banking & Special Topics',
+    subheading: 'Time-based and financial topics for SSC CGL Tier 2 and banking exams',
+    topics: [
+      {
+        href: '/quant/calendar',
+        title: 'Calendar',
+        description: 'Day of the week, odd days method, leap year rules, and date calculations.',
+        hasTabs: true,
+      },
+      {
+        href: '/quant/clocks',
+        title: 'Clocks',
+        description: 'Angle between hands, coincidence times, right-angle positions, and clock gain/loss.',
+        hasTabs: true,
+      },
+      {
+        href: '/quant/stocks-shares',
+        title: 'Stocks & Shares',
+        description: 'Face value, market value, dividend yield, and brokerage calculations.',
+        hasTabs: true,
+      },
+      {
+        href: '/quant/true-discount',
+        title: 'True Discount',
+        description: "Present worth, true discount vs simple interest, and banker's gain formula.",
+        hasTabs: true,
+      },
+      {
+        href: '/quant/bankers-discount',
+        title: "Banker's Discount",
+        description: "Banker's discount vs true discount, banker's gain, and face value from BD and BG.",
+        hasTabs: true,
+      },
+    ],
+  },
 ]
 
 export default function QuantPage() {

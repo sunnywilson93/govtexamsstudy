@@ -38,6 +38,17 @@ export type QuantTopic =
   | "ages"
   | "simplification"
   | "sequences-series"
+  | "decimal-fractions"
+  | "square-cube-roots"
+  | "chain-rule"
+  | "boats-streams"
+  | "problems-on-trains"
+  | "races-games"
+  | "calendar"
+  | "clocks"
+  | "stocks-shares"
+  | "true-discount"
+  | "bankers-discount"
 
 export interface GeometryShape {
   id: string

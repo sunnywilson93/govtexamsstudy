@@ -28,6 +28,17 @@ export default function QuantLayout({ children }: { children: React.ReactNode })
         { href: '/quant/ages', label: 'Problems on Ages', group: 'Phase 4' },
         { href: '/quant/simplification', label: 'Simplification', group: 'Phase 4' },
         { href: '/quant/sequences-series', label: 'Sequences & Series', group: 'Phase 4' },
+        { href: '/quant/decimal-fractions', label: 'Decimal Fractions', group: 'Applied' },
+        { href: '/quant/square-cube-roots', label: 'Square & Cube Roots', group: 'Applied' },
+        { href: '/quant/chain-rule', label: 'Chain Rule', group: 'Applied' },
+        { href: '/quant/boats-streams', label: 'Boats & Streams', group: 'Applied' },
+        { href: '/quant/problems-on-trains', label: 'Problems on Trains', group: 'Applied' },
+        { href: '/quant/races-games', label: 'Races & Games', group: 'Applied' },
+        { href: '/quant/calendar', label: 'Calendar', group: 'Banking' },
+        { href: '/quant/clocks', label: 'Clocks', group: 'Banking' },
+        { href: '/quant/stocks-shares', label: 'Stocks & Shares', group: 'Banking' },
+        { href: '/quant/true-discount', label: 'True Discount', group: 'Banking' },
+        { href: '/quant/bankers-discount', label: "Banker's Discount", group: 'Banking' },
       ]}
     >
       {children}

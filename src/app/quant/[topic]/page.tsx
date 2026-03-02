@@ -66,6 +66,42 @@ import { agesProblems } from '@/data/quant/problems/ages-problems'
 import { simplificationProblems } from '@/data/quant/problems/simplification-problems'
 import { sequencesSeriesProblems } from '@/data/quant/problems/sequences-series-problems'
 
+import { decimalFractionsConcept } from '@/data/quant/concepts/decimal-fractions'
+import { squareCubeRootsConcept } from '@/data/quant/concepts/square-cube-roots'
+import { chainRuleConcept } from '@/data/quant/concepts/chain-rule'
+import { boatsStreamsConcept } from '@/data/quant/concepts/boats-streams'
+import { problemsOnTrainsConcept } from '@/data/quant/concepts/problems-on-trains'
+import { racesGamesConcept } from '@/data/quant/concepts/races-games'
+import { calendarConcept } from '@/data/quant/concepts/calendar'
+import { clocksConcept } from '@/data/quant/concepts/clocks'
+import { stocksSharesConcept } from '@/data/quant/concepts/stocks-shares'
+import { trueDiscountConcept } from '@/data/quant/concepts/true-discount'
+import { bankersDiscountConcept } from '@/data/quant/concepts/bankers-discount'
+
+import { decimalFractionsTricks } from '@/data/quant/tricks/decimal-fractions'
+import { squareCubeRootsTricks } from '@/data/quant/tricks/square-cube-roots'
+import { chainRuleTricks } from '@/data/quant/tricks/chain-rule'
+import { boatsStreamsTricks } from '@/data/quant/tricks/boats-streams'
+import { problemsOnTrainsTricks } from '@/data/quant/tricks/problems-on-trains'
+import { racesGamesTricks } from '@/data/quant/tricks/races-games'
+import { calendarTricks } from '@/data/quant/tricks/calendar'
+import { clocksTricks } from '@/data/quant/tricks/clocks'
+import { stocksSharesTricks } from '@/data/quant/tricks/stocks-shares'
+import { trueDiscountTricks } from '@/data/quant/tricks/true-discount'
+import { bankersDiscountTricks } from '@/data/quant/tricks/bankers-discount'
+
+import { decimalFractionsProblems } from '@/data/quant/problems/decimal-fractions-problems'
+import { squareCubeRootsProblems } from '@/data/quant/problems/square-cube-roots-problems'
+import { chainRuleProblems } from '@/data/quant/problems/chain-rule-problems'
+import { boatsStreamsProblems } from '@/data/quant/problems/boats-streams-problems'
+import { problemsOnTrainsProblems } from '@/data/quant/problems/problems-on-trains-problems'
+import { racesGamesProblems } from '@/data/quant/problems/races-games-problems'
+import { calendarProblems } from '@/data/quant/problems/calendar-problems'
+import { clocksProblems } from '@/data/quant/problems/clocks-problems'
+import { stocksSharesProblems } from '@/data/quant/problems/stocks-shares-problems'
+import { trueDiscountProblems } from '@/data/quant/problems/true-discount-problems'
+import { bankersDiscountProblems } from '@/data/quant/problems/bankers-discount-problems'
+
 interface TopicData {
   concept: QuantConcept
   tricks: QuantTrick[]
@@ -217,6 +253,83 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: sequencesSeriesProblems,
     label: 'Sequences & Series',
     description: 'AP/GP formulas, nth term, sum of series, and special series for SSC CGL, IBPS PO, CDS, and UPSC CSAT.',
+  },
+  'decimal-fractions': {
+    concept: decimalFractionsConcept,
+    tricks: decimalFractionsTricks,
+    problems: decimalFractionsProblems,
+    label: 'Decimal Fractions',
+    description: 'Decimal operations, conversion between fractions and decimals, recurring decimals, and approximation for SSC CGL, IBPS PO, and RRB NTPC.',
+  },
+  'square-cube-roots': {
+    concept: squareCubeRootsConcept,
+    tricks: squareCubeRootsTricks,
+    problems: squareCubeRootsProblems,
+    label: 'Square & Cube Roots',
+    description: 'Finding square roots, cube roots, estimation methods, and perfect square shortcuts for SSC CGL, RRB NTPC, and banking exams.',
+  },
+  'chain-rule': {
+    concept: chainRuleConcept,
+    tricks: chainRuleTricks,
+    problems: chainRuleProblems,
+    label: 'Chain Rule',
+    description: 'Direct and inverse proportions, multi-variable chain rule problems for SSC CGL, RRB NTPC, and other competitive exams.',
+  },
+  'boats-streams': {
+    concept: boatsStreamsConcept,
+    tricks: boatsStreamsTricks,
+    problems: boatsStreamsProblems,
+    label: 'Boats & Streams',
+    description: 'Upstream/downstream speed formulas, still water speed, and stream speed problems for SSC CGL, IBPS PO, and RRB NTPC.',
+  },
+  'problems-on-trains': {
+    concept: problemsOnTrainsConcept,
+    tricks: problemsOnTrainsTricks,
+    problems: problemsOnTrainsProblems,
+    label: 'Problems on Trains',
+    description: 'Train crossing a pole, platform, and another train — relative speed and length problems for SSC CGL, RRB NTPC, and banking exams.',
+  },
+  'races-games': {
+    concept: racesGamesConcept,
+    tricks: racesGamesTricks,
+    problems: racesGamesProblems,
+    label: 'Races & Games',
+    description: 'Race problems — beat by distance/time, head start, three-runner chain, and games of skill for SSC CGL, SSC CHSL, and RRB NTPC.',
+  },
+  calendar: {
+    concept: calendarConcept,
+    tricks: calendarTricks,
+    problems: calendarProblems,
+    label: 'Calendar',
+    description: 'Day of the week, odd days method, leap year rules, and Zeller\'s formula for SSC CGL, IBPS PO, and RRB NTPC.',
+  },
+  clocks: {
+    concept: clocksConcept,
+    tricks: clocksTricks,
+    problems: clocksProblems,
+    label: 'Clocks',
+    description: 'Angle between clock hands, coincidence and right-angle times, and gain/loss of clock problems for SSC CGL and RRB NTPC.',
+  },
+  'stocks-shares': {
+    concept: stocksSharesConcept,
+    tricks: stocksSharesTricks,
+    problems: stocksSharesProblems,
+    label: 'Stocks & Shares',
+    description: 'Face value, market value, dividend, yield, and brokerage calculations for SSC CGL Tier 2 and SBI PO.',
+  },
+  'true-discount': {
+    concept: trueDiscountConcept,
+    tricks: trueDiscountTricks,
+    problems: trueDiscountProblems,
+    label: 'True Discount',
+    description: 'Present worth, true discount vs SI, and banker\'s gain concepts for SSC CGL, IBPS PO, and SBI PO.',
+  },
+  'bankers-discount': {
+    concept: bankersDiscountConcept,
+    tricks: bankersDiscountTricks,
+    problems: bankersDiscountProblems,
+    label: "Banker's Discount",
+    description: "Banker's discount vs true discount, banker's gain, and face value calculations for SSC CGL Tier 2, IBPS PO, and SBI PO.",
   },
 }
 
