@@ -20,7 +20,7 @@ export const alphabetTestsTricks: ReasoningTrick[] = [
     type: "pattern-shortcut",
     title: "Letter Reversal: Position from Z",
     description: "When asked for the nth letter from the END of the alphabet, use the formula: position from end = 27 − position from start.",
-    formula: "Reverse position = 27 − forward position",
+    formula: "Forward position = 27 − reverse position",
     example: {
       problem: "Which letter is 8th from the end of the alphabet?",
       solution: "27 − 8 = 19th from start = S. No need to count Z, Y, X… backwards.",
