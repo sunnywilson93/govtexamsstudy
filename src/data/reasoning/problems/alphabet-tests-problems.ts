@@ -1,0 +1,213 @@
+import type { ReasoningProblem } from "@/types/reasoning"
+
+export const alphabetTestsProblems: ReasoningProblem[] = [
+  {
+    id: "alpha-p1",
+    topic: "alphabet-tests",
+    title: "Letter Position Lookup",
+    question:
+      "Which letter is 7th to the right of the 12th letter from the left of the English alphabet?",
+    steps: [
+      {
+        id: 1,
+        operation: "Find the 12th letter from the left",
+        expression: "Position 12 from left",
+        result: "L",
+        explanation: "A=1, B=2, … L=12. The 12th letter is L.",
+      },
+      {
+        id: 2,
+        operation: "Move 7 positions to the right",
+        expression: "12 + 7 = 19",
+        result: "Position 19",
+        explanation: "Moving 7 to the right adds 7 to the current position: 12 + 7 = 19.",
+      },
+      {
+        id: 3,
+        operation: "Identify the 19th letter",
+        expression: "A=1 … S=19",
+        result: "S",
+        explanation: "The 19th letter of the alphabet is S.",
+      },
+      {
+        id: 4,
+        operation: "Final answer",
+        expression: "12th letter = L, L + 7 positions = S",
+        result: "S",
+        explanation: "7 positions to the right of L (position 12) is S (position 19).",
+      },
+    ],
+    answer: "S",
+    difficulty: "easy",
+  },
+  {
+    id: "alpha-p2",
+    topic: "alphabet-tests",
+    title: "EJOTY Shortcut Application",
+    question:
+      "What is the 17th letter of the English alphabet? Use the EJOTY shortcut.",
+    steps: [
+      {
+        id: 1,
+        operation: "Recall the EJOTY mnemonic",
+        expression: "E=5, J=10, O=15, T=20, Y=25",
+        result: "Key anchors memorised",
+        explanation: "EJOTY gives five evenly-spaced reference points at positions 5, 10, 15, 20, 25.",
+      },
+      {
+        id: 2,
+        operation: "Locate the nearest anchor below 17",
+        expression: "O = 15, T = 20 → O is below 17",
+        result: "Nearest lower anchor: O at position 15",
+        explanation: "17 lies between O(15) and T(20). O is 2 positions below 17.",
+      },
+      {
+        id: 3,
+        operation: "Count forward from O",
+        expression: "O(15) → P(16) → Q(17)",
+        result: "17th letter = Q",
+        explanation: "Starting from O(15), move 2 steps right: O→P→Q.",
+      },
+      {
+        id: 4,
+        operation: "Final answer",
+        expression: "EJOTY: O=15, +2 = Q",
+        result: "Q",
+        explanation: "Using EJOTY anchor O(15) and counting 2 forward gives Q at position 17.",
+      },
+    ],
+    answer: "Q",
+    difficulty: "easy",
+  },
+  {
+    id: "alpha-p3",
+    topic: "alphabet-tests",
+    title: "Letter Series Completion",
+    question:
+      "Complete the series: B, E, H, K, ? (each letter is 3 positions ahead of the previous)",
+    steps: [
+      {
+        id: 1,
+        operation: "Identify the pattern",
+        expression: "B(2), E(5), H(8), K(11) — differences: 5-2=3, 8-5=3, 11-8=3",
+        result: "Pattern: +3 each step",
+        explanation: "Every term is 3 alphabet positions ahead of the previous term.",
+      },
+      {
+        id: 2,
+        operation: "Find the next position",
+        expression: "11 + 3 = 14",
+        result: "Position 14",
+        explanation: "Adding 3 to the position of K(11) gives 14.",
+      },
+      {
+        id: 3,
+        operation: "Identify the 14th letter",
+        expression: "J=10, K=11, L=12, M=13, N=14",
+        result: "N",
+        explanation: "The 14th letter of the alphabet is N.",
+      },
+      {
+        id: 4,
+        operation: "Final answer",
+        expression: "B E H K N — each +3",
+        result: "N",
+        explanation: "The next term in the +3 series after K(11) is N(14).",
+      },
+    ],
+    answer: "N",
+    difficulty: "easy",
+  },
+  {
+    id: "alpha-p4",
+    topic: "alphabet-tests",
+    title: "Dictionary Order of Words",
+    question:
+      "Arrange the following words in alphabetical (dictionary) order and find the 3rd word: PAINT, PALACE, PAMPER, PANEL, PANIC",
+    steps: [
+      {
+        id: 1,
+        operation: "Compare first differing letters",
+        expression: "All words start with PA — compare 3rd letter: I, L, M, N, N",
+        result: "3rd letters: PAINT→I, PALACE→L, PAMPER→M, PANEL→N, PANIC→N",
+        explanation: "PA is common to all. The 3rd letter differentiates: I < L < M < N.",
+      },
+      {
+        id: 2,
+        operation: "Sort by 3rd letter",
+        expression: "I(9) < L(12) < M(13) < N(14)",
+        result: "PAINT < PALACE < PAMPER < PAN*",
+        explanation: "The first three in order are PAINT, PALACE, PAMPER. For PANEL and PANIC, both have N as 3rd letter.",
+      },
+      {
+        id: 3,
+        operation: "Break tie between PANEL and PANIC",
+        expression: "PANEL: 4th letter=E(5) | PANIC: 4th letter=I(9)",
+        result: "PANEL < PANIC (E comes before I)",
+        explanation: "When 3rd letters are equal, compare 4th letters: E(5) < I(9), so PANEL before PANIC.",
+      },
+      {
+        id: 4,
+        operation: "Complete sorted order",
+        expression: "1.PAINT, 2.PALACE, 3.PAMPER, 4.PANEL, 5.PANIC",
+        result: "3rd word = PAMPER",
+        explanation: "The full alphabetical order is PAINT, PALACE, PAMPER, PANEL, PANIC.",
+      },
+      {
+        id: 5,
+        operation: "Final answer",
+        expression: "3rd in dictionary order",
+        result: "PAMPER",
+        explanation: "PAMPER holds the 3rd position in the alphabetically sorted list.",
+      },
+    ],
+    answer: "PAMPER",
+    difficulty: "medium",
+  },
+  {
+    id: "alpha-p5",
+    topic: "alphabet-tests",
+    title: "Word Formed from Specific Letters",
+    question:
+      "How many meaningful words can be formed using the 1st, 5th, 7th, and 15th letters of the alphabet, each used only once?",
+    steps: [
+      {
+        id: 1,
+        operation: "Identify the four letters",
+        expression: "1st=A, 5th=E, 7th=G, 15th=O",
+        result: "Letters: A, E, G, O",
+        explanation: "Using alphabetical positions: A(1), E(5), G(7), O(15).",
+      },
+      {
+        id: 2,
+        operation: "List possible arrangements (words)",
+        expression: "Try common 4-letter and 3-letter combos: GOAE, GAGE, OGAE, AGOE — also sub-sets: AGO, EGO, OAG",
+        result: "Check each for meaning",
+        explanation: "With 4 letters we can form combinations; also try 3-letter sub-words.",
+      },
+      {
+        id: 3,
+        operation: "Test meaningful words",
+        expression: "AGO (using A,G,O) ✓ | EGO (using E,G,O) ✓ | GAE (archaic Scottish) ✗ in standard exams | GOAE ✗ | OGLE needs L ✗",
+        result: "AGO and EGO are standard meaningful words",
+        explanation: "AGO (time past) and EGO (sense of self) are commonly accepted exam words from {A,E,G,O}.",
+      },
+      {
+        id: 4,
+        operation: "Count valid words",
+        expression: "AGO, EGO = 2 words",
+        result: "2 meaningful words",
+        explanation: "Two standard English words can be formed: AGO and EGO.",
+      },
+      {
+        id: 5,
+        operation: "Final answer",
+        expression: "Letters A, E, G, O → AGO and EGO",
+        result: "2 meaningful words",
+        explanation: "Two meaningful words (AGO, EGO) can be formed using the 1st, 5th, 7th, and 15th letters of the alphabet.",
+      },
+    ],
+    answer: "2 meaningful words (AGO, EGO)",
+    difficulty: "medium",
+  },
+]
