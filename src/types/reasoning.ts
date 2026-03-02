@@ -77,17 +77,17 @@ export interface SeriesStep {
 // ── Tabs topics ────────────────────────────────────────────────
 
 export type ReasoningTopic =
-  | 'blood-relations'
-  | 'direction-distance'
-  | 'coding-decoding'
-  | 'puzzles'
-  | 'inequalities'
-  | 'analogies'
-  | 'classification'
-  | 'statement-conclusions'
-  | 'input-output'
-  | 'alphabet-tests'
-  | 'cause-effect'
+  | "blood-relations"
+  | "direction-distance"
+  | "coding-decoding"
+  | "puzzles"
+  | "inequalities"
+  | "analogies"
+  | "classification"
+  | "statement-conclusions"
+  | "input-output"
+  | "alphabet-tests"
+  | "cause-effect"
 
 export interface ReasoningRule {
   name: string
@@ -108,7 +108,7 @@ export interface ReasoningConcept {
 export interface ReasoningTrick {
   id: string
   topic: ReasoningTopic
-  type: 'pattern-shortcut' | 'elimination'
+  type: "pattern-shortcut" | "elimination"
   title: string
   description: string
   formula?: string
@@ -131,7 +131,7 @@ export interface ReasoningProblem {
   question: string
   steps: ReasoningStep[]
   answer: string
-  difficulty: 'easy' | 'medium' | 'hard'
+  difficulty: "easy" | "medium" | "hard"
 }
 
 // ── Visualizer problem types ────────────────────────────────────
@@ -139,7 +139,7 @@ export interface ReasoningProblem {
 export interface BloodRelationNode {
   id: string
   name: string
-  gender: 'M' | 'F'
+  gender: "M" | "F"
   generation: number
 }
 
@@ -160,7 +160,7 @@ export interface BloodRelationProblem {
 
 export interface DirectionStep {
   id: number
-  direction: 'N' | 'S' | 'E' | 'W' | 'NE' | 'NW' | 'SE' | 'SW'
+  direction: "N" | "S" | "E" | "W" | "NE" | "NW" | "SE" | "SW"
   distance: number
   label: string
 }
@@ -182,7 +182,7 @@ export interface CodingRule {
 
 export interface CodingDecodingProblem {
   id: string
-  type: 'letter-shift' | 'word-mapping' | 'symbol-substitution'
+  type: "letter-shift" | "word-mapping" | "symbol-substitution"
   question: string
   codingRules: CodingRule[]
   steps: string[]
@@ -196,7 +196,7 @@ export interface PuzzleCell {
 
 export interface PuzzleProblem {
   id: string
-  type: 'floor' | 'box'
+  type: "floor" | "box"
   totalPositions: number
   clues: string[]
   steps: string[]
