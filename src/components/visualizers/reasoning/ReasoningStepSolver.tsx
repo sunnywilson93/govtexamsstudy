@@ -14,15 +14,15 @@ export function ReasoningStepSolver({ problems }: { problems: ReasoningProblem[]
     [problems, selectedId]
   )
 
+  const selectedStepsLength = selectedProblem?.steps.length ?? 0
+
   const { currentStep, totalSteps, isPlaying, setSteps, goToStep, toggleAutoPlay, reset } =
     useVisualizerStore()
 
   useEffect(() => {
-    if (selectedProblem) {
-      reset()
-      setSteps(selectedProblem.steps.length)
-    }
-  }, [selectedProblem, reset, setSteps])
+    reset()
+    setSteps(selectedStepsLength)
+  }, [selectedStepsLength, reset, setSteps])
 
   const currentStepData = selectedProblem?.steps[currentStep]
 
