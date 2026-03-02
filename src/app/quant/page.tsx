@@ -211,6 +211,12 @@ const SECTIONS: Section[] = [
         description: 'Beat by distance/time, head start, three-runner chain, and games of skill points.',
         hasTabs: true,
       },
+      {
+        href: '/quant/logarithms',
+        title: 'Logarithms',
+        description: 'Log rules (product, quotient, power), standard values log 2/3/7, and log equations.',
+        hasTabs: true,
+      },
     ],
   },
   {

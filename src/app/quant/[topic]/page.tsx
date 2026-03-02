@@ -102,6 +102,10 @@ import { stocksSharesProblems } from '@/data/quant/problems/stocks-shares-proble
 import { trueDiscountProblems } from '@/data/quant/problems/true-discount-problems'
 import { bankersDiscountProblems } from '@/data/quant/problems/bankers-discount-problems'
 
+import { logarithmsConcept } from '@/data/quant/concepts/logarithms'
+import { logarithmsTricks } from '@/data/quant/tricks/logarithms'
+import { logarithmsProblems } from '@/data/quant/problems/logarithms-problems'
+
 interface TopicData {
   concept: QuantConcept
   tricks: QuantTrick[]
@@ -330,6 +334,13 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: bankersDiscountProblems,
     label: "Banker's Discount",
     description: "Banker's discount vs true discount, banker's gain, and face value calculations for SSC CGL Tier 2, IBPS PO, and SBI PO.",
+  },
+  logarithms: {
+    concept: logarithmsConcept,
+    tricks: logarithmsTricks,
+    problems: logarithmsProblems,
+    label: 'Logarithms',
+    description: 'Log rules (product, quotient, power), standard values, change of base, and log equations for SSC CGL, SSC CHSL, RRB NTPC, and UPSC CSAT.',
   },
 }
 

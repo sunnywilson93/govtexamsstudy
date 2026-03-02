@@ -49,6 +49,7 @@ export type QuantTopic =
   | "stocks-shares"
   | "true-discount"
   | "bankers-discount"
+  | "logarithms"
 
 export interface GeometryShape {
   id: string

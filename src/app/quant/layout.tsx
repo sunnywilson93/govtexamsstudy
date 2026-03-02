@@ -39,6 +39,7 @@ export default function QuantLayout({ children }: { children: React.ReactNode })
         { href: '/quant/stocks-shares', label: 'Stocks & Shares', group: 'Banking' },
         { href: '/quant/true-discount', label: 'True Discount', group: 'Banking' },
         { href: '/quant/bankers-discount', label: "Banker's Discount", group: 'Banking' },
+        { href: '/quant/logarithms', label: 'Logarithms', group: 'Applied' },
       ]}
     >
       {children}
