@@ -81,9 +81,9 @@ src/
 
 ```
 /                              Home — Hero + BentoSubjectGrid (#subjects) + Featured Visualizers (4 cards) + How It Works (3 steps) + CTA
-/quant                         Quantitative Aptitude hub — SECTIONS layout: Arithmetic (5) + Advanced Arithmetic (5) + Higher Maths (4) + Visualizer (geometry) + Miscellaneous (5); each topic card has hasTabs:true flag; no "Coming Soon" badges on implemented topics
+/quant                         Quantitative Aptitude hub — SECTIONS layout: Arithmetic (5) + Advanced Arithmetic (5) + Higher Mathematics (4) + Visualizer (geometry) + Miscellaneous (5) + Applied Problems (7) + Banking & Special Topics (5); each topic card has hasTabs:true flag; no "Coming Soon" badges on implemented topics
 /quant/step-solver             Redirects to /quant/percentage
-/quant/[topic]                 Dynamic route — Concept | Tricks | Problems tabs; 19 slugs statically generated via Object.keys(TOPIC_DATA) (all phases wired)
+/quant/[topic]                 Dynamic route — Concept | Tricks | Problems tabs; 31 slugs statically generated via Object.keys(TOPIC_DATA) (all groups wired)
 /quant/percentage              Percentage (Phase 1)
 /quant/profit-loss             Profit, Loss & Discount (Phase 1)
 /quant/ratio                   Ratio & Proportion (Phase 1)
@@ -104,6 +104,18 @@ src/
 /quant/ages                    Problems on Ages (Miscellaneous)
 /quant/simplification          Simplification (Miscellaneous)
 /quant/sequences-series        Sequences & Series (Miscellaneous)
+/quant/decimal-fractions       Decimal Fractions (Applied)
+/quant/square-cube-roots       Square & Cube Roots (Applied)
+/quant/chain-rule              Chain Rule (Applied)
+/quant/boats-streams           Boats & Streams (Applied)
+/quant/problems-on-trains      Problems on Trains (Applied)
+/quant/races-games             Races & Games (Applied)
+/quant/logarithms              Logarithms (Applied)
+/quant/calendar                Calendar (Banking)
+/quant/clocks                  Clocks (Banking)
+/quant/stocks-shares           Stocks & Shares (Banking)
+/quant/true-discount           True Discount (Banking)
+/quant/bankers-discount        Banker's Discount (Banking)
 /reasoning                     Reasoning & Logic hub
 /reasoning/seating             Seating arrangement solver
 /reasoning/syllogism           Venn diagram builder
@@ -181,7 +193,7 @@ src/
 - `MathProblem { id, topic, title, question, steps[], answer, difficulty }`
 - `MathStep { id, operation, expression, result, explanation, variables }`
 - `GeometryShape { id, type, properties, formulas[] }`
-- `QuantTopic` union — 20 values: `"percentage" | "profit-loss" | "ratio" | "time-speed-distance" | "time-work" | "number-system" | "average" | "simple-compound-interest" | "mixture-alligation" | "mensuration" | "algebra" | "geometry" | "trigonometry" | "data-interpretation" | "statistics-probability" | "surds-indices" | "partnership" | "ages" | "simplification" | "sequences-series"`; Phase 1: first 5; Phase 2: next 5; Phase 3: next 5 (incl. geometry); Miscellaneous: last 5; `TOPIC_DATA` in `quant/[topic]/page.tsx` covers 19 (excludes geometry — it is a standalone visualizer route); see `docs/plans/2026-03-01-quant-syllabus.md`
+- `QuantTopic` union — 31 slugs across 5 groups: Phase 1 Arithmetic (percentage, profit-loss, ratio, time-speed-distance, time-work); Phase 2 Advanced (number-system, average, simple-compound-interest, mixture-alligation, mensuration); Phase 3 Higher Maths (algebra, geometry, trigonometry, data-interpretation, statistics-probability); Miscellaneous (surds-indices, partnership, ages, simplification, sequences-series); Applied/Banking (decimal-fractions, square-cube-roots, chain-rule, boats-streams, problems-on-trains, races-games, logarithms, calendar, clocks, stocks-shares, true-discount, bankers-discount); `TOPIC_DATA` in `quant/[topic]/page.tsx` covers 31 slugs (excludes geometry — it is a standalone visualizer route, not in TOPIC_DATA); sidebar groups: Arithmetic / Advanced / Higher Maths / Visualizer / Phase 4 / Applied / Banking; see `docs/plans/2026-03-01-quant-syllabus.md`
 - `ConceptFormula { name, formula, whenToUse }` — one entry per core formula; used in `QuantConcept.formulas[]`
 - `QuantConcept { topic, title, description, keyIdea, formulas: ConceptFormula[], examTags: string[], examRelevance: string }` — `examTags` is a string array of exam names (e.g. `["SSC CGL", "IBPS PO"]`) rendered as chips; `examRelevance` is a prose note; data files at `src/data/quant/concepts/{topic}.ts`
 - `QuantTrick { id, topic, type ("formula-shortcut"|"mental-math"), title, description, formula?, example: { problem, solution }, timeSaved? }` — data files at `src/data/quant/tricks/{topic}.ts`; each file exports exactly 5 tricks
@@ -211,7 +223,7 @@ src/
 - Phase 1 ships all subject areas together (no staggered rollout)
 
 ### Layout Components
-- `SubjectLayout` (`src/components/layout/SubjectLayout.tsx`) — `'use client'`; wrap all subject hub pages; provides breadcrumb + sticky sidebar nav (desktop, `w-56`) + dropdown/pill nav (mobile); props: `subjectName`, `subjectColor`, `subjectSlug`, `links[]`, `children`, `showHeading?` (default `true`); `showHeading=false` suppresses the H1 (quant layout uses this — each topic page renders its own `<h1>`); `NavLink` has optional `group?` string; `groupLinks()` helper groups consecutive links with the same `group` value under a label header in sidebar; active link uses **exact** `pathname === link.href` (not `startsWith`); active sidebar item bg: `${subjectColor}15` (hex alpha); sidebar sticky wrapper is `div.sticky.top-20`; nav has `overflow-y-auto` + inline `style={{ maxHeight: 'calc(100vh - 5rem)' }}` — **do NOT use Tailwind arbitrary `calc()` here** (missing spaces in `calc(100vh-5rem)` generates invalid CSS; `5rem` matches `top-20`); mobile: when `hasGroups` is true renders `<select>` with `<optgroup>` per group + `--tw-ring-color: subjectColor` focus ring; otherwise renders horizontal pill scroll nav
+- `SubjectLayout` (`src/components/layout/SubjectLayout.tsx`) — `'use client'`; wrap all subject hub pages; provides breadcrumb + sticky sidebar nav (desktop, `w-56`) + dropdown/pill nav (mobile); props: `subjectName`, `subjectColor`, `subjectSlug`, `links[]`, `children`, `showHeading?` (default `true`); `showHeading=false` suppresses the H1 (quant layout uses this — each topic page renders its own `<h1>`); `NavLink` has optional `group?` string; `groupLinks()` helper groups consecutive links with the same `group` value under a label header in sidebar; **sentinel must be `undefined`** (`let currentGroup: string | null | undefined = undefined`) — links without a `group` resolve to `null` via `?? null`, so initializing to `null` would silently skip the first group push and crash on `groups[-1].links`; active link uses **exact** `pathname === link.href` (not `startsWith`); active sidebar item bg: `${subjectColor}15` (hex alpha); sidebar sticky wrapper is `div.sticky.top-20`; nav has `overflow-y-auto` + inline `style={{ maxHeight: 'calc(100vh - 5rem)' }}` — **do NOT use Tailwind arbitrary `calc()` here** (missing spaces in `calc(100vh-5rem)` generates invalid CSS; `5rem` matches `top-20`); mobile: when `hasGroups` is true renders `<select>` with `<optgroup>` per group + `--tw-ring-color: subjectColor` focus ring; otherwise renders horizontal pill scroll nav
 - `BentoSubjectGrid` (`src/app/_components/BentoSubjectGrid.tsx`) — `'use client'`; renders the home-page subject grid as a bento layout; props: `{ subjects: SubjectInfo[] }`; WIDE_SUBJECTS (`quant`, `polity`, `science`) span 2 cols via `bento-wide` class; each card is a `motion.div` with `whileHover` scale 1.02 + box-shadow and `whileTap` scale 0.98; card gradient: `linear-gradient(145deg, subjectLightColor 0%, #ffffff 50%, #ffffff 100%)`; icon + route pills rendered per subject; `SUBJECT_ICONS` typed as `Record<string, React.ComponentType<LucideProps>>`; purple hex `#8b5cf6`
 - `SubjectCardGrid` (`src/app/_components/SubjectCardGrid.tsx`) — `'use client'`; simpler alternative to BentoSubjectGrid; uses `SubjectCard` from `@/components/ui/SubjectCard`; layout: `grid gap-6 sm:grid-cols-2 lg:grid-cols-3`; no Framer Motion, no route pills, no Explore arrow; icon map uses inline JSX nodes; purple hex `#a855f7` (differs from BentoSubjectGrid)
 - `Header` (`src/components/layout/Header.tsx`) — `'use client'`; sticky (`z-50`, `backdrop-blur-sm`); reads `streak` from `useProgressStore` and shows flame badge when `streak > 0`; active link detected via `pathname.startsWith(link.href)`; NAV_LINKS use per-subject `hover:text-subject-{slug}` color classes; mobile hamburger collapses to full-width dropdown
@@ -244,9 +256,9 @@ src/
 - `economics/page.tsx` — hub page shows both visualizers (flows, budget) with "Coming Soon" badges even though sub-routes are implemented; badge is a UI affordance, not a gate
 
 ### Quant Topic Pages
-- `/quant/[topic]` — server component; `TOPIC_DATA` record covers all 19 slugs (Phases 1–3 + Miscellaneous fully wired — no stubs); calls `notFound()` for unknown slugs; `generateStaticParams()` uses `Object.keys(TOPIC_DATA)` — add a new slug to `TOPIC_DATA` and it's automatically statically generated; `generateMetadata` produces per-topic SEO title + description
-- `quant/layout.tsx` — wraps with `SubjectLayout`; `showHeading=false`; `subjectColor="#3b82f6"`; sidebar links grouped: Arithmetic (5) / Advanced (5) / Higher Maths (4) / Visualizer (geometry) / Phase 4 (5 — surds-indices, partnership, ages, simplification, sequences-series)
-- `quant/page.tsx` — hub page; `SECTIONS` array drives layout (Arithmetic / Advanced Arithmetic / Higher Mathematics / Visualizer / Miscellaneous); each `Topic` object has `hasTabs: boolean`; all implemented topic cards link directly with no "Coming Soon"
+- `/quant/[topic]` — server component; `TOPIC_DATA` record covers all 31 slugs (Phases 1–3 + Miscellaneous + Applied + Banking — no stubs); calls `notFound()` for unknown slugs; `generateStaticParams()` uses `Object.keys(TOPIC_DATA)` — add a new slug to `TOPIC_DATA` and it's automatically statically generated; `generateMetadata` produces per-topic SEO title + description
+- `quant/layout.tsx` — wraps with `SubjectLayout`; `showHeading=false`; `subjectColor="#3b82f6"`; sidebar links grouped: Arithmetic (5) / Advanced (5) / Higher Maths (4) / Visualizer (geometry) / Phase 4 (5) / Applied (7: decimal-fractions, square-cube-roots, chain-rule, boats-streams, problems-on-trains, races-games, logarithms) / Banking (5: calendar, clocks, stocks-shares, true-discount, bankers-discount)
+- `quant/page.tsx` — hub page; `SECTIONS` array drives layout (Arithmetic / Advanced Arithmetic / Higher Mathematics / Visualizer / Miscellaneous / Applied Problems / Banking & Special Topics — 7 sections total); Applied Problems section has 7 topics (includes logarithms); each `Topic` object has `hasTabs: boolean`; all implemented topic cards link directly with no "Coming Soon"
 - `TopicTabs` (`src/components/visualizers/quant/TopicTabs.tsx`) — `'use client'`; props: `{ concept: QuantConcept, tricks: QuantTrick[], problems: MathProblem[] }`; local `useState<'concept'|'tricks'|'problems'>`; Problems tab renders `<StepSolver problems={problems} />`; tab switch uses `motion.div` with `key={activeTab}` fade (`initial={{ opacity:0, y:8 }}`, 0.2s); active tab: `border-subject-quant text-subject-quant border-b-2 -mb-px`
 - `ConceptPanel` (`src/components/visualizers/quant/ConceptPanel.tsx`) — server-compatible (no hooks, no Framer Motion); renders: title h2, description, Key Idea callout (`border-l-4 border-subject-quant bg-subject-quant-light`), formulas grid (name + monospace formula + `whenToUse`), exam tags chips (`rounded-full bg-subject-quant-light`), exam relevance prose; reads `concept.examTags[]` string array
 - `TricksPanel` (`src/components/visualizers/quant/TricksPanel.tsx`) — filters tricks into `formulaShortcuts` + `mentalMath` arrays; each group rendered in a `<section>` with uppercase tracking-wider label; renders `TrickCard` per trick
@@ -261,7 +273,7 @@ src/
 ## Phase Plan
 
 **Phase 1 MVP — ships all together:**
-- Quant: per-topic Concept + Tricks + Problems pages for 19 topics via `/quant/[topic]` — Phase 1: percentage, profit-loss, ratio, time-speed-distance, time-work; Phase 2: number-system, average, simple-compound-interest, mixture-alligation, mensuration; Phase 3: algebra, trigonometry, data-interpretation, statistics-probability; Miscellaneous (wired): surds-indices, partnership, ages, simplification, sequences-series; geometry visualizer
+- Quant: per-topic Concept + Tricks + Problems pages for 31 topics via `/quant/[topic]` — Phase 1: percentage, profit-loss, ratio, time-speed-distance, time-work; Phase 2: number-system, average, simple-compound-interest, mixture-alligation, mensuration; Phase 3: algebra, trigonometry, data-interpretation, statistics-probability; Miscellaneous: surds-indices, partnership, ages, simplification, sequences-series; Applied: decimal-fractions, square-cube-roots, chain-rule, boats-streams, problems-on-trains, races-games, logarithms; Banking: calendar, clocks, stocks-shares, true-discount, bankers-discount; geometry visualizer (standalone)
 - Reasoning: seating solver, syllogism Venn builder, series pattern detector
 - General Awareness: Polity constitutional explorer (network graph), History zoomable timeline + cause-effect chains, Geography interactive India map (river layer), Economics policy flow diagrams + budget treemap
 - Science: periodic table explorer, human body systems
@@ -277,7 +289,7 @@ src/
 **Success targets:** 50K MAU in 6 months; 5+ min avg. time on visualizer pages; 100K monthly organic visits in 12 months
 
 **Plan documents:** `docs/plans/` holds approved implementation plan and product roadmap; consult before adding new routes or modules
-- `docs/plans/2026-03-01-quant-syllabus.md` — approved quant syllabus; originally 15 topics across 3 phases; implementation has expanded to 19 topics (+ Miscellaneous: surds-indices, partnership, ages, simplification, sequences-series); each topic structured as 5 Concepts + 5 Tricks + 5 Problem Types; exams targeted: SSC CGL/CHSL, IBPS PO/Clerk, SBI PO, RRB NTPC, CDS, UPSC CSAT
+- `docs/plans/2026-03-01-quant-syllabus.md` — approved quant syllabus; originally 15 topics across 3 phases; implementation has expanded to 31 topics (+ Miscellaneous 5, Applied 7, Banking 5 from R.S. Aggarwal); each topic structured as 5 Concepts + 5 Tricks + 5 Problem Types; exams targeted: SSC CGL/CHSL, IBPS PO/Clerk, SBI PO, RRB NTPC, CDS, UPSC CSAT
 - `docs/plans/2026-03-01-quant-complete-design.md` — approved design for the Concept + Tricks + Problems per-topic feature; data model, component specs, routing rationale
 - `docs/plans/2026-03-01-quant-complete-implementation.md` — task-by-task implementation guide for the quant complete feature
 <!-- END AUTO-MANAGED -->
