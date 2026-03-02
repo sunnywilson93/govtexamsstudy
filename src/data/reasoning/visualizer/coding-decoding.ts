@@ -26,7 +26,7 @@ export const codingDecodingProblems: CodingDecodingProblem[] = [
     id: "cd-2",
     type: "letter-shift",
     question:
-      "In a certain code, each letter is replaced by the letter 2 places before it in the alphabet (A wraps to Y). If MIND is written as KILB, how is HOPE coded?",
+      "In a certain code, each letter is replaced by the letter 2 places before it in the alphabet (A wraps to Y). If MIND is written as KGLB, how is HOPE coded?",
     codingRules: [
       { input: "M", output: "K", pattern: "−2 shift: M(13) → K(11)" },
       { input: "I", output: "G", pattern: "−2 shift: I(9) → G(7)" },
