@@ -22,7 +22,7 @@ interface SubjectLayoutProps {
 
 function groupLinks(links: NavLink[]) {
   const groups: { name: string | null; links: NavLink[] }[] = []
-  let currentGroup: string | null = null
+  let currentGroup: string | null | undefined = undefined
 
   links.forEach((link) => {
     const group = link.group ?? null
