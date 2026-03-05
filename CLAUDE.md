@@ -15,7 +15,7 @@ India's first interactive visual learning platform for government exam preparati
 
 ### Tech Stack
 
-- Next.js (App Router) + TypeScript — path alias `@/*` maps to `src/*`; `next.config.js` uses CJS (`module.exports`), `reactStrictMode: true`, `poweredByHeader: false`
+- Next.js (App Router) + TypeScript — path alias `@/*` maps to `src/*`; `next.config.js` uses CJS (`module.exports`), `reactStrictMode: true`, `poweredByHeader: false`; security headers on all routes via `async headers()`: `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`, `Referrer-Policy: strict-origin-when-cross-origin`, `Permissions-Policy: camera=(), microphone=(), geolocation=()`
 - Tailwind CSS v4 (CSS-first: `@import "tailwindcss"` + `@theme` block in `globals.css`; no `tailwind.config.ts`)
 - Framer Motion for step-by-step animations
 - Zustand + Immer for visualizer state management
@@ -116,10 +116,22 @@ src/
 /quant/stocks-shares           Stocks & Shares (Banking)
 /quant/true-discount           True Discount (Banking)
 /quant/bankers-discount        Banker's Discount (Banking)
-/reasoning                     Reasoning & Logic hub
-/reasoning/seating             Seating arrangement solver
-/reasoning/syllogism           Venn diagram builder
-/reasoning/series              Pattern detection visualizer
+/reasoning                     Reasoning & Logic hub — 3 sections: Interactive Visualizers (7) + Verbal Reasoning (5) + Logical Reasoning (2); same SECTIONS pattern as quant
+/reasoning/seating             Seating arrangement solver (standalone, unchanged)
+/reasoning/syllogism           Venn diagram builder (standalone, unchanged)
+/reasoning/series              Pattern detection visualizer (standalone, unchanged)
+/reasoning/[topic]             Dynamic route — local discriminated-union TOPIC_DATA (kind: 'tabs' | 'visualizer'); 11 slugs; bespoke visualizer or Concept+Tricks+Problems tabs; generateStaticParams = Object.keys(TOPIC_DATA)
+/reasoning/blood-relations     Family tree SVG visualizer — step-by-step node reveal (bespoke)
+/reasoning/direction-distance  Compass grid animated path drawing (bespoke)
+/reasoning/coding-decoding     Cipher table + letter-highlight decode animation (bespoke)
+/reasoning/puzzles             Floor/box grid clue-by-clue placement (bespoke)
+/reasoning/inequalities        Concepts + Tricks + Problems tabs (Verbal)
+/reasoning/analogies           Concepts + Tricks + Problems tabs (Verbal)
+/reasoning/classification      Concepts + Tricks + Problems tabs (Verbal)
+/reasoning/alphabet-tests      Concepts + Tricks + Problems tabs (Verbal)
+/reasoning/input-output        Concepts + Tricks + Problems tabs (Verbal)
+/reasoning/statement-conclusions Concepts + Tricks + Problems tabs (Logical)
+/reasoning/cause-effect        Concepts + Tricks + Problems tabs (Logical)
 /polity                        Polity hub
 /polity/articles               Interactive Article explorer
 /polity/amendments             Amendment timeline
@@ -202,14 +214,24 @@ src/
 - `SeatingProblem { id, type, clues[], people[], steps[], solution }`
 - `SyllogismProblem { id, statements[], conclusions[], steps[] }`
 - `VennStep { id, description, circles[], regions[] }`
+- `ReasoningTopic` union — 11 slugs: `"blood-relations" | "direction-distance" | "coding-decoding" | "puzzles" | "inequalities" | "analogies" | "classification" | "statement-conclusions" | "input-output" | "alphabet-tests" | "cause-effect"`; first 4 are bespoke visualizer topics, last 7 are tabs topics
+- `ReasoningRule { name, rule, whenToUse }` — "rule" field mirrors `ConceptFormula.formula` for reasoning context
+- `ReasoningConcept { topic, title, description, keyIdea, rules: ReasoningRule[], examTags: string[], examRelevance: string }` — mirrors `QuantConcept`; data files at `src/data/reasoning/concepts/{topic}.ts`
+- `ReasoningTrick { id, topic, type ("pattern-shortcut"|"elimination"), title, description, formula?, example: { problem, solution }, timeSaved? }` — mirrors `QuantTrick`; data files at `src/data/reasoning/tricks/{topic}.ts`; 5 per topic
+- `ReasoningStep { id, operation, expression, result, explanation }` — mirrors `MathStep`
+- `ReasoningProblem { id, topic, title, question, steps: ReasoningStep[], answer, difficulty }` — data files at `src/data/reasoning/problems/{topic}-problems.ts`; 5 per topic
+- Visualizer problem types: `BloodRelationProblem { id, question, nodes: BloodRelationNode[], edges: BloodRelationEdge[], steps: string[], answer }`; `BloodRelationNode { id, name, gender ("M"|"F"), generation }` (0=query, -1=parent, +1=child); `BloodRelationEdge { from, to, label }`; `DirectionProblem { id, question, steps: DirectionStep[], finalDirection, finalDistance, answer }`; `DirectionStep { id, direction ("N"|"S"|"E"|"W"|"NE"|...), distance, label }`; `CodingDecodingProblem { id, type ("letter-shift"|"word-mapping"|"symbol-substitution"), question, codingRules: CodingRule[], steps, answer }`; `PuzzleProblem { id, type ("floor"|"box"), totalPositions, clues[], steps[], solution: PuzzleCell[] }`; `PuzzleCell { position, occupant }`
+- Data file layout: `src/data/reasoning/concepts/` (7 tabs topics), `tricks/` (7), `problems/` (7), `visualizer/` (4 files for blood-relations, direction-distance, coding-decoding, puzzles); each file exports exactly 5 entries
 
 ### SEO Infrastructure
-- `src/app/sitemap.ts` — auto-generates sitemap; priority 1.0 for `/`, 0.8 for subject hubs, 0.6 for sub-routes
+- `src/app/sitemap.ts` — `baseUrl` at module level; enumerates `QUANT_TOPICS` (31 slugs, all groups) + `REASONING_TOPICS` (14 slugs: seating, syllogism, series + 11 dynamic) as module-level arrays; generates `/quant/{slug}` and `/reasoning/{slug}` routes alongside static routes; static routes include subject hubs, polity (3), history (2), geography (2), economics (3), science (2), `/practice` — `/quant/step-solver` and `/dashboard` not included; priority 1.0 for `/`, 0.8 for depth-1, 0.6 for depth 2+; `lastModified: new Date()`
 - `src/app/robots.ts` — blocks `/api/` paths
+- `src/components/JsonLd.tsx` — server component; renders `<script type="application/ld+json">` with static WebSite schema; schema: `inLanguage:"en-IN"`, `audience.geographicArea: Country/India`, `publisher.areaServed: Country/India`, `potentialAction: SearchAction`; JSON stringified at module level (XSS-safe — no user input); imported in `RootLayout` and placed in `<head>`
+- Root metadata (`src/app/layout.tsx`): `metadataBase: new URL('https://govtexamsstudy.org')`; India-specific `keywords` array (SSC CGL, IBPS PO, RRB NTPC, UPPSC, MPPSC, etc.); `openGraph.locale: en_IN`; `icons.icon: /favicon.svg`; full OG + Twitter cards; `robots: { index: true, follow: true }`; `<html lang="en-IN">`
 
 ### Analytics
-- Google Analytics 4 (GA4) — Measurement ID `G-GPQEH3V7KN`; `GA_MEASUREMENT_ID` constant defined at module level in `src/app/layout.tsx`
-- Two `next/script` tags with `strategy="afterInteractive"` placed inside explicit `<head>` in `RootLayout`: GTM script loader + inline `gtag('config', ...)` init
+- Google Analytics 4 (GA4) — Measurement ID `G-GPQEH3V7KN`; `GA_MEASUREMENT_ID` + `isProduction` constants at module level in `src/app/layout.tsx`
+- Two `next/script` tags with `strategy="afterInteractive"` placed inside explicit `<head>` in `RootLayout`, wrapped in `{isProduction && <>...</>}` — GA loads only in production (`NODE_ENV === 'production'`), skipped on localhost
 <!-- END AUTO-MANAGED -->
 
 <!-- AUTO-MANAGED: patterns -->
@@ -228,7 +250,7 @@ src/
 - `SubjectCardGrid` (`src/app/_components/SubjectCardGrid.tsx`) — `'use client'`; simpler alternative to BentoSubjectGrid; uses `SubjectCard` from `@/components/ui/SubjectCard`; layout: `grid gap-6 sm:grid-cols-2 lg:grid-cols-3`; no Framer Motion, no route pills, no Explore arrow; icon map uses inline JSX nodes; purple hex `#a855f7` (differs from BentoSubjectGrid)
 - `Header` (`src/components/layout/Header.tsx`) — `'use client'`; sticky (`z-50`, `backdrop-blur-sm`); reads `streak` from `useProgressStore` and shows flame badge when `streak > 0`; active link detected via `pathname.startsWith(link.href)`; NAV_LINKS use per-subject `hover:text-subject-{slug}` color classes; mobile hamburger collapses to full-width dropdown
 - `Footer` (`src/components/layout/Footer.tsx`) — server component; dark (`bg-gray-900`); 4-col grid (sm: 2-col, lg: 4-col): Brand, Subjects, Visualizers, Exams Covered; TOOL_LINKS covers: Practice MCQs, Progress Dashboard, Math Solver, Article Explorer, India Map, Periodic Table
-- Home hero 2-col layout uses CSS grid (`lg:grid-cols-[1fr_300px] lg:gap-16`), not flexbox — left col: headline + CTAs; right col: 2×2 stats panel (`grid-cols-2 gap-3 max-w-xs`); do not revert to flex
+- Home hero 2-col layout uses CSS grid (`lg:grid-cols-[1fr_260px] lg:gap-16`), not flexbox — left col: headline + CTAs; right col: single-column vertical stats panel (`grid-cols-1 gap-3 max-w-[220px]`, 3 stats: "15+ Visualizers", "7 Subjects", "100% Free"); do not revert to flex; Featured Visualizers section uses `sm:grid-cols-2` (2-col grid); feature cards use inline `backgroundColor: feature.color` on icon div, NOT `.feature-card-bar` class
 
 ### Visualizer Store Integration
 - All visualizer components consume `useVisualizerStore` directly — not via props
@@ -255,18 +277,33 @@ src/
 - `economics/layout.tsx` — wraps with `SubjectLayout`; `subjectName="Indian Economy"` (not "Economics" or the slug); `subjectColor="#14b8a6"`; links to `/economics/flows` and `/economics/budget`
 - `economics/page.tsx` — hub page shows both visualizers (flows, budget) with "Coming Soon" badges even though sub-routes are implemented; badge is a UI affordance, not a gate
 
+### Reasoning Topic Pages
+- `/reasoning/[topic]` — server component; local `TOPIC_DATA` (discriminated union: `TabsTopicData { kind: 'tabs', concept, tricks, problems, label, description }` | `VisualizerTopicData { kind: 'visualizer', type: 'blood-relations'|'direction-distance'|'coding-decoding'|'puzzles', label, description }`); visualizer data files (`bloodRelationProblems`, `directionProblems`, `codingDecodingProblems`, `puzzleProblems`) imported at top of file and passed as `problem={problems[0]}` to each bespoke component; tabs slugs render `ReasoningTopicTabs`; `notFound()` for unknown slugs; `generateStaticParams()` = `Object.keys(TOPIC_DATA)` (11 slugs); `generateMetadata` for per-topic SEO
+- `reasoning/layout.tsx` — wraps with `SubjectLayout`; `subjectColor="#8b5cf6"`; `showHeading=false`; 14 sidebar links in 3 groups: Visualizers (seating, blood-relations, direction-distance, coding-decoding, puzzles, syllogism, series) / Verbal (inequalities, analogies, classification, alphabet-tests, input-output) / Logical (statement-conclusions, cause-effect)
+- `reasoning/page.tsx` — hub page; `SECTIONS` pattern; 3 sections: Interactive Visualizers (7, hasTabs:false) / Verbal Reasoning (5, hasTabs:true) / Logical Reasoning (2, hasTabs:true)
+- `ReasoningTopicTabs` (`src/components/visualizers/reasoning/ReasoningTopicTabs.tsx`) — mirrors `TopicTabs`; props: `{ concept: ReasoningConcept, tricks: ReasoningTrick[], problems: ReasoningProblem[] }`; uses `reasoning` subject color (`#8b5cf6`)
+- `ReasoningConceptPanel` (`src/components/visualizers/reasoning/ReasoningConceptPanel.tsx`) — mirrors `ConceptPanel`; renders `rules[]` (labeled "Rules") instead of `formulas[]`
+- `ReasoningTricksPanel` (`src/components/visualizers/reasoning/ReasoningTricksPanel.tsx`) — mirrors `TricksPanel`; groups by `"pattern-shortcut"` and `"elimination"` types
+- Bespoke visualizers: `BloodRelationVisualizer` (SVG family tree, step-by-step node reveal, final answer path in `#8b5cf6`); `DirectionVisualizer` (SVG compass grid, `motion.line` animated path, dashed straight-line final segment); `CodingDecodingVisualizer` (cipher table rows + synchronized input/coded strip highlights); `PuzzleVisualizer` (vertical/horizontal position grid, `motion.div` layout animation per entity, eliminated=red / confirmed=green chips) — all driven by `StepController` via `useVisualizerStore`
+
 ### Quant Topic Pages
 - `/quant/[topic]` — server component; `TOPIC_DATA` record covers all 31 slugs (Phases 1–3 + Miscellaneous + Applied + Banking — no stubs); calls `notFound()` for unknown slugs; `generateStaticParams()` uses `Object.keys(TOPIC_DATA)` — add a new slug to `TOPIC_DATA` and it's automatically statically generated; `generateMetadata` produces per-topic SEO title + description
-- `quant/layout.tsx` — wraps with `SubjectLayout`; `showHeading=false`; `subjectColor="#3b82f6"`; sidebar links grouped: Arithmetic (5) / Advanced (5) / Higher Maths (4) / Visualizer (geometry) / Phase 4 (5) / Applied (7: decimal-fractions, square-cube-roots, chain-rule, boats-streams, problems-on-trains, races-games, logarithms) / Banking (5: calendar, clocks, stocks-shares, true-discount, bankers-discount)
+- `quant/layout.tsx` — wraps with `SubjectLayout`; `showHeading=false`; `subjectColor="#3b82f6"`; 32 sidebar links across 7 groups: Arithmetic (5) / Advanced (5) / Higher Maths (4) / Visualizer (geometry, 1) / Phase 4 (5: surds-indices, partnership, ages, simplification, sequences-series) / Applied (7: decimal-fractions, square-cube-roots, chain-rule, boats-streams, problems-on-trains, races-games, logarithms) / Banking (5: calendar, clocks, stocks-shares, true-discount, bankers-discount); logarithms is the last entry in Applied group; hub page "Miscellaneous" section = sidebar "Phase 4" group
 - `quant/page.tsx` — hub page; `SECTIONS` array drives layout (Arithmetic / Advanced Arithmetic / Higher Mathematics / Visualizer / Miscellaneous / Applied Problems / Banking & Special Topics — 7 sections total); Applied Problems section has 7 topics (includes logarithms); each `Topic` object has `hasTabs: boolean`; all implemented topic cards link directly with no "Coming Soon"
 - `TopicTabs` (`src/components/visualizers/quant/TopicTabs.tsx`) — `'use client'`; props: `{ concept: QuantConcept, tricks: QuantTrick[], problems: MathProblem[] }`; local `useState<'concept'|'tricks'|'problems'>`; Problems tab renders `<StepSolver problems={problems} />`; tab switch uses `motion.div` with `key={activeTab}` fade (`initial={{ opacity:0, y:8 }}`, 0.2s); active tab: `border-subject-quant text-subject-quant border-b-2 -mb-px`
-- `ConceptPanel` (`src/components/visualizers/quant/ConceptPanel.tsx`) — server-compatible (no hooks, no Framer Motion); renders: title h2, description, Key Idea callout (`border-l-4 border-subject-quant bg-subject-quant-light`), formulas grid (name + monospace formula + `whenToUse`), exam tags chips (`rounded-full bg-subject-quant-light`), exam relevance prose; reads `concept.examTags[]` string array
+- `ConceptPanel` (`src/components/visualizers/quant/ConceptPanel.tsx`) — server-compatible (no hooks, no Framer Motion); renders: title h2, description, Key Idea callout (`border-l-4 border-subject-quant bg-subject-quant-light`), "Core Formulas" section (name + monospace formula in `text-subject-quant` + `whenToUse`), "Relevant Exams" section (chips `rounded-full bg-subject-quant-light` + `examRelevance` prose); reads `concept.examTags[]` string array
 - `TricksPanel` (`src/components/visualizers/quant/TricksPanel.tsx`) — filters tricks into `formulaShortcuts` + `mentalMath` arrays; each group rendered in a `<section>` with uppercase tracking-wider label; renders `TrickCard` per trick
 - `TrickCard` (`src/components/visualizers/quant/TrickCard.tsx`) — `'use client'`; `whileHover` scale 1.01 (transition 0.15s); type badge: `formula-shortcut`=bg-blue-100/text-blue-700, `mental-math`=bg-amber-100/text-amber-700; optional `formula` in monospace block; example block (problem + solution); optional `timeSaved` chip (bg-green-100/text-green-700)
 - Data layout: `src/data/quant/concepts/{topic}.ts`, `src/data/quant/tricks/{topic}.ts`, `src/data/quant/problems/{topic}-problems.ts`; each file has exactly 5 entries
 
 ### Testing
 - TDD: write failing tests first (Vitest + React Testing Library), then implement; `StepController` tests are the canonical example
+- Quant visualizer test suite lives at `src/components/visualizers/quant/__tests__/`:
+  - `ConceptPanel.test.tsx` — renders title, description, key idea callout, formula name+string, exam tags chips, exam relevance note
+  - `TopicTabs.test.tsx` — renders all three tab buttons, shows Concept content by default, tab click switches content
+  - `TrickCard.test.tsx` — renders trick title, description, type badge, optional formula block, example block, optional timeSaved chip
+  - `TricksPanel.test.tsx` — renders Formula Shortcuts and Mental Math sections, groups tricks correctly
+  - `StepSolver.test.tsx` — renders topic selector, shows first problem title, shows step counter, navigates to next step; uses `useVisualizerStore.getState().reset()` in `beforeEach`
 <!-- END AUTO-MANAGED -->
 
 <!-- AUTO-MANAGED: git-insights -->
@@ -274,7 +311,7 @@ src/
 
 **Phase 1 MVP — ships all together:**
 - Quant: per-topic Concept + Tricks + Problems pages for 31 topics via `/quant/[topic]` — Phase 1: percentage, profit-loss, ratio, time-speed-distance, time-work; Phase 2: number-system, average, simple-compound-interest, mixture-alligation, mensuration; Phase 3: algebra, trigonometry, data-interpretation, statistics-probability; Miscellaneous: surds-indices, partnership, ages, simplification, sequences-series; Applied: decimal-fractions, square-cube-roots, chain-rule, boats-streams, problems-on-trains, races-games, logarithms; Banking: calendar, clocks, stocks-shares, true-discount, bankers-discount; geometry visualizer (standalone)
-- Reasoning: seating solver, syllogism Venn builder, series pattern detector
+- Reasoning: 14 topics — 3 existing standalone visualizers (seating, syllogism, series) + 4 new bespoke visualizers (blood-relations, direction-distance, coding-decoding, puzzles) + 7 tabs topics (inequalities, analogies, classification, alphabet-tests, input-output, statement-conclusions, cause-effect) via `/reasoning/[topic]`; design approved in `docs/plans/2026-03-02-reasoning-complete-design.md`
 - General Awareness: Polity constitutional explorer (network graph), History zoomable timeline + cause-effect chains, Geography interactive India map (river layer), Economics policy flow diagrams + budget treemap
 - Science: periodic table explorer, human body systems
 - Gamification: daily streak, topic mastery badges (Bronze/Silver/Gold), progress radar chart, spaced repetition prompts
@@ -292,4 +329,6 @@ src/
 - `docs/plans/2026-03-01-quant-syllabus.md` — approved quant syllabus; originally 15 topics across 3 phases; implementation has expanded to 31 topics (+ Miscellaneous 5, Applied 7, Banking 5 from R.S. Aggarwal); each topic structured as 5 Concepts + 5 Tricks + 5 Problem Types; exams targeted: SSC CGL/CHSL, IBPS PO/Clerk, SBI PO, RRB NTPC, CDS, UPSC CSAT
 - `docs/plans/2026-03-01-quant-complete-design.md` — approved design for the Concept + Tricks + Problems per-topic feature; data model, component specs, routing rationale
 - `docs/plans/2026-03-01-quant-complete-implementation.md` — task-by-task implementation guide for the quant complete feature
+- `docs/plans/2026-03-02-reasoning-complete-design.md` — approved design for Reasoning expansion; hybrid model (3 existing standalone visualizers + 4 new bespoke visualizers + 7 tabs topics = 14 total); data models, component specs, visualizer interaction designs, routing rationale
+- `docs/plans/2026-03-02-reasoning-complete-implementation.md` — task-by-task implementation guide for the reasoning expansion
 <!-- END AUTO-MANAGED -->

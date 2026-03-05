@@ -22,6 +22,7 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://govtexamsstudy.org'),
   title: {
     default: 'GovtExamsStudy - Free Interactive Visual Learning for Govt Exams',
     template: '%s | GovtExamsStudy',
@@ -51,12 +52,8 @@ export const metadata: Metadata = {
     'Indian history for SSC',
   ],
   authors: [{ name: 'GovtExamsStudy' }],
-  alternates: {
-    canonical: 'https://govtexamsstudy.org',
-    languages: {
-      'en-IN': 'https://govtexamsstudy.org',
-      'x-default': 'https://govtexamsstudy.org',
-    },
+  icons: {
+    icon: '/favicon.svg',
   },
   openGraph: {
     title: 'GovtExamsStudy - Free Interactive Visual Learning for Indian Govt Exams',

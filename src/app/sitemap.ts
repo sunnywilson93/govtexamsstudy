@@ -1,28 +1,66 @@
 import type { MetadataRoute } from 'next'
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://govtexamsstudy.org'
+const baseUrl = 'https://govtexamsstudy.org'
 
-  const routes = [
+const QUANT_TOPICS = [
+  'percentage',
+  'profit-loss',
+  'ratio',
+  'time-speed-distance',
+  'time-work',
+  'number-system',
+  'average',
+  'simple-compound-interest',
+  'mixture-alligation',
+  'mensuration',
+  'algebra',
+  'trigonometry',
+  'data-interpretation',
+  'statistics-probability',
+  'surds-indices',
+  'partnership',
+  'ages',
+  'simplification',
+  'sequences-series',
+  'decimal-fractions',
+  'square-cube-roots',
+  'chain-rule',
+  'boats-streams',
+  'problems-on-trains',
+  'races-games',
+  'calendar',
+  'clocks',
+  'stocks-shares',
+  'true-discount',
+  'bankers-discount',
+  'logarithms',
+]
+
+const REASONING_TOPICS = [
+  'seating',
+  'syllogism',
+  'series',
+  'blood-relations',
+  'direction-distance',
+  'coding-decoding',
+  'puzzles',
+  'inequalities',
+  'analogies',
+  'classification',
+  'statement-conclusions',
+  'input-output',
+  'alphabet-tests',
+  'cause-effect',
+]
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date()
+
+  const staticRoutes = [
     '/',
     '/quant',
-    '/quant/step-solver',
     '/quant/geometry',
     '/reasoning',
-    '/reasoning/seating',
-    '/reasoning/syllogism',
-    '/reasoning/series',
-    '/reasoning/blood-relations',
-    '/reasoning/direction-distance',
-    '/reasoning/coding-decoding',
-    '/reasoning/puzzles',
-    '/reasoning/inequalities',
-    '/reasoning/analogies',
-    '/reasoning/classification',
-    '/reasoning/statement-conclusions',
-    '/reasoning/input-output',
-    '/reasoning/alphabet-tests',
-    '/reasoning/cause-effect',
     '/polity',
     '/polity/articles',
     '/polity/amendments',
@@ -39,13 +77,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/science/periodic-table',
     '/science/human-body',
     '/practice',
-    '/dashboard',
   ]
 
-  return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: route === '/' ? 'daily' : 'weekly',
-    priority: route === '/' ? 1 : route.split('/').length === 2 ? 0.8 : 0.6,
-  }))
+  const quantRoutes = QUANT_TOPICS.map((slug) => `/quant/${slug}`)
+  const reasoningRoutes = REASONING_TOPICS.map((slug) => `/reasoning/${slug}`)
+
+  const allRoutes = [...staticRoutes, ...quantRoutes, ...reasoningRoutes]
+
+  return allRoutes.map((route) => {
+    const depth = route.split('/').filter(Boolean).length
+    return {
+      url: `${baseUrl}${route}`,
+      lastModified: now,
+      changeFrequency: route === '/' ? 'daily' : 'weekly',
+      priority: route === '/' ? 1.0 : depth === 1 ? 0.8 : 0.6,
+    }
+  })
 }
