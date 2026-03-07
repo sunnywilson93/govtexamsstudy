@@ -10,10 +10,9 @@ beforeEach(() => {
 })
 
 describe('StepSolver', () => {
-  it('renders topic selector', () => {
+  it('renders problem selector', () => {
     render(<StepSolver problems={percentageProblems} />)
-    expect(screen.getByLabelText('Select topic')).toBeInTheDocument()
-    expect(screen.getByRole('option', { name: 'percentage' })).toBeInTheDocument()
+    expect(screen.getByLabelText('Select problem')).toBeInTheDocument()
   })
 
   it('shows problem title when selected', () => {

@@ -4,58 +4,31 @@ import { useEffect, useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useVisualizerStore } from '@/store/visualizerStore'
 import { StepController } from '@/components/ui/StepController'
-import { ExpressionDisplay } from './ExpressionDisplay'
-import { VariablesPanel } from './VariablesPanel'
-import type { MathProblem, QuantTopic } from '@/types/quant'
+import type { MathProblem } from '@/types/quant'
 
 interface StepSolverProps {
   problems: MathProblem[]
 }
 
 export function StepSolver({ problems }: StepSolverProps) {
-  const topics = useMemo(() => {
-    const set = new Set<QuantTopic>()
-    for (const p of problems) set.add(p.topic)
-    return Array.from(set)
-  }, [problems])
-
-  const [selectedTopic, setSelectedTopic] = useState<QuantTopic>(
-    topics[0] ?? 'percentage'
-  )
-
-  const filteredProblems = useMemo(
-    () => problems.filter((p) => p.topic === selectedTopic),
-    [problems, selectedTopic]
-  )
-
-  const [selectedProblemId, setSelectedProblemId] = useState<string>(
-    filteredProblems[0]?.id ?? ''
-  )
+  const [selectedId, setSelectedId] = useState(problems[0]?.id ?? '')
 
   const selectedProblem = useMemo(
-    () => filteredProblems.find((p) => p.id === selectedProblemId) ?? filteredProblems[0],
-    [filteredProblems, selectedProblemId]
+    () => problems.find((p) => p.id === selectedId) ?? problems[0],
+    [problems, selectedId]
   )
+
+  const selectedStepsLength = selectedProblem?.steps.length ?? 0
 
   const { currentStep, totalSteps, isPlaying, setSteps, goToStep, toggleAutoPlay, reset } =
     useVisualizerStore()
 
   useEffect(() => {
-    if (selectedProblem) {
-      reset()
-      setSteps(selectedProblem.steps.length)
-    }
-  }, [selectedProblem, reset, setSteps])
-
-  useEffect(() => {
-    if (filteredProblems.length > 0 && !filteredProblems.find((p) => p.id === selectedProblemId)) {
-      setSelectedProblemId(filteredProblems[0].id)
-    }
-  }, [filteredProblems, selectedProblemId])
+    reset()
+    setSteps(selectedStepsLength)
+  }, [selectedStepsLength, reset, setSteps])
 
   const currentStepData = selectedProblem?.steps[currentStep]
-  const previousStepData =
-    currentStep > 0 ? selectedProblem?.steps[currentStep - 1] : undefined
 
   if (!selectedProblem || !currentStepData) {
     return <p className="text-text-muted">No problems available.</p>
@@ -63,59 +36,30 @@ export function StepSolver({ problems }: StepSolverProps) {
 
   return (
     <div className="flex flex-col gap-5">
-      <div className="flex flex-wrap items-center gap-3">
-        <select
-          className="rounded-md border border-border-primary bg-bg-elevated px-3 py-2 text-sm text-text-primary"
-          value={selectedTopic}
-          onChange={(e) => setSelectedTopic(e.target.value as QuantTopic)}
-          aria-label="Select topic"
-        >
-          {topics.map((t) => (
-            <option key={t} value={t}>
-              {t}
-            </option>
-          ))}
-        </select>
+      <select
+        className="rounded-md border border-border-primary bg-bg-elevated px-3 py-2 text-sm text-text-primary"
+        value={selectedId}
+        onChange={(e) => setSelectedId(e.target.value)}
+        aria-label="Select problem"
+      >
+        {problems.map((p) => (
+          <option key={p.id} value={p.id}>
+            {p.title}
+          </option>
+        ))}
+      </select>
 
-        <select
-          className="rounded-md border border-border-primary bg-bg-elevated px-3 py-2 text-sm text-text-primary"
-          value={selectedProblemId}
-          onChange={(e) => setSelectedProblemId(e.target.value)}
-          aria-label="Select problem"
-        >
-          {filteredProblems.map((p) => (
-            <option key={p.id} value={p.id}>
-              {p.title}
-            </option>
-          ))}
-        </select>
+      <div className="rounded-lg border border-border-primary bg-bg-elevated p-4">
+        <h2 className="text-lg font-semibold text-text-primary">{selectedProblem.title}</h2>
+        <p className="mt-1 text-sm text-text-secondary">{selectedProblem.question}</p>
       </div>
 
       <div className="rounded-lg border border-border-primary bg-bg-elevated p-4">
-        <h2 className="text-lg font-semibold text-text-primary">
-          {selectedProblem.title}
-        </h2>
-        <p className="mt-1 text-sm text-text-secondary">
-          {selectedProblem.question}
+        <p className="mb-1 text-xs font-semibold uppercase tracking-wider text-text-muted">
+          {currentStepData.operation}
         </p>
-      </div>
-
-      <div className="flex flex-col gap-4 md:flex-row">
-        <div className="md:w-3/5">
-          <ExpressionDisplay
-            operation={currentStepData.operation}
-            expression={currentStepData.expression}
-            result={currentStepData.result}
-            explanation={currentStepData.explanation}
-          />
-        </div>
-
-        <div className="md:w-2/5">
-          <VariablesPanel
-            variables={currentStepData.variables}
-            previousVariables={previousStepData?.variables}
-          />
-        </div>
+        <p className="font-mono text-base text-subject-quant">{currentStepData.expression}</p>
+        <p className="mt-1 text-sm font-medium text-text-primary">&rarr; {currentStepData.result}</p>
       </div>
 
       <StepController
@@ -139,6 +83,17 @@ export function StepSolver({ problems }: StepSolverProps) {
           {currentStepData.explanation}
         </motion.p>
       </AnimatePresence>
+
+      {currentStep === totalSteps - 1 && (
+        <div className="rounded-lg border border-subject-quant bg-subject-quant-light p-4">
+          <p className="text-xs font-semibold uppercase tracking-wider text-subject-quant-dark">
+            Answer
+          </p>
+          <p className="mt-1 text-sm font-medium text-subject-quant-dark">
+            {selectedProblem.answer}
+          </p>
+        </div>
+      )}
     </div>
   )
 }

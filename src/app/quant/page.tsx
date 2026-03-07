@@ -282,7 +282,7 @@ export default function QuantPage() {
                 <h3 className="mb-1 text-sm font-semibold text-text-primary">{topic.title}</h3>
                 <p className="mb-2 text-xs leading-relaxed text-text-secondary">{topic.description}</p>
                 {topic.hasTabs && (
-                  <p className="text-xs text-text-muted">5 concepts · 5 tricks · 5 problems</p>
+                  <p className="text-xs text-text-muted">5 concepts · 5 tricks · 30 problems</p>
                 )}
               </Link>
             ))}
