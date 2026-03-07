@@ -56,6 +56,78 @@ import { mughalEmpireProblems } from '@/data/history/problems/mughal-empire-prob
 import { marathaEmpireProblems } from '@/data/history/problems/maratha-empire-problems'
 import { medievalKingdomsProblems } from '@/data/history/problems/medieval-kingdoms-problems'
 
+// Modern India
+import { europeanCompaniesConcept } from '@/data/history/concepts/european-companies'
+import { britishExpansionConcept } from '@/data/history/concepts/british-expansion'
+import { governorGeneralsConcept } from '@/data/history/concepts/governor-generals'
+import { britishEconomicPoliciesConcept } from '@/data/history/concepts/british-economic-policies'
+import { revolt1857Concept } from '@/data/history/concepts/revolt-1857'
+import { reformMovementsConcept } from '@/data/history/concepts/reform-movements'
+import { congressNationalMovementConcept } from '@/data/history/concepts/congress-national-movement'
+import { gandhianMovementsConcept } from '@/data/history/concepts/gandhian-movements'
+import { revolutionaryMovementConcept } from '@/data/history/concepts/revolutionary-movement'
+import { constitutionalDevelopmentConcept } from '@/data/history/concepts/constitutional-development'
+import { tribalPeasantMovementsConcept } from '@/data/history/concepts/tribal-peasant-movements'
+
+import { europeanCompaniesRevision } from '@/data/history/revision/european-companies'
+import { britishExpansionRevision } from '@/data/history/revision/british-expansion'
+import { governorGeneralsRevision } from '@/data/history/revision/governor-generals'
+import { britishEconomicPoliciesRevision } from '@/data/history/revision/british-economic-policies'
+import { revolt1857Revision } from '@/data/history/revision/revolt-1857'
+import { reformMovementsRevision } from '@/data/history/revision/reform-movements'
+import { congressNationalMovementRevision } from '@/data/history/revision/congress-national-movement'
+import { gandhianMovementsRevision } from '@/data/history/revision/gandhian-movements'
+import { revolutionaryMovementRevision } from '@/data/history/revision/revolutionary-movement'
+import { constitutionalDevelopmentRevision } from '@/data/history/revision/constitutional-development'
+import { tribalPeasantMovementsRevision } from '@/data/history/revision/tribal-peasant-movements'
+
+import { europeanCompaniesProblems } from '@/data/history/problems/european-companies-problems'
+import { britishExpansionProblems } from '@/data/history/problems/british-expansion-problems'
+import { governorGeneralsProblems } from '@/data/history/problems/governor-generals-problems'
+import { britishEconomicPoliciesProblems } from '@/data/history/problems/british-economic-policies-problems'
+import { revolt1857Problems } from '@/data/history/problems/revolt-1857-problems'
+import { reformMovementsProblems } from '@/data/history/problems/reform-movements-problems'
+import { congressNationalMovementProblems } from '@/data/history/problems/congress-national-movement-problems'
+import { gandhianMovementsProblems } from '@/data/history/problems/gandhian-movements-problems'
+import { revolutionaryMovementProblems } from '@/data/history/problems/revolutionary-movement-problems'
+import { constitutionalDevelopmentProblems } from '@/data/history/problems/constitutional-development-problems'
+import { tribalPeasantMovementsProblems } from '@/data/history/problems/tribal-peasant-movements-problems'
+
+// Post-Independence
+import { independencePartitionConcept } from '@/data/history/concepts/independence-partition'
+import { princelyStatesConcept } from '@/data/history/concepts/princely-states'
+import { nationBuildingConcept } from '@/data/history/concepts/nation-building'
+import { warsForeignPolicyConcept } from '@/data/history/concepts/wars-foreign-policy'
+
+import { independencePartitionRevision } from '@/data/history/revision/independence-partition'
+import { princelyStatesRevision } from '@/data/history/revision/princely-states'
+import { nationBuildingRevision } from '@/data/history/revision/nation-building'
+import { warsForeignPolicyRevision } from '@/data/history/revision/wars-foreign-policy'
+
+import { independencePartitionProblems } from '@/data/history/problems/independence-partition-problems'
+import { princelyStatesProblems } from '@/data/history/problems/princely-states-problems'
+import { nationBuildingProblems } from '@/data/history/problems/nation-building-problems'
+import { warsForeignPolicyProblems } from '@/data/history/problems/wars-foreign-policy-problems'
+
+// Art & Culture
+import { indianArchitectureConcept } from '@/data/history/concepts/indian-architecture'
+import { paintingsSculptureConcept } from '@/data/history/concepts/paintings-sculpture'
+import { musicDanceConcept } from '@/data/history/concepts/music-dance'
+import { indianLiteratureConcept } from '@/data/history/concepts/indian-literature'
+import { heritageSitesConcept } from '@/data/history/concepts/heritage-sites'
+
+import { indianArchitectureRevision } from '@/data/history/revision/indian-architecture'
+import { paintingsSculptureRevision } from '@/data/history/revision/paintings-sculpture'
+import { musicDanceRevision } from '@/data/history/revision/music-dance'
+import { indianLiteratureRevision } from '@/data/history/revision/indian-literature'
+import { heritageSitesRevision } from '@/data/history/revision/heritage-sites'
+
+import { indianArchitectureProblems } from '@/data/history/problems/indian-architecture-problems'
+import { paintingsSculptureProblems } from '@/data/history/problems/paintings-sculpture-problems'
+import { musicDanceProblems } from '@/data/history/problems/music-dance-problems'
+import { indianLiteratureProblems } from '@/data/history/problems/indian-literature-problems'
+import { heritageSitesProblems } from '@/data/history/problems/heritage-sites-problems'
+
 interface TopicData {
   concept: HistoryConcept
   revision: HistoryRevision
@@ -170,6 +242,149 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: medievalKingdomsProblems,
     label: 'Other Medieval Kingdoms',
     description: 'Medieval Kingdoms for government exams. Rajputs, Sikhs, Ahom kingdom with notes, revision, and PYQs.',
+  },
+  // Modern India
+  'european-companies': {
+    concept: europeanCompaniesConcept,
+    revision: europeanCompaniesRevision,
+    problems: europeanCompaniesProblems,
+    label: 'European Trading Companies',
+    description: 'European Trading Companies for UPSC & SSC. Portuguese, Dutch, French, EIC, Carnatic Wars with notes, revision, and PYQs.',
+  },
+  'british-expansion': {
+    concept: britishExpansionConcept,
+    revision: britishExpansionRevision,
+    problems: britishExpansionProblems,
+    label: 'British Conquest & Expansion',
+    description: 'British Conquest for government exams. Plassey, Buxar, Subsidiary Alliance, Doctrine of Lapse with notes, revision, and PYQs.',
+  },
+  'governor-generals': {
+    concept: governorGeneralsConcept,
+    revision: governorGeneralsRevision,
+    problems: governorGeneralsProblems,
+    label: 'Governor-Generals & Viceroys',
+    description: 'Governor-Generals & Viceroys for UPSC & SSC. Warren Hastings to Mountbatten with notes, revision, and PYQs.',
+  },
+  'british-economic-policies': {
+    concept: britishEconomicPoliciesConcept,
+    revision: britishEconomicPoliciesRevision,
+    problems: britishEconomicPoliciesProblems,
+    label: 'British Economic Policies',
+    description: 'British Economic Policies for government exams. Drain of Wealth, land revenue systems with notes, revision, and PYQs.',
+  },
+  'revolt-1857': {
+    concept: revolt1857Concept,
+    revision: revolt1857Revision,
+    problems: revolt1857Problems,
+    label: 'Revolt of 1857',
+    description: 'Revolt of 1857 for UPSC & SSC. Causes, centres, leaders, consequences with notes, revision, and PYQs.',
+  },
+  'reform-movements': {
+    concept: reformMovementsConcept,
+    revision: reformMovementsRevision,
+    problems: reformMovementsProblems,
+    label: 'Social & Religious Reform Movements',
+    description: 'Reform Movements for government exams. Brahmo Samaj, Arya Samaj, widow remarriage with notes, revision, and PYQs.',
+  },
+  'congress-national-movement': {
+    concept: congressNationalMovementConcept,
+    revision: congressNationalMovementRevision,
+    problems: congressNationalMovementProblems,
+    label: 'INC & National Movement',
+    description: 'Indian National Congress for UPSC & SSC. Moderates, Extremists, Swadeshi with notes, revision, and PYQs.',
+  },
+  'gandhian-movements': {
+    concept: gandhianMovementsConcept,
+    revision: gandhianMovementsRevision,
+    problems: gandhianMovementsProblems,
+    label: 'Gandhian Era & Mass Movements',
+    description: 'Gandhian Movements for government exams. NCM, CDM, Quit India, Satyagraha with notes, revision, and PYQs.',
+  },
+  'revolutionary-movement': {
+    concept: revolutionaryMovementConcept,
+    revision: revolutionaryMovementRevision,
+    problems: revolutionaryMovementProblems,
+    label: 'Revolutionary Movement',
+    description: 'Revolutionary Movement for UPSC & SSC. Ghadar, HSRA, INA, Subhas Chandra Bose with notes, revision, and PYQs.',
+  },
+  'constitutional-development': {
+    concept: constitutionalDevelopmentConcept,
+    revision: constitutionalDevelopmentRevision,
+    problems: constitutionalDevelopmentProblems,
+    label: 'Constitutional Development',
+    description: 'Constitutional Development for government exams. Regulating Act to GoI Act 1935 with notes, revision, and PYQs.',
+  },
+  'tribal-peasant-movements': {
+    concept: tribalPeasantMovementsConcept,
+    revision: tribalPeasantMovementsRevision,
+    problems: tribalPeasantMovementsProblems,
+    label: 'Tribal & Peasant Movements',
+    description: 'Tribal & Peasant Movements for UPSC & SSC. Santhal, Munda, Indigo, Moplah with notes, revision, and PYQs.',
+  },
+  // Post-Independence
+  'independence-partition': {
+    concept: independencePartitionConcept,
+    revision: independencePartitionRevision,
+    problems: independencePartitionProblems,
+    label: 'Independence & Partition',
+    description: 'Independence & Partition for government exams. Cabinet Mission, Mountbatten Plan with notes, revision, and PYQs.',
+  },
+  'princely-states': {
+    concept: princelyStatesConcept,
+    revision: princelyStatesRevision,
+    problems: princelyStatesProblems,
+    label: 'Integration of Princely States',
+    description: 'Princely States integration for UPSC & SSC. Sardar Patel, Hyderabad, Kashmir with notes, revision, and PYQs.',
+  },
+  'nation-building': {
+    concept: nationBuildingConcept,
+    revision: nationBuildingRevision,
+    problems: nationBuildingProblems,
+    label: 'Nation Building & Economic Development',
+    description: 'Nation Building for government exams. Five Year Plans, Green Revolution, LPG 1991 with notes, revision, and PYQs.',
+  },
+  'wars-foreign-policy': {
+    concept: warsForeignPolicyConcept,
+    revision: warsForeignPolicyRevision,
+    problems: warsForeignPolicyProblems,
+    label: 'Wars & Foreign Policy',
+    description: 'Wars & Foreign Policy for UPSC & SSC. 1962, 1965, 1971, Non-Alignment with notes, revision, and PYQs.',
+  },
+  // Art & Culture
+  'indian-architecture': {
+    concept: indianArchitectureConcept,
+    revision: indianArchitectureRevision,
+    problems: indianArchitectureProblems,
+    label: 'Indian Architecture',
+    description: 'Indian Architecture for UPSC & SSC. Nagara, Dravida, Indo-Islamic, Colonial with notes, revision, and PYQs.',
+  },
+  'paintings-sculpture': {
+    concept: paintingsSculptureConcept,
+    revision: paintingsSculptureRevision,
+    problems: paintingsSculptureProblems,
+    label: 'Indian Paintings & Sculpture',
+    description: 'Indian Paintings & Sculpture for government exams. Cave art, miniatures, Gandhara, Mathura with notes, revision, and PYQs.',
+  },
+  'music-dance': {
+    concept: musicDanceConcept,
+    revision: musicDanceRevision,
+    problems: musicDanceProblems,
+    label: 'Music, Dance & Theatre',
+    description: 'Music, Dance & Theatre for UPSC & SSC. Classical forms, folk dances with notes, revision, and PYQs.',
+  },
+  'indian-literature': {
+    concept: indianLiteratureConcept,
+    revision: indianLiteratureRevision,
+    problems: indianLiteratureProblems,
+    label: 'Indian Literature & Philosophy',
+    description: 'Indian Literature for government exams. Vedic, Sangam, six schools with notes, revision, and PYQs.',
+  },
+  'heritage-sites': {
+    concept: heritageSitesConcept,
+    revision: heritageSitesRevision,
+    problems: heritageSitesProblems,
+    label: 'UNESCO World Heritage Sites',
+    description: 'UNESCO Heritage Sites in India for UPSC & SSC. Key sites, significance with notes, revision, and PYQs.',
   },
 }
 
