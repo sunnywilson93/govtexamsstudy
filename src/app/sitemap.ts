@@ -51,6 +51,19 @@ const REASONING_TOPICS = [
   'input-output',
   'alphabet-tests',
   'cause-effect',
+  'order-ranking',
+  'data-sufficiency',
+  'calendar-reasoning',
+  'logical-venn-diagrams',
+  'linear-arrangements',
+  'critical-reasoning',
+  'figure-series',
+  'embedded-figures',
+  'mirror-water-images',
+  'cubes-dice',
+  'paper-folding',
+  'clock-reasoning',
+  'counting-figures',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -69,7 +82,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/history/timeline',
     '/history/freedom-movement',
     '/geography',
-    '/geography/map',
     '/economics',
     '/economics/flows',
     '/economics/budget',

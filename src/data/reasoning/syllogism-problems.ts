@@ -173,4 +173,122 @@ export const syllogismProblems: SyllogismProblem[] = [
       },
     ],
   },
+  {
+    id: "syl-04",
+    statements: [
+      { type: "some", subject: "Pens", predicate: "Pencils" },
+      { type: "all", subject: "Pencils", predicate: "Stationery" },
+    ],
+    conclusions: [
+      {
+        statement: { type: "some", subject: "Pens", predicate: "Stationery" },
+        isValid: true,
+      },
+      {
+        statement: { type: "all", subject: "Pens", predicate: "Stationery" },
+        isValid: false,
+      },
+    ],
+    steps: [
+      {
+        id: 1,
+        description:
+          "Draw a circle for Pencils. Draw a Pens circle partially overlapping with Pencils (Some Pens are Pencils).",
+        circles: [
+          { label: "Pencils", x: 200, y: 150, r: 80 },
+          { label: "Pens", x: 120, y: 150, r: 70 },
+        ],
+        regions: [
+          { type: "shaded", description: "Overlap region represents Pens that are also Pencils" },
+        ],
+      },
+      {
+        id: 2,
+        description:
+          "Draw a larger Stationery circle that completely contains Pencils (All Pencils are Stationery). The Pens circle partially overlaps Pencils, which is inside Stationery.",
+        circles: [
+          { label: "Stationery", x: 220, y: 140, r: 140 },
+          { label: "Pencils", x: 220, y: 160, r: 80 },
+          { label: "Pens", x: 120, y: 160, r: 70 },
+        ],
+        regions: [
+          { type: "filled", description: "Pencils entirely within Stationery" },
+          { type: "shaded", description: "Part of Pens overlaps with Pencils (and thus Stationery)" },
+        ],
+      },
+      {
+        id: 3,
+        description:
+          "Conclusion 1: Some Pens are Stationery — the Pens that overlap with Pencils are inside Stationery. VALID. Conclusion 2: All Pens are Stationery — part of the Pens circle extends outside the Stationery circle. INVALID.",
+        circles: [
+          { label: "Stationery", x: 220, y: 140, r: 140 },
+          { label: "Pencils", x: 220, y: 160, r: 80 },
+          { label: "Pens", x: 120, y: 160, r: 70 },
+        ],
+        regions: [
+          { type: "shaded", description: "Some Pens within Stationery via Pencils overlap — Conclusion 1 valid" },
+          { type: "empty", description: "Part of Pens outside Stationery — Conclusion 2 invalid" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "syl-05",
+    statements: [
+      { type: "all", subject: "Teachers", predicate: "Educated" },
+      { type: "no", subject: "Educated", predicate: "Ignorant" },
+    ],
+    conclusions: [
+      {
+        statement: { type: "no", subject: "Teachers", predicate: "Ignorant" },
+        isValid: true,
+      },
+      {
+        statement: { type: "some", subject: "Educated", predicate: "Teachers" },
+        isValid: true,
+      },
+    ],
+    steps: [
+      {
+        id: 1,
+        description:
+          "Draw a circle for Educated. Place Teachers entirely inside it (All Teachers are Educated).",
+        circles: [
+          { label: "Educated", x: 200, y: 150, r: 100 },
+          { label: "Teachers", x: 200, y: 180, r: 55 },
+        ],
+        regions: [
+          { type: "filled", description: "Teachers entirely within Educated" },
+        ],
+      },
+      {
+        id: 2,
+        description:
+          "Draw a separate Ignorant circle with no overlap with Educated (No Educated is Ignorant). Since Teachers are inside Educated, Teachers also have no overlap with Ignorant.",
+        circles: [
+          { label: "Educated", x: 170, y: 150, r: 100 },
+          { label: "Teachers", x: 170, y: 180, r: 55 },
+          { label: "Ignorant", x: 330, y: 150, r: 70 },
+        ],
+        regions: [
+          { type: "filled", description: "Teachers within Educated" },
+          { type: "empty", description: "No overlap between Educated and Ignorant" },
+        ],
+      },
+      {
+        id: 3,
+        description:
+          "Conclusion 1: No Teachers are Ignorant — Teachers is inside Educated, which is completely separate from Ignorant. VALID. Conclusion 2: Some Educated are Teachers — since Teachers is a non-empty subset of Educated, some Educated people are Teachers. VALID.",
+        circles: [
+          { label: "Educated", x: 170, y: 150, r: 100 },
+          { label: "Teachers", x: 170, y: 180, r: 55 },
+          { label: "Ignorant", x: 330, y: 150, r: 70 },
+        ],
+        regions: [
+          { type: "shaded", description: "Teachers within Educated confirms some Educated are Teachers" },
+          { type: "empty", description: "No overlap between Teachers and Ignorant confirms Conclusion 1" },
+        ],
+      },
+    ],
+  },
 ]

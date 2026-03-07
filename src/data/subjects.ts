@@ -61,9 +61,7 @@ export const subjects: SubjectInfo[] = [
     color: "green",
     description:
       "Explore India's physical and political geography on an interactive layered map.",
-    routes: [
-      { path: "/geography/map", label: "Interactive Map" },
-    ],
+    routes: [],
   },
   {
     slug: "economics",

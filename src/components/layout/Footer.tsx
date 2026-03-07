@@ -15,8 +15,7 @@ const TOOL_LINKS = [
   { href: '/dashboard', label: 'Progress Dashboard' },
   { href: '/quant/step-solver', label: 'Math Solver' },
   { href: '/polity/articles', label: 'Article Explorer' },
-  { href: '/geography/map', label: 'India Map' },
-  { href: '/science/periodic-table', label: 'Periodic Table' },
+{ href: '/science/periodic-table', label: 'Periodic Table' },
 ]
 
 export function Footer() {

@@ -80,7 +80,7 @@ src/
 ### Routing Structure
 
 ```
-/                              Home — Hero + BentoSubjectGrid (#subjects) + Featured Visualizers (4 cards) + How It Works (3 steps) + CTA
+/                              Home — Hero + BentoSubjectGrid (#subjects) + Featured Visualizers (3 cards, sm:grid-cols-2) + How It Works (3 steps) + CTA
 /quant                         Quantitative Aptitude hub — SECTIONS layout: Arithmetic (5) + Advanced Arithmetic (5) + Higher Mathematics (4) + Visualizer (geometry) + Miscellaneous (5) + Applied Problems (7) + Banking & Special Topics (5); each topic card has hasTabs:true flag; no "Coming Soon" badges on implemented topics
 /quant/step-solver             Redirects to /quant/percentage
 /quant/[topic]                 Dynamic route — Concept | Tricks | Problems tabs; 31 slugs statically generated via Object.keys(TOPIC_DATA) (all groups wired)
@@ -139,8 +139,7 @@ src/
 /history                       History hub
 /history/timeline              Interactive zoomable timeline
 /history/freedom-movement      Cause-effect chains
-/geography                     Geography hub
-/geography/map                 Interactive India map with layers
+/geography                     Geography hub — placeholder page; "Visualizers coming soon"; layout has empty links=[]; map not yet implemented
 /economics                     Economics hub
 /economics/flows               Policy flow diagrams
 /economics/budget              Budget visualizer
@@ -193,8 +192,8 @@ src/
 - `CauseEffectChain { id, events[], description }`
 
 **Geography**
-- `MapLayer { id, name, type ('rivers'|...), features[], visible: boolean }`
-- `Feature { id, name, geometry, properties, linkedTopics[] }`
+- `MapLayer { id, name, type ('rivers'|...), features[], visible: boolean }` — planned; `src/data/geography/` is empty (`.gitkeep` only); map not yet implemented
+- `Feature { id, name, geometry, properties, linkedTopics[] }` — planned
 
 **Economics**
 - `PolicyFlow { id, name, description, steps[] }` — consumed by `PolicyFlowDiagram`; data from `@/data/economics/policy-flows` (named export `policyFlows`)
@@ -224,7 +223,7 @@ src/
 - Data file layout: `src/data/reasoning/concepts/` (7 tabs topics), `tricks/` (7), `problems/` (7), `visualizer/` (4 files for blood-relations, direction-distance, coding-decoding, puzzles); each file exports exactly 5 entries
 
 ### SEO Infrastructure
-- `src/app/sitemap.ts` — `baseUrl` at module level; enumerates `QUANT_TOPICS` (31 slugs, all groups) + `REASONING_TOPICS` (14 slugs: seating, syllogism, series + 11 dynamic) as module-level arrays; generates `/quant/{slug}` and `/reasoning/{slug}` routes alongside static routes; static routes include subject hubs, polity (3), history (2), geography (2), economics (3), science (2), `/practice` — `/quant/step-solver` and `/dashboard` not included; priority 1.0 for `/`, 0.8 for depth-1, 0.6 for depth 2+; `lastModified: new Date()`
+- `src/app/sitemap.ts` — `baseUrl` at module level; enumerates `QUANT_TOPICS` (31 slugs, all groups) + `REASONING_TOPICS` (14 slugs: seating, syllogism, series + 11 dynamic) as module-level arrays; generates `/quant/{slug}` and `/reasoning/{slug}` routes alongside static routes; static routes include subject hubs, polity (3), history (2), geography (1 — `/geography` only, no `/geography/map`), economics (3), science (2), `/practice` — `/quant/step-solver` and `/dashboard` not included; priority 1.0 for `/`, 0.8 for depth-1, 0.6 for depth 2+; `lastModified: new Date()`
 - `src/app/robots.ts` — blocks `/api/` paths
 - `src/components/JsonLd.tsx` — server component; renders `<script type="application/ld+json">` with static WebSite schema; schema: `inLanguage:"en-IN"`, `audience.geographicArea: Country/India`, `publisher.areaServed: Country/India`, `potentialAction: SearchAction`; JSON stringified at module level (XSS-safe — no user input); imported in `RootLayout` and placed in `<head>`
 - Root metadata (`src/app/layout.tsx`): `metadataBase: new URL('https://govtexamsstudy.org')`; India-specific `keywords` array (SSC CGL, IBPS PO, RRB NTPC, UPPSC, MPPSC, etc.); `openGraph.locale: en_IN`; `icons.icon: /favicon.svg`; full OG + Twitter cards; `robots: { index: true, follow: true }`; `<html lang="en-IN">`
@@ -288,7 +287,7 @@ src/
 
 ### Quant Topic Pages
 - `/quant/[topic]` — server component; `TOPIC_DATA` record covers all 31 slugs (Phases 1–3 + Miscellaneous + Applied + Banking — no stubs); calls `notFound()` for unknown slugs; `generateStaticParams()` uses `Object.keys(TOPIC_DATA)` — add a new slug to `TOPIC_DATA` and it's automatically statically generated; `generateMetadata` produces per-topic SEO title + description
-- `quant/layout.tsx` — wraps with `SubjectLayout`; `showHeading=false`; `subjectColor="#3b82f6"`; 32 sidebar links across 7 groups: Arithmetic (5) / Advanced (5) / Higher Maths (4) / Visualizer (geometry, 1) / Phase 4 (5: surds-indices, partnership, ages, simplification, sequences-series) / Applied (7: decimal-fractions, square-cube-roots, chain-rule, boats-streams, problems-on-trains, races-games, logarithms) / Banking (5: calendar, clocks, stocks-shares, true-discount, bankers-discount); logarithms is the last entry in Applied group; hub page "Miscellaneous" section = sidebar "Phase 4" group
+- `quant/layout.tsx` — wraps with `SubjectLayout`; `showHeading=false`; `subjectColor="#3b82f6"`; 32 sidebar links across 7 groups: Arithmetic (5) / Advanced (5) / Higher Maths (4) / Visualizer (geometry, 1) / Phase 4 (5: surds-indices, partnership, ages, simplification, sequences-series) / Applied (7: decimal-fractions, square-cube-roots, chain-rule, boats-streams, problems-on-trains, races-games, logarithms) / Banking (5: calendar, clocks, stocks-shares, true-discount, bankers-discount); **logarithms is appended at end of the links array after Banking entries** (still `group: 'Applied'`), meaning `groupLinks()` renders it as a second Applied section below Banking in the sidebar; hub page "Miscellaneous" section = sidebar "Phase 4" group
 - `quant/page.tsx` — hub page; `SECTIONS` array drives layout (Arithmetic / Advanced Arithmetic / Higher Mathematics / Visualizer / Miscellaneous / Applied Problems / Banking & Special Topics — 7 sections total); Applied Problems section has 7 topics (includes logarithms); each `Topic` object has `hasTabs: boolean`; all implemented topic cards link directly with no "Coming Soon"
 - `TopicTabs` (`src/components/visualizers/quant/TopicTabs.tsx`) — `'use client'`; props: `{ concept: QuantConcept, tricks: QuantTrick[], problems: MathProblem[] }`; local `useState<'concept'|'tricks'|'problems'>`; Problems tab renders `<StepSolver problems={problems} />`; tab switch uses `motion.div` with `key={activeTab}` fade (`initial={{ opacity:0, y:8 }}`, 0.2s); active tab: `border-subject-quant text-subject-quant border-b-2 -mb-px`
 - `ConceptPanel` (`src/components/visualizers/quant/ConceptPanel.tsx`) — server-compatible (no hooks, no Framer Motion); renders: title h2, description, Key Idea callout (`border-l-4 border-subject-quant bg-subject-quant-light`), "Core Formulas" section (name + monospace formula in `text-subject-quant` + `whenToUse`), "Relevant Exams" section (chips `rounded-full bg-subject-quant-light` + `examRelevance` prose); reads `concept.examTags[]` string array
@@ -304,6 +303,15 @@ src/
   - `TrickCard.test.tsx` — renders trick title, description, type badge, optional formula block, example block, optional timeSaved chip
   - `TricksPanel.test.tsx` — renders Formula Shortcuts and Mental Math sections, groups tricks correctly
   - `StepSolver.test.tsx` — renders topic selector, shows first problem title, shows step counter, navigates to next step; uses `useVisualizerStore.getState().reset()` in `beforeEach`
+- Reasoning visualizer test suite lives at `src/components/visualizers/reasoning/__tests__/`:
+  - `ReasoningConceptPanel.test.tsx` — mirrors quant ConceptPanel tests; verifies rules[] render (labeled "Rules") instead of formulas[]
+  - `ReasoningTricksPanel.test.tsx` — verifies pattern-shortcut and elimination groups render correctly
+  - `ReasoningStepSolver.test.tsx` — verifies topic selector, first problem title, step counter, next-step navigation
+  - `ReasoningTopicTabs.test.tsx` — verifies all three tab buttons, Concept default, tab switching
+  - `BloodRelationVisualizer.test.tsx` — verifies SVG node render, step-by-step reveal, StepController integration
+  - `DirectionVisualizer.test.tsx` — verifies SVG path render, animated steps, final direction display
+  - `CodingDecodingVisualizer.test.tsx` — verifies cipher table rows, input/coded strip highlight sync
+  - `PuzzleVisualizer.test.tsx` — verifies position grid render, entity placement per step, eliminated/confirmed chip states
 <!-- END AUTO-MANAGED -->
 
 <!-- AUTO-MANAGED: git-insights -->
@@ -312,7 +320,7 @@ src/
 **Phase 1 MVP — ships all together:**
 - Quant: per-topic Concept + Tricks + Problems pages for 31 topics via `/quant/[topic]` — Phase 1: percentage, profit-loss, ratio, time-speed-distance, time-work; Phase 2: number-system, average, simple-compound-interest, mixture-alligation, mensuration; Phase 3: algebra, trigonometry, data-interpretation, statistics-probability; Miscellaneous: surds-indices, partnership, ages, simplification, sequences-series; Applied: decimal-fractions, square-cube-roots, chain-rule, boats-streams, problems-on-trains, races-games, logarithms; Banking: calendar, clocks, stocks-shares, true-discount, bankers-discount; geometry visualizer (standalone)
 - Reasoning: 14 topics — 3 existing standalone visualizers (seating, syllogism, series) + 4 new bespoke visualizers (blood-relations, direction-distance, coding-decoding, puzzles) + 7 tabs topics (inequalities, analogies, classification, alphabet-tests, input-output, statement-conclusions, cause-effect) via `/reasoning/[topic]`; design approved in `docs/plans/2026-03-02-reasoning-complete-design.md`
-- General Awareness: Polity constitutional explorer (network graph), History zoomable timeline + cause-effect chains, Geography interactive India map (river layer), Economics policy flow diagrams + budget treemap
+- General Awareness: Polity constitutional explorer (network graph), History zoomable timeline + cause-effect chains, Geography interactive India map (river layer — **not yet implemented**, placeholder only), Economics policy flow diagrams + budget treemap
 - Science: periodic table explorer, human body systems
 - Gamification: daily streak, topic mastery badges (Bronze/Silver/Gold), progress radar chart, spaced repetition prompts
 - Mobile-responsive; no native app

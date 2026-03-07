@@ -4,7 +4,6 @@ import {
   Calculator,
   Brain,
   Landmark,
-  Globe2,
   Atom,
   ArrowRight,
   BookOpen,
@@ -27,7 +26,6 @@ const STATS = [
 const FEATURE_ICONS: Record<string, React.ComponentType<LucideProps>> = {
   Quant: Calculator,
   Polity: Landmark,
-  Geography: Globe2,
   Science: Atom,
 }
 
@@ -50,16 +48,7 @@ const FEATURES = [
     subject: 'Polity',
     tag: 'Network Graph',
   },
-  {
-    title: 'Interactive India Map',
-    description: 'Toggle geographic layers — rivers, states — with exam-relevant details on every click.',
-    href: '/geography/map',
-    color: '#22c55e',
-    lightColor: '#dcfce7',
-    subject: 'Geography',
-    tag: 'Layered Map',
-  },
-  {
+{
     title: 'Periodic Table Explorer',
     description: 'Click any element for properties, uses, and exam-relevant facts with category filters.',
     href: '/science/periodic-table',

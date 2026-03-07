@@ -6,8 +6,13 @@ import { BloodRelationVisualizer } from '@/components/visualizers/reasoning/Bloo
 import { DirectionVisualizer } from '@/components/visualizers/reasoning/DirectionVisualizer'
 import { CodingDecodingVisualizer } from '@/components/visualizers/reasoning/CodingDecodingVisualizer'
 import { PuzzleVisualizer } from '@/components/visualizers/reasoning/PuzzleVisualizer'
+import { MirrorWaterImageVisualizer } from '@/components/visualizers/reasoning/MirrorWaterImageVisualizer'
+import { CubeDiceVisualizer } from '@/components/visualizers/reasoning/CubeDiceVisualizer'
+import { PaperFoldVisualizer } from '@/components/visualizers/reasoning/PaperFoldVisualizer'
+import { ClockReasoningVisualizer } from '@/components/visualizers/reasoning/ClockReasoningVisualizer'
+import { CountingFigureVisualizer } from '@/components/visualizers/reasoning/CountingFigureVisualizer'
 
-// Tabs topic imports
+// Existing tabs topic imports
 import { inequalitiesConcept } from '@/data/reasoning/concepts/inequalities'
 import { analogiesConcept } from '@/data/reasoning/concepts/analogies'
 import { classificationConcept } from '@/data/reasoning/concepts/classification'
@@ -32,11 +37,44 @@ import { inputOutputProblems } from '@/data/reasoning/problems/input-output-prob
 import { alphabetTestsProblems } from '@/data/reasoning/problems/alphabet-tests-problems'
 import { causeEffectProblems } from '@/data/reasoning/problems/cause-effect-problems'
 
+// New tabs topic imports
+import { orderRankingConcept } from '@/data/reasoning/concepts/order-ranking'
+import { dataSufficiencyConcept } from '@/data/reasoning/concepts/data-sufficiency'
+import { calendarReasoningConcept } from '@/data/reasoning/concepts/calendar-reasoning'
+import { logicalVennDiagramsConcept } from '@/data/reasoning/concepts/logical-venn-diagrams'
+import { linearArrangementsConcept } from '@/data/reasoning/concepts/linear-arrangements'
+import { criticalReasoningConcept } from '@/data/reasoning/concepts/critical-reasoning'
+import { figureSeriesConcept } from '@/data/reasoning/concepts/figure-series'
+import { embeddedFiguresConcept } from '@/data/reasoning/concepts/embedded-figures'
+
+import { orderRankingTricks } from '@/data/reasoning/tricks/order-ranking'
+import { dataSufficiencyTricks } from '@/data/reasoning/tricks/data-sufficiency'
+import { calendarReasoningTricks } from '@/data/reasoning/tricks/calendar-reasoning'
+import { logicalVennDiagramsTricks } from '@/data/reasoning/tricks/logical-venn-diagrams'
+import { linearArrangementsTricks } from '@/data/reasoning/tricks/linear-arrangements'
+import { criticalReasoningTricks } from '@/data/reasoning/tricks/critical-reasoning'
+import { figureSeriesTricks } from '@/data/reasoning/tricks/figure-series'
+import { embeddedFiguresTricks } from '@/data/reasoning/tricks/embedded-figures'
+
+import { orderRankingProblems } from '@/data/reasoning/problems/order-ranking-problems'
+import { dataSufficiencyProblems } from '@/data/reasoning/problems/data-sufficiency-problems'
+import { calendarReasoningProblems } from '@/data/reasoning/problems/calendar-reasoning-problems'
+import { logicalVennDiagramsProblems } from '@/data/reasoning/problems/logical-venn-diagrams-problems'
+import { linearArrangementsProblems } from '@/data/reasoning/problems/linear-arrangements-problems'
+import { criticalReasoningProblems } from '@/data/reasoning/problems/critical-reasoning-problems'
+import { figureSeriesProblems } from '@/data/reasoning/problems/figure-series-problems'
+import { embeddedFiguresProblems } from '@/data/reasoning/problems/embedded-figures-problems'
+
 // Visualizer data imports
 import { bloodRelationProblems } from '@/data/reasoning/visualizer/blood-relations'
 import { directionProblems } from '@/data/reasoning/visualizer/direction-distance'
 import { codingDecodingProblems } from '@/data/reasoning/visualizer/coding-decoding'
 import { puzzleProblems } from '@/data/reasoning/visualizer/puzzles'
+import { mirrorImageProblems } from '@/data/reasoning/visualizer/mirror-water-images'
+import { cubeDiceProblems } from '@/data/reasoning/visualizer/cubes-dice'
+import { paperFoldProblems } from '@/data/reasoning/visualizer/paper-folding'
+import { clockProblems } from '@/data/reasoning/visualizer/clock-reasoning'
+import { countingFigureProblems } from '@/data/reasoning/visualizer/counting-figures'
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Topic registry
@@ -53,7 +91,16 @@ interface TabsTopicData {
 
 interface VisualizerTopicData {
   kind: 'visualizer'
-  type: 'blood-relations' | 'direction-distance' | 'coding-decoding' | 'puzzles'
+  type:
+    | 'blood-relations'
+    | 'direction-distance'
+    | 'coding-decoding'
+    | 'puzzles'
+    | 'mirror-water-images'
+    | 'cubes-dice'
+    | 'paper-folding'
+    | 'clock-reasoning'
+    | 'counting-figures'
   label: string
   description: string
 }
@@ -122,6 +169,78 @@ const TOPIC_DATA: Record<string, TopicEntry> = {
     label: 'Cause & Effect',
     description: 'Identify cause-effect relationships for UPSC CSAT and IBPS PO exams.',
   },
+  'order-ranking': {
+    kind: 'tabs',
+    concept: orderRankingConcept,
+    tricks: orderRankingTricks,
+    problems: orderRankingProblems,
+    label: 'Order & Ranking',
+    description:
+      'Master order and ranking problems for SSC CGL, IBPS PO, and RRB NTPC exams.',
+  },
+  'data-sufficiency': {
+    kind: 'tabs',
+    concept: dataSufficiencyConcept,
+    tricks: dataSufficiencyTricks,
+    problems: dataSufficiencyProblems,
+    label: 'Data Sufficiency',
+    description:
+      'Determine if given statements provide enough data to answer the question for IBPS PO and SBI PO.',
+  },
+  'calendar-reasoning': {
+    kind: 'tabs',
+    concept: calendarReasoningConcept,
+    tricks: calendarReasoningTricks,
+    problems: calendarReasoningProblems,
+    label: 'Calendar Reasoning',
+    description:
+      'Find the day of the week for any date using odd days and leap year rules for SSC CGL and RRB NTPC.',
+  },
+  'logical-venn-diagrams': {
+    kind: 'tabs',
+    concept: logicalVennDiagramsConcept,
+    tricks: logicalVennDiagramsTricks,
+    problems: logicalVennDiagramsProblems,
+    label: 'Logical Venn Diagrams',
+    description:
+      'Identify relationships between groups using 2-circle and 3-circle Venn diagrams for SSC CGL.',
+  },
+  'linear-arrangements': {
+    kind: 'tabs',
+    concept: linearArrangementsConcept,
+    tricks: linearArrangementsTricks,
+    problems: linearArrangementsProblems,
+    label: 'Linear Arrangements',
+    description:
+      'Arrange people in a row with facing and position constraints for IBPS PO and SBI PO.',
+  },
+  'critical-reasoning': {
+    kind: 'tabs',
+    concept: criticalReasoningConcept,
+    tricks: criticalReasoningTricks,
+    problems: criticalReasoningProblems,
+    label: 'Critical Reasoning',
+    description:
+      'Evaluate assumptions, strengthening and weakening arguments for UPSC CSAT and banking exams.',
+  },
+  'figure-series': {
+    kind: 'tabs',
+    concept: figureSeriesConcept,
+    tricks: figureSeriesTricks,
+    problems: figureSeriesProblems,
+    label: 'Figure Series',
+    description:
+      'Identify the next figure in a visual pattern — rotation, addition, subtraction of elements.',
+  },
+  'embedded-figures': {
+    kind: 'tabs',
+    concept: embeddedFiguresConcept,
+    tricks: embeddedFiguresTricks,
+    problems: embeddedFiguresProblems,
+    label: 'Embedded Figures',
+    description:
+      'Find a given figure hidden within a complex figure, accounting for rotation and scaling.',
+  },
   'blood-relations': {
     kind: 'visualizer',
     type: 'blood-relations',
@@ -149,6 +268,41 @@ const TOPIC_DATA: Record<string, TopicEntry> = {
     label: 'Floor & Box Puzzles',
     description:
       'Solve floor and box puzzle arrangements with animated grid for IBPS PO, SBI PO, and SSC CGL.',
+  },
+  'mirror-water-images': {
+    kind: 'visualizer',
+    type: 'mirror-water-images',
+    label: 'Mirror & Water Images',
+    description:
+      'Solve mirror and water image problems with animated flip visualization.',
+  },
+  'cubes-dice': {
+    kind: 'visualizer',
+    type: 'cubes-dice',
+    label: 'Cubes & Dice',
+    description:
+      'Solve cube net folding and dice opposite-face problems with visual animation.',
+  },
+  'paper-folding': {
+    kind: 'visualizer',
+    type: 'paper-folding',
+    label: 'Paper Folding & Cutting',
+    description:
+      'Watch paper fold, punch, and unfold to reveal hole patterns with animation.',
+  },
+  'clock-reasoning': {
+    kind: 'visualizer',
+    type: 'clock-reasoning',
+    label: 'Clock Reasoning',
+    description:
+      'Calculate angles between clock hands with animated clock face visualization.',
+  },
+  'counting-figures': {
+    kind: 'visualizer',
+    type: 'counting-figures',
+    label: 'Counting Figures',
+    description:
+      'Count triangles, squares, and lines in complex figures with step-by-step highlights.',
   },
 }
 
@@ -201,6 +355,21 @@ export default async function ReasoningTopicPage({ params }: Props) {
         <CodingDecodingVisualizer problem={codingDecodingProblems[0]} />
       )}
       {data.type === 'puzzles' && <PuzzleVisualizer problem={puzzleProblems[0]} />}
+      {data.type === 'mirror-water-images' && (
+        <MirrorWaterImageVisualizer problem={mirrorImageProblems[0]} />
+      )}
+      {data.type === 'cubes-dice' && (
+        <CubeDiceVisualizer problem={cubeDiceProblems[0]} />
+      )}
+      {data.type === 'paper-folding' && (
+        <PaperFoldVisualizer problem={paperFoldProblems[0]} />
+      )}
+      {data.type === 'clock-reasoning' && (
+        <ClockReasoningVisualizer problem={clockProblems[0]} />
+      )}
+      {data.type === 'counting-figures' && (
+        <CountingFigureVisualizer problem={countingFigureProblems[0]} />
+      )}
     </div>
   )
 }

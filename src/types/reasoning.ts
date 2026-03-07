@@ -88,6 +88,21 @@ export type ReasoningTopic =
   | "input-output"
   | "alphabet-tests"
   | "cause-effect"
+  // New tabs topics
+  | "order-ranking"
+  | "data-sufficiency"
+  | "calendar-reasoning"
+  | "logical-venn-diagrams"
+  | "linear-arrangements"
+  | "critical-reasoning"
+  | "figure-series"
+  | "embedded-figures"
+  // New visualizer topics
+  | "mirror-water-images"
+  | "cubes-dice"
+  | "paper-folding"
+  | "clock-reasoning"
+  | "counting-figures"
 
 export interface ReasoningRule {
   name: string
@@ -201,4 +216,81 @@ export interface PuzzleProblem {
   clues: string[]
   steps: string[]
   solution: PuzzleCell[]
+}
+
+// ── Mirror & Water Images ─────────────────────────────────────
+
+export interface MirrorImageProblem {
+  id: string
+  type: "mirror" | "water"
+  question: string
+  originalGrid: string[][]
+  transformedGrid: string[][]
+  steps: string[]
+  answer: string
+}
+
+// ── Cubes & Dice ──────────────────────────────────────────────
+
+export interface CubeFace {
+  position: number
+  content: string
+  color: string
+}
+
+export interface CubeDiceProblem {
+  id: string
+  type: "cube-fold" | "dice-opposite" | "dice-adjacent"
+  question: string
+  faces: CubeFace[]
+  steps: string[]
+  answer: string
+}
+
+// ── Paper Folding & Cutting ───────────────────────────────────
+
+export interface FoldStep {
+  direction: "left" | "right" | "top" | "bottom" | "diagonal"
+  description: string
+}
+
+export interface PaperFoldProblem {
+  id: string
+  question: string
+  folds: FoldStep[]
+  punchPosition: { x: number; y: number }
+  unfoldedResult: string
+  steps: string[]
+  answer: string
+}
+
+// ── Clock Reasoning ───────────────────────────────────────────
+
+export interface ClockProblem {
+  id: string
+  type: "angle" | "time-gain-loss" | "mirror"
+  question: string
+  hourAngle: number
+  minuteAngle: number
+  steps: string[]
+  answer: string
+}
+
+// ── Counting Figures ──────────────────────────────────────────
+
+export interface FigureHighlight {
+  id: string
+  path: string
+  label: string
+}
+
+export interface CountingFigureProblem {
+  id: string
+  type: "triangles" | "squares" | "lines" | "mixed"
+  question: string
+  svgPath: string
+  highlights: FigureHighlight[]
+  steps: string[]
+  answer: string
+  totalCount: number
 }

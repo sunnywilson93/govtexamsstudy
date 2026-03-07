@@ -6,9 +6,7 @@ export default function GeographyLayout({ children }: { children: React.ReactNod
       subjectName="Indian Geography"
       subjectColor="#22c55e"
       subjectSlug="geography"
-      links={[
-        { href: '/geography/map', label: 'Interactive Map' },
-      ]}
+      links={[]}
     >
       {children}
     </SubjectLayout>

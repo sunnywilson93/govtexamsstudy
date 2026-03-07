@@ -70,6 +70,39 @@ const SECTIONS: Section[] = [
           'Detect number and letter series patterns with highlighted differences.',
         hasTabs: false,
       },
+      {
+        href: '/reasoning/mirror-water-images',
+        title: 'Mirror & Water Images',
+        description:
+          'Identify mirror and water reflections with animated flip transformations.',
+        hasTabs: false,
+      },
+      {
+        href: '/reasoning/cubes-dice',
+        title: 'Cubes & Dice',
+        description:
+          'Solve cube net folding and dice opposite-face problems with visual animation.',
+        hasTabs: false,
+      },
+      {
+        href: '/reasoning/paper-folding',
+        title: 'Paper Folding & Cutting',
+        description: 'Watch paper fold, punch, and unfold to reveal hole patterns.',
+        hasTabs: false,
+      },
+      {
+        href: '/reasoning/clock-reasoning',
+        title: 'Clock Reasoning',
+        description: 'Calculate angles between clock hands with animated clock face.',
+        hasTabs: false,
+      },
+      {
+        href: '/reasoning/counting-figures',
+        title: 'Counting Figures',
+        description:
+          'Count triangles, squares, and lines in complex figures with step-by-step highlights.',
+        hasTabs: false,
+      },
     ],
   },
   {
@@ -110,6 +143,13 @@ const SECTIONS: Section[] = [
           'Decode machine rearrangement rules — step-by-step word/number patterns.',
         hasTabs: true,
       },
+      {
+        href: '/reasoning/order-ranking',
+        title: 'Order & Ranking',
+        description:
+          'Position-based problems — find rank from top/bottom, total count, between positions.',
+        hasTabs: true,
+      },
     ],
   },
   {
@@ -127,6 +167,60 @@ const SECTIONS: Section[] = [
         href: '/reasoning/cause-effect',
         title: 'Cause & Effect',
         description: 'Independent causes, common causes, and effect-as-cause traps.',
+        hasTabs: true,
+      },
+      {
+        href: '/reasoning/data-sufficiency',
+        title: 'Data Sufficiency',
+        description:
+          'Determine if given statements provide enough data to answer the question.',
+        hasTabs: true,
+      },
+      {
+        href: '/reasoning/calendar-reasoning',
+        title: 'Calendar Reasoning',
+        description:
+          'Find the day of the week for any date using odd days and leap year rules.',
+        hasTabs: true,
+      },
+      {
+        href: '/reasoning/logical-venn-diagrams',
+        title: 'Logical Venn Diagrams',
+        description:
+          'Identify relationships between groups using 2-circle and 3-circle Venn diagrams.',
+        hasTabs: true,
+      },
+      {
+        href: '/reasoning/linear-arrangements',
+        title: 'Linear Arrangements',
+        description: 'Arrange people in a row with facing and position constraints.',
+        hasTabs: true,
+      },
+      {
+        href: '/reasoning/critical-reasoning',
+        title: 'Critical Reasoning',
+        description:
+          'Evaluate assumptions, strengthening and weakening arguments, and course of action.',
+        hasTabs: true,
+      },
+    ],
+  },
+  {
+    heading: 'Non-Verbal Reasoning',
+    subheading: 'Visual pattern and spatial reasoning for SSC and competitive exams',
+    topics: [
+      {
+        href: '/reasoning/figure-series',
+        title: 'Figure Series',
+        description:
+          'Identify the next figure in a pattern — rotation, addition, subtraction of elements.',
+        hasTabs: true,
+      },
+      {
+        href: '/reasoning/embedded-figures',
+        title: 'Embedded Figures',
+        description:
+          'Find a given figure hidden within a complex figure, accounting for rotation.',
         hasTabs: true,
       },
     ],
@@ -162,7 +256,7 @@ export default function ReasoningPage() {
                   {topic.description}
                 </p>
                 {topic.hasTabs && (
-                  <p className="text-xs text-text-muted">5 concepts · 5 tricks · 5 problems</p>
+                  <p className="text-xs text-text-muted">5 concepts · 5 tricks · 30 problems</p>
                 )}
               </Link>
             ))}
