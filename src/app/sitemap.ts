@@ -66,6 +66,44 @@ const REASONING_TOPICS = [
   'counting-figures',
 ]
 
+const HISTORY_TOPICS = [
+  'indus-valley',
+  'vedic-period',
+  'buddhism-jainism',
+  'mahajanapadas',
+  'maurya-empire',
+  'post-maurya',
+  'sangam-age',
+  'gupta-empire',
+  'south-indian-dynasties',
+  'delhi-sultanate',
+  'vijayanagara-bahmani',
+  'bhakti-sufi',
+  'mughal-empire',
+  'maratha-empire',
+  'medieval-kingdoms',
+  'european-companies',
+  'british-expansion',
+  'governor-generals',
+  'british-economic-policies',
+  'revolt-1857',
+  'reform-movements',
+  'congress-national-movement',
+  'gandhian-movements',
+  'revolutionary-movement',
+  'constitutional-development',
+  'tribal-peasant-movements',
+  'independence-partition',
+  'princely-states',
+  'nation-building',
+  'wars-foreign-policy',
+  'indian-architecture',
+  'paintings-sculpture',
+  'music-dance',
+  'indian-literature',
+  'heritage-sites',
+]
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
 
@@ -93,8 +131,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const quantRoutes = QUANT_TOPICS.map((slug) => `/quant/${slug}`)
   const reasoningRoutes = REASONING_TOPICS.map((slug) => `/reasoning/${slug}`)
+  const historyRoutes = HISTORY_TOPICS.map((slug) => `/history/${slug}`)
 
-  const allRoutes = [...staticRoutes, ...quantRoutes, ...reasoningRoutes]
+  const allRoutes = [...staticRoutes, ...quantRoutes, ...reasoningRoutes, ...historyRoutes]
 
   return allRoutes.map((route) => {
     const depth = route.split('/').filter(Boolean).length
