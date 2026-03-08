@@ -1,119 +1,132 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const glacialLandformsRevision: SubjectRevision = {
-  "topic": "glacial-landforms",
-  "bullets": [
-    "Glaciers form above the snowline from compaction of snow→firn→glacial ice over decades.",
-    "Types: Continental (ice sheets — Antarctica, Greenland), Valley/Alpine (Himalayas), Cirque, Piedmont, Tidewater.",
-    "Siachen Glacier (76.4 km, Karakoram, Ladakh) — largest glacier in India and outside polar regions.",
-    "Gangotri Glacier (30.2 km, Uttarakhand) — source of the Bhagirathi/Ganga; retreated ~1.5 km in the last century.",
-    "Zemu Glacier (26 km, Sikkim) — largest glacier in eastern Himalayas; near Kanchenjunga.",
-    "India has ~9,575 glaciers covering ~40,000 sq km (GSI inventory).",
-    "Glacial erosion processes: Plucking (quarrying) and Abrasion (grinding).",
-    "Erosional landforms: Cirque (armchair hollow), Arête (knife-edge ridge), Horn (pyramidal peak), U-shaped valley, Hanging valley, Fjord.",
-    "Depositional landforms: Moraines (lateral, medial, terminal, ground), Drumlins, Eskers, Kames, Outwash plains.",
-    "Moraines: lateral (sides), medial (middle, merged laterals), terminal (farthest advance), ground (beneath glacier).",
-    "Drumlins: elongated hills of till; steep stoss end (upstream), gentle lee end (downstream); occur in swarms.",
-    "GLOF — Glacial Lake Outburst Flood — sudden release of moraine-dammed lake; major Himalayan hazard.",
-    "2013 Kedarnath disaster: cloudburst + glacial debris → 5,000+ deaths in Uttarakhand.",
-    "2021 Chamoli disaster: rock-ice avalanche → flooding in Rishiganga/Dhauliganga → 200+ deaths.",
-    "Himalayan glaciers retreating at 10-60 m/year; could lose 2/3 of ice by 2100 under high emissions (IPCC).",
-    "1.5 billion people depend on Himalayan glacier-fed rivers for water."
+  topic: 'glacial-landforms',
+  bullets: [
+    'Glaciers form above the snowline from compaction of snow into firn into glacial ice over decades.',
+    'Types: Continental (ice sheets — Antarctica, Greenland), Valley/Alpine (Himalayas), Cirque, Piedmont, Tidewater, Ice Cap.',
+    'Siachen Glacier (76.4 km, Karakoram, Ladakh) — largest glacier in India and outside polar regions.',
+    'Gangotri Glacier (30.2 km, Uttarakhand) — source of the Bhagirathi/Ganga; retreated ~1.5 km in the last century.',
+    'Zemu Glacier (26 km, Sikkim) — largest glacier in eastern Himalayas; near Kanchenjunga.',
+    'Bara Shigri (25 km, HP) — largest glacier in Himachal Pradesh; in the Chandra Valley.',
+    'India has ~9,575 glaciers covering ~40,000 sq km (GSI inventory).',
+    'Glacier movement: internal deformation (ice crystals slide under pressure) + basal sliding (meltwater film).',
+    'Glacial erosion processes: Plucking (quarrying — freezes onto rock, tears chunks) and Abrasion (grinding, creates striations).',
+    'Rock flour from abrasion gives glacial meltwater its milky-blue colour.',
+    'Erosional landforms: Cirque (armchair hollow), Arete (knife-edge ridge), Horn (pyramidal peak), U-shaped valley, Hanging valley, Fjord, Roche Moutonnee.',
+    'Depositional landforms: Moraines (lateral, medial, terminal, ground, recessional), Drumlins, Eskers, Kames, Outwash plains, Erratics, Kettles.',
+    'Till = unsorted, unstratified, angular debris deposited directly by glacier.',
+    'Outwash = sorted, stratified material deposited by meltwater streams beyond glacier.',
+    'Moraines: lateral (sides), medial (middle, merged laterals), terminal (farthest advance), ground (beneath glacier), recessional (pauses in retreat).',
+    'Drumlins: elongated till hills; steep stoss end (upstream), gentle lee end (downstream); occur in swarms ("basket of eggs").',
+    'Eskers: sinuous ridges of sorted gravel deposited by subglacial meltwater streams — distinguishable from moraines by sorting.',
+    'GLOF — Glacial Lake Outburst Flood — sudden release of moraine-dammed lake; major Himalayan hazard.',
+    '2013 Kedarnath disaster: cloudburst + Chorabari Lake drainage + glacial debris → 5,000+ deaths in Uttarakhand.',
+    '2021 Chamoli disaster: rock-ice avalanche → flooding in Rishiganga/Dhauliganga → 200+ deaths; destroyed 2 HEPs.',
+    '2023 Sikkim GLOF: South Lhonak Lake breached → Teesta flooding → ~100 deaths; damaged Chungthang Dam.',
+    'Himalayan glaciers retreating at 10-60 m/year; ice loss doubled since 2000 vs 1975-2000.',
+    'IPCC AR6: Himalayan glaciers could lose up to 2/3 of ice by 2100 under high emissions.',
+    'Karakoram Anomaly: some Karakoram glaciers (including Siachen area) are stable/advancing — unlike general Himalayan trend.',
+    '1.5 billion people depend on Himalayan glacier-fed rivers for water.',
+    'Chhota Shigri (HP) — best-monitored glacier in India for mass balance studies (continuous data since 2002).',
+    'Permafrost in India found above ~5,000 m in Ladakh and Spiti; thaw risks slope instability.',
+    'Periglacial landforms in India: patterned ground, solifluction lobes, talus slopes (Ladakh, Spiti).',
+    'Operation Meghdoot (1984): India secured Siachen Glacier; world\'s highest battleground (posts up to 6,700 m).',
+    'Pleistocene Ice Ages: glaciers covered 30% of land; moraines found as low as 2,500 m in Himalayas = evidence of past advance.',
+    'During Last Glacial Maximum (~20,000 years ago): sea level was ~120 m lower; India connected to Sri Lanka.',
+    'Avalanche types: Powder (fastest, cold snow), Slab (most dangerous, cohesive), Wet (spring, dense), Ice (serac collapse).',
+    'DGRE (formerly SASE) — primary agency for avalanche forecasting in India; based in Chandigarh.',
+    'Cirques in N Hemisphere face predominantly north/northeast (less sun, snow retention).',
+    'Drumlins have OPPOSITE asymmetry to barchans — steep on upstream (stoss) vs steep on downwind (slip face).',
+    'NDMA has identified 200+ potentially dangerous glacial lakes in Indian Himalayas.',
+    'Gurudongmar Lake (Sikkim, 5,430 m) — one of highest lakes in India; sacred to Buddhists and Sikhs.',
+    'Roopkund (Uttarakhand, 5,029 m) — "Skeleton Lake" with ~600 human skeletons from 9th century.',
+    'Pangong Tso (Ladakh, 4,350 m) — 134 km long, 60% in China; strategically sensitive.',
+    'NMSHE under NAPCC monitors Himalayan glacier health through field and satellite studies.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Glacial Erosional vs Depositional Landforms",
-      "headers": [
-        "Erosional",
-        "Description",
-        "Depositional",
-        "Description"
+      title: 'Glacial Erosional vs Depositional Landforms',
+      headers: ['Erosional', 'Description', 'Depositional', 'Description'],
+      rows: [
+        ['Cirque', 'Armchair-shaped hollow', 'Lateral moraine', 'Ridge along glacier side'],
+        ['Arete', 'Knife-edge ridge (2 cirques)', 'Terminal moraine', 'Ridge at farthest advance'],
+        ['Horn', 'Pyramidal peak (3+ cirques)', 'Drumlin', 'Oval till hill, streamlined'],
+        ['U-valley', 'Wide, flat-bottomed valley', 'Esker', 'Winding sorted gravel ridge'],
+        ['Fjord', 'Flooded U-valley', 'Outwash plain', 'Flat sorted meltwater deposits'],
+        ['Roche Moutonnee', 'Smooth upstream, rough downstream', 'Erratic', 'Boulder of alien rock type'],
       ],
-      "rows": [
-        [
-          "Cirque",
-          "Armchair-shaped hollow",
-          "Lateral moraine",
-          "Ridge along glacier side"
-        ],
-        [
-          "Arête",
-          "Knife-edge ridge (2 cirques)",
-          "Terminal moraine",
-          "Ridge at farthest advance"
-        ],
-        [
-          "Horn",
-          "Pyramidal peak (3+ cirques)",
-          "Drumlin",
-          "Oval till hill, streamlined"
-        ],
-        [
-          "U-valley",
-          "Wide, flat-bottomed valley",
-          "Esker",
-          "Winding meltwater ridge"
-        ],
-        [
-          "Fjord",
-          "Flooded U-valley",
-          "Outwash plain",
-          "Flat meltwater deposits"
-        ]
-      ]
     },
     {
-      "title": "India's Major Glaciers",
-      "headers": [
-        "Glacier",
-        "Length",
-        "Location",
-        "Significance"
+      title: 'India\'s Major Glaciers',
+      headers: ['Glacier', 'Length', 'Location', 'Significance'],
+      rows: [
+        ['Siachen', '76.4 km', 'Ladakh (Karakoram)', 'Largest non-polar glacier; world\'s highest battleground'],
+        ['Gangotri', '30.2 km', 'Uttarakhand', 'Source of Ganga (Bhagirathi); retreating ~15 m/year'],
+        ['Zemu', '26 km', 'Sikkim', 'Largest in eastern Himalayas; near Kanchenjunga'],
+        ['Bara Shigri', '25 km', 'Himachal Pradesh', 'Largest in HP; Chandra Valley'],
+        ['Milam', '16 km', 'Uttarakhand', 'Source of Goriganga river'],
+        ['Chhota Shigri', '9 km', 'Himachal Pradesh', 'Best-monitored for mass balance (since 2002)'],
+        ['Kolahoi', '~5 km', 'J&K', 'Largest in J&K; source of Lidder River'],
       ],
-      "rows": [
-        [
-          "Siachen",
-          "76.4 km",
-          "Ladakh (Karakoram)",
-          "Largest non-polar glacier"
-        ],
-        [
-          "Gangotri",
-          "30.2 km",
-          "Uttarakhand",
-          "Source of Ganga (Bhagirathi)"
-        ],
-        [
-          "Zemu",
-          "26 km",
-          "Sikkim",
-          "Largest in eastern Himalayas"
-        ],
-        [
-          "Bara Shigri",
-          "25 km",
-          "Himachal Pradesh",
-          "Largest in HP"
-        ],
-        [
-          "Kolahoi",
-          "~5 km",
-          "J&K",
-          "Largest in J&K"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
-    {
-      "title": "Glacial Erosional Landforms",
-      "mnemonic": "CAHUF — Cirque, Arête, Horn, U-valley, Fjord",
-      "explanation": "Key erosional landforms created by glaciers, from smallest to largest scale."
     },
     {
-      "title": "Types of Moraines",
-      "mnemonic": "LMTG — Lateral, Medial, Terminal, Ground",
-      "explanation": "Four types of moraines deposited by glaciers at different positions."
-    }
-  ]
+      title: 'Till vs Outwash Deposits',
+      headers: ['Feature', 'Till (Moraine)', 'Outwash (Fluvioglacial)'],
+      rows: [
+        ['Sorting', 'Unsorted (all sizes)', 'Sorted (by grain size)'],
+        ['Stratification', 'Unstratified', 'Stratified (layered)'],
+        ['Clast shape', 'Angular to sub-angular', 'Rounded to sub-rounded'],
+        ['Deposited by', 'Glacier directly', 'Meltwater streams'],
+        ['Landforms', 'Moraines, drumlins', 'Eskers, outwash plains, kames'],
+      ],
+    },
+    {
+      title: 'Major GLOF/Glacial Disasters in India',
+      headers: ['Event', 'Year', 'Location', 'Cause', 'Impact'],
+      rows: [
+        ['Kedarnath', '2013', 'Uttarakhand', 'Cloudburst + glacial lake drainage', '5,000+ deaths'],
+        ['Chamoli', '2021', 'Uttarakhand', 'Rock-ice avalanche', '200+ deaths; 2 HEPs destroyed'],
+        ['Sikkim GLOF', '2023', 'Sikkim', 'South Lhonak Lake breach', '~100 deaths; Chungthang Dam damaged'],
+      ],
+    },
+    {
+      title: 'Glacial vs Fluvial Landforms',
+      headers: ['Feature', 'Glacial', 'Fluvial (River)'],
+      rows: [
+        ['Valley shape', 'U-shaped (flat bottom, steep sides)', 'V-shaped (narrow, sloping sides)'],
+        ['Deposits', 'Unsorted till', 'Sorted alluvium'],
+        ['Lakes', 'Tarns, moraine-dammed', 'Oxbow lakes'],
+        ['Erosion surface', 'Striated, polished', 'Potholes, terraces'],
+        ['Characteristic deposit', 'Moraines, erratics', 'Alluvial fans, deltas'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Glacial Erosional Landforms (CAHUF-R)',
+      mnemonic: 'Cirque, Arete, Horn, U-valley, Fjord, Roche Moutonnee',
+      explanation: 'Key erosional landforms from smallest to largest scale. Cirque is the starting point; arete and horn form from multiple cirques; U-valley is the modified river valley.',
+    },
+    {
+      title: 'Types of Moraines (LMTGR)',
+      mnemonic: 'Lateral (sides), Medial (middle), Terminal (end), Ground (beneath), Recessional (retreat pauses)',
+      explanation: 'Five types of moraines deposited at different positions relative to the glacier.',
+    },
+    {
+      title: 'Glacier Formation Sequence',
+      mnemonic: 'Snow → Firn → Glacial Ice (SFG)',
+      explanation: 'Fresh snow compacts into granular firn/neve, which further compresses into dense glacial ice over decades. Density increases from 0.05 to 0.9 g/cm3.',
+    },
+    {
+      title: 'India\'s Top 3 Glaciers by Length',
+      mnemonic: 'SiGaZe — Siachen (76), Gangotri (30), Zemu (26)',
+      explanation: 'Three longest glaciers in India. Siachen in Ladakh, Gangotri in Uttarakhand, Zemu in Sikkim.',
+    },
+    {
+      title: 'Drumlin vs Barchan Asymmetry',
+      mnemonic: 'Drumlin: Steep STOSS (upstream); Barchan: Steep SLIP face (downwind) — opposite asymmetry!',
+      explanation: 'Both are elongated landforms aligned with flow direction, but drumlins (glacial) are steeper upstream while barchans (aeolian) are steeper on the leeward side.',
+    },
+  ],
 }

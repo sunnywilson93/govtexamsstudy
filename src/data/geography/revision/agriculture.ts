@@ -1,63 +1,150 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const agricultureRevision: SubjectRevision = {
-  "topic": "agriculture",
-  "bullets": [
-    "Agriculture employs about 42% of India's workforce and contributes about 18% to GDP.",
-    "Three cropping seasons: Kharif (Jun-Oct, monsoon), Rabi (Oct-Mar, winter), Zaid (Mar-Jun, summer).",
-    "India is the largest producer of milk, pulses, and spices globally.",
-    "India is the 2nd largest producer of rice, wheat, sugarcane, cotton, and fruits & vegetables.",
-    "Green Revolution (1960s-70s): HYV seeds; M.S. Swaminathan (India), Norman Borlaug (global).",
-    "White Revolution (Operation Flood, 1970-96): Led by Verghese Kurien; made India top milk producer.",
-    "West Bengal — largest rice-producing state; UP — largest wheat and sugarcane-producing state.",
-    "Gujarat — largest cotton producer; Assam — largest tea producer.",
-    "Tea was India's largest agricultural export; Darjeeling tea is called 'Champagne of teas'.",
-    "MSP announced for 23 crops by CACP (Commission for Agricultural Costs & Prices).",
-    "2023 was UN International Year of Millets — initiative by India.",
-    "Average landholding in India: 1.08 hectares; highly fragmented."
+  topic: 'agriculture',
+  bullets: [
+    'Agriculture employs about 42% of India\'s workforce and contributes about 18% to GDP.',
+    'Three cropping seasons: Kharif (Jun-Oct, monsoon), Rabi (Oct-Mar, winter), Zaid (Mar-Jun, summer).',
+    'India is the largest producer of milk, pulses, and spices globally.',
+    'India is the 2nd largest producer of rice, wheat, sugarcane, cotton, and fruits & vegetables.',
+    'Green Revolution (1960s-70s): HYV seeds; M.S. Swaminathan (India), Norman Borlaug (global).',
+    'White Revolution (Operation Flood, 1970-96): Led by Verghese Kurien; made India top milk producer.',
+    'West Bengal — largest rice-producing state; UP — largest wheat and sugarcane-producing state.',
+    'Gujarat — largest cotton producer (on black soil/regur); Assam — largest tea producer.',
+    'Tea: Darjeeling tea called "Champagne of teas"; India is 2nd largest producer after China.',
+    'Coffee: Karnataka produces 70% (Coorg, Chikmagalur); Arabica and Robusta varieties.',
+    'MSP announced for 23 crops by CACP (Commission for Agricultural Costs & Prices).',
+    'FCI (Food Corporation of India) procures wheat and rice at MSP for PDS distribution.',
+    '2023 was UN International Year of Millets — initiative by India; millets are "nutri-cereals".',
+    'Average landholding in India: 1.08 hectares; 86.2% are small/marginal (<2 ha).',
+    'Cropping intensity: national average ~142%; Punjab-Haryana >180% (highest due to irrigation).',
+    'Only 52% of net sown area is irrigated; rest depends on monsoon rainfall.',
+    'Tubewells/borewells: 46% of irrigation; canals: 24%; wells: 17%; tanks: 4%.',
+    'India is world\'s largest groundwater user (25% of global extraction); Punjab-Haryana critically over-exploited.',
+    'Bt Cotton (2002): India\'s only approved GM crop; dramatically increased cotton production.',
+    'Sikkim: India\'s first fully organic state (2016); ZBNF practiced by 6 lakh farmers in AP.',
+    'PM-KISAN: Rs 6,000/year to farmers in 3 instalments; 11+ crore beneficiaries.',
+    'e-NAM (2016): electronic mandi connecting 1,000+ APMCs for transparent agricultural trading.',
+    'NFSA (2013): subsidized foodgrains to 67% of population; rice Rs 3/kg, wheat Rs 2/kg.',
+    'India\'s agri-exports ~$50 billion (2022-23): rice, spices, marine products, sugar, cotton.',
+    'India is world\'s largest rice exporter; Pusa Basmati 1121 is most exported variety.',
+    'India is 3rd largest fish producer globally; marine + inland = ~16.2 million tonnes.',
+    'Andhra Pradesh is the largest aquaculture state ("Shrimp Capital" — Nellore); WB largest inland fish.',
+    'Spices Board HQ: Kochi; pepper ("Black Gold" — Kerala); Guntur = "Chilli Capital".',
+    'India\'s livestock: ~537 million (2019 census); world\'s largest; cattle 193M, buffalo 110M, goat 149M.',
+    'Soil Health Card Scheme (2015): soil testing + nutrient recommendations; 12+ crore cards distributed.',
+    'Nano Urea (IFFCO, 2021): 500 ml bottle replaces 45 kg urea bag; reduces soil degradation.',
+    'Crop residue (stubble) burning: 20M tonnes burned annually in Punjab-Haryana-UP; causes Delhi winter smog.',
+    'Happy Seeder: machine sows wheat directly into rice stubble without burning; promoted by PAU.',
+    'Farmer indebtedness: 50.2% of farm households indebted (SAS 2019); avg debt Rs 74,121.',
+    'KCC (Kisan Credit Card, 1998): short-term credit at 7% (4% with subsidy); 7.5+ crore issued.',
+    'NPK ratio skewed: ideal 4:2:1 but actual ~8.2:3.2:1 — massive nitrogen (urea) overuse.',
+    'India imports ~60% of edible oil needs; palm oil from Indonesia/Malaysia is largest import.',
+    'Sericulture: India 2nd largest silk producer; Karnataka 70%; Muga silk (golden, Assam-only, GI tagged).',
+    'Blue Revolution = fisheries; Yellow = oilseeds; Pink = onion/prawn; Golden = horticulture.',
+    'Horticulture production (~340M tonnes) has exceeded food grain production (~330M tonnes).',
+    'PMFBY (Pradhan Mantri Fasal Bima Yojana): crop insurance using satellite and drone technology.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Kharif vs Rabi Crops",
-      "headers": [
-        "Feature",
-        "Kharif",
-        "Rabi"
+      title: 'Kharif vs Rabi Crops',
+      headers: ['Feature', 'Kharif', 'Rabi'],
+      rows: [
+        ['Season', 'June-October (monsoon)', 'October-March (winter)'],
+        ['Sowing', 'Onset of SW Monsoon', 'End of monsoon'],
+        ['Harvest', 'September-October', 'March-April'],
+        ['Major Crops', 'Rice, maize, cotton, jute, sugarcane', 'Wheat, barley, gram, mustard'],
+        ['Water Source', 'Monsoon rainfall', 'Winter rain/irrigation'],
       ],
-      "rows": [
-        [
-          "Season",
-          "June-October (monsoon)",
-          "October-March (winter)"
-        ],
-        [
-          "Sowing",
-          "Onset of SW Monsoon",
-          "End of monsoon"
-        ],
-        [
-          "Harvest",
-          "September-October",
-          "March-April"
-        ],
-        [
-          "Major Crops",
-          "Rice, maize, cotton, jute, sugarcane",
-          "Wheat, barley, gram, mustard"
-        ],
-        [
-          "Water Source",
-          "Monsoon rainfall",
-          "Winter rain/irrigation"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Agricultural Revolutions",
-      "mnemonic": "Green-White-Blue-Yellow-Pink (G-W-B-Y-P)",
-      "explanation": "Green (food grains), White (milk/dairy), Blue (fisheries), Yellow (oilseeds), Pink (onion/prawn). All are India's agricultural revolutions."
-    }
-  ]
+      title: 'Top Producing States (Major Crops)',
+      headers: ['Crop', 'Top Producer', 'Type/Season'],
+      rows: [
+        ['Rice', 'West Bengal', 'Kharif (also Rabi in South)'],
+        ['Wheat', 'Uttar Pradesh', 'Rabi'],
+        ['Sugarcane', 'Uttar Pradesh', 'Kharif (12-18 month crop)'],
+        ['Cotton', 'Gujarat', 'Kharif (black soil)'],
+        ['Tea', 'Assam', 'Plantation (perennial)'],
+        ['Coffee', 'Karnataka (70%)', 'Plantation (perennial)'],
+        ['Groundnut', 'Gujarat', 'Kharif'],
+        ['Soybean', 'Madhya Pradesh', 'Kharif'],
+        ['Jute', 'West Bengal (80%)', 'Kharif'],
+        ['Rubber', 'Kerala (90%+)', 'Plantation (perennial)'],
+      ],
+    },
+    {
+      title: 'Agricultural Revolutions in India',
+      headers: ['Revolution', 'Sector', 'Leader/Key Fact'],
+      rows: [
+        ['Green', 'Food grains (wheat, rice)', 'M.S. Swaminathan; HYV seeds'],
+        ['White', 'Dairy/Milk', 'Verghese Kurien; Operation Flood; AMUL'],
+        ['Blue', 'Fisheries/Aquaculture', 'India 3rd largest fish producer'],
+        ['Yellow', 'Oilseeds', 'TMO 1986; still imports 60% edible oil'],
+        ['Golden', 'Horticulture', 'Production exceeded food grains'],
+        ['Pink', 'Onion/Prawn/Meat', 'Export-oriented aquaculture'],
+      ],
+    },
+    {
+      title: 'Irrigation Sources in India',
+      headers: ['Source', 'Share', 'Key Facts'],
+      rows: [
+        ['Tubewells/Borewells', '~46%', 'Dominant in UP, Punjab; groundwater crisis'],
+        ['Canals', '~24%', 'Punjab, Haryana, AP; Indira Gandhi Canal'],
+        ['Wells', '~17%', 'Traditional; declining share'],
+        ['Tanks', '~4%', 'TN, AP, Karnataka; ancient system'],
+        ['Other (drip, sprinkler)', '~9%', 'Growing; PMKSY "Per Drop More Crop"'],
+      ],
+    },
+    {
+      title: 'Crop-Soil-Climate Associations',
+      headers: ['Crop', 'Ideal Soil', 'Climate Requirement'],
+      rows: [
+        ['Rice', 'Alluvial/Clayey', '>100 cm rain; 20-27°C; standing water'],
+        ['Wheat', 'Loamy/Alluvial', '50-75 cm rain; 10-15°C growing season'],
+        ['Cotton', 'Black/Regur', '50-100 cm rain; 21-30°C; 210+ frost-free days'],
+        ['Tea', 'Acidic (pH 4.5-5.5)', '>150 cm rain; 20-30°C; hillslopes'],
+        ['Sugarcane', 'Deep loamy', '>75 cm rain; 21-27°C; tropical preferred'],
+      ],
+    },
+    {
+      title: 'Government Agricultural Schemes',
+      headers: ['Scheme', 'Year', 'Purpose'],
+      rows: [
+        ['PM-KISAN', '2019', 'Rs 6,000/year income support to farmers'],
+        ['PMFBY', '2016', 'Crop insurance at subsidized premium'],
+        ['e-NAM', '2016', 'Electronic mandi for transparent trading'],
+        ['Soil Health Card', '2015', 'Soil testing and nutrient advice'],
+        ['PM-KUSUM', '2019', 'Solar energy for agricultural pumps'],
+        ['PMKSY', '2015', 'Irrigation expansion + micro-irrigation'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Agricultural Revolutions',
+      mnemonic: 'Green-White-Blue-Yellow-Pink-Golden (G-W-B-Y-P-G)',
+      explanation: 'Green (food grains/Swaminathan), White (milk/Kurien), Blue (fisheries), Yellow (oilseeds), Pink (onion/prawn), Golden (horticulture). India\'s colour-coded agricultural revolutions.',
+    },
+    {
+      title: 'Kharif Crops',
+      mnemonic: 'RICE MAJORS Grow Cotton — Rice, Maize, Jowar, Bajra, Groundnut, Cotton',
+      explanation: 'Major Kharif crops sown with the onset of SW Monsoon (June-October). Also includes jute, sugarcane, soybean, arhar/tur.',
+    },
+    {
+      title: 'Rabi Crops',
+      mnemonic: 'Wheat Barley Gram Mustard Peas — "Winter Brings Golden Mustard Pods"',
+      explanation: 'Major Rabi crops sown October-November, harvested March-April. Depend on winter rain or irrigation.',
+    },
+    {
+      title: 'MSP Crops Count',
+      mnemonic: '23 — Twenty-Three crops get MSP from CACP',
+      explanation: 'MSP is announced for 23 crops: 7 cereals, 5 pulses, 7 oilseeds, 4 commercial crops. CACP recommends; Cabinet approves.',
+    },
+    {
+      title: 'Top States: Rice-Wheat-Cotton-Tea',
+      mnemonic: 'WB-UP-GJ-AS — West Bengal (rice), UP (wheat), Gujarat (cotton), Assam (tea)',
+      explanation: 'The four most commonly tested "top producing state" facts in competitive exams.',
+    },
+  ],
 }

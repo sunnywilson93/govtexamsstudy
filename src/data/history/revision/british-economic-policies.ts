@@ -23,6 +23,25 @@ export const britishEconomicPoliciesRevision: HistoryRevision = {
     "Bengal Famine of 1770 killed ~10 million (one-third of Bengal's population).",
     "Great Famine of 1876-78 killed 5.5 million; Bengal Famine of 1943 killed ~3 million.",
     "Strachey Commission (1880) recommended famine codes; Macdonnell Commission (1900) further refined famine relief.",
+    "First railway line: Bombay to Thane (April 16, 1853, 21 miles); railways built primarily for raw material transport and military movement.",
+    "Guarantee system for railways: British investors guaranteed 5% return by Indian government — profits privatized, losses socialized.",
+    "Opium grown in Bengal/Bihar under government monopoly; exported to China; caused the Opium Wars (1839-42, 1856-60).",
+    "By the 1830s, opium constituted nearly one-seventh of British India's total revenue.",
+    "Indigo Revolt (1859): ryots refused to grow indigo; Nil Darpan (play by Dinabandhu Mitra) exposed planter atrocities.",
+    "Tinkathia system: planters forced ryots to grow indigo on 3/20th of their holdings; dismantled by Gandhi's Champaran Satyagraha (1917).",
+    "Deccan Riots (1875): Maratha peasants attacked moneylenders in Pune and Ahmednagar; led to Deccan Agriculturists Relief Act (1879).",
+    "Punjab Land Alienation Act (1900): prevented non-agriculturist castes from acquiring agricultural land.",
+    "India's share of world GDP: ~24.4% in 1700, ~12.2% in 1870, ~3-4% in 1947 (Angus Maddison estimates).",
+    "India's share of world manufacturing: ~24.5% in 1750, ~17.6% in 1835, ~1.7% by 1900.",
+    "Dhaka's population fell from 150,000 to 30,000 (1800-1840) due to destruction of its muslin industry.",
+    "Indian Forest Act 1878 (Lord Lytton): classified forests into Reserved, Protected, and Village — devastated tribal communities.",
+    "Dietrich Brandis: first Inspector General of Forests (1864); established systematic exploitation of Indian forests.",
+    "Home Charges: payments to Secretary of State's office, pensions, debt interest — key component of the 'drain.'",
+    "Fowler Committee (1898) recommended gold exchange standard for India; linked rupee to gold at fixed rate.",
+    "Sterling balances (~1,330 million pounds) accumulated by India during WWII were blocked by Britain after the war.",
+    "Utsa Patnaik estimates total colonial drain from India at approximately $45 trillion (2018 dollars).",
+    "Amartya Sen's work: famines caused by entitlement failures, not food shortage alone — applicable to 1943 Bengal Famine.",
+    "Life expectancy at end of British rule: approximately 23 years (1941 census); literacy: ~16% at independence.",
   ],
   comparisons: [
     {
@@ -50,6 +69,29 @@ export const britishEconomicPoliciesRevision: HistoryRevision = {
         ["G.V. Joshi", "Critiques in the Quarterly Journal of the Poona Sarvajanik Sabha", "1870s-90s"],
       ],
     },
+    {
+      title: "Major Famines Under British Rule",
+      headers: ["Famine", "Year", "Region", "Deaths (approx.)", "Key Context"],
+      rows: [
+        ["Bengal Famine", "1770", "Bengal", "10 million (1/3 of population)", "EIC continued revenue collection during famine"],
+        ["Madras/Chalisa Famine", "1782-83", "South India, Delhi", "11 million", "Occurred during Second Anglo-Mysore War"],
+        ["Doji Bara Famine", "1791-92", "Hyderabad, Madras", "11 million", "Widespread crop failure"],
+        ["Great Famine", "1876-78", "South/West India", "5.5 million", "Lytton criticized for exporting grain; laissez-faire policies"],
+        ["Indian Famine", "1896-97", "Central/Western India", "~5 million", "Led to Indian Famine Commission 1898"],
+        ["Bengal Famine", "1943", "Bengal", "3 million", "WWII; Churchill's refusal; rice denial policy"],
+      ],
+    },
+    {
+      title: "Major Peasant/Agrarian Movements",
+      headers: ["Movement", "Year", "Region", "Key Issue", "Outcome"],
+      rows: [
+        ["Indigo Revolt", "1859", "Bengal", "Forced indigo cultivation; tinkathia system", "Indigo Commission 1860; end of forced cultivation"],
+        ["Deccan Riots", "1875", "Pune, Ahmednagar", "Moneylender exploitation", "Deccan Agriculturists Relief Act 1879"],
+        ["Champaran Satyagraha", "1917", "Bihar", "Tinkathia system for indigo", "Gandhi's first Indian satyagraha; tinkathia abolished"],
+        ["Kheda Satyagraha", "1918", "Gujarat", "Revenue demand during crop failure", "Revenue collection suspended"],
+        ["Bardoli Satyagraha", "1928", "Gujarat", "Revenue increase of 30%", "Sardar Patel led; revenue increase reduced"],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -63,6 +105,18 @@ export const britishEconomicPoliciesRevision: HistoryRevision = {
       mnemonic: "Dadabhai Drained, Dutt Documented, Ranade Reasoned",
       explanation:
         "Dadabhai Naoroji propounded the Drain theory (1867), R.C. Dutt documented it comprehensively (1901), and M.G. Ranade reasoned out economic nationalism through his lectures and writings.",
+    },
+    {
+      title: "Major Famines (BBG)",
+      mnemonic: "Bengal 1770 (10M), Big Famine 1876-78 (5.5M), Great War Bengal 1943 (3M)",
+      explanation:
+        "Three worst famines under British rule with approximate death tolls. The 1770 Bengal Famine killed one-third of Bengal's population. The 1876-78 Great Famine killed 5.5 million under Lytton. The 1943 Bengal Famine killed 3 million during WWII.",
+    },
+    {
+      title: "Cash Crops under British (IOCJT)",
+      mnemonic: "Indigo, Opium, Cotton, Jute, Tea — 'India's Output Captured by John's Trade'",
+      explanation:
+        "The five major cash crops that the British forced Indian peasants to cultivate for export: Indigo (Bengal/Bihar), Opium (Bengal/Bihar for China), Cotton (Western India for Lancashire mills), Jute (Eastern Bengal), Tea (Assam).",
     },
   ],
 }

@@ -1,61 +1,137 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const inclusiveGrowthRevision: SubjectRevision = {
-  "topic": "inclusive-growth",
-  "bullets": [
-    "Inclusive Growth: Growth creating opportunities for all and distributing benefits equitably.",
-    "Gini Coefficient: 0 = perfect equality, 1 = perfect inequality. India consumption Gini: ~0.35.",
-    "India HDI: 0.644 (2022), rank 132/191 — Medium Human Development.",
-    "HDI = Life Expectancy + Mean/Expected Years of Schooling + GNI per capita (PPP).",
-    "MPI headcount: 55.1% (2005-06) → 11.28% (2022-23) — one of fastest reductions globally.",
-    "17 SDGs (UN 2015, Agenda 2030). NITI Aayog SDG India Index ranks states.",
-    "Top SDG performers: Kerala, Tamil Nadu, Himachal Pradesh. Lowest: Bihar, Jharkhand.",
-    "Top 10% of Indians own 77% of wealth. Top 1% own 40.5% (Oxfam).",
-    "Inter-state disparity: Goa highest per capita GSDP, Bihar lowest.",
-    "India per capita income: ~$2,600 (nominal), ~$9,200 (PPP). Target: $5 trillion economy."
+  topic: 'inclusive-growth',
+  bullets: [
+    "Inclusive Growth: Growth creating opportunities for all and distributing benefits equitably. Central theme of 11th FYP (2007-12).",
+    "Six pillars of inclusive growth: Agriculture, infrastructure, education, health, employment, governance reform.",
+    "Employment elasticity of growth declined from 0.44 (1999-2005) to 0.15 (2012-18) — 'jobless growth' concern.",
+    "Gini Coefficient: 0 = perfect equality, 1 = perfect inequality. India consumption Gini: ~0.35. Income Gini: ~0.54. Wealth Gini: ~0.82.",
+    "Palma Ratio: Top 10% share / Bottom 40% share. India ~2.1. More intuitive than Gini for measuring extremes.",
+    "Oxfam 2024: Top 10% own 77% of wealth. Top 1% own 40.5%. Bottom 50% own 6.4%. 169 billionaires in India.",
+    "Kuznets Curve: Inverted-U (inequality first rises then falls with development). India appears on rising part.",
+    "Piketty's r > g: Return on capital exceeds economic growth — widens inequality. Applies strongly in India.",
+    "India HDI: 0.644 (2022), rank 134/193 — Medium Human Development. Bangladesh (0.670) now ranks higher.",
+    "HDI = Geometric mean of Health (life expectancy) + Education (schooling) + Income (GNI per capita PPP).",
+    "MPI headcount: 55.1% (2005-06) -> 25.01% (2015-16) -> 11.28% (2022-23) — fastest reduction globally.",
+    "17 SDGs (UN 2015, Agenda 2030). NITI Aayog SDG India Index: Composite 71 (2023-24). Kerala tops (79), Bihar lowest (52).",
+    "India excels on SDG 7 (Clean Energy, 92) and SDG 6 (Water, 83). Lags on SDG 2 (Hunger, 47) and SDG 5 (Gender, 49).",
+    "Inter-state disparity: Goa highest per capita GSDP (~Rs 5 lakh), Bihar lowest (~Rs 55,000). Ratio 9:1.",
+    "Urban MPCE Rs 6,459 vs Rural Rs 3,773 (HCES 2022-23) — urban 71% higher. 35% urban population generates 63% of GDP.",
+    "Jan Dhan Yojana: 51+ crore accounts. 67% rural/semi-urban. 56% women. Deposits Rs 2.3+ lakh crore.",
+    "JAM Trinity: Jan Dhan + Aadhaar + Mobile. Rs 35 lakh crore DBT. Savings Rs 3.48 lakh crore from eliminated fakes.",
+    "Priority Sector Lending: 40% of net credit. Agriculture 18%, Micro enterprises 7.5%, Weaker sections 12%.",
+    "MUDRA loans: Shishu (up to Rs 50K), Kishore (50K-5L), Tarun (5L-10L). 44.46 crore loans. 68% to women.",
+    "UPI: 13+ billion transactions/month. India = 46% of global real-time digital payments.",
+    "SHG-Bank Linkage: 83 lakh SHGs, Rs 2 lakh crore credit — world's largest microfinance programme.",
+    "PLFS FY24: LFPR 60.1%, Unemployment 3.2%. Self-employed 57.3%, Regular wage 21.7%, Casual 21%.",
+    "India needs 8-10 million jobs/year. EPFO adds only 1.5-2 million. Gap filled by informal/self-employment.",
+    "Agriculture: 45.8% employment but only 17% GDP — productivity gap is largest source of inequality.",
+    "Economic Survey 2016-17 explored UBI: Rs 7,620/year per person would cost 4.9% of GDP. Existing subsidies: 4.2% of GDP.",
+    "India's tax-to-GDP: ~11.7% (2023-24). OECD average: 34%. Only 7.4 crore file income tax (5% of population).",
+    "Social sector expenditure: ~8-9% of GDP (centre + states). Education ~3.1%, Health ~2.1%, Social protection ~2.5%.",
+    "Anti-poverty evolution: IRDP (1978, assets) -> SGSY (1999, SHGs) -> MGNREGA (2005, rights-based) -> DBT (2013, transfer-based).",
+    "SC/ST poverty 2-3x higher than general category. SC 16.6%, ST 8.6% of population (Census 2011).",
+    "Reservations: SC 15%, ST 7.5%, OBC 27%, EWS 10%. Total 59.5%. PESA and FRA protect tribal rights.",
+    "Women's LFPR: 41.7% (FY24, up from 23.3% FY18). Urban only ~25%. Women spend 5 hrs/day on unpaid care work (men: 30 min).",
+    "Aadhaar: 138 crore enrollments. UPI: 13B+ txn/month. DigiLocker: 28 crore users. DPI endorsed by G20.",
+    "Digital divide: Internet penetration ~52% (rural ~38%, urban ~75%). Women 30% less likely to own smartphone.",
+    "Climate vulnerability: India 7th most climate-vulnerable. 34 billion labour hours lost to heat (2021). 40 million climate migrants by 2050.",
+    "India per capita CO2: 1.9 tonnes (world average 4.7). Just transition: Coal employs 15+ lakh. Green jobs: RE employs 7.5+ lakh.",
+    "Governance: 4.7 crore cases pending. Land disputes = 67% of civil cases. Only 5% of workforce formally skilled.",
+    "Aspirational Districts Programme: 112 districts across 28 states. Real-time dashboards. Competitive federalism approach.",
+    "NRLM: 9 crore women in 83 lakh SHGs — world's largest women's livelihood programme.",
+    "NFSA covers 81.35 crore. PM-KISAN: 11.8 crore. MGNREGA: 7 crore job cards. PM-JAY: 55 crore beneficiaries.",
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "HDI vs MPI",
-      "headers": [
-        "Feature",
-        "HDI",
-        "MPI"
+      title: "HDI vs MPI",
+      headers: ["Feature", "HDI", "MPI"],
+      rows: [
+        ["Published by", "UNDP", "UNDP + OPHI / NITI Aayog"],
+        ["Dimensions", "Health, Education, Income", "Health, Education, Living Standards"],
+        ["Indicators", "4", "10 (global) / 12 (national)"],
+        ["Measures", "Average achievement", "Deprivation (poverty)"],
+        ["India rank/value", "134/193 (0.644)", "11.28% headcount (2022-23)"],
       ],
-      "rows": [
-        [
-          "Published by",
-          "UNDP",
-          "UNDP + OPHI / NITI Aayog"
-        ],
-        [
-          "Dimensions",
-          "Health, Education, Income",
-          "Health, Education, Living Standards"
-        ],
-        [
-          "Indicators",
-          "4",
-          "12"
-        ],
-        [
-          "Measures",
-          "Average achievement",
-          "Deprivation (poverty)"
-        ],
-        [
-          "India rank/value",
-          "132/191 (0.644)",
-          "11.28% headcount (2022-23)"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "SDGs — \"17 Goals, 2030 Deadline\"",
-      "mnemonic": "No Poverty, Zero Hunger, Health, Education, Gender, Water, Energy...",
-      "explanation": "The first 6 SDGs: 1-No Poverty, 2-Zero Hunger, 3-Good Health, 4-Quality Education, 5-Gender Equality, 6-Clean Water. India is on track for energy and industry goals but lagging on hunger, health, and gender."
-    }
-  ]
+      title: "Inequality Measures Comparison",
+      headers: ["Measure", "Scale", "India's Value", "Interpretation"],
+      rows: [
+        ["Gini (consumption)", "0-1", "~0.35", "Moderate inequality"],
+        ["Gini (income)", "0-1", "~0.54", "High inequality"],
+        ["Gini (wealth)", "0-1", "~0.82", "Extreme inequality"],
+        ["Palma Ratio", "Ratio", "~2.1", "Top 10% earn 2x of bottom 40%"],
+        ["Top 1% wealth share", "Percentage", "40.5%", "Severe concentration"],
+      ],
+    },
+    {
+      title: "Anti-Poverty Programme Evolution",
+      headers: ["Phase", "Period", "Approach", "Key Programme"],
+      rows: [
+        ["Phase 1", "1960s-80s", "Target group / asset-based", "IRDP, NREP, JRY"],
+        ["Phase 2", "1990s-2000s", "Rights-based / self-employment", "SGSY (SHGs), MGNREGA"],
+        ["Phase 3", "2005-present", "Universal entitlements + DBT", "NFSA, PM-KISAN, JAM Trinity"],
+      ],
+    },
+    {
+      title: "MUDRA Loan Categories",
+      headers: ["Category", "Loan Amount", "Purpose", "Share"],
+      rows: [
+        ["Shishu", "Up to Rs 50,000", "Start-up / micro enterprises", "~60% of loans"],
+        ["Kishore", "Rs 50,000 - Rs 5 lakh", "Expansion / mid-stage", "~30% of loans"],
+        ["Tarun", "Rs 5 lakh - Rs 10 lakh", "Scale-up / established", "~10% of loans"],
+      ],
+    },
+    {
+      title: "Regional Disparities — Top vs Bottom States",
+      headers: ["Indicator", "Top State", "Value", "Bottom State", "Value"],
+      rows: [
+        ["Per capita GSDP", "Goa", "~Rs 5 lakh", "Bihar", "~Rs 55,000"],
+        ["SDG Index", "Kerala", "79", "Bihar", "52"],
+        ["Literacy", "Kerala", "93.9%", "Bihar", "63.8%"],
+        ["IMR", "Kerala", "6/1,000", "MP", "46/1,000"],
+        ["Female LFPR", "Himachal", "~62%", "Bihar", "~12%"],
+      ],
+    },
+    {
+      title: "SDG India Index — Best vs Worst SDGs",
+      headers: ["SDG", "Score", "Status", "Key Challenge"],
+      rows: [
+        ["SDG 7 (Clean Energy)", "92", "Front Runner", "Last-mile access in remote areas"],
+        ["SDG 6 (Clean Water)", "83", "Front Runner", "Sustaining JJM connections"],
+        ["SDG 3 (Good Health)", "58", "Performer", "MMR, IMR, out-of-pocket spending"],
+        ["SDG 5 (Gender Equality)", "49", "Aspirant", "LFPR, property ownership, safety"],
+        ["SDG 2 (Zero Hunger)", "47", "Aspirant", "Stunting, wasting, anaemia"],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: "SDGs — First 6 Goals",
+      mnemonic: "No Poverty, Zero Hunger, Health, Education, Gender, Water — 'People's Health Education Gets Water'",
+      explanation: "SDG 1-No Poverty, 2-Zero Hunger, 3-Good Health, 4-Quality Education, 5-Gender Equality, 6-Clean Water. India lags on 2, 3, and 5.",
+    },
+    {
+      title: "JAM Trinity",
+      mnemonic: "Jan Dhan (accounts) + Aadhaar (identity) + Mobile (delivery) = DBT pipeline",
+      explanation: "Three digital pillars enabling direct benefit transfers. Rs 35 lakh crore transferred, Rs 3.48 lakh crore saved.",
+    },
+    {
+      title: "MUDRA Categories — 'SKT'",
+      mnemonic: "Shishu (up to 50K), Kishore (50K-5L), Tarun (5L-10L)",
+      explanation: "Three loan categories in ascending order — named after life stages (child, youth, adult). 68% of total loans to women.",
+    },
+    {
+      title: "Inclusive Growth Pillars — 'AIHEG'",
+      mnemonic: "Agriculture, Infrastructure, Health, Education, Governance",
+      explanation: "Five key pillars identified for inclusive growth — matching the dimensions where India lags on SDGs.",
+    },
+    {
+      title: "Priority Sector Lending — '40-18-7.5-12'",
+      mnemonic: "Total 40% of net credit: Agriculture 18%, Micro enterprises 7.5%, Weaker sections 12%",
+      explanation: "Key PSL targets for scheduled commercial banks. Non-compliance results in deposits in RIDF (NABARD) or SIDBI.",
+    },
+  ],
 }

@@ -1,69 +1,129 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const geomorphologyRevision: SubjectRevision = {
-  "topic": "geomorphology",
-  "bullets": [
-    "Earth is approximately 4.6 billion years old; interior has three layers: Crust, Mantle, Core.",
-    "Continental crust (sial) is thicker (30-70 km); Oceanic crust (sima) is thinner (5-10 km) but denser.",
-    "Moho discontinuity: between crust and mantle; Gutenberg: mantle-core; Lehmann: outer-inner core.",
-    "Plate Tectonics: 7 major plates; boundaries: Convergent, Divergent, Transform.",
-    "Himalayas formed by convergence of Indian and Eurasian plates ~50 MYA.",
-    "Ring of Fire (Pacific) — 75% of world's active volcanoes and 90% of earthquakes.",
-    "Mariana Trench (11,034 m) is the deepest point on Earth — Challenger Deep in Pacific.",
-    "Weathering: Physical (frost, exfoliation), Chemical (carbonation, oxidation), Biological (roots, lichens).",
-    "River erosion creates V-shaped valleys, gorges, waterfalls; deposition creates deltas, floodplains.",
-    "Glaciers create cirques, U-shaped valleys, moraines, drumlins.",
-    "India's seismic zones: Zone V (highest risk — NE, Kashmir, Kutch), Zone II (lowest — stable Peninsula).",
-    "Bhuj earthquake 2001 (7.7 magnitude) catalysed the Disaster Management Act 2005."
+  topic: 'geomorphology',
+  bullets: [
+    'Earth is approximately 4.6 billion years old; interior has three layers: Crust, Mantle, Core.',
+    'Continental crust (sial) is thicker (30-70 km); Oceanic crust (sima) is thinner (5-10 km) but denser.',
+    'Moho discontinuity: between crust and mantle; Gutenberg: mantle-core; Lehmann: outer-inner core.',
+    'Asthenosphere (100-400 km depth) is partially molten — convection currents here drive plate tectonics.',
+    'Outer core is liquid iron-nickel (generates Earth\'s magnetic field via dynamo effect); inner core is solid due to extreme pressure.',
+    'Plate Tectonics: 7 major plates; boundaries: Convergent (destructive), Divergent (constructive), Transform (conservative).',
+    'Convergent subtypes: ocean-ocean (island arcs — Japan), ocean-continent (Andes), continent-continent (Himalayas — no volcanism).',
+    'Divergent boundaries create mid-ocean ridges (Mid-Atlantic Ridge — 65,000 km, longest mountain range on Earth).',
+    'Himalayas formed by convergence of Indian and Eurasian plates ~50 MYA; still rising at ~5 mm/year.',
+    'Ring of Fire (Pacific) — 75% of world\'s active volcanoes and 90% of earthquakes; stretches 40,000 km.',
+    'Mariana Trench (10,994 m, Challenger Deep) is the deepest point on Earth — in western Pacific.',
+    'Volcano types: Shield (Mauna Loa — broadest), Composite/Stratovolcano (Mt. Fuji — most dangerous), Cinder Cone (smallest), Caldera (collapsed — Yellowstone).',
+    'Barren Island (Andaman Sea) — India\'s only active volcano; Narcondam Island — dormant volcano.',
+    'Deccan Traps: one of Earth\'s largest volcanic provinces; erupted ~66 MYA; covered 500,000 sq km.',
+    'Weathering: Physical (frost, exfoliation, pressure release), Chemical (carbonation, oxidation, hydrolysis — dominant in tropics), Biological (roots, lichens).',
+    'Chemical weathering is fastest in hot-humid climates; physical weathering dominates in arid and cold regions.',
+    'Mass wasting types: Rockfall (rapid), Landslide (rapid), Debris flow (rapid), Soil creep (slowest).',
+    '15% of India\'s landmass is landslide-prone — Himalayas, NE India, Western Ghats most vulnerable.',
+    'River erosion creates V-shaped valleys, gorges, waterfalls; deposition creates alluvial fans, floodplains, deltas.',
+    'Narmada and Tapti form estuaries (not deltas) — hard rock coast + tidal action on west coast.',
+    'Jog Falls (Sharavathi, Karnataka, 253 m) — highest plunge waterfall in India; Nohkalikai (Meghalaya, 340 m) — tallest.',
+    'Glaciers create cirques, aretes, horns, U-shaped valleys, fjords (erosional) and moraines, drumlins, eskers (depositional).',
+    'India has ~9,575 glaciers covering ~40,000 sq km in the Himalayas.',
+    'Desert landforms: mushroom rocks, yardangs, inselbergs (erosional); barchans, seif dunes, loess (depositional).',
+    'Karst landforms: sinkholes, caves, stalactites (ceiling), stalagmites (floor), pillars — from limestone dissolution.',
+    'Krem Liat Prah (Meghalaya) — India\'s longest cave at ~34 km.',
+    'India\'s seismic zones: Zone V (highest risk — NE, Kashmir, Kutch, Andaman), Zone II (lowest — stable Peninsula).',
+    'Bhuj 2001 (M 7.7) — India\'s deadliest modern earthquake; Assam 1950 (M 8.6) — strongest recorded in India.',
+    'Koyna 1967 (M 6.3) — India\'s most famous reservoir-induced earthquake (near Koyna Dam, Maharashtra).',
+    'Latur 1993 (M 6.2) — unexpected earthquake in stable Peninsular shield; proved shield areas aren\'t immune.',
+    'Davis\'s Geographical Cycle: Youth → Maturity → Old Age → Peneplain; criticised as too simplistic.',
+    'Penck\'s model: landform shape depends on relative rates of uplift vs erosion (convex/concave/straight slopes).',
+    'King\'s model: parallel scarp retreat creates pediments → pediplain (studied South African landscapes).',
+    'Indo-Gangetic Plain subdivisions: Bhabar (pebbly) → Terai (marshy) → Bhangar (old alluvium) → Khadar (new alluvium, most fertile).',
+    'Aravalli Range — one of oldest fold mountains (~1.5 billion years); Guru Shikhar (1,722 m) is highest peak.',
+    'Anamudi (2,695 m, Kerala) — highest peak in Western Ghats and Peninsular India.',
+    'Alfred Wegener proposed Continental Drift in 1912; evidence: continental fit, fossil matching (Glossopteris, Mesosaurus), rock matching.',
+    'Hot spots: volcanism away from plate boundaries; Hawaii, Yellowstone; Deccan Traps formed as India passed over Reunion hot spot.',
+    'Seismic shadow zones: P-wave shadow between 103-142 degrees (bent by core); S-wave shadow beyond 103 degrees (blocked by liquid outer core).',
+    'P-waves travel through all media; S-waves only through solids — key evidence for liquid outer core.',
+    'Coral formations in India: Gulf of Kutch (fringing), Gulf of Mannar, Andaman & Nicobar, Lakshadweep (atoll).',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Earth's Interior Layers",
-      "headers": [
-        "Layer",
-        "Depth",
-        "State",
-        "Composition"
+      title: 'Earth\'s Interior Layers',
+      headers: ['Layer', 'Depth', 'State', 'Composition'],
+      rows: [
+        ['Crust', '0-70 km', 'Solid', 'Silicates (sial/sima)'],
+        ['Upper Mantle', '70-400 km', 'Partially molten (asthenosphere)', 'Iron-magnesium silicates'],
+        ['Lower Mantle', '400-2,900 km', 'Solid (high pressure)', 'Dense silicates'],
+        ['Outer Core', '2,900-5,100 km', 'Liquid', 'Iron-nickel (generates magnetic field)'],
+        ['Inner Core', '5,100-6,371 km', 'Solid', 'Iron-nickel (extreme pressure)'],
       ],
-      "rows": [
-        [
-          "Crust",
-          "0-70 km",
-          "Solid",
-          "Silicates (sial/sima)"
-        ],
-        [
-          "Upper Mantle",
-          "70-400 km",
-          "Partially molten (asthenosphere)",
-          "Iron-magnesium silicates"
-        ],
-        [
-          "Lower Mantle",
-          "400-2,900 km",
-          "Solid (high pressure)",
-          "Dense silicates"
-        ],
-        [
-          "Outer Core",
-          "2,900-5,100 km",
-          "Liquid",
-          "Iron-nickel (generates magnetic field)"
-        ],
-        [
-          "Inner Core",
-          "5,100-6,371 km",
-          "Solid",
-          "Iron-nickel (extreme pressure)"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Discontinuities (M-G-L)",
-      "mnemonic": "Moho (Crust-Mantle), Gutenberg (Mantle-Core), Lehmann (Outer-Inner Core)",
-      "explanation": "Three seismic discontinuities in Earth's interior. Identified by changes in seismic wave velocity."
-    }
-  ]
+      title: 'Plate Boundary Types',
+      headers: ['Type', 'Motion', 'Features Created', 'Example'],
+      rows: [
+        ['Convergent', 'Plates collide', 'Fold mountains, trenches, island arcs', 'Himalayas, Andes, Mariana Trench'],
+        ['Divergent', 'Plates move apart', 'Mid-ocean ridges, rift valleys', 'Mid-Atlantic Ridge, East African Rift'],
+        ['Transform', 'Plates slide past', 'Fault zones, earthquakes (no volcanism)', 'San Andreas Fault'],
+      ],
+    },
+    {
+      title: 'Geomorphic Agents and Their Landforms',
+      headers: ['Agent', 'Erosional Landforms', 'Depositional Landforms', 'Dominant Region in India'],
+      rows: [
+        ['River', 'V-valleys, gorges, waterfalls, potholes', 'Alluvial fans, floodplains, deltas, levees', 'Indo-Gangetic Plain, Peninsular rivers'],
+        ['Glacier', 'Cirques, aretes, horns, U-valleys, fjords', 'Moraines, drumlins, eskers, outwash plains', 'Himalayas above 4,500 m'],
+        ['Wind', 'Mushroom rocks, yardangs, inselbergs', 'Sand dunes (barchan, seif), loess', 'Thar Desert (Rajasthan, Gujarat)'],
+        ['Waves', 'Sea cliffs, caves, arches, stacks', 'Beaches, spits, bars, tombolos, lagoons', '7,516 km coastline'],
+        ['Groundwater', 'Caves, sinkholes, karst landscapes', 'Stalactites, stalagmites, pillars', 'Meghalaya, AP, Chhattisgarh'],
+      ],
+    },
+    {
+      title: 'Davis vs Penck vs King — Landform Evolution Theories',
+      headers: ['Feature', 'Davis (1884)', 'Penck (1924)', 'King (1953)'],
+      rows: [
+        ['Model', 'Geographical Cycle', 'Morphological Analysis', 'Scarp Retreat'],
+        ['Stages', 'Youth-Maturity-Old Age', 'Waxing-Equal-Waning development', 'No distinct stages'],
+        ['Slope evolution', 'Slope decline (downwearing)', 'Slope shape depends on uplift vs erosion', 'Parallel retreat'],
+        ['End product', 'Peneplain', 'Variable surface', 'Pediplain'],
+        ['Uplift assumed', 'Single rapid uplift', 'Continuous, variable rate', 'Periodic uplift'],
+      ],
+    },
+    {
+      title: 'India\'s Seismic Zones',
+      headers: ['Zone', 'Risk Level', 'Areas Covered', 'MSK Intensity'],
+      rows: [
+        ['V', 'Very High', 'NE India, Kashmir, Kutch, Andaman, parts of HP/UK', 'IX and above'],
+        ['IV', 'High', 'Delhi, Bihar, remaining J&K, parts of UP/Maharashtra', 'VIII'],
+        ['III', 'Moderate', 'Most Peninsular India, remaining UP/MP/WB', 'VII'],
+        ['II', 'Low', 'Stable shield — S Karnataka, most TN, central Rajasthan', 'VI and below'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Discontinuities (M-G-L)',
+      mnemonic: 'Moho (Crust-Mantle), Gutenberg (Mantle-Core), Lehmann (Outer-Inner Core)',
+      explanation: 'Three seismic discontinuities in Earth\'s interior. Identified by changes in seismic wave velocity. Discovered in 1909, 1914, and 1936 respectively.',
+    },
+    {
+      title: 'Convergent Boundary Subtypes (OO-OC-CC)',
+      mnemonic: 'OO=Island Arcs (Japan), OC=Mountain+Volcanoes (Andes), CC=Mountains only (Himalayas)',
+      explanation: 'Ocean-Ocean creates island arcs; Ocean-Continent creates volcanic mountain chains; Continent-Continent creates fold mountains without volcanism.',
+    },
+    {
+      title: 'Indo-Gangetic Plain Zones (BTBK)',
+      mnemonic: 'Bhabar (pebbles) → Terai (marsh) → Bhangar (old alluvium) → Khadar (new, fertile)',
+      explanation: 'Four zones of the Indo-Gangetic Plain from north (Himalayan foot) to south (river floodplain). Khadar is the youngest and most fertile.',
+    },
+    {
+      title: 'River Landform Stages (VFD)',
+      mnemonic: 'V-valleys in Youth, Floodplains in Maturity, Deltas in Old Age',
+      explanation: 'Three stages of a river\'s longitudinal profile and the dominant landforms at each stage.',
+    },
+    {
+      title: 'Volcano Types by Shape (SCCC)',
+      mnemonic: 'Shield (broad, gentle), Stratovolcano (steep, layered), Cinder Cone (small), Caldera (collapsed)',
+      explanation: 'Four main volcano types. Shield volcanoes are the largest (Mauna Loa), stratovolcanoes are the most dangerous (Vesuvius).',
+    },
+  ],
 }

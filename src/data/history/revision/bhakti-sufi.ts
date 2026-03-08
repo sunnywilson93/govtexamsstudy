@@ -28,6 +28,22 @@ export const bhaktiSufiRevision: HistoryRevision = {
     "Amir Khusrau was a disciple of Nizamuddin Auliya; he developed qawwali and is considered the father of Urdu literature.",
     "Vallabhacharya (1479-1531) propounded Shuddhadvaita (pure monism) and the Pushti Marg tradition of Krishna bhakti.",
     "Akka Mahadevi (12th century, Karnataka) and Lal Ded/Lalleshwari (14th century, Kashmir) were prominent women saints who defied social norms.",
+    "Andal (8th-9th century) — only female Alvar saint; composed Tiruppavai and Nachiar Tirumoli in Tamil; worshipped as incarnation of Bhudevi.",
+    "Dadu Dayal (1544-1603, Rajasthan) — nirguna bhakti saint; founded the Dadu Panth; influenced by Kabir; rejected caste and idolatry.",
+    "Narsinh Mehta (c. 1414-1481, Gujarat) — composed 'Vaishnav Jan To Tene Kahiye,' later adopted as Gandhi's favorite bhajan.",
+    "Shankaradeva (1449-1568, Assam) — initiated Ekasarana Nama Dharma; composed Borgeet and Kirtana Ghosa; established Sattras and Namghars.",
+    "Bulleh Shah (1680-1757, Punjab) — Sufi poet; composed kafis in Punjabi on divine love, social equality, and rejection of ritualism.",
+    "Shah Abdul Latif Bhittai (1689-1752, Sindh) — composed Shah Jo Risalo; most important work of Sindhi literature blending Sufi mysticism with folk themes.",
+    "Nund Rishi / Sheikh Nooruddin (1378-1438, Kashmir) — founded the Rishi order blending Islamic mysticism with local Kashmiri traditions.",
+    "Guru Granth Sahib contains compositions of Kabir, Namdev, Ravidas, Baba Farid, and Sikh Gurus — NOT Tulsidas, Surdas, or Mirabai.",
+    "Dara Shikoh (Mughal prince) wrote Majma-ul-Bahrain (Confluence of Two Seas) comparing Sufi and Upanishadic concepts; associated with Qadiri order.",
+    "Eknath (1533-1599, Maharashtra) — Varkari saint; promoted social equality; composed Eknathi Bhagavat; performed Shudra-Atishudra kirtan.",
+    "Amir Khusrau (1253-1325) — disciple of Nizamuddin Auliya; credited with developing qawwali, tarana, sitar, and tabla; called 'Tuti-e-Hind.'",
+    "Wahdat-ul-Wujud (Unity of Being) — associated with Chishtis; Wahdat-ush-Shuhud (Unity of Appearance) — Naqshbandis (Sirhindi).",
+    "Miyan Mir (Qadiri order) laid the foundation stone of the Golden Temple at Amritsar on Guru Arjan Dev's request.",
+    "Langar (community kitchen) — institution started by Guru Nanak for social equality; all eat together regardless of caste.",
+    "The Fawaid-ul-Fuad records conversations of Nizamuddin Auliya, compiled by Amir Hasan Sijzi — the most famous malfuzat text.",
+    "Dargah of Moinuddin Chishti at Ajmer — one of India's most visited shrines; Mughal emperors (starting with Akbar) regularly visited.",
   ],
   comparisons: [
     {
@@ -49,6 +65,32 @@ export const bhaktiSufiRevision: HistoryRevision = {
         ["Suhrawardi", "Bahauddin Zakariya", "Multan", "Accepted state patronage", "More orthodox; combined spiritual and worldly life"],
         ["Naqshbandi", "Sheikh Ahmad Sirhindi", "Punjab", "Actively engaged with state", "Most orthodox; opposed Akbar's syncretism; influenced Aurangzeb"],
         ["Qadiri", "Miyan Mir, Shah Badakhshani", "Lahore, Punjab", "Moderate engagement", "Miyan Mir laid foundation stone of Golden Temple; Dara Shikoh associated"],
+      ],
+    },
+    {
+      title: "Regional Bhakti Saints and Their Works",
+      headers: ["Saint", "Region/Language", "Key Work/Composition", "Tradition"],
+      rows: [
+        ["Dnyaneshwar", "Maharashtra/Marathi", "Dnyaneshwari (commentary on Gita)", "Varkari (Vithoba)"],
+        ["Tukaram", "Maharashtra/Marathi", "Abhangas (devotional poems)", "Varkari (Vithoba)"],
+        ["Kabir", "UP/Sadhukkadi", "Bijak; verses in Guru Granth Sahib", "Nirguna Bhakti"],
+        ["Tulsidas", "UP/Awadhi", "Ramcharitmanas, Hanuman Chalisa", "Saguna (Rama)"],
+        ["Surdas", "UP/Braj Bhasha", "Sur Sagar (Krishna's childhood)", "Saguna (Krishna)"],
+        ["Chaitanya", "Bengal/Bengali", "Sankirtan tradition (no major text)", "Gaudiya Vaishnavism"],
+        ["Narsinh Mehta", "Gujarat/Gujarati", "Vaishnav Jan To Tene Kahiye", "Saguna (Krishna)"],
+        ["Shankaradeva", "Assam/Assamese", "Borgeet, Kirtana Ghosa", "Ekasarana Nama Dharma"],
+      ],
+    },
+    {
+      title: "Guru Granth Sahib — Non-Sikh Contributors",
+      headers: ["Contributor", "Background", "Number of Compositions"],
+      rows: [
+        ["Kabir", "Weaver, Varanasi, Nirguna saint", "541 compositions"],
+        ["Baba Farid", "Chishti Sufi, Punjab", "134 compositions"],
+        ["Namdev", "Tailor, Maharashtra, Varkari", "60 compositions"],
+        ["Ravidas", "Cobbler, Varanasi, social reformer", "41 compositions"],
+        ["Trilochan", "Vaishnavite saint", "4 compositions"],
+        ["Jaidev", "Author of Gita Govinda", "2 compositions"],
       ],
     },
     {
@@ -81,6 +123,18 @@ export const bhaktiSufiRevision: HistoryRevision = {
       mnemonic: "Kabir, Nanak, Ravidas, Dadu",
       explanation:
         "The four most important Nirguna Bhakti saints: Kabir (weaver, Varanasi), Guru Nanak (founder of Sikhism, Punjab), Ravidas (cobbler, social equality), Dadu Dayal (Gujarat/Rajasthan, Dadu Panth). All rejected idolatry and caste.",
+    },
+    {
+      title: "Varkari Saints of Maharashtra (DNET)",
+      mnemonic: "Dnyaneshwar, Namdev, Eknath, Tukaram — 'Devotion Never Ends Truly'",
+      explanation:
+        "The four major Varkari tradition saints in chronological order: Dnyaneshwar (Dnyaneshwari), Namdev (tailor-saint), Eknath (social equality), Tukaram (abhangas). All centered on Vithoba worship at Pandharpur.",
+    },
+    {
+      title: "Women Saints (AALM)",
+      mnemonic: "Andal, Akka Mahadevi, Lal Ded, Mirabai — 'All Achieved Liberation through Mysticism'",
+      explanation:
+        "Four prominent women saints from different regions: Andal (Tamil Nadu, Alvar), Akka Mahadevi (Karnataka, Lingayat), Lal Ded (Kashmir, Shaivite-Sufi), Mirabai (Rajasthan, Krishna devotee).",
     },
   ],
 }

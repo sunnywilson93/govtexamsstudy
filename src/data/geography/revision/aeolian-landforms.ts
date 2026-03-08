@@ -1,107 +1,141 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const aeolianLandformsRevision: SubjectRevision = {
-  "topic": "aeolian-landforms",
-  "bullets": [
-    "Wind erosion processes: deflation (lifting loose material), abrasion (sandblasting), attrition (particle collision).",
-    "Transport modes: suspension (fine dust), saltation (sand bouncing), surface creep (rolling larger particles).",
-    "Erosional landforms: mushroom/pedestal rocks, ventifacts, yardangs, zeugens, inselbergs, pediments, mesas, buttes.",
-    "Depositional landforms: sand dunes (barchan, transverse, longitudinal/seif, star, parabolic), loess, sand sheets.",
-    "Barchan: crescent-shaped, horns point downwind; migrate 10-30 m/year in the Thar Desert.",
-    "Thar Desert: ~200,000 sq km; world's most densely populated desert (83 persons/sq km).",
-    "Indira Gandhi Canal (649 km) — brings Satluj-Beas water to Thar; transformed 1.5 million hectares.",
-    "Desertification affects ~32% of India's land area; worst in Rajasthan, Gujarat, Maharashtra.",
-    "India hosted COP 14 of UNCCD in 2019 (New Delhi); committed to land degradation neutrality by 2030.",
-    "Desert National Park (3,162 sq km, Jaisalmer) — Great Indian Bustard habitat (critically endangered, <150 remain).",
-    "Rann of Kutch: Great Rann (~7,500 sq km) + Little Rann (~5,000 sq km) — seasonal salt flats/playas.",
-    "Cold deserts: Ladakh (<100 mm rain/year), Gobi, Antarctic; Atacama is world's driest (cold current desert).",
-    "Mushroom rocks: undercut by sand abrasion concentrated at 0-2 m height; common in Thar Desert.",
-    "Loess: wind-blown silt; Loess Plateau in China has deposits up to 300 m thick; extremely fertile.",
-    "Luni — only major river of the Thar Desert; drains into the Rann of Kutch."
+  topic: 'aeolian-landforms',
+  bullets: [
+    'Wind erosion processes: deflation (lifting loose material), abrasion (sandblasting), attrition (particle collision).',
+    'Transport modes: suspension (fine dust), saltation (sand bouncing), surface creep (rolling larger particles).',
+    'Erosional landforms: mushroom/pedestal rocks, ventifacts, yardangs, zeugens, inselbergs, pediments, mesas, buttes.',
+    'Depositional landforms: sand dunes (barchan, transverse, longitudinal/seif, star, parabolic), loess, sand sheets.',
+    'Barchan: crescent-shaped, horns point downwind; migrate 10-30 m/year in the Thar Desert.',
+    'Longitudinal/Seif dunes: ridges parallel to wind; form under bidirectional winds; common in central Thar and Sahara.',
+    'Star dunes: multiple arms from a central peak; form under multidirectional winds; largest dune type (up to 500 m high).',
+    'Parabolic dunes: U-shaped, horns point UPWIND (opposite of barchans); anchored by vegetation on horns.',
+    'Thar Desert: ~200,000 sq km; world\'s most densely populated desert (83 persons/sq km).',
+    'Thar spans Rajasthan (main), Gujarat, Haryana, and Punjab; only ~40% is sand-covered, rest is rocky/gravelly.',
+    'Indira Gandhi Canal (649 km) — brings Satluj-Beas water from Harike Barrage to Thar; transformed 1.5 million hectares.',
+    'Luni — only major river of Thar; originates near Ajmer; drains into Rann of Kutch; seasonal river.',
+    'Aravalli Range: India\'s oldest fold mountains (~1.5-2 billion years); barrier preventing Thar from expanding eastward.',
+    'Desertification affects ~96.4 million hectares (29.3% of India\'s area); worst in Rajasthan, Gujarat, Maharashtra.',
+    'India hosted COP 14 of UNCCD in 2019 (New Delhi); committed to land degradation neutrality by 2030.',
+    'Desert National Park (3,162 sq km, Jaisalmer) — Great Indian Bustard habitat (critically endangered, <150 remain).',
+    'Great Indian Bustard: ground-nesting, poor frontal vision; power line collisions kill 15-18% annually; SC ordered undergrounding.',
+    'Rann of Kutch: Great Rann (~7,500 sq km) + Little Rann (~5,000 sq km) — seasonal salt flats/playas.',
+    'Agariyas: traditional salt workers in Rann of Kutch; harvest ~7.5 million tonnes/year (75% of India\'s inland salt).',
+    'Indian Wild Ass (khur) in Little Rann of Kutch; population recovered from 720 (1976) to 6,000+ (2020).',
+    'Great Rann hosts India\'s only flamingo breeding colony — up to 200,000 Greater and Lesser Flamingos.',
+    'Cold deserts: Ladakh (<100 mm rain/year), Gobi, Antarctic; Atacama is world\'s driest (cold current desert).',
+    'Ladakh cold desert: Pangong Tso (world\'s highest saltwater lake, 4,350 m), Tso Moriri (Ramsar Site), Tso Kar.',
+    'Siachen Glacier in the Karakoram — India\'s largest glacier (~76 km); world\'s highest battlefield.',
+    'Hemis National Park (4,400 sq km) — India\'s largest NP by area; prime snow leopard habitat in Ladakh.',
+    'Mushroom rocks: undercut by sand abrasion concentrated at 0-2 m height; common in Thar Desert.',
+    'Loess: wind-blown silt; Loess Plateau in China has deposits up to 300 m thick; extremely fertile.',
+    'Desert surface types: Erg (sand), Reg (stony), Hamada (rocky), Playa (dry lake); only 20-25% of deserts are sandy.',
+    'King\'s Pediplanation Cycle: desert landscape evolves by lateral slope retreat (backwearing), not downwearing as in Davis\'s cycle.',
+    'Bhadla Solar Park (Jodhpur) — world\'s largest solar park (2,245 MW); Thar receives 5-7 kWh/m2/day solar radiation.',
+    'CAZRI (Central Arid Zone Research Institute, Jodhpur, 1959) developed sand dune stabilization techniques for the Thar.',
+    'Sand dune stabilization: micro-windbreaks (chequerboard pattern, brushwood fences) + biological planting (khimp, phog, bui).',
+    'Khejri (Prosopis cineraria) — Rajasthan state tree; Khejarli massacre 1730 (Bishnoi community, 363 killed protecting trees).',
+    'Sahara was green 5,000-10,000 years ago (Saharan Green Period); orbital changes caused aridification.',
+    'Desert varnish: thin dark coating on rocks (iron + manganese oxides); builds up over thousands of years.',
+    'Salt weathering (haloclasty): dominant rock weathering process in deserts; damages Jaisalmer Fort stonework.',
+    'Andhi: local name for dust storms in Rajasthan/NW India; May 2018 dust storm killed 125+ people.',
+    'Thar coal: lignite deposits in Barmer-Sanchor basin; estimated 3.96 billion tonnes.',
+    'Ghaggar-Hakra/Saraswati river once flowed through the Thar; dried up ~1900 BCE; Indus Valley sites along its course.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Types of Sand Dunes",
-      "headers": [
-        "Type",
-        "Shape",
-        "Wind",
-        "Example"
+      title: 'Types of Sand Dunes',
+      headers: ['Type', 'Shape', 'Wind Condition', 'Example'],
+      rows: [
+        ['Barchan', 'Crescent, horns downwind', 'Unidirectional, limited sand', 'Thar Desert'],
+        ['Transverse', 'Ridges perpendicular to wind', 'Unidirectional, abundant sand', 'Large sand seas (ergs)'],
+        ['Longitudinal/Seif', 'Ridges parallel to wind', 'Bidirectional', 'Central Thar, Sahara'],
+        ['Star', 'Multiple arms from center', 'Multi-directional', 'Eastern Sahara'],
+        ['Parabolic', 'U-shaped, horns upwind', 'Unidirectional, vegetation anchored', 'Coastal semi-arid areas'],
       ],
-      "rows": [
-        [
-          "Barchan",
-          "Crescent, horns downwind",
-          "Unidirectional, limited sand",
-          "Thar Desert"
-        ],
-        [
-          "Transverse",
-          "Ridges perpendicular to wind",
-          "Unidirectional, abundant sand",
-          "Large sand seas"
-        ],
-        [
-          "Longitudinal/Seif",
-          "Ridges parallel to wind",
-          "Bidirectional",
-          "Central Thar, Sahara"
-        ],
-        [
-          "Star",
-          "Multiple arms from center",
-          "Multi-directional",
-          "Eastern Sahara"
-        ],
-        [
-          "Parabolic",
-          "U-shaped, horns upwind",
-          "Unidirectional, vegetation",
-          "Coastal semi-arid"
-        ]
-      ]
     },
     {
-      "title": "Hot vs Cold Deserts",
-      "headers": [
-        "Feature",
-        "Hot Desert",
-        "Cold Desert"
+      title: 'Hot vs Cold Deserts',
+      headers: ['Feature', 'Hot Desert', 'Cold Desert'],
+      rows: [
+        ['Temperature', 'Very high summer (45-55°C)', 'Very cold winter (-40°C or below)'],
+        ['Location', '20-30° latitude (STH belt)', 'Continental interiors, high altitude, polar'],
+        ['Cause', 'Subtropical high pressure', 'Continental/altitude/rain shadow'],
+        ['Precipitation', '<250 mm, sporadic convective', '<100 mm, mostly as snow'],
+        ['Examples', 'Sahara, Thar, Arabian', 'Gobi, Ladakh, Patagonia, Antarctic'],
       ],
-      "rows": [
-        [
-          "Temperature",
-          "Very high summer",
-          "Very cold winter"
-        ],
-        [
-          "Location",
-          "20-30° latitude (STH belt)",
-          "Continental interiors, high altitude"
-        ],
-        [
-          "Cause",
-          "Subtropical high pressure",
-          "Continental/altitude/rain shadow"
-        ],
-        [
-          "Examples",
-          "Sahara, Thar, Arabian",
-          "Gobi, Ladakh, Patagonia"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
-    {
-      "title": "Wind Erosion Processes",
-      "mnemonic": "DAA — Deflation, Abrasion, Attrition",
-      "explanation": "Three wind erosion processes: Deflation lifts material, Abrasion sandblasts surfaces, Attrition breaks particles."
     },
     {
-      "title": "Wind Transport Modes",
-      "mnemonic": "SuSaCr — Suspension, Saltation, Creep",
-      "explanation": "Three modes of wind transport: Suspension (fine dust), Saltation (sand bouncing), Surface Creep (rolling)."
-    }
-  ]
+      title: 'Desert Surface Types',
+      headers: ['Type', 'Surface', 'Characteristics'],
+      rows: [
+        ['Erg', 'Sand', 'Dune fields; only 20-25% of deserts; Western Thar'],
+        ['Reg', 'Stony/Gravel', 'Desert pavement; lag deposit after deflation'],
+        ['Hamada', 'Bare Rock', 'Wind-swept bedrock; most barren type'],
+        ['Playa', 'Dry Lake', 'Ephemeral salt/clay lake; Rann of Kutch'],
+        ['Bajada', 'Alluvial Apron', 'Coalescing fans at mountain base; Aravalli foot'],
+      ],
+    },
+    {
+      title: 'Davis Cycle vs King\'s Pediplanation',
+      headers: ['Feature', 'Davis (Humid)', 'King (Arid)'],
+      rows: [
+        ['Process', 'Downwearing by rivers', 'Backwearing (lateral slope retreat)'],
+        ['End form', 'Peneplain', 'Pediplain with inselbergs'],
+        ['Climate', 'Humid/temperate', 'Arid/semi-arid'],
+        ['Key agent', 'Running water', 'Wind + ephemeral water'],
+        ['Remnant hills', 'Monadnocks', 'Inselbergs'],
+      ],
+    },
+    {
+      title: 'Erosional vs Depositional Aeolian Landforms',
+      headers: ['Erosional', 'Process', 'Depositional', 'Process'],
+      rows: [
+        ['Mushroom Rock', 'Abrasion at base', 'Barchan Dune', 'Sand accumulation'],
+        ['Yardang', 'Abrasion parallel to wind', 'Loess', 'Silt deposition far from source'],
+        ['Deflation Hollow', 'Removal of loose material', 'Sand Sheet', 'Flat sand deposition'],
+        ['Ventifact', 'Polishing by wind', 'Playa', 'Evaporite deposition'],
+        ['Inselberg', 'Differential weathering', 'Bajada', 'Coalescing alluvial fans'],
+      ],
+    },
+    {
+      title: 'India\'s Major Desert Features',
+      headers: ['Feature', 'Location', 'Significance'],
+      rows: [
+        ['Thar Desert', 'Rajasthan-Gujarat', 'World\'s most densely populated desert'],
+        ['Great Rann of Kutch', 'Gujarat', '~7,500 sq km seasonal salt marsh'],
+        ['Little Rann of Kutch', 'Gujarat', 'Wild Ass Sanctuary; 4,954 sq km'],
+        ['Ladakh Cold Desert', 'Ladakh UT', '<100 mm rain; Hemis NP; snow leopard'],
+        ['Spiti Valley', 'Himachal Pradesh', 'Cold Desert BR; Pin Valley NP'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Wind Erosion Processes',
+      mnemonic: 'DAA — Deflation, Abrasion, Attrition',
+      explanation: 'Three wind erosion processes: Deflation lifts material, Abrasion sandblasts surfaces, Attrition breaks particles.',
+    },
+    {
+      title: 'Wind Transport Modes',
+      mnemonic: 'SuSaCr — Suspension, Saltation, Creep',
+      explanation: 'Three modes of wind transport: Suspension (fine dust, long distance), Saltation (sand bouncing, most erosion), Surface Creep (rolling coarse grains).',
+    },
+    {
+      title: 'Sand Dune Types',
+      mnemonic: 'BTLSP — Barchan, Transverse, Longitudinal, Star, Parabolic',
+      explanation: 'Five main dune types in order of complexity. Barchan horns point downwind; Parabolic horns point upwind (opposite).',
+    },
+    {
+      title: 'Desert Surface Types',
+      mnemonic: 'ERG-REG-HAM-PLA — Erg (sand), Reg (stone), Hamada (rock), Playa (lake)',
+      explanation: 'Four desert surface categories. Remember: only 20-25% of deserts are actually sandy ergs.',
+    },
+    {
+      title: 'Thar Desert Key Facts',
+      mnemonic: '200K-83-649-Luni — Area 200K sq km, 83 ppl/sq km, 649 km canal, Luni river',
+      explanation: 'Thar is 200,000 sq km, densest desert at 83/sq km, IGNP is 649 km long, Luni is the only major river.',
+    },
+  ],
 }

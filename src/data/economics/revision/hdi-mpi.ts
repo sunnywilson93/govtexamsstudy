@@ -5,97 +5,131 @@ export const hdiMpiRevision: SubjectRevision = {
   bullets: [
     "HDI: Developed by Mahbub ul Haq + Amartya Sen. Published by UNDP since 1990. Three dimensions: Health, Education, Income.",
     "HDI dimensions: Health (life expectancy at birth), Education (mean years + expected years of schooling), Income (GNI per capita PPP$).",
-    "HDI = Geometric mean of 3 dimension indices. Categories: Very High (≥0.800), High (0.700-0.799), Medium (0.550-0.699), Low (<0.550).",
+    "HDI = Geometric mean of 3 dimension indices. Categories: Very High (>=0.800), High (0.700-0.799), Medium (0.550-0.699), Low (<0.550).",
     "India's HDI 2024 report: 0.644, rank 134/193. Life expectancy 67.7 years. Mean schooling 6.6 years. GNI $6,951 PPP.",
     "India HDI improved from 0.434 (2000) to 0.644 (2022) — 48% increase. But trails Sri Lanka (0.782), China (0.788), Brazil (0.760).",
-    "IHDI: Adjusts for inequality — India's HDI drops ~27% when adjusted for inequality (0.644 → ~0.478).",
+    "Bangladesh (0.670) now ranks higher than India (0.644) on HDI — attributed to women's empowerment, NGO-driven social programmes.",
+    "IHDI: Adjusts for inequality — India's HDI drops ~27% when adjusted for inequality (0.644 to ~0.478). One of highest losses globally.",
     "GDI: Female HDI / Male HDI. India: ~0.849 — women's HDI is 15% lower than men's.",
     "GII: Gender Inequality Index — reproductive health, empowerment, labour market. India rank: 108/170.",
-    "MPI (Global): UNDP + OPHI. 10 indicators across health, education, living standards. Poor if deprived in ≥1/3 weighted indicators.",
+    "MPI (Global): UNDP + OPHI. 10 indicators across health, education, living standards. Poor if deprived in >=1/3 weighted indicators.",
     "NITI Aayog's National MPI (2021): 25.01% multidimensionally poor (2015-16). Updated 2023: declined to 11.28% (2019-21).",
     "National MPI: 12 indicators, 3 dimensions. Bihar highest MPI (51.91%), Kerala lowest (0.71%).",
-    "Poverty committees: Lakdawala (1993, calorie-based), Tendulkar (2009, consumption expenditure), Rangarajan (2014, higher line — not adopted).",
+    "Poverty committees: Alagh (1979, calorie norms), Lakdawala (1993, state-specific CPI), Tendulkar (2009, consumption expenditure), Rangarajan (2014, higher line — not adopted).",
     "World Bank extreme poverty: $2.15/day (2017 PPP). India at $2.15: ~10-12%. At $3.65/day: ~45%. At $6.85/day: ~83%.",
     "HCES 2022-23: First consumption survey since 2011-12. Rural MPCE Rs 3,773, Urban Rs 6,459. Food share declined (Engel's Law confirmed).",
     "SDG 1: End poverty in all forms. India's SDG India Index score for SDG 1: 72 (2023-24) — 'Performer' category.",
-    "Capability Approach (Amartya Sen): Development = expanding freedoms/capabilities, not just income. Influenced HDI design."
-],
+    "SDG India Index composite: 57 (2018-19) to 71 (2023-24). Top: Kerala (79), Tamil Nadu (77). Lowest: Bihar (52), Jharkhand (56).",
+    "Capability Approach (Amartya Sen): Development = expanding freedoms/capabilities, not just income. Influenced HDI design.",
+    "Nutrition: Stunting 35.5%, Wasting 19.3%, Anaemia (women) 57%. Global Hunger Index rank 105/127 (2023, 'serious').",
+    "POSHAN Abhiyaan (2018): Reduce stunting by 2%/year. Jan Andolan approach. Saksham Anganwadi for digital monitoring.",
+    "Education: Mean years of schooling 6.6 years (adults). Expected 12.6 years. NEP 2020: 5+3+3+4 structure. Target: 50% GER by 2035.",
+    "Health: Life expectancy 67.7 years. IMR 28/1,000. MMR 97/100,000. TFR 2.0 (below replacement nationally for first time).",
+    "Govt health expenditure: 2.1% of GDP. Out-of-pocket: 48% (5.5 crore pushed into poverty by health costs annually).",
+    "Income inequality: Top 10% earn 57.7% of national income, bottom 50% earn 15%. Top 1% own 40.1% of wealth (Oxfam 2024).",
+    "Oxfam India: 169 billionaires (2023). Bottom 50% own only 6.4% of wealth. India's wealth Gini ~0.82.",
+    "State HDI variation: Kerala 0.782 vs Bihar 0.574 — difference equivalent to Mexico vs sub-Saharan Africa.",
+    "Social protection: NFSA covers 81.35 crore (5 kg/person/month). PM-KISAN: 11.8 crore farmers, Rs 6,000/year. MGNREGA: 100 days.",
+    "DBT: Rs 35 lakh crore transferred since 2013. Estimated savings Rs 3.48 lakh crore from eliminating fake beneficiaries.",
+    "Aspirational Districts Programme: 112 districts across 28 states targeted for convergent development interventions.",
+    "SECC 2011: Deprivation-based household ranking. Used for PM-JAY targeting. 7 deprivation indicators.",
+    "ICDS: 13.9 lakh anganwadi centres — world's largest early childhood programme. 8.9 crore children + 2 crore mothers served.",
+    "Women's Reservation Act 2023 (128th Amendment): 33% seats reserved in Lok Sabha and state assemblies — effective after delimitation.",
+    "India's key demographic advantage: Median age 28.4 vs China 38.4. If human capital invested, HDI convergence by 2047.",
+    "SVAMITVA: Drone-based village property mapping — 3.17 lakh villages surveyed. Property cards empower rural households.",
+    "Near-poor vulnerability: One-third of non-poor Indians at risk of falling back. COVID pushed 75-230 million back into poverty (2020).",
+    "Female LFPR: 41.7% (FY24, up from 23.3% in FY18). Urban female WPR only ~25.4%. Quality of women's employment remains a concern.",
+    "PM-JAY: Rs 5 lakh/family/year health cover for ~55 crore beneficiaries — world's largest government-funded health insurance.",
+    "PM Awas Yojana: 3.06 crore rural houses + 1.18 crore urban houses sanctioned. Target: Housing for All.",
+  ],
   comparisons: [
     {
-        "title": "Poverty Committees Comparison",
-        "headers": [
-            "Committee",
-            "Year",
-            "Methodology",
-            "Poverty Estimate"
-        ],
-        "rows": [
-            [
-                "Lakdawala",
-                "1993",
-                "Calorie norms: 2,400 kcal (rural), 2,100 (urban)",
-                "45.3% (1993-94)"
-            ],
-            [
-                "Tendulkar",
-                "2009",
-                "Consumption expenditure (Rs 26/day rural, Rs 32/day urban)",
-                "21.9% (2011-12)"
-            ],
-            [
-                "Rangarajan",
-                "2014",
-                "Higher expenditure (Rs 32/day rural, Rs 47/day urban)",
-                "29.5% (2011-12)"
-            ]
-        ]
+      title: "Poverty Committees Comparison",
+      headers: ["Committee", "Year", "Methodology", "Poverty Estimate"],
+      rows: [
+        ["Alagh (Task Force)", "1979", "Calorie norms: 2,400 kcal (rural), 2,100 (urban)", "Set initial benchmark"],
+        ["Lakdawala", "1993", "State-specific CPI, calorie-based", "45.3% (1993-94)"],
+        ["Tendulkar", "2009", "Consumption expenditure (Rs 26/day rural, Rs 32/day urban)", "21.9% (2011-12)"],
+        ["Rangarajan", "2014", "Higher expenditure (Rs 32/day rural, Rs 47/day urban)", "29.5% (2011-12) — not adopted"],
+      ],
     },
     {
-        "title": "HDI vs MPI",
-        "headers": [
-            "Feature",
-            "HDI",
-            "MPI"
-        ],
-        "rows": [
-            [
-                "Publisher",
-                "UNDP",
-                "UNDP + OPHI (Global); NITI Aayog (National)"
-            ],
-            [
-                "Dimensions",
-                "3 (health, education, income)",
-                "3 (health, education, living standards)"
-            ],
-            [
-                "Indicators",
-                "4",
-                "10 (global) / 12 (national)"
-            ],
-            [
-                "Measures",
-                "Average achievement",
-                "Deprivation (who is poor and how)"
-            ],
-            [
-                "India value",
-                "0.644 (rank 134)",
-                "11.28% headcount (national MPI 2023)"
-            ]
-        ]
-    }
-],
+      title: "HDI vs MPI",
+      headers: ["Feature", "HDI", "MPI"],
+      rows: [
+        ["Publisher", "UNDP", "UNDP + OPHI (Global); NITI Aayog (National)"],
+        ["Dimensions", "3 (health, education, income)", "3 (health, education, living standards)"],
+        ["Indicators", "4", "10 (global) / 12 (national)"],
+        ["Measures", "Average achievement", "Deprivation (who is poor and how)"],
+        ["India value", "0.644 (rank 134)", "11.28% headcount (national MPI 2023)"],
+      ],
+    },
+    {
+      title: "India vs BRICS on HDI (2024 Report)",
+      headers: ["Country", "HDI", "Rank", "Life Expectancy", "Mean Schooling"],
+      rows: [
+        ["China", "0.788", "75", "78.6 years", "7.6 years"],
+        ["Brazil", "0.760", "89", "72.8 years", "8.0 years"],
+        ["South Africa", "0.717", "109", "62.3 years", "11.0 years"],
+        ["India", "0.644", "134", "67.7 years", "6.6 years"],
+      ],
+    },
+    {
+      title: "SDG India Index — Top vs Bottom States (2023-24)",
+      headers: ["Top States", "Score", "Bottom States", "Score"],
+      rows: [
+        ["Kerala", "79", "Bihar", "52"],
+        ["Tamil Nadu", "77", "Jharkhand", "56"],
+        ["Himachal Pradesh", "76", "Assam", "57"],
+        ["Goa", "75", "UP", "58"],
+      ],
+    },
+    {
+      title: "Nutrition Indicators — NFHS-4 vs NFHS-5",
+      headers: ["Indicator", "NFHS-4 (2015-16)", "NFHS-5 (2019-21)", "Direction"],
+      rows: [
+        ["Stunting (children <5)", "38.4%", "35.5%", "Improved"],
+        ["Wasting", "21%", "19.3%", "Slightly improved"],
+        ["Underweight", "35.8%", "32.1%", "Improved"],
+        ["Anaemia (women 15-49)", "53%", "57%", "Worsened"],
+        ["Institutional delivery", "78.9%", "89.5%", "Improved"],
+      ],
+    },
+    {
+      title: "World Bank Poverty Lines — India's Population Below Each",
+      headers: ["Poverty Line", "Amount (2017 PPP)", "India's % Below", "Classification"],
+      rows: [
+        ["Extreme poverty", "$2.15/day", "~10-12%", "Low-income threshold"],
+        ["Lower middle-income", "$3.65/day", "~45%", "India's applicable line"],
+        ["Upper middle-income", "$6.85/day", "~83%", "Aspirational threshold"],
+      ],
+    },
+  ],
   mnemonics: [
     {
-        "title": "HDI Dimensions — \"HEI\"",
-        "mnemonic": "Health (life expectancy), Education (schooling years), Income (GNI per capita PPP)",
-        "explanation": "Three dimensions of HDI — Health measured by life expectancy at birth, Education by mean + expected years of schooling, Income by GNI per capita in PPP dollars."
+      title: "HDI Dimensions — \"HEI\"",
+      mnemonic: "Health (life expectancy), Education (schooling years), Income (GNI per capita PPP)",
+      explanation: "Three dimensions of HDI — Health measured by life expectancy at birth, Education by mean + expected years of schooling, Income by GNI per capita in PPP dollars.",
     },
     {
-        "title": "Poverty Committees — \"LTR\"",
-        "mnemonic": "Lakdawala (1993 calories) → Tendulkar (2009 consumption) → Rangarajan (2014 higher line)",
-        "explanation": "Three major poverty estimation committees in chronological order — each used a progressively refined methodology."
-    }
-],
+      title: "Poverty Committees — \"ALTR\"",
+      mnemonic: "Alagh (1979 calorie norms) -> Lakdawala (1993 state CPI) -> Tendulkar (2009 consumption) -> Rangarajan (2014 higher line)",
+      explanation: "Four major poverty estimation committees in chronological order — each used a progressively refined methodology.",
+    },
+    {
+      title: "NITI Aayog MPI — 3 Dimensions — \"HEL\"",
+      mnemonic: "Health (nutrition, mortality, maternal), Education (schooling, attendance), Living Standards (fuel, sanitation, water, electricity, housing, assets, bank)",
+      explanation: "12 indicators across 3 dimensions with 1/3 weight each. A person is MPI-poor if deprived in >=1/3 of weighted indicators.",
+    },
+    {
+      title: "SDG India Index Scoring — \"APFA\"",
+      mnemonic: "Aspirant (0-49), Performer (50-64), Front Runner (65-99), Achiever (100)",
+      explanation: "Four performance categories for ranking states on SDG progress. India's national composite: 71 (2023-24) — Front Runner.",
+    },
+    {
+      title: "Social Protection Pillars — \"FEH-IP\"",
+      mnemonic: "Food (NFSA), Employment (MGNREGA), Housing (PMAY), Insurance (PMJJBY/PMSBY), Pension (APY/PM-SYM)",
+      explanation: "India's five-pillar social protection architecture covering the basic needs of the poor and vulnerable population.",
+    },
+  ],
 }

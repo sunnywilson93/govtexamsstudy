@@ -3,70 +3,123 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const regionalTradeRevision: SubjectRevision = {
   topic: 'regional-trade',
   bullets: [
-    "India has FTAs/CEPAs with: ASEAN, Japan, Korea, Singapore, Malaysia, Sri Lanka, UAE, Australia, EFTA. Under negotiation: UK, EU, GCC.",
-    "India-ASEAN FTA (2010): 75% tariff lines eliminated. Trade deficit with ASEAN ~$25B (FY24). Review initiated 2023.",
-    "RCEP withdrawal (2019): India feared Chinese imports. RCEP = 15 countries (ASEAN+China+Japan+Korea+Australia+NZ). World's largest FTA.",
-    "India-UAE CEPA (2022): First major FTA in decade. 97% tariff lines. Bilateral trade $84.5B. Record 88-day negotiation.",
-    "India-Australia ECTA (2022): Interim deal. India: 70% tariff concessions. Australia: 100% zero duty immediately.",
-    "India-EFTA TEPA (2024): EFTA committed $100B investment over 15 years — first FTA with binding investment commitment.",
-    "SAFTA (2006): SAARC members. Intra-SAARC trade only 5%. India-Pakistan trade suspended since 2019.",
-    "IPEF (2022): 14 members. 4 pillars. India opted OUT of trade pillar (Pillar I). Participates in supply chains, clean economy, fair economy.",
-    "IMEC (India-Middle East-Europe Corridor): Announced G20 2023. Rail+shipping India→UAE→Saudi→Jordan→Israel→Europe. Alternative to BRI.",
-    "Types of agreements: PTA (preferential) < FTA (zero tariff) < CEPA (FTA+investment+services) < Customs Union (common external tariff).",
-    "India's DFTP scheme: Duty-free access for all LDCs covering 98.6% of tariff lines.",
-    "APTA (Asia-Pacific Trade Agreement, 1975): India's oldest PTA. Members include China, South Korea, Bangladesh.",
-    "India-UK FTA: 14 rounds completed. Key issues: whisky tariffs (India charges 150%), Mode 4 visas, dairy market access.",
-    "India-EU FTA: Restarted 2022 after 9-year gap. EU = India's 2nd largest trading partner ($120B bilateral).",
-    "China+1 strategy benefits India despite RCEP absence — PLI schemes designed to capture manufacturing diversification."
-],
+    'India has FTAs/CEPAs with: ASEAN, Japan, Korea, Singapore, Malaysia, Sri Lanka, UAE, Australia, EFTA. Under negotiation: UK, EU, GCC.',
+    'India-ASEAN FTA (2010): 75% tariff lines eliminated. Trade deficit with ASEAN ~$25B (FY24). Review initiated 2023 — RoO concerns.',
+    'RCEP withdrawal (2019): India feared Chinese imports ($85B deficit with China FY24). RCEP = 15 countries (ASEAN+5). World\'s largest FTA.',
+    'India-UAE CEPA (2022): First major FTA in decade. 97% tariff lines. Bilateral trade $84.5B. Record 88-day negotiation. UAE is 3rd largest trade partner.',
+    'India-Australia ECTA (2022): Interim deal. India: 70% tariff concessions (96% eventually). Australia: 100% zero duty immediately. Post-study work visa for Indian students.',
+    'India-EFTA TEPA (2024): EFTA committed $100B investment over 15 years — first FTA with binding investment commitment. Snap-back provision if target missed.',
+    'SAFTA (2006): SAARC members (8). Intra-SAARC trade only 5%. India-Pakistan trade suspended since 2019. Large Sensitive Lists limit liberalisation.',
+    'IPEF (2022): 14 members. 4 pillars (Trade, Supply Chains, Clean Economy, Fair Economy). India opted OUT of trade pillar (Pillar I).',
+    'IMEC (India-Middle East-Europe Corridor): Announced G20 2023. Rail+shipping India to UAE to Saudi to Jordan to Israel to Europe. Alternative to BRI.',
+    'Types of agreements: PTA (preferential) < FTA (zero tariff) < CEPA (FTA+investment+services) < Customs Union (common external tariff).',
+    'India\'s DFTP scheme: Duty-free access for all LDCs covering 98.6% of tariff lines.',
+    'APTA (Asia-Pacific Trade Agreement, 1975): India\'s oldest PTA. Members include China, South Korea, Bangladesh.',
+    'India-UK FTA: 14+ rounds completed. Key issues: whisky tariffs (150%), Mode 4 visas, dairy market access.',
+    'India-EU FTA: Restarted 2022 after 9-year gap. EU = India\'s 2nd largest trading partner ($120B+). CBAM is a major concern.',
+    'China+1 strategy benefits India despite RCEP absence — PLI schemes designed to capture manufacturing diversification.',
+    'India-Japan CEPA (2011): 94% of Japan\'s lines, 90% of India\'s. Japan 5th largest FDI source ($38B cumulative). JICA = largest bilateral development financier.',
+    'India-Korea CEPA (2010): India\'s trade deficit with Korea ~$10B. Review initiated. Samsung, Hyundai, LG, Kia major investors.',
+    'India-Sri Lanka FTA (2000): India\'s first bilateral FTA. India-Singapore CECA (2005): First comprehensive bilateral agreement.',
+    'BIMSTEC: 7 members (India, Bangladesh, Myanmar, Sri Lanka, Thailand, Nepal, Bhutan). Alternative to SAARC. FTA under negotiation.',
+    'India-GCC FTA under negotiation. GCC = India\'s largest regional partner ($188B trade). India imports 40% crude oil from GCC.',
+    'India\'s applied MFN tariff: Average 18.1% — higher than US (3.4%), EU (5.1%), China (7.5%). Gives policy space for FTA concessions.',
+    'FTA utilisation rate: India ~25-30% (low). ASEAN/Korea ~70-80%. Complex RoO and lack of SME awareness are key reasons.',
+    'Anti-dumping: India has 262 ADD measures in force — 2nd globally after US. DGTR investigates. China targeted in 50%+ cases.',
+    'RoDTEP replaced MEIS (WTO-incompatible). Reimburses embedded duties on exports through digital scrips.',
+    'I2U2 (India-Israel-UAE-US): Food security, clean energy cooperation. BRICS expanded 2024 — added UAE, Saudi, Egypt, Ethiopia, Iran.',
+    'India\'s merchandise trade deficit: $240B (FY24). Total exports: $778B (goods $437B + services $341B). Target: $2 trillion by 2030.',
+    'IMT Trilateral Highway: Moreh to Mae Sot via Myanmar (1,360 km). Kaladan project: Kolkata to Mizoram via Sittwe port, Myanmar.',
+    'QCOs (Quality Control Orders): BIS certification for 600+ products — technically for quality but viewed as NTBs by trading partners.',
+    'PLI most successful in mobile phones: India\'s exports jumped from $3B (FY20) to $15.6B (FY24). Apple supply chain established.',
+    'India-Pakistan trade: Near-zero since 2019. Previously $2.5B (FY19). Pakistan withdrew MFN status after Article 370 revocation.',
+    'Foreign Trade Policy 2023: Dynamic/indefinite (no fixed tenure). DGFT administers under FTDR Act 1992. Export schemes: Advance Authorisation, EPCG, RoDTEP.',
+    'EU CBAM (Carbon Border Adjustment Mechanism): Will tax imports by carbon content from 2026. Could cost India $2+ billion/year on steel, cement, aluminium, fertiliser.',
+    'India\'s share in global GVC trade: ~15% (low). Vietnam: 35-40%, Thailand: 35%. Limited GVC participation is a structural weakness.',
+    'BBIN Motor Vehicles Agreement (2015): Bangladesh, Bhutan, India, Nepal. Bhutan withdrew 2017. India-Bangladesh bilateral MVA operational.',
+    'Supply Chain Resilience Agreement (IPEF, 2023): Crisis Response Network + Supply Chain Council for coordinating during disruptions.',
+    'District as Export Hub (DEH): Products mapped across 739 districts. ODOP (One District One Product) integrated with GI registration.',
+    'India\'s trade with SAARC is just 5% of total — lowest intra-regional trade among major groupings. EU: 60%+, ASEAN: 25%, NAFTA/USMCA: 40%+.',
+    'India retains "open door" clause for RCEP — can join later. But bilateral approach (UAE, UK, EU, EFTA) is preferred strategy.',
+  ],
   comparisons: [
     {
-        "title": "India's Key FTAs",
-        "headers": [
-            "Agreement",
-            "Year",
-            "Partner",
-            "Key Feature"
-        ],
-        "rows": [
-            [
-                "India-Sri Lanka FTA",
-                "2000",
-                "Sri Lanka",
-                "India's first bilateral FTA"
-            ],
-            [
-                "India-ASEAN FTA",
-                "2010",
-                "10 ASEAN countries",
-                "75% tariff lines, under review"
-            ],
-            [
-                "India-UAE CEPA",
-                "2022",
-                "UAE",
-                "97% tariff lines, 88-day negotiation"
-            ],
-            [
-                "India-Australia ECTA",
-                "2022",
-                "Australia",
-                "Interim deal, 100% Aus duty-free"
-            ],
-            [
-                "India-EFTA TEPA",
-                "2024",
-                "Switzerland, Norway, Iceland, Liechtenstein",
-                "$100B investment commitment"
-            ]
-        ]
-    }
-],
+      title: 'India\'s Key FTAs',
+      headers: ['Agreement', 'Year', 'Partner', 'Key Feature'],
+      rows: [
+        ['India-Sri Lanka FTA', '2000', 'Sri Lanka', 'India\'s first bilateral FTA'],
+        ['India-Singapore CECA', '2005', 'Singapore', 'First comprehensive agreement (goods+services+investment)'],
+        ['India-ASEAN FTA', '2010', '10 ASEAN countries', '75% tariff lines, under review since 2023'],
+        ['India-Japan CEPA', '2011', 'Japan', '94% Japan lines, JICA largest bilateral financier'],
+        ['India-Korea CEPA', '2010', 'South Korea', 'Trade deficit $10B, review initiated'],
+        ['India-UAE CEPA', '2022', 'UAE', '97% tariff lines, 88-day negotiation, $84.5B trade'],
+        ['India-Australia ECTA', '2022', 'Australia', 'Interim deal, 100% Aus duty-free immediately'],
+        ['India-EFTA TEPA', '2024', 'Switzerland, Norway, Iceland, Liechtenstein', '$100B investment commitment, snap-back clause'],
+      ],
+    },
+    {
+      title: 'RCEP vs IPEF',
+      headers: ['Feature', 'RCEP', 'IPEF'],
+      rows: [
+        ['Type', 'Full FTA with tariff reduction', 'Framework for standards (not an FTA)'],
+        ['Members', '15 (ASEAN + China, Japan, Korea, Aus, NZ)', '14 (US, India, Japan, ASEAN members, etc.)'],
+        ['India\'s status', 'Withdrew in 2019', 'Participates (except trade pillar)'],
+        ['Market access', 'Yes (tariff elimination)', 'No tariff reduction'],
+        ['Key concern for India', 'Chinese imports', 'Labour/environmental standards as NTBs'],
+      ],
+    },
+    {
+      title: 'Trade Agreement Hierarchy',
+      headers: ['Type', 'Scope', 'India Examples'],
+      rows: [
+        ['PTA', 'Select products, lower tariffs', 'MERCOSUR, Chile, APTA'],
+        ['FTA', 'Substantially all trade, zero tariff', 'India-ASEAN, India-Sri Lanka'],
+        ['CEPA/CECA', 'FTA + services + investment + IPR', 'India-Japan, India-Korea, India-UAE'],
+        ['Customs Union', 'FTA + common external tariff', 'India not in any'],
+      ],
+    },
+    {
+      title: 'SAARC vs BIMSTEC',
+      headers: ['Feature', 'SAARC/SAFTA', 'BIMSTEC'],
+      rows: [
+        ['Members', '8 (includes Pakistan)', '7 (excludes Pakistan, includes Thailand)'],
+        ['Status', 'Paralysed by India-Pak tensions', 'Active, India\'s preferred platform'],
+        ['Trade integration', 'SAFTA operational but limited', 'FTA under negotiation'],
+        ['Strategic value', 'Diminished', 'Bridge between South and Southeast Asia'],
+      ],
+    },
+    {
+      title: 'India-UK vs India-EU FTA Negotiations',
+      headers: ['Feature', 'India-UK', 'India-EU'],
+      rows: [
+        ['Launch', 'January 2022', 'Restarted 2022 (originally 2007)'],
+        ['Rounds', '14+ (by 2024)', 'Multiple (ongoing)'],
+        ['Key partner demand', 'Whisky tariff reduction, dairy', 'Data adequacy, GI, CBAM exemption'],
+        ['India\'s demand', 'Mode 4 visas, social security', 'Services, NTB removal, CBAM exemption'],
+        ['Trade value', '$22B', '$120B+'],
+      ],
+    },
+  ],
   mnemonics: [
     {
-        "title": "Trade Agreement Hierarchy — \"PFC-CU\"",
-        "mnemonic": "PTA < FTA < CEPA < Customs Union",
-        "explanation": "Ascending depth: Preferential (select products), Free Trade (substantially all), Comprehensive (goods+services+investment), Customs Union (common external tariff)."
-    }
-],
+      title: 'Trade Agreement Hierarchy — "PFC-CU"',
+      mnemonic: 'PTA < FTA < CEPA < Customs Union',
+      explanation: 'Ascending depth: Preferential (select products), Free Trade (substantially all), Comprehensive (goods+services+investment), Customs Union (common external tariff).',
+    },
+    {
+      title: 'IPEF Pillars — "TSCF"',
+      mnemonic: 'Trade (India OUT), Supply Chains, Clean Economy, Fair Economy',
+      explanation: 'Four IPEF pillars — India participates in 3 but opted out of Trade pillar citing labour/environmental standards and digital trade concerns.',
+    },
+    {
+      title: 'RCEP Concerns — "CDRAS" (5 reasons India left)',
+      mnemonic: 'China deficit, Dairy threat, Rules of Origin, Auto-trigger safeguards, Services inadequacy',
+      explanation: 'India\'s five main concerns with RCEP: Chinese import flood ($85B deficit), dairy/agriculture vulnerability, weak RoO, no auto-trigger safeguards, and poor Mode 4 services provisions.',
+    },
+    {
+      title: 'India\'s 2022 FTA Sprint — "UAE-Aus-IPEF"',
+      mnemonic: 'Three major trade agreements in one year: India-UAE CEPA (Feb), India-Australia ECTA (Apr), IPEF (May)',
+      explanation: '2022 was India\'s most active FTA year in a decade — three significant trade frameworks signed/joined within 4 months.',
+    },
+  ],
 }
