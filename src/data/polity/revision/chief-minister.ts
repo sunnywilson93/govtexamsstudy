@@ -31,6 +31,14 @@ export const chiefMinisterRevision: SubjectRevision = {
     'CM-Governor conflict is the most politically sensitive aspect of state governance — particularly when they belong to different political parties.',
     'Competitive federalism: modern CMs drive state development agendas, attract investment, and negotiate with Centre on GST, fiscal devolution.',
     'Anti-defection (91st Amendment) strengthens CM\'s hold over party legislature but can suppress legitimate dissent.',
+    'Chief Secretary: senior-most IAS officer, appointed by CM. Secretary to state Cabinet. Head of state civil services. Chairs Committee of Secretaries.',
+    'CM is member of NITI Aayog Governing Council and Inter-State Council (Art 263). Direct channel to Centre on federal issues.',
+    'Art 166: all executive action of state in Governor\'s name. Governor makes rules for transaction of business and allocation among ministers.',
+    'Art 164(2): CoM collectively responsible to Vidhan Sabha. Art 164(4): minister not member for 6 months ceases to be minister.',
+    'Pawan Kumar Chamling (Sikkim, 1994-2019): longest-serving CM at 24+ years. Mayawati: first Dalit woman CM (UP). Mamata Banerjee: first woman CM of West Bengal.',
+    'CM has no constitutional right to be consulted on Governor appointment — only Sarkaria Commission recommendation (not binding).',
+    'During President\'s Rule (Art 356): CM and entire CoM dismissed. State under direct Central rule through Governor.',
+    'Floor test ordered by SC in several recent cases: Karnataka (2018), Maharashtra (2019) — reaffirming Bommai principle at state level.',
   ],
   comparisons: [
     {
@@ -69,6 +77,27 @@ export const chiefMinisterRevision: SubjectRevision = {
         ['Legal', 'Absent', 'No countersignature on gubernatorial orders; no legal accountability'],
       ],
     },
+    {
+      title: 'CM vs Governor — Real vs Nominal Executive',
+      headers: ['Aspect', 'Chief Minister', 'Governor'],
+      rows: [
+        ['Nature', 'Real (de facto) executive', 'Nominal (de jure) executive'],
+        ['Source of power', 'Vidhan Sabha confidence', 'Presidential appointment (Art 155)'],
+        ['Appointed by', 'Governor on convention/floor test', 'President (Central government)'],
+        ['Tenure', 'Till VS confidence; no fixed term', '"Pleasure of President"; 5-year term (Art 156)'],
+        ['Accountability', 'Collectively responsible to VS (Art 164(2))', 'Not accountable to state legislature'],
+        ['Removal', 'No-confidence motion (simple majority in VS)', 'At President\'s pleasure (B.P. Singhal limits)'],
+      ],
+    },
+    {
+      title: 'Sarkaria Sequence for CM Appointment (Hung Assembly)',
+      headers: ['Priority', 'Who Is Invited', 'Rationale'],
+      rows: [
+        ['First', 'Leader of pre-election alliance with majority', 'Respects voter mandate for alliance'],
+        ['Second', 'Leader of largest single party', 'Largest party has the strongest claim'],
+        ['Third', 'Leader who can form post-poll coalition with majority', 'Last resort before recommending President\'s Rule'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -85,6 +114,16 @@ export const chiefMinisterRevision: SubjectRevision = {
       title: 'CM Bodies — "SPS-NITI-ZC"',
       mnemonic: 'State Planning Board (chairs), SDMA (chairs), NITI Aayog Governing Council (member), Inter-State Council (member), Zonal Council (member)',
       explanation: 'Key bodies where the CM has a formal role — two as chairman, three as member.',
+    },
+    {
+      title: 'Floor Test Cases — "Bommai-Rameshwar-Nabam-Maharashtra"',
+      mnemonic: 'Bommai (1994): floor test mandated. Rameshwar Prasad (2006): Bihar dissolution struck down. Nabam Rebia (2016): Governor cannot summon assembly. Maharashtra (2019): 24-hour floor test ordered.',
+      explanation: 'Four landmark cases on floor tests and CM\'s majority — all reinforcing that the assembly floor is the only legitimate testing ground.',
+    },
+    {
+      title: 'CM Appointment Age — "25 from VS, 30 from VP"',
+      mnemonic: 'VS member: 25+ years. VP member: 30+ years. No separate CM age requirement.',
+      explanation: 'Effective minimum age for CM depends on which House they belong to, since the CM must be a legislature member.',
     },
   ],
 }

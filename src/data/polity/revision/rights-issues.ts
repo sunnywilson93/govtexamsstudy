@@ -33,6 +33,19 @@ export const rightsIssuesRevision: SubjectRevision = {
     'Laxmi v. UOI (2014): SC directed restrictions on acid sale and compensation for acid attack victims. Led to stricter regulation of acid sales.',
     'Environmental rights: M.C. Mehta cases — polluter pays principle, absolute liability. Vellore Citizens (1996) — precautionary principle. NGT Act, 2010 — specialized green court.',
     'India ranked 161/180 in World Press Freedom Index 2024 (RSF). UAPA and NSA detentions of journalists, SLAPP suits — concerns about media freedom.',
+    'M. Nagaraj v. UOI (2006): Reservation in promotions for SCs/STs upheld but required quantifiable data on backwardness, inadequacy of representation, and efficiency.',
+    '77th Amendment (1995): Restored power to provide reservation in promotions for SCs/STs. 81st Amendment (2000): Carry forward of unfilled vacancies. 85th (2001): Consequential seniority.',
+    'Rights of Persons with Disabilities Act, 2016: 21 categories (up from 7). 4% government reservation (up from 3%). 5% higher education reservation.',
+    'Mental Healthcare Act, 2017: Right to mental healthcare under Art 21. Decriminalized attempted suicide (Section 115). Advance directive for mental healthcare recognized.',
+    'Ayushman Bharat (2018): PM-JAY — Rs 5 lakh/family/year health insurance for bottom 40%. HWCs — 1.5 lakh primary care centres. World\'s largest govt health insurance.',
+    'POCSO Act, 2012 (amended 2019): Protection against child sexual offences. Child-friendly courts, in-camera trials, mandatory reporting. No anticipatory bail for accused.',
+    'Juvenile Justice Act, 2015: Replaced 2000 Act after Nirbhaya case. Juveniles 16-18 accused of heinous offences can be tried as adults — JJB assessment.',
+    'NSA (1980): Preventive detention up to 12 months. UAPA (1967, amended 2019): Anti-terrorism — 2019 amendment allows designating individuals (not just orgs) as terrorists.',
+    'AFSPA (1958/1990): Sweeping powers in "disturbed areas." Jeevan Reddy Committee (2005) recommended repeal. SC in EEVFA case (2016): every encounter death must be probed.',
+    'Sabarimala case (2018): 5-judge bench allowed women of all ages. 5-judge review bench referred to 9-judge bench on broader question of religious practices and equality.',
+    'Art 19(2): 8 grounds for restricting free speech — sovereignty/integrity, security, foreign relations, public order, decency/morality, contempt of court, defamation, incitement.',
+    'Romesh Thappar v. State of Madras (1950): Freedom of press is part of Art 19(1)(a). No separate press freedom article — derived from free speech.',
+    'Right to Food Campaign: Led by Jean Dreze and activists. Instrumental in shaping NFSA 2013. PUCL v. UOI orders (2001-) on mid-day meals, ICDS, PDS.',
   ],
   comparisons: [
     {
@@ -68,6 +81,36 @@ export const rightsIssuesRevision: SubjectRevision = {
         ['Supriyo v. UOI', '2023', 'Same-sex marriage — left to Parliament'],
       ],
     },
+    {
+      title: 'Key Reservation Amendments',
+      headers: ['Amendment', 'Year', 'Key Provision'],
+      rows: [
+        ['77th', '1995', 'Restored reservation in promotions for SCs/STs'],
+        ['81st', '2000', 'Carrying forward of unfilled reserved vacancies'],
+        ['85th', '2001', 'Consequential seniority for promoted SC/ST candidates'],
+        ['103rd', '2019', '10% EWS reservation (income < Rs 8 lakh, land < 5 acres)'],
+      ],
+    },
+    {
+      title: 'Preventive Detention and Security Laws',
+      headers: ['Law', 'Year', 'Scope'],
+      rows: [
+        ['NSA', '1980', 'Detention up to 12 months; national security/public order'],
+        ['UAPA', '1967 (amended 2019)', 'Anti-terrorism; individual designation (2019)'],
+        ['AFSPA', '1958/1990', '"Disturbed areas"; armed forces immunity'],
+        ['NIA Act', '2008 (amended 2019)', 'National Investigation Agency for terror cases'],
+      ],
+    },
+    {
+      title: 'Child Rights Legislation',
+      headers: ['Law', 'Year', 'Key Provision'],
+      rows: [
+        ['POCSO Act', '2012', 'Sexual offences against children; child-friendly courts'],
+        ['Juvenile Justice Act', '2015', '16-18 year olds in heinous crimes — adult trial option'],
+        ['Child Labour Amendment', '2016', 'Prohibition below 14 in all occupations'],
+        ['RTE Act', '2009', 'Free compulsory education 6-14; 25% private school reservation'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -89,6 +132,11 @@ export const rightsIssuesRevision: SubjectRevision = {
       title: 'NFSA — "3-2-1-5-67"',
       mnemonic: 'Rs 3 rice, Rs 2 wheat, Rs 1 coarse grains, 5 kg per person, 67% population covered',
       explanation: 'Key numbers for the National Food Security Act, 2013.',
+    },
+    {
+      title: 'Art 19(2) Restrictions — "SS-FP-DC-DI"',
+      mnemonic: 'Sovereignty/Security, State security, Foreign relations, Public order, Decency/morality, Contempt, Defamation, Incitement — 8 grounds',
+      explanation: 'Eight grounds for reasonable restrictions on freedom of speech and expression under Article 19(2).',
     },
   ],
 }

@@ -20,8 +20,9 @@ export const upscSpscRevision: SubjectRevision = {
     'CSE: 3 stages — Prelims (2 objective papers, CSAT qualifying since 2014), Mains (9 descriptive papers), Interview.',
     'Kothari Committee (1979): recommended Preliminary examination, optional subjects, and emphasis on general studies.',
     'All-India Services (Art 312): IAS, IPS, IFS (Forest). New AIS requires Rajya Sabha resolution by 2/3 majority. Only IFS created under Art 312 (1966).',
+    'Art 312 specifically mentions Indian Judicial Service as a potential AIS — never created. Indian Engineering Service, Medical & Health Service also proposed but not created.',
     'Lateral entry: introduced 2018-19 for Joint Secretary/Director positions — controversial; criticized for bypassing merit system and reservation.',
-    'First PSC in India: established 1 October 1926 (GoI Act 1919). Sir Ross Barker was first Chairman.',
+    'First PSC in India: established 1 October 1926 (GoI Act 1919). Sir Ross Barker was first Chairman. Lee Commission (1924) recommended its creation.',
     'Federal PSC under GoI Act 1935 was predecessor of UPSC. Reconstituted under the Constitution in 1950.',
     'SSC (Staff Selection Commission): NOT constitutional body — established 1975 by government resolution. Conducts CGL, CHSL, MTS exams.',
     'SPSC members removed by President (not Governor) — important federal safeguard against state political interference.',
@@ -30,6 +31,18 @@ export const upscSpscRevision: SubjectRevision = {
     '42nd Amendment tried to restrict UPSC consultation scope; 44th Amendment restored the original position.',
     'UPSC Chairman by convention addresses the nation on Republic Day eve.',
     'Art 323 transparency: government must explain to Parliament EVERY case where UPSC advice was not followed.',
+    'Art 323A (42nd Amendment): empowers Parliament to create administrative tribunals for service matters. CAT created under Administrative Tribunals Act 1985.',
+    'L. Chandra Kumar v. UoI (1997): SC held that CAT orders subject to HC review under Art 226/227 — tribunal cannot exclude HC jurisdiction (basic structure).',
+    'Madras Bar Association v. UoI (2014, 2021): SC mandated judicial members in tribunals; restricted executive discretion in tribunal appointments.',
+    'Reservation in UPSC recruitment: SC 15%, ST 7.5%, OBC 27% (Mandal, 1990), EWS 10% (103rd Amendment, 2019). Indra Sawhney (1992) imposed 50% ceiling and creamy layer exclusion for OBC.',
+    'Art 16(4A) (77th Amendment, 1995): reservation in promotion for SC/ST. Art 16(4B) (81st Amendment, 2000): carry-forward of unfilled reserved vacancies.',
+    'IAS (Cadre) Rules 1954: insider-outsider ratio for state cadre allocation; central deputation reserve for Union postings. Amended in 2024.',
+    'AIS (Conduct) Rules 1968: prohibit political activity, require property disclosure, restrict media interaction for AIS officers.',
+    'Mission Karmayogi (2020): iGOT platform for civil service capacity building. Capacity Building Commission created to harmonize training.',
+    'Training: LBSNAA (Mussoorie) for IAS, SVPNPA (Hyderabad) for IPS, IGNFA (Dehradun) for IFS. District training follows institutional training.',
+    'Sarkaria Commission (1987) and Punchhi Commission (2010) recommended strengthening AIS independence — preventing frequent transfers and victimization by state governments.',
+    '2nd ARC recommended: collegium system for UPSC appointments; specialization tracks in civil services; domain expertise alongside generalist training.',
+    'UPSC conducts 15+ examinations annually; receives over 10 lakh applications for CSE alone; final selection approximately 800-1000 candidates.',
   ],
   comparisons: [
     {
@@ -67,6 +80,28 @@ export const upscSpscRevision: SubjectRevision = {
         ['SPSC Member', 'UPSC Chairman/Member, any SPSC Chairman', 'Any other government post'],
       ],
     },
+    {
+      title: 'PSC Removal vs Other Constitutional Officers',
+      headers: ['Officer', 'Removed By', 'Procedure', 'Ground'],
+      rows: [
+        ['UPSC/SPSC member', 'President', 'SC inquiry under Art 317', 'Misbehaviour (SC inquiry) or insolvency/outside employment/infirmity (no SC inquiry)'],
+        ['SC Judge', 'President', 'Impeachment (special majority in both Houses)', 'Proved misbehaviour or incapacity'],
+        ['CAG', 'President', 'Impeachment (same as SC judge)', 'Proved misbehaviour or incapacity'],
+        ['CEC', 'President', 'Impeachment (same as SC judge)', 'Proved misbehaviour or incapacity'],
+        ['Governor', 'President', 'At pleasure (no procedure prescribed)', 'No grounds needed — pleasure doctrine'],
+      ],
+    },
+    {
+      title: 'India vs Other Countries — Civil Service Recruitment',
+      headers: ['Aspect', 'India (UPSC)', 'UK (Civil Service Commission)', 'USA (OPM)', 'France (INSP/ENA)'],
+      rows: [
+        ['Status', 'Constitutional body', 'Statutory body', 'Executive agency', 'Academic institution'],
+        ['Model', 'Centralized exam-based', 'Agency-based + central oversight', 'Decentralized agency hiring', 'School-based training + ranking'],
+        ['Merit principle', 'Art 315-323', 'Constitutional Reform Act 2010', 'Pendleton Act 1883', 'Republican tradition'],
+        ['Post-retirement bar', 'Yes (Art 319 hierarchy)', 'No', 'No', 'No (pantouflage culture)'],
+        ['Advisory to govt?', 'Yes (Art 320)', 'No', 'No', 'No'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -83,6 +118,16 @@ export const upscSpscRevision: SubjectRevision = {
       title: 'Removal Key — "President removes both (SC inquiry)"',
       mnemonic: 'SPSC members also removed by PRESIDENT (not Governor) after SC inquiry — federal safeguard',
       explanation: 'The crucial fact that SPSC members are removed by the President, not the Governor, ensuring independence from state government pressure.',
+    },
+    {
+      title: 'Three AIS — "IAS-IPS-IFS"',
+      mnemonic: 'IAS (Admin), IPS (Police), IFS (Forest). Art 312 + RS 2/3 majority. Only IFS added post-Constitution (1966).',
+      explanation: 'The three All-India Services and the key constitutional provision for creating new ones.',
+    },
+    {
+      title: 'Independence Safeguards — "RECS"',
+      mnemonic: 'Removal by President via SC inquiry, Expenses charged on Consolidated Fund, Conditions cannot be varied to disadvantage, Service terms fixed by Constitution',
+      explanation: 'Four pillars of PSC independence — matches similar safeguards for SC judges and CAG.',
     },
   ],
 }

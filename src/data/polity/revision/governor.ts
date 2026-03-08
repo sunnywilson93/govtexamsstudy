@@ -33,6 +33,14 @@ export const governorRevision: SubjectRevision = {
     'Governor consults HC Chief Justice for appointment of district judges (Art 233) and is consulted by President for HC judge appointments (Art 217).',
     'Convention: Governor should not belong to the state of appointment. CM should be consulted. These are Sarkaria recommendations, not constitutional mandates.',
     'Maru Ram v. UOI (1980): pardoning power exercised on CoM advice, not personal discretion — applies to Governor\'s Art 161 power as well.',
+    'Special provisions: Art 371A (Nagaland — law and order), Art 371C (Manipur — hill areas), Art 371H (Arunachal Pradesh — law and order, discretionary).',
+    'Art 213: Governor\'s ordinance-making — when legislature not in session; ceases 6 weeks after reassembly. Certain ordinances need President\'s prior instructions.',
+    'D.C. Wadhwa v. State of Bihar (1987): Bihar re-promulgated ordinances for over a decade — SC condemned as subversion of legislative process. Applies to Governor\'s ordinances.',
+    'Krishna Kumar Singh v. Bihar (2017, 7-judge bench): ordinance satisfaction subject to judicial review; re-promulgation is fraud on Constitution.',
+    'Governor nominates 1/6 of VP members (Art 171(5)) from literature, science, art, cooperative movement, social service.',
+    'Governor as Chancellor: NOT constitutional — derives from state university Acts. Can be modified by state legislation. Punchhi Commission: Governor should not be Chancellor.',
+    'Art 153 (7th Amendment, 1956): one Governor for two or more states permitted. Used for smaller northeastern states.',
+    'Art 158: Governor cannot hold any other office of profit. Emoluments charged on Consolidated Fund of the STATE. Governor not liable for exercise of duties.',
   ],
   comparisons: [
     {
@@ -71,6 +79,32 @@ export const governorRevision: SubjectRevision = {
         ['Reserve for President', 'Bill goes to President (Art 201)', 'Governor\'s absolute discretion; no time limit for President'],
       ],
     },
+    {
+      title: 'Governor\'s Special Responsibilities by State',
+      headers: ['Article', 'State', 'Special Responsibility'],
+      rows: [
+        ['Art 371(2)', 'Maharashtra/Gujarat', 'Development boards for Vidarbha, Marathwada, Saurashtra, Kutch'],
+        ['Art 371A', 'Nagaland', 'Law and order; Naga customary law protection'],
+        ['Art 371B', 'Assam', 'Committee of tribal members of assembly'],
+        ['Art 371C', 'Manipur', 'Hill areas committee'],
+        ['Art 371F', 'Sikkim', 'Special provisions for assembly'],
+        ['Art 371G', 'Mizoram', 'Mizo customary law protection'],
+        ['Art 371H', 'Arunachal Pradesh', 'Law and order; discretionary after consulting CM'],
+        ['Art 371J', 'Karnataka', 'Hyderabad-Karnataka region provisions'],
+      ],
+    },
+    {
+      title: 'Governor\'s Ordinance Power (Art 213) vs President\'s (Art 123)',
+      headers: ['Aspect', 'Governor (Art 213)', 'President (Art 123)'],
+      rows: [
+        ['When exercised', 'State legislature not in session', 'Parliament not in session'],
+        ['Subject matter', 'State List + Concurrent List', 'Union List + Concurrent List'],
+        ['Additional constraint', 'Certain ordinances need President\'s prior instructions', 'No additional constraint'],
+        ['Duration', '6 weeks after legislature reassembles', '6 weeks after Parliament reassembles'],
+        ['Judicial review', 'D.C. Wadhwa; Krishna Kumar Singh', 'Same principles apply'],
+        ['Re-promulgation', 'Condemned as fraud on Constitution', 'Same — fraud on Constitution'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -92,6 +126,11 @@ export const governorRevision: SubjectRevision = {
       title: 'Governor Cases — "BSNR"',
       mnemonic: 'B.P. Singhal (removal), S.R. Bommai (Art 356), Nabam Rebia (discretion limits), Rameshwar Prasad (Bihar dissolution)',
       explanation: 'Four landmark SC cases on the Governor\'s powers and limitations.',
+    },
+    {
+      title: 'Sarkaria vs Punchhi — "SFCI vs DAFL"',
+      mnemonic: 'Sarkaria: From outside State, Fixed 5-year, Consult CM, Independent. Punchhi: Delete pleasure, Appointment committee, Fixed tenure, Lokpal over Governor',
+      explanation: 'Key differences between the two commissions\' recommendations on the Governor\'s office.',
     },
   ],
 }

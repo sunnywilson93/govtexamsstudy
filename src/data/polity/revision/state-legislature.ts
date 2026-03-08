@@ -33,6 +33,14 @@ export const stateLegislatureRevision: SubjectRevision = {
     'Many state legislatures sit fewer than 30 days/year — NCRWC recommended minimum 100 sitting days for larger states.',
     'Leader of Opposition: recognized when largest opposition party has at least 10% of VS membership. Participates in Lokayukta, SHRC appointments.',
     'VP election: by proportional representation through single transferable vote — similar to RS election method.',
+    'Art 168: state legislature = Governor + VS (unicameral) or Governor + VS + VP (bicameral). Governor is part of legislature — gives assent to bills.',
+    'Art 169: Parliament creates/abolishes VP — NOT Art 368 amendment. VS special majority resolution + Parliament simple majority legislation.',
+    'Art 189: quorum = 10 members or 1/10 total membership, whichever is greater. Parliament quorum (Art 100) = 1/10 only.',
+    'Art 208: proceedings valid despite vacancies. Art 211: no discussion on judicial conduct except removal motion. Art 212: courts cannot inquire into proceedings on procedural grounds.',
+    'State Legislature vs Parliament: NO joint sitting at state level; VP can delay ordinary bills only 1-3 months (RS: 6 months); VP "cooperative movement" nomination category absent in RS.',
+    'AP abolished VP (1985), recreated it (2007). Rajasthan, Assam, Odisha passed resolutions for VP creation — Parliament has not acted.',
+    'Speaker removal (Art 179): effective majority resolution with 14 days\' notice. Deputy Speaker removal: same process.',
+    'Art 174: Governor summons sessions; max gap between sessions — 6 months. Governor can prorogue and dissolve VS (not VP — permanent body).',
   ],
   comparisons: [
     {
@@ -73,6 +81,29 @@ export const stateLegislatureRevision: SubjectRevision = {
         ['Governor\'s nominees', '1/6', 'Nominated for literature, science, art, cooperative movement, social service'],
       ],
     },
+    {
+      title: 'States with VP — Strength Comparison',
+      headers: ['State', 'VP Strength', 'VS Strength'],
+      rows: [
+        ['Bihar', '75', '243'],
+        ['Karnataka', '75', '224'],
+        ['Maharashtra', '78', '288'],
+        ['Telangana', '40', '119'],
+        ['Uttar Pradesh', '100 (largest VP)', '403'],
+        ['Andhra Pradesh', '58', '175'],
+      ],
+    },
+    {
+      title: 'States That Abolished VP',
+      headers: ['State', 'Year Abolished', 'Status'],
+      rows: [
+        ['Punjab', '1969', 'Not recreated'],
+        ['West Bengal', '1969', 'Not recreated'],
+        ['Andhra Pradesh', '1985', 'Recreated in 2007'],
+        ['Tamil Nadu', '1986', 'Not recreated'],
+        ['J&K', '2019', 'Abolished with UT reorganization'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -94,6 +125,11 @@ export const stateLegislatureRevision: SubjectRevision = {
       title: 'State Quorum = "10 or 1/10, GREATER"',
       mnemonic: '10 members or 1/10 of total membership, whichever is GREATER',
       explanation: 'State legislature quorum differs from Parliament (which is simply 1/10). The "10 members" floor ensures small legislatures have adequate quorum.',
+    },
+    {
+      title: 'VP vs RS Nominations — "Cooperative Movement"',
+      mnemonic: 'VP: literature, science, art, COOPERATIVE MOVEMENT, social service. RS: literature, science, art, social service (NO cooperative movement)',
+      explanation: 'The Governor\'s VP nomination categories include "cooperative movement" — absent in the President\'s RS nominations under Art 80. A frequently tested distinction.',
     },
   ],
 }

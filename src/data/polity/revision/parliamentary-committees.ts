@@ -30,6 +30,14 @@ export const parliamentaryCommitteesRevision: SubjectRevision = {
     'Reforms proposed: mandatory referral of important bills, Parliamentary Budget Office, extending committee tenure, making proceedings partially open.',
     'JPC minority members can submit dissent notes. JPC reports not binding. JPCs distinguished from Commissions of Inquiry (under CI Act, 1952).',
     'BAC in LS: 15 members (Speaker as ex-officio Chairman). BAC in RS: 11 members (Chairman as ex-officio head).',
+    'Joint Committee on Offices of Profit: examines which positions constitute "office of profit" under Art 102(1)(a). Jaya Bachchan case (2006) — disqualified for holding chairperson post.',
+    'Parliament (Prevention of Disqualification) Act, 1959 exempts certain offices from disqualification — the joint committee recommends inclusions/exclusions.',
+    'Committee on Papers Laid on the Table: examines papers laid by government and reports irregularities. Committee on Petitions: examines petitions from public on matters of general interest.',
+    'PAC submits Action Taken Reports tracking government compliance with earlier recommendations — important accountability mechanism.',
+    'Art 151 mandates CAG reports be laid before Parliament. PAC cannot call documents directly from ministries — relies on CAG as intermediary.',
+    'COPU scope: financial management, operational efficiency, pricing policy, investment decisions, compliance with government directives, corporate governance of CPSEs.',
+    'Ethics Committee of LS recommended expulsion of TMC MP Mahua Moitra (2023) in cash-for-query case — first such recommendation since 2005 scandal.',
+    'Committee on Welfare of SCs/STs: 30 members (20 LS + 10 RS). Examines Art 338 (NCSC) and Art 338A (NCST) commission reports.',
   ],
   comparisons: [
     { title: 'Three Financial Committees', headers: ['Feature', 'PAC', 'Estimates Committee', 'COPU'], rows: [
@@ -48,6 +56,14 @@ export const parliamentaryCommitteesRevision: SubjectRevision = {
       ['Authority', 'Rules of Procedure', 'Motion of the House'],
       ['Scope', 'Broad (ongoing scrutiny)', 'Specific (particular bill or matter)'],
     ]},
+    { title: 'Indian vs US Congressional Committees', headers: ['Feature', 'Indian Parliamentary Committees', 'US Congressional Committees'], rows: [
+      ['Bill referral', 'Optional — declining trend', 'Mandatory for all bills'],
+      ['Hearings', 'Confidential', 'Public and televised'],
+      ['Can "kill" bills', 'No — advisory only', 'Yes — committees can refuse to report'],
+      ['Research support', 'Limited (Parliament Secretariat)', 'CRS + CBO (dedicated agencies)'],
+      ['Confirmation hearings', 'None', 'Senate confirmation for key appointments'],
+      ['Chair power', 'Limited', 'Extensive (agenda-setting, subpoena)'],
+    ]},
     { title: 'DRSCs: Key Facts', headers: ['Feature', 'Detail'], rows: [
       ['Total number', '24 (increased from 17 in 2004)'],
       ['Members each', '31 (21 LS + 10 RS)'],
@@ -62,5 +78,6 @@ export const parliamentaryCommitteesRevision: SubjectRevision = {
     { title: 'Estimates = "30-All LS-Budget"', mnemonic: '30 members, all from Lok Sabha, examines budget estimates', explanation: 'Three key facts about the Estimates Committee — the only financial committee with NO RS representation.' },
     { title: 'COPU = "22-PSU-1964"', mnemonic: '22 members, examines PSU accounts, first constituted 1964', explanation: 'Three key facts about the Committee on Public Undertakings.' },
     { title: 'DRSCs = "24-31-21+10"', mnemonic: '24 committees, 31 members each, 21 LS + 10 RS', explanation: 'Key numbers for DRSCs — the 24 departmentally related committees covering all ministries.' },
+    { title: 'Committees That Cannot Have Ministers — "PE-COPU"', mnemonic: 'PAC, Estimates, COPU — no Ministers allowed', explanation: 'All three financial committees bar ministers from membership, ensuring independence of scrutiny.' },
   ],
 }

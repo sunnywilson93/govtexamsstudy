@@ -29,6 +29,15 @@ export const primeMinisterRevision: SubjectRevision = {
     'Narendra Modi (2014): first PM born in independent India. First single-party majority after 30 years of coalition era.',
     'Art 77: all executive actions taken in President\'s name; PM makes rules for convenient transaction of business and allocation among ministers.',
     'President K.R. Narayanan twice returned CoM advice — Bihar President\'s Rule (1998) and UP (1999) — demonstrating the 44th Amendment proviso.',
+    'CCS (Cabinet Committee on Security) — chaired by PM. Members: Defence, External Affairs, Home, Finance Ministers. Decides all defence and security matters.',
+    'ACC (Appointments Committee of Cabinet) — only 2 members: PM and Home Minister. Appoints Secretary-level and above officers.',
+    'Art 75(1A): 91st Amendment (2003) — CoM capped at 15% of LS total membership. Tenth Schedule-disqualified members cannot be ministers.',
+    'Art 75(5): a minister not a member of either House for 6 consecutive months ceases to be a minister. Ensures parliamentary accountability.',
+    'No-confidence motion requires 50 members to be admitted; passed by simple majority of present and voting. Only in Lok Sabha.',
+    'Notable no-confidence motions: 1963 (first, against Nehru — defeated), 1979 (Morarji resigned before vote), 1999 (Vajpayee lost by 1 vote: 270 vs 269), 2018 (Modi defeated, 325 vs 126).',
+    'PM chairs: NITI Aayog, NSC, NCA (Political Council), NDMA, ISC (Art 263), National Ganga Council, National Integration Council.',
+    'Art 78 duties: communicate decisions of CoM; furnish information on Union affairs; submit for Cabinet consideration matters where individual minister has decided.',
+    'PM from Rajya Sabha: Manmohan Singh (2004-2014). PM need not be LS member — but convention is LS leadership. Indira Gandhi won LS by-election after becoming PM from RS.',
   ],
   comparisons: [
     {
@@ -63,6 +72,30 @@ export const primeMinisterRevision: SubjectRevision = {
         ['Removal', 'Loss of LS confidence', 'Impeachment for "violation of Constitution"'],
       ],
     },
+    {
+      title: 'No-Confidence Motion vs Censure Motion',
+      headers: ['Aspect', 'No-Confidence Motion', 'Censure Motion'],
+      rows: [
+        ['Reasons required', 'No reasons needed', 'Must state specific charges'],
+        ['Against whom', 'Entire Council of Ministers', 'Individual minister or CoM'],
+        ['If passed', 'Government must resign', 'Government need not resign'],
+        ['Moved in', 'Lok Sabha only', 'Lok Sabha only'],
+        ['Admission', '50 members to admit', '50 members to admit'],
+        ['Majority', 'Simple majority', 'Simple majority'],
+      ],
+    },
+    {
+      title: 'Indian PM vs British PM',
+      headers: ['Aspect', 'Indian PM', 'British PM'],
+      rows: [
+        ['Constitutional basis', 'Art 74-75', 'Convention; no written constitution'],
+        ['CoM cap', '15% of LS (91st Amendment)', 'No constitutional cap'],
+        ['Legal responsibility', 'Absent — no countersignature', 'Present — ministerial countersignature on royal orders'],
+        ['From which House', 'Either LS or RS', 'Convention: House of Commons only'],
+        ['Dissolution power', 'Advises President to dissolve LS', 'Fixed-Term Parliaments Act 2011 (modified 2022)'],
+        ['Written constitution', 'Subject to Art 368 amendments', 'Parliamentary sovereignty — Parliament supreme'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -79,6 +112,16 @@ export const primeMinisterRevision: SubjectRevision = {
       title: 'Cabinet Committees — "SEAP"',
       mnemonic: 'Security (CCS), Economic Affairs (CCEA), Appointments (ACC), Political Affairs (CCPA)',
       explanation: 'Four major Cabinet Committees — all chaired by the PM. ACC has only PM + Home Minister.',
+    },
+    {
+      title: 'Notable No-Confidence Votes — "63-79-99-18"',
+      mnemonic: '1963: first (Nehru defeated it), 1979: Morarji resigned, 1999: Vajpayee lost by 1 vote (270 vs 269), 2018: Modi defeated (325 vs 126)',
+      explanation: 'Four milestone no-confidence motions in Indian parliamentary history.',
+    },
+    {
+      title: 'PM Amendments — "42-44-91"',
+      mnemonic: '42nd: "shall" act on advice, 44th: return once + "Cabinet" in Art 352, 91st: 15% cap + anti-defection bar on ministers',
+      explanation: 'Three key constitutional amendments that shaped the PM-President-Council relationship.',
     },
   ],
 }

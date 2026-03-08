@@ -33,6 +33,16 @@ export const nitiAayogRevision: SubjectRevision = {
     'iGOT Karmayogi platform (civil service training) — operates under NITI Aayog-driven Mission Karmayogi framework.',
     'Comparison: South Korea\'s National Economic Advisory Council, Japan\'s Economic Planning Agency (now defunct), US Council of Economic Advisers.',
     'China\'s NDRC has directive powers — often cited by critics as example of what NITI Aayog lacks in terms of implementation teeth.',
+    'NITI Aayog role in privatization: identifies CPSEs for strategic sale. New PSE Policy (2021) — strategic vs non-strategic classification.',
+    'Air India sold to Tata Group in 2022 — NITI Aayog recommended strategic disinvestment. Also recommended BPCL, IDBI Bank, Container Corp sales.',
+    'NMP (2021): NOT ownership transfer — structured partnerships (lease, TOT, InvIT) for brownfield assets. Covers roads, railways, airports, gas pipelines.',
+    'Health sector: NITI Aayog shaped Ayushman Bharat (PM-JAY + HWCs), POSHAN Abhiyaan, TB Mukt Bharat (2025 target). Health Index for state ranking.',
+    'SDG India Index: ranks states as Aspirant (0-49), Performer (50-64), Front Runner (65-99), Achiever (100). Kerala, Tamil Nadu typically lead.',
+    'NDC was effectively replaced by Governing Council — but NDC had approval powers (binding), GC is advisory only. NDC not formally dissolved.',
+    'Sarkaria Commission (1983) and Punchhi Commission (2007) recommended strengthening NDC — now moot with its defunctness.',
+    'NITI Aayog\'s Women Entrepreneurship Platform (WEP): connecting women entrepreneurs with incubators, investors, and mentors.',
+    'Three-Year Action Agenda had no dedicated funding (unlike Five Year Plans with earmarked budgets) — implementation depends on ministry budgets.',
+    'SDG India Index 2023-24: National SDG score improved from 57 (2018) to 71 (2023-24). Bihar, Jharkhand lowest; Kerala, Uttarakhand highest.',
   ],
   comparisons: [
     {
@@ -72,6 +82,29 @@ export const nitiAayogRevision: SubjectRevision = {
         ['Export Preparedness', 'Export readiness of states', 'Gujarat, Maharashtra'],
       ],
     },
+    {
+      title: 'NDC vs Governing Council',
+      headers: ['Feature', 'NDC', 'Governing Council'],
+      rows: [
+        ['Established', '1952', '2015'],
+        ['Legal status', 'Executive body', 'Executive body'],
+        ['Members', 'PM + CMs + Union Ministers + PC members', 'PM + CMs + LGs'],
+        ['Key function', 'Approved Five Year Plans', 'Advisory — Centre-State dialogue'],
+        ['Authority', 'Binding — plan approval powers', 'Advisory — no binding decisions'],
+        ['Last meeting', 'December 2012 (57th)', 'Ongoing (periodic)'],
+      ],
+    },
+    {
+      title: 'Privatization Recommendations by NITI Aayog',
+      headers: ['Entity', 'Status', 'Remarks'],
+      rows: [
+        ['Air India', 'Completed (2022)', 'Sold to Tata Group for Rs 18,000 crore'],
+        ['BPCL', 'In process', 'Strategic sale recommended'],
+        ['IDBI Bank', 'Approved, pending', 'LIC + Govt stake sale'],
+        ['Container Corp', 'In process', 'Strategic sale recommended'],
+        ['Shipping Corp', 'In process', 'Strategic sale recommended'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -93,6 +126,11 @@ export const nitiAayogRevision: SubjectRevision = {
       title: 'Vice-Chairpersons — "PRSB"',
       mnemonic: 'Panagariya (2015), Rajiv Kumar (2017), Suman Bery (2022), B.V.R. Subrahmanyam (2023)',
       explanation: 'Four Vice-Chairpersons of NITI Aayog in chronological order.',
+    },
+    {
+      title: 'Three-Tier Framework — "15-7-3"',
+      mnemonic: '15-Year Vision (2032), 7-Year Strategy (2024), 3-Year Action Agenda (2020)',
+      explanation: 'Three planning tiers replacing the Five Year Plan framework.',
     },
   ],
 }

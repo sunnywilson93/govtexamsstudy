@@ -31,6 +31,13 @@ export const amendmentProcedureRevision: SubjectRevision = {
     '106 amendments in 74 years (1950-2024) — average ~1.4 per year. Most amendments in 1970s (16). 42nd (1976) = most sweeping. 44th (1978) = most corrective. Most amendments use Method 2 (special majority only). Method 3 (state ratification) is relatively rare.',
     'The word "amendment" in Art 368 includes addition, variation, and repeal of any provision — but NOT the power to rewrite the entire Constitution. That would require a fresh Constituent Assembly (constituent power of the people).',
     'Key exam trap: Art 3 (formation of new states) and Art 169 (creation of Legislative Councils) require simple majority of PARLIAMENT but are NOT amendments under Art 368. Art 3 also requires Presidential recommendation and reference to affected state legislature (but state\'s opinion is not binding on Parliament).',
+    'Constituent power vs legislative power: Art 368 = constituent power (amends Constitution — not "law" under Art 13); Art 245-246 = legislative power (ordinary laws — subject to Art 13 and FRs). Kesavananda: constituent power is broader but limited by basic structure.',
+    'Preamble: Berubari Union (1960): not part of Constitution. Kesavananda (1973): IS part of Constitution, can be amended (subject to basic structure). 42nd Amendment added "Socialist, Secular, Integrity" to Preamble. Preamble not justiciable (cannot override express provisions).',
+    'State ratification: by SIMPLE majority of state legislatures (not special majority). No time limit. Only the legislature votes — Governors play no role. Currently need 14 out of 28 states. 97th Amendment partly struck down in 2021 for inadequate ratification.',
+    '"Total membership" in special majority: includes nominated members and VACANT seats — based on sanctioned strength, not actual strength. This makes special majority harder to achieve when vacancies exist.',
+    'Amendment bill procedure: Introduction (either House, any member, no Presidential permission) → Passage (each House independently, special majority) → Ratification (if Method 3, half of state legislatures) → Presidential assent (mandatory, no discretion). NO joint sitting. NO returning by President.',
+    'NO amendment bill can be introduced or passed during President\'s Rule when a state legislature is suspended — because Art 356 transfers state legislative power to Parliament, but the amending process requires INDEPENDENT passage by each House, not delegated state power.',
+    'The 106th Amendment (2023) for women\'s reservation will be the most impactful once implemented: affects ~6,700 LS and state assembly seats. Deferred until delimitation after the first post-amendment Census (expected post-2026). Added Art 330A (LS) and Art 332A (assemblies).',
   ],
   comparisons: [
     {
@@ -89,6 +96,19 @@ export const amendmentProcedureRevision: SubjectRevision = {
         ['Japan', '2/3 in both Houses', 'National referendum (majority)', '0 in 75+ years', 'Most rigid in practice'],
       ],
     },
+    {
+      title: 'Amendment Bill vs Ordinary Bill — Key Differences',
+      headers: ['Feature', 'Amendment Bill (Art 368)', 'Ordinary Bill', 'Money Bill'],
+      rows: [
+        ['Introduction', 'Either House; minister or private member', 'Either House; minister or private member', 'Lok Sabha ONLY; minister only (with Presidential recommendation)'],
+        ['Majority', 'Special majority (total membership + 2/3 present & voting) in EACH House', 'Simple majority in each House', 'Simple majority in LS; RS has 14-day limit (no power to reject)'],
+        ['Joint Sitting', 'NOT available — each House must pass independently', 'Available under Art 108 if deadlock', 'NOT applicable (RS cannot reject)'],
+        ['Presidential Assent', 'MUST give assent (24th Amendment — no discretion)', 'Can withhold, return for reconsideration, or assent', 'MUST give assent (already has prior recommendation)'],
+        ['State Role', 'Method 3: ratification by half the state legislatures', 'None (except Art 3 — reference to state, non-binding)', 'None'],
+        ['Prior Permission', 'None needed', 'None (except Art 3 needs Presidential recommendation)', 'Presidential recommendation mandatory'],
+        ['Deadlock Resolution', 'None — bill lapses if either House rejects', 'Joint sitting (Art 108); President can call', 'None needed — RS power limited to 14 days'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -110,6 +130,11 @@ export const amendmentProcedureRevision: SubjectRevision = {
       title: '42nd Amendment Changes — "PSI-FD-5→6-FEWER-DPSP"',
       mnemonic: 'Preamble (Socialist, Secular, Integrity), Fundamental Duties (Part IVA), Parliament/assembly term 5→6 years, Five subjects to Concurrent List (Education, Weights, Forests, wild animals, administration of justice), DPSP primacy expanded (Art 31C to all DPSPs), Review curtailed (Art 368(4)(5))',
       explanation: 'Key changes made by the 42nd Amendment (1976) — the "Mini Constitution." Most were corrected by the 44th Amendment (1978).',
+    },
+    {
+      title: 'Amendment Bill Procedure — "IPRAP"',
+      mnemonic: 'Introduction (either House, any member) → Passage (each House independently, special majority) → Ratification (if Method 3, half of state legislatures, simple majority) → Assent (President MUST assent, no discretion) → Publication (in Gazette of India)',
+      explanation: 'The complete procedural flow of an amendment bill from introduction to becoming part of the Constitution. No joint sitting at any stage. No returning by President. Each step is a potential exam question.',
     },
   ],
 }

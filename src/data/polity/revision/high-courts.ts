@@ -31,6 +31,13 @@ export const highCourtsRevision: SubjectRevision = {
     'Art 224A: retired HC judges can sit as temporary judges with consent and CJI consultation. Used occasionally during pendency crises.',
     'HC\'s writ jurisdiction under Art 226 should not normally be exercised when effective alternative remedy exists (Tirupati Balaji Developers, 2004) — rule of prudence, not absolute bar.',
     'Admiralty jurisdiction: Bombay, Calcutta, and Madras HCs exercise admiralty jurisdiction over maritime disputes.',
+    'Art 224A: retired HC judges can sit as temporary judges with CJI consultation and President\'s consent. Used occasionally during pendency crises.',
+    'Collegium for HC appointments: CJI + 2 senior SC judges. Process: HC CJ initiates → state government + IB inputs → state forwards to Centre → SC Collegium deliberates → President appoints. Average time: 12-18 months.',
+    'HC judges\' oath: under Third Schedule of the Constitution. Judge swears allegiance to the Constitution, to uphold sovereignty and integrity of India, and to perform duties without fear or favour.',
+    'Contempt power (Art 215): HC can punish for civil contempt (wilful disobedience) and criminal contempt (scandalizing court). Section 10 of Contempt Act: HC can punish contempt of subordinate courts within its jurisdiction.',
+    'Art 228: HC can withdraw cases from subordinate courts involving substantial questions of constitutional interpretation and decide them itself. Ensures uniform constitutional interpretation.',
+    'Commercial Courts Act, 2015: established commercial divisions and commercial appellate divisions in HCs for disputes of Rs 3 lakh+ value. Aims for time-bound disposal of commercial disputes.',
+    'Total 25 HCs: 3 established 1862 (Calcutta, Bombay, Madras), latest additions: Manipur, Meghalaya, Tripura (2013), AP (2019). J&K HC reorganized as J&K and Ladakh HC (2019).',
   ],
   comparisons: [
     {
@@ -60,6 +67,29 @@ export const highCourtsRevision: SubjectRevision = {
         ['Result', 'Writ (mandamus, certiorari, etc.)', 'Directions, orders, supervision'],
         ['Use', 'Primary remedy for rights violation', 'Sparingly — prevent miscarriage of justice'],
         ['Basic structure', 'Yes (L. Chandra Kumar)', 'Yes (L. Chandra Kumar)'],
+      ],
+    },
+    {
+      title: 'HC Administrative Control Articles (233-235)',
+      headers: ['Article', 'Subject', 'Authority', 'Key Feature'],
+      rows: [
+        ['Art 233', 'District Judge appointment', 'Governor in consultation with HC', 'Direct recruitment: 7 years advocacy + HC recommendation'],
+        ['Art 234', 'Other judicial officers', 'Governor per rules (State PSC + HC consultation)', 'Covers all judicial officers below District Judge'],
+        ['Art 235', 'Control over subordinate courts', 'HC (Nripendra Nath Bagchi, 1966)', 'Includes posting, transfer, promotion, discipline'],
+      ],
+    },
+    {
+      title: 'HC Jurisdiction Types — Complete Map',
+      headers: ['Jurisdiction', 'Provision', 'Nature', 'Key Feature'],
+      rows: [
+        ['Writ jurisdiction', 'Art 226', 'Original (FRs + any purpose)', 'Broader than SC Art 32; not a FR but basic structure'],
+        ['Supervisory', 'Art 227', 'Administrative control', 'Over all courts/tribunals; corrective, not appellate'],
+        ['Civil appellate', 'CPC', 'First and second appeals', 'Second appeal only on substantial question of law'],
+        ['Criminal appellate', 'BNSS (CrPC)', 'Appeals + revision + death confirmation', 'Death sentence requires HC confirmation'],
+        ['Election', 'RPA 1951, S.80A', 'Original (court of first instance)', 'Appeals to SC under Art 136'],
+        ['Constitutional withdrawal', 'Art 228', 'Original (transferred from subordinate)', 'When substantial question of constitutional law arises'],
+        ['Revenue/Tax', 'Various statutes', 'Appellate (from tribunals)', 'On substantial questions of law'],
+        ['Letters Patent Appeal', 'Letters Patent', 'Intra-court (single → DB)', 'Available in older HCs'],
       ],
     },
     {
@@ -96,6 +126,11 @@ export const highCourtsRevision: SubjectRevision = {
       title: 'HC Writ vs SC Writ — "226 is 32 Plus More"',
       mnemonic: 'Art 226 = FRs + any other purpose; Art 32 = FRs only; Art 226 is NOT a FR; Art 32 IS a FR',
       explanation: 'The key differences between HC and SC writ jurisdiction for exam questions.',
+    },
+    {
+      title: 'Post-Retirement Practice — "SC=None, HC=Limited"',
+      mnemonic: 'SC judges: CANNOT practice anywhere (Art 124(7)). HC judges: CAN practice but NOT in same HC or its subordinate courts (Art 220)',
+      explanation: 'The post-retirement practice restriction is narrower for HC judges — a frequently tested distinction.',
     },
   ],
 }

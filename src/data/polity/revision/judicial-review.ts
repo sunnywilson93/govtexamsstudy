@@ -33,6 +33,11 @@ export const judicialReviewRevision: SubjectRevision = {
     'German Basic Law Art 79(3) (eternity clause) influenced Basic Structure Doctrine. French Conseil Constitutionnel does a priori review. UK — no power to strike down Acts of Parliament.',
     'India unique: explicit constitutional basis + review of amendments (basic structure) + PIL (most developed globally) + dual-layer protection (Art 32 + Art 226).',
     'Kesavananda Bharati (1973, 7:6 on 13-judge bench): Parliament can amend any provision but CANNOT destroy the basic structure. Foundation of amendment review.',
+    'Administrative action review grounds: illegality (ultra vires), irrationality (Wednesbury unreasonableness), procedural impropriety (violation of natural justice — audi alteram partem, nemo judex). E.P. Royappa (1974): arbitrariness = antithesis of equality under Art 14.',
+    'Proportionality test (Puttaswamy/Aadhaar, 2018): 4-part test — (a) legitimate aim, (b) rational connection between aim and measure, (c) necessity (no less restrictive alternative), (d) proportionality stricto sensu (balance between rights and goals).',
+    'Five writs: Habeas Corpus (produce detained person), Mandamus (command public duty), Prohibition (prevent inferior court exceeding jurisdiction), Certiorari (quash inferior court order), Quo Warranto (challenge public office holder). Habeas Corpus available against private persons; Mandamus NOT against private persons/President/Governor personally.',
+    'PIL phases: Phase 1 (1979-90, Golden Age — prisoners, bonded labour), Phase 2 (1990s, governance PILs — CBI, environment), Phase 3 (2000s, caution — guidelines against misuse), Phase 4 (recent — structural/constitutional PILs like Electoral Bonds, Art 370, same-sex marriage).',
+    'Limits of judicial review: political question doctrine (courts avoid purely political questions), non-justiciable DPSPs (Art 37), legislative privilege (Art 122/212), doctrine of state necessity, separation of powers restraint — courts cannot direct legislature to make specific laws.',
   ],
   comparisons: [
     {
@@ -58,6 +63,29 @@ export const judicialReviewRevision: SubjectRevision = {
         ['Godavarman', '1996', 'Forest conservation', 'Ban on forest felling; CAMPA; continuing mandamus'],
         ['Vineet Narain', '1998', 'CBI independence', 'Directions for investigation autonomy'],
         ['D.K. Basu', '1997', 'Arrest guidelines', '11 mandatory safeguards for arrests'],
+      ],
+    },
+    {
+      title: 'Five Writs — Complete Reference',
+      headers: ['Writ', 'Meaning', 'Against Whom', 'For What', 'Key Feature'],
+      rows: [
+        ['Habeas Corpus', 'You may have the body', 'Public authorities AND private persons', 'Unlawful detention', 'Most powerful for personal liberty; cannot be denied even during Emergency (Art 20/21)'],
+        ['Mandamus', 'We command', 'Public authorities ONLY (not private/President/Governor personally)', 'Refusal to perform mandatory public duty', 'Cannot be issued for discretionary functions'],
+        ['Prohibition', 'To forbid', 'Inferior courts/tribunals ONLY', 'Prevent exceeding jurisdiction', 'PREVENTIVE — issued before proceedings complete'],
+        ['Certiorari', 'To be certified', 'Inferior courts/tribunals + admin bodies (Kamath, 1955)', 'Quash orders made without/in excess of jurisdiction', 'CORRECTIVE — issued after order passed'],
+        ['Quo Warranto', 'By what authority', 'Any person holding public office', 'Challenge legal right to hold office', 'Can be filed by any person (not just aggrieved)'],
+      ],
+    },
+    {
+      title: 'Recent Landmark Judicial Review Cases (2017-2024)',
+      headers: ['Case', 'Year', 'Subject', 'Outcome'],
+      rows: [
+        ['Puttaswamy', '2017', 'Right to Privacy', '9-judge unanimous: privacy is FR under Art 21; overruled ADM Jabalpur'],
+        ['Navtej Johar', '2018', 'Section 377 IPC', 'Read down — decriminalized consensual homosexuality'],
+        ['Joseph Shine', '2018', 'Section 497 IPC (adultery)', 'Struck down as violating Art 14, 15, 21'],
+        ['Aadhaar', '2018', 'Aadhaar constitutionality', 'Upheld but struck down Section 57 (private use); proportionality test applied'],
+        ['Art 370', '2023', 'J&K special status', 'Upheld abrogation; Art 370 was temporary'],
+        ['Electoral Bonds', '2024', 'Political funding', 'Struck down — violated Art 19(1)(a) right to information'],
       ],
     },
     {
@@ -93,6 +121,11 @@ export const judicialReviewRevision: SubjectRevision = {
       title: 'PIL Case Timeline — "HSP-MBVVG"',
       mnemonic: 'Hussainara (1979) → S.P. Gupta (1981) → People\'s Union (1982) → M.C. Mehta (1986) → Bandhua Mukti (1984) → Vishaka (1997) → Vineet Narain (1998) → Godavarman (1996)',
       explanation: 'Key PIL cases in approximate chronological order — the evolution of PIL from prisoners\' rights to environmental protection.',
+    },
+    {
+      title: 'Administrative Review Grounds — "IIP"',
+      mnemonic: 'Illegality (ultra vires, wrong law), Irrationality (Wednesbury unreasonableness), Procedural impropriety (natural justice violation)',
+      explanation: 'Three grounds for judicial review of administrative action — derived from English law and expanded by Indian courts. E.P. Royappa (1974) added arbitrariness as Art 14 violation.',
     },
   ],
 }

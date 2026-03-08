@@ -33,6 +33,11 @@ export const supremeCourtRevision: SubjectRevision = {
     'Continuing mandamus: SC retains jurisdiction in PIL cases and monitors implementation through periodic reports — used in Godavarman (forests), M.C. Mehta (environment), Vineet Narain (CBI).',
     'Judicial activism expanded from 1970s: SC directed closure of tanneries in Ganga (M.C. Mehta), CNG conversion in Delhi, ban on child labour, Vishaka guidelines — all through PIL + Art 142 combination.',
     'SC\'s power of judicial review extends to constitutional amendments (Kesavananda), Ninth Schedule laws (I.R. Coelho), executive orders, subordinate legislation, and actions of all public authorities.',
+    'Art 21 expansion: Maneka Gandhi (1978) read due process → Francis Coralie Mullin (dignity) → Olga Tellis (livelihood) → Unnikrishnan (education) → Puttaswamy (privacy). Art 21 = "residuary FR."',
+    'Curative Petition: created in Rupa Ashok Hurra v. Ashok Hurra (2002). Last judicial remedy. Must be certified by senior advocate. Heard first in chambers by 3 senior-most judges including CJI.',
+    'SC strength history: 8 (1950) → 10 (1956) → 13 (1960) → 17 (1977) → 25 (1986) → 30 (2008) → 34 (2019). Strength fixed by Parliament; judges other than CJI appointed after "consultation."',
+    'E-SCR: free digital access to all SC judgments since 1950. SUPACE: AI portal for case processing (2021). FASTER: electronic transmission of bail orders to jails (2022). Live streaming: started 2022 for Constitution Bench hearings (Swapnil Tripathi, 2018).',
+    'Constitutional Bench quorum: Art 145(3) — minimum 5 judges for "substantial question of law as to the interpretation of this Constitution." Ordinary matters: 2-3 judges. Largest bench: 13 judges (Kesavananda).',
   ],
   comparisons: [
     {
@@ -54,6 +59,29 @@ export const supremeCourtRevision: SubjectRevision = {
         ['Art 133', 'Civil', 'HC certificate needed', 'Substantial question of law of general importance'],
         ['Art 134', 'Criminal', 'As of right / HC certificate', 'HC reverses acquittal + death sentence; HC certifies'],
         ['Art 136', 'Special Leave Petition', 'SC discretion (no certificate)', 'Any court/tribunal, any matter (except military)'],
+      ],
+    },
+    {
+      title: 'Hierarchy of SC Remedies',
+      headers: ['Remedy', 'Provision', 'Time Limit', 'Grounds'],
+      rows: [
+        ['Judgment', 'Art 141/142', 'N/A', 'Original adjudication'],
+        ['Review Petition', 'Art 137 / Order 47 Rule 1', 'Within 30 days', 'New evidence, error apparent on record, sufficient reason'],
+        ['Curative Petition', 'Rupa Ashok Hurra (2002)', 'No time limit', 'Violation of natural justice, judicial bias, abuse of process'],
+      ],
+    },
+    {
+      title: 'Art 21 Expansion — Key Rights Read Into Right to Life',
+      headers: ['Right', 'Case', 'Year'],
+      rows: [
+        ['Due process / Fair procedure', 'Maneka Gandhi v. UOI', '1978'],
+        ['Right to livelihood', 'Olga Tellis v. Bombay MC', '1985'],
+        ['Right to education', 'Unnikrishnan v. State of AP', '1993'],
+        ['Right to health', 'Paschim Banga v. State of WB', '1996'],
+        ['Right to clean environment', 'M.C. Mehta v. UOI', '1986+'],
+        ['Right to privacy', 'K.S. Puttaswamy v. UOI', '2017'],
+        ['Right to dignity', 'Francis Coralie Mullin v. UT Delhi', '1981'],
+        ['Right to speedy trial', 'Hussainara Khatoon v. State of Bihar', '1979'],
       ],
     },
     {
@@ -87,6 +115,11 @@ export const supremeCourtRevision: SubjectRevision = {
       title: 'Collegium Evolution — "1-2-3-N"',
       mnemonic: 'First Case (1981, executive primacy) → Second Case (1993, CJI primacy) → Third Case (1998, CJI+4) → NJAC (2015, struck down)',
       explanation: 'The evolution of judicial appointment methodology through four landmark decisions.',
+    },
+    {
+      title: 'SC Strength Growth — "8-10-13-17-25-30-34"',
+      mnemonic: '1950→8, 1956→10, 1960→13, 1977→17, 1986→25, 2008→30, 2019→34',
+      explanation: 'Progressive increase in SC judge strength from 8 (at inception) to 34 (current sanctioned strength including CJI).',
     },
   ],
 }

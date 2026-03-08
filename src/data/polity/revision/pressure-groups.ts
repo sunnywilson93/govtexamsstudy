@@ -33,6 +33,16 @@ export const pressureGroupsRevision: SubjectRevision = {
     'Impact: pressure groups provide representation, serve as check on government, aggregate demands, bring expert knowledge. Can also distort policy toward powerful groups.',
     'Difference from Western model: Indian pressure groups often have organic party links, use mass mobilization more than institutional lobbying, less transparent funding.',
     'Social media has transformed pressure group dynamics — online campaigns (#MeToo, #FarmersProtest) can mobilize quickly without traditional organizational structures.',
+    'Women\'s movements: AIDWA (CPI(M)), Mahila Dakshata Samiti (BJP), Stree Mukti Sanghatana (Maharashtra). Vishaka guidelines resulted from women\'s groups\' PIL.',
+    'Consumer groups: Consumer Unity and Trust Society (CUTS), Mumbai Grahak Panchayat — advocacy led to Consumer Protection Act, 2019 (replaced 1986 Act).',
+    'Tribal rights groups: Jharkhand Disom Party, Adivasi Mahasabha — advocacy for Forest Rights Act 2006, PESA implementation, anti-displacement.',
+    'Anti-alcohol movements: led by women\'s groups in AP (1992), Bihar (2016 total prohibition), Gujarat — demonstrate intersection of social reform and political action.',
+    'NHRC, NCW, NCM often receive complaints via pressure groups — commissions become conduits for organized advocacy by interest groups.',
+    'Think tanks as pressure groups: CPR (Centre for Policy Research), ICRIER, ORF, NITI Aayog itself — influence policy through research and advisory role.',
+    'Pressure groups in judicial process: amicus curiae briefs filed by NGOs (e.g., CRY in child rights cases, WWF in environmental cases) shape court decisions.',
+    'Cooperative movement: National Cooperative Union, IFFCO, AMUL/GCMMF — represent cooperative interests. Amul model studied globally as cooperative success.',
+    'Media as pressure group: investigative journalism has exposed scams (Tehelka — defence corruption, Cobrapost — bank officials). Fourth estate function.',
+    'COVID-19 amplified role of NGOs and civil society — migrant worker relief (Goonj, Sewa International), food distribution, healthcare support when state capacity was strained.',
   ],
   comparisons: [
     {
@@ -68,6 +78,28 @@ export const pressureGroupsRevision: SubjectRevision = {
         ['Farmers\' Protest', '2020-21', 'SKM (40+ unions)', 'Three farm laws repealed'],
       ],
     },
+    {
+      title: 'Types of Pressure Groups with Indian Examples',
+      headers: ['Type', 'Definition', 'Indian Examples'],
+      rows: [
+        ['Institutional', 'Within government structure', 'Bureaucracy, military, judiciary'],
+        ['Associational', 'Organized with formal structure', 'FICCI, CII, trade unions, IMA'],
+        ['Non-associational', 'Based on identity (caste, religion)', 'RSS, VHP, AIMPLB, caste panchayats'],
+        ['Anomic', 'Spontaneous, often violent', 'Riots, mob violence, sudden agitations'],
+      ],
+    },
+    {
+      title: 'Successful Pressure Group → Legislation Outcomes',
+      headers: ['Pressure Group/Movement', 'Outcome Legislation', 'Year'],
+      rows: [
+        ['MKSS + RTI movement', 'RTI Act', '2005'],
+        ['Right to Food Campaign', 'National Food Security Act', '2013'],
+        ['Right to Work Campaign', 'MGNREGA', '2005'],
+        ['India Against Corruption', 'Lokpal and Lokayuktas Act', '2013'],
+        ['Women\'s groups (Vishaka PIL)', 'POSH Act', '2013'],
+        ['Samyukt Kisan Morcha', 'Repeal of 3 farm laws', '2021'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -89,6 +121,11 @@ export const pressureGroupsRevision: SubjectRevision = {
       title: 'Business Apex Bodies — "FCA-N"',
       mnemonic: 'FICCI (1927), CII (1895), ASSOCHAM (1920), NASSCOM',
       explanation: 'Four major business pressure groups in India.',
+    },
+    {
+      title: 'RSS Affiliates — "BAVS-W"',
+      mnemonic: 'BMS (labour), ABVP (students), VHP (religion), Swadeshi Jagaran Manch (economics), Vanvasi Kalyan Ashram (tribal)',
+      explanation: 'Five key RSS affiliates covering different sectors of society.',
     },
   ],
 }

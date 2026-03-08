@@ -33,6 +33,18 @@ export const rtiActRevision: SubjectRevision = {
     'Section 24: 18 intelligence/security organizations (RAW, IB, CRPF, BSF, etc.) excluded, EXCEPT info on corruption or human rights violations.',
     'RTI and judiciary: SC has directed proactive disclosure of judges\' assets. HC and SC registries accept RTI applications for administrative (not judicial) matters.',
     'Impact: exposed irregularities in CWG (2010), Adarsh scam (Mumbai), illegal mining (Karnataka), PDS discrepancies. Changed citizen-government dynamic.',
+    'Section 6(3): If PIO receives request for info held by another authority, must transfer within 5 days to that authority.',
+    'Section 7(5): If info is already published or available in public domain, PIO can direct applicant to that source instead of providing copies.',
+    'Section 8(3): Information relating to any occurrence/event/matter which has taken place 20 years before the date of request shall be provided — overrides exemptions.',
+    'File notings: CIC has held that file notings of public authorities are disclosable under RTI. Government attempted to exclude them but withdrew the amendment.',
+    'Section 4(1)(b)(ii): Every public authority must publish the procedure followed in its decision-making — this enables citizens to understand how decisions are made.',
+    'RTI success metrics: 5-6 million applications/year, over 90% by individuals (not organizations), most common requests relate to government schemes and public employment.',
+    'State RTI laws preceded central law: Tamil Nadu (1997), Goa (1997), Rajasthan (2000), Karnataka (2000), Delhi (2001), Maharashtra (2002), Assam (2002).',
+    'Wajahat Habibullah — first Chief Information Commissioner (2005-2010). Shailesh Gandhi (IC) and Sridhar Acharyulu (IC) known for landmark orders.',
+    'RTI and Aadhaar: CIC has received many complaints about Aadhaar-related information denial. UIDAI treated as public authority under RTI.',
+    'International comparison: US FOIA (1966), UK Freedom of Information Act (2000), Australia FOI Act (1982). India\'s RTI Act considered among the strongest globally.',
+    'Global RTI Rating: India ranked 2nd (after Serbia) on Centre for Law and Democracy\'s global RTI rating — strong legal framework, weak implementation.',
+    'Digital RTI: RTI applications can be filed online through rtionline.gov.in for central authorities. Some states have their own online portals.',
   ],
   comparisons: [
     {
@@ -67,6 +79,28 @@ export const rtiActRevision: SubjectRevision = {
         ['State ICs', 'Same as central (5 years, EC equivalent)', 'Prescribed by CENTRAL Government (not state)'],
       ],
     },
+    {
+      title: 'Section 8 Exemptions vs Overrides',
+      headers: ['Provision', 'Effect'],
+      rows: [
+        ['Section 8(1) — 10 exemptions', 'Information in these categories can be denied'],
+        ['Section 8(1)(i) — cabinet papers', 'Exempt, BUT decisions/reasons disclosed after completion'],
+        ['Section 8(2) — public interest override', 'Overrides ALL exemptions if public interest outweighs harm; overrides Official Secrets Act'],
+        ['Section 8(3) — 20-year rule', 'Information older than 20 years must be disclosed (overrides exemptions except (a), (c), (i))'],
+        ['Section 24 — security orgs', '18 organizations exempt EXCEPT for corruption/human rights info'],
+      ],
+    },
+    {
+      title: 'Global RTI Comparison',
+      headers: ['Country', 'Law', 'Year', 'Key Feature'],
+      rows: [
+        ['Sweden', 'Freedom of the Press Act', '1766', 'Oldest FOI law in the world'],
+        ['USA', 'FOIA', '1966', 'Broad federal disclosure; 9 exemptions'],
+        ['UK', 'Freedom of Information Act', '2000', 'Information Commissioner with enforcement powers'],
+        ['India', 'RTI Act', '2005', 'Strong public interest override; penalty on PIOs'],
+        ['Australia', 'FOI Act', '1982', 'Information Commissioner; proactive disclosure'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -88,6 +122,11 @@ export const rtiActRevision: SubjectRevision = {
       title: 'RTI Movement Origins — "MKSS-TN-RTI"',
       mnemonic: 'MKSS (Aruna Roy, Rajasthan) → Tamil Nadu first state RTI (1997) → Central RTI Act (2005)',
       explanation: 'The journey from grassroots movement to national legislation.',
+    },
+    {
+      title: '20-Year Rule — "Section 8(3)"',
+      mnemonic: 'Any info older than 20 years MUST be disclosed — overrides most exemptions (except sovereignty, privilege, cabinet)',
+      explanation: 'Section 8(3) is the historical disclosure provision, often tested in exams.',
     },
   ],
 }

@@ -31,6 +31,15 @@ export const parliamentRevision: SubjectRevision = {
     'Adjournment Motion: definite matter of urgent public importance; interrupts normal business; amounts to censure; only in LS. Calling Attention Motion: unique to India; minister makes statement.',
     'Vote on Account: if budget not passed by 1 April, Parliament authorizes expenditure for part of the year (usually 2 months). Finance Bill must be passed within 75 days.',
     'Speaker by convention severs party ties. Deputy Speaker by convention from opposition. Both are constitutional positions (Art 93).',
+    'Anti-Defection Law (Tenth Schedule, 52nd Amendment 1985): disqualification for (a) voluntarily giving up party membership, (b) voting against party whip. 91st Amendment (2003) deleted "split" exception; only "merger" (2/3) permitted.',
+    'Speaker decides disqualification under Tenth Schedule. Kihoto Hollohan v. Zachillhu (1992): Speaker\'s decision subject to judicial review. Nabam Rebia (2016): Speaker cannot decide if removal notice against Speaker is pending.',
+    'Types of majorities: Simple (present & voting), Absolute (total membership), Effective (total minus vacancies), Special under Art 249 (2/3 present & voting), Special under Art 368 (absolute + 2/3 present & voting).',
+    'Art 265: No tax shall be levied except by authority of law. Art 266: Consolidated Fund of India — all revenues, loans, repayments. Art 267: Contingency Fund — at President\'s disposal for urgent unforeseen expenditure.',
+    'Charged expenditure (not votable): President\'s salary, SC/HC judges\' salaries, CAG salary, CEC salary, debt charges, Lok Sabha/RS Secretariat.',
+    'Private Members\' Bills: introduced by non-minister members. Allotted time on alternate Fridays. Rarely passed — last passed in 1970.',
+    'Zero Hour: NOT in Rules of Procedure — purely conventional. Starts at noon. Members raise issues without prior notice. Unique to Indian Parliament.',
+    'Art 249: RS can pass resolution (special majority) enabling Parliament to legislate on State List subjects — valid for 1 year, renewable.',
+    'Art 312: RS can pass resolution (special majority) for creation of new All-India Services. IAS, IPS established under Art 312. Forest Service created 1966.',
   ],
   comparisons: [
     {
@@ -71,6 +80,32 @@ export const parliamentRevision: SubjectRevision = {
         ['Special + State Ratification', 'Art 368 majority + ratification by 1/2 state legislatures', 'Federal provisions, SC/HC, President election'],
       ],
     },
+    {
+      title: 'Parliamentary Motions Comparison',
+      headers: ['Motion', 'Purpose', 'House', 'Key Feature'],
+      rows: [
+        ['No-Confidence', 'Test government\'s majority', 'LS only', '50 members to admit; no reasons needed; govt must resign if passed'],
+        ['Censure', 'Criticize government policy', 'LS only', 'Must state charges; govt need NOT resign even if passed'],
+        ['Adjournment', 'Discuss urgent public matter', 'LS only', 'Interrupts normal business; amounts to censure'],
+        ['Calling Attention', 'Minister statement on urgent matter', 'Both Houses', 'Unique to India; minister makes statement on the floor'],
+        ['Cut Motions', 'Budget criticism', 'LS only', 'Three types: Policy (Re 1), Economy, Token (Rs 100)'],
+        ['Privilege', 'Breach of privilege', 'Both Houses', 'Referred to Privileges Committee if admitted by Presiding Officer'],
+      ],
+    },
+    {
+      title: 'Key Parliamentary Amendments',
+      headers: ['Amendment', 'Year', 'Key Change'],
+      rows: [
+        ['42nd', '1976', '"shall" added to Art 74(1) — binding ministerial advice; seats frozen at 1971 Census'],
+        ['44th', '1978', 'President can return advice once; "Cabinet" in Art 352; removed UK privilege reference'],
+        ['52nd', '1985', 'Anti-Defection Law (Tenth Schedule) introduced'],
+        ['61st', '1988', 'Voting age reduced from 21 to 18'],
+        ['84th', '2001', 'Seat allocation extended to first Census after 2026'],
+        ['91st', '2003', 'CoM cap at 15%; deleted "split" from anti-defection; only "merger" remains'],
+        ['104th', '2020', 'Deleted Anglo-Indian nomination to LS and state assemblies; extended SC/ST reservation 10 years'],
+        ['106th', '2023', 'Nari Shakti Vandan Adhiniyam — 1/3 women reservation in LS and state assemblies'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -92,6 +127,11 @@ export const parliamentRevision: SubjectRevision = {
       title: 'Expenditure Charged on CFI — "PSC-JED"',
       mnemonic: 'President, SC judges, CAG, Judges of HC, Election Commissioners, Debt charges',
       explanation: 'Major items charged on the Consolidated Fund of India — NOT voted on by Parliament, only discussed.',
+    },
+    {
+      title: 'Anti-Defection Timeline — "52-91-Kihoto-Nabam"',
+      mnemonic: '52nd Amdt (1985): introduced, 91st Amdt (2003): deleted split, Kihoto (1992): judicial review, Nabam Rebia (2016): Speaker with pending notice',
+      explanation: 'Four key milestones of the Anti-Defection Law. Kihoto upheld Speaker\'s role but made it reviewable. Nabam Rebia: Speaker cannot decide if removal notice against Speaker is pending.',
     },
   ],
 }

@@ -32,6 +32,11 @@ export const parliamentaryPrivilegesRevision: SubjectRevision = {
     'Privilege does NOT cover criminal acts by members — accepting bribes (Sita Soren, 2023), physical assault, or actions outside Parliament.',
     'Speaker/Chairman decides questions of privilege in the first instance; can refer to Privileges Committee; House has final authority on action.',
     'No codification means scope of privileges is uncertain — a member who feels their privilege has been breached relies on precedent and the Presiding Officer\'s interpretation.',
+    'Parliamentary Proceedings (Protection of Publication) Act, 1977 protects substantially true reporting of authorized parliamentary proceedings by newspapers/media.',
+    'MSM Sharma v. Sri Krishna Sinha (1959): SC held Art 19(1)(a) is subject to Art 194(3)/105(3) privilege — but must be harmonized. Criticized as unduly restrictive.',
+    'Members enjoy immunity from civil process during session + 40 days before/after — but arrest in criminal cases or under preventive detention (NSA) is NOT barred.',
+    'Art 105(4)/194(4): privileges extend to AG (Art 88) and any person participating in Parliament/legislature proceedings — they enjoy immunity for statements made.',
+    'House can go into secret session (in camera sitting) — rare but used during national security discussions. No press access during secret sessions.',
   ],
   comparisons: [
     { title: 'Art 105 (Parliament) vs Art 194 (State Legislature)', headers: ['Feature', 'Art 105 (Parliament)', 'Art 194 (State Legislature)'], rows: [
@@ -50,10 +55,20 @@ export const parliamentaryPrivilegesRevision: SubjectRevision = {
     ]},
     { title: 'Key Landmark Cases on Parliamentary Privilege', headers: ['Case', 'Year', 'Key Holding'], rows: [
       ['Searchlight Case', '1954', 'Bihar Assembly punished editors for premature publication'],
+      ['MSM Sharma', '1959', 'Art 19(1)(a) subordinate to privilege; criticized as restrictive'],
       ['Keshav Singh', '1964', 'Privilege claims subject to judicial review; SC intervened'],
       ['JMM Bribery (P.V. Narasimha Rao)', '1998', 'Votes in Parliament immune even if bribed (3:2) — NOW OVERRULED'],
       ['Raja Ram Pal', '2007', 'Expulsion power valid but subject to judicial review'],
       ['Sita Soren', '2023', 'Bribery NOT protected by privilege (7-judge bench, overruled JMM)'],
+    ]},
+    { title: 'Privileges Committee vs Ethics Committee', headers: ['Feature', 'Privileges Committee', 'Ethics Committee'], rows: [
+      ['Mandate', 'Breach of privilege and contempt of House', 'Ethical misconduct and code of conduct violations'],
+      ['LS members', '15', 'Varies'],
+      ['RS members', '10', 'Varies'],
+      ['Jurisdiction', 'Parliamentary privilege law', 'Members\' Code of Conduct'],
+      ['Key example', 'Keshav Singh, Searchlight Case', 'Cash-for-query (2005), Mahua Moitra (2023)'],
+      ['LS standing committee', 'Yes (original)', 'Ad hoc from 2000; standing from 2015'],
+      ['RS constituted', 'Standing', '1997'],
     ]},
   ],
   mnemonics: [
@@ -61,5 +76,6 @@ export const parliamentaryPrivilegesRevision: SubjectRevision = {
     { title: 'Sita Soren Overruled JMM — "2023 > 1998"', mnemonic: 'Sita Soren 2023 (7 judges) overruled JMM 1998 (3:2) — bribery NOT protected', explanation: 'The 7-judge bench in 2023 held that accepting bribes to vote in Parliament is not protected by Art 105(2) privilege — overruling the 3:2 JMM bribery case.' },
     { title: 'Individual Privileges — "SFAJ"', mnemonic: 'Speech freedom, Freedom from arrest, Attendance (no witness duty), Jury service exempt', explanation: 'Four individual privileges of MPs: freedom of speech (Art 105(2)), freedom from arrest (civil), freedom from attendance as witness, freedom from jury service.' },
     { title: 'Codification Status — "UK Yes, Aus Yes, India No"', mnemonic: 'UK: Bill of Rights 1689; Australia: 1987 Act; India: NOT codified despite Art 105(3)', explanation: 'India has not codified privileges despite the Constitution explicitly empowering Parliament to do so.' },
+    { title: 'Collective House Privileges — "PERRS"', mnemonic: 'Publish debates, Exclude strangers, Regulate proceedings (Art 122), Require witness attendance, punish for contempt (Summon non-members)', explanation: 'Five key collective privileges of each House of Parliament — these belong to the House as a body, not to individual members.' },
   ],
 }

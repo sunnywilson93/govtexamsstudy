@@ -30,6 +30,18 @@ export const politicalPartiesRevision: SubjectRevision = {
     'Recognition benefits: reserved symbol, free broadcast time on Doordarshan/AIR, free electoral rolls, subsidized land for party offices in some states.',
     'Indian Young Lawyers Association v. Kerala (2018) — Sabarimala judgment showed intersection of political party positions with judicial decisions on rights.',
     'Public funding of elections recommended by Indrajit Gupta Committee (1998), Dinesh Goswami Committee (1990), and Law Commission — not yet implemented.',
+    'Anti-Defection Law (Tenth Schedule, 52nd Amendment 1985): MLAs/MPs disqualified for voluntarily giving up membership or voting against party whip.',
+    'Kihoto Hollohan v. Zachillhu (1992): SC upheld Anti-Defection Law. Presiding officer\'s decision is final, subject to judicial review on limited grounds.',
+    'Exception to anti-defection: merger of 2/3 of party members with another party is NOT defection. No exception for splits (91st Amendment 2003 removed split provision).',
+    '91st Amendment (2003): eliminated split provision (earlier 1/3 could split without penalty). Only merger (2/3) protects from disqualification. Also capped CoM at 15% of LS/assembly.',
+    'One Nation One Election: High-Level Committee under former President Ram Nath Kovind (2023) recommended simultaneous LS + state assembly elections.',
+    'ONOE requires constitutional amendments (Articles 83, 172, 356), changes to RPA, and synchronization of all state assembly tenures with LS.',
+    'State funding of elections: partial funding (Indrajit Gupta recommended), not full. Free broadcast time on DD/AIR, subsidized paper for electoral use — existing partial measures.',
+    'Regional parties: TMC (West Bengal), DMK/AIADMK (Tamil Nadu), SP/BSP (UP), JD(U)/RJD (Bihar), BJD (Odisha), TRS/BRS (Telangana) — dominate state politics.',
+    'Symbol allocation disputes settled by ECI. Shiv Sena case (2023): ECI recognized Eknath Shinde faction as the real Shiv Sena based on majority test.',
+    'Expenditure limit for parties: NO expenditure ceiling on political parties — only on individual candidates. Major loophole in Indian election finance.',
+    'Income tax exemption: parties exempt under Section 13A of IT Act if they maintain books of accounts, file return, and receive donations only through prescribed modes.',
+    'Election expenditure (candidates): Rs 95 lakh for LS (large states), Rs 75 lakh (small). Rs 40 lakh for assembly (large), Rs 28 lakh (small). Widely exceeded in practice.',
   ],
   comparisons: [
     {
@@ -55,6 +67,39 @@ export const politicalPartiesRevision: SubjectRevision = {
         ['ADR v. UOI (Electoral Bonds)', '2024', 'Electoral Bond Scheme struck down — violated Art 19(1)(a)'],
       ],
     },
+    {
+      title: 'Anti-Defection Law — Tenth Schedule',
+      headers: ['Feature', 'Detail'],
+      rows: [
+        ['Amendment', '52nd Amendment, 1985'],
+        ['Disqualification grounds', 'Voluntary giving up membership; voting against party whip'],
+        ['Exception', 'Merger of 2/3 members with another party'],
+        ['91st Amendment (2003)', 'Removed split provision (1/3 split); CoM capped at 15%'],
+        ['Deciding authority', 'Presiding officer (Speaker/Chairman)'],
+        ['Judicial review', 'Limited — Kihoto Hollohan (1992)'],
+      ],
+    },
+    {
+      title: 'Electoral Reform Committees',
+      headers: ['Committee', 'Year', 'Key Recommendation'],
+      rows: [
+        ['Dinesh Goswami', '1990', 'State funding, stricter disqualification, reduced expenditure'],
+        ['Indrajit Gupta', '1998', 'Partial state funding for recognized parties'],
+        ['NCRWC (Venkatachaliah)', '2002', 'Inner-party democracy, transparent accounts'],
+        ['Law Commission 170th Report', '1999', 'State funding, anti-defection reform'],
+        ['Law Commission 255th Report', '2015', 'Decriminalization of politics'],
+      ],
+    },
+    {
+      title: 'Party System Evolution in India',
+      headers: ['Period', 'Phase', 'Key Feature'],
+      rows: [
+        ['1952-1967', 'Congress dominance', 'One-party dominant system (Rajni Kothari)'],
+        ['1967-1989', 'Multi-party emergence', 'Regional parties gain strength, Congress decline in states'],
+        ['1989-2014', 'Coalition era', 'NDA (1998), UPA (2004); no single-party majority'],
+        ['2014-present', 'Renewed dominance', 'BJP single-party majority; weakened opposition coalitions'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -71,6 +116,16 @@ export const politicalPartiesRevision: SubjectRevision = {
       title: 'National Party — "6-4-2-3-4"',
       mnemonic: '6% votes in 4 states + 4 seats; OR 2% LS seats from 3 states; OR state party in 4 states',
       explanation: 'The three alternative criteria for national party recognition — any ONE is sufficient.',
+    },
+    {
+      title: 'Anti-Defection — "52-91-2/3"',
+      mnemonic: '52nd Amendment (1985) introduced; 91st (2003) removed split; 2/3 merger = only exception',
+      explanation: 'Key numbers: 52nd introduced anti-defection, 91st tightened it by removing split provision, 2/3 merger is the only exception.',
+    },
+    {
+      title: 'Election Finance — "2K-No Cap-13A"',
+      mnemonic: 'Rs 2,000 cash without disclosure; NO expenditure cap on parties; Section 13A IT Act exempts parties',
+      explanation: 'Three key facts about political party finance in India — common exam traps.',
     },
   ],
 }

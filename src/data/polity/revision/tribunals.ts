@@ -28,6 +28,16 @@ export const tribunalsRevision: SubjectRevision = {
     'Approximately 30+ tribunals currently operate in India. Chronic vacancies (30-50% at any time). No unified framework — different appointment and governance rules across tribunals.',
     'SC recommended National Tribunals Commission for unified governance. Law Commission reports advocated unified tribunal service with proper infrastructure and career progression.',
     'Swiss Ribbons v. UOI (2019): SC upheld constitutional validity of IBC and NCLT\'s role in corporate insolvency resolution.',
+    'ITAT is India\'s oldest tribunal (1941), predating the Constitution. Has approximately 63 benches across India. ITAT orders appealed to HC on "substantial questions of law" only — not on facts.',
+    'GSTAT (2023): newest major tribunal. Composition: President (retired SC judge/HC CJ) + Judicial Members + Technical Members (from Centre and state). Proposed 31 benches for GST disputes.',
+    'Consumer forums are quasi-tribunals under Art 323B: District Commission (up to Rs 1 crore), State Commission (Rs 1 crore to Rs 10 crore), NCDRC (above Rs 10 crore — President must be retired SC judge). Appeals from NCDRC to SC under Art 136.',
+    'Money Bill controversy: Finance Act 2017 restructured tribunals through Money Bill route (bypassing Rajya Sabha). Rojer Mathew (2020) held tribunal composition changes CANNOT be passed as Money Bill — substantive provisions require bicameral passage.',
+    'National Tribunals Commission (NTC): SC-recommended body for unified governance of all tribunals. Would take over appointments, budgets, infrastructure from individual ministries. Law Commission 272nd Report (2017) also recommended NTC. Government has not established it.',
+    'Tribunal appeal routes: CAT → HC (226/227) → SC (136). NGT/AFT → directly to SC. NCLT → NCLAT → SC. ITAT/CESTAT → HC (on substantial question of law) → SC. Consumer Forum → higher forum → SC.',
+    'CESTAT: handles pre-GST indirect tax disputes (excise, customs, service tax) and continuing customs matters. Post-GST CESTAT workload declining as GST disputes go to GSTAT.',
+    'Art 323A(2)(d) and Art 323B(3)(d): allowed exclusion of HC jurisdiction over tribunal matters. L. Chandra Kumar (1997) struck these down as violating basic structure — HC review cannot be excluded.',
+    'Tribunals vs Courts: tribunals are not bound by strict procedural rules of CPC/Evidence Act. They can devise their own procedure. However, they must follow principles of natural justice. They are quasi-judicial, not judicial.',
+    'Total active tribunal membership: approximately 700-800 members across 30+ tribunals. Vacancy rate: 30-50% at any time. SC has repeatedly directed the government to fill vacancies.',
   ],
   comparisons: [
     {
@@ -51,6 +61,30 @@ export const tribunalsRevision: SubjectRevision = {
         ['NGT', '2010', 'NGT Act 2010', 'Environmental disputes (7 statutes)'],
         ['NCLT', '2016', 'Companies Act 2013 + IBC 2016', 'Company disputes + insolvency/bankruptcy'],
         ['GSTAT', '2023', 'GST Acts', 'GST disputes'],
+      ],
+    },
+    {
+      title: 'Tribunal Appeal Routes',
+      headers: ['Tribunal', 'First Appeal', 'Second Appeal', 'Key Note'],
+      rows: [
+        ['CAT/SAT', 'HC (Art 226/227)', 'SC (Art 136)', 'L. Chandra Kumar: HC review is basic structure'],
+        ['ITAT/CESTAT', 'HC (substantial question of law)', 'SC (Art 136)', 'Oldest appeal route; fact-finding at tribunal level only'],
+        ['NGT', 'Directly to SC', 'N/A', 'Bypasses HC; one of few tribunals with direct SC appeal'],
+        ['AFT', 'Directly to SC', 'N/A', 'Armed forces service matters; similar to NGT route'],
+        ['NCLT', 'NCLAT', 'SC (Art 136)', 'NCLAT also hears CCI and IBBI appeals'],
+        ['DRT', 'DRAT', 'HC (Art 226/227)', 'Debt recovery; two-tier tribunal system before HC'],
+        ['GSTAT', 'HC (substantial question of law)', 'SC (Art 136)', 'Newest major tribunal (2023); similar to ITAT route'],
+      ],
+    },
+    {
+      title: 'Tribunals Reforms Timeline',
+      headers: ['Year', 'Event', 'Key Change'],
+      rows: [
+        ['2017', 'Finance Act merged 8 tribunals', 'Passed as Money Bill — later challenged'],
+        ['2020', 'Rojer Mathew v. South Indian Bank', 'SC: tribunal changes CANNOT be Money Bill'],
+        ['2021', 'Tribunals Reforms Act', 'Uniform qualifications, 4-year tenure (SC struck down → 5 years)'],
+        ['2021', 'Madras Bar Association v. UOI', 'SC: minimum 5-year tenure; govt cannot prescribe conditions by rules'],
+        ['2023', 'GSTAT constituted', '31 proposed benches for GST disputes'],
       ],
     },
     {
@@ -79,6 +113,16 @@ export const tribunalsRevision: SubjectRevision = {
       title: 'L. Chandra Kumar — "Supplementary Not Substitute"',
       mnemonic: 'Tribunals SUPPLEMENT HCs; they do NOT SUBSTITUTE HCs. HC review under Art 226/227 = basic structure.',
       explanation: 'The core holding of L. Chandra Kumar — the most important case on tribunal jurisdiction.',
+    },
+    {
+      title: 'Tribunal Appeal Routes — "CAT-to-HC, NGT-to-SC"',
+      mnemonic: 'CAT/ITAT/CESTAT → HC (226/227) → SC (136). NGT/AFT → directly to SC. NCLT → NCLAT → SC.',
+      explanation: 'Different tribunals have different appeal routes — some go through HC first (L. Chandra Kumar), others go directly to SC.',
+    },
+    {
+      title: 'Art 323A vs 323B — "A=Admin Only, B=Both+Broad"',
+      mnemonic: 'Art 323A: Administrative/service matters ONLY; Parliament ONLY. Art 323B: Broad subjects (tax, land, elections, etc.); Parliament OR state legislatures.',
+      explanation: 'The key distinction between the two constitutional provisions for tribunals.',
     },
   ],
 }

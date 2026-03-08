@@ -10,7 +10,7 @@ export const nationalCommissionsRevision: SubjectRevision = {
     '102nd Amendment (2018): Gave constitutional status to NCBC under Art 338B. Also inserted Art 342A — central OBC list changes need Parliamentary law.',
     'All three constitutional commissions: Chairperson + Vice-Chairperson + 3 members = 5 total. Appointed by President (on advice of CoM).',
     'NHRC composition: Chairperson (retired CJI or retired SC judge — 2019 Amendment expanded eligibility) + 2 sitting/retired SC judges + 1 sitting/retired HC CJ + 2 HR experts + ex-officio members.',
-    'NHRC ex-officio members: Chairpersons of NCM, NCSC, NCST, NCW serve as deemed members. Total effective strength varies.',
+    'NHRC ex-officio members: Chairpersons of NCM, NCSC, NCST, NCW, NCBC (added 2019) serve as deemed members. Total effective strength varies.',
     'NHRC Selection Committee: PM (chair), Speaker (LS), Home Minister, LoP (LS), LoP (RS), Deputy Chairman (RS) — 6 members.',
     'NHRC tenure: Originally 5 years or age 70 (CJI/SC judges), 5 years or age 70 (other members). 2019 Amendment: 3 years, eligible for reappointment for 5 years (total max).',
     'NHRC cannot investigate complaints against armed forces — significant limitation. Can only recommend, not enforce. Powers of civil court.',
@@ -33,6 +33,18 @@ export const nationalCommissionsRevision: SubjectRevision = {
     'CIC ruled (2013) NHRC, NCW, NCM etc. are public authorities under RTI — subject to transparency obligations.',
     'NCSC and NCST have power to investigate specific complaints of deprivation of rights and safeguards provided for SCs/STs.',
     'Union and state governments are required to consult NCSC/NCST on all major policy matters affecting SCs/STs respectively.',
+    'NCST also monitors Fifth Schedule areas and tribal interests under Sixth Schedule — broader mandate than NCSC on territorial governance.',
+    'NHRC "A" status accreditation by GANHRI (Global Alliance of National Human Rights Institutions) — substantial compliance with Paris Principles.',
+    'Paris Principles (1993): require NHRIs to have broad mandate, functional independence, transparent appointments, adequate resources, complaint-handling power.',
+    'SHRCs: Chairperson (retired HC CJ) + 1 retired HC judge + 1 HR expert. Only ~26 states have constituted SHRCs. Many understaffed.',
+    'SHRC jurisdiction limited to State List and Concurrent List subjects — cannot investigate matters in Union List (e.g., central security forces).',
+    'NCSK (National Commission for Safai Karamcharis): monitors Prohibition of Employment as Manual Scavengers Act, 2013. Manual scavenging deaths continue.',
+    'NHRC disposed 80,000+ complaints annually but faces massive backlog. Compliance rate ~94% for recommendations, but depth of implementation questioned.',
+    'Selection process controversy: Government dominates selection for all commissions — compromises independence. 2nd ARC recommended collegium-based selection.',
+    'Jurisdictional overlaps: complaint about violence against a disabled SC woman could go to NCSC, NCW, NHRC, or disability commissioner — no coordination mechanism.',
+    'AMU minority status case: SC referred to 7-judge bench in 2024 after overruling Azeez Basha (1967). Determines whether AMU is a minority institution under Art 30.',
+    'NHRC mandated reporting of every custodial death within 24 hours — magisterial inquiry within 2 months. Key systemic intervention.',
+    'Multiplicity critique: India has more commissions than most democracies but weaker enforcement. Some experts recommend fewer, stronger bodies.',
   ],
   comparisons: [
     {
@@ -72,6 +84,27 @@ export const nationalCommissionsRevision: SubjectRevision = {
         ['Deputy Chairman of Rajya Sabha', 'Member'],
       ],
     },
+    {
+      title: 'NHRC — Pre and Post 2019 Amendment',
+      headers: ['Feature', 'Before 2019', 'After 2019'],
+      rows: [
+        ['Chair eligibility', 'Retired CJI only', 'Retired CJI or retired SC judge'],
+        ['Tenure', '5 years or age 70', '3 years, reappointment for max 5 years total'],
+        ['Ex-officio members', 'NCM, NCSC, NCST, NCW chairs', 'Added NCBC chair'],
+        ['Women member', 'Not mandated', 'At least 1 woman among HR expert members'],
+        ['SHRCs', 'State-determined terms', 'Central Government prescribes terms'],
+      ],
+    },
+    {
+      title: 'Specialized Commissions',
+      headers: ['Commission', 'Established', 'Focus Area'],
+      rows: [
+        ['NCSK', '1993/2004', 'Safai Karamcharis — manual scavenging'],
+        ['NCDNT', '2006 (reconstituted 2012)', 'Denotified, nomadic, semi-nomadic tribes'],
+        ['NCAHP', '2021', 'Allied and healthcare professions (15 categories)'],
+        ['NCPCR', '2007', 'Child rights — POCSO, RTE, JJ Act'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -93,6 +126,11 @@ export const nationalCommissionsRevision: SubjectRevision = {
       title: 'NHRC Chair Eligibility (Post-2019)',
       mnemonic: 'Retired CJI OR Retired SC Judge — 2019 Amendment expanded from CJI-only',
       explanation: 'Before 2019, only a retired CJI could chair the NHRC. The amendment added retired SC judges.',
+    },
+    {
+      title: 'NHRC Selection — "PS-HLL-D"',
+      mnemonic: 'PM, Speaker, Home Minister, LoP (LS), LoP (RS), Deputy Chairman (RS) = 6 members',
+      explanation: 'Six members of the NHRC Selection Committee — PM chairs it.',
     },
   ],
 }

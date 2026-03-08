@@ -33,6 +33,18 @@ export const scheduledTribalAreasRevision: SubjectRevision = {
     'Colonial precursors: Scheduled Districts Act 1874 → "Backward Tracts" (1919 Act) → "Excluded/Partially Excluded Areas" (1935 Act) → Fifth/Sixth Schedules (1950).',
     'Left-wing extremism in tribal areas partly rooted in land alienation, displacement, underdevelopment. PESA and FRA implementation remain weak.',
     'FRA implementation issue: rejection rates exceed 50% in many states. Community forest rights granted in fewer than 5% of eligible areas.',
+    'PVTGs: 75 tribal communities in 18 states + A&N Islands. Criteria: pre-agricultural technology, stagnant/declining population, low literacy.',
+    'PVTGs examples: Jarawa, Sentinelese (A&N), Birhor (Jharkhand), Chenchu (AP/Telangana), Toda (TN), Cholanaickan (Kerala).',
+    'TSP (Tribal Sub-Plan) strategy since 5th FYP (1974-79): flow of funds proportional to tribal population share. Renamed STC (Scheduled Tribes Component) in 2017.',
+    'NCST (Art 338A, 89th Amendment 2003): Chairperson + Vice-Chairperson + 3 members. Monitors Fifth/Sixth Schedule, PESA, FRA implementation.',
+    'ILP (Inner Line Permit) required in 4 NE states: Arunachal Pradesh, Nagaland, Mizoram, Manipur (added 2019). Based on 1873 Bengal Regulation.',
+    'Tribals constitute ~8.6% of India\'s population but account for ~40% of all development-displaced persons. Disproportionate displacement for dams, mines, SEZs.',
+    'LARR Act 2013: land acquisition in Scheduled Areas requires consent of Gram Sabha. SIA must assess impact on tribal communities.',
+    'Eklavya Model Residential Schools (EMRS): planned 740 schools (one per block with 50%+ ST population), modeled on Navodaya Vidyalayas for ST students exclusively.',
+    'National Sickle Cell Anaemia Elimination Mission (2023): targets sickle cell disease disproportionately affecting tribal populations in central India.',
+    'Tribal literacy: 59% (2011 Census) vs 73% national average. PVTGs as low as 10-20%. Under-5 mortality: 57.2/1000 (STs) vs 41.9/1000 (national).',
+    'TRIFED: Tribal Cooperative Marketing Development Federation — markets tribal products. Van Dhan Vikas Kendras promote value addition of MFP.',
+    'Ministry of Tribal Affairs established 1999 as separate ministry. Earlier a department under Ministry of Social Justice and Empowerment.',
   ],
   comparisons: [
     {
@@ -77,6 +89,29 @@ export const scheduledTribalAreasRevision: SubjectRevision = {
         ['371J', 'Karnataka', 'Hyderabad-Karnataka region development board'],
       ],
     },
+    {
+      title: 'Key Tribal Commissions and Committees',
+      headers: ['Body', 'Year', 'Key Recommendation/Finding'],
+      rows: [
+        ['Thakkar-Mehta Committee', '1947', 'Framework for Fifth Schedule'],
+        ['Bordoloi Committee', '1947', 'Framework for Sixth Schedule'],
+        ['Dhebar Commission', '1958-61', 'First review of Fifth Schedule working; identified PVTGs concept'],
+        ['Bhuria Committee', '1995', 'Recommended strengthening TACs; led to PESA 1996'],
+        ['Mungekar Committee', '2007-08', 'TACs are "ornamental bodies"; recommended binding recommendations'],
+        ['Virginius Xaxa Committee', '2014', 'Reviewed tribal development; recommended ILP extension'],
+      ],
+    },
+    {
+      title: 'ILP States vs Sixth Schedule States',
+      headers: ['Feature', 'ILP States', 'Sixth Schedule States'],
+      rows: [
+        ['States', 'Arunachal, Nagaland, Mizoram, Manipur', 'Assam, Meghalaya, Tripura, Mizoram'],
+        ['Origin', 'Bengal Eastern Frontier Regulation, 1873', 'Constitution (Part X, Art 244(2))'],
+        ['Purpose', 'Restrict entry of outsiders', 'Autonomous tribal self-governance'],
+        ['Overlap', 'Mizoram has both ILP and Sixth Schedule', 'Mizoram has both'],
+        ['Administration', 'State government issues permits', 'Elected ADCs with legislative/judicial powers'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -98,6 +133,11 @@ export const scheduledTribalAreasRevision: SubjectRevision = {
       title: 'ADC Composition — "30-4-5"',
       mnemonic: '30 max members, 4 nominated by Governor, 5-year term for elected members',
       explanation: 'Key numbers for Autonomous District Council composition under the Sixth Schedule.',
+    },
+    {
+      title: 'ILP States — "NANM"',
+      mnemonic: 'Nagaland, Arunachal Pradesh, Nagaland... no — Nagaland, Arunachal, (Ni)Mizoram, Manipur',
+      explanation: 'Four states requiring Inner Line Permit: Nagaland, Arunachal Pradesh, Mizoram, Manipur (added 2019).',
     },
   ],
 }

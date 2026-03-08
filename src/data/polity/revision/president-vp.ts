@@ -31,6 +31,17 @@ export const presidentVpRevision: SubjectRevision = {
     'Shatrughan Chauhan v. UOI (2014): inordinate delay in deciding mercy petitions is ground for commuting death sentence.',
     'Only two VPs became President by election: S. Radhakrishnan and Zakir Husain. Two Presidents died in office: Zakir Husain (1969) and Fakhruddin Ali Ahmed (1977).',
     'Art 59: President shall not be a member of any legislature; existing membership terminates on election to presidency.',
+    'Art 356: President\'s Rule — max 3 years with parliamentary approval every 6 months. Beyond 1 year: requires National Emergency or ECI certification that elections cannot be held. S.R. Bommai (1994): judicial review of proclamation; floor test is the only legitimate test of majority.',
+    'Three national emergencies declared: 1962 (Chinese aggression), 1971 (Pakistan war), 1975 (internal disturbance). Art 360: Financial Emergency — never proclaimed. President can reduce salaries of all government servants including SC/HC judges during financial emergency.',
+    'Art 356 imposed over 130 times — Sarkaria Commission called it the most misused provision. 44th Amendment reduced approval timeline from 6 months to 2 months.',
+    'Epuru Sudhakar v. Govt of AP (2006): pardoning power can be reviewed for arbitrariness, mala fide, or non-application of mind.',
+    'Cooper v. Union of India (1970): ordinances cannot be used to override court decisions. 38th Amendment attempted to make ordinance satisfaction non-justiciable — repealed by 44th Amendment.',
+    'President\'s discretionary situations: (a) appointing PM when no clear majority, (b) deciding if CoM lost majority, (c) pocket veto. In all other matters — bound by Art 74.',
+    'K.R. Narayanan twice returned advice for President\'s Rule — Bihar (1998) and UP (1999). After reconsideration, government withdrew the proposal both times.',
+    'Mohammad Hidayatullah — only former CJI to become VP (1979-1984). Hamid Ansari — only VP to serve two consecutive terms (2007-2017).',
+    'VP acts as President: receives President\'s emoluments (not VP salary). Cannot perform RS Chairman duties while acting as President — Deputy Chairman presides.',
+    'Art 60 oath text: "I will faithfully execute the office of President and will to the best of my ability preserve, protect and defend the Constitution and the law." Third Schedule, Form III-A.',
+    'Indian President compared to US: US President is real executive + head of state combined; Indian President is nominal executive. US President can veto with 2/3 override; Indian President must assent to re-passed bills.',
   ],
   comparisons: [
     {
@@ -67,6 +78,31 @@ export const presidentVpRevision: SubjectRevision = {
         ['Pocket Veto', 'Neither assents nor returns; no time limit in Constitution', 'Any bill; used once — Zail Singh, 1986'],
       ],
     },
+    {
+      title: 'Indian President vs US President',
+      headers: ['Aspect', 'Indian President', 'US President'],
+      rows: [
+        ['Nature of office', 'Nominal/constitutional head of state', 'Real executive + head of state + head of government'],
+        ['Election', 'Indirect — by Electoral College of MPs + MLAs', 'Indirect — by Electoral College of electors chosen by popular vote'],
+        ['Term', '5 years; no limit on re-election', '4 years; max 2 terms (22nd Amendment)'],
+        ['Removal', 'Impeachment for "violation of Constitution"', 'Impeachment for "high crimes and misdemeanors"'],
+        ['Veto power', 'Absolute + Suspensive + Pocket (no time limit)', 'Regular veto (10-day window) + pocket veto'],
+        ['Military', 'Supreme Commander; acts on ministerial advice', 'Commander-in-Chief with real operational authority'],
+        ['Legislative role', 'Cannot participate in debates; summons/prorogues Parliament', 'Can veto legislation; delivers State of Union address'],
+        ['Pardoning power', 'Art 72 — on ministerial advice; subject to judicial review', 'Absolute for federal offences; not subject to judicial review'],
+      ],
+    },
+    {
+      title: 'Three Types of Emergencies',
+      headers: ['Aspect', 'National Emergency (Art 352)', 'President\'s Rule (Art 356)', 'Financial Emergency (Art 360)'],
+      rows: [
+        ['Ground', 'War, external aggression, armed rebellion', 'Constitutional failure in a state', 'Financial stability of India or any part threatened'],
+        ['Approval', 'Parliament within 1 month; special majority', 'Parliament within 2 months; simple majority', 'Parliament within 2 months; simple majority'],
+        ['Duration', '6 months at a time; indefinite extensions', '6 months at a time; max 3 years', 'Indefinite until revoked'],
+        ['Effect on FRs', 'Art 19 auto-suspended; others suspendable except Art 20-21', 'No direct effect on FRs', 'Can reduce salaries of govt servants + judges'],
+        ['Times declared', '3 times (1962, 1971, 1975)', '130+ times', 'Never'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -88,6 +124,11 @@ export const presidentVpRevision: SubjectRevision = {
       title: 'VP Electoral College — "ALL Parliament"',
       mnemonic: 'ALL members of BOTH Houses — elected AND nominated',
       explanation: 'Unlike the President\'s Electoral College, the VP is elected by ALL members of both Houses (elected + nominated). No MLAs participate in VP election.',
+    },
+    {
+      title: 'Impeachment Majorities — "Quarter-Two Thirds-Two Thirds"',
+      mnemonic: '1/4 → 2/3 → 2/3: initiate by 1/4 of total membership, pass by 2/3 in originating House, confirm by 2/3 in other House',
+      explanation: 'The three-stage majority requirement for impeachment under Art 61. Both stages require 2/3 of TOTAL membership (not present and voting). Notice of 14 days must be given to the President.',
     },
   ],
 }

@@ -32,6 +32,15 @@ export const advocateGeneralRevision: SubjectRevision = {
     'During President\'s Rule (Art 356): the AG\'s position becomes ambiguous — the state government is dismissed but the AG\'s appointment is by the Governor.',
     'Reform proposals: fixed tenure (3-5 years), proper salary instead of retainer, institutional independence from political changes, formal role in HC collegium.',
     'Punchhi Commission (2010) discussed insulating AG from political pressure while maintaining accountability to the state government.',
+    'AG can appear in any court in India when authorized by the state government — nationwide right of audience, not limited to the state\'s HC.',
+    'AG has no executive powers — role is strictly advisory and representational. Cannot make policy decisions or issue executive orders.',
+    'AG coordinates with the Law Secretary (IAS officer heading Law Department) for case management, administrative matters, and litigation strategy.',
+    'During government formation disputes, floor tests, and President\'s Rule challenges, the AG\'s legal advice to the Governor/CM becomes critically important.',
+    'S.R. Bommai (1994) highlighted AG\'s advisory role: floor test mandated; Governor cannot rely on subjective assessments. AG advises on constitutional procedure.',
+    'AG can assist HC as amicus curiae in public interest matters — expanding role beyond direct government representation.',
+    'AG appointed by Governor (Art 165) parallels AG of India appointed by President (Art 76). Both serve during pleasure. Both are non-government servants receiving retainers.',
+    'AG participates in state legislature (Art 177) parallels AG of India in Parliament (Art 88). Both can speak and participate but CANNOT vote.',
+    'No counterpart of Solicitor General at state level — AG is the sole constitutional law officer (Centre has SG + Additional SGs assisting the AG of India).',
   ],
   comparisons: [
     {
@@ -73,6 +82,17 @@ export const advocateGeneralRevision: SubjectRevision = {
         ['Government Pleader', 'State Government', 'Represents state in routine HC matters'],
         ['Standing Counsel', 'State Government', 'Handles specific department\'s or category\'s cases'],
         ['Panel Advocate', 'State Government', 'Empanelled for specific cases or courts; lowest tier'],
+      ],
+    },
+    {
+      title: 'AG\'s Role in Key State Situations',
+      headers: ['Situation', 'AG\'s Role', 'Key Aspect'],
+      rows: [
+        ['Government formation', 'Advises Governor on constitutional procedure', 'Floor test protocol, Sarkaria sequence'],
+        ['President\'s Rule challenge', 'Represents state government before SC', 'Art 356 judicial review (Bommai guidelines)'],
+        ['Inter-state water disputes', 'Represents state interests before tribunals', 'Interstate Water Disputes Act, 1956'],
+        ['Bill assent controversy', 'Advises on Art 200 options', 'Governor-CM conflicts on reserved bills'],
+        ['Contempt proceedings', 'Grants consent for HC contempt (s.15)', 'Gatekeeping role against frivolous petitions'],
       ],
     },
   ],

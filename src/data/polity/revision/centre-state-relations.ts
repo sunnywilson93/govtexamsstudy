@@ -33,6 +33,11 @@ export const centreStateRelationsRevision: SubjectRevision = {
     'Asymmetric federalism: Art 370 (abrogated 2019, upheld 2023), Art 371A-J (special provisions for NE states, Goa, H-K region), 5th Schedule (tribal areas), 6th Schedule (autonomous councils in NE).',
     'Zonal Councils (5): statutory bodies under States Reorganisation Act 1956. Chaired by Union Home Minister. North Eastern Council (NEC, 1972): 8 NE states.',
     'Art 293: state borrowing — if state has outstanding loans from Centre, it cannot borrow without Centre\'s consent. Gives Centre significant leverage.',
+    'Art 254 repugnancy tests (M. Karunanidhi v. UOI, 1979): (a) direct conflict test — laws directly inconsistent, cannot coexist; (b) field occupation test — Parliament intended to cover the entire field. If harmonious construction possible, no repugnancy found.',
+    'All India Services (Art 312): IAS, IPS, IFoS (created 1966). Recruited by Centre (UPSC), allocated to state cadres. Serve under state governments but ultimate discipline with Centre. RS 2/3 resolution needed for new AIS. "Steel frame" of the federation.',
+    'Cesses and surcharges: NOT shareable with states (excluded from divisible pool under Art 270). Centre\'s cess share of gross tax revenue rose from ~10% (2011-12) to ~25% (2022-23). Major fiscal federalism flashpoint. CAG noted many cesses not credited to dedicated funds.',
+    'Seventh Schedule key transfers: 42nd Amendment transferred education, forests, weights & measures, wild animals, administration of justice from State to Concurrent List. These 5 transfers are among the most tested facts in polity.',
+    'Art 258A (added by 7th Amendment, 1956): state government can entrust functions to Union officers with Central government consent — delegation UPWARD. Rarely used but constitutionally significant.',
   ],
   comparisons: [
     {
@@ -67,6 +72,19 @@ export const centreStateRelationsRevision: SubjectRevision = {
       ],
     },
     {
+      title: 'Key Union List vs State List Entries',
+      headers: ['Union List (List I)', 'State List (List II)', 'Concurrent List (List III)'],
+      rows: [
+        ['Defence, armed forces (1-2)', 'Public order (1)', 'Criminal law, CrPC (1-2)'],
+        ['Foreign affairs (10-14)', 'Police, prisons (2, 4)', 'Marriage, divorce (5)'],
+        ['Banking, currency (36-38)', 'Local government (5)', 'Education (25) — transferred from State'],
+        ['Railways, airways (22-24)', 'Agriculture, land (14, 18)', 'Forests (17A) — transferred from State'],
+        ['Inter-state trade (42)', 'Public health, hospitals (6)', 'Labour welfare, trade unions (22-24)'],
+        ['Income tax, customs (82-85)', 'Land revenue, excise on alcohol (45-51)', 'Electricity (38)'],
+        ['All India Services (70)', 'State PSC (41)', 'Economic and social planning (20)'],
+      ],
+    },
+    {
       title: 'Finance Commission — Devolution Shares',
       headers: ['Finance Commission', 'Period', 'States\' Share', 'Key Feature'],
       rows: [
@@ -96,6 +114,11 @@ export const centreStateRelationsRevision: SubjectRevision = {
       title: 'Tax Distribution Articles — "268-269-270"',
       mnemonic: '268 = levied by Centre, kept by States; 269 = levied/collected by Centre, assigned to States; 270 = distributed between Centre and States (main provision)',
       explanation: 'Three key articles on tax distribution — distinguish "collected by states," "assigned to states," and "distributed between."',
+    },
+    {
+      title: 'Art 254 Repugnancy Rule — "Centre Wins Unless President Says State"',
+      mnemonic: 'Art 254(1): Concurrent List conflict → central law prevails, state law void. Art 254(2): Exception — state law prevails IF reserved for and received Presidential assent.',
+      explanation: 'The repugnancy rule for Concurrent List conflicts. The Presidential assent exception under Art 254(2) is a critical exam point — Parliament can still override the state law by subsequent legislation.',
     },
   ],
 }

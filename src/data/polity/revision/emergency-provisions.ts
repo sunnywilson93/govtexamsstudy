@@ -31,6 +31,12 @@ export const emergencyProvisionsRevision: SubjectRevision = {
     'Art 352 and Art 356 compared: Art 352 requires written Cabinet advice + Parliamentary approval by special majority within 1 month; Art 356 requires only President\'s satisfaction (Governor\'s report or otherwise) + Parliamentary approval by simple majority within 2 months. Art 352 affects fundamental rights; Art 356 does not directly affect FRs but suspends state governance. Art 352 can last indefinitely; Art 356 has a 3-year maximum.',
     'Impact of the 1975 Emergency on Indian democracy: mass arrests under MISA (Maintenance of Internal Security Act), press censorship, forced sterilization drive, postponement of elections, suspension of habeas corpus (ADM Jabalpur). These abuses led to the comprehensive 44th Amendment (1978) safeguards and remain the most significant constitutional crisis in independent India.',
     'Art 360 and judicial salaries: Art 360(4)(b) specifically mentions that the President can direct the reduction of salaries and allowances of judges of the SC and HCs. This is the ONLY provision (other than Art 360 financial emergency) where judge\'s salaries can be reduced — ordinarily they cannot be varied to their disadvantage after appointment (Art 125(2), 221(2)).',
+    'ADM Jabalpur (1976, 4:1): majority held Art 21 suspended during Emergency. Khanna J.\'s dissent: "life and personal liberty are the most cherished liberties." Khanna superseded for CJI. SC regretted it in 2011 (Kapadia CJI). Formally overruled in Puttaswamy (2017, 9-judge bench).',
+    'Art 352 and Art 356 key differences: Art 352 requires WRITTEN Cabinet advice + SPECIAL majority within 1 MONTH; Art 356 requires only President\'s satisfaction + SIMPLE majority within 2 MONTHS. Art 352 affects FRs; Art 356 does NOT directly affect FRs. Art 352 = no maximum duration; Art 356 = 3-year maximum.',
+    'Constituent Assembly debates on emergency: Ambedkar called Art 356 "a dead letter" hoping it would never be used. H.V. Kamath called emergency provisions "draconian." T.T. Krishnamachari warned of misuse against elected state governments. H.N. Kunzru proposed special majority for Art 356 approval — rejected.',
+    'Rameshwar Prasad v. UOI (Bihar, 2006): SC held Governor\'s recommendation for dissolution was based on political considerations. Directed restoration of assembly. Reinforced Bommai principle that Governor cannot act on extraneous grounds.',
+    'Nabam Rebia v. Deputy Speaker (2016): SC held Governor cannot direct floor test without government\'s request. Governor cannot exercise discretion to subvert democratic process. Strengthened conventions around Governor\'s role.',
+    'Duration comparison: Art 352 — 1 month for initial approval, then 6-monthly renewal, no maximum. Art 356 — 2 months for approval, 6-monthly extension, maximum 3 years (extension beyond 1 year needs Emergency or EC certification). Art 360 — 2 months for approval, continues indefinitely, no renewal needed.',
   ],
   comparisons: [
     {
@@ -72,6 +78,17 @@ export const emergencyProvisionsRevision: SubjectRevision = {
       ],
     },
     {
+      title: 'President\'s Rule — Notable Instances',
+      headers: ['State/Year', 'Reason', 'Outcome', 'Significance'],
+      rows: [
+        ['Kerala (1959)', 'First ever use — Congress-led agitation', 'EMS Namboodiripad dismissed', 'Set controversial precedent for political use'],
+        ['Bihar (2005)', 'No party could form government', 'SC intervened; allowed govt formation', 'Reaffirmed floor test requirement'],
+        ['Uttarakhand (2016)', 'Governor recommended dissolution', 'SC revoked; floor test ordered', 'Reinforced Bommai — assembly restored'],
+        ['Arunachal Pradesh (2016)', 'Governor acted unconstitutionally', 'SC struck down President\'s Rule', 'Governor cannot subvert democratic process'],
+        ['J&K (2018-19)', 'Coalition collapse', 'Followed by Art 370 abrogation', 'Led to reorganization into 2 UTs'],
+      ],
+    },
+    {
       title: 'Emergency Provisions — Before and After 44th Amendment',
       headers: ['Feature', 'Before 44th Amendment (1978)', 'After 44th Amendment (1978)'],
       rows: [
@@ -106,6 +123,11 @@ export const emergencyProvisionsRevision: SubjectRevision = {
       title: 'Bommai Principles — "FDJSB"',
       mnemonic: 'Floor test paramount, Dissolution only after Parliament approval, Judicial review available, Secularism is basic structure, Burden on Centre',
       explanation: 'The five key principles established in S.R. Bommai v. Union of India (1994) that transformed Art 356 from a political tool to a constitutional remedy of last resort.',
+    },
+    {
+      title: 'Art 358 vs Art 359 — "358=Automatic Art 19, 359=Order Other FRs"',
+      mnemonic: '358: AUTOMATIC, ONLY Art 19, ONLY war/aggression. 359: needs PRESIDENTIAL ORDER, covers any FR EXCEPT Art 20/21, applies in ANY emergency type.',
+      explanation: 'The most tested distinction in emergency provisions. Art 358 suspends rights themselves; Art 359 suspends only enforcement (remedy). Both changed by 44th Amendment.',
     },
   ],
 }

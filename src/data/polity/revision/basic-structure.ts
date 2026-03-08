@@ -31,6 +31,13 @@ export const basicStructureRevision: SubjectRevision = {
     'Defense: prevents majoritarian destruction of democracy; provides "check on the checker"; essential safeguard against authoritarian constitutional manipulation; proven effective (Emergency, NJAC, 42nd Amendment).',
     'Constitutional amendments struck down on basic structure: 39th (Indira Gandhi case), 42nd Sections 4 & 55 (Minerva Mills), Paragraph 7 of 52nd (Kihoto Hollohan), 99th (NJAC Case).',
     'Art 31C as expanded by 42nd Amendment (making ALL DPSPs override ALL FRs) struck down in Minerva Mills. Original Art 31C (only Art 39(b)(c) over Art 14, 19) survived Kesavananda.',
+    'Dietrich Conrad: German constitutional scholar who gave a lecture in February 1965 at Banaras Hindu University arguing that the Indian Constitution has implied limitations on amending power. His ideas directly influenced the basic structure argument in Kesavananda.',
+    '42nd Amendment (1976) inserted Art 368(4): "No amendment shall be called in question in any court on any ground." Art 368(5): "there shall be no limitation on the constituent power of Parliament." Both struck down in Minerva Mills (1980).',
+    '97th Amendment (2011): inserted Part IX-B on cooperative societies. SC in 2021 struck down provisions because cooperative societies are a state subject — did NOT use basic structure, used federal competence instead. Shows not all invalid amendments involve basic structure.',
+    'The basic structure doctrine applies ONLY to constitutional amendments under Art 368, NOT to ordinary legislation. Ordinary legislation is tested against FRs (Art 13) and legislative competence (Art 245-246), not basic structure.',
+    'Puttaswamy (2017, 9-judge unanimous): identified "dignity of the individual" and "right to privacy" as part of the basic structure. Formally overruled ADM Jabalpur (1976). Expanded the catalogue of basic structure features.',
+    'The doctrine has been adopted by other countries: Bangladesh (Anwar Hossain Chowdhury, 1989 — 8th Amendment struck down), Pakistan (District Bar Association case, 2015), Kenya (2010 Constitution explicitly codifies it), Belize (2011).',
+    'Justice Khanna\'s contribution: while Khanna J. was in the majority in Kesavananda (7:6), his reasoning differed — he did not use the term "basic structure" but referred to the "essential features" doctrine. His framework was close but distinct. He was later superseded for CJI after dissenting in ADM Jabalpur.',
   ],
   comparisons: [
     {
@@ -69,6 +76,31 @@ export const basicStructureRevision: SubjectRevision = {
       ],
     },
     {
+      title: 'Constitutional Amendments Struck Down on Basic Structure',
+      headers: ['Amendment', 'Case', 'Year', 'What Was Struck Down', 'Basic Structure Violated'],
+      rows: [
+        ['39th', 'Indira Gandhi v. Raj Narain', '1975', 'PM election shielded from judicial review', 'Free and fair elections, rule of law'],
+        ['42nd (parts)', 'Minerva Mills v. UOI', '1980', 'Art 368(4) and (5) barring judicial review', 'Limited amending power, judicial review, FR-DPSP harmony'],
+        ['52nd (Para 7)', 'Kihoto Hollohan v. Zachillhu', '1992', 'Bar on judicial review of Speaker\'s anti-defection decisions', 'Judicial review'],
+        ['99th', 'NJAC Case', '2015', 'NJAC Act and 99th Amendment in entirety', 'Independence of judiciary'],
+        ['97th (parts)', 'Union of India v. Rajendra Shah', '2021', 'Part IX-B provisions on cooperative societies', 'Federal structure (state subject without proper ratification)'],
+      ],
+    },
+    {
+      title: 'Kesavananda Bharati — Key Statistics',
+      headers: ['Feature', 'Detail'],
+      rows: [
+        ['Bench size', '13 judges — largest ever assembled by the SC'],
+        ['Majority', '7:6 — razor-thin'],
+        ['Hearing duration', '68 working days'],
+        ['Judgment length', '700+ pages; 11 separate opinions'],
+        ['Date', '24 April 1973 — cutoff date for Waman Rao line'],
+        ['CJI', 'S.M. Sikri (identified 5 features); last day as CJI'],
+        ['Overruled', 'Golaknath (1967)'],
+        ['Upheld', '24th and 25th Amendments (partly)'],
+      ],
+    },
+    {
       title: 'Basic Structure — India vs Germany vs USA',
       headers: ['Feature', 'India', 'Germany', 'USA'],
       rows: [
@@ -99,6 +131,11 @@ export const basicStructureRevision: SubjectRevision = {
       title: 'Basic Structure Features — "SDSF JRFE LIP"',
       mnemonic: 'Sovereignty, Democracy, Secularism, Separation of powers, Federalism, Judicial review, Rule of law, Free elections, Equality, Limited amending power, Independence of judiciary, Parliamentary system',
       explanation: 'Twelve key features identified as part of the basic structure across various SC judgments.',
+    },
+    {
+      title: 'Ninth Schedule Timeline — "51-73-81-07"',
+      mnemonic: '1951 (1st Amendment, 13 laws added), 1973 (Kesavananda — cutoff date), 1981 (Waman Rao — temporal line drawn), 2007 (I.R. Coelho — post-1973 entries reviewable)',
+      explanation: 'Four key dates in the Ninth Schedule saga — from creation to judicial closure of the "shield" loophole.',
     },
   ],
 }

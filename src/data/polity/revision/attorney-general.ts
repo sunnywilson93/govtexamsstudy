@@ -28,6 +28,15 @@ export const attorneyGeneralRevision: SubjectRevision = {
     'Remuneration determined by the President; comparable to SC judge\'s salary but structured as retainer. Charged on the Consolidated Fund of India.',
     'AG can appear as amicus curiae in PIL cases when requested by the court — role expands beyond traditional government advocacy.',
     'Art 76(3): AG shall have the right of audience in all courts in the territory of India. Art 76(4): holds office during pleasure of President.',
+    'SG cannot appear AGAINST the government in any case — stricter restriction than the AG, who is merely expected not to (convention).',
+    '16 AGs served as of 2024. M.C. Setalvad (1950-1963): longest single tenure, 13 years. Soli Sorabjee: two separate terms (1989-90, 1998-2004).',
+    'G.E. Vahanvati — first person to serve as both SG and AG of India. R. Venkataramani — current (16th) AG appointed in 2022.',
+    'AG enjoys all privileges of an MP while participating in parliamentary proceedings — immunity for speech in Parliament extends to AG under Art 105(4).',
+    'AG represents government in Art 143 references (advisory jurisdiction of SC) — notable references: Delhi Laws Act (1951), Berubari Union (1960), Cauvery Water Dispute.',
+    'Kesavananda Bharati (1973): AG Niren De argued for unlimited amending power of Parliament — SC rejected, established basic structure doctrine by 7:6.',
+    'AG\'s opinion is the most authoritative legal advice to the government — but government is NOT legally bound to follow it. Advisory role only.',
+    'In I.R. Coelho v. State of Tamil Nadu (2007): AG argued Ninth Schedule laws immune from judicial review — SC rejected, held basic structure applies to Ninth Schedule laws.',
+    'AG can delegate cases to SG or ASGs when unavailable. Law Ministry provides administrative support to all central law officers.',
   ],
   comparisons: [
     {
@@ -66,6 +75,27 @@ export const attorneyGeneralRevision: SubjectRevision = {
         ['Parliament/Congress', 'Can speak in Parliament (Art 88)', 'Does not appear in Congress'],
       ],
     },
+    {
+      title: 'AG\'s Contempt Roles',
+      headers: ['Power', 'Scope', 'Key Feature'],
+      rows: [
+        ['Initiate contempt (suo motu)', 'Can initiate contempt proceedings before SC', 'Does not need government authorization'],
+        ['Consent for private contempt', 'Must grant consent for private party contempt in SC', 'Gatekeeping role — prevents frivolous petitions'],
+        ['Delegate to SG', 'SG can also initiate contempt in SC', 'SG has parallel but not identical power'],
+        ['State level', 'Advocate General plays same role for HC contempt', 'Under Section 15, Contempt of Courts Act 1971'],
+      ],
+    },
+    {
+      title: 'Key AG Tenure Records',
+      headers: ['AG', 'Period', 'Distinction'],
+      rows: [
+        ['M.C. Setalvad', '1950-1963', 'First AG; longest single tenure (13 years)'],
+        ['Soli Sorabjee', '1989-90, 1998-2004', 'Two separate terms; human rights champion'],
+        ['G.E. Vahanvati', '2009-2014', 'First person to serve as both SG and AG'],
+        ['K.K. Venugopal', '2017-2022', 'Senior-most advocate to hold office; Ayodhya case'],
+        ['R. Venkataramani', '2022-present', '16th AG; current incumbent'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -82,6 +112,16 @@ export const attorneyGeneralRevision: SubjectRevision = {
       title: 'AG\'s Restrictions — "DADC"',
       mnemonic: 'Don\'t Advise against govt, Don\'t Defend accused without permission, Don\'t accept Company directorships',
       explanation: 'Three key restrictions on the AG — all governed by convention/executive orders, not constitutional provisions.',
+    },
+    {
+      title: 'AG vs SG Key Difference — "Private Practice"',
+      mnemonic: 'AG CAN do private practice (with restrictions). SG CANNOT appear against government at all.',
+      explanation: 'The most tested distinction: AG has more freedom in private practice; SG is effectively a full-time government counsel with stricter restrictions.',
+    },
+    {
+      title: 'Landmark AG Arguments — "KMI-A"',
+      mnemonic: 'Kesavananda (basic structure, 1973), Minerva Mills (42nd Amdt, 1980), I.R. Coelho (9th Schedule, 2007), Aadhaar (2018)',
+      explanation: 'Four landmark constitutional cases where the AG presented the government\'s arguments before the Supreme Court.',
     },
   ],
 }

@@ -33,6 +33,19 @@ export const governanceReformsRevision: SubjectRevision = {
     'Decentralization: 73rd and 74th Amendments (1992) — Panchayati Raj and municipalities. 3Fs: Functions, Functionaries, Finances devolution to local bodies.',
     'Eleventh Schedule: 29 functions for Panchayats. Twelfth Schedule: 18 functions for municipalities. Many states have not effectively devolved these functions.',
     'New Pension Scheme (NPS, 2004): replaced defined benefit pension with contributory system for civil servants joining after 1 January 2004. Some states reverting to OPS.',
+    'Prakash Singh v. UOI (2006): SC directed 7 police reforms — State Security Commission, DGP merit appointment, minimum 2-year tenure, Police Complaints Authority, etc.',
+    'Police reforms: Most states have NOT complied fully with Prakash Singh directions. Model Police Act (2006) by Soli Sorabjee Committee remains largely unimplemented.',
+    'New criminal codes (1 July 2024): BNS replaced IPC, BNSS replaced CrPC, BSA replaced Evidence Act. Key features: zero FIR, mandatory videography, electronic evidence.',
+    'FRBM Act, 2003: fiscal deficit target 3% of GDP, revenue deficit 0%. N.K. Singh Committee (2017): recommended debt-to-GDP ratio of 40% for Centre, 20% for states.',
+    'GST (1 July 2017): 101st Amendment. Replaced 17 taxes. GST Council (Art 279A) = federal fiscal body. Centre + state finance ministers. Decisions by 75% majority.',
+    'Labour codes: 29 laws consolidated into 4 codes (Wages 2019, Industrial Relations 2020, Social Security 2020, OSH 2020). Not fully notified — states must frame rules.',
+    'IBC (2016): Insolvency and Bankruptcy Code. Time-bound resolution (180+90 days). Replaced BIFR. National Company Law Tribunal (NCLT) is adjudicating authority.',
+    'GeM (August 2016): Government e-Marketplace for public procurement. Crossed Rs 4 lakh crore cumulative transactions. Transparency in government purchases.',
+    'Plan/Non-Plan distinction abolished in Budget 2017-18 — ended the Planning Commission-era fiscal classification that distorted spending priorities.',
+    'Ease of Doing Business: India\'s rank improved from 142 (2014) to 63 (2020). Key reforms: IBC, company law changes, decriminalization of minor offences (Jan Vishwas Act 2023).',
+    'Jan Vishwas Act, 2023: Decriminalized 183 provisions across 42 Acts, converting criminal penalties to civil penalties. Major regulatory reform.',
+    'PRAGATI: PM\'s platform for direct review of government programmes and grievance redressal across ministries — periodic video conferences with secretaries and CMs.',
+    'Mission Karmayogi institutional architecture: PM\'s HR Council (apex), Capacity Building Commission (independent), iGOT platform (digital), Karmayogi Bharat (SPV).',
   ],
   comparisons: [
     {
@@ -67,6 +80,28 @@ export const governanceReformsRevision: SubjectRevision = {
         ['Model', 'UK Citizen\'s Charter (1991)', 'Indigenous — 2nd ARC recommendation'],
       ],
     },
+    {
+      title: 'Old Criminal Laws vs New Criminal Codes (2024)',
+      headers: ['Feature', 'Old (IPC/CrPC/Evidence)', 'New (BNS/BNSS/BSA)'],
+      rows: [
+        ['Origin', 'Colonial-era (1860, 1872, 1898)', 'Indian codes effective 1 July 2024'],
+        ['Key additions', 'N/A', 'Zero FIR, mandatory videography, electronic evidence'],
+        ['Sedition', 'Section 124A IPC', 'Section 152 BNS (modified)'],
+        ['Time-bound trials', 'Not mandated', 'Mandated for certain offences'],
+        ['Victim rights', 'Limited', 'Enhanced — progress updates, victim impact statements'],
+      ],
+    },
+    {
+      title: 'Key Fiscal Governance Reforms',
+      headers: ['Reform', 'Year', 'Key Feature'],
+      rows: [
+        ['FRBM Act', '2003', 'Fiscal deficit target 3% of GDP'],
+        ['GST', '2017', '101st Amendment; replaced 17 taxes; GST Council'],
+        ['IBC', '2016', 'Time-bound corporate insolvency resolution'],
+        ['Plan/Non-Plan abolition', '2017-18', 'Ended distortive expenditure classification'],
+        ['GeM', '2016', 'Online government procurement marketplace'],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -88,6 +123,11 @@ export const governanceReformsRevision: SubjectRevision = {
       title: 'Anti-Corruption Timeline — "CBI-CVC-Lokpal"',
       mnemonic: 'CBI (1963), CVC (1964/2003), Lokpal (2013 Act/2019 constituted)',
       explanation: 'Three key anti-corruption institutions and their establishment dates.',
+    },
+    {
+      title: 'Prakash Singh Police Reforms — 7 Directives',
+      mnemonic: 'SSC-DGP-IG-SIL-PEB-PCA-NSC — State Security Commission, DGP merit selection, IG 2-year tenure, Separate Investigation & Law Order, Police Establishment Board, Police Complaints Authority, National Security Commission',
+      explanation: 'Seven police reform directives from Prakash Singh v. UOI (2006) — most states non-compliant.',
     },
   ],
 }

@@ -33,6 +33,11 @@ export const subordinateCourtsRevision: SubjectRevision = {
     '14th Finance Commission (2015): recommended grants for judicial infrastructure. Centrally Sponsored Scheme for Development of Infrastructure Facilities for Judiciary provides funds for court buildings.',
     'All India Judges\' Association v. UOI (1993, 2002, 2016): SC gave multiple directions for improving service conditions, infrastructure, and filling vacancies in subordinate judiciary.',
     'Cornwallis Code (1793): first structured district court system in British India — separated revenue and judicial functions. Indian High Courts Act 1861: unified hierarchy under HC supervision.',
+    'Mediation Act, 2023: provides standalone legal framework for mediation in India. Pre-litigation mediation encouraged. Mediated settlements are enforceable as court decrees. Promotes institutional mediation centres.',
+    'Consumer Protection Act, 2019 key changes: e-filing, product liability (manufacturer/seller/service provider), unfair trade practice expanded, CCPA (Central Consumer Protection Authority) as regulatory body, mediation as alternative.',
+    'Fast Track Courts: initially created in 2000 for speedy disposal of long-pending sessions cases. Fast Track Special Courts (FTSCs) for rape/POCSO cases created in 2019 — time-bound disposal within 2 months.',
+    'BNS/BNSS/BSA (2023) key procedural changes: zero FIR (any police station), mandatory videography of crime scene and search, electronic evidence provisions expanded, time limits for charge sheet (90 days), plea bargaining expanded, summary trials for offences up to 3 years.',
+    'National Mission for Justice Delivery: launched 2011. Focuses on reducing pendency, filling vacancies, providing infrastructure. Sub-missions: court modernization, case flow management, mediation promotion.',
   ],
   comparisons: [
     {
@@ -55,6 +60,24 @@ export const subordinateCourtsRevision: SubjectRevision = {
         ['Mediation', 'HC Mediation Centres', 'Facilitator-assisted negotiation', 'Settlement = enforceable agreement'],
         ['Consumer Forum', 'Consumer Protection Act, 2019', '3-tier: District, State, National', 'Yes — to higher forum/SC'],
         ['Gram Nyayalaya', 'Gram Nyayalayas Act, 2008', 'Village-level; mobile courts', 'Yes — to Sessions Court/District Court'],
+      ],
+    },
+    {
+      title: 'E-Courts Project Phases',
+      headers: ['Phase', 'Period', 'Key Achievement'],
+      rows: [
+        ['Phase I', '2007-2015', 'Computerization of courts; hardware and connectivity'],
+        ['Phase II', '2015-2023', 'NJDG (National Judicial Data Grid); case information system'],
+        ['Phase III', '2023+', 'E-filing, virtual hearings, paperless courts, AI-assisted case management'],
+      ],
+    },
+    {
+      title: 'New Criminal Laws (2023) vs Old',
+      headers: ['New Law', 'Replaced', 'Year of Original', 'Key Change'],
+      rows: [
+        ['BNS', 'IPC', '1860', 'Rationalized offences; community service as punishment; sedition replaced with treason provisions'],
+        ['BNSS', 'CrPC', '1973', 'Zero FIR, mandatory videography, electronic evidence, time-bound charge sheet'],
+        ['BSA', 'Indian Evidence Act', '1872', 'Electronic records as primary evidence; expanded digital evidence admissibility'],
       ],
     },
     {
@@ -89,6 +112,11 @@ export const subordinateCourtsRevision: SubjectRevision = {
       title: 'AIJS Article — "312"',
       mnemonic: 'Art 312 = All India Judicial Service (requires RS 2/3 resolution — never implemented)',
       explanation: 'Article 312 allows creation of AIJS but requires a Rajya Sabha resolution supported by 2/3 majority. Despite decades of debate, it has never been implemented.',
+    },
+    {
+      title: 'BNS-BNSS-BSA — "New Criminal Codes 2023"',
+      mnemonic: 'BNS = Bharatiya Nyaya Sanhita (replaced IPC), BNSS = Bharatiya Nagarik Suraksha Sanhita (replaced CrPC), BSA = Bharatiya Sakshya Adhiniyam (replaced Evidence Act)',
+      explanation: 'Three new criminal laws enacted in 2023 replacing the colonial-era IPC (1860), CrPC (1973), and Evidence Act (1872).',
     },
   ],
 }

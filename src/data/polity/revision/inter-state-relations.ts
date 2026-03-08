@@ -30,6 +30,13 @@ export const interStateRelationsRevision: SubjectRevision = {
     'One Nation One Ration Card (ONORC): portability of food security benefits across states — key inter-state mobility reform for migrants.',
     'Art 19(1)(d) and (e): right to move freely and reside in any part of India. Combined with Art 301 and 261, creates unified national space.',
     'COVID-19 reverse migration crisis (2020): exposed vulnerability of inter-state migrant workers. Led to policy reforms on migrant worker registration and benefits portability.',
+    'Art 350A: state must provide mother-tongue instruction at primary level for linguistic minorities. Art 350B: Special Officer for Linguistic Minorities (Commissioner) appointed by President — reports to President through Union govt.',
+    'NIA (National Investigation Agency, 2008): concurrent jurisdiction across all states for scheduled offences (terrorism, WMD, fake currency, human trafficking) WITHOUT state consent — significant inroad into state policing power.',
+    'Cauvery Water Management Authority (CWMA) and Cauvery Water Regulation Committee (CWRC): judicially mandated by SC in 2018 for real-time monitoring of water releases between Karnataka and Tamil Nadu.',
+    'Post-GST inter-state trade: IGST on inter-state supplies (Art 269A), e-way bill for goods above Rs 50,000, Input Tax Credit chain across states, IGST settlement between originating and destination states. Petroleum, alcohol, electricity, real estate OUTSIDE GST.',
+    'Inter-State Council reconstituted 2021: Standing Committee of 15 members (4 Union Ministers + 11 CMs nominated by PM). Secretariat under Ministry of Home Affairs. ISC recommendations are advisory, not binding.',
+    'Dam Safety Act, 2021: National Dam Safety Authority with implications for inter-state rivers. Many dams are on inter-state rivers — safety coordination requires inter-state cooperation.',
+    'Three-Language Formula: Hindi, English, and a regional language in education. Southern states historically resist mandatory Hindi. 92nd Amendment (2003): added Bodo, Dogri, Maithili, Santhali to Eighth Schedule.',
   ],
   comparisons: [
     {
@@ -55,6 +62,28 @@ export const interStateRelationsRevision: SubjectRevision = {
         ['Ravi-Beas', '1986', 'Punjab, Haryana, Rajasthan', 'Ongoing; SYL Canal dispute unresolved'],
         ['Cauvery', '1990', 'Karnataka, TN, Kerala, Puducherry', 'Final award 2007; SC upheld 2018'],
         ['Mahadayi', '2010', 'Goa, Karnataka, Maharashtra', 'Award given 2018; implementation pending'],
+      ],
+    },
+    {
+      title: 'Inter-State Mechanisms — Constitutional vs Statutory',
+      headers: ['Body', 'Basis', 'Chairman', 'Function', 'Key Feature'],
+      rows: [
+        ['Inter-State Council', 'Constitutional (Art 263)', 'PM', 'Investigate disputes, coordinate policy', 'Advisory; met only 12 times in 33 years'],
+        ['Zonal Councils (5)', 'Statutory (SRA 1956)', 'Union Home Minister', 'Border disputes, economic planning', 'HM chairs ALL 5 zones'],
+        ['NEC', 'Statutory (NEC Act 1971)', 'Union DoNER Minister', 'NE development planning', '8 states; broader than Zonal Councils'],
+        ['GST Council', 'Constitutional (Art 279A)', 'Union FM', 'GST rates, exemptions, rules', 'Centre 1/3, states 2/3, 3/4 to pass'],
+        ['Water Disputes Tribunal', 'Statutory (ISWD Act 1956)', 'Retired SC/HC judge', 'Adjudicate inter-state water disputes', 'Final and binding; courts barred (Art 262)'],
+        ['Finance Commission', 'Constitutional (Art 280)', 'Appointed by President', 'Tax devolution, grants-in-aid', 'Every 5 years; currently 16th FC'],
+      ],
+    },
+    {
+      title: 'Border Disputes — Key Controversies',
+      headers: ['Dispute', 'States', 'Core Issue', 'Status'],
+      rows: [
+        ['Belagavi (Belgaum)', 'Maharashtra-Karnataka', 'Marathi-speaking areas in Karnataka post-1956', 'Pending in SC under Art 131'],
+        ['SYL Canal', 'Punjab-Haryana', 'Punjab refuses to complete canal to supply water to Haryana', 'Ongoing; Punjab denotified land'],
+        ['Assam-Mizoram', 'Assam-Mizoram', 'Disputed border in Lailapur area', 'Clashes in July 2021; Central mediation'],
+        ['Assam-Nagaland', 'Assam-Nagaland', 'Forest border in Sivasagar and Jorhat', 'Periodic tensions; Central mediation'],
       ],
     },
     {
@@ -90,6 +119,11 @@ export const interStateRelationsRevision: SubjectRevision = {
       title: 'NEC Eight States — "AAMM-MNST"',
       mnemonic: 'Assam, Arunachal Pradesh, Manipur, Meghalaya, Mizoram, Nagaland, Sikkim (added 2002), Tripura',
       explanation: 'The eight states covered by the North Eastern Council.',
+    },
+    {
+      title: 'Art 301-307 Quick — "301=Free, 304=Restrict, 307=Authority(Never)"',
+      mnemonic: 'Art 301: trade free throughout India. Art 302: Parliament can restrict (public interest). Art 303: no discrimination. Art 304: state taxes/restrictions (needs Presidential sanction). Art 307: authority for enforcement (never appointed).',
+      explanation: 'The freedom of trade articles in Part XIII — Art 301 is the basic guarantee, Art 304 is the state exception, Art 307 is the unexercised enforcement provision.',
     },
   ],
 }
