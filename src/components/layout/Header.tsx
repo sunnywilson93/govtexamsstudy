@@ -25,7 +25,6 @@ const NAV_LINKS: NavLink[] = [
 
 const UTIL_LINKS: NavLink[] = [
   { href: '/practice', label: 'Practice', colorClass: 'hover:text-primary' },
-  { href: '/dashboard', label: 'Dashboard', colorClass: 'hover:text-primary' },
 ]
 
 export function Header() {
@@ -83,14 +82,13 @@ export function Header() {
           ))}
 
           {streak > 0 && (
-            <Link
-              href="/dashboard"
-              className="ml-1 flex items-center gap-1 rounded-full bg-secondary-50 px-2.5 py-1 text-xs font-semibold text-secondary-700 no-underline transition-colors hover:bg-secondary-100"
+            <span
+              className="ml-1 flex items-center gap-1 rounded-full bg-secondary-50 px-2.5 py-1 text-xs font-semibold text-secondary-700"
               aria-label={`${streak} day streak`}
             >
               <Flame size={12} />
               <span className="font-mono">{streak}</span>
-            </Link>
+            </span>
           )}
         </nav>
 
