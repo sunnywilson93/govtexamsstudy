@@ -66,6 +66,72 @@ const REASONING_TOPICS = [
   'counting-figures',
 ]
 
+const POLITY_TOPICS = [
+  'historical-background',
+  'constituent-assembly',
+  'preamble',
+  'union-territory',
+  'citizenship',
+  'fundamental-rights',
+  'dpsp',
+  'fundamental-duties',
+  'president-vp',
+  'prime-minister',
+  'parliament',
+  'governor',
+  'chief-minister',
+  'state-legislature',
+  'supreme-court',
+  'high-courts',
+  'tribunals',
+  'centre-state-relations',
+  'inter-state-relations',
+  'emergency-provisions',
+  'amendment-procedure',
+  'panchayati-raj',
+  'municipalities',
+  'election-commission',
+  'cag',
+  'upsc-spsc',
+  'finance-commission',
+  'statutory-bodies',
+  'anti-defection',
+  'scheduled-tribal-areas',
+]
+
+const GEOGRAPHY_TOPICS = [
+  'physiography',
+  'drainage-systems',
+  'climate-monsoon',
+  'soils',
+  'natural-vegetation',
+  'biodiversity',
+  'islands-coasts',
+  'agriculture',
+  'irrigation',
+  'minerals',
+  'energy',
+  'industries',
+  'transport',
+  'population',
+  'urbanization',
+  'tribes',
+  'migration',
+  'geomorphology',
+  'climatology',
+  'oceanography',
+  'world-mapping',
+  'ecosystems',
+  'environmental-pollution',
+  'climate-change',
+  'protected-areas',
+  'biodiversity-conservation',
+  'disaster-management',
+  'environmental-legislation',
+  'water-resources',
+  'land-resources',
+]
+
 const HISTORY_TOPICS = [
   'indus-valley',
   'vedic-period',
@@ -104,6 +170,39 @@ const HISTORY_TOPICS = [
   'heritage-sites',
 ]
 
+const ECONOMICS_TOPICS = [
+  'basic-concepts',
+  'national-income',
+  'money-supply',
+  'inflation',
+  'poverty-unemployment',
+  'rbi',
+  'banking-system',
+  'financial-markets',
+  'banking-npas',
+  'insurance',
+  'union-budget',
+  'fiscal-policy',
+  'tax-system',
+  'public-debt',
+  'public-expenditure',
+  'foreign-trade',
+  'exchange-rate',
+  'international-organizations',
+  'fdi-fii',
+  'planning',
+  'economic-reforms',
+  'agriculture-economy',
+  'industry-policy',
+  'infrastructure',
+  'inclusive-growth',
+  'government-schemes',
+  'digital-economy',
+  'sustainable-development',
+  'social-security',
+  'demographic-dividend',
+]
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
 
@@ -131,9 +230,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const quantRoutes = QUANT_TOPICS.map((slug) => `/quant/${slug}`)
   const reasoningRoutes = REASONING_TOPICS.map((slug) => `/reasoning/${slug}`)
+  const polityRoutes = POLITY_TOPICS.map((slug) => `/polity/${slug}`)
   const historyRoutes = HISTORY_TOPICS.map((slug) => `/history/${slug}`)
+  const geographyRoutes = GEOGRAPHY_TOPICS.map((slug) => `/geography/${slug}`)
+  const economicsRoutes = ECONOMICS_TOPICS.map((slug) => `/economics/${slug}`)
 
-  const allRoutes = [...staticRoutes, ...quantRoutes, ...reasoningRoutes, ...historyRoutes]
+  const allRoutes = [...staticRoutes, ...quantRoutes, ...reasoningRoutes, ...polityRoutes, ...historyRoutes, ...geographyRoutes, ...economicsRoutes]
 
   return allRoutes.map((route) => {
     const depth = route.split('/').filter(Boolean).length
