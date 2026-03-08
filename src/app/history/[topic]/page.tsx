@@ -13,6 +13,10 @@ import { postMauryaConcept } from '@/data/history/concepts/post-maurya'
 import { sangamAgeConcept } from '@/data/history/concepts/sangam-age'
 import { guptaEmpireConcept } from '@/data/history/concepts/gupta-empire'
 import { southIndianDynastiesConcept } from '@/data/history/concepts/south-indian-dynasties'
+import { prehistoricIndiaConcept } from '@/data/history/concepts/prehistoric-india'
+import { philosophicalSchoolsConcept } from '@/data/history/concepts/philosophical-schools'
+import { cholaDynastyConcept } from '@/data/history/concepts/chola-dynasty'
+import { pallavaDynastyConcept } from '@/data/history/concepts/pallava-dynasty'
 
 import { indusValleyRevision } from '@/data/history/revision/indus-valley'
 import { vedicPeriodRevision } from '@/data/history/revision/vedic-period'
@@ -23,6 +27,10 @@ import { postMauryaRevision } from '@/data/history/revision/post-maurya'
 import { sangamAgeRevision } from '@/data/history/revision/sangam-age'
 import { guptaEmpireRevision } from '@/data/history/revision/gupta-empire'
 import { southIndianDynastiesRevision } from '@/data/history/revision/south-indian-dynasties'
+import { prehistoricIndiaRevision } from '@/data/history/revision/prehistoric-india'
+import { philosophicalSchoolsRevision } from '@/data/history/revision/philosophical-schools'
+import { cholaDynastyRevision } from '@/data/history/revision/chola-dynasty'
+import { pallavaDynastyRevision } from '@/data/history/revision/pallava-dynasty'
 
 import { indusValleyProblems } from '@/data/history/problems/indus-valley-problems'
 import { vedicPeriodProblems } from '@/data/history/problems/vedic-period-problems'
@@ -33,6 +41,10 @@ import { postMauryaProblems } from '@/data/history/problems/post-maurya-problems
 import { sangamAgeProblems } from '@/data/history/problems/sangam-age-problems'
 import { guptaEmpireProblems } from '@/data/history/problems/gupta-empire-problems'
 import { southIndianDynastiesProblems } from '@/data/history/problems/south-indian-dynasties-problems'
+import { prehistoricIndiaProblems } from '@/data/history/problems/prehistoric-india-problems'
+import { philosophicalSchoolsProblems } from '@/data/history/problems/philosophical-schools-problems'
+import { cholaDynastyProblems } from '@/data/history/problems/chola-dynasty-problems'
+import { pallavaDynastyProblems } from '@/data/history/problems/pallava-dynasty-problems'
 
 // Medieval India
 import { delhiSultanateConcept } from '@/data/history/concepts/delhi-sultanate'
@@ -41,6 +53,7 @@ import { bhaktiSufiConcept } from '@/data/history/concepts/bhakti-sufi'
 import { mughalEmpireConcept } from '@/data/history/concepts/mughal-empire'
 import { marathaEmpireConcept } from '@/data/history/concepts/maratha-empire'
 import { medievalKingdomsConcept } from '@/data/history/concepts/medieval-kingdoms'
+import { rajputKingdomsConcept } from '@/data/history/concepts/rajput-kingdoms'
 
 import { delhiSultanateRevision } from '@/data/history/revision/delhi-sultanate'
 import { vijayanagaraBahmaniRevision } from '@/data/history/revision/vijayanagara-bahmani'
@@ -48,6 +61,7 @@ import { bhaktiSufiRevision } from '@/data/history/revision/bhakti-sufi'
 import { mughalEmpireRevision } from '@/data/history/revision/mughal-empire'
 import { marathaEmpireRevision } from '@/data/history/revision/maratha-empire'
 import { medievalKingdomsRevision } from '@/data/history/revision/medieval-kingdoms'
+import { rajputKingdomsRevision } from '@/data/history/revision/rajput-kingdoms'
 
 import { delhiSultanateProblems } from '@/data/history/problems/delhi-sultanate-problems'
 import { vijayanagaraBahmaniProblems } from '@/data/history/problems/vijayanagara-bahmani-problems'
@@ -55,6 +69,7 @@ import { bhaktiSufiProblems } from '@/data/history/problems/bhakti-sufi-problems
 import { mughalEmpireProblems } from '@/data/history/problems/mughal-empire-problems'
 import { marathaEmpireProblems } from '@/data/history/problems/maratha-empire-problems'
 import { medievalKingdomsProblems } from '@/data/history/problems/medieval-kingdoms-problems'
+import { rajputKingdomsProblems } from '@/data/history/problems/rajput-kingdoms-problems'
 
 // Modern India
 import { europeanCompaniesConcept } from '@/data/history/concepts/european-companies'
@@ -68,6 +83,11 @@ import { gandhianMovementsConcept } from '@/data/history/concepts/gandhian-movem
 import { revolutionaryMovementConcept } from '@/data/history/concepts/revolutionary-movement'
 import { constitutionalDevelopmentConcept } from '@/data/history/concepts/constitutional-development'
 import { tribalPeasantMovementsConcept } from '@/data/history/concepts/tribal-peasant-movements'
+import { angloWarsConcept } from '@/data/history/concepts/anglo-wars'
+import { landRevenueSystemsConcept } from '@/data/history/concepts/land-revenue-systems'
+import { pressEducationBritishConcept } from '@/data/history/concepts/press-education-british'
+import { casteReformMovementsConcept } from '@/data/history/concepts/caste-reform-movements'
+import { womensMovementsConcept } from '@/data/history/concepts/womens-movements'
 
 import { europeanCompaniesRevision } from '@/data/history/revision/european-companies'
 import { britishExpansionRevision } from '@/data/history/revision/british-expansion'
@@ -80,6 +100,11 @@ import { gandhianMovementsRevision } from '@/data/history/revision/gandhian-move
 import { revolutionaryMovementRevision } from '@/data/history/revision/revolutionary-movement'
 import { constitutionalDevelopmentRevision } from '@/data/history/revision/constitutional-development'
 import { tribalPeasantMovementsRevision } from '@/data/history/revision/tribal-peasant-movements'
+import { angloWarsRevision } from '@/data/history/revision/anglo-wars'
+import { landRevenueSystemsRevision } from '@/data/history/revision/land-revenue-systems'
+import { pressEducationBritishRevision } from '@/data/history/revision/press-education-british'
+import { casteReformMovementsRevision } from '@/data/history/revision/caste-reform-movements'
+import { womensMovementsRevision } from '@/data/history/revision/womens-movements'
 
 import { europeanCompaniesProblems } from '@/data/history/problems/european-companies-problems'
 import { britishExpansionProblems } from '@/data/history/problems/british-expansion-problems'
@@ -92,22 +117,36 @@ import { gandhianMovementsProblems } from '@/data/history/problems/gandhian-move
 import { revolutionaryMovementProblems } from '@/data/history/problems/revolutionary-movement-problems'
 import { constitutionalDevelopmentProblems } from '@/data/history/problems/constitutional-development-problems'
 import { tribalPeasantMovementsProblems } from '@/data/history/problems/tribal-peasant-movements-problems'
+import { angloWarsProblems } from '@/data/history/problems/anglo-wars-problems'
+import { landRevenueSystemsProblems } from '@/data/history/problems/land-revenue-systems-problems'
+import { pressEducationBritishProblems } from '@/data/history/problems/press-education-british-problems'
+import { casteReformMovementsProblems } from '@/data/history/problems/caste-reform-movements-problems'
+import { womensMovementsProblems } from '@/data/history/problems/womens-movements-problems'
 
 // Post-Independence
 import { independencePartitionConcept } from '@/data/history/concepts/independence-partition'
 import { princelyStatesConcept } from '@/data/history/concepts/princely-states'
 import { nationBuildingConcept } from '@/data/history/concepts/nation-building'
 import { warsForeignPolicyConcept } from '@/data/history/concepts/wars-foreign-policy'
+import { postIndependenceConsolidationConcept } from '@/data/history/concepts/post-independence-consolidation'
+import { nonAlignedMovementConcept } from '@/data/history/concepts/non-aligned-movement'
+import { greenWhiteRevolutionConcept } from '@/data/history/concepts/green-white-revolution'
 
 import { independencePartitionRevision } from '@/data/history/revision/independence-partition'
 import { princelyStatesRevision } from '@/data/history/revision/princely-states'
 import { nationBuildingRevision } from '@/data/history/revision/nation-building'
 import { warsForeignPolicyRevision } from '@/data/history/revision/wars-foreign-policy'
+import { postIndependenceConsolidationRevision } from '@/data/history/revision/post-independence-consolidation'
+import { nonAlignedMovementRevision } from '@/data/history/revision/non-aligned-movement'
+import { greenWhiteRevolutionRevision } from '@/data/history/revision/green-white-revolution'
 
 import { independencePartitionProblems } from '@/data/history/problems/independence-partition-problems'
 import { princelyStatesProblems } from '@/data/history/problems/princely-states-problems'
 import { nationBuildingProblems } from '@/data/history/problems/nation-building-problems'
 import { warsForeignPolicyProblems } from '@/data/history/problems/wars-foreign-policy-problems'
+import { postIndependenceConsolidationProblems } from '@/data/history/problems/post-independence-consolidation-problems'
+import { nonAlignedMovementProblems } from '@/data/history/problems/non-aligned-movement-problems'
+import { greenWhiteRevolutionProblems } from '@/data/history/problems/green-white-revolution-problems'
 
 // Art & Culture
 import { indianArchitectureConcept } from '@/data/history/concepts/indian-architecture'
@@ -115,18 +154,24 @@ import { paintingsSculptureConcept } from '@/data/history/concepts/paintings-scu
 import { musicDanceConcept } from '@/data/history/concepts/music-dance'
 import { indianLiteratureConcept } from '@/data/history/concepts/indian-literature'
 import { heritageSitesConcept } from '@/data/history/concepts/heritage-sites'
+import { indianCinemaTheatreConcept } from '@/data/history/concepts/indian-cinema-theatre'
+import { fairsFestivalsConcept } from '@/data/history/concepts/fairs-festivals'
 
 import { indianArchitectureRevision } from '@/data/history/revision/indian-architecture'
 import { paintingsSculptureRevision } from '@/data/history/revision/paintings-sculpture'
 import { musicDanceRevision } from '@/data/history/revision/music-dance'
 import { indianLiteratureRevision } from '@/data/history/revision/indian-literature'
 import { heritageSitesRevision } from '@/data/history/revision/heritage-sites'
+import { indianCinemaTheatreRevision } from '@/data/history/revision/indian-cinema-theatre'
+import { fairsFestivalsRevision } from '@/data/history/revision/fairs-festivals'
 
 import { indianArchitectureProblems } from '@/data/history/problems/indian-architecture-problems'
 import { paintingsSculptureProblems } from '@/data/history/problems/paintings-sculpture-problems'
 import { musicDanceProblems } from '@/data/history/problems/music-dance-problems'
 import { indianLiteratureProblems } from '@/data/history/problems/indian-literature-problems'
 import { heritageSitesProblems } from '@/data/history/problems/heritage-sites-problems'
+import { indianCinemaTheatreProblems } from '@/data/history/problems/indian-cinema-theatre-problems'
+import { fairsFestivalsProblems } from '@/data/history/problems/fairs-festivals-problems'
 
 interface TopicData {
   concept: HistoryConcept
@@ -201,6 +246,34 @@ const TOPIC_DATA: Record<string, TopicData> = {
     label: 'South Indian Dynasties',
     description: 'South Indian Dynasties for government exams. Chalukyas, Pallavas, Rashtrakutas, Cholas with notes, revision, and PYQs.',
   },
+  'prehistoric-india': {
+    concept: prehistoricIndiaConcept,
+    revision: prehistoricIndiaRevision,
+    problems: prehistoricIndiaProblems,
+    label: 'Prehistoric India',
+    description: 'Prehistoric India for UPSC & SSC. Palaeolithic, Mesolithic, Neolithic, Chalcolithic ages with notes, revision, and PYQs.',
+  },
+  'philosophical-schools': {
+    concept: philosophicalSchoolsConcept,
+    revision: philosophicalSchoolsRevision,
+    problems: philosophicalSchoolsProblems,
+    label: 'Indian Philosophical Schools',
+    description: 'Six Schools of Indian Philosophy for government exams. Nyaya, Vaisheshika, Samkhya, Yoga, Mimamsa, Vedanta with notes, revision, and PYQs.',
+  },
+  'chola-dynasty': {
+    concept: cholaDynastyConcept,
+    revision: cholaDynastyRevision,
+    problems: cholaDynastyProblems,
+    label: 'Chola Dynasty',
+    description: 'Chola Dynasty for UPSC & SSC. Rajaraja I, Rajendra I, naval power, temple architecture with notes, revision, and PYQs.',
+  },
+  'pallava-dynasty': {
+    concept: pallavaDynastyConcept,
+    revision: pallavaDynastyRevision,
+    problems: pallavaDynastyProblems,
+    label: 'Pallava Dynasty',
+    description: 'Pallava Dynasty for government exams. Mahabalipuram, Kanchipuram, rock-cut architecture with notes, revision, and PYQs.',
+  },
   'delhi-sultanate': {
     concept: delhiSultanateConcept,
     revision: delhiSultanateRevision,
@@ -242,6 +315,13 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: medievalKingdomsProblems,
     label: 'Other Medieval Kingdoms',
     description: 'Medieval Kingdoms for government exams. Rajputs, Sikhs, Ahom kingdom with notes, revision, and PYQs.',
+  },
+  'rajput-kingdoms': {
+    concept: rajputKingdomsConcept,
+    revision: rajputKingdomsRevision,
+    problems: rajputKingdomsProblems,
+    label: 'Rajput Kingdoms',
+    description: 'Rajput Kingdoms for UPSC & SSC. Pratiharas, Chahamanas, Rajput polity, resistance to invasions with notes, revision, and PYQs.',
   },
   // Modern India
   'european-companies': {
@@ -321,6 +401,41 @@ const TOPIC_DATA: Record<string, TopicData> = {
     label: 'Tribal & Peasant Movements',
     description: 'Tribal & Peasant Movements for UPSC & SSC. Santhal, Munda, Indigo, Moplah with notes, revision, and PYQs.',
   },
+  'anglo-wars': {
+    concept: angloWarsConcept,
+    revision: angloWarsRevision,
+    problems: angloWarsProblems,
+    label: 'Anglo-Mysore, Anglo-Maratha & Anglo-Sikh Wars',
+    description: 'Anglo Wars for UPSC & SSC. Anglo-Mysore, Anglo-Maratha, Anglo-Sikh wars with causes, treaties, and PYQs.',
+  },
+  'land-revenue-systems': {
+    concept: landRevenueSystemsConcept,
+    revision: landRevenueSystemsRevision,
+    problems: landRevenueSystemsProblems,
+    label: 'Land Revenue Systems',
+    description: 'Land Revenue Systems for government exams. Permanent Settlement, Ryotwari, Mahalwari with notes, revision, and PYQs.',
+  },
+  'press-education-british': {
+    concept: pressEducationBritishConcept,
+    revision: pressEducationBritishRevision,
+    problems: pressEducationBritishProblems,
+    label: 'Press & Education Under British Rule',
+    description: 'Press & Education under British for UPSC & SSC. Vernacular Press Act, Wood Despatch with notes, revision, and PYQs.',
+  },
+  'caste-reform-movements': {
+    concept: casteReformMovementsConcept,
+    revision: casteReformMovementsRevision,
+    problems: casteReformMovementsProblems,
+    label: 'Caste Reform & Anti-Caste Movements',
+    description: 'Caste Reform Movements for government exams. Jyotirao Phule, Ambedkar, Periyar, SNDP with notes, revision, and PYQs.',
+  },
+  'womens-movements': {
+    concept: womensMovementsConcept,
+    revision: womensMovementsRevision,
+    problems: womensMovementsProblems,
+    label: "Women's Movements in Modern India",
+    description: "Women's Movements for UPSC & SSC. Sati abolition, widow remarriage, women's organizations with notes, revision, and PYQs.",
+  },
   // Post-Independence
   'independence-partition': {
     concept: independencePartitionConcept,
@@ -349,6 +464,27 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: warsForeignPolicyProblems,
     label: 'Wars & Foreign Policy',
     description: 'Wars & Foreign Policy for UPSC & SSC. 1962, 1965, 1971, Non-Alignment with notes, revision, and PYQs.',
+  },
+  'post-independence-consolidation': {
+    concept: postIndependenceConsolidationConcept,
+    revision: postIndependenceConsolidationRevision,
+    problems: postIndependenceConsolidationProblems,
+    label: 'Post-Independence Consolidation',
+    description: 'Post-Independence Consolidation for government exams. Constitution, FYPs, linguistic states, 1962 war with notes, revision, and PYQs.',
+  },
+  'non-aligned-movement': {
+    concept: nonAlignedMovementConcept,
+    revision: nonAlignedMovementRevision,
+    problems: nonAlignedMovementProblems,
+    label: 'Non-Aligned Movement & Foreign Policy',
+    description: 'NAM & Foreign Policy for UPSC & SSC. Panchsheel, Belgrade, Bandung, Indo-Soviet Treaty with notes, revision, and PYQs.',
+  },
+  'green-white-revolution': {
+    concept: greenWhiteRevolutionConcept,
+    revision: greenWhiteRevolutionRevision,
+    problems: greenWhiteRevolutionProblems,
+    label: 'Green, White & Other Revolutions',
+    description: 'Agricultural Revolutions for government exams. Green, White, Blue, Yellow revolutions with notes, revision, and PYQs.',
   },
   // Art & Culture
   'indian-architecture': {
@@ -385,6 +521,20 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: heritageSitesProblems,
     label: 'UNESCO World Heritage Sites',
     description: 'UNESCO Heritage Sites in India for UPSC & SSC. Key sites, significance with notes, revision, and PYQs.',
+  },
+  'indian-cinema-theatre': {
+    concept: indianCinemaTheatreConcept,
+    revision: indianCinemaTheatreRevision,
+    problems: indianCinemaTheatreProblems,
+    label: 'Indian Cinema & Theatre',
+    description: 'Indian Cinema & Theatre for government exams. Phalke, Satyajit Ray, Natyashastra, folk theatre with notes, revision, and PYQs.',
+  },
+  'fairs-festivals': {
+    concept: fairsFestivalsConcept,
+    revision: fairsFestivalsRevision,
+    problems: fairsFestivalsProblems,
+    label: 'Indian Fairs & Festivals',
+    description: 'Indian Fairs & Festivals for UPSC & SSC. Kumbh Mela, harvest festivals, tribal festivals with notes, revision, and PYQs.',
   },
 }
 

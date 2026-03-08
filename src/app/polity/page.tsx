@@ -55,6 +55,18 @@ const SECTIONS: Section[] = [
         description: 'Acquisition, termination, Art 5-11, CAA.',
         hasTabs: true,
       },
+      {
+        href: '/polity/official-language',
+        title: 'Official Language',
+        description: 'Art 343-351, Hindi-English, 8th Schedule, three-language formula.',
+        hasTabs: true,
+      },
+      {
+        href: '/polity/comparison-constitutions',
+        title: 'Comparison of Constitutions',
+        description: 'Sources borrowed from UK, USA, Ireland, Australia, Canada, and more.',
+        hasTabs: true,
+      },
     ],
   },
   {
@@ -77,6 +89,12 @@ const SECTIONS: Section[] = [
         href: '/polity/fundamental-duties',
         title: 'Fundamental Duties',
         description: 'Art 51A, 11 duties, Swaran Singh Committee.',
+        hasTabs: true,
+      },
+      {
+        href: '/polity/rights-issues',
+        title: 'Rights & Contemporary Issues',
+        description: 'Privacy, RTE, NFSA, EWS reservation, SC landmark verdicts on rights.',
         hasTabs: true,
       },
     ],
@@ -103,6 +121,12 @@ const SECTIONS: Section[] = [
         description: 'Lok Sabha, Rajya Sabha, sessions, bills.',
         hasTabs: true,
       },
+      {
+        href: '/polity/attorney-general',
+        title: 'Attorney General of India',
+        description: 'Art 76, appointment, duties, rights, AG vs Solicitor General.',
+        hasTabs: true,
+      },
     ],
   },
   {
@@ -127,6 +151,30 @@ const SECTIONS: Section[] = [
         description: 'Vidhan Sabha, Vidhan Parishad, legislation.',
         hasTabs: true,
       },
+      {
+        href: '/polity/advocate-general',
+        title: 'Advocate General',
+        description: 'Art 165, appointment, role, AG vs Advocate General comparison.',
+        hasTabs: true,
+      },
+    ],
+  },
+  {
+    heading: 'Parliament',
+    subheading: 'Committees, privileges, and the inner workings of the legislature',
+    topics: [
+      {
+        href: '/polity/parliamentary-committees',
+        title: 'Parliamentary Committees',
+        description: 'Standing, select, joint committees, PAC, estimates, DRSCs.',
+        hasTabs: true,
+      },
+      {
+        href: '/polity/parliamentary-privileges',
+        title: 'Parliamentary Privileges',
+        description: 'Art 105 & 194, freedom of speech, breach of privilege, codification.',
+        hasTabs: true,
+      },
     ],
   },
   {
@@ -149,6 +197,24 @@ const SECTIONS: Section[] = [
         href: '/polity/tribunals',
         title: 'Tribunals',
         description: 'CAT, SAT, NCLT, Art 323A & 323B.',
+        hasTabs: true,
+      },
+      {
+        href: '/polity/judicial-review',
+        title: 'Judicial Review',
+        description: 'Art 13, 32, 226, constitutional validity, US vs India comparison.',
+        hasTabs: true,
+      },
+      {
+        href: '/polity/basic-structure',
+        title: 'Basic Structure Doctrine',
+        description: 'Kesavananda Bharati, key features, evolution of the doctrine.',
+        hasTabs: true,
+      },
+      {
+        href: '/polity/subordinate-courts',
+        title: 'Subordinate Courts',
+        description: 'District courts, Lok Adalats, Art 233-237, judicial hierarchy.',
         hasTabs: true,
       },
     ],
@@ -181,6 +247,12 @@ const SECTIONS: Section[] = [
         description: 'Art 368, three types, basic structure.',
         hasTabs: true,
       },
+      {
+        href: '/polity/special-provisions-states',
+        title: 'Special Provisions for States',
+        description: 'Art 370 (abrogated), Art 371-series, J&K, NE states, special status.',
+        hasTabs: true,
+      },
     ],
   },
   {
@@ -197,6 +269,12 @@ const SECTIONS: Section[] = [
         href: '/polity/municipalities',
         title: 'Municipalities',
         description: '74th Amendment, types, 12th Schedule.',
+        hasTabs: true,
+      },
+      {
+        href: '/polity/cooperative-societies',
+        title: 'Cooperative Societies',
+        description: '97th Amendment, Art 243ZH-ZT, Part IXB, NAFED, NCDC.',
         hasTabs: true,
       },
     ],
@@ -245,6 +323,66 @@ const SECTIONS: Section[] = [
         href: '/polity/scheduled-tribal-areas',
         title: 'Scheduled & Tribal Areas',
         description: 'Fifth & Sixth Schedules, ADCs, PESA.',
+        hasTabs: true,
+      },
+      {
+        href: '/polity/niti-aayog',
+        title: 'NITI Aayog',
+        description: 'Replacement of Planning Commission, composition, functions, indices.',
+        hasTabs: true,
+      },
+      {
+        href: '/polity/national-commissions',
+        title: 'National Commissions',
+        description: 'NCSC, NCST, NCBC, NCM, NCW — constitutional and statutory.',
+        hasTabs: true,
+      },
+      {
+        href: '/polity/lokpal-lokayuktas',
+        title: 'Lokpal & Lokayuktas',
+        description: 'Anti-corruption ombudsmen, 2013 Act, state Lokayuktas.',
+        hasTabs: true,
+      },
+    ],
+  },
+  {
+    heading: 'Political Process',
+    subheading: 'Political parties, pressure groups, and electoral representation',
+    topics: [
+      {
+        href: '/polity/political-parties',
+        title: 'Political Parties',
+        description: 'National & state parties, recognition criteria, anti-defection, ECI role.',
+        hasTabs: true,
+      },
+      {
+        href: '/polity/pressure-groups',
+        title: 'Pressure Groups',
+        description: 'Types, methods, business groups, trade unions, role in Indian democracy.',
+        hasTabs: true,
+      },
+      {
+        href: '/polity/representation-people',
+        title: 'Representation of People',
+        description: 'RPA 1950 & 1951, election offences, NOTA, electoral reforms.',
+        hasTabs: true,
+      },
+    ],
+  },
+  {
+    heading: 'Governance & Transparency',
+    subheading: 'Right to Information, e-governance, and administrative reforms',
+    topics: [
+      {
+        href: '/polity/rti-act',
+        title: 'RTI Act, 2005',
+        description: 'Sec 2-31, CIC, SIC, exemptions, 2019 amendment.',
+        hasTabs: true,
+      },
+      {
+        href: '/polity/governance-reforms',
+        title: 'Governance Reforms',
+        description: 'ARC reports, Digital India, DBT, Mission Karmayogi, lateral entry.',
         hasTabs: true,
       },
     ],

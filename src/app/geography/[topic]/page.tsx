@@ -129,6 +129,102 @@ import { landResourcesRevision } from '@/data/geography/revision/land-resources'
 import { waterResourcesProblems } from '@/data/geography/problems/water-resources-problems'
 import { landResourcesProblems } from '@/data/geography/problems/land-resources-problems'
 
+// Geomorphic Processes — Concepts
+import { plateTectonicsConcept } from '@/data/geography/concepts/plate-tectonics'
+import { rocksMineralsTypesConcept } from '@/data/geography/concepts/rocks-minerals-types'
+import { weatheringErosionConcept } from '@/data/geography/concepts/weathering-erosion'
+import { glacialLandformsConcept } from '@/data/geography/concepts/glacial-landforms'
+import { fluvialLandformsConcept } from '@/data/geography/concepts/fluvial-landforms'
+import { aeolianLandformsConcept } from '@/data/geography/concepts/aeolian-landforms'
+
+// Geomorphic Processes — Revision
+import { plateTectonicsRevision } from '@/data/geography/revision/plate-tectonics'
+import { rocksMineralsTypesRevision } from '@/data/geography/revision/rocks-minerals-types'
+import { weatheringErosionRevision } from '@/data/geography/revision/weathering-erosion'
+import { glacialLandformsRevision } from '@/data/geography/revision/glacial-landforms'
+import { fluvialLandformsRevision } from '@/data/geography/revision/fluvial-landforms'
+import { aeolianLandformsRevision } from '@/data/geography/revision/aeolian-landforms'
+
+// Geomorphic Processes — Problems
+import { plateTectonicsProblems } from '@/data/geography/problems/plate-tectonics-problems'
+import { rocksMineralsTypesProblems } from '@/data/geography/problems/rocks-minerals-types-problems'
+import { weatheringErosionProblems } from '@/data/geography/problems/weathering-erosion-problems'
+import { glacialLandformsProblems } from '@/data/geography/problems/glacial-landforms-problems'
+import { fluvialLandformsProblems } from '@/data/geography/problems/fluvial-landforms-problems'
+import { aeolianLandformsProblems } from '@/data/geography/problems/aeolian-landforms-problems'
+
+// Atmosphere & Climate — Concepts
+import { atmosphericCompositionConcept } from '@/data/geography/concepts/atmospheric-composition'
+import { pressureBeltsWindsConcept } from '@/data/geography/concepts/pressure-belts-winds'
+import { cyclonesConcept } from '@/data/geography/concepts/cyclones'
+
+// Atmosphere & Climate — Revision
+import { atmosphericCompositionRevision } from '@/data/geography/revision/atmospheric-composition'
+import { pressureBeltsWindsRevision } from '@/data/geography/revision/pressure-belts-winds'
+import { cyclonesRevision } from '@/data/geography/revision/cyclones'
+
+// Atmosphere & Climate — Problems
+import { atmosphericCompositionProblems } from '@/data/geography/problems/atmospheric-composition-problems'
+import { pressureBeltsWindsProblems } from '@/data/geography/problems/pressure-belts-winds-problems'
+import { cyclonesProblems } from '@/data/geography/problems/cyclones-problems'
+
+// Additional Physical Geography — Concepts
+import { forestTypesIndiaConcept } from '@/data/geography/concepts/forest-types-india'
+import { mountainPassesConcept } from '@/data/geography/concepts/mountain-passes'
+import { lakesIndiaConcept } from '@/data/geography/concepts/lakes-india'
+
+// Additional Physical Geography — Revision
+import { forestTypesIndiaRevision } from '@/data/geography/revision/forest-types-india'
+import { mountainPassesRevision } from '@/data/geography/revision/mountain-passes'
+import { lakesIndiaRevision } from '@/data/geography/revision/lakes-india'
+
+// Additional Physical Geography — Problems
+import { forestTypesIndiaProblems } from '@/data/geography/problems/forest-types-india-problems'
+import { mountainPassesProblems } from '@/data/geography/problems/mountain-passes-problems'
+import { lakesIndiaProblems } from '@/data/geography/problems/lakes-india-problems'
+
+// Additional World Geography — Concepts
+import { oceanCurrentsConcept } from '@/data/geography/concepts/ocean-currents'
+import { worldClimateRegionsConcept } from '@/data/geography/concepts/world-climate-regions'
+import { remoteSensingGisConcept } from '@/data/geography/concepts/remote-sensing-gis'
+
+// Additional World Geography — Revision
+import { oceanCurrentsRevision } from '@/data/geography/revision/ocean-currents'
+import { worldClimateRegionsRevision } from '@/data/geography/revision/world-climate-regions'
+import { remoteSensingGisRevision } from '@/data/geography/revision/remote-sensing-gis'
+
+// Additional World Geography — Problems
+import { oceanCurrentsProblems } from '@/data/geography/problems/ocean-currents-problems'
+import { worldClimateRegionsProblems } from '@/data/geography/problems/world-climate-regions-problems'
+import { remoteSensingGisProblems } from '@/data/geography/problems/remote-sensing-gis-problems'
+
+// Additional Environment & Ecology — Concepts
+import { coralReefsConcept } from '@/data/geography/concepts/coral-reefs'
+import { nationalParksSanctuariesConcept } from '@/data/geography/concepts/national-parks-sanctuaries'
+import { ramsarWetlandsConcept } from '@/data/geography/concepts/ramsar-wetlands'
+import { biosphereReservesConcept } from '@/data/geography/concepts/biosphere-reserves'
+
+// Additional Environment & Ecology — Revision
+import { coralReefsRevision } from '@/data/geography/revision/coral-reefs'
+import { nationalParksSanctuariesRevision } from '@/data/geography/revision/national-parks-sanctuaries'
+import { ramsarWetlandsRevision } from '@/data/geography/revision/ramsar-wetlands'
+import { biosphereReservesRevision } from '@/data/geography/revision/biosphere-reserves'
+
+// Additional Environment & Ecology — Problems
+import { coralReefsProblems } from '@/data/geography/problems/coral-reefs-problems'
+import { nationalParksSanctuariesProblems } from '@/data/geography/problems/national-parks-sanctuaries-problems'
+import { ramsarWetlandsProblems } from '@/data/geography/problems/ramsar-wetlands-problems'
+import { biosphereReservesProblems } from '@/data/geography/problems/biosphere-reserves-problems'
+
+// Additional Human Geography — Concepts
+import { censusDemographicsConcept } from '@/data/geography/concepts/census-demographics'
+
+// Additional Human Geography — Revision
+import { censusDemographicsRevision } from '@/data/geography/revision/census-demographics'
+
+// Additional Human Geography — Problems
+import { censusDemographicsProblems } from '@/data/geography/problems/census-demographics-problems'
+
 interface TopicData {
   concept: SubjectConcept
   revision: SubjectRevision
@@ -383,6 +479,172 @@ const TOPIC_DATA: Record<string, TopicData> = {
     label: 'Land Resources & Land Use',
     description:
       'Land resources for government exams. Land use, degradation, reform, SVAMITVA with notes, revision, and PYQs.',
+  },
+  // Geomorphic Processes
+  'plate-tectonics': {
+    concept: plateTectonicsConcept,
+    revision: plateTectonicsRevision,
+    problems: plateTectonicsProblems,
+    label: 'Plate Tectonics & Continental Drift',
+    description:
+      'Plate tectonics for UPSC & SSC. Continental drift, sea floor spreading, boundary types, Indian plate movement with notes, revision, and PYQs.',
+  },
+  'rocks-minerals-types': {
+    concept: rocksMineralsTypesConcept,
+    revision: rocksMineralsTypesRevision,
+    problems: rocksMineralsTypesProblems,
+    label: 'Rocks & Minerals',
+    description:
+      'Rocks and minerals for government exams. Igneous, sedimentary, metamorphic rocks, rock cycle, mineral classification with notes, revision, and PYQs.',
+  },
+  'weathering-erosion': {
+    concept: weatheringErosionConcept,
+    revision: weatheringErosionRevision,
+    problems: weatheringErosionProblems,
+    label: 'Weathering & Erosion',
+    description:
+      'Weathering and erosion for UPSC & SSC. Physical, chemical, biological weathering, mass wasting, erosion agents with notes, revision, and PYQs.',
+  },
+  'glacial-landforms': {
+    concept: glacialLandformsConcept,
+    revision: glacialLandformsRevision,
+    problems: glacialLandformsProblems,
+    label: 'Glacial Landforms',
+    description:
+      'Glacial landforms for government exams. Cirques, moraines, drumlins, fjords, Indian glaciers with notes, revision, and PYQs.',
+  },
+  'fluvial-landforms': {
+    concept: fluvialLandformsConcept,
+    revision: fluvialLandformsRevision,
+    problems: fluvialLandformsProblems,
+    label: 'Fluvial Landforms',
+    description:
+      'Fluvial landforms for UPSC & SSC. River valleys, meanders, deltas, floodplains, drainage patterns with notes, revision, and PYQs.',
+  },
+  'aeolian-landforms': {
+    concept: aeolianLandformsConcept,
+    revision: aeolianLandformsRevision,
+    problems: aeolianLandformsProblems,
+    label: 'Aeolian & Desert Landforms',
+    description:
+      'Aeolian landforms for government exams. Sand dunes, yardangs, pediments, desert features, Thar Desert with notes, revision, and PYQs.',
+  },
+  // Atmosphere & Climate
+  'atmospheric-composition': {
+    concept: atmosphericCompositionConcept,
+    revision: atmosphericCompositionRevision,
+    problems: atmosphericCompositionProblems,
+    label: 'Atmosphere & Weather',
+    description:
+      'Atmospheric composition and weather for UPSC & SSC. Atmosphere layers, insolation, heat budget, weather elements with notes, revision, and PYQs.',
+  },
+  'pressure-belts-winds': {
+    concept: pressureBeltsWindsConcept,
+    revision: pressureBeltsWindsRevision,
+    problems: pressureBeltsWindsProblems,
+    label: 'Pressure Belts & Winds',
+    description:
+      'Pressure belts and wind systems for government exams. Trade winds, westerlies, jet streams, local winds with notes, revision, and PYQs.',
+  },
+  cyclones: {
+    concept: cyclonesConcept,
+    revision: cyclonesRevision,
+    problems: cyclonesProblems,
+    label: 'Cyclones — Tropical & Temperate',
+    description:
+      'Cyclones for UPSC & SSC. Tropical cyclones, temperate cyclones, IMD warnings, cyclone naming, Indian cyclones with notes, revision, and PYQs.',
+  },
+  // Additional Physical Geography
+  'forest-types-india': {
+    concept: forestTypesIndiaConcept,
+    revision: forestTypesIndiaRevision,
+    problems: forestTypesIndiaProblems,
+    label: 'Forest Types of India',
+    description:
+      'Forest types of India for government exams. Champion & Seth classification, tropical, subtropical, montane forests with notes, revision, and PYQs.',
+  },
+  'mountain-passes': {
+    concept: mountainPassesConcept,
+    revision: mountainPassesRevision,
+    problems: mountainPassesProblems,
+    label: 'Important Mountain Passes',
+    description:
+      'Mountain passes of India for UPSC & SSC. Himalayan passes, Western Ghat passes, strategic passes with notes, revision, and PYQs.',
+  },
+  'lakes-india': {
+    concept: lakesIndiaConcept,
+    revision: lakesIndiaRevision,
+    problems: lakesIndiaProblems,
+    label: 'Lakes of India',
+    description:
+      'Lakes of India for government exams. Freshwater, saltwater, glacial, tectonic, artificial lakes with notes, revision, and PYQs.',
+  },
+  // Additional World Geography
+  'ocean-currents': {
+    concept: oceanCurrentsConcept,
+    revision: oceanCurrentsRevision,
+    problems: oceanCurrentsProblems,
+    label: 'Ocean Currents',
+    description:
+      'Ocean currents for UPSC & SSC. Warm and cold currents, thermohaline circulation, upwelling, El Nino with notes, revision, and PYQs.',
+  },
+  'world-climate-regions': {
+    concept: worldClimateRegionsConcept,
+    revision: worldClimateRegionsRevision,
+    problems: worldClimateRegionsProblems,
+    label: 'World Climate Regions',
+    description:
+      'World climate regions for government exams. Köppen classification, tropical, temperate, polar climates, biomes with notes, revision, and PYQs.',
+  },
+  'remote-sensing-gis': {
+    concept: remoteSensingGisConcept,
+    revision: remoteSensingGisRevision,
+    problems: remoteSensingGisProblems,
+    label: 'Remote Sensing & GIS',
+    description:
+      'Remote sensing and GIS for UPSC & SSC. ISRO satellites, NavIC, Bhuvan, GIS applications, RS principles with notes, revision, and PYQs.',
+  },
+  // Additional Environment & Ecology
+  'coral-reefs': {
+    concept: coralReefsConcept,
+    revision: coralReefsRevision,
+    problems: coralReefsProblems,
+    label: 'Coral Reefs & Marine Ecosystems',
+    description:
+      'Coral reefs for government exams. Fringing, barrier, atoll reefs, coral bleaching, Indian coral reefs with notes, revision, and PYQs.',
+  },
+  'national-parks-sanctuaries': {
+    concept: nationalParksSanctuariesConcept,
+    revision: nationalParksSanctuariesRevision,
+    problems: nationalParksSanctuariesProblems,
+    label: 'National Parks & Wildlife Sanctuaries',
+    description:
+      'National parks and wildlife sanctuaries for UPSC & SSC. Tiger reserves, elephant reserves, bird sanctuaries with notes, revision, and PYQs.',
+  },
+  'ramsar-wetlands': {
+    concept: ramsarWetlandsConcept,
+    revision: ramsarWetlandsRevision,
+    problems: ramsarWetlandsProblems,
+    label: 'Wetlands & Ramsar Sites',
+    description:
+      'Wetlands and Ramsar sites for government exams. India Ramsar sites, wetland conservation, Montreux Record with notes, revision, and PYQs.',
+  },
+  'biosphere-reserves': {
+    concept: biosphereReservesConcept,
+    revision: biosphereReservesRevision,
+    problems: biosphereReservesProblems,
+    label: 'Biosphere Reserves',
+    description:
+      'Biosphere reserves for UPSC & SSC. UNESCO MAB programme, Indian biosphere reserves, zonation with notes, revision, and PYQs.',
+  },
+  // Additional Human Geography
+  'census-demographics': {
+    concept: censusDemographicsConcept,
+    revision: censusDemographicsRevision,
+    problems: censusDemographicsProblems,
+    label: 'Census & Demographics',
+    description:
+      'Census and demographics for government exams. Census 2011 data, population growth, sex ratio, literacy, demographic dividend with notes, revision, and PYQs.',
   },
 }
 
