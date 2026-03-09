@@ -2,9 +2,16 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Geography — Indian Geography, Environment & World Geography | GovtExams',
+  title: 'Indian Geography — Notes, Revision & PYQs for UPSC, SSC | GovtExamsStudy',
   description:
-    'Complete Indian Geography study material for UPSC, SSC & banking exams. Physical, economic, human, world geography, environment & ecology with notes, revision, and PYQs.',
+    'Complete Indian Geography study material for UPSC, SSC CGL, IBPS PO, and government exams. 50 topics covering Physical, Economic, Human, World Geography, and Environment & Ecology with notes, revision tricks, and PYQ practice.',
+  keywords: ['Indian Geography', 'geography for UPSC', 'physical geography India', 'environment ecology UPSC', 'NCERT geography', 'Indian geography study material', 'geography notes SSC'],
+  openGraph: {
+    title: 'Indian Geography — 50 Topics with Notes, Revision & PYQs',
+    description: 'Complete Indian Geography study material for UPSC, SSC CGL, IBPS PO, and government exams.',
+    type: 'website',
+    siteName: 'GovtExamsStudy',
+  },
 }
 
 interface Topic {

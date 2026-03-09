@@ -2,9 +2,16 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Indian History — Interactive Visual Learning',
+  title: 'Indian History — Notes, Revision & PYQs for UPSC, SSC | GovtExamsStudy',
   description:
-    'Master Indian history for UPSC, SSC CGL, and other government exams. Ancient, Medieval, Modern India, Post-Independence, and Art & Culture with visual notes, revision tricks, and PYQ practice.',
+    'Complete Indian History study material for UPSC, SSC CGL, IBPS PO, and government exams. 50 topics covering Ancient, Medieval, Modern India, Post-Independence, and Art & Culture with notes, revision tricks, and PYQ practice.',
+  keywords: ['Indian History', 'ancient India UPSC', 'medieval India notes', 'modern India freedom movement', 'history for SSC', 'Bipin Chandra notes', 'NCERT history', 'Indian history study material'],
+  openGraph: {
+    title: 'Indian History — 50 Topics with Notes, Revision & PYQs',
+    description: 'Complete Indian History study material for UPSC, SSC CGL, IBPS PO, and government exams.',
+    type: 'website',
+    siteName: 'GovtExamsStudy',
+  },
 }
 
 interface Topic {

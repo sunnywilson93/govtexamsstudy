@@ -630,9 +630,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { topic } = await params
   const data = TOPIC_DATA[topic]
   if (!data) return {}
+  const title = `${data.label} — Notes, Revision & PYQs | GovtExamsStudy`
+  const description = `${data.description} Free notes, revision tricks, and previous year questions for UPSC, SSC CGL, and government exams.`
   return {
-    title: `${data.label} — Notes, Revision & PYQs | GovtExams`,
-    description: data.description,
+    title,
+    description,
+    keywords: [`${data.label}`, `${data.label} UPSC`, `${data.label} notes`, 'Indian Polity', 'polity for UPSC', 'SSC CGL polity', `${data.label} PYQ`],
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      siteName: 'GovtExamsStudy',
+    },
+    twitter: {
+      card: 'summary',
+      title,
+      description,
+    },
   }
 }
 

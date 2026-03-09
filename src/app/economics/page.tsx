@@ -2,9 +2,16 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Indian Economy — Interactive Visual Learning',
+  title: 'Indian Economy — Notes, Revision & PYQs for UPSC, SSC | GovtExamsStudy',
   description:
-    'Master Indian economy for UPSC, SSC CGL, IBPS PO, and other government exams. Banking, fiscal policy, trade, planning, schemes with visual notes, revision tricks, and PYQ practice.',
+    'Complete Indian Economy study material for UPSC, SSC CGL, IBPS PO, and government exams. 50 topics covering Banking, Fiscal Policy, Trade, Planning, and Government Schemes with notes, revision tricks, and PYQ practice.',
+  keywords: ['Indian Economy', 'economics for UPSC', 'Indian economy notes SSC', 'banking awareness', 'fiscal policy India', 'Ramesh Singh economics', 'Indian economy study material'],
+  openGraph: {
+    title: 'Indian Economy — 50 Topics with Notes, Revision & PYQs',
+    description: 'Complete Indian Economy study material for UPSC, SSC CGL, IBPS PO, and government exams.',
+    type: 'website',
+    siteName: 'GovtExamsStudy',
+  },
 }
 
 interface Topic {
