@@ -3,64 +3,131 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const startupInnovationRevision: SubjectRevision = {
   topic: 'startup-innovation',
   bullets: [
-    "Startup India launched January 16, 2016. DPIIT is nodal department. 1.46 lakh DPIIT-recognised startups (Dec 2024).",
-    "Startup definition: Entity ≤10 years old, turnover ≤Rs 100 crore, working on innovation/new products/services.",
-    "Tax benefit: 100% income tax exemption on profits for 3 years out of 10 (Section 80-IAC). Angel tax abolished (Budget 2024-25).",
-    "Fund of Funds: Rs 10,000 crore via SIDBI. Invested in 129 AIFs. Rs 20,044 crore deployed in 975+ startups.",
-    "India has 114 unicorns (Dec 2024) — 3rd globally (US, China, India). Top: Flipkart ($37.6B), PhonePe ($12B).",
-    "Sector distribution: FinTech 22 unicorns, E-commerce 18, SaaS 15, EdTech 7, HealthTech 6, Logistics 5.",
-    "Geographic: Bangalore 39%, Delhi-NCR 27%, Mumbai 18%. 50% of startups from beyond top 5 cities.",
-    "AIM (Atal Innovation Mission, NITI Aayog): ATLs (10,000 in schools), AICs (68 incubation centres), ANICs.",
-    "Global Innovation Index 2023: India rank 40 (up from 81 in 2015). Highest among lower middle-income countries.",
-    "India's R&D: 0.64% of GDP (vs China 2.4%, US 3.4%). Need to increase to 2%. Researchers: 255 per million.",
-    "Patent grants: 30,490 (FY23) — 7x increase from 4,227 (FY14). Startup fast-track: examination within 6 months.",
-    "GI registrations: 500+. Darjeeling Tea, Basmati Rice, Tirupati Laddu, Kanchipuram Silk.",
-    "Space startups: Agnikul Cosmos, Skyroot Aerospace (launched Vikram-S), Pixxel. IN-SPACe authorises private space.",
-    "Semiconductor Mission: Rs 76,000 crore. Micron (Gujarat), Tata (Assam + Gujarat), CG Power (Sanand).",
-    "National AI Mission: Rs 10,372 crore. India's first AI unicorn: Krutrim (Bhavish Aggarwal)."
-],
+    'Startup India launched January 16, 2016. DPIIT is nodal department. 1.46 lakh DPIIT-recognised startups across 763 districts (Dec 2024).',
+    'Startup definition: Entity (company/LLP/partnership) ≤10 years old, turnover ≤Rs 100 crore, working on innovation/new products/services driven by technology or IP.',
+    'Tax benefit: 100% income tax exemption on profits for 3 consecutive years out of 10 (Section 80-IAC). Angel tax abolished for all companies (Budget 2024-25).',
+    'Fund of Funds: Rs 10,000 crore via SIDBI. Invested in 129 AIFs. Rs 20,044 crore deployed in 975+ startups. Leverage: Rs 1 FFS = Rs 5 total investment.',
+    'Self-certification: Startups self-certify compliance with 9 labour + environment laws for 3 years from incorporation. Reduces inspector raj burden.',
+    'Capital gains exemption: Section 54GB — LTCG from sale of residential property invested in eligible startup equity is exempt.',
+    'Startup patent fast-track: 80% rebate on filing fees. Patent decision within 6 months (vs 5+ years for regular). CGPDTM restructured.',
+    'India has 114 unicorns (Dec 2024) — 3rd globally (US, China, India). Top: Flipkart ($37.6B), PhonePe ($12B), Byju\'s ($22B peak, now NCLT).',
+    'Sector distribution: FinTech 22 unicorns, E-commerce/D2C 18, SaaS 15, EdTech 7, HealthTech 6, Logistics 5, Mobility 2.',
+    'Geographic: Bangalore 39%, Delhi-NCR 27%, Mumbai 18%, Hyderabad 6%, Pune 4%. 50% of startups from beyond top 5 cities.',
+    'AIM (Atal Innovation Mission, NITI Aayog): ATLs (10,000 in schools), AICs (68 incubation centres), ANICs (product challenges), ACICs (underserved areas).',
+    'ATL: Rs 20 lakh grant + Rs 10 lakh/year for 5 years per lab. Grade 6-12 students. 3D printers, robotics, IoT devices. 75 lakh+ students impacted.',
+    'Global Innovation Index 2023: India rank 40 (up from 81 in 2015). Highest among lower middle-income countries. Published by WIPO.',
+    'GII 7 pillars: Institutions, Human Capital & Research, Infrastructure, Market Sophistication, Business Sophistication, Knowledge & Tech Outputs, Creative Outputs.',
+    'India\'s R&D: 0.64% of GDP (vs China 2.4%, US 3.4%, Israel 5.4%, South Korea 4.9%). Target 2% by 2030. Researchers: 255 per million (vs China 1,300, US 4,400).',
+    'Patent grants: 30,490 (FY23) — 7x increase from 4,227 (FY14). Exam time reduced from 5-7 years to 18-24 months. 500+ examiners hired.',
+    'WIPO PCT applications: India filed 5,600+ (2023) — 7th globally. Behind China (70K+), US (55K+), Japan (48K+), South Korea, Germany, France.',
+    'GI registrations: 500+. Darjeeling Tea (first, 2004), Basmati Rice, Tirupati Laddu, Kanchipuram Silk, Hyderabad Haleem, Pashmina.',
+    'Indian Patents Act 1970: Process patents → India became "pharmacy of the world." 2005 Amendment: Product patents (TRIPS-compliant). Section 3(d): Anti-evergreening.',
+    'Novartis vs Union of India (2013): SC rejected Glivec patent under Section 3(d). Generic price: $2,500/year vs Novartis $70,000/year.',
+    'Only compulsory licence: Natco vs Bayer for Nexavar (2012). Bayer Rs 2.8 lakh/month → Natco Rs 8,880/month. 6% royalty.',
+    'Space startups: 200+. Agnikul Cosmos (3D-printed rocket engine), Skyroot Aerospace (Vikram-S — India\'s first private rocket, Nov 2022), Pixxel (hyperspectral imaging).',
+    'IN-SPACe (Indian National Space Promotion and Authorisation Centre): Single-window for private space activities. Indian Space Policy 2023.',
+    'Semiconductor Mission: Rs 76,000 crore. Tata-PSMC fab (Gujarat, 28nm), Tata OSAT (Assam), Micron ATMP (Gujarat). India designs 20% of global chips but manufactures 0%.',
+    'National AI Mission: Rs 10,372 crore. 10,000 GPUs. AI datasets, startups. Krutrim: India\'s first AI unicorn (Bhavish Aggarwal). 3,000+ AI startups.',
+    'ANRF (Anusandhan National Research Foundation, 2023): Rs 50,000 crore over 5 years. Replaces SERB. 70% private sector funding expected.',
+    'National Quantum Mission: Rs 6,003 crore (2023). Quantum computing, communication, sensing. Startups: QpiAI, BosonQ Psi.',
+    'EV startups: Ola Electric (IPO 2024, Rs 6,145 crore), Ather Energy, Ultraviolette, Simple Energy, Euler Motors. FAME II: Rs 10,000 crore.',
+    'Defence startups (iDEX): 400+ engaged. DISC challenges, PRIME support, ADITI grants up to Rs 25 crore. ideaForge (drones, IPO 2023), Tonbo Imaging.',
+    'VC/PE investment in Indian startups: $8-10 billion annually (FY24, down from $35B peak in CY2021). "Funding winter" (2022-24) shifted focus to unit economics.',
+    'Startup IPOs: Zomato (2021), Nykaa (2021), PolicyBazaar (2021), Delhivery (2022), Mamaearth (2023), Ola Electric (2024), FirstCry (2024).',
+    'Zerodha: India\'s most profitable startup. Bootstrapped (no external funding). 70 lakh+ active clients. Valued at $3.6 billion. India\'s largest broker.',
+    'EdTech crash: Byju\'s ($22B → NCLT), Unacademy (mass layoffs), Vedantu (acquired). Lesson: Growth-at-all-cost without profitability is unsustainable.',
+    'Gig economy: 77 lakh gig workers (NITI Aayog, 2022). Projected 2.35 crore by 2029-30. Code on Social Security 2020 recognises gig workers but rules not notified.',
+    'IBC fast-track: 90-day CIRP for startups with assets under Rs 1 crore. Voluntary liquidation: 6-12 months (vs 2-3 years under Companies Act). Fresh start culture.',
+    'ESOP tax deferral for startups: Tax payable at earliest of 5 years/sale/exit — not at exercise. Solves "tax on paper gains" problem.',
+    'FDI: India received $71B FDI (FY24). 100% FDI allowed in most sectors via automatic route. VC/PE investments count as FDI under FEMA.',
+    'State Startup Rankings: DPIIT annual ranking. Gujarat, Karnataka, Kerala, Tamil Nadu, Maharashtra, Telangana — consistently top. 7 reform areas evaluated.',
+    'Smart India Hackathon: World\'s biggest open innovation model. 10 lakh+ students. Hardware + software editions. Government problem statements.',
+    'IIC (Institution\'s Innovation Council): 10,800+ IICs in colleges under Ministry of Education. Hackathons, startup boot camps, patent clinics.',
+    'Startup ecosystem challenges: 75% VC funding to top 3 cities, governance failures (Byju\'s, BharatPe), talent gap (35-45% engineers employable), limited IP creation.',
+    'Women-founded startups: 18% of DPIIT-recognised (up from <10% in 2016). WEP (NITI Aayog), Stand-Up India loans Rs 10L-1Cr. MUDRA: 68% women borrowers.',
+    'CSR (Section 135): 2% of average net profit for qualifying companies. Total: Rs 1.84 lakh crore (FY14-24). Some directed to startup incubation.',
+    'Social Stock Exchange (SSE): SEBI framework (2023) at NSE/BSE. ZCZP instruments for non-profits. 4-5 entities listed. Globally pioneering.',
+    'India\'s pharma innovation: Supplies 20% of global generics, 60% of global vaccines. Biotech: $130B sector. BioE3 Policy 2024.',
+  ],
   comparisons: [
     {
-        "title": "Startup Financing Stages",
-        "headers": [
-            "Stage",
-            "Investment Size",
-            "Investors",
-            "Examples"
-        ],
-        "rows": [
-            [
-                "Angel/Seed",
-                "Rs 5-50 lakh",
-                "Individual HNIs, angel groups",
-                "Indian Angel Network, Mumbai Angels"
-            ],
-            [
-                "Series A/B",
-                "Rs 50 lakh-50 crore",
-                "VC funds",
-                "Peak XV (Sequoia), Accel, Blume, Elevation"
-            ],
-            [
-                "Growth/PE",
-                "Rs 50 crore+",
-                "Growth funds, PE",
-                "SoftBank, Tiger Global, Prosus"
-            ],
-            [
-                "IPO",
-                "Rs 100 crore+",
-                "Public market",
-                "Zomato, Nykaa, Ola Electric"
-            ]
-        ]
-    }
-],
+      title: 'Startup Financing Stages',
+      headers: ['Stage', 'Investment Size', 'Investors', 'Examples'],
+      rows: [
+        ['Angel/Seed', 'Rs 5-50 lakh', 'Individual HNIs, angel groups', 'Indian Angel Network, Mumbai Angels'],
+        ['Series A/B', 'Rs 50 lakh-50 crore', 'VC funds', 'Peak XV (Sequoia), Accel, Blume, Elevation'],
+        ['Growth/PE', 'Rs 50 crore+', 'Growth funds, PE', 'SoftBank, Tiger Global, Prosus, Temasek'],
+        ['IPO', 'Rs 100 crore+', 'Public market', 'Zomato, Nykaa, Ola Electric, FirstCry'],
+      ],
+    },
+    {
+      title: 'AIM Components',
+      headers: ['Component', 'Purpose', 'Scale', 'Grant'],
+      rows: [
+        ['ATL', 'STEM labs in schools (Grade 6-12)', '10,000 ATLs, 722 districts', 'Rs 20 lakh + Rs 10 lakh/year'],
+        ['AIC', 'Startup incubation centres', '68 AICs, 3,600+ startups', 'Up to Rs 10 crore'],
+        ['ANIC', 'Product innovation challenges', 'Multiple rounds', 'Rs 1 crore per winning startup'],
+        ['ACIC', 'Innovation in underserved areas', '50 ACICs', 'Rs 2.5 crore'],
+      ],
+    },
+    {
+      title: 'India\'s IPR Regime',
+      headers: ['IP Type', 'Law', 'Key Feature', 'India Metrics'],
+      rows: [
+        ['Patents', 'Patents Act 1970 (amended 2005)', 'Section 3(d) anti-evergreening; TRIPS-compliant', '30,490 grants (FY23), 7x in 9 years'],
+        ['Trademarks', 'Trade Marks Act 1999', 'Nice Classification (45 classes); Madrid Protocol', '6.5 lakh applications (FY23)'],
+        ['GI', 'GI Act 1999', 'Protects traditional products', '500+ registered GIs'],
+        ['Copyright', 'Copyright Act 1957', 'Berne Convention member', 'Voluntary registration'],
+        ['Design', 'Designs Act 2000', 'Industrial design protection', 'Growing filings from startups'],
+      ],
+    },
+    {
+      title: 'Deep Tech Startup Verticals',
+      headers: ['Sector', 'Key Startups', 'Government Scheme', 'Investment'],
+      rows: [
+        ['Space', 'Skyroot, Agnikul, Pixxel', 'Indian Space Policy 2023, IN-SPACe', '200+ startups'],
+        ['AI', 'Krutrim, Sarvam AI, Karya', 'IndiaAI Mission', 'Rs 10,372 crore'],
+        ['EV', 'Ola Electric, Ather, Ultraviolette', 'FAME II, PM E-DRIVE, ACC PLI', 'Rs 10,000 crore + Rs 18,100 crore'],
+        ['Semiconductor', 'Design centres (no chip startups yet)', 'India Semiconductor Mission', 'Rs 76,000 crore'],
+        ['Quantum', 'QpiAI, BosonQ Psi', 'National Quantum Mission', 'Rs 6,003 crore'],
+      ],
+    },
+    {
+      title: 'Global Innovation Index — India\'s Journey',
+      headers: ['Year', 'Rank', 'Key Achievement', 'Income Category'],
+      rows: [
+        ['2015', '81st', 'Starting point', 'Lower middle-income'],
+        ['2018', '57th', 'Crossed top 60', 'Lower middle-income'],
+        ['2020', '46th', 'Crossed top 50', 'Lower middle-income'],
+        ['2023', '40th', 'Highest among LMICs', 'Lower middle-income (reclassified 2024)'],
+      ],
+    },
+  ],
   mnemonics: [
     {
-        "title": "AIM Components — \"ATL-AIC-ANIC\"",
-        "mnemonic": "ATL (Tinkering Labs in schools), AIC (Incubation Centres), ANIC (New India Challenges)",
-        "explanation": "Three key components of Atal Innovation Mission — Labs for school students, Incubation for startups, Challenges for product innovation."
-    }
-],
+      title: 'AIM Components — "ATL-AIC-ANIC-ACIC"',
+      mnemonic: 'ATL (Tinkering Labs in schools), AIC (Incubation Centres), ANIC (New India Challenges), ACIC (Community Innovation Centres)',
+      explanation: 'Four key components of Atal Innovation Mission at NITI Aayog — Labs for school students (10,000), Incubation for startups (68), Challenges for product innovation (Rs 1 crore grants), Community centres for underserved areas (50).',
+    },
+    {
+      title: 'Startup India Benefits — "STIFF"',
+      mnemonic: 'Self-certification (9 laws, 3 years), Tax exemption (80-IAC, 3/10 years), IPR fast-track (6 months), Fund of Funds (Rs 10K crore), FFS leverage (1:5)',
+      explanation: 'Key benefits for DPIIT-recognised startups — Self-certification reduces compliance burden, Section 80-IAC provides 3-year tax holiday, patent fast-track at 80% reduced fees, Fund of Funds through SIDBI leverages 5x private capital.',
+    },
+    {
+      title: 'Unicorn Geography — "BDM"',
+      mnemonic: 'Bangalore 39%, Delhi-NCR 27%, Mumbai 18% = 84% of all unicorns in 3 cities',
+      explanation: 'India\'s 114 unicorns are heavily concentrated — Bangalore (Silicon Valley of India), Delhi-NCR (fintech, e-commerce), Mumbai (finance, media). Remaining 16% spread across Hyderabad, Pune, Chennai. Tier-2/3 representation is negligible among unicorns despite 50% of startups originating there.',
+    },
+    {
+      title: 'Patent Numbers — "30K-7X-6M"',
+      mnemonic: '30,490 patents granted FY23, 7x increase from FY14, 6 months for startup fast-track',
+      explanation: 'India\'s patent ecosystem has transformed — from 4,227 grants in FY14 to 30,490 in FY23 (7x jump). Startup patents examined within 6 months at 80% reduced fees. WIPO PCT filings: 5,600+ (7th globally). GII rank: 40th.',
+    },
+    {
+      title: 'Deep Tech Missions — "QSA 76"',
+      mnemonic: 'Quantum (Rs 6,003 crore), Semiconductor (Rs 76,000 crore), AI (Rs 10,372 crore)',
+      explanation: 'Three national missions for frontier technology — Quantum Mission for computing/communication/sensing, India Semiconductor Mission for domestic chip fab, IndiaAI Mission for compute/datasets/startups. Combined: Rs 92,375 crore government investment.',
+    },
+  ],
 }

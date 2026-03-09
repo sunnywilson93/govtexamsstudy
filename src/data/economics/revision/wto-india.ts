@@ -3,69 +3,143 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const wtoIndiaRevision: SubjectRevision = {
   topic: 'wto-india',
   bullets: [
-    "WTO established January 1, 1995, replacing GATT (1947). 164 members. HQ: Geneva. DG: Ngozi Okonjo-Iweala.",
-    "India was founding member of both GATT (1947) and WTO (1995). Decision-making by consensus.",
-    "WTO principles: MFN (Most Favoured Nation), National Treatment, Reciprocity, Transparency, Special & Differential Treatment (S&DT).",
-    "AoA three pillars: Market Access (tariff reduction), Domestic Support (Amber/Blue/Green boxes), Export Subsidies (eliminate).",
-    "India's de minimis: 10% of value of agricultural production for product-specific and non-product-specific support each.",
-    "Food stockholding — India's core WTO fight. MSP procurement calculated using 1986-88 ERP appears to exceed AMS limits due to inflation.",
-    "Peace Clause (Bali 2013): No WTO challenge for food security stockholding — temporary until 'permanent solution' found. Still pending.",
-    "TRIPS: 20-year patents. India complied in 2005 (product patents for pharma). Section 3(d) prevents evergreening — Novartis case (2013).",
-    "India's only compulsory licence: Bayer's Nexavar (2012) — Natco produced generic at 97% lower price.",
-    "GATS 4 modes: Cross-border (Mode 1), Consumption abroad (Mode 2), Commercial presence (Mode 3), Movement of persons (Mode 4).",
-    "India has offensive interest in Mode 1 (IT exports $191B FY24) and Mode 4 (professional mobility). Defensive in Mode 3.",
-    "E-commerce moratorium: No customs duties on electronic transmissions — extended at MC13 (2024) for 2 more years. India has opposed it.",
-    "India pulled out of RCEP (2019) — feared Chinese imports. Pursuing bilateral FTAs instead (UAE, Australia, EFTA, UK, EU).",
-    "MC12 (2022): Limited TRIPS waiver for COVID vaccines, fisheries subsidies agreement. MC13 (2024): Moratorium extended, no food stockholding solution.",
-    "WTO Appellate Body non-functional since December 2019 — US blocked judge appointments. India has NOT joined MPIA alternative."
-],
+    'WTO established January 1, 1995, replacing GATT (1947). 164 members. HQ: Geneva, Switzerland. DG: Ngozi Okonjo-Iweala (Nigeria, since 2021).',
+    'India was founding member of both GATT (1947) and WTO (1995). Decision-making by consensus — each member has one vote, equal weight.',
+    'WTO principles: MFN (Most Favoured Nation — treat all members equally), National Treatment (no domestic vs imported discrimination), Reciprocity, Transparency, S&DT.',
+    'S&DT (Special and Differential Treatment): Developing countries get longer transition periods, lower tariff reduction commitments, technical assistance. India frequently invokes S&DT.',
+    'Single Undertaking: WTO members must accept all agreements (not pick and choose) — unlike GATT where selective participation was possible.',
+    'WTO structure: Ministerial Conference (highest, meets every 2 years), General Council (routine decisions), Councils for Trade in Goods/Services/TRIPS, DSB (Dispute Settlement Body).',
+    'AoA (Agreement on Agriculture) three pillars: Market Access (tariff reduction), Domestic Support (Amber/Blue/Green boxes), Export Subsidies (progressively eliminate).',
+    'Green Box: Non/minimally trade-distorting subsidies — research, training, income safety nets, disaster relief, environmental programmes. No limits.',
+    'Blue Box: Production-limiting payments — allowed if linked to production reduction. US, EU use extensively.',
+    'Amber Box (AMS): Trade-distorting domestic support — price support (MSP), input subsidies. Must be reduced. De minimis: developing countries exempt if below 10% of production value.',
+    'India\'s de minimis: 10% product-specific + 10% non-product-specific. India\'s MSP procurement calculated against frozen 1986-88 External Reference Price (ERP) — creates artificial appearance of exceeding AMS limits.',
+    'Food stockholding: India\'s core WTO fight. When MSP is compared to 1986-88 ERP (not current world prices), India appears to violate AMS limits. Frozen reference price is the root problem.',
+    'Peace Clause (Bali Ministerial 2013): WTO agreed no country will challenge developing country\'s public stockholding for food security, even if AMS exceeded. Temporary — pending permanent solution.',
+    'India demands permanent solution: (a) Update ERP to current prices, (b) Exclude food stockholding from AMS entirely, or (c) Classify as Green Box (domestic food aid).',
+    'TRIPS (Trade-Related Aspects of IPR): 20-year patents in all fields. India became TRIPS-compliant in 2005 — product patents for pharma introduced (previously only process patents under 1970 Act).',
+    'TRIPS flexibilities India uses: Section 3(d) (anti-evergreening), Compulsory Licensing (Sections 84/92), Bolar exception (generic development during patent life), parallel imports.',
+    'Novartis vs Union of India (2013): SC upheld Section 3(d) — rejected Glivec patent. Validated India\'s approach: genuine innovation rewarded, incremental patenting blocked.',
+    'India\'s only CL: Natco vs Bayer for Nexavar (kidney/liver cancer, 2012). Bayer price: Rs 2.8 lakh/month → Natco generic: Rs 8,880/month. 6% royalty to Bayer.',
+    'TRIPS waiver for COVID vaccines (MC12, 2022): Limited waiver adopted — allows developing countries to override vaccine patents for 5 years. India-South Africa proposal was broader.',
+    'GATS (General Agreement on Trade in Services): Four modes of supply — Mode 1 to Mode 4.',
+    'Mode 1 (Cross-border): Service delivered across border — IT services, BPO. India\'s offensive interest — IT exports $254 billion (FY24), world\'s largest IT services exporter.',
+    'Mode 2 (Consumption abroad): Consumer goes to service provider — medical tourism, education abroad. India has interest in medical tourism ($9 billion market).',
+    'Mode 3 (Commercial presence): Foreign company establishes in host country — FDI, bank branches. India is defensive — protects domestic financial sector, retail.',
+    'Mode 4 (Movement of natural persons): Temporary movement of workers — India demands liberalisation for IT professionals, but developed countries resist (immigration politics).',
+    'E-commerce moratorium: WTO agreed no customs duties on electronic transmissions since 1998. Extended repeatedly. MC13 (2024): Extended 2 more years. India opposes — losing tariff revenue on digital imports.',
+    'India\'s opposition to e-commerce moratorium: India estimates $1.5-10 billion annual tariff revenue loss. Also reduces policy space for regulating digital trade. India + South Africa + Indonesia lead opposition.',
+    'E-commerce negotiations: Joint Statement Initiative (JSI, 2017) — 90 members negotiating rules for digital trade. India is NOT part of JSI — concerns about data sovereignty, MNC dominance.',
+    'TRIMS (Trade-Related Investment Measures): Prohibits investment measures that restrict trade — local content requirements, trade balancing, foreign exchange restrictions.',
+    'India pulled out of RCEP (November 2019): Regional Comprehensive Economic Partnership (15 Asia-Pacific countries). India feared Chinese import surge — trade deficit with China already $85+ billion.',
+    'India pursuing bilateral FTAs instead: India-UAE CEPA (May 2022), India-Australia ECTA (December 2022), India-EFTA (March 2024, $100B investment commitment), India-UK FTA (ongoing), India-EU FTA (ongoing).',
+    'India-UAE CEPA: 97% tariff lines covered. UAE gives preferential access to Indian textiles, gems, pharma, agriculture. India gives access to UAE gold, petrochemicals.',
+    'India-EFTA Trade and Economic Partnership Agreement (TEPA, 2024): Switzerland, Norway, Iceland, Liechtenstein. Key: $100 billion FDI commitment over 15 years to India.',
+    'India\'s trade overview: Total trade FY24: $1.2 trillion (exports $778B, imports $854B). Trade deficit: $76B. Top partners: US, China, UAE, Saudi Arabia, Iraq.',
+    'India\'s agricultural exports: $53 billion (FY24). Rice (25% of global exports), spices, marine products, sugar, cotton, tea, coffee, buffalo meat.',
+    'Anti-dumping measures: India has imposed 300+ anti-dumping duties since 1995 — mostly against China (chemicals, steel, textiles). DGTR (Directorate General of Trade Remedies) investigates.',
+    'Countervailing duties (CVD): Against subsidised imports. Safeguard measures: Temporary restrictions during import surge (DGTR recommends, government decides).',
+    'Fisheries subsidies agreement (MC12, 2022): WTO\'s first multilateral environmental agreement. Bans subsidies for IUU (illegal, unreported, unregulated) fishing. India secured exemption for artisanal/subsistence fishing.',
+    'Appellate Body crisis: WTO Appellate Body (AB) non-functional since December 2019 — US blocked judge appointments (claiming AB overreach). Only 1 of 7 judges remained. India has NOT joined MPIA (Multi-Party Interim Appeal Arbitration Arrangement).',
+    'MPIA: Alternative appeal mechanism adopted by 52+ WTO members (EU, China, Australia, Canada, others). India\'s non-participation means India cannot appeal panel rulings — effectively "losing" right to second-stage review.',
+    'India\'s WTO disputes: India has been complainant 24 times, respondent 32 times. Key wins: US steel safeguards (DS248). Key losses: India solar cells (DS456 — domestic content requirement violated TRIMS/National Treatment).',
+    'India solar cells case (DS456): US challenged India\'s DCR (Domestic Content Requirement) in solar mission. WTO panel ruled against India — DCR violated National Treatment. India argued "government procurement" exception — rejected.',
+    'Doha Development Round (2001): Ambitious multilateral trade round — largely failed. Key issues: Agricultural subsidies (developed countries wouldn\'t reduce), NAMA (non-agricultural market access), S&DT.',
+    'India + G33 coalition: Alliance of developing countries pushing for Special Safeguard Mechanism (SSM) in agriculture — allows temporary tariff increases on agricultural imports during price crash/import surge.',
+    'G20 (trade coalition, not the G20 summit group): Alliance of developing countries in WTO led by India, Brazil, China — demands agricultural subsidy reduction by developed countries.',
+    'MC13 (Abu Dhabi, 2024): Modest outcomes — e-commerce moratorium extended, investment facilitation agreement. No permanent solution for food stockholding. No SSM agreement. WTO reform discussions.',
+  ],
   comparisons: [
     {
-        "title": "GATT vs WTO",
-        "headers": [
-            "Feature",
-            "GATT",
-            "WTO"
-        ],
-        "rows": [
-            [
-                "Nature",
-                "Agreement (temporary)",
-                "Organisation (permanent)"
-            ],
-            [
-                "Coverage",
-                "Goods only",
-                "Goods, services, IPR"
-            ],
-            [
-                "Dispute settlement",
-                "Weak (panel reports could be blocked)",
-                "Strong (binding, cannot block adoption)"
-            ],
-            [
-                "Decision rule",
-                "Consensus + selective participation",
-                "Single Undertaking (all-or-nothing)"
-            ],
-            [
-                "Period",
-                "1947-1994",
-                "1995-present"
-            ]
-        ]
-    }
-],
-  mnemonics: [
-    {
-        "title": "AoA Boxes — \"GAB\"",
-        "mnemonic": "Green (allowed freely), Amber (trade-distorting, reduce), Blue (production-limiting, allowed)",
-        "explanation": "Green Box: Non/minimally distorting (research, safety nets). Amber Box: Trade-distorting subsidies (MSP). Blue Box: Payments with production limits."
+      title: 'GATT vs WTO',
+      headers: ['Feature', 'GATT', 'WTO'],
+      rows: [
+        ['Nature', 'Agreement (temporary, ad hoc)', 'Organisation (permanent, institutional)'],
+        ['Coverage', 'Goods only', 'Goods + Services (GATS) + IPR (TRIPS)'],
+        ['Dispute settlement', 'Weak — panel reports could be blocked by losing party', 'Strong — binding, automatic adoption unless consensus against'],
+        ['Decision rule', 'Consensus + selective participation in plurilateral codes', 'Single Undertaking — all-or-nothing for all members'],
+        ['Period', '1947-1994 (8 rounds)', '1995-present'],
+        ['Members', 'Contracting parties (128)', 'Full members (164)'],
+      ],
     },
     {
-        "title": "GATS Modes — \"1234\"",
-        "mnemonic": "Mode 1: Cross-border, Mode 2: Consumption abroad, Mode 3: Commercial presence, Mode 4: Movement of persons",
-        "explanation": "Four modes of services trade — India strong in Mode 1 (IT exports) and wants Mode 4 liberalisation."
-    }
-],
+      title: 'AoA Box Classification',
+      headers: ['Box', 'Nature', 'Examples', 'Limits'],
+      rows: [
+        ['Green', 'Non/minimally trade-distorting', 'Research, training, income safety nets, disaster relief, environmental', 'No limits — fully permitted'],
+        ['Blue', 'Production-limiting payments', 'US deficiency payments, EU area/headage payments', 'No limits if linked to production reduction'],
+        ['Amber (AMS)', 'Trade-distorting subsidies', 'MSP procurement, input subsidies, irrigation subsidies', 'Must reduce; de minimis: 10% for developing countries'],
+        ['S&D Box (proposed)', 'Developing country food security', 'Public stockholding, food distribution', 'India demands — not yet agreed'],
+      ],
+    },
+    {
+      title: 'India\'s Recent Trade Agreements',
+      headers: ['Agreement', 'Partner', 'Year', 'Key Feature'],
+      rows: [
+        ['India-UAE CEPA', 'UAE', '2022', '97% tariff lines; textiles, gems, pharma access'],
+        ['India-Australia ECTA', 'Australia', '2022', 'Zero duty for 85% of Australian exports; Indian textile/pharma access'],
+        ['India-EFTA TEPA', 'Switzerland, Norway, Iceland, Liechtenstein', '2024', '$100 billion FDI commitment over 15 years'],
+        ['India-UK FTA', 'United Kingdom', 'Ongoing', 'Services, investment, IPR — complex negotiation'],
+        ['India-EU FTA', 'European Union', 'Ongoing', 'Resumed 2022 after 8-year gap; data, automobile, wine contentious'],
+      ],
+    },
+    {
+      title: 'GATS Four Modes of Service Supply',
+      headers: ['Mode', 'Description', 'Example', 'India\'s Position'],
+      rows: [
+        ['Mode 1: Cross-border', 'Service crosses border', 'IT outsourcing, BPO', 'Offensive — India\'s $254B IT exports'],
+        ['Mode 2: Consumption abroad', 'Consumer goes to provider', 'Medical tourism, education', 'Offensive — India\'s $9B medical tourism'],
+        ['Mode 3: Commercial presence', 'Provider establishes in host country', 'Foreign bank branch, FDI', 'Defensive — protects domestic sectors'],
+        ['Mode 4: Movement of persons', 'Worker moves temporarily', 'IT professionals abroad', 'Strongly offensive — demands liberalisation'],
+      ],
+    },
+    {
+      title: 'Key WTO Ministerial Conferences',
+      headers: ['Conference', 'Year/Place', 'Key Outcome', 'India\'s Role'],
+      rows: [
+        ['MC4', '2001 Doha', 'Doha Development Round launched', 'Pushed development agenda'],
+        ['MC5', '2003 Cancun', 'Collapsed over agriculture', 'India led G20 developing coalition'],
+        ['MC9', '2013 Bali', 'Trade Facilitation Agreement + Peace Clause for food stockholding', 'India secured Peace Clause'],
+        ['MC10', '2015 Nairobi', 'Eliminated agricultural export subsidies', 'India confirmed Peace Clause continuation'],
+        ['MC12', '2022 Geneva', 'TRIPS waiver (COVID), Fisheries subsidies ban', 'India-SA TRIPS proposal partially adopted'],
+        ['MC13', '2024 Abu Dhabi', 'E-commerce moratorium extended, no food stockholding solution', 'India pushed but no breakthrough'],
+      ],
+    },
+    {
+      title: 'India\'s Trade Remedies',
+      headers: ['Measure', 'Purpose', 'Investigating Body', 'India\'s Usage'],
+      rows: [
+        ['Anti-dumping duty', 'Counter below-cost imports', 'DGTR', '300+ cases since 1995 (mostly vs China)'],
+        ['Countervailing duty', 'Counter subsidised imports', 'DGTR', 'Fewer cases — requires proving foreign subsidy'],
+        ['Safeguard duty', 'Temporary protection during import surge', 'DGTR recommends, govt decides', 'Used sparingly — steel, solar'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'AoA Boxes — "GAB"',
+      mnemonic: 'Green (allowed freely, no limits), Amber (trade-distorting, reduce to de minimis), Blue (production-limiting, allowed)',
+      explanation: 'Green Box: Research, safety nets, disaster relief — unlimited. Amber Box: MSP, input subsidies — developing countries\' de minimis is 10%. Blue Box: Payments tied to production limits — US/EU use extensively. India demands a new "S&D Box" for food stockholding.',
+    },
+    {
+      title: 'GATS Modes — "CCCP"',
+      mnemonic: 'Cross-border (1), Consumption abroad (2), Commercial presence (3), Persons movement (4)',
+      explanation: 'Four modes of services trade in GATS. India\'s offensive interests: Mode 1 (IT exports $254B, world\'s largest) and Mode 4 (professional mobility). India is defensive on Mode 3 (FDI restrictions in retail, banking, insurance).',
+    },
+    {
+      title: 'WTO Principles — "MN-NT-R-T-SDT"',
+      mnemonic: 'Most Favoured Nation, National Treatment, Reciprocity, Transparency, Special & Differential Treatment',
+      explanation: 'Five core WTO principles: MFN (treat all members equally — cannot discriminate), National Treatment (same rules for domestic and imported), Reciprocity (mutual concessions), Transparency (publish all trade measures), S&DT (extra time/flexibility for developing countries).',
+    },
+    {
+      title: 'Food Stockholding Issue — "1986 ERP"',
+      mnemonic: 'External Reference Price frozen at 1986-88 levels. India\'s MSP vs 1986 prices = inflated AMS. Peace Clause protects since 2013.',
+      explanation: 'The WTO food stockholding problem: India\'s MSP is compared against 1986-88 world prices (not current prices) to calculate Amber Box support. Since prices have risen due to inflation, India\'s AMS appears to breach the 10% de minimis. The Peace Clause (Bali 2013) protects India from dispute — but a permanent solution is needed.',
+    },
+    {
+      title: 'India\'s FTA Strategy — "RUBE"',
+      mnemonic: 'Rejected RCEP (2019). UAE CEPA (2022). Bilateral focus. EFTA TEPA (2024).',
+      explanation: 'India withdrew from RCEP (feared Chinese imports) and pivoted to bilateral FTAs — UAE (comprehensive, 97% tariff lines), Australia (early harvest), EFTA ($100B FDI commitment). UK and EU negotiations ongoing. India prefers bilateral deals where it can negotiate sector-specific terms.',
+    },
+  ],
 }
