@@ -1,61 +1,129 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const fdiFiiRevision: SubjectRevision = {
-  "topic": "fdi-fii",
-  "bullets": [
-    "FDI: Long-term, management control (10%+ equity), stable. FPI: Short-term, financial (stocks/bonds), volatile 'hot money'.",
-    "Two FDI routes: Automatic (no approval needed) and Government (ministry approval needed).",
-    "Press Note 3 (2020): FDI from countries sharing land border needs government approval (targets China).",
-    "100% FDI (auto): IT, e-commerce marketplace, food processing, single-brand retail.",
-    "74% FDI (auto): Defence (up to 74%), private banking.",
-    "49% FDI: Insurance (raised to 74% in 2021), pension, stock exchanges.",
-    "Prohibited: Lottery, gambling, chit funds, tobacco, atomic energy, real estate business.",
-    "Top FDI sources: Singapore, Mauritius, USA, Netherlands, Japan.",
-    "ECBs: Commercial loans from abroad. Min maturity 3 years. Exchange rate risk on borrower.",
-    "PLI Scheme: Production Linked Incentives across 14 sectors. Total outlay Rs 1.97 lakh crore."
+  topic: 'fdi-fii',
+  bullets: [
+    'FDI: Long-term, management control (10%+ equity), stable, brings technology/jobs. FPI: Short-term, financial (stocks/bonds), volatile "hot money".',
+    'FDI types: Greenfield (new project) vs Brownfield (acquisition). Horizontal (same industry) vs Vertical (supply chain stages).',
+    'Two FDI routes: Automatic (no approval needed, notify RBI) and Government (ministry approval via FIFP portal).',
+    'FIPB abolished in 2017 — FDI approvals shifted to respective ministries via Foreign Investment Facilitation Portal.',
+    'Press Note 3 (2020): FDI from countries sharing land border needs government approval. Targets China especially.',
+    'Also applies where "beneficial owner" is from border country — prevents routing Chinese FDI through third countries.',
+    '100% FDI (auto): IT, e-commerce marketplace, food processing, single-brand retail, airports, coal mining, contract manufacturing.',
+    '100% (auto + govt): Defence (74% auto, above 74% govt for modern tech). Telecom (49% auto, rest govt).',
+    '74% FDI (auto): Private banking. 49% FDI: Insurance (raised to 74% in 2021 with conditions), pension, stock exchanges.',
+    '26%: Digital media/news. E-commerce: 100% marketplace only, 0% inventory model. Multi-brand retail: 51% govt route.',
+    'Prohibited: Lottery, gambling, chit funds, Nidhi companies, real estate business, tobacco manufacturing, atomic energy.',
+    'Composite cap: Total foreign investment (FDI+FPI+NRI) cannot exceed sectoral cap.',
+    'Top FDI sources (2023-24): Singapore (25%), Mauritius (16%), USA (11%), Netherlands, Japan, UAE.',
+    'India-Mauritius DTAA amended 2016: Capital gains taxable in India from April 2017. Reduced round-tripping.',
+    'Top FDI sectors: Services, IT, telecom, trading, automobiles, construction, pharma.',
+    'FDI by state: Maharashtra (30%), Karnataka (22%), Gujarat (12%), Delhi-NCR (10%), Tamil Nadu (7%).',
+    'Record FDI: $84.8 billion (2021-22). Cumulative equity FDI (2000-24): $700+ billion.',
+    'PLI Scheme (2020): 14 sectors, Rs 1.97 lakh crore outlay, 4-6% incentive on incremental sales for 5 years.',
+    'PLI success: Apple iPhone manufacturing (Foxconn, Pegatron, Wistron). India exports $7+ billion in mobile phones.',
+    'ECBs: Commercial loans from abroad. Largest external debt component ($225.6B). SOFR + 550bps all-in-cost ceiling.',
+    'ECB MAMP: 3 years (up to $50M), 5 years (above $50M). Cannot be used for real estate, capital market, equity.',
+    'Masala Bonds: Rupee-denominated ECBs — exchange rate risk on lender, not borrower.',
+    'FPI categories: Cat I (sovereign funds, central banks), Cat II (regulated entities — banks, funds), Cat III (corporates, individuals).',
+    'FPI equity limit: 10% per company (above 10% reclassified as FDI). Aggregate FPI limit: sectoral cap.',
+    'FPI trends: +$36.2B (FY21), -$16.5B (FY22), -$5.6B (FY23), +$41.7B (FY24). Highly volatile.',
+    'FPIs hold ~17% of Indian market cap (down from 24% in 2015). Domestic investors (MFs, insurance) have grown.',
+    'India EoDB: 142 (2014) → 63 (2020) in World Bank rankings. Exercise discontinued, replaced by B-READY.',
+    'Model BIT 2016: Narrower investor protections, 5-year local remedies exhaustion, taxation carve-out. India terminated 68 old BITs.',
+    'White Industries vs India (2011): Australia won arbitration — triggered India\'s BIT review and new Model BIT.',
+    'SWFs investing in India: ADIA, GIC, Temasek, PIF (Saudi), Norway GPFG, QIA. Tax exemption under Section 10(23FE).',
+    'NIIF (National Investment and Infrastructure Fund, 2015): India\'s quasi-SWF. Rs 40,000 crore corpus. ADIA, GIC are anchor investors.',
+    'GAAR (2017): General Anti-Avoidance Rules — deny treaty benefits if principal purpose is tax avoidance. Counters treaty shopping.',
+    'Round-tripping: Indian black money sent abroad returns as FDI via tax havens. Mauritius route was primary vehicle.',
+    'Make in India (2014): 25 sectors. Target: Manufacturing 25% of GDP (current: 17%). Progress limited but PLI is driving change.',
+    'Start-Up India (2016): Tax holiday (80-IAC), Fund of Funds ($1.5B via SIDBI), angel tax abolished (2024). 1.4 lakh+ startups.',
+    'Stand-Up India (2016): Loans Rs 10 lakh-1 crore for SC/ST and women entrepreneurs. 1 SC/ST + 1 woman per bank branch.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "FDI vs FPI",
-      "headers": [
-        "Feature",
-        "FDI",
-        "FPI/FII"
+      title: 'FDI vs FPI',
+      headers: ['Feature', 'FDI', 'FPI/FII'],
+      rows: [
+        ['Nature', 'Long-term, productive', 'Short-term, financial'],
+        ['Control', 'Management control (10%+)', 'No management control (<10%)'],
+        ['Stability', 'Stable, not easily reversed', 'Volatile, easily reversed (hot money)'],
+        ['Brings', 'Technology, jobs, expertise', 'Portfolio capital only'],
+        ['Regulator', 'DPIIT/RBI', 'SEBI'],
+        ['Types', 'Greenfield, brownfield', 'Equity, debt investment'],
       ],
-      "rows": [
-        [
-          "Nature",
-          "Long-term, productive",
-          "Short-term, financial"
-        ],
-        [
-          "Control",
-          "Management control (10%+)",
-          "No management control"
-        ],
-        [
-          "Stability",
-          "Stable, not easily reversed",
-          "Volatile, easily reversed"
-        ],
-        [
-          "Brings",
-          "Technology, jobs, expertise",
-          "Portfolio capital"
-        ],
-        [
-          "Regulator",
-          "DPIIT/RBI",
-          "SEBI"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "FDI Routes — \"Auto or Govt\"",
-      "mnemonic": "Automatic Route: Most sectors. Government Route: Sensitive sectors (defence 74%+, media, multi-brand retail)",
-      "explanation": "Most FDI is automatic (notify RBI). Government route needed for sensitive sectors. Press Note 3 (2020): All FDI from land-border countries (especially China) requires government approval."
-    }
-  ]
+      title: 'Automatic vs Government Route',
+      headers: ['Feature', 'Automatic Route', 'Government Route'],
+      rows: [
+        ['Approval', 'No prior approval', 'Ministry approval needed'],
+        ['Process', 'Post-facto RBI notification', 'Via FIFP portal'],
+        ['Coverage', '90%+ of FDI sectors', 'Sensitive sectors'],
+        ['Timeline', 'Immediate', '8-10 weeks'],
+        ['Examples', 'IT, manufacturing, food', 'Defence (>74%), media, multi-brand retail'],
+      ],
+    },
+    {
+      title: 'Key Sector-wise FDI Limits',
+      headers: ['Sector', 'FDI Limit', 'Route', 'Key Condition'],
+      rows: [
+        ['Defence', '74% auto / 100% govt', 'Auto up to 74%', 'Modern technology for >74%'],
+        ['Insurance', '74%', 'Auto', 'Indian management control'],
+        ['Private Banking', '74%', 'Auto', 'RBI approval needed'],
+        ['Telecom', '100%', '49% auto, rest govt', 'Security clearance'],
+        ['E-commerce', '100%', 'Auto', 'Marketplace model only'],
+        ['Multi-brand retail', '51%', 'Government', 'Min $100M, 30% from MSME'],
+      ],
+    },
+    {
+      title: 'FDI Source Countries — Shift Over Time',
+      headers: ['Period', 'Top Source', 'Key Reason'],
+      rows: [
+        ['2000-2010', 'Mauritius', 'DTAA capital gains exemption'],
+        ['2010-2017', 'Mauritius/Singapore', 'Treaty benefits, routing hub'],
+        ['2017-present', 'Singapore', 'DTAA amended (Mauritius), genuine investments'],
+        ['Emerging', 'UAE, Saudi Arabia', 'CEPA, strategic investments (Jio, Adani)'],
+      ],
+    },
+    {
+      title: 'PLI Scheme — Sector Overview',
+      headers: ['Sector', 'Outlay (Rs Cr)', 'Key Beneficiaries'],
+      rows: [
+        ['Large-scale electronics', '40,951', 'Apple (Foxconn/Pegatron), Samsung, Dixon'],
+        ['Automobiles & components', '25,938', 'Tata Motors, Mahindra, Hyundai'],
+        ['Pharma', '15,000', 'Sun Pharma, Dr Reddy\'s, Cipla'],
+        ['Telecom', '12,195', 'Dixon, Jabil, Flex'],
+        ['Food processing', '10,900', 'ITC, Nestle, Parle, Haldiram'],
+        ['ACC batteries', '18,100', 'Reliance, Ola Electric, Amara Raja'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'FDI Routes — "Auto or Govt"',
+      mnemonic: 'Automatic Route: Most sectors (notify RBI). Government Route: Sensitive sectors (FIFP portal)',
+      explanation: 'Over 90% of FDI is through automatic route. Government route for defence (>74%), media, multi-brand retail. Press Note 3: All FDI from border countries requires government approval.',
+    },
+    {
+      title: 'Prohibited FDI Sectors — "LGNR-TAT"',
+      mnemonic: 'L: Lottery. G: Gambling. N: Nidhi companies. R: Real estate business. T: Tobacco. A: Atomic energy. T: TDR trading',
+      explanation: 'Seven sectors where FDI is completely prohibited regardless of route.',
+    },
+    {
+      title: 'FDI Source Countries — "SMUNJ"',
+      mnemonic: 'S: Singapore (1st). M: Mauritius (2nd). U: USA (3rd). N: Netherlands (4th). J: Japan (5th)',
+      explanation: 'Top 5 FDI source countries for India (2023-24). Singapore overtook Mauritius after DTAA amendment.',
+    },
+    {
+      title: 'Press Note 3 — "CPBNMBA"',
+      mnemonic: 'C: China. P: Pakistan. B: Bangladesh. N: Nepal. M: Myanmar. B: Bhutan. A: Afghanistan',
+      explanation: 'FDI from these 7 land-border countries requires government approval under Press Note 3 (2020). Primarily targets Chinese investments.',
+    },
+    {
+      title: 'PLI — "14 Sectors for Manufacturing"',
+      mnemonic: 'Electronics + Pharma + Auto + Food + Telecom + Textiles + Steel + Solar + Battery + White Goods + IT HW + Drones + Medical Devices + Chemicals',
+      explanation: 'Total PLI outlay: Rs 1.97 lakh crore. 4-6% incentive on incremental sales for 5 years. Biggest industrial policy since 1991.',
+    },
+  ],
 }

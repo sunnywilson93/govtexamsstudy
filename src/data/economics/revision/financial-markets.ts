@@ -1,61 +1,141 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const financialMarketsRevision: SubjectRevision = {
-  "topic": "financial-markets",
-  "bullets": [
-    "Money Market: Short-term (up to 1 year). Capital Market: Long-term (over 1 year).",
-    "T-Bills: 91-day, 182-day, 364-day. Issued by RBI on behalf of GoI. Zero-coupon (discount). Min Rs 25,000.",
-    "Commercial Paper (CP): 7 days to 1 year. Unsecured. Issued by corporates.",
-    "Call Money: Overnight interbank lending. Notice Money: 2-14 days. Only banks and primary dealers.",
-    "BSE: Asia's oldest stock exchange (1875). Index: Sensex (30 stocks). NSE: Electronic trading (1994). Index: Nifty 50.",
-    "SEBI: Statutory since 1992 (SEBI Act). HQ: Mumbai. Regulates stock exchanges, mutual funds, FPIs.",
-    "IPO = Initial Public Offering. FPO = Follow-on Public Offer. Rights Issue = offered to existing shareholders.",
-    "Demat Account: Electronic securities. Depositories: NSDL, CDSL. DPs are intermediaries.",
-    "Bond prices and yields move inversely. When RBI cuts rates, bond prices rise.",
-    "Sovereign Gold Bonds: Denominated in grams of gold, 2.5% annual interest, 8-year tenure."
+  topic: 'financial-markets',
+  bullets: [
+    'Money Market: Short-term (up to 1 year). Capital Market: Long-term (over 1 year). Debt market + Equity market.',
+    'T-Bills: 91-day, 182-day, 364-day. Issued by RBI for GoI. Zero-coupon (discount). Min Rs 25,000. Risk-free.',
+    'Commercial Paper (CP): 7 days to 1 year. Unsecured. Issued by corporates (min A3 rating). Min Rs 5 lakh.',
+    'Certificate of Deposit (CD): Banks: 7 days-1 year. FIs: 1-3 years. Negotiable. Min Rs 1 lakh.',
+    'Call Money: Overnight interbank. Notice Money: 2-14 days. Only scheduled banks and primary dealers.',
+    'TREPS (Tri-Party Repo): Replaced CBLO (2018). Facilitated by CCIL. Participants include MFs, insurance, corporates.',
+    'BSE: Asia\'s oldest (1875). Index: Sensex (30 stocks). NSE: Electronic trading (1994). Index: Nifty 50.',
+    'India\'s market cap: $4+ trillion (2024). 5th largest globally. ~110% of GDP.',
+    'SEBI: Non-statutory 1988, statutory 1992 (SEBI Act). HQ: Mumbai. Chairman: Tuhin Kanta Pandey (2025).',
+    'SEBI functions: Protect investors, regulate securities markets, promote development. Quasi-legislative/executive/judicial.',
+    'SEBI regulates: Exchanges, MFs, credit rating agencies, FPIs, AIFs, REITs/InvITs, depositories, clearing corporations.',
+    'IPO = Initial Public Offering. FPO = Follow-on. Rights Issue = to existing shareholders. Bonus = free from reserves.',
+    'OFS (Offer for Sale): Promoters sell via exchange. Used for government disinvestment. QIP: To institutional buyers only.',
+    'Demat Account: Electronic securities. Depositories: NSDL (1996), CDSL (1999). DPs are intermediaries. 15+ crore accounts (2024).',
+    'T+1 Settlement: India first major market (January 2023). Trade settled on next business day. Reduced from T+2.',
+    'Bond prices and yields move inversely. RBI rate cut → bond prices rise (yields fall). 10-year G-Sec yield: ~7% (2025).',
+    'G-Secs: 5-40 year maturity, semi-annual coupon. SDLs: State government bonds (25-75 bps premium over central G-Secs).',
+    'Sovereign Gold Bonds: Grams of gold, 2.5% annual interest, 8-year tenure. Capital gains exempt if held to maturity.',
+    'RBI Retail Direct (2021): Retail investors can directly buy G-Secs, T-Bills, SGBs. 8+ lakh accounts.',
+    'Mutual Funds: 47 AMCs, AUM Rs 68 lakh crore ($800B, Dec 2024). SIP flows: Rs 25,000+ crore/month. 10+ crore SIP accounts.',
+    'MF categories (SEBI 2017): Equity, Debt, Hybrid, Solution-oriented, Index/ETF. ELSS: Tax-saving, 3-year lock-in.',
+    'NAV = (Total Assets - Liabilities) / Units. Calculated daily. Expense ratio capped by SEBI (2.25% max for small equity funds).',
+    'ETFs: Track index, low cost. CPSE ETF and Bharat Bond ETF used for government disinvestment.',
+    'REITs: Real estate. Embassy, Mindspace, Brookfield, Nexus. AUM: Rs 1.3 lakh crore. InvITs: Infrastructure assets.',
+    'AIFs: Cat I (VC, infrastructure), Cat II (PE, debt), Cat III (hedge funds). Min investment: Rs 1 crore. 1,200+ registered.',
+    'GIFT City (Gandhinagar): India\'s first IFSC. Regulated by IFSCA. Zero GST, 10-year tax holiday. 600+ entities.',
+    'Derivatives: NSE is world\'s largest derivatives exchange by contracts. 97%+ volume is options trading.',
+    'SEBI data (2023): 89% of F&O traders lose money. Average loss Rs 1.1 lakh. SEBI tightening regulations (2024).',
+    'Corporate bonds outstanding: Rs 45 lakh crore (~14% of GDP). Underdeveloped vs equity market.',
+    'NaBFID (2021): DFI for infrastructure bond market development. Rs 1 lakh crore corpus over 10 years.',
+    'Commodity exchanges: MCX (metals, energy), NCDEX (agriculture). SEBI regulator since 2015 (merged FMC).',
+    'Account Aggregator: Consent-based financial data sharing. 8 operators. Enables MSME credit assessment.',
+    'SCORES: SEBI investor grievance redressal portal. 40,000+ complaints resolved annually.',
+    'Circuit breakers: Trading halted at 10%, 15%, 20% index movement. Prevents panic.',
+    'Insider trading: SEBI Regulations 2015. Penalties up to Rs 25 crore or 3x profits. High-profile cases: Reliance (Rs 447 crore penalty).',
+    'LODR 2015: Listed company governance — 1/3 independent directors, audit committee, quarterly disclosures.',
+    'Finfluencer regulation (2024): SEBI banned registered entities from associating with unregistered financial influencers.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Money Market vs Capital Market",
-      "headers": [
-        "Feature",
-        "Money Market",
-        "Capital Market"
+      title: 'Money Market vs Capital Market',
+      headers: ['Feature', 'Money Market', 'Capital Market'],
+      rows: [
+        ['Tenure', 'Up to 1 year', 'Over 1 year'],
+        ['Instruments', 'T-Bills, CP, CD, Call Money', 'Shares, Bonds, Debentures'],
+        ['Risk', 'Low', 'Higher'],
+        ['Liquidity', 'Very high', 'Variable'],
+        ['Regulator', 'RBI', 'SEBI'],
+        ['Purpose', 'Short-term liquidity', 'Long-term capital raising'],
       ],
-      "rows": [
-        [
-          "Tenure",
-          "Up to 1 year",
-          "Over 1 year"
-        ],
-        [
-          "Instruments",
-          "T-Bills, CP, CD, Call Money",
-          "Shares, Bonds, Debentures"
-        ],
-        [
-          "Risk",
-          "Low",
-          "Higher"
-        ],
-        [
-          "Liquidity",
-          "Very high",
-          "Variable"
-        ],
-        [
-          "Regulator",
-          "RBI",
-          "SEBI"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "T-Bill Maturities — \"91-182-364\"",
-      "mnemonic": "Three T-Bill tenures: 91 days, 182 days, 364 days",
-      "explanation": "Treasury Bills come in three maturities. All are zero-coupon (sold at discount, redeemed at par). Minimum investment Rs 25,000. Issued by RBI on behalf of Government of India through auctions."
-    }
-  ]
+      title: 'BSE vs NSE',
+      headers: ['Feature', 'BSE', 'NSE'],
+      rows: [
+        ['Established', '1875', '1992 (trading 1994)'],
+        ['Index', 'Sensex (30 stocks)', 'Nifty 50 (50 stocks)'],
+        ['Trading', 'BOLT platform', 'NEAT platform'],
+        ['Market share', '~5% (cash)', '~95% (cash)'],
+        ['Derivatives', 'Lower volumes', 'World\'s largest by contracts'],
+        ['Status', 'Asia\'s oldest exchange', 'First electronic exchange in India'],
+      ],
+    },
+    {
+      title: 'Primary vs Secondary Market',
+      headers: ['Feature', 'Primary Market', 'Secondary Market'],
+      rows: [
+        ['Function', 'New securities issued', 'Existing securities traded'],
+        ['Seller', 'Company/issuer', 'Existing holder'],
+        ['Price', 'Fixed/book-built', 'Market-determined'],
+        ['Capital to', 'Company (fresh capital)', 'Previous holder'],
+        ['Examples', 'IPO, FPO, Rights Issue', 'BSE, NSE daily trading'],
+      ],
+    },
+    {
+      title: 'NSDL vs CDSL',
+      headers: ['Feature', 'NSDL', 'CDSL'],
+      rows: [
+        ['Established', '1996', '1999'],
+        ['Promoted by', 'NSE, IDBI Bank, UTI', 'BSE'],
+        ['Accounts', '~3.5 crore', '~12 crore'],
+        ['Market share', '~25%', '~75% (retail-heavy)'],
+        ['Listed', 'IPO planned', 'Listed on NSE'],
+      ],
+    },
+    {
+      title: 'REITs vs InvITs',
+      headers: ['Feature', 'REITs', 'InvITs'],
+      rows: [
+        ['Asset type', 'Real estate (offices, malls)', 'Infrastructure (roads, power, gas)'],
+        ['Examples', 'Embassy, Mindspace, Nexus', 'IRB, India Grid, PowerGrid'],
+        ['Distribution', '90% of net distributable cash', '90% of net distributable cash'],
+        ['Revenue model', 'Rental income', 'Toll/tariff income'],
+        ['Regulator', 'SEBI', 'SEBI'],
+      ],
+    },
+    {
+      title: 'Equity MF vs Debt MF vs Hybrid MF',
+      headers: ['Feature', 'Equity Fund', 'Debt Fund', 'Hybrid Fund'],
+      rows: [
+        ['Invests in', 'Stocks', 'Bonds, G-Secs, CP', 'Both equity + debt'],
+        ['Risk', 'High', 'Low-medium', 'Medium'],
+        ['Returns', 'Potentially high', 'Moderate, stable', 'Balanced'],
+        ['LTCG tax', '12.5% above Rs 1.25L', 'Slab rate', 'Depends on equity %'],
+        ['Example', 'Large-cap, Mid-cap', 'Liquid, Gilt, Corporate bond', 'Balanced Advantage'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'T-Bill Maturities — "91-182-364"',
+      mnemonic: 'Three T-Bill tenures: 91 days, 182 days, 364 days',
+      explanation: 'All zero-coupon (sold at discount, redeemed at par). Min Rs 25,000. Issued by RBI for GoI through weekly auctions.',
+    },
+    {
+      title: 'Money Market Instruments — "TC3R"',
+      mnemonic: 'T: T-Bills. C: Commercial Paper. C: Certificate of Deposit. C: Call/Notice Money. R: Repo/TREPS',
+      explanation: 'Five key money market instruments. T-Bills are government, CP is corporate, CD is bank-issued, Call Money is interbank, Repo is RBI-mediated.',
+    },
+    {
+      title: 'SEBI Year — "88 Non-Statutory, 92 Statutory"',
+      mnemonic: '1988: Established (non-statutory). 1992: SEBI Act (statutory powers)',
+      explanation: 'SEBI became a statutory body in 1992 — the same year as the Harshad Mehta securities scam which exposed the need for market regulation.',
+    },
+    {
+      title: 'Depositories — "NSDL-NSE, CDSL-BSE"',
+      mnemonic: 'NSDL promoted by NSE (1996). CDSL promoted by BSE (1999)',
+      explanation: 'Two depositories hold securities in demat form. CDSL has more retail accounts (~75% share). Both regulated by SEBI.',
+    },
+    {
+      title: 'Bond Price-Yield Relationship — "Price Up, Yield Down"',
+      mnemonic: 'When RBI cuts rates → Bond prices rise → Yields fall. Inverse relationship always.',
+      explanation: 'Existing bonds with higher coupons become more attractive when new rates are lower — price rises. 10-year G-Sec yield is the benchmark (~7%).',
+    },
+  ],
 }

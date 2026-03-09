@@ -1,63 +1,147 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const biodiversityConservationRevision: SubjectRevision = {
-  "topic": "biodiversity-conservation",
-  "bullets": [
-    "In-situ conservation: protecting species in natural habitats (NPs, WLSs, BRs, Sacred Groves).",
-    "Ex-situ conservation: outside natural habitats (zoos, botanical gardens, gene banks, seed banks).",
-    "CBD (1992): conservation, sustainable use, fair benefit sharing of genetic resources.",
-    "CITES (1975): regulates wildlife trade through 3 Appendices (I — banned, II — controlled, III — protected).",
-    "Nagoya Protocol (2010): Access and Benefit Sharing (ABS) of genetic resources.",
-    "Kunming-Montreal GBF (2022): protect 30% of land and ocean by 2030 (\"30x30\" target).",
-    "IUCN Red List categories: EX, CR, EN, VU, NT, LC.",
-    "WLPA Schedule I provides highest protection for most endangered species (tiger, lion, elephant).",
-    "NBA (Chennai) regulates access to biological resources under Biological Diversity Act 2002.",
-    "Captive breeding successes: Barasingha (Kanha), tigers (Sariska, Panna reintroduction), vultures (Pinjore).",
-    "HIPPO: major threats — Habitat loss, Invasive species, Pollution, Population growth, Over-exploitation.",
-    "Lantana camara is the most dominant invasive weed in Indian forests."
+  topic: 'biodiversity-conservation',
+  bullets: [
+    'In-situ conservation: protecting species in natural habitats — NPs, WLSs, BRs, Community Reserves, Conservation Reserves, Sacred Groves.',
+    'Ex-situ conservation: outside natural habitats — zoos, botanical gardens, gene banks, seed vaults, cryopreservation, captive breeding.',
+    'CBD (1992, Rio): three objectives — conservation, sustainable use, fair/equitable benefit sharing of genetic resources; 196 parties.',
+    'Cartagena Protocol (2003): biosafety — regulates transboundary movement of Living Modified Organisms (LMOs/GMOs).',
+    'Nagoya Protocol (2010): Access and Benefit Sharing (ABS) of genetic resources — prevents biopiracy; India ratified 2014.',
+    'Kunming-Montreal GBF (2022): 23 targets including "30x30" — protect 30% land + 30% ocean by 2030; replace Aichi Targets.',
+    'CITES (1975): regulates wildlife trade — Appendix I (trade banned), II (controlled), III (nationally protected); 184 parties.',
+    'CMS/Bonn Convention (1979): migratory species conservation — India is party; covers dugong, Amur falcon, snow leopard.',
+    'Ramsar Convention (1971): wetland conservation — India has 85 Ramsar sites (as of 2024); largest: Vembanad-Kol (Kerala).',
+    'IUCN Red List categories: EX, EW, CR, EN, VU, NT, LC, DD, NE — CR/EN/VU collectively called "threatened" species.',
+    'India: 7-8% of global species on 2.4% of land area — 1 of 17 megadiverse countries; 4 of 36 global biodiversity hotspots.',
+    'India\'s 4 hotspots: Western Ghats, Eastern Himalayas, Indo-Burma, Sundaland (Nicobar Islands).',
+    'Wildlife Protection Act 1972 (WLPA): Schedules I-VI; Schedule I = highest protection (tiger, GIB, snow leopard); amended 2022.',
+    'WLPA 2022 Amendment: rationalized schedules to I-IV; standing committee of NBWL strengthened; CITES implementation improved.',
+    'Biological Diversity Act 2002: NBA (Chennai), SBBs (state level), BMCs (local level) — 3-tier structure for ABS.',
+    'National Biodiversity Authority (NBA, Chennai): regulates access to bio-resources by foreign nationals/entities; approves ABS agreements.',
+    'Biodiversity Heritage Sites (BHS): notified by state govts under BD Act 2002 — Nallur Tamarind Grove (Karnataka) was India\'s first BHS.',
+    'India\'s Protected Area Network: 106 NPs + 567 WLSs + 105 CRs + 220+ Community Reserves = ~5.26% of geographic area.',
+    'Project Tiger (1973): started with 9 reserves; now 56 tiger reserves; tiger population: 3,682 (2022 census, 4th cycle).',
+    'Project Elephant (1992): 33 Elephant Reserves; elephant population ~29,964 (2017 census); human-elephant conflict major issue.',
+    'Indian Crocodile Conservation (1975): mugger, saltwater, gharial — gharial critically endangered; Chambal main habitat.',
+    'Vulture Conservation: 99.9% decline in 1990s due to Diclofenac (cattle drug); banned 2006; Jatayu Conservation Breeding Centres.',
+    'Sea Turtle Conservation: 5 species in India — Olive Ridley mass nesting (arribada) at Gahirmatha/Rushikulya (Odisha).',
+    'Great Indian Bustard (GIB): critically endangered; <150 left; Rajasthan + Gujarat; powerline collisions = #1 threat; SC ordered underground cables.',
+    'One-horned Rhinoceros: ~3,500+ in Assam (Kaziranga 70%); IUCN Vulnerable; Indian Rhino Vision 2020 relocations.',
+    'Snow Leopard: 700+ in India (Ladakh UT, HP, Uttarakhand, Sikkim, Arunachal Pradesh); IUCN Vulnerable; Project Snow Leopard.',
+    'Asiatic Lion: only in Gir (Gujarat); population ~700+ (2020 census); Kuno NP (MP) selected for translocation.',
+    'Invasive species: Lantana camara, Prosopis juliflora, Water Hyacinth, Parthenium — reduce native biodiversity; Parthenium causes health issues.',
+    'Compensatory Afforestation Fund Act (CAMPA, 2016): Rs 54,000+ crore collected; managed by National + State CAMPA.',
+    'Forest Rights Act 2006 (FRA): recognizes rights of forest-dwelling STs/OTFDs; CFR (Community Forest Resource) rights empower conservation.',
+    'Sacred Groves: community-protected forest patches — over 13,000 in India; Meghalaya (law kyntang), Kerala (kavu), Rajasthan (orans).',
+    'Coral reefs in India: Gulf of Kutch, Gulf of Mannar, Andaman & Nicobar, Lakshadweep — all under stress from warming/bleaching.',
+    'Mangrove cover: 4,992 sq km (2021); Sundarbans = largest mangrove (India\'s share ~4,200 sq km); Bhitarkanika 2nd largest.',
+    'Wetland conservation: India has ~7.5 lakh hectares of wetland; Wetlands (Conservation and Management) Rules 2017 replace 2010 rules.',
+    'TRAFFIC India: monitors wildlife trade; works with WWF + IUCN; focuses on tiger parts, shahtoosh (Tibetan antelope), red sanders.',
+    'Biodiversity Finance: India Biodiversity Fund proposed; Global Environment Facility (GEF) = main multilateral funding; Green Climate Fund.',
+    'Green India Mission (under NAPCC): aims to increase forest/tree cover by 5 million hectares + improve quality of existing 5 million hectares.',
+    'Eco-Sensitive Zones (ESZ): buffer zones around PAs — regulated by MoEFCC; usually 10 km from PA boundary; restrict mining, commercial construction.',
+    'HIPPO threats: Habitat loss (#1 globally), Invasive species, Pollution, Population growth, Over-exploitation — apply to India significantly.',
+    'India\'s NDC includes 33% emission intensity reduction + 2.5-3 billion tonnes CO2e carbon sink from additional forest cover by 2030.',
+    'Biodiversity Management Committees (BMCs): 2.5 lakh+ formed across India; prepare People\'s Biodiversity Registers (PBRs) at panchayat level.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "In-Situ vs Ex-Situ Conservation",
-      "headers": [
-        "Feature",
-        "In-Situ",
-        "Ex-Situ"
+      title: 'In-Situ vs Ex-Situ Conservation',
+      headers: ['Feature', 'In-Situ', 'Ex-Situ'],
+      rows: [
+        ['Location', 'Natural habitat', 'Outside natural habitat'],
+        ['Examples', 'NPs, WLSs, BRs, Sacred Groves, CRs', 'Zoos, gene banks, botanical gardens, seed vaults'],
+        ['Scope', 'Entire ecosystem + all species protected', 'Individual species or genetic material'],
+        ['Natural Selection', 'Continues naturally — co-evolution intact', 'Halted — may cause genetic drift'],
+        ['Cost', 'Lower per-species but large areas needed', 'Higher per-species, controlled environment'],
+        ['Preference', 'Primary method — CBD preferred', 'Supplementary — last resort for CR species'],
       ],
-      "rows": [
-        [
-          "Location",
-          "Natural habitat",
-          "Outside natural habitat"
-        ],
-        [
-          "Examples",
-          "NPs, WLSs, BRs, Sacred Groves",
-          "Zoos, gene banks, botanical gardens"
-        ],
-        [
-          "Scope",
-          "Entire ecosystem protected",
-          "Individual species/genetic material"
-        ],
-        [
-          "Preference",
-          "More preferred — natural conditions",
-          "Supplementary method"
-        ],
-        [
-          "Cost",
-          "Lower per-species but large areas needed",
-          "Higher per-species, controlled environment"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Threats to Biodiversity (HIPPO)",
-      "mnemonic": "Habitat loss, Invasive species, Pollution, Population, Over-exploitation",
-      "explanation": "The five major threats to global biodiversity. Habitat loss is the #1 cause of species extinction worldwide."
-    }
-  ]
+      title: 'National Park vs Wildlife Sanctuary vs Biosphere Reserve',
+      headers: ['Feature', 'National Park', 'Wildlife Sanctuary', 'Biosphere Reserve'],
+      rows: [
+        ['Legal basis', 'WLPA 1972', 'WLPA 1972', 'UNESCO MAB Programme + MOEFCC'],
+        ['Human activity', 'Strictly prohibited', 'Limited activities allowed', 'Zoned: core (no activity), buffer, transition'],
+        ['Boundary change', 'Requires state legislature approval', 'CWW can alter', 'MOEFCC notification'],
+        ['Grazing', 'Not permitted', 'CWLW may permit', 'Permitted in buffer/transition zones'],
+        ['Number in India', '106', '567', '18 (12 in UNESCO network)'],
+        ['Example', 'Jim Corbett NP (first, 1936)', 'Bharatpur Bird Sanctuary', 'Nilgiri BR (first, 1986)'],
+      ],
+    },
+    {
+      title: 'WLPA Schedules (Post-2022 Amendment)',
+      headers: ['Schedule', 'Protection Level', 'Species Examples', 'Penalty'],
+      rows: [
+        ['Schedule I', 'Highest — absolute protection', 'Tiger, Elephant, GIB, Snow Leopard, Rhinoceros', 'Up to 7 years + Rs 25 lakh'],
+        ['Schedule II', 'High — prohibited hunting', 'Jackal, Cobra, Pangolin (Indian)', 'Up to 5 years + Rs 10 lakh'],
+        ['Schedule III', 'Protected — regulated trade', 'Hyena, Hog Deer, Nilgai (some)', 'Up to 3 years + Rs 25,000'],
+        ['Schedule IV', 'Vermin — can be hunted with permit', 'Fruit bats, Common crow (context-specific)', 'Varies'],
+      ],
+    },
+    {
+      title: 'Key International Conventions for Biodiversity',
+      headers: ['Convention', 'Year', 'Focus Area', 'Key Feature'],
+      rows: [
+        ['Ramsar', '1971', 'Wetlands', '85 sites in India; Montreux Record for threatened sites'],
+        ['CITES', '1975', 'Wildlife trade', '3 Appendices; bans/regulates trade'],
+        ['CMS/Bonn', '1979', 'Migratory species', 'Amur falcon, dugong, snow leopard'],
+        ['CBD', '1992', 'Overall biodiversity', 'Conservation + sustainable use + ABS'],
+        ['Nagoya Protocol', '2010', 'Genetic resources ABS', 'Prevents biopiracy; India ratified 2014'],
+        ['Kunming-Montreal GBF', '2022', 'Post-2020 targets', '30x30 target; replaces Aichi'],
+      ],
+    },
+    {
+      title: 'Species-Specific Conservation Projects in India',
+      headers: ['Project', 'Started', 'Current Status', 'Key Fact'],
+      rows: [
+        ['Project Tiger', '1973', '56 reserves; 3,682 tigers (2022)', 'Jim Corbett was first tiger reserve'],
+        ['Project Elephant', '1992', '33 reserves; ~29,964 elephants', 'Human-elephant conflict major issue'],
+        ['Crocodile Conservation', '1975', '3 species — gharial most threatened', 'Chambal main gharial habitat'],
+        ['Project Snow Leopard', '2009', '700+ in Ladakh, HP, UK, Sikkim, AP', 'SECURE Himalaya — UNDP funded'],
+        ['Sea Turtle Conservation', '1999', '5 species; Olive Ridley mass nesting', 'Gahirmatha, Odisha — largest rookery'],
+        ['Vulture Conservation', '2006', 'Jatayu Centres; Diclofenac banned', '99.9% decline reversed partially'],
+      ],
+    },
+    {
+      title: 'Biodiversity Legislation in India',
+      headers: ['Law', 'Year', 'Key Provisions', 'Implementing Body'],
+      rows: [
+        ['Wildlife Protection Act', '1972 (amended 2022)', 'Schedules I-IV; NPs, WLSs; NBWL, NTCA', 'MOEFCC, State Forest Depts'],
+        ['Forest Conservation Act', '1980 (amended 2023)', 'Prior approval for diversion of forest land', 'MOEFCC, FAC'],
+        ['Biological Diversity Act', '2002 (amended 2023)', 'ABS framework; 3-tier: NBA-SBB-BMC', 'NBA (Chennai)'],
+        ['Forest Rights Act', '2006', 'CFR rights; recognizes ST/OTFD rights', 'State-level FRC, Gram Sabha'],
+        ['CAMPA Act', '2016', 'Compensatory afforestation fund', 'National + State CAMPA'],
+        ['Wetlands Rules', '2017', 'Conservation/management of wetlands', 'State Wetland Authorities'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Threats to Biodiversity (HIPPO)',
+      mnemonic: 'Habitat loss, Invasive species, Pollution, Population, Over-exploitation',
+      explanation: 'The five major threats to global biodiversity. Habitat loss is the #1 cause of species extinction worldwide — 70% of forests converted.',
+    },
+    {
+      title: 'IUCN Red List Categories',
+      mnemonic: 'Every Endangered Wolf Can Never Live — EX, EW, CR, EN, VU, NT, LC',
+      explanation: 'From most to least threatened: Extinct, Extinct in Wild, Critically Endangered, Endangered, Vulnerable, Near Threatened, Least Concern. DD and NE are data categories.',
+    },
+    {
+      title: 'India\'s 4 Biodiversity Hotspots',
+      mnemonic: 'WISE — Western Ghats, Indo-Burma, Sundaland, Eastern Himalayas',
+      explanation: 'India has 4 of the world\'s 36 biodiversity hotspots. Each has at least 1,500 endemic vascular plant species and has lost 70%+ of original habitat.',
+    },
+    {
+      title: 'CBD Three Objectives',
+      mnemonic: 'CUB — Conservation, Use (sustainable), Benefit sharing',
+      explanation: 'The three pillars of the Convention on Biological Diversity (1992). Nagoya Protocol specifically operationalizes the third objective (ABS).',
+    },
+    {
+      title: 'Protected Area Hierarchy (strictness)',
+      mnemonic: 'NPark > WLS > CR > ComR — "No Wild Creatures Complain"',
+      explanation: 'National Parks (strictest, no human activity) > Wildlife Sanctuaries (limited activity) > Conservation Reserves (buffer) > Community Reserves (community managed).',
+    },
+  ],
 }

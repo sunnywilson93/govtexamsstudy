@@ -3,69 +3,121 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const sebiRevision: SubjectRevision = {
   topic: 'sebi',
   bullets: [
-    "SEBI established April 12, 1988 (non-statutory). Statutory body: SEBI Act 1992. HQ: Mumbai. Chairman (2025): Tuhin Kanta Pandey.",
-    "SEBI mandates: Protect investors, promote securities market development, regulate securities market.",
-    "SEBI powers: Quasi-legislative (frame regulations), quasi-executive (investigate), quasi-judicial (pass orders, impose penalties).",
-    "BSE: Established 1875, Asia's oldest. SENSEX: 30 stocks, base 1978-79. NSE: Established 1992. NIFTY 50: base November 1995.",
-    "India's market capitalisation crossed $5 trillion (December 2024) — 4th largest globally.",
-    "T+1 settlement introduced January 2023 — India among first major markets. Reduces counterparty risk.",
-    "IPO allocation: QIB 50%, NII 15%, Retail 35%. Book building is dominant price discovery mechanism.",
-    "Total demat accounts: 17.8 crore (December 2024) — up from 4 crore in 2020 (post-COVID retail surge).",
-    "Mutual fund AUM: Rs 68+ lakh crore. SIP monthly inflows: Rs 25,000+ crore (2024). 44 AMCs operational.",
-    "SEBI (Prohibition of Insider Trading) Regulations 2015: Insiders cannot trade with UPSI. Penalties up to Rs 25 crore or 3x profit.",
-    "FMC merged into SEBI (2015) — SEBI became unified regulator for securities and commodity derivatives.",
-    "SEBI LODR 2015: Corporate governance norms — 1/3 independent directors, audit committee, related party transaction disclosures.",
-    "Takeover Code 2011: 25%+ acquisition triggers mandatory open offer for 26% of voting capital.",
-    "GIFT City IFSC: Regulated by IFSCA (2020). International financial services — banking, insurance, fund management, aircraft leasing.",
-    "Finfluencer regulation (2024): SEBI barred registered entities from associating with unregistered financial influencers."
-],
+    'SEBI established April 12, 1988 (non-statutory). Statutory body: SEBI Act 1992. HQ: Mumbai. Chairman (2025): Tuhin Kanta Pandey.',
+    'SEBI mandates: Protect investors (highest priority), promote securities market development, regulate securities market.',
+    'SEBI powers: Quasi-legislative (frame regulations), quasi-executive (investigate), quasi-judicial (pass orders, impose penalties up to Rs 25 crore or 3x profit).',
+    'Appeals: SEBI order to SAT (Securities Appellate Tribunal) to Supreme Court.',
+    'BSE: Established 1875, Asia\'s oldest. SENSEX: 30 stocks, base 1978-79 (100), free-float market cap weighted. 5,500+ listed companies.',
+    'NSE: Established 1992 (recognition), trading began 1994. NIFTY 50: base November 3, 1995 (1,000). Handles 90%+ of derivatives trading.',
+    'India\'s market capitalisation crossed $5 trillion (December 2024) — 4th largest globally.',
+    'T+1 settlement introduced January 2023 — India among first major markets. Reduces counterparty risk. Goal: T+0 (instant).',
+    'IPO allocation (book-built): QIB 50%, NII 15%, Retail 35%. ASBA mandatory — money stays in investor\'s account until allotment.',
+    'Total demat accounts: 17.8 crore (December 2024) — up from 4 crore in 2020 (post-COVID retail surge). NSDL and CDSL.',
+    'Mutual fund AUM: Rs 68+ lakh crore. SIP monthly inflows: Rs 25,000+ crore (2024). 44 AMCs. Largest: SBI MF.',
+    'SEBI (Prohibition of Insider Trading) Regulations 2015: Insiders cannot trade with UPSI. Penalties up to Rs 25 crore or 3x profit.',
+    'FMC merged into SEBI (September 2015) — SEBI became unified regulator for securities and commodity derivatives.',
+    'SEBI LODR 2015: 1/3 independent directors (1/2 if Chairman is executive), audit committee (2/3 independent), mandatory BRSR for top 1,000.',
+    'Takeover Code 2011: 25%+ acquisition triggers mandatory open offer for 26% of voting capital. Creeping acquisition: 5%/year limit for 25-75% holders.',
+    'GIFT City IFSC: Regulated by IFSCA (2020). 10-year tax holiday. Banking, insurance, fund management, aircraft leasing.',
+    'Finfluencer regulation (2024): SEBI barred registered entities from associating with unregistered financial influencers.',
+    'F&O tightening (2024): Contract size to Rs 15 lakh, weekly options restricted to 1/exchange/index. 93% of individual traders lost money (SEBI study).',
+    'FPI categories: I (sovereign, central banks), II (regulated entities), III (others). FPI aggregate limit = sectoral FDI cap. Individual FPI limit: 10%.',
+    'P-Notes (Participatory Notes): Share fell from 55% of FPI assets (2007) to under 1% (2024) due to tightened regulations.',
+    'Kotak Committee (2017): Separate Chairman and MD/CEO for top 500. Woman independent director mandatory. ID tenure: 2 terms of 5 years max.',
+    'Corporate governance milestones: Birla Committee (2000, Clause 49), Murthy Committee (2003), LODR (2015), Kotak (2017), BRSR (2023).',
+    'Scams: Harshad Mehta (1992, bank receipts), Ketan Parekh (2001, K-10 stocks), Satyam (2009, Rs 7,136 crore accounting fraud).',
+    'Social Stock Exchange (SSE): ZCZP bonds for NPOs, equity/debt for for-profit SEs. First listing: Swadeshi Microfinance (2023).',
+    'India\'s weight in MSCI EM Index: ~18-19% (2024, 2nd after China). Indian G-Sec inclusion in JP Morgan GBI-EM Index from June 2024.',
+    'SME IPOs: 205 issues in FY24 raising Rs 6,084 crore. SEBI proposed stricter norms — min Rs 4 lakh application, profitability track record.',
+    'BRSR Core: Third-party assured ESG reporting mandatory for top 150 companies from FY24. Full BRSR for top 1,000.',
+    'Commodity exchanges: MCX (bullion, energy, metals), NCDEX (agricultural). Govt periodically bans agri futures during food inflation.',
+    'Credit Rating Agencies: CRISIL (S&P), ICRA (Moody\'s), CARE, India Ratings (Fitch), Brickwork, Acuite, Infomerics. Scale: AAA to D.',
+    'Delisting: Reverse book building. 90% acceptance threshold. Floor price by SEBI formula. Fixed-price available for small companies.',
+    'NISM (National Institute of Securities Markets): SEBI-established. 25+ certification programmes. Mandatory for market professionals.',
+    'AIF: Cat I (VC, SME, social, infra), Cat II (PE, debt — residual), Cat III (hedge funds). Total commitments: Rs 11.35 lakh crore.',
+    'Retail Direct Scheme (2021): Buy G-Secs directly via RBI without intermediary.',
+    'ETFs: NIFTY ETF, Gold ETF, Bharat 22 ETF, CPSE ETF. Used for passive investing and government disinvestment.',
+    'India equity F&O daily notional turnover: Rs 300+ lakh crore (NSE). Cash equity daily turnover: Rs 60,000-70,000 crore.',
+    'Minimum public shareholding: 25% within 3 years (10% at IPO for large companies with market cap > Rs 4,000 crore).',
+  ],
   comparisons: [
     {
-        "title": "BSE vs NSE",
-        "headers": [
-            "Feature",
-            "BSE",
-            "NSE"
-        ],
-        "rows": [
-            [
-                "Established",
-                "1875",
-                "1992"
-            ],
-            [
-                "Index",
-                "SENSEX (30 stocks)",
-                "NIFTY 50 (50 stocks)"
-            ],
-            [
-                "Listed companies",
-                "5,500+",
-                "2,200+"
-            ],
-            [
-                "Derivatives volume",
-                "Lower",
-                "90%+ of derivatives trading"
-            ],
-            [
-                "Base year",
-                "1978-79 (100)",
-                "Nov 3, 1995 (1000)"
-            ]
-        ]
-    }
-],
-  mnemonics: [
-    {
-        "title": "SEBI Mandates — \"PIR\"",
-        "mnemonic": "Protect investors, Improve market, Regulate intermediaries",
-        "explanation": "SEBI's three core mandates under the SEBI Act 1992."
+      title: 'BSE vs NSE',
+      headers: ['Feature', 'BSE', 'NSE'],
+      rows: [
+        ['Established', '1875', '1992'],
+        ['Index', 'SENSEX (30 stocks)', 'NIFTY 50 (50 stocks)'],
+        ['Listed companies', '5,500+', '2,200+'],
+        ['Derivatives volume', 'Lower', '90%+ of derivatives trading'],
+        ['Base year', '1978-79 (100)', 'Nov 3, 1995 (1000)'],
+        ['Innovation', 'Asia\'s oldest exchange', 'Pioneered electronic trading in India'],
+      ],
     },
     {
-        "title": "IPO Allocation — \"50-15-35\"",
-        "mnemonic": "QIB 50%, NII 15%, Retail 35%",
-        "explanation": "Standard IPO allocation ratio for book-built issues regulated by SEBI."
-    }
-],
+      title: 'Primary Market vs Secondary Market',
+      headers: ['Feature', 'Primary Market', 'Secondary Market'],
+      rows: [
+        ['Function', 'New securities issuance', 'Trading of existing securities'],
+        ['Participants', 'Company ↔ Investors', 'Investor ↔ Investor'],
+        ['Price', 'Set by company (fixed/book-built)', 'Market-determined (supply/demand)'],
+        ['Examples', 'IPO, FPO, Rights Issue, QIP', 'Stock exchange trading, F&O'],
+        ['Key regulation', 'SEBI ICDR 2018', 'SEBI LODR 2015, PFUTP 2003'],
+      ],
+    },
+    {
+      title: 'AIF Categories',
+      headers: ['Category', 'Type', 'Examples', 'Key Feature'],
+      rows: [
+        ['Category I', 'Venture capital, SME, social venture, infrastructure', 'VC funds, angel funds', 'Positive spillover sectors — incentivised'],
+        ['Category II', 'PE, debt funds (residual)', 'Private equity, real estate funds', 'No leverage, no specific incentives'],
+        ['Category III', 'Hedge funds, long-short', 'PIPE funds, trading strategies', 'Can employ leverage'],
+      ],
+    },
+    {
+      title: 'FPI Categories',
+      headers: ['Category', 'Investor Type', 'Examples'],
+      rows: [
+        ['Category I', 'Sovereign/multilateral', 'Central banks, SWFs, IMF, World Bank'],
+        ['Category II', 'Regulated entities', 'Mutual funds, insurance, pension, banks, endowments'],
+        ['Category III', 'All others', 'HNIs, family offices, corporate treasuries'],
+      ],
+    },
+    {
+      title: 'Key SEBI Committees on Corporate Governance',
+      headers: ['Committee', 'Year', 'Key Contribution'],
+      rows: [
+        ['Birla Committee', '2000', 'Clause 49: First corporate governance code'],
+        ['Murthy Committee', '2003', 'Whistle-blower policy, audit committee independence'],
+        ['LODR Regulations', '2015', 'Replaced Clause 49 with comprehensive listing rules'],
+        ['Kotak Committee', '2017', 'Chairman-MD separation, woman ID, BRSR'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'SEBI Mandates — "PIR"',
+      mnemonic: 'Protect investors, Improve market, Regulate intermediaries',
+      explanation: 'SEBI\'s three core mandates under the SEBI Act 1992 — investor protection is the highest priority.',
+    },
+    {
+      title: 'IPO Allocation — "50-15-35"',
+      mnemonic: 'QIB 50%, NII 15%, Retail 35%',
+      explanation: 'Standard IPO allocation ratio for book-built issues regulated by SEBI.',
+    },
+    {
+      title: 'Depositories — "NC" Duo',
+      mnemonic: 'NSDL (1996, first) + CDSL (1999, second)',
+      explanation: 'India has two depositories holding securities in demat form. NSDL was established first (1996), CDSL followed (1999).',
+    },
+    {
+      title: 'Takeover Trigger — "25-26-5"',
+      mnemonic: '25% triggers open offer for 26%. Creeping: 5%/year for 25-75% holders.',
+      explanation: 'Under SEBI Takeover Code 2011: acquiring 25%+ triggers mandatory open offer for 26% of voting capital. Holders of 25-75% can acquire up to 5% per year.',
+    },
+    {
+      title: 'Market Scams — "HKS" Trio',
+      mnemonic: 'Harshad Mehta (1992), Ketan Parekh (2001), Satyam (2009)',
+      explanation: 'Three landmark capital market scams that shaped SEBI\'s regulatory evolution — each led to major reforms in market structure and corporate governance.',
+    },
+  ],
 }

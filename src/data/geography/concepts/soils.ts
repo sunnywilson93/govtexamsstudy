@@ -47,7 +47,6 @@ export const soilsConcept: SubjectConcept = {
       content:
         'India loses about 5,334 million tonnes of soil annually due to erosion. About 130 million hectares (nearly 45%) of land is affected. Major types of soil erosion: (1) Sheet erosion — removal of top layer by flowing water; (2) Rill erosion — small channels formed by running water; (3) Gully erosion — deep channels formed, creating "ravines" (badlands) — common in the Chambal valley; (4) Wind erosion — common in arid Rajasthan. Soil conservation measures include: contour ploughing (ploughing along contour lines), terrace farming (cutting steps on slopes), strip cropping, afforestation and reforestation, building check dams, construction of embankments, crop rotation, mulching, shelter belts (rows of trees to break wind). Key government initiatives: National Mission for Sustainable Agriculture, Soil Health Card Scheme (2015), Watershed Development Programme, Pradhan Mantri Krishi Sinchayee Yojana (PMKSY). The Central Soil & Water Conservation Research and Training Institute (CSWCRTI), Dehradun, is a key research body.',
     },
-  ],
     {
       section: 'Soil Formation — Pedogenesis',
       content:

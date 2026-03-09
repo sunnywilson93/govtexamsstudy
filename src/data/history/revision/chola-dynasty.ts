@@ -23,6 +23,21 @@ export const cholaDynastyRevision: HistoryRevision = {
     "Rajaraja I compiled the Tirumurai — the canon of Tamil Shaiva devotional hymns composed by the 63 Nayanars.",
     "Kamban composed the Ramavataram (Kamba Ramayanam) during the 12th century Chola period.",
     "Last Chola king Rajendra III defeated by Pandya ruler Maravarman Kulasekara I around 1279 CE.",
+    "Chola navy — most powerful in the Indian Ocean for 200+ years; protected trade routes; projected power from Sri Lanka to Sumatra.",
+    "Rajendra I sent embassies to Chinese Song dynasty (1015, 1033) — evidence of Chola diplomatic outreach beyond Southeast Asia.",
+    "Chola-Chalukya rivalry centered on Tungabhadra doab and Vengi region; Kulottunga I united Chola and Eastern Chalukya lines.",
+    "Chola Sri Lanka province (c. 993-1070 CE, capital at Polonnaruwa) — Sinhalese king Vijayabahu I expelled the Cholas in 1070.",
+    "Kaveripattinam (Puhar) — major Sangam-era port for Roman trade; archaeological finds include Roman coins and amphorae.",
+    "Grand Anicut (Kallanai) — 329m long, 20m wide stone dam; one of world's oldest water-diversion structures still in use.",
+    "Erivariyam (tank committee) — one of the key variyams of the Sabha; responsible for irrigation tank maintenance.",
+    "Chola land classification: nanjai (wetlands), punjai (drylands), tottam (garden lands) — revenue assessed on quality, water, crop type.",
+    "Devadasi system formalized under Cholas — temple dancers performed Sadir (precursor to Bharatanatyam); had recognized social status.",
+    "Nandanar — Pulaiyan (lower caste) Nayanar saint celebrated in Periya Puranam; illustrates both Bhakti inclusivity and caste reality.",
+    "Tamil inscriptions found at Barus (Sumatra), Takuapa (Thailand), Quanzhou (China) — evidence of Chola trade networks.",
+    "Ramanuja (1017-1137 CE) — lived during Chola period; established Sri Vaishnava (Vishishtadvaita) tradition; reportedly persecuted by a Chola king.",
+    "Periya Puranam by Sekkizhar (12th century, Kulottunga II's reign) — lives of 63 Nayanars; called the 'fifth Veda of Shaivism.'",
+    "Chudamani Vihara — Buddhist monastery at Nagapattinam built by Srivijaya king; patronized by Rajaraja I — shows cross-cultural exchange.",
+    "Chola Empire decline factors: Pandya resurgence, Hoysala expansion, provincial autonomy, loss of overseas trade control, succession disputes.",
   ],
   comparisons: [
     {
@@ -46,6 +61,41 @@ export const cholaDynastyRevision: HistoryRevision = {
         ["Key source", "Various inscriptions", "Uttaramerur inscriptions (c. 920 CE)"],
       ],
     },
+    {
+      title: "Chola Trade and Maritime Networks",
+      headers: ["Aspect", "Details"],
+      rows: [
+        ["Major Ports", "Kaveripattinam (Puhar), Nagapattinam, Mamallapuram"],
+        ["Key Trade Guilds", "Ainnurruvar (Five Hundred of Ayyavole), Manigramam"],
+        ["Exports", "Textiles, spices (pepper, cardamom), precious stones, camphor, sandalwood"],
+        ["Imports", "Horses (Arabia), Chinese silk, Southeast Asian tin"],
+        ["Gold Coin", "Kahavanu (Kaasu)"],
+        ["Trade Range", "Aden (Yemen) to China — Tamil inscriptions at Barus, Takuapa, Quanzhou"],
+        ["Naval Campaign", "1025 CE — attacked 14 Srivijaya ports to break Malacca Strait monopoly"],
+      ],
+    },
+    {
+      title: "Great Living Chola Temples (UNESCO)",
+      headers: ["Temple", "Location", "Builder", "Date", "Key Feature"],
+      rows: [
+        ["Brihadeeswarar", "Thanjavur", "Rajaraja I", "1010 CE", "66m vimana (tallest); 80-ton monolithic capstone"],
+        ["Gangaikondacholapuram", "Gangaikondacholapuram", "Rajendra I", "c. 1035 CE", "Modelled after Thanjavur; celebrates Gangetic expedition"],
+        ["Airavatesvara", "Darasuram", "Rajaraja II", "12th century", "Smaller but ornately carved; stone chariot motif"],
+      ],
+    },
+    {
+      title: "Chola External Relations",
+      headers: ["Power", "Nature of Relation", "Key Events"],
+      rows: [
+        ["Western Chalukyas (Kalyani)", "Rivalry", "Wars over Tungabhadra doab; Rajaraja I and Rajendra I fought Satyashraya"],
+        ["Eastern Chalukyas (Vengi)", "Alliance/Marriage", "Rajendra I married Chalukya princess; Kulottunga I united both lines"],
+        ["Pandyas (Madurai)", "Subjugation/Rivalry", "Periodically conquered; ultimately defeated the last Chola (1279)"],
+        ["Cheras (Kerala)", "Conquest", "Rajaraja I conquered Kerala; took title Mummudi Cholan"],
+        ["Sri Lanka", "Colonial control", "Chola province (993-1070); capital at Polonnaruwa; expelled by Vijayabahu I"],
+        ["Srivijaya", "Naval warfare", "Rajendra I's 1025 expedition; 14 ports attacked"],
+        ["China (Song)", "Diplomacy/Trade", "Embassies sent in 1015, 1033; trade relations"],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -65,6 +115,18 @@ export const cholaDynastyRevision: HistoryRevision = {
       mnemonic: "Sri Lanka, Maldives, Kerala — 'Southern Maritime Kingdoms'",
       explanation:
         "Rajaraja I's three major maritime conquests that established Chola naval supremacy in the Indian Ocean before Rajendra I's even more ambitious Srivijaya expedition.",
+    },
+    {
+      title: "Chola Village Committees (Variyams)",
+      mnemonic: "Garden, Tank, Annual, Gold — 'GTAG: Good Towns Always Governed'",
+      explanation:
+        "The four key committees (Variyams) of the Chola Sabha (village assembly): Garden committee, Tank committee (erivariyam — irrigation), Annual committee, and Gold committee (handling temple finances). The Uttaramerur inscriptions describe these in detail.",
+    },
+    {
+      title: "Rajendra I's Titles",
+      mnemonic: "Gangaikonda Cholan + Kadaram Kondan — 'Ganga conquered, Kedah conquered'",
+      explanation:
+        "Rajendra I took two key titles reflecting his greatest military achievements: 'Gangaikonda Cholan' (conqueror of the Ganga — from his northern expedition against the Pala king Mahipala I) and 'Kadaram Kondan' (conqueror of Kadaram/Kedah — from his 1025 CE naval raid on the Srivijaya Empire).",
     },
   ],
 }

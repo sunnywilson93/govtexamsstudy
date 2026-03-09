@@ -1,69 +1,127 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const populationRevision: SubjectRevision = {
-  "topic": "population",
-  "bullets": [
-    "India became the world's most populous country in 2023, surpassing China (UN estimate).",
-    "Census 2011 population: 1.21 billion; decadal growth rate 17.7% (2001-2011).",
-    "Population density (2011): 382 persons/sq km; Bihar highest (1,106), Arunachal Pradesh lowest (17).",
-    "Sex ratio (2011): 943 females per 1,000 males; Kerala highest (1,084), Haryana lowest (879).",
-    "Child sex ratio (0-6): 914 — alarming; worst in Haryana (834) and Punjab (846).",
-    "Literacy (2011): 74.04%; Kerala highest (93.91%), Bihar lowest (63.82%).",
-    "UP is the most populous state (199.8 million); Sikkim is least populous (6.1 lakh).",
-    "1921 is called the \"Great Divide\" — population consistently grew after this year.",
-    "India's Total Fertility Rate (TFR) has dropped to 2.0 (NFHS-5) — at replacement level.",
-    "About 65% of India's population is below 35 years — demographic dividend opportunity.",
-    "India's first Census was in 1872 (non-synchronous); first synchronous Census in 1881.",
-    "National Population Policy 2000 aims for population stabilization by 2045."
+  topic: 'population',
+  bullets: [
+    'India became the world\'s most populous country in April 2023, surpassing China (UN estimate: ~1.44 billion).',
+    'Census 2011 population: 1.21 billion; decadal growth rate 17.7% (2001-2011) — lowest since 1951.',
+    'Population density (2011): 382 persons/sq km; Bihar highest (1,106), Arunachal Pradesh lowest (17).',
+    'Among UTs: Delhi has highest density (11,320/sq km); Ladakh has the lowest.',
+    'Sex ratio (2011): 943 females per 1,000 males; improved from 933 in 2001.',
+    'State sex ratio: Kerala highest (1,084 — only state with more females), Haryana lowest (879).',
+    'Child sex ratio (0-6 years): 914 — alarming decline from 927 in 2001; worst in Haryana (834), Punjab (846).',
+    'Beti Bachao Beti Padhao (2015) — targets sex-selective practices; launched from Panipat, Haryana.',
+    'Literacy (2011): 74.04%; Males 82.14%, Females 65.46%; gender gap 16.68 percentage points.',
+    'Kerala: highest literacy (93.91%), highest sex ratio (1,084), highest life expectancy — top on all key indicators.',
+    'Bihar: highest density (1,106/sq km), lowest literacy (63.82%), highest TFR (3.0 per NFHS-5).',
+    'UP is the most populous state (199.8 million — 16.5% of India); Sikkim least populous (6.1 lakh).',
+    '5 most populous states (UP, Maharashtra, Bihar, WB, MP) hold ~47% of India\'s population.',
+    '1921 — "Great Divide/Demographic Divide" — population consistently grew after this year.',
+    '1911-21: only decade of population decline (-0.31%) in Census history — due to 1918 flu pandemic.',
+    'India\'s TFR dropped to 2.0 (NFHS-5, 2019-21) — at replacement level (2.1). Down from 5.9 in 1950s.',
+    'TFR varies: Bihar 3.0, Meghalaya 2.9, UP 2.4 vs Kerala 1.8, TN 1.8, Sikkim 1.1, Goa 1.3.',
+    'India adds ~15-16 million people/year — demographic momentum (large reproductive-age cohort).',
+    'About 65% of India\'s population is below 35 years — demographic dividend opportunity.',
+    'Median age: India 28 years vs China 38, USA 39, Japan 48 — India has the youngest major population.',
+    'Demographic dividend window: ~2010-2050; India adds 10-12 million new workers to labor force annually.',
+    'Only ~2.5% of Indian workforce is formally skilled (vs 52% USA, 96% S Korea) — massive skill gap.',
+    'India launched world\'s first national family planning programme in 1952.',
+    'National Population Policy 2000 — aims for population stabilization by 2045.',
+    'IMR (2020 SRS): 28/1,000 live births; Kerala lowest (6), MP highest (43); down from 146 in 1951.',
+    'MMR (2018-20 SRS): 97/100,000 live births; SDG target: below 70 by 2030; Kerala 19, Assam 195.',
+    'Life expectancy: ~70 years (2019-21); males 68.8, females 71.4; up from ~32 years at independence.',
+    'NFHS (National Family Health Survey) — key data source; NFHS-5 (2019-21) is latest round.',
+    'Urban population: 31.2% (377 million) in 2011; projected to reach ~40% by 2030.',
+    'India has 8 megacities (>10M): Delhi, Mumbai, Kolkata, Bangalore, Chennai, Hyderabad, Ahmedabad, Pune.',
+    'India has the world\'s largest diaspora (~32 million) and receives highest remittances (~$125 billion in 2023).',
+    'BIMARU states (Bihar, MP, Rajasthan, UP) — coined by Ashish Bose (1986); high fertility, low development.',
+    'India\'s first Census: 1872 (non-synchronous, under Lord Mayo); first synchronous: 1881 (under W.C. Plowden).',
+    'Census 2021 postponed due to COVID-19; data based on 2011 Census is now 15 years old.',
+    'Hindus 79.8%, Muslims 14.2%, Christians 2.3%, Sikhs 1.7%, Buddhists 0.7%, Jains 0.4% (Census 2011).',
+    'India has 22 Scheduled Languages (8th Schedule); Hindi is most spoken (43.6%-57.1% depending on dialect inclusion).',
+    'SC: 16.6% (20.14 crore), ST: 8.6% (10.43 crore) of population (Census 2011).',
+    'Ayushman Bharat/PMJAY — Rs 5 lakh health insurance for 50 crore BPL beneficiaries; world\'s largest.',
+    'India\'s public health expenditure: ~2.1% of GDP — below WHO recommendation of 5%.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Census 2011 Key Statistics",
-      "headers": [
-        "Indicator",
-        "Value",
-        "Highest State",
-        "Lowest State"
+      title: 'Census 2011 Key Statistics',
+      headers: ['Indicator', 'National Value', 'Highest State', 'Lowest State'],
+      rows: [
+        ['Total Population', '1.21 billion', 'UP (199.8M)', 'Sikkim (6.1L)'],
+        ['Density', '382/sq km', 'Bihar (1,106)', 'Arunachal (17)'],
+        ['Sex Ratio', '943', 'Kerala (1,084)', 'Haryana (879)'],
+        ['Literacy', '74.04%', 'Kerala (93.91%)', 'Bihar (63.82%)'],
+        ['Child Sex Ratio', '914', 'Mizoram (970)', 'Haryana (834)'],
+        ['Decadal Growth', '17.7%', 'Meghalaya (27.9%)', 'Nagaland (-0.6%)'],
       ],
-      "rows": [
-        [
-          "Total Population",
-          "1.21 billion",
-          "UP (199.8M)",
-          "Sikkim (6.1L)"
-        ],
-        [
-          "Density",
-          "382/sq km",
-          "Bihar (1,106)",
-          "Arunachal (17)"
-        ],
-        [
-          "Sex Ratio",
-          "943",
-          "Kerala (1,084)",
-          "Haryana (879)"
-        ],
-        [
-          "Literacy",
-          "74.04%",
-          "Kerala (93.91%)",
-          "Bihar (63.82%)"
-        ],
-        [
-          "Decadal Growth",
-          "17.7%",
-          "Meghalaya (27.9%)",
-          "Nagaland (-0.6%)"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Census 2011 Extremes",
-      "mnemonic": "Kerala leads in Sex Ratio + Literacy; Bihar lowest in both",
-      "explanation": "Kerala has highest sex ratio (1,084) AND literacy (93.91%). Bihar has highest density (1,106/sq km) and lowest literacy (63.82%)."
-    }
-  ]
+      title: 'Population Growth Phases',
+      headers: ['Phase', 'Period', 'Growth Pattern', 'Key Feature'],
+      rows: [
+        ['Pre-transition', 'Before 1921', 'Stagnant/fluctuating', 'High birth + high death rates; famines, epidemics'],
+        ['Steady growth', '1921-1951', '~1-1.3%/year', 'Death rates begin falling; 1921 = Great Divide'],
+        ['Population explosion', '1951-1981', 'Peak 24.8% decadal', 'Death rates fall sharply, births still high'],
+        ['Declining growth', 'Post-1981', 'Falling (17.7% in 2001-11)', 'Birth rates falling; TFR nearing replacement'],
+      ],
+    },
+    {
+      title: 'Demographic Transition — India vs Others',
+      headers: ['Country', 'Median Age', 'TFR', 'Stage'],
+      rows: [
+        ['India', '28 years', '2.0', 'Late Stage 3 (approaching replacement)'],
+        ['China', '38 years', '1.1', 'Stage 4 (population declining)'],
+        ['Japan', '48 years', '1.2', 'Stage 5 (aging, declining)'],
+        ['Nigeria', '18 years', '5.1', 'Stage 2 (population explosion)'],
+        ['USA', '39 years', '1.6', 'Stage 4 (low growth)'],
+      ],
+    },
+    {
+      title: 'NFHS-5 Health Indicators',
+      headers: ['Indicator', 'Value', 'Trend'],
+      rows: [
+        ['TFR', '2.0', 'Declining (5.9 in 1950s → 3.4 in 1992 → 2.0)'],
+        ['IMR', '35.2/1,000', 'Declining (SRS 2020: 28)'],
+        ['Under-5 mortality', '41.9/1,000', 'Declining but still high'],
+        ['Stunting (under 5)', '35.5%', 'Declining slowly'],
+        ['Wasting (under 5)', '19.3%', 'Slight decline'],
+        ['Modern contraceptive use', '56.5%', 'Increasing; female sterilization dominates (37.9%)'],
+      ],
+    },
+    {
+      title: 'Religion-wise Population (Census 2011)',
+      headers: ['Religion', 'Population (crore)', 'Percentage', 'Decadal Growth'],
+      rows: [
+        ['Hindu', '96.63', '79.8%', '16.8%'],
+        ['Muslim', '17.22', '14.2%', '24.6%'],
+        ['Christian', '2.78', '2.3%', '15.5%'],
+        ['Sikh', '2.08', '1.7%', '8.4%'],
+        ['Buddhist', '0.84', '0.7%', '6.1%'],
+        ['Jain', '0.45', '0.4%', '5.4%'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Census 2011 Extremes — Kerala vs Bihar',
+      mnemonic: 'Kerala = KING (highest sex ratio 1,084, highest literacy 93.91%); Bihar = highest density (1,106) and lowest literacy (63.82%)',
+      explanation: 'Kerala leads on all quality-of-life indicators; Bihar has highest density and lowest literacy.',
+    },
+    {
+      title: 'Population Growth Milestones',
+      mnemonic: '1921 = Great Divide; 1952 = Family Planning; 2000 = 1 Billion + NPP; 2023 = Most Populous',
+      explanation: 'Key years in India\'s demographic history.',
+    },
+    {
+      title: 'BIMARU States',
+      mnemonic: 'B-I-M-A-R-U → Bihar, [MP implied], Rajasthan, UP (coined by Ashish Bose, 1986)',
+      explanation: 'States with high fertility, low literacy, and lagging development indicators.',
+    },
+    {
+      title: 'Demographic Dividend Window',
+      mnemonic: '65% below 35, median age 28, 10-12 million new workers/year, window until 2050',
+      explanation: 'Key numbers defining India\'s demographic dividend opportunity.',
+    },
+  ],
 }

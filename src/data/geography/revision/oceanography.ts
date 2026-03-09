@@ -1,63 +1,122 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const oceanographyRevision: SubjectRevision = {
-  "topic": "oceanography",
-  "bullets": [
-    "Oceans cover about 71% of Earth's surface; Pacific is the largest and deepest.",
-    "Challenger Deep in Mariana Trench (Pacific) is the deepest point — 11,034 m.",
-    "Average ocean salinity: 35 ppt; Dead Sea has highest salinity (~340 ppt).",
-    "Continental Shelf: shallow extension of continent, up to 200 m depth; India's shelf is 530,000 sq km.",
-    "Mid-ocean ridges are formed at divergent plate boundaries; Mid-Atlantic Ridge is the longest (16,000 km).",
-    "Spring Tides occur during full moon and new moon (Sun-Moon-Earth aligned); Neap Tides at quarter moons.",
-    "Gulf of Khambhat has the highest tidal range in India; Bay of Fundy (Canada) has world's highest.",
-    "UNCLOS (1982) defines maritime zones: Territorial Sea (12 nm), EEZ (200 nm), Continental Shelf.",
-    "India's EEZ is about 2.01 million sq km.",
-    "Strait of Hormuz: 20% of world oil transit; Strait of Malacca: busiest commercial strait.",
-    "2004 Indian Ocean Tsunami (9.1 magnitude) killed over 230,000 people globally, 12,400 in India.",
-    "India's Deep Ocean Mission explores polymetallic nodules in Central Indian Ocean Basin."
+  topic: 'oceanography',
+  bullets: [
+    'Oceans cover about 71% of Earth\'s surface; Pacific is the largest and deepest ocean (165.25 million sq km).',
+    'Challenger Deep in Mariana Trench (Pacific) — deepest point on Earth at 10,994 m.',
+    'Average ocean salinity: 35 ppt; NaCl is 78% of dissolved salts; Dead Sea ~340 ppt (a lake, not ocean).',
+    'Red Sea has highest ocean salinity (~40 ppt) — high evaporation, low freshwater input, restricted exchange.',
+    'Bay of Bengal is less saline (30-34 ppt) than Arabian Sea (35-37 ppt) due to massive freshwater river input.',
+    'Continental Shelf: shallow extension up to 200 m depth; India\'s shelf is ~530,000 sq km; rich in petroleum and fisheries.',
+    'Bengal Fan — world\'s largest submarine sediment fan (~3 million sq km), fed by Ganges-Brahmaputra system.',
+    'Mid-ocean ridges — longest mountain chain on Earth (65,000+ km); Mid-Atlantic Ridge is 16,000 km.',
+    'Sunda/Java Trench (7,725 m) — deepest point in the Indian Ocean; site of 2004 megathrust earthquake.',
+    'Spring Tides (full/new moon — Sun-Moon aligned, largest range); Neap Tides (quarter moons — smallest range).',
+    'Gulf of Khambhat — India\'s highest tidal range (~10-12 m); Bay of Fundy (Canada) — world\'s highest (~16 m).',
+    'Thermocline (200-1,000 m) — zone of rapid temperature decrease separating warm surface from cold deep water.',
+    'UNCLOS (1982) zones: Territorial Sea (12 nm), Contiguous (24 nm), EEZ (200 nm), Continental Shelf (up to 350 nm).',
+    'India\'s EEZ is about 2.01 million sq km (~61% of land area); sovereign rights over resources.',
+    'Strait of Hormuz: ~30% of seaborne oil trade; Strait of Malacca: busiest commercial strait (25-30% global trade).',
+    '2004 Indian Ocean Tsunami (9.1 magnitude off Sumatra): 230,000+ killed globally, ~12,400 in India.',
+    'Indian Tsunami Early Warning Centre (ITEWC) at INCOIS, Hyderabad — can issue warnings within 10 minutes.',
+    'India has pioneer investor status with ISA for exploring 75,000 sq km of polymetallic nodules in Central Indian Ocean Basin.',
+    'Deep Ocean Mission (2021): Matsya-6000 manned submersible (6,000 m), deep-sea mining tech, ocean biotech.',
+    'Bombay High (discovered 1974) — produces ~15% of India\'s crude oil; KG Basin — major gas production.',
+    'India is 3rd-largest fish producer (~14.16 million tonnes); marine fish: sardines, mackerel, tuna from Kerala, Gujarat, TN.',
+    'Sagarmala Programme (2015) — port-led development; India has 12 major + 200+ minor ports.',
+    'SAGAR doctrine (2015) — Security and Growth for All in the Region; Indian Ocean strategic vision.',
+    'Andaman & Nicobar Command (2001, Port Blair) — India\'s first tri-service command; monitors Malacca approaches.',
+    'India\'s Blue Economy contributes ~4% of GDP; employs ~95 million people across fishing, shipping, offshore energy.',
+    'Coral reefs in India: Gulf of Kutch, Gulf of Mannar, Andaman & Nicobar, Lakshadweep; threatened by warming/acidification.',
+    'Ocean acidification: pH dropped from 8.2 to 8.1; threatens coral reefs, shellfish, and marine food chains.',
+    'Hydrothermal vents on Carlsberg Ridge (Indian Ocean) support unique chemosynthetic ecosystems.',
+    'India\'s 7,516.6 km coastline touches 9 states (Gujarat, Maharashtra, Goa, Karnataka, Kerala, TN, AP, Odisha, WB) and 4 UTs.',
+    'Blue Flag beaches: 12 Indian beaches certified (2024) for cleanliness and environmental standards.',
+    'MARPOL Convention regulates marine pollution from ships; India is a signatory.',
+    'Arabian Sea has world\'s largest open-ocean dead zone (200-1,200 m depth) due to low dissolved oxygen.',
+    'Tidal energy potential in India: ~8,000-9,000 MW; Gulf of Khambhat and Gulf of Kutch identified for projects.',
+    'Lakshadweep — 12 atolls; coral origin; smallest UT by area (32 sq km); maximum elevation 5 m above sea level.',
+    'Argo float network: ~4,000 globally; India has deployed 500+ in Indian Ocean via INCOIS.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "UNCLOS Maritime Zones",
-      "headers": [
-        "Zone",
-        "Extent",
-        "Rights"
+      title: 'UNCLOS Maritime Zones',
+      headers: ['Zone', 'Extent from Baseline', 'Rights of Coastal State'],
+      rows: [
+        ['Territorial Sea', '0-12 nm', 'Full sovereignty (airspace, seabed, subsoil); foreign ships have innocent passage'],
+        ['Contiguous Zone', '12-24 nm', 'Enforcement of customs, immigration, fiscal, sanitary laws'],
+        ['EEZ', '0-200 nm', 'Sovereign rights over natural resources (fish, oil, gas, minerals)'],
+        ['Continental Shelf', 'Up to 200 nm (or 350 nm)', 'Seabed and subsoil resource rights'],
+        ['High Seas', 'Beyond EEZ', 'Freedom of navigation/fishing; common heritage of mankind'],
       ],
-      "rows": [
-        [
-          "Territorial Sea",
-          "0-12 nm",
-          "Full sovereignty"
-        ],
-        [
-          "Contiguous Zone",
-          "12-24 nm",
-          "Customs, immigration enforcement"
-        ],
-        [
-          "EEZ",
-          "0-200 nm",
-          "Sovereign rights over resources"
-        ],
-        [
-          "Continental Shelf",
-          "Up to 350 nm",
-          "Seabed/subsoil resource rights"
-        ],
-        [
-          "High Seas",
-          "Beyond EEZ",
-          "Freedom of navigation; common heritage"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Tides (S vs N)",
-      "mnemonic": "Spring = Strong (Sun+Moon aligned); Neap = Narrow (Sun⊥Moon)",
-      "explanation": "Spring tides have the largest range (full/new moon). Neap tides have the smallest range (quarter moons)."
-    }
-  ]
+      title: 'Ocean Floor Features',
+      headers: ['Feature', 'Depth', 'Key Characteristic'],
+      rows: [
+        ['Continental Shelf', '0-200 m', 'Shallow, gently sloping; rich in fisheries and petroleum'],
+        ['Continental Slope', '200-3,000 m', 'Steep descent; submarine canyons'],
+        ['Abyssal Plain', '3,000-6,000 m', 'Flat, deepest floors; fine sediments'],
+        ['Mid-Ocean Ridge', 'Variable (1,000-3,000 m below surface)', 'Divergent boundary; new crust forms'],
+        ['Ocean Trench', '6,000-11,000 m', 'Deepest; convergent/subduction zone'],
+        ['Seamount/Guyot', 'Variable', 'Underwater volcano; flat-topped = Guyot'],
+      ],
+    },
+    {
+      title: 'Key Ocean Chokepoints',
+      headers: ['Strait', 'Connects', 'Strategic Significance'],
+      rows: [
+        ['Hormuz', 'Persian Gulf ↔ Gulf of Oman', '~30% seaborne oil trade (~21M barrels/day)'],
+        ['Malacca', 'Indian Ocean ↔ Pacific', 'Busiest; 25-30% global maritime trade'],
+        ['Bab-el-Mandeb', 'Red Sea ↔ Gulf of Aden', 'Gateway to Suez Canal; disrupted by Houthi attacks 2024'],
+        ['Suez Canal', 'Mediterranean ↔ Red Sea', 'Shortens Europe-Asia route by ~7,000 km'],
+        ['Palk Strait', 'India ↔ Sri Lanka', '~30 km wide; Adam\'s Bridge/Ram Setu'],
+      ],
+    },
+    {
+      title: 'Oceans by Size',
+      headers: ['Ocean', 'Area (million sq km)', 'Deepest Point', 'Max Depth'],
+      rows: [
+        ['Pacific', '165.25', 'Challenger Deep (Mariana Trench)', '10,994 m'],
+        ['Atlantic', '106.46', 'Puerto Rico Trench', '8,376 m'],
+        ['Indian', '70.56', 'Sunda/Java Trench', '7,725 m'],
+        ['Southern', '20.33', 'South Sandwich Trench', '7,236 m'],
+        ['Arctic', '14.06', 'Molloy Deep (Fram Strait)', '5,607 m'],
+      ],
+    },
+    {
+      title: 'Tides — Spring vs Neap',
+      headers: ['Feature', 'Spring Tides', 'Neap Tides'],
+      rows: [
+        ['Moon phase', 'Full moon and New moon', 'First quarter and Third quarter'],
+        ['Alignment', 'Sun-Moon-Earth in line (syzygy)', 'Sun and Moon at right angles (quadrature)'],
+        ['Tidal range', 'Largest (highest high, lowest low)', 'Smallest (moderate tides)'],
+        ['Frequency', 'Every ~14 days', 'Every ~14 days (alternating with spring)'],
+        ['Gravitational', 'Forces combine (additive)', 'Forces partially cancel'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Tides (Spring vs Neap)',
+      mnemonic: 'Spring = Strong (Sun+Moon aligned); Neap = Narrow (Sun perpendicular to Moon)',
+      explanation: 'Spring tides occur at full/new moon with largest tidal range. Neap tides at quarter moons with smallest range.',
+    },
+    {
+      title: 'UNCLOS Zones (distance from coast)',
+      mnemonic: '12-24-200 → Territorial (12nm), Contiguous (24nm), EEZ (200nm)',
+      explanation: 'The three key distance thresholds for maritime zones under UNCLOS.',
+    },
+    {
+      title: 'Ocean Size Order',
+      mnemonic: 'PAISA → Pacific > Atlantic > Indian > Southern > Arctic',
+      explanation: 'Five oceans in descending order of area.',
+    },
+    {
+      title: 'India\'s Key Maritime Numbers',
+      mnemonic: '7,516 km coastline, 2.01 million sq km EEZ, 12 major ports, 530,000 sq km shelf',
+      explanation: 'Key numerical facts about India\'s maritime geography frequently tested in exams.',
+    },
+  ],
 }

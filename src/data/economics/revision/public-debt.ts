@@ -1,67 +1,131 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const publicDebtRevision: SubjectRevision = {
-  "topic": "public-debt",
-  "bullets": [
-    "India's internal debt: ~95% of total public debt (rupee-denominated). External debt: ~5%.",
-    "India's central government debt: ~57% of GDP. Total public debt (Centre + States): ~81%.",
-    "External debt: ~$663 billion (March 2024). External Debt-to-GDP: ~19%. Debt service ratio: ~6.7%.",
-    "Small savings: PPF (~7.1%), NSC (~7.7%), KVP, SCSS (~8.2%), Sukanya Samriddhi (~8.2%).",
-    "Domar Condition: If growth rate > interest rate on debt, debt-to-GDP ratio declines.",
-    "WMA (Ways and Means Advances): Short-term borrowing from RBI to bridge revenue-expenditure gaps.",
-    "Primary Dealers: Licensed by RBI to make market in G-Secs. Underwrite auctions. 21 PDs in India.",
-    "RBI Retail Direct (2021): Retail investors can buy G-Secs directly through Gilt Account with RBI.",
-    "NSSF (National Small Savings Fund): Collects small savings, lends to Centre and States.",
-    "Interest payments consume ~40-45% of revenue receipts — largest single expenditure item."
+  topic: 'public-debt',
+  bullets: [
+    'India\'s internal debt: approximately 95% of total public debt (rupee-denominated). External debt: approximately 5%.',
+    'India\'s central government debt: approximately 57% of GDP. Total public debt (Centre + States): approximately 81%.',
+    'External debt: approximately $663 billion (March 2024). External Debt-to-GDP: approximately 19%. Debt service ratio: approximately 6.7%.',
+    'Forex reserves cover approximately 96% of external debt and 12+ months of imports. Comfortable external position.',
+    'Small savings: PPF (approximately 7.1%), NSC (approximately 7.7%), KVP (approximately 7.5%), SCSS (approximately 8.2%), SSY (approximately 8.2%).',
+    'PPF: 15 years, EEE tax status (exempt-exempt-exempt). SSY: Girl child, 21-year maturity, EEE. Both under Section 80C.',
+    'KVP doubles money in approximately 115 months. SCSS: 5 years for 60+ seniors, quarterly interest, max Rs 30 lakh.',
+    'NSSF (National Small Savings Fund): Collects small savings, lends to Centre and States. Outstanding approximately Rs 25 lakh crore.',
+    'Domar Condition: If growth rate > interest rate on debt, debt-to-GDP ratio declines even with primary deficits.',
+    'WMA (Ways and Means Advances): Short-term borrowing from RBI at repo rate. Centre limit: Rs 1.50 lakh crore. Overdraft must be cleared in 10 days.',
+    'Primary Dealers: Licensed by RBI to make market in G-Secs. Underwrite auctions. 21 PDs in India.',
+    'RBI Retail Direct (2021): Retail investors buy G-Secs directly through Gilt Account with RBI. No brokerage.',
+    'Interest payments consume approximately 40-45% of revenue receipts — largest single expenditure item. Constrains fiscal space.',
+    'Dated G-Secs: 5-40 year tenures. Coupon semi-annually. Traded on NDS-OM. 10-year yield is benchmark (approximately 7%).',
+    'T-Bills: 91/182/364 days. Discount instruments. Cash Management Bills: less than 91 days. Used for short-term cash needs.',
+    'SDLs (State Development Loans): State market borrowing. Yield 25-75 bps above central G-Secs. SLR-eligible.',
+    'Sovereign Gold Bonds: 8-year tenure (exit from 5th year), 2.5% annual interest, capital gains tax-free on maturity.',
+    'FRBM Act (2003): Fiscal deficit target 3% of GDP. Revenue deficit to be eliminated. No RBI primary G-Sec subscription.',
+    'N.K. Singh Committee (2017): Centre debt/GDP 40%, States 20%, combined 60%. Escape Clause 0.5% for crises.',
+    'FRBM escape clause invoked: 2008-09 (global crisis), 2020-21 (COVID — fiscal deficit hit 9.2%).',
+    'FY25 fiscal deficit target: 4.9% of GDP. Government committed to below 4.5% by FY26. Primary deficit: 1.4%.',
+    'Weighted Average Maturity of G-Secs: approximately 11-12 years. Long maturity reduces rollover risk.',
+    'JP Morgan GBI-EM Index inclusion (June 2024): India included with phased 10% weight. Expected $20-25 billion passive inflows.',
+    'Bloomberg Global Aggregate Index: India\'s FAR G-Secs included from January 2025. Landmark for bond market.',
+    'Fully Accessible Route (FAR, 2020): Select G-Secs with no cap on FPI investment. 25% of outstanding G-Secs are FAR.',
+    'FPI holdings in G-Secs: approximately 2% — very low (Indonesia 15%, South Africa 30%). Index inclusion will increase.',
+    'PDMA proposal: Separate debt management from RBI to resolve conflict (monetary policy vs debt management). Still pending.',
+    'Sovereign credit rating: S&P BBB-, Moody\'s Baa3, Fitch BBB-. All at lowest investment grade. Not upgraded since 2006 despite 5th largest economy.',
+    'Rating argument: India\'s debt is domestic/rupee-denominated — no exchange rate risk. $650+ billion reserves. 7%+ growth.',
+    'Ad hoc Treasury Bills abolished 1994. FRBM 2003 bars RBI from primary G-Sec subscription. Ended monetisation.',
+    'Consolidated Sinking Fund (2007): States contribute to CSF with RBI for systematic debt repayment. 26 states participate.',
+    'State debt varies: Punjab (53% of GSDP), West Bengal (40%), Kerala (38%). Low: Gujarat (18%), Maharashtra (18%).',
+    'Contingent liabilities (government guarantees): approximately 5% of GDP. CGTMSE, ECLGS, PSU guarantees are potential future debt.',
+    'India\'s tax-to-GDP ratio approximately 11.7% — low (EM average approximately 15%). IMF flags need for revenue mobilisation.',
+    'Shyamala Gopinath Committee: Linked small savings rates to G-Sec yields with 25-100 bps premium. Quarterly review.',
+    'Gross market borrowing FY25: Rs 14.13 lakh crore (net: Rs 11.75 lakh crore). RBI conducts 40-45 auctions/year.',
+    'Yield curve: Normal (upward sloping). 91-day T-Bill approximately 6.5%. 10-year G-Sec approximately 7.0%. 30-year approximately 7.4%.',
+    'G-Sec auction: Multiple Price Auction for dated securities. Non-competitive bidding: up to 5% reserved for retail/small entities.',
+    'IMF classifies India\'s debt as sustainable but with limited fiscal space. r minus g differential has been negative (favourable).',
+    'Floating Rate Savings Bonds 2020: 7-year tenure. Rate linked to NSC rate (currently approximately 8.05%). Replaced 7.75% bonds.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Key Small Savings Schemes",
-      "headers": [
-        "Scheme",
-        "Tenure",
-        "Rate (approx.)",
-        "Tax Benefit"
+      title: 'Key Small Savings Schemes',
+      headers: ['Scheme', 'Tenure', 'Rate (approx.)', 'Tax Benefit'],
+      rows: [
+        ['PPF', '15 years', '7.1%', 'EEE (exempt-exempt-exempt)'],
+        ['NSC', '5 years', '7.7%', 'Sec 80C deduction; interest taxable'],
+        ['SCSS', '5 years (60+)', '8.2%', 'Sec 80C; interest taxable'],
+        ['SSY', '21 years (girl child)', '8.2%', 'EEE'],
+        ['KVP', 'approximately 115 months', '7.5%', 'No tax benefit on investment'],
+        ['MIS', '5 years', '7.4%', 'No 80C; interest taxable'],
       ],
-      "rows": [
-        [
-          "PPF",
-          "15 years",
-          "7.1%",
-          "EEE (exempt-exempt-exempt)"
-        ],
-        [
-          "NSC",
-          "5 years",
-          "7.7%",
-          "Sec 80C deduction"
-        ],
-        [
-          "SCSS",
-          "5 years",
-          "8.2%",
-          "Sec 80C deduction; interest taxable"
-        ],
-        [
-          "SSY",
-          "21 years (girl child)",
-          "8.2%",
-          "EEE"
-        ],
-        [
-          "KVP",
-          "~115 months",
-          "7.5%",
-          "No tax benefit on investment"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "PPF = EEE — \"Triple E Tax Haven\"",
-      "mnemonic": "Exempt at investment (80C), Exempt interest, Exempt maturity",
-      "explanation": "PPF enjoys EEE (Exempt-Exempt-Exempt) tax status — investment qualifies for Sec 80C deduction, interest is tax-free, and maturity proceeds are tax-free. Sukanya Samriddhi also has EEE status."
-    }
-  ]
+      title: 'Internal vs External Debt',
+      headers: ['Feature', 'Internal Debt', 'External Debt'],
+      rows: [
+        ['Share', 'approximately 95%', 'approximately 5%'],
+        ['Currency', 'Indian Rupee', 'Foreign currencies (USD, JPY, EUR)'],
+        ['Exchange rate risk', 'None', 'High (depreciation increases burden)'],
+        ['Key instruments', 'G-Secs, T-Bills, Small Savings', 'ECBs, Multilateral, NRI deposits'],
+        ['Market', 'Captive (SLR requirement)', 'Global capital markets'],
+      ],
+    },
+    {
+      title: 'Types of Government Securities',
+      headers: ['Type', 'Tenure', 'Key Feature'],
+      rows: [
+        ['Dated G-Secs', '5-40 years', 'Fixed coupon, semi-annual, traded on NDS-OM'],
+        ['T-Bills', '91/182/364 days', 'Discount instruments, no coupon'],
+        ['CMBs', '<91 days', 'For temporary cash needs'],
+        ['SDLs', '5-15 years', 'State borrowing, 25-75 bps above G-Sec'],
+        ['SGBs', '8 years', 'Gold-denominated, 2.5% interest, CG tax-free at maturity'],
+        ['FRBs', '7 years (retail)', 'Rate linked to NSC + 35 bps'],
+      ],
+    },
+    {
+      title: 'Sovereign Credit Ratings (India)',
+      headers: ['Agency', 'Rating', 'Grade', 'Outlook'],
+      rows: [
+        ['S&P', 'BBB-', 'Lowest investment grade', 'Stable'],
+        ['Moody\'s', 'Baa3', 'Lowest investment grade', 'Stable'],
+        ['Fitch', 'BBB-', 'Lowest investment grade', 'Stable'],
+      ],
+    },
+    {
+      title: 'FRBM Targets vs Actuals',
+      headers: ['Year', 'FRBM Target', 'Actual Fiscal Deficit', 'Reason for Deviation'],
+      rows: [
+        ['2007-08', '3%', '2.5%', 'Target met — pre-crisis discipline'],
+        ['2009-10', '3%', '6.5%', 'Global financial crisis — escape clause'],
+        ['2020-21', '3.5%', '9.2%', 'COVID-19 — escape clause'],
+        ['2023-24', '5.1%', '5.6%', 'Continued post-COVID consolidation'],
+        ['2024-25', '4.9%', 'Target', 'On glide path'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'PPF = EEE — "Triple E Tax Haven"',
+      mnemonic: 'Exempt at investment (80C), Exempt interest, Exempt maturity',
+      explanation: 'PPF enjoys EEE (Exempt-Exempt-Exempt) tax status — investment qualifies for Sec 80C deduction, interest is tax-free, and maturity proceeds are tax-free. Sukanya Samriddhi also has EEE status.',
+    },
+    {
+      title: 'FRBM Key Numbers — "3-40-60"',
+      mnemonic: 'Fiscal deficit 3% of GDP. Centre debt 40% of GDP. Combined debt 60% of GDP.',
+      explanation: 'FRBM Act target: 3% fiscal deficit. N.K. Singh Committee (2017) recommended debt anchors: Central government 40%, States 20%, combined 60% of GDP. Current reality: FD approximately 5%, combined debt approximately 81%.',
+    },
+    {
+      title: 'Debt Sustainability — "r < g"',
+      mnemonic: 'Interest rate (r) less than Growth rate (g) = debt sustainable (Domar condition)',
+      explanation: 'If the economy grows faster than the interest rate on government debt, the debt-to-GDP ratio will decline even with primary deficits. India has generally had r < g (growth 6-7% > real interest approximately 3-4%), providing fiscal space.',
+    },
+    {
+      title: 'G-Sec Market Structure — "NODS"',
+      mnemonic: 'NDS-OM (trading), Overnight rate (benchmark), Dated securities + T-Bills, SGL/Gilt accounts',
+      explanation: 'G-Secs trade on NDS-OM (CCIL). Primary Dealers underwrite auctions. Benchmark: 10-year G-Sec yield (approximately 7%). Retail access via RBI Retail Direct. SLR (18%) creates captive demand.',
+    },
+    {
+      title: 'Index Inclusion — "JPB"',
+      mnemonic: 'JP Morgan (June 2024), Bloomberg (January 2025) — phased to 10% weight',
+      explanation: 'India\'s G-Secs included in JP Morgan GBI-EM Index (June 2024, phased 10% weight) and Bloomberg Global Aggregate Index (January 2025). Expected $20-25B passive inflows. Landmark for bond market internationalisation.',
+    },
+  ],
 }

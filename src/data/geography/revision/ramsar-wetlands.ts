@@ -1,92 +1,134 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const ramsarWetlandsRevision: SubjectRevision = {
-  "topic": "ramsar-wetlands",
-  "bullets": [
-    "Ramsar Convention (1971, Ramsar, Iran) — first intergovernmental treaty on environmental conservation.",
-    "India became a Ramsar party in 1982; first sites: Chilika Lake (Odisha) and Keoladeo NP (Rajasthan).",
-    "India has 85 Ramsar Sites (2024) — highest in South Asia; total area ~13.3 lakh hectares.",
-    "India has ~757,060 wetlands covering 4.63% of geographic area (ISRO-SAC inventory).",
-    "Chilika Lake: largest coastal lagoon in India (~1,100 sq km, Odisha); Irrawaddy dolphins; removed from Montreux Record 2002.",
-    "Montreux Record: register of Ramsar sites with changed ecological character; 2 Indian sites: Loktak Lake, Keoladeo NP.",
-    "Wular Lake (J&K) — largest freshwater lake in India (~130 sq km); Ramsar site.",
-    "Loktak Lake (Manipur) — largest freshwater lake in NE India; floating phumdis; Keibul Lamjao NP.",
-    "Tamil Nadu leads with 16 Ramsar Sites (2024) — most of any state.",
-    "East Kolkata Wetlands — unique sewage treatment through fish ponds; Ramsar site.",
-    "Wetlands (Conservation & Management) Rules 2017 — State Wetland Authorities established.",
-    "World Wetlands Day: February 2 — anniversary of Ramsar Convention signing.",
-    "Wetlands provide flood control, groundwater recharge, water purification, carbon sequestration, fisheries, biodiversity.",
-    "9 Ramsar criteria for designation — a wetland must meet at least one.",
-    "India lost ~30% of natural wetland area in the last 3 decades.",
-    "NPCA (National Plan for Conservation of Aquatic Ecosystems) — merged NWCP and NLCP."
+  topic: 'ramsar-wetlands',
+  bullets: [
+    'Ramsar Convention (Feb 2, 1971, Ramsar, Iran) — first intergovernmental treaty on environmental conservation; entered into force 1975.',
+    '172 Contracting Parties; 2,500+ Ramsar Sites worldwide covering 256 million hectares (2024).',
+    'India became a Ramsar party in 1982; first sites: Chilika Lake (Odisha) and Keoladeo NP (Rajasthan).',
+    'India has 85 Ramsar Sites (as of August 2024) — highest in South Asia; total area ~13.3 lakh hectares.',
+    'Rapid expansion: 27 Ramsar sites in 2014 → 49 in 2020 → 75 in 2023 → 85 in 2024.',
+    'India has ~757,060 wetlands covering 15.26 million hectares (4.63% of geographic area) — ISRO-SAC National Wetland Atlas 2011.',
+    'Inland wetlands: 693,918 (91.7%); Coastal wetlands: 63,142 (8.3%); Natural: 451,818; Man-made: 305,242.',
+    'Ramsar "wise use" concept — maintaining ecological character through sustainable management; does not prohibit human use.',
+    '9 Ramsar criteria for designation — a wetland must meet at least one (e.g., supports 20,000+ waterbirds, 1% of a species\' population).',
+    'Montreux Record: register of Ramsar sites where ecological character has changed; currently 2 Indian sites: Loktak Lake and Keoladeo NP.',
+    'Chilika Lake was on the Montreux Record but removed in 2002 after successful restoration of the mouth channel.',
+    'Chilika Lake (Odisha, ~1,100 sq km) — largest coastal lagoon in India; Irrawaddy dolphins; 1 million+ migratory birds annually.',
+    'Wular Lake (J&K) — largest freshwater lake in India (~130 sq km); on Jhelum river; faces siltation and encroachment.',
+    'Loktak Lake (Manipur) — largest freshwater lake in NE India; floating phumdis; Keibul Lamjao NP (only floating NP); Sangai deer; Montreux Record.',
+    'Sambhar Lake (Rajasthan) — largest inland saline lake in India (~230 sq km); flamingo habitat; salt production.',
+    'Vembanad-Kol Wetland (Kerala, ~1,512 sq km) — one of the largest Ramsar sites in India; Vembanad Lake is longest lake (96.5 km); Nehru Trophy Boat Race.',
+    'East Kolkata Wetlands (WB) — unique resource recovery system treating ~680 million litres of Kolkata\'s sewage daily through fish ponds.',
+    'Sundarbans Wetland (WB) — world\'s largest mangrove delta; Royal Bengal Tiger; UNESCO WHS; Ramsar site.',
+    'Bhitarkanika Mangroves (Odisha) — second-largest mangrove in India; saltwater crocodile; Olive Ridley nesting at Gahirmatha.',
+    'Deepor Beel (Assam) — Important Bird Area; permanent freshwater lake; faces encroachment from Guwahati city.',
+    'Tsomoriri (Ladakh) — high-altitude lake at 4,595 m; breeding ground for black-necked crane; Ramsar site.',
+    'Harike Wetland (Punjab) — confluence of Sutlej and Beas rivers; largest wetland in northern India.',
+    'Bhoj Wetland/Upper Lake (Bhopal, MP) — one of the largest artificial lakes in Asia when first built (11th century).',
+    'Tamil Nadu has the most Ramsar Sites (16) — includes Karikili, Pallikaranai Marsh, Vedanthangal, Point Calimere.',
+    'Uttar Pradesh has 10 Ramsar Sites including Sur Sarovar (Keetham Lake, Agra), Nawabganj, Saman, Samaspur, Parvati Agra.',
+    'Pallikaranai Marsh (TN) — rare urban wetland in Chennai; has shrunk from 5,000+ hectares to ~750 hectares.',
+    'Pangong Tso (Ladakh) — not a Ramsar site; saline lake at 4,350 m; extends into China; strategically important.',
+    'World Wetlands Day: February 2 — anniversary of Ramsar Convention signing.',
+    'Wetlands provide: flood control, groundwater recharge, water purification, carbon sequestration, fisheries, biodiversity support.',
+    'Mangrove wetlands sequester 5-10x more carbon/hectare than terrestrial forests — "blue carbon" sinks.',
+    'Peatlands cover 3% of global land but store 2x more carbon than all forests combined.',
+    'Central Asian Flyway: migratory bird route connecting Siberia to India and Africa; Indian wetlands are critical stopover/wintering sites.',
+    'India lost ~30% of natural wetland area in the last 3 decades — encroachment, pollution, siltation, hydrological alteration.',
+    'Water hyacinth (Eichhornia crassipes) — invasive aquatic weed choking many Indian wetlands; blocks sunlight, depletes oxygen.',
+    'Wetlands (Conservation & Management) Rules 2017 — under EPA 1986; State Wetland Authorities (SWA) established.',
+    'National Plan for Conservation of Aquatic Ecosystems (NPCA, 2015) — merged NWCP and NLCP; single scheme for wetlands, lakes, tanks.',
+    'ISRO-SAC conducts satellite-based wetland inventories; National Centre for Sustainable Coastal Management (NCSCM) advises on coastal wetlands.',
+    'Inland fisheries in wetlands contribute ~60% of India\'s fish production; Chilika Lake supports ~200,000 fishermen.',
+    'Eutrophication — excess nutrients from agricultural runoff cause algal blooms, oxygen depletion, and fish kills in wetlands.',
+    'Kerala backwaters (kayals) — chain of coastal lagoons and lakes; Vembanad-Kol is the largest; tourism and fishing economy.',
+    'Pulicat Lake (AP-TN border) — second-largest coastal lagoon in India; Greater Flamingo habitat; Sriharikota island on its barrier.',
+    'Kolleru Lake (AP) — freshwater lake between Krishna and Godavari deltas; Ramsar site; faces aquaculture pollution.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Ramsar Sites on Montreux Record",
-      "headers": [
-        "Site",
-        "State",
-        "Issue"
+      title: 'Major Ramsar Sites — Key Facts',
+      headers: ['Site', 'State', 'Type', 'Key Feature'],
+      rows: [
+        ['Chilika Lake', 'Odisha', 'Coastal lagoon (~1,100 sq km)', 'Largest coastal lagoon; Irrawaddy dolphins; removed from Montreux Record'],
+        ['Wular Lake', 'J&K', 'Freshwater (~130 sq km)', 'Largest freshwater lake in India; on Jhelum river'],
+        ['Sambhar Lake', 'Rajasthan', 'Inland saline (~230 sq km)', 'Largest inland saline lake; flamingos; salt production'],
+        ['Vembanad-Kol', 'Kerala', 'Backwater (~1,512 sq km)', 'Longest lake (96.5 km); Nehru Trophy Boat Race'],
+        ['Loktak Lake', 'Manipur', 'Freshwater', 'Floating phumdis; Keibul Lamjao NP; Sangai deer; Montreux Record'],
+        ['East Kolkata Wetlands', 'West Bengal', 'Urban wetland', 'Natural sewage treatment; fish ponds; resource recovery'],
       ],
-      "rows": [
-        [
-          "Loktak Lake",
-          "Manipur",
-          "Ithai Barrage disrupted hydrology; phumdi deterioration"
-        ],
-        [
-          "Keoladeo NP",
-          "Rajasthan",
-          "Water supply reduction; Siberian Crane stopped visiting"
-        ]
-      ]
     },
     {
-      "title": "Major Ramsar Sites",
-      "headers": [
-        "Site",
-        "State",
-        "Feature"
+      title: 'Montreux Record — Indian Sites',
+      headers: ['Site', 'State', 'Issue', 'Current Status'],
+      rows: [
+        ['Loktak Lake', 'Manipur', 'Ithai Barrage disrupted hydrology; phumdi deterioration', 'Still on Montreux Record'],
+        ['Keoladeo NP', 'Rajasthan', 'Water supply reduction; Siberian Crane stopped visiting', 'Still on Montreux Record'],
+        ['Chilika Lake', 'Odisha', 'Mouth of lagoon was silting up; declining fisheries', 'Removed from Montreux Record in 2002 (restored)'],
       ],
-      "rows": [
-        [
-          "Chilika",
-          "Odisha",
-          "Largest coastal lagoon; Irrawaddy dolphins"
-        ],
-        [
-          "Wular",
-          "J&K",
-          "Largest freshwater lake"
-        ],
-        [
-          "Sambhar",
-          "Rajasthan",
-          "Largest inland saline lake"
-        ],
-        [
-          "Vembanad",
-          "Kerala",
-          "Longest lake (96.5 km)"
-        ],
-        [
-          "Loktak",
-          "Manipur",
-          "Floating phumdis; Sangai deer"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
-    {
-      "title": "First Indian Ramsar Sites (1982)",
-      "mnemonic": "CK — Chilika and Keoladeo",
-      "explanation": "Chilika Lake (Odisha) and Keoladeo NP/Bharatpur (Rajasthan) were India's first two Ramsar Sites, designated in 1981-82."
     },
     {
-      "title": "Montreux Record Indian Sites",
-      "mnemonic": "LK — Loktak and Keoladeo",
-      "explanation": "Only 2 Indian Ramsar sites are on the Montreux Record (sites where ecological character has changed)."
-    }
-  ]
+      title: 'State-wise Ramsar Sites (Top States)',
+      headers: ['State', 'Number of Sites (2024)', 'Key Sites'],
+      rows: [
+        ['Tamil Nadu', '16', 'Karikili, Vedanthangal, Point Calimere, Pallikaranai Marsh'],
+        ['Uttar Pradesh', '10', 'Sur Sarovar, Nawabganj, Saman, Samaspur, Parvati Agra'],
+        ['Odisha', '6', 'Chilika, Bhitarkanika, Hirakud, Tampara, Ansupa, Satkosia Gorge'],
+        ['Madhya Pradesh', '6', 'Bhoj Wetland, Sakhya Sagar, Yashwant Sagar, Sir Sagar'],
+        ['Punjab', '6', 'Harike, Kanjli, Ropar, Nangal, Beas Conservation Reserve, Keshopur-Miani'],
+      ],
+    },
+    {
+      title: 'Wetland Types in India',
+      headers: ['Type', 'Examples', 'Characteristics'],
+      rows: [
+        ['Coastal Lagoons', 'Chilika, Pulicat, Vembanad', 'Brackish; separated from sea by sandbars; migratory birds'],
+        ['Freshwater Lakes', 'Wular, Loktak, Dal, Deepor Beel', 'Fed by rivers/rain; support fisheries; face siltation'],
+        ['Saline/Alkaline Lakes', 'Sambhar, Pangong Tso, Tso Kar', 'High evaporation; salt production; specialized biodiversity'],
+        ['Mangroves', 'Sundarbans, Bhitarkanika, Pichavaram', 'Tidal; saltwater-tolerant trees; nursery for marine species'],
+        ['High-altitude Lakes', 'Tsomoriri, Tso Kar, Pangong Tso', 'Cold desert; black-necked crane; minimal human disturbance'],
+        ['Man-made Wetlands', 'Bhoj Wetland, reservoirs, tanks', 'Artificial; water storage; biodiversity secondary benefit'],
+      ],
+    },
+    {
+      title: 'Wetland Ecosystem Services',
+      headers: ['Service', 'Function', 'Indian Example'],
+      rows: [
+        ['Flood Control', 'Absorb and store excess water like natural sponges', 'East Kolkata Wetlands protect Kolkata from flooding'],
+        ['Water Purification', 'Filter pollutants through biological/physical processes', 'EKW treats ~680 million litres of sewage daily'],
+        ['Groundwater Recharge', 'Percolate water down to replenish aquifers', 'Floodplain wetlands along Ganga'],
+        ['Carbon Sequestration', 'Store carbon in peat and mangrove biomass (blue carbon)', 'Sundarbans mangroves — major blue carbon sink'],
+        ['Fisheries/Livelihoods', 'Support inland fish production and dependent communities', 'Chilika Lake supports ~200,000 fishermen'],
+        ['Biodiversity Support', 'Habitat for 40% of species that breed/live in freshwater', 'Central Asian Flyway stopovers for migratory birds'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'First Indian Ramsar Sites (1981-82)',
+      mnemonic: 'CK — Chilika (Odisha) and Keoladeo (Rajasthan)',
+      explanation: 'India\'s first two Ramsar Sites, designated when India joined the Convention in 1982.',
+    },
+    {
+      title: 'Montreux Record Indian Sites',
+      mnemonic: 'LK on, CK off — Loktak & Keoladeo are ON; Chilika was on but removed in 2002',
+      explanation: 'Only 2 Indian sites remain on the Montreux Record. Chilika was removed after successful restoration.',
+    },
+    {
+      title: 'Largest Wetland/Lake Facts',
+      mnemonic: 'Chilika=largest coastal lagoon, Wular=largest freshwater lake, Sambhar=largest inland saline lake, Vembanad=longest lake',
+      explanation: 'Key "largest" facts about Indian wetlands — high-frequency exam questions.',
+    },
+    {
+      title: 'State with Most Ramsar Sites',
+      mnemonic: 'Tamil Nadu = 16 (leads); UP = 10 (second)',
+      explanation: 'Tamil Nadu has the most Ramsar Sites of any Indian state as of 2024.',
+    },
+    {
+      title: 'Wetland Conservation Framework',
+      mnemonic: 'NPCA (2015) = NWCP + NLCP merged; Rules 2017 = State Wetland Authorities',
+      explanation: 'India\'s wetland conservation is governed by the NPCA scheme and the Wetlands Rules 2017 under the EPA 1986.',
+    },
+  ],
 }

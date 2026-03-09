@@ -1,61 +1,131 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const economicReformsRevision: SubjectRevision = {
-  "topic": "economic-reforms",
-  "bullets": [
-    "1991 crisis: Forex <2 weeks imports (~$1.2B). Fiscal deficit >8% GDP. Inflation ~13.9%.",
-    "India pledged 67 tonnes of gold and approached IMF for $2.2 billion loan.",
-    "LPG reforms by PM P.V. Narasimha Rao and FM Dr. Manmohan Singh.",
-    "Liberalisation: Industrial licensing abolished (retained for 2 industries: defence, atomic energy).",
-    "Financial sector: Private banks licensed (ICICI, HDFC — 1994). SEBI empowered. Interest rates deregulated.",
-    "Exchange rate: Dual rate abolished (1993). Current account convertibility (1994). Tariffs reduced.",
-    "MRTP Act replaced by Competition Act 2002. Competition Commission of India (CCI) established.",
-    "Hindu rate of growth (3.5%) → 6-8% post-reforms. But challenges: jobless growth, inequality.",
-    "Second-gen reforms: GST (2017), IBC (2016), Labour Codes (2019-20), PLI (2020).",
-    "Four Labour Codes: Wages (2019), Industrial Relations (2020), Social Security (2020), OSH (2020)."
+  topic: 'economic-reforms',
+  bullets: [
+    '1991 crisis: Forex <2 weeks imports (~$1.2B). Fiscal deficit >8% GDP. Inflation ~13.9%. Debt service ratio 35.3%.',
+    'India pledged 67 tonnes of gold to Bank of England and UBS. Approached IMF for $2.2 billion loan with conditionality.',
+    'LPG reforms by PM P.V. Narasimha Rao and FM Dr. Manmohan Singh — New Economic Policy (NEP).',
+    'Liberalisation: Industrial licensing abolished (retained for 2 industries: defence, atomic energy). 800+ SSI items de-reserved.',
+    'Financial sector: Narasimham Committee-I (1991) blueprint. Private banks licensed (ICICI, HDFC — 1994). SEBI empowered.',
+    'SLR reduced from 38.5% to 18%. CRR reduced from 15% to 4%. Interest rates deregulated progressively.',
+    'Exchange rate: Dual rate LERMS (1992), unified managed float (1993). Current account convertibility (1994). Tariffs: 150% → ~15%.',
+    'MRTP Act relaxed, replaced by Competition Act 2002. CCI established 2003. Fair trade regulation replaced monopoly control.',
+    'FERA replaced by FEMA 1999 — conservation to management. Criminal offence → civil offence for forex violations.',
+    'Insurance opened: IRDA Act 1999. FDI: 26% (2000) → 49% (2015) → 74% (2021).',
+    'Privatisation: Disinvestment of PSU shares from 1991-92. Strategic sales: VSNL to Tata, BALCO to Sterlite, Hindustan Zinc to Vedanta.',
+    'NIF (National Investment Fund) 2005 for disinvestment proceeds. Air India sold to Tata (2021, Rs 18,000 crore). LIC IPO (2022, Rs 21,000 crore).',
+    'FDI surge: $129 million (1991) → $84.8 billion (2021-22, record). Cumulative equity FDI (2000-24): $700+ billion.',
+    'India joined WTO (1995, founding member). Signed FTAs with ASEAN, Japan, South Korea, Singapore, UAE, Australia.',
+    'Hindu rate of growth (3.5%) → 6-8% post-reforms. GDP: $270B (1991) → $3.7T (2024). 5th largest economy.',
+    'Poverty declined: 45% (1993-94) → 21.9% (2011-12, Tendulkar) → ~5% ($2.15/day, World Bank, 2022-23).',
+    'Challenges: Jobless growth. Manufacturing employment stagnated. Informal sector: 90% workforce, 50% GDP.',
+    'Regional disparity: West/South (Maharashtra, Karnataka, Tamil Nadu) grew faster than East/North (Bihar, UP, Odisha).',
+    'Inequality: Top 1% hold 40% wealth (Oxfam). Gini coefficient: ~35 (consumption). Much higher for wealth.',
+    'Second-gen reforms: GST (2017), IBC (2016), RERA (2016), Labour Codes (2019-20), PLI (2020).',
+    'Four Labour Codes: Wages (2019), Industrial Relations (2020), Social Security (2020), OSH (2020). Implementation pending.',
+    'IBC 2016: Time-bound insolvency resolution (180+90 days) via NCLT. Resolved Rs 3.16 lakh crore in 7 years.',
+    'Make in India (2014): 25 sectors. PLI scheme (2020): 14 sectors, Rs 1.97 lakh crore outlay. Apple/Samsung manufacturing.',
+    'Start-Up India (2016): 1.4 lakh+ recognised startups. 110+ unicorns. 3rd largest ecosystem globally.',
+    'Atmanirbhar Bharat (2020): Rs 20 lakh crore package. Self-reliance in defence, electronics, pharma.',
+    'National Monetisation Pipeline: Rs 6 lakh crore from brownfield assets (FY22-25). Asset recycling model.',
+    'Tax reforms: Peak income tax 97.75% (1970s) → 30% (current). Corporate tax: 22% for existing, 15% for new manufacturing.',
+    'GST unified 17 taxes + 13 cesses. Tax-GDP ratio improved from 14% (1991) to ~18% (2024). Still below OECD 34%.',
+    'Digital India: JAM Trinity, UPI (14B+ monthly transactions), Aadhaar (1.38 billion), DBT saved Rs 3.14 lakh crore.',
+    'India vs China: China started reforms 1978 (13 years earlier). Manufacturing: China 28% GDP, India 17%. FDI: China $3.5T stock, India $600B.',
+    'India vs Russia shock therapy: Russia had oligarchic capture, 40% GDP collapse. India\'s gradualism avoided extremes.',
+    'Missing middle: Many micro-enterprises, few large companies, weak medium-sized firms. Regulatory thresholds incentivise staying small.',
+    'Environmental cost: India 3rd largest CO2 emitter. Air pollution crisis. Groundwater depletion. Climate-vulnerable agriculture.',
+    'India aims: $5 trillion economy by 2027-28. Viksit Bharat (developed nation) by 2047.',
+    'Narasimham Committee-II (1998): 10% capital adequacy, NPA reduction to 3%, SARFAESI Act 2002, universal banking.',
+    'PSU bank consolidation: 27 PSU banks (2017) merged into 12 (2020). SBI merged 5 associates + BMB (2017).',
+    'Chelliah Committee (1992): Tax base broadening, rate reduction. Led to direct tax reforms of 1990s-2000s.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Pre-1991 vs Post-1991 Economy",
-      "headers": [
-        "Feature",
-        "Pre-1991",
-        "Post-1991"
+      title: 'Pre-1991 vs Post-1991 Economy',
+      headers: ['Feature', 'Pre-1991', 'Post-1991'],
+      rows: [
+        ['Industrial licensing', 'Required (licence raj)', 'Abolished for most industries'],
+        ['Trade policy', 'Import substitution, 150% tariff', 'Export orientation, ~15% tariff'],
+        ['FDI', 'Highly restricted', 'Progressively liberalised (100% in most sectors)'],
+        ['Banking', 'Nationalised, regulated rates', 'Private banks, deregulated rates'],
+        ['Growth rate', '~3.5% (Hindu rate)', '6-8% average'],
+        ['Forex reserves', '$1.2 billion (1991)', '$640+ billion (2025)'],
       ],
-      "rows": [
-        [
-          "Industrial licensing",
-          "Required (licence raj)",
-          "Abolished for most industries"
-        ],
-        [
-          "Trade policy",
-          "Import substitution",
-          "Export orientation"
-        ],
-        [
-          "FDI",
-          "Highly restricted",
-          "Progressively liberalised"
-        ],
-        [
-          "Banking",
-          "Nationalised, regulated rates",
-          "Private banks, deregulated rates"
-        ],
-        [
-          "Growth rate",
-          "~3.5% (Hindu rate)",
-          "6-8% average"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "LPG Reforms 1991 — \"LPG for Growth\"",
-      "mnemonic": "L: Liberalisation (de-licensing). P: Privatisation (disinvestment). G: Globalisation (FDI, WTO)",
-      "explanation": "The 1991 New Economic Policy had three pillars: Liberalisation (removing controls), Privatisation (reducing public sector dominance), and Globalisation (integrating with world economy). PM: PV Narasimha Rao. FM: Dr. Manmohan Singh."
-    }
-  ]
+      title: 'First Generation vs Second Generation Reforms',
+      headers: ['Feature', 'First Gen (1991-2000s)', 'Second Gen (2010s-2020s)'],
+      rows: [
+        ['Focus', 'Macro stabilisation, opening economy', 'Structural reforms, ease of doing business'],
+        ['Industrial', 'De-licensing, MRTP relaxation', 'IBC, labour codes, PLI'],
+        ['Trade', 'Tariff reduction, WTO membership', 'FTAs (UAE, Australia), Atmanirbhar Bharat'],
+        ['Tax', 'Rate reduction, broadening', 'GST, faceless assessment, new tax regime'],
+        ['Financial', 'Private banks, SEBI empowerment', 'IBC, RERA, Jan Dhan, UPI'],
+        ['Digital', 'Minimal', 'JAM Trinity, UPI, DigiLocker, GeM'],
+      ],
+    },
+    {
+      title: 'India vs China Reforms',
+      headers: ['Feature', 'India', 'China'],
+      rows: [
+        ['Reform start', '1991', '1978 (13 years earlier)'],
+        ['Political system', 'Democracy (gradual reforms)', 'Authoritarian (decisive implementation)'],
+        ['Growth model', 'Services-led', 'Manufacturing-led (factory of the world)'],
+        ['FDI stock', '$600 billion', '$3.5 trillion'],
+        ['Manufacturing % GDP', '17%', '28%'],
+        ['Per capita GDP', '$2,700 (nominal)', '$12,000 (nominal)'],
+      ],
+    },
+    {
+      title: 'MRTP Act vs Competition Act',
+      headers: ['Feature', 'MRTP Act 1969', 'Competition Act 2002'],
+      rows: [
+        ['Approach', 'Size-based (asset threshold)', 'Conduct-based (anti-competitive behaviour)'],
+        ['Body', 'MRTP Commission', 'Competition Commission of India (CCI)'],
+        ['Focus', 'Prevent monopolies', 'Promote competition'],
+        ['Penalties', 'Limited', 'Up to 10% of turnover'],
+        ['International alignment', 'Indian-specific', 'Aligned with global competition law'],
+      ],
+    },
+    {
+      title: 'Narasimham Committee I vs II',
+      headers: ['Feature', 'Committee I (1991)', 'Committee II (1998)'],
+      rows: [
+        ['Focus', 'Financial system restructuring', 'Banking sector reforms'],
+        ['SLR/CRR', 'Reduce to 25%/3-5%', 'Continue reduction'],
+        ['Capital adequacy', '8% (Basel I)', '10% (above Basel minimum)'],
+        ['NPAs', 'Set up ARCs', 'Reduce to 3%, legal reforms (SARFAESI)'],
+        ['Bank structure', '4-tier hierarchy', 'Mergers, universal banking'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'LPG Reforms 1991 — "LPG for Growth"',
+      mnemonic: 'L: Liberalisation (de-licensing). P: Privatisation (disinvestment). G: Globalisation (FDI, WTO)',
+      explanation: 'The 1991 NEP had three pillars: Liberalisation (removing controls), Privatisation (reducing PSU dominance), Globalisation (integrating with world economy). PM: PV Narasimha Rao. FM: Dr. Manmohan Singh.',
+    },
+    {
+      title: '1991 Crisis Triggers — "GOLF"',
+      mnemonic: 'G: Gulf War (oil prices). O: Oil import bill spike. L: Low forex ($1.2B). F: Fiscal deficit (>8% GDP)',
+      explanation: 'Four triggers of the 1991 crisis: Gulf War raised oil prices and cut remittances, oil import bill surged, forex reserves collapsed to 2 weeks of imports, and fiscal deficit exceeded 8% of GDP.',
+    },
+    {
+      title: 'Four Labour Codes — "WISO"',
+      mnemonic: 'W: Wages (2019). I: Industrial Relations (2020). S: Social Security (2020). O: OSH — Occupational Safety (2020)',
+      explanation: 'Four labour codes consolidated 29 labour laws. WISO — Wages, Industrial relations, Social security, Occupational Safety, Health and working conditions.',
+    },
+    {
+      title: 'Second Gen Reforms — "GIRL PLI"',
+      mnemonic: 'G: GST. I: IBC. R: RERA. L: Labour codes. P: PLI. L: Licensing reforms. I: India Stack (JAM/UPI)',
+      explanation: 'Major second-generation reforms since 2016: GST (2017), IBC (2016), RERA (2016), Labour Codes (2019-20), PLI (2020), de-licensing, and digital infrastructure.',
+    },
+    {
+      title: 'PLI Sectors Count — "14 Sectors"',
+      mnemonic: 'MAPS-FAST-DWITCH: Mobile, Auto, Pharma, Steel, Food, ACC Battery, Solar, Telecom, Drones, White goods, IT Hardware, Textiles, Chemical (specialty)',
+      explanation: 'PLI covers 14 manufacturing sectors with Rs 1.97 lakh crore incentives (4-6% on incremental sales for 5 years).',
+    },
+  ],
 }

@@ -1,209 +1,30 @@
 import type { HistoryProblem } from "@/types/history"
 
 export const gandhianMovementsProblems: HistoryProblem[] = [
-  {
-    id: "gm-01",
-    topic: "gandhian-movements",
-    question: "Gandhi's first civil disobedience in India was the:",
-    options: [
-      "Rowlatt Satyagraha",
-      "Kheda Satyagraha",
-      "Champaran Satyagraha",
-      "Ahmedabad Mill Strike",
-    ],
-    correctIndex: 2,
-    explanation:
-      "Gandhi's first civil disobedience in India was the Champaran Satyagraha (1917) in Bihar. He went to Champaran to investigate the plight of indigo cultivators who were forced under the 'tinkathia' system to grow indigo on 3/20th of their land. The government appointed an inquiry committee, and the tinkathia system was abolished. Rajendra Prasad joined Gandhi here.",
-    examName: "SSC CGL",
-    examYear: 2019,
-    difficulty: "easy",
-  },
-  {
-    id: "gm-02",
-    topic: "gandhian-movements",
-    question:
-      "The Non-Cooperation Movement was suspended by Gandhi after which incident?",
-    options: [
-      "Jallianwala Bagh Massacre",
-      "Chauri Chaura incident",
-      "Dandi March",
-      "Simon Commission protests",
-    ],
-    correctIndex: 1,
-    explanation:
-      "Gandhi abruptly suspended the Non-Cooperation Movement on 12 February 1922 after the Chauri Chaura incident (5 February 1922), where a mob of peasants set fire to a police station in Gorakhpur (UP), killing 22 policemen. Gandhi believed violence undermined the moral basis of the movement. This decision was controversial — many Congress leaders disagreed with the withdrawal.",
-    examName: "UPSC Prelims",
-    examYear: 2020,
-    difficulty: "easy",
-  },
-  {
-    id: "gm-03",
-    topic: "gandhian-movements",
-    question:
-      "The Dandi March covered a distance of approximately:",
-    options: [
-      "100 miles",
-      "200 miles",
-      "241 miles",
-      "300 miles",
-    ],
-    correctIndex: 2,
-    explanation:
-      "The Dandi March (Salt March) covered a distance of approximately 241 miles (about 390 km) from the Sabarmati Ashram in Ahmedabad to the coastal village of Dandi in Gujarat. Gandhi began the march on 12 March 1930 with 78 followers and arrived at Dandi on 6 April 1930, where he broke the salt law by making salt from seawater.",
-    examName: "RRB NTPC",
-    examYear: 2021,
-    difficulty: "medium",
-  },
-  {
-    id: "gm-04",
-    topic: "gandhian-movements",
-    question:
-      "The Quit India Movement was launched in which year?",
-    options: ["1940", "1941", "1942", "1943"],
-    correctIndex: 2,
-    explanation:
-      "The Quit India Movement was launched on 8 August 1942 at the Bombay session of the AICC at Gowalia Tank Maidan (now August Kranti Maidan). Gandhi gave the famous call 'Do or Die' (Karo ya Maro). The resolution was drafted by Jawaharlal Nehru. The entire top Congress leadership was arrested within hours under 'Operation Zero Hour.'",
-    examName: "SSC CHSL",
-    examYear: 2021,
-    difficulty: "easy",
-  },
-  {
-    id: "gm-05",
-    topic: "gandhian-movements",
-    question:
-      "The Gandhi-Irwin Pact was signed in:",
-    options: ["1929", "1930", "1931", "1932"],
-    correctIndex: 2,
-    explanation:
-      "The Gandhi-Irwin Pact was signed on 5 March 1931 between Mahatma Gandhi and Lord Irwin (Viceroy). Under this pact, Gandhi agreed to suspend the Civil Disobedience Movement and attend the Second Round Table Conference in London as the sole Congress representative. In return, the British agreed to release political prisoners who had not been convicted of violence.",
-    examName: "UPSC Prelims",
-    examYear: 2022,
-    difficulty: "medium",
-  },
-  {
-    id: "gm-06",
-    topic: "gandhian-movements",
-    question:
-      "The Poona Pact (1932) was an agreement between:",
-    options: [
-      "Gandhi and Lord Irwin",
-      "Gandhi and B.R. Ambedkar",
-      "Gandhi and Jinnah",
-      "Gandhi and Nehru",
-    ],
-    correctIndex: 1,
-    explanation:
-      "The Poona Pact (1932) was an agreement between Gandhi and B.R. Ambedkar. Gandhi had gone on a fast unto death in Yerwada Jail against the Communal Award (1932, PM Ramsay MacDonald), which provided separate electorates for depressed classes (Dalits). The Poona Pact replaced separate electorates with reserved seats within the general electorate, with a significantly increased number of reserved seats (from 71 to 148).",
-    examName: "UPSC Prelims",
-    examYear: 2023,
-    difficulty: "medium",
-  },
-  {
-    id: "gm-07",
-    topic: "gandhian-movements",
-    question:
-      "Who hoisted the flag at Gowalia Tank Maidan during the Quit India Movement?",
-    options: [
-      "Sarojini Naidu",
-      "Aruna Asaf Ali",
-      "Kasturba Gandhi",
-      "Usha Mehta",
-    ],
-    correctIndex: 1,
-    explanation:
-      "Aruna Asaf Ali hoisted the Indian National Congress flag at the Gowalia Tank Maidan (now August Kranti Maidan) in Bombay during the Quit India Movement on 8 August 1942. She continued as an underground leader during the movement. Usha Mehta ran the underground Congress Radio. Sarojini Naidu had led the Dharasana Salt Works raid during the CDM.",
-    examName: "SSC CGL",
-    examYear: 2022,
-    difficulty: "medium",
-  },
-  {
-    id: "gm-08",
-    topic: "gandhian-movements",
-    question:
-      "Which of the following was NOT a feature of the Non-Cooperation Movement?",
-    options: [
-      "Boycott of foreign goods",
-      "Surrender of titles",
-      "Breaking the salt law",
-      "Boycott of legislatures and courts",
-    ],
-    correctIndex: 2,
-    explanation:
-      "Breaking the salt law was NOT a feature of the Non-Cooperation Movement (1920-22). It was the defining feature of the Civil Disobedience Movement (1930-34), which began with the Dandi March. The NCM programme included boycott of foreign goods, surrender of titles, boycott of legislatures and courts, boycott of schools, and promotion of Khadi and Swadeshi.",
-    examName: "UPSC Prelims",
-    examYear: 2021,
-    difficulty: "medium",
-  },
-  {
-    id: "gm-09",
-    topic: "gandhian-movements",
-    question:
-      "Sardar Vallabhbhai Patel emerged as a leader during which of Gandhi's early satyagrahas?",
-    options: [
-      "Champaran Satyagraha",
-      "Kheda Satyagraha",
-      "Ahmedabad Mill Strike",
-      "Rowlatt Satyagraha",
-    ],
-    correctIndex: 1,
-    explanation:
-      "Sardar Vallabhbhai Patel emerged as a leader during the Kheda Satyagraha (1918) in Gujarat. He organized the peasants of Kheda district to resist the government's refusal to grant revenue remission after crop failure. Rajendra Prasad was associated with the Champaran Satyagraha, and Anasuya Sarabhai was associated with the Ahmedabad Mill Strike.",
-    examName: "SSC CGL",
-    examYear: 2023,
-    difficulty: "medium",
-  },
-  {
-    id: "gm-10",
-    topic: "gandhian-movements",
-    question:
-      "Consider the following statements about the Quit India Movement:\n1. The resolution was drafted by Jawaharlal Nehru.\n2. Parallel governments were set up in Satara, Midnapore, and Ballia.\n3. The movement was launched after the success of the Cripps Mission.\n\nWhich of the above statements is/are correct?",
-    options: [
-      "1 and 2 only",
-      "2 and 3 only",
-      "1 only",
-      "1, 2 and 3",
-    ],
-    correctIndex: 0,
-    explanation:
-      "Statements 1 and 2 are correct. The Quit India Resolution was indeed drafted by Jawaharlal Nehru, and parallel governments (Prati Sarkar) were established in Satara (Maharashtra), Midnapore (Bengal), and Ballia (UP). Statement 3 is incorrect — the movement was launched after the FAILURE of the Cripps Mission (March 1942), not its success. The Cripps Mission's proposals were rejected by the Congress.",
-    examName: "UPSC Prelims",
-    examYear: 2024,
-    difficulty: "hard",
-  },
-  {
-    id: "gm-11",
-    topic: "gandhian-movements",
-    question:
-      "Which of the following movements saw the first major participation of women?",
-    options: [
-      "Non-Cooperation Movement",
-      "Civil Disobedience Movement",
-      "Quit India Movement",
-      "Swadeshi Movement",
-    ],
-    correctIndex: 1,
-    explanation:
-      "The Civil Disobedience Movement (1930-34) saw the first major participation of women in the freedom struggle. Sarojini Naidu led the raid on the Dharasana Salt Works. Kamala Nehru, women from various social backgrounds, and tribal women participated. While some women participated in earlier movements, the CDM marked their first mass entry into active political protest.",
-    examName: "SSC CHSL",
-    examYear: 2022,
-    difficulty: "medium",
-  },
-  {
-    id: "gm-12",
-    topic: "gandhian-movements",
-    question:
-      "Khan Abdul Ghaffar Khan, known as the 'Frontier Gandhi,' organized which movement during the CDM?",
-    options: [
-      "Quit India Movement",
-      "Khudai Khidmatgar (Red Shirts)",
-      "Ghadar Movement",
-      "Silk Letters Movement",
-    ],
-    correctIndex: 1,
-    explanation:
-      "Khan Abdul Ghaffar Khan, known as the 'Frontier Gandhi' or 'Badshah Khan,' organized the Khudai Khidmatgar (Servants of God) movement in the North-West Frontier Province during the Civil Disobedience Movement. The members wore red shirts and were therefore called 'Red Shirts.' They were committed to non-violence and participated actively in the struggle against British rule.",
-    examName: "CDS",
-    examYear: 2020,
-    difficulty: "medium",
-  },
+  { id: "gm-01", topic: "gandhian-movements", question: "Gandhi's first civil disobedience in India was the:", options: ["Rowlatt Satyagraha", "Kheda Satyagraha", "Champaran Satyagraha", "Ahmedabad Mill Strike"], correctIndex: 2, explanation: "Gandhi's first civil disobedience in India was the Champaran Satyagraha (1917) in Bihar. He went to Champaran to investigate the plight of indigo cultivators who were forced under the 'tinkathia' system to grow indigo on 3/20th of their land. The government appointed an inquiry committee, and the tinkathia system was abolished. Rajendra Prasad joined Gandhi here.", examName: "SSC CGL", examYear: 2019, difficulty: "easy" },
+  { id: "gm-02", topic: "gandhian-movements", question: "The Non-Cooperation Movement was suspended by Gandhi after which incident?", options: ["Jallianwala Bagh Massacre", "Chauri Chaura incident", "Dandi March", "Simon Commission protests"], correctIndex: 1, explanation: "Gandhi abruptly suspended the Non-Cooperation Movement on 12 February 1922 after the Chauri Chaura incident (5 February 1922), where a mob of peasants set fire to a police station in Gorakhpur (UP), killing 22 policemen. Gandhi believed violence undermined the moral basis of the movement.", examName: "UPSC Prelims", examYear: 2020, difficulty: "easy" },
+  { id: "gm-03", topic: "gandhian-movements", question: "The Dandi March covered a distance of approximately:", options: ["100 miles", "200 miles", "241 miles", "300 miles"], correctIndex: 2, explanation: "The Dandi March (Salt March) covered approximately 241 miles (about 390 km) from the Sabarmati Ashram in Ahmedabad to the coastal village of Dandi in Gujarat. Gandhi began the march on 12 March 1930 with 78 followers and arrived at Dandi on 6 April 1930, where he broke the salt law.", examName: "RRB NTPC", examYear: 2021, difficulty: "medium" },
+  { id: "gm-04", topic: "gandhian-movements", question: "The Quit India Movement was launched in which year?", options: ["1940", "1941", "1942", "1943"], correctIndex: 2, explanation: "The Quit India Movement was launched on 8 August 1942 at the Bombay session of the AICC at Gowalia Tank Maidan (now August Kranti Maidan). Gandhi gave the famous call 'Do or Die' (Karo ya Maro). The resolution was drafted by Jawaharlal Nehru. The entire Congress leadership was arrested within hours under 'Operation Zero Hour.'", examName: "SSC CHSL", examYear: 2021, difficulty: "easy" },
+  { id: "gm-05", topic: "gandhian-movements", question: "The Gandhi-Irwin Pact was signed in:", options: ["1929", "1930", "1931", "1932"], correctIndex: 2, explanation: "The Gandhi-Irwin Pact was signed on 5 March 1931 between Mahatma Gandhi and Lord Irwin (Viceroy). Gandhi agreed to suspend the Civil Disobedience Movement and attend the Second Round Table Conference. In return, the British agreed to release political prisoners not convicted of violence.", examName: "UPSC Prelims", examYear: 2022, difficulty: "medium" },
+  { id: "gm-06", topic: "gandhian-movements", question: "The Poona Pact (1932) was an agreement between:", options: ["Gandhi and Lord Irwin", "Gandhi and B.R. Ambedkar", "Gandhi and Jinnah", "Gandhi and Nehru"], correctIndex: 1, explanation: "The Poona Pact (24 September 1932) was an agreement between Gandhi and B.R. Ambedkar. Gandhi had gone on a fast unto death in Yerwada Jail against the Communal Award (1932) which provided separate electorates for Dalits. The Pact replaced separate electorates with reserved seats within the general electorate (increased from 71 to 148).", examName: "UPSC Prelims", examYear: 2023, difficulty: "medium" },
+  { id: "gm-07", topic: "gandhian-movements", question: "Who hoisted the flag at Gowalia Tank Maidan during the Quit India Movement?", options: ["Sarojini Naidu", "Aruna Asaf Ali", "Kasturba Gandhi", "Usha Mehta"], correctIndex: 1, explanation: "Aruna Asaf Ali hoisted the Indian National Congress flag at Gowalia Tank Maidan (now August Kranti Maidan) in Bombay during the Quit India Movement on 8 August 1942. She continued as an underground leader. Usha Mehta ran the underground Congress Radio. Sarojini Naidu led the Dharasana Salt Works raid during CDM.", examName: "SSC CGL", examYear: 2022, difficulty: "medium" },
+  { id: "gm-08", topic: "gandhian-movements", question: "Which of the following was NOT a feature of the Non-Cooperation Movement?", options: ["Boycott of foreign goods", "Surrender of titles", "Breaking the salt law", "Boycott of legislatures and courts"], correctIndex: 2, explanation: "Breaking the salt law was NOT a feature of the Non-Cooperation Movement (1920-22). It was the defining feature of the Civil Disobedience Movement (1930-34), which began with the Dandi March. The NCM programme included boycott of foreign goods, surrender of titles, boycott of legislatures and courts, and promotion of Khadi.", examName: "UPSC Prelims", examYear: 2021, difficulty: "medium" },
+  { id: "gm-09", topic: "gandhian-movements", question: "Sardar Vallabhbhai Patel earned the title 'Sardar' during which movement?", options: ["Champaran Satyagraha", "Kheda Satyagraha", "Bardoli Satyagraha", "Non-Cooperation Movement"], correctIndex: 2, explanation: "Sardar Vallabhbhai Patel earned the title 'Sardar' (leader) from the women of Bardoli during the Bardoli Satyagraha (1928) in Gujarat. He organized peasants against a 22% increase in land revenue. The Broomfield-Maxwell Committee later reduced the enhancement to 6.03%. Note: Patel first emerged as a leader during the Kheda Satyagraha (1918), but the title 'Sardar' was given during Bardoli.", examName: "UPSC Prelims", examYear: 2023, difficulty: "medium" },
+  { id: "gm-10", topic: "gandhian-movements", question: "Consider the following statements about the Quit India Movement:\n1. The resolution was drafted by Jawaharlal Nehru.\n2. Parallel governments were set up in Satara, Midnapore, and Ballia.\n3. The movement was launched after the success of the Cripps Mission.\n\nWhich of the above statements is/are correct?", options: ["1 and 2 only", "2 and 3 only", "1 only", "1, 2 and 3"], correctIndex: 0, explanation: "Statements 1 and 2 are correct. The Quit India Resolution was drafted by Jawaharlal Nehru, and parallel governments (Prati Sarkar) were established in Satara (Nana Patil), Midnapore/Tamluk (Bengal), and Ballia (UP). Statement 3 is incorrect — the movement was launched after the FAILURE of the Cripps Mission (March 1942), which Gandhi called 'a post-dated cheque on a crashing bank.'", examName: "UPSC Prelims", examYear: 2024, difficulty: "hard" },
+  { id: "gm-11", topic: "gandhian-movements", question: "Which of the following movements saw the first major participation of women?", options: ["Non-Cooperation Movement", "Civil Disobedience Movement", "Quit India Movement", "Swadeshi Movement"], correctIndex: 1, explanation: "The Civil Disobedience Movement (1930-34) saw the first major participation of women. Sarojini Naidu led the raid on the Dharasana Salt Works (21 May 1930). Kamala Nehru and women from various social backgrounds participated. While some women participated in earlier movements, the CDM marked their first mass entry into active political protest.", examName: "SSC CHSL", examYear: 2022, difficulty: "medium" },
+  { id: "gm-12", topic: "gandhian-movements", question: "Khan Abdul Ghaffar Khan organized which movement during the CDM?", options: ["Quit India Movement", "Khudai Khidmatgar (Red Shirts)", "Ghadar Movement", "Silk Letters Movement"], correctIndex: 1, explanation: "Khan Abdul Ghaffar Khan, known as the 'Frontier Gandhi' or 'Badshah Khan,' organized the Khudai Khidmatgar (Servants of God) movement in the North-West Frontier Province during the Civil Disobedience Movement. Members wore red shirts and were committed to non-violence.", examName: "CDS", examYear: 2020, difficulty: "medium" },
+  { id: "gm-13", topic: "gandhian-movements", question: "Consider the following statements about the Jallianwala Bagh Massacre:\n1. It took place on 13 April 1919, which was Baisakhi day.\n2. General Dyer ordered the firing.\n3. Rabindranath Tagore renounced his knighthood in protest.\n4. The Hunter Committee punished General Dyer with imprisonment.\n\nWhich of the above statements is/are correct?", options: ["1, 2 and 3 only", "1 and 2 only", "2, 3 and 4 only", "1, 2, 3 and 4"], correctIndex: 0, explanation: "Statements 1, 2, and 3 are correct. The massacre took place on Baisakhi day (13 April 1919), General Dyer ordered the firing, and Tagore renounced his knighthood. Statement 4 is incorrect — the Hunter Committee censured Dyer but took no serious punitive action. Dyer was merely relieved of command and returned to Britain, where he was hailed as a hero by some sections.", examName: "UPSC Prelims", examYear: 2022, difficulty: "hard" },
+  { id: "gm-14", topic: "gandhian-movements", question: "The Swaraj Party was formed in 1923 by:", options: ["Mahatma Gandhi and Jawaharlal Nehru", "C.R. Das and Motilal Nehru", "Subhas Chandra Bose and Jayaprakash Narayan", "Lala Lajpat Rai and Bipin Chandra Pal"], correctIndex: 1, explanation: "The Swaraj Party was formed in January 1923 by C.R. Das (as President) and Motilal Nehru (as Secretary). They were 'pro-changers' who wanted to enter the legislatures to wreck them from within, opposing Gandhi's 'no-changers' who favoured the constructive programme. The party won elections but declined after C.R. Das's death in 1925.", examName: "UPSC Prelims", examYear: 2021, difficulty: "medium" },
+  { id: "gm-15", topic: "gandhian-movements", question: "Assertion (A): Gandhi called the Cripps Mission proposals 'a post-dated cheque on a crashing bank.'\nReason (R): The Cripps Mission offered immediate independence to India.\n\nSelect the correct answer:", options: ["Both A and R are correct, and R is the correct explanation of A", "Both A and R are correct, but R is NOT the correct explanation of A", "A is correct, but R is incorrect", "A is incorrect, but R is correct"], correctIndex: 2, explanation: "Assertion A is correct — Gandhi indeed described the Cripps Mission proposals as 'a post-dated cheque on a crashing bank.' Reason R is incorrect — the Cripps Mission (March 1942) did NOT offer immediate independence. It offered dominion status AFTER the war, with an opt-out clause for provinces that was unacceptable to Congress. The proposals were rejected by both Congress and the Muslim League.", examName: "UPSC Prelims", examYear: 2023, difficulty: "hard" },
+  { id: "gm-16", topic: "gandhian-movements", question: "The Lahore Congress Session (December 1929) is significant because:", options: ["It launched the Non-Cooperation Movement", "It declared Purna Swaraj (complete independence)", "It led to the Gandhi-Irwin Pact", "It established the Indian National Congress"], correctIndex: 1, explanation: "The Lahore Congress Session (December 1929), presided over by Jawaharlal Nehru, is significant because it declared Purna Swaraj (complete independence) as the goal of the Congress, replacing the earlier demand for dominion status. 26 January 1930 was celebrated as 'Independence Day' — the date later chosen for Republic Day.", examName: "SSC CGL", examYear: 2023, difficulty: "medium" },
+  { id: "gm-17", topic: "gandhian-movements", question: "Consider the following statements:\n1. The Wardha Scheme of Basic Education was proposed by Gandhi in 1937.\n2. It emphasized craft-centered, mother-tongue education.\n3. The Zakir Husain Committee elaborated the scheme.\n\nWhich of the above statements is/are correct?", options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"], correctIndex: 3, explanation: "All three statements are correct. The Wardha Scheme (also called Nai Talim/Basic Education) was proposed by Gandhi in 1937. It emphasized craft-centered education in the mother tongue, with seven years of free, compulsory education where subjects were taught through a productive craft (spinning, carpentry, agriculture). The Zakir Husain Committee further elaborated the details of the scheme.", examName: "UPSC Prelims", examYear: 2024, difficulty: "medium" },
+  { id: "gm-18", topic: "gandhian-movements", question: "Mahatma Gandhi was assassinated on 30 January 1948 by:", options: ["Udham Singh", "Nathuram Godse", "Bhagat Singh", "Madanlal Dhingra"], correctIndex: 1, explanation: "Mahatma Gandhi was assassinated on 30 January 1948 by Nathuram Godse, a member of the Hindu Mahasabha, at Birla House (now Gandhi Smriti), New Delhi, during his evening prayer meeting. His last words were reportedly 'He Ram.' Udham Singh assassinated Michael O'Dwyer in 1940; Bhagat Singh was a revolutionary executed in 1931.", examName: "SSC CGL", examYear: 2021, difficulty: "easy" },
+  { id: "gm-19", topic: "gandhian-movements", question: "Consider the following statements about the Moplah/Mappila Rebellion (1921):\n1. It began as part of the Khilafat-Non-Cooperation Movement.\n2. It took place in the Malabar region of Kerala.\n3. It remained entirely non-violent throughout.\n\nWhich of the above statements is/are correct?", options: ["1 and 2 only", "2 and 3 only", "1 only", "1, 2 and 3"], correctIndex: 0, explanation: "Statements 1 and 2 are correct. The Moplah/Mappila Rebellion began as part of the Khilafat-Non-Cooperation Movement in the Malabar region of Kerala. Statement 3 is incorrect — the rebellion turned violent and communal, with attacks on Hindu landlords and forced conversions. It was eventually suppressed by the British military. The 'Wagon Tragedy' (70 Moplah prisoners died of suffocation in a closed railway wagon) was a notable incident.", examName: "UPSC Prelims", examYear: 2022, difficulty: "hard" },
+  { id: "gm-20", topic: "gandhian-movements", question: "Assertion (A): Gandhi organized peasants of Champaran against European indigo planters in 1917.\nReason (R): The tinkathia system required cultivators to grow indigo on 3/20th of their land at prices fixed by the planters.\n\nSelect the correct answer:", options: ["Both A and R are correct, and R is the correct explanation of A", "Both A and R are correct, but R is NOT the correct explanation of A", "A is correct, but R is incorrect", "A is incorrect, but R is correct"], correctIndex: 0, explanation: "Both A and R are correct, and R correctly explains A. Gandhi went to Champaran (Bihar) in 1917 to investigate the plight of indigo cultivators who were forced under the tinkathia system to grow indigo on 3/20th (three out of twenty parts) of their land and sell it at prices determined by European planters. This exploitative system was the direct reason for Gandhi's intervention.", examName: "UPSC Prelims", examYear: 2024, difficulty: "hard" },
+  { id: "gm-21", topic: "gandhian-movements", question: "The INA (Indian National Army) trials at the Red Fort involved which of the following officers?", options: ["Bhagat Singh, Rajguru, Sukhdev", "Shah Nawaz Khan, P.K. Sahgal, Gurbaksh Singh Dhillon", "Surya Sen, Pritilata Waddedar, Ananta Singh", "Udham Singh, Madanlal Dhingra, Madan Lal Pahwa"], correctIndex: 1, explanation: "The INA Red Fort Trials (1945-46) involved Shah Nawaz Khan, P.K. Sahgal, and Gurbaksh Singh Dhillon — officers of the Indian National Army who were tried for treason. Their defence was led by Jawaharlal Nehru, Bhulabhai Desai, and Tej Bahadur Sapru. The trials created nationwide outrage and became a catalyst for Indian independence.", examName: "UPSC Prelims", examYear: 2021, difficulty: "medium" },
+  { id: "gm-22", topic: "gandhian-movements", question: "Consider the following statements:\n1. Lala Lajpat Rai died after being beaten during a protest against the Simon Commission.\n2. The Simon Commission had no Indian members.\n3. The Nehru Report demanded Purna Swaraj.\n\nWhich of the above statements is/are correct?", options: ["1 and 2 only", "2 and 3 only", "1 only", "1, 2 and 3"], correctIndex: 0, explanation: "Statements 1 and 2 are correct. Lala Lajpat Rai died on 17 November 1928 from injuries sustained during a police lathi charge led by Superintendent Saunders during the Simon Commission protest in Lahore. The Simon Commission (1927) had no Indian members — all seven were British. Statement 3 is incorrect — the Nehru Report (1928) demanded dominion status, not Purna Swaraj. The demand for Purna Swaraj was made at the Lahore Congress (1929).", examName: "UPSC Prelims", examYear: 2023, difficulty: "hard" },
+  { id: "gm-23", topic: "gandhian-movements", question: "Who led the raid on the Dharasana Salt Works during the Civil Disobedience Movement?", options: ["Aruna Asaf Ali", "Sarojini Naidu", "Kamala Nehru", "Kasturba Gandhi"], correctIndex: 1, explanation: "Sarojini Naidu led the raid on the Dharasana Salt Works on 21 May 1930 during the Civil Disobedience Movement. Gandhi had been arrested before the raid. American journalist Webb Miller witnessed and reported the brutal British response — police beat unarmed protesters with steel-tipped lathis — and his reports published internationally shocked the world and generated sympathy for the Indian cause.", examName: "SSC CGL", examYear: 2023, difficulty: "medium" },
+  { id: "gm-24", topic: "gandhian-movements", question: "Consider the following pairs:\n1. Champaran — Bihar\n2. Kheda — Gujarat\n3. Bardoli — Maharashtra\n4. Chauri Chaura — Uttar Pradesh\n\nWhich of the above pairs is/are correctly matched?", options: ["1, 2 and 3 only", "1, 2 and 4 only", "2, 3 and 4 only", "1, 2, 3 and 4"], correctIndex: 1, explanation: "Pairs 1, 2, and 4 are correctly matched. Champaran is in Bihar, Kheda is in Gujarat, and Chauri Chaura is in Gorakhpur district of Uttar Pradesh. Pair 3 is incorrect — Bardoli is in Gujarat (Surat district), not Maharashtra. The Bardoli Satyagraha (1928) was a peasant movement in Gujarat led by Sardar Patel.", examName: "UPSC Prelims", examYear: 2022, difficulty: "medium" },
+  { id: "gm-25", topic: "gandhian-movements", question: "Gandhi's autobiography 'My Experiments with Truth' was originally written in:", options: ["English", "Hindi", "Gujarati", "Bengali"], correctIndex: 2, explanation: "Gandhi's autobiography 'My Experiments with Truth' (Satya na Prayogo) was originally written in Gujarati and serialized in his journal Navajivan from 1925 to 1929. It was later translated into English by Mahadev Desai. The book covers his life from birth to 1921 and is considered one of the most important autobiographies of the 20th century.", examName: "SSC CHSL", examYear: 2022, difficulty: "medium" },
+  { id: "gm-26", topic: "gandhian-movements", question: "Consider the following statements about the Congress ministries of 1937-39:\n1. Congress won in 7 out of 11 provinces in the 1937 elections.\n2. The ministries resigned in 1939 because the Viceroy declared war without consulting Indian leaders.\n3. The Government of India Act 1935 provided the framework for these elections.\n\nWhich of the above statements is/are correct?", options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"], correctIndex: 3, explanation: "All three statements are correct. Under the Government of India Act 1935, elections were held in 1937, and Congress won in 7 of 11 provinces (Madras, UP, Bihar, CP, Bombay, Orissa, NWFP). The ministries resigned in 1939 when Viceroy Linlithgow declared India a belligerent in WWII without consulting Indian political leaders. The Muslim League observed 'Deliverance Day' (22 December 1939) celebrating the end of 'Congress tyranny.'", examName: "UPSC Prelims", examYear: 2024, difficulty: "hard" },
 ]

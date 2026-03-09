@@ -3,70 +3,130 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const externalDebtRevision: SubjectRevision = {
   topic: 'external-debt',
   bullets: [
-    "India's external debt: $682.3 billion (June 2024). Debt/GDP: 18.8% — well below 40% danger threshold.",
-    "Composition: ECBs $225.6B (33%), NRI deposits $157.2B (23%), Short-term trade credits $131.8B (19%), Multilateral $73.2B (11%).",
-    "Government (sovereign) debt: 23.1% of total. Private debt: 76.9%. Predominantly private — considered safer.",
-    "Debt service ratio: 6.7% (FY24) — well below 20% danger mark. Was 35.3% during 1991 crisis.",
-    "Short-term debt/Forex reserves: 22.5%. Reserves cover 4.4x short-term debt. Guidotti-Greenspan rule comfortably met.",
-    "Forex reserves/External debt: 93.7% — reserves nearly cover total external debt.",
-    "ECBs: Regulated by RBI. All-in-cost ceiling (SOFR + 550bps). MAMP: 3 years (Track I), 5 years (Track II).",
-    "NRI deposits: FCNR(B) (foreign currency, 1-5 years), NRE (rupee, freely repatriable), NRO (rupee, conditionally repatriable).",
-    "India has NEVER issued sovereign bonds in foreign currency — deliberate policy to avoid exchange rate risk.",
-    "JP Morgan GBI-EM: India included from June 2024. Expected $20-30B FPI flows into domestic G-Secs.",
-    "Largest multilateral lender to India: World Bank (IDA + IBRD $39.7B). ADB: $22.3B. AIIB: $9.6B.",
-    "Largest bilateral lender: Japan (JICA $24+B) — concessional 0.1-1.4% interest, 30-40 year repayment.",
-    "India prepaid IMF loan (2003) and high-cost bilateral debt — shift from debtor to comfortable position.",
-    "Rupee-denominated component: 31.4% of external debt — insulates from exchange rate risk.",
-    "NaBFID borrows in rupees from domestic market + international green bonds — infrastructure DFI without forex risk."
-],
+    'India\'s external debt: $682.3 billion (June 2024). Debt/GDP: 18.8% — well below 40% danger threshold.',
+    'Composition: ECBs $225.6B (33%), NRI deposits $157.2B (23%), Short-term trade credits $131.8B (19%), Multilateral $73.2B (11%).',
+    'Government (sovereign) debt: 23.1% of total ($157.5B). Private debt: 76.9% ($524.8B). Predominantly private — considered safer.',
+    'Sovereign external debt only ~4% of GDP — virtually no sovereign default risk. Most government borrowing is domestic (G-Secs in rupees).',
+    'Debt service ratio: 6.7% (FY24) — well below 20% danger mark. Was 35.3% during 1991 crisis.',
+    'Short-term debt/Forex reserves: 22.5%. Reserves cover 4.4x short-term debt. Guidotti-Greenspan rule comfortably met.',
+    'Forex reserves/External debt: 93.7% — reserves nearly cover total external debt. Only 3-4 countries globally exceed 80%.',
+    'Concessional debt: ~8.5% of total — declining as India graduates from IDA to IBRD at World Bank.',
+    'Currency composition: USD 53.8%, INR 31.4%, JPY 5.8%, EUR 3.6%, SDR 4.2%, Others 1.2%.',
+    'The 31.4% rupee-denominated component insulates India from exchange rate risk on that portion.',
+    'ECBs: Regulated by RBI. All-in-cost ceiling (SOFR + 550bps). MAMP: 3 years (Track I), 5 years (Track II), 10 years (Track III).',
+    'ECB end-use restrictions: Cannot be used for real estate, capital market, equity purchase, on-lending (with exceptions).',
+    'Masala Bonds (Track IV ECBs): Rupee-denominated, issued overseas. Exchange rate risk on lender. HDFC, NTPC issued.',
+    'UFCE (Unhedged Foreign Currency Exposure): RBI mandates banks to provision additional capital for borrowers with large UFCE.',
+    'NRI deposits: FCNR(B) (foreign currency, 1-5 years), NRE (rupee, freely repatriable), NRO (rupee, conditionally repatriable).',
+    'NRI deposits total $157.2B. NRE largest ($113B). FCNR(B) $28B. NRO $16B.',
+    'India is world\'s largest remittance recipient: $125 billion (FY24). Diaspora of 32 million.',
+    'FCNR(B) swap scheme (2013 taper tantrum): RBI offered concessional swap rates — attracted $34 billion, stabilised rupee.',
+    'India has NEVER issued sovereign bonds in foreign currency — deliberate policy to avoid exchange rate risk.',
+    '2019 Budget proposed overseas sovereign bonds — shelved after pushback (Raghuram Rajan argued against).',
+    'JP Morgan GBI-EM: India included from June 2024 (10% weight). Expected $20-30B passive FPI flows into domestic G-Secs.',
+    'Bloomberg Global Aggregate Index: India included. Combined with JP Morgan, expected $40B+ in FPI flows.',
+    'FPI limit in G-Secs: 6% of outstanding. FAR (Fully Accessible Route) securities have no FPI limit.',
+    'Largest multilateral lender to India: World Bank (IDA $22B + IBRD $17.7B = $39.7B). India is largest borrower from both.',
+    'ADB: $22.3B — India is 2nd largest borrower (after China). AIIB: $9.6B — India was first AIIB loan recipient (2017).',
+    'NDB (BRICS bank): $6.3B. India holds 20% share. Uniquely allows rupee-denominated borrowing.',
+    'Largest bilateral lender: Japan (JICA $24+B) — concessional 0.1-1.4% interest, 30-40 year repayment.',
+    'Key JICA projects: Bullet Train (Rs 1.08 lakh crore), Delhi-Mumbai Industrial Corridor, Delhi Metro, NE India projects.',
+    'India prepaid IMF loan (2003) and high-cost bilateral debt — shift from debtor to comfortable external position.',
+    'India\'s sovereign credit rating: BBB- (S&P, Fitch), Baa3 (Moody\'s) — lowest investment grade.',
+    'Upgrade to BBB would reduce borrowing costs for sovereign + private entities by 50-100 bps.',
+    'IDA graduation: India became IDA-ineligible in 2014 (per capita income crossed threshold). Transition period continues.',
+    'India contributed to IDA20 replenishment — shift from borrower to donor at concessional window.',
+    'Net IIP: -$406 billion — India is net debtor. Normal for developing economy attracting FDI/FPI.',
+    'External debt grew from $35B (1985) to $83B (1991) — rapid unsustainable accumulation triggered 1991 crisis.',
+    'Post-reform: Debt/GDP declined from 28.7% (1991) to 18.8% (2024) despite absolute debt growth — reflects faster GDP growth.',
+    'NaBFID (2021): Development Finance Institution for infrastructure. Borrows domestically + green bonds. No forex risk.',
+    'Climate finance: India needs $10 trillion for net-zero by 2070. Green bonds and multilateral climate finance will add to external debt.',
+    'Concentration risk: 53.8% USD-denominated. Diversification into yen, euro, and rupee ongoing but slow.',
+  ],
   comparisons: [
     {
-        "title": "External Debt Sustainability Indicators",
-        "headers": [
-            "Indicator",
-            "Current Value",
-            "Danger Threshold",
-            "Status"
-        ],
-        "rows": [
-            [
-                "Debt/GDP",
-                "18.8%",
-                "40%",
-                "Comfortable"
-            ],
-            [
-                "Debt Service Ratio",
-                "6.7%",
-                "20%",
-                "Comfortable"
-            ],
-            [
-                "Short-term debt/Reserves",
-                "22.5%",
-                "100% (Guidotti-Greenspan)",
-                "Comfortable"
-            ],
-            [
-                "Reserves/Total debt",
-                "93.7%",
-                "Should be high",
-                "Very strong"
-            ],
-            [
-                "Import cover (months)",
-                "11 months",
-                "3 months minimum",
-                "Comfortable"
-            ]
-        ]
-    }
-],
+      title: 'External Debt Sustainability Indicators',
+      headers: ['Indicator', 'Current Value', 'Danger Threshold', 'Status'],
+      rows: [
+        ['Debt/GDP', '18.8%', '40% (IMF)', 'Comfortable'],
+        ['Debt Service Ratio', '6.7%', '20%', 'Comfortable'],
+        ['Short-term debt/Reserves', '22.5%', '100% (Guidotti-Greenspan)', 'Comfortable'],
+        ['Reserves/Total debt', '93.7%', 'Should be high', 'Very strong'],
+        ['Import cover (months)', '10 months', '3 months minimum', 'Comfortable'],
+        ['Concessional debt share', '8.5%', 'Higher is better', 'Declining'],
+      ],
+    },
+    {
+      title: '1991 Crisis vs Current External Position',
+      headers: ['Indicator', '1991', '2024'],
+      rows: [
+        ['Debt/GDP', '28.7%', '18.8%'],
+        ['Debt Service Ratio', '35.3%', '6.7%'],
+        ['Forex reserves', '$1.2 billion', '$640 billion'],
+        ['Import cover', '2 weeks', '10 months'],
+        ['IMF debt', '$2.2 billion', 'Nil (repaid 2003)'],
+        ['Sovereign rating', 'Not rated/junk', 'BBB- (lowest investment grade)'],
+      ],
+    },
+    {
+      title: 'Multilateral Lenders to India',
+      headers: ['Institution', 'Outstanding', 'Terms', 'Key Focus'],
+      rows: [
+        ['World Bank IDA', '$22 billion', 'Near-zero interest, 38-year tenor', 'Poverty reduction, social sectors'],
+        ['World Bank IBRD', '$17.7 billion', 'Market rate, 15-20 years', 'Infrastructure, governance'],
+        ['ADB', '$22.3 billion', 'Concessional + market', 'Transport, energy, urban'],
+        ['AIIB', '$9.6 billion', 'Market rate', 'Infrastructure, connectivity'],
+        ['NDB', '$6.3 billion', 'Market rate, rupee option', 'Metro, renewable energy'],
+      ],
+    },
+    {
+      title: 'ECB Tracks — Comparison',
+      headers: ['Track', 'Currency', 'MAMP', 'Key Feature'],
+      rows: [
+        ['Track I', 'Foreign currency', '3 years (≤$50M), 5 years (>$50M)', 'Standard ECB'],
+        ['Track II', 'Foreign currency', '5 years', 'For amounts above $50M'],
+        ['Track III', 'Foreign currency', '10 years', 'Specific end uses (infra, housing)'],
+        ['Track IV', 'Indian rupee (Masala Bonds)', '3 years', 'Exchange rate risk on lender'],
+      ],
+    },
+    {
+      title: 'India vs Peers — External Debt',
+      headers: ['Country', 'External Debt/GDP', 'Reserves/Debt', 'Rating'],
+      rows: [
+        ['India', '18.8%', '93.7%', 'BBB-'],
+        ['China', '15%', '180%+', 'A+'],
+        ['Brazil', '30%', '35%', 'BB'],
+        ['South Africa', '43%', '20%', 'BB-'],
+        ['Turkey', '46%', '15%', 'B+'],
+        ['Indonesia', '30%', '80%', 'BBB'],
+      ],
+    },
+  ],
   mnemonics: [
     {
-        "title": "NRI Deposit Types — \"FCNR-NRE-NRO\"",
-        "mnemonic": "FCNR(B): Foreign currency, fixed deposit. NRE: Rupee, freely repatriable. NRO: Rupee, conditionally repatriable",
-        "explanation": "Three types of NRI deposits in descending order of repatriability — FCNR and NRE are freely repatriable, NRO has conditions."
-    }
-],
+      title: 'NRI Deposit Types — "FCNR-NRE-NRO"',
+      mnemonic: 'FCNR(B): Foreign currency, fixed deposit. NRE: Rupee, freely repatriable. NRO: Rupee, conditionally repatriable',
+      explanation: 'Three types of NRI deposits in descending order of repatriability — FCNR and NRE are freely repatriable, NRO has conditions ($1M/year limit).',
+    },
+    {
+      title: 'External Debt Components — "ENS-MB"',
+      mnemonic: 'E: ECBs (33%). N: NRI deposits (23%). S: Short-term trade credits (19%). M: Multilateral (11%). B: Bilateral (5%)',
+      explanation: 'Five major components of India\'s external debt in descending order of share.',
+    },
+    {
+      title: 'Debt Safety Indicators — "DDS-RI"',
+      mnemonic: 'D: Debt/GDP (<20%). D: Debt Service Ratio (<7%). S: Short-term/Reserves (<25%). R: Reserves/Debt (>90%). I: Import cover (10 months)',
+      explanation: 'Five key indicators show India\'s external debt is well within safe limits.',
+    },
+    {
+      title: 'Why No Sovereign Dollar Bonds — "REVS"',
+      mnemonic: 'R: Rupee depreciation risk. E: Exchange rate volatility. V: Vulnerability to capital reversals. S: Sufficient domestic market',
+      explanation: 'Four reasons India avoids foreign currency sovereign borrowing despite lower interest rates abroad.',
+    },
+    {
+      title: 'JICA — Japan\'s Key Projects in India',
+      mnemonic: 'BULLET: Bullet train. U: Urban metro (Delhi). L: Logistics corridors (DMIC). L: Loans at 0.1-1.4%. E: Eastern India development. T: Transport in Northeast',
+      explanation: 'Japan (JICA) is India\'s largest bilateral lender at $24+ billion — most concessional terms globally.',
+    },
+  ],
 }

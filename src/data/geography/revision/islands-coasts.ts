@@ -1,73 +1,144 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const islandsCoastsRevision: SubjectRevision = {
-  "topic": "islands-coasts",
-  "bullets": [
-    "India's total coastline: 7,516.6 km (5,422.6 km mainland + 2,094 km island).",
-    "Gujarat has the longest coastline among all states (about 1,600 km).",
-    "Andaman & Nicobar Islands: 572 islands in Bay of Bengal; extension of Arakan Yoma range.",
-    "Ten Degree Channel (10°N) separates Andaman and Nicobar groups.",
-    "Indira Point on Great Nicobar — southernmost point of India.",
-    "Barren Island (Andaman) — India's only active volcano.",
-    "Lakshadweep: 36 coral islands in Arabian Sea; smallest UT by area (32 sq km); capital Kavaratti.",
-    "Eight Degree Channel (8°N) separates Lakshadweep from Maldives.",
-    "Chilika Lake (Odisha) — largest brackish water lagoon in India; Ramsar site.",
-    "Vembanad Lake (Kerala) — longest lake in India; famous Kerala backwaters.",
-    "Sundarbans — world's largest delta; Ganga-Brahmaputra system; Royal Bengal Tiger.",
-    "India has 4 major coral reef areas: Gulf of Kutch, Gulf of Mannar, Andaman & Nicobar, Lakshadweep."
+  topic: 'islands-coasts',
+  bullets: [
+    'India\'s total coastline: 7,516.6 km (5,422.6 km mainland + 2,094 km island).',
+    'Gujarat has the longest coastline among all states (about 1,600 km).',
+    'Andaman & Nicobar Islands: 572 islands in Bay of Bengal; extension of Arakan Yoma range.',
+    'Ten Degree Channel (10°N) separates Andaman and Nicobar groups.',
+    'Indira Point on Great Nicobar — southernmost point of India (6°45\'N); submerged 4.25 m by 2004 tsunami.',
+    'Barren Island (Andaman) — India\'s only active volcano; Narcondam — dormant volcano.',
+    'Lakshadweep: 36 coral islands in Arabian Sea; smallest UT by area (32 sq km); capital Kavaratti.',
+    'Eight Degree Channel (8°N) separates Lakshadweep from Maldives.',
+    'Minicoy is the largest island in Lakshadweep; Mahl language; culturally close to Maldives.',
+    'Chilika Lake (Odisha) — largest brackish water lagoon in India (~1,100 sq km); Ramsar site; Irrawaddy dolphins.',
+    'Pulicat Lake (AP-TN border) — second largest brackish lagoon; flamingo breeding site.',
+    'Vembanad Lake (Kerala) — longest lake in India (96.5 km); famous Kerala backwaters.',
+    'Sundarbans — world\'s largest delta and mangrove forest; Ganga-Brahmaputra system; Royal Bengal Tiger; UNESCO World Heritage.',
+    'India has 4 major coral reef areas: Gulf of Kutch, Gulf of Mannar, Andaman & Nicobar, Lakshadweep.',
+    'Lakshadweep has India\'s only true atoll reefs; Gulf of Mannar has fringing reefs.',
+    'CRZ 2019: CRZ-I (ecologically sensitive), CRZ-II (urban developed), CRZ-III (rural), CRZ-IV (water area to 12 nm).',
+    'CRZ 2019 reduced No Development Zone from 500 m to 200 m (50 m for densely populated rural areas).',
+    'India has ~4,992 sq km mangrove cover (ISFR 2021); West Bengal leads (42.5%); ranks 5th globally.',
+    'Bhitarkanika (Odisha) — 2nd largest mangrove forest; Olive Ridley mass nesting at Gahirmatha beach.',
+    'India\'s EEZ: ~2.01 million sq km under UNCLOS (200 nautical miles from baseline).',
+    'JNPT (Nhava Sheva, Navi Mumbai) — India\'s largest container port; handles 50%+ of container traffic.',
+    'Visakhapatnam — only natural harbour on east coast; largest port by cargo volume.',
+    'Adam\'s Bridge (Ram Setu) — 48 km chain of limestone shoals connecting Pamban (India) to Mannar (Sri Lanka).',
+    'Sagarmala Programme (2015) — port-led development; 13 major ports + ~200 minor ports.',
+    'Palk Strait separates India from Sri Lanka; Nine Degree Channel separates Minicoy from the main Lakshadweep group.',
+    'Andaman & Nicobar Command (2001) — India\'s only tri-services theatre command; strategic position near Strait of Malacca.',
+    'INS Baaz (Campbell Bay, Great Nicobar) — India\'s southernmost air station.',
+    'Great Rann of Kutch — one of the world\'s largest salt deserts (~7,500 sq km); seasonal wetland.',
+    'Little Rann of Kutch — home to Indian Wild Ass (Khur); Wild Ass Sanctuary.',
+    'Gahirmatha (Odisha) — world\'s largest Olive Ridley rookery; Operation Olivia protects nesting.',
+    'Dugong (sea cow) — found in Gulf of Mannar, Palk Bay, Andaman; about 200-250 in India; critically endangered.',
+    'India has 4 Marine National Parks: Gulf of Kutch, Gulf of Mannar, Mahatma Gandhi (Andaman), Rani Jhansi (Andaman).',
+    'India is 3rd largest fish producer (after China, Indonesia); marine fisheries 36%, inland 64%.',
+    'About 33% of India\'s coastline is affected by erosion; Kerala (67% eroding) is most affected.',
+    'Lohachara Island in Sundarbans — one of the first inhabited islands lost to rising sea levels.',
+    'Dholavira (Kutch, Gujarat) — Indus Valley Civilization site on Khadir Island in Great Rann; UNESCO World Heritage (2021).',
+    'Sir Creek dispute — unresolved India-Pakistan maritime boundary issue in the Rann of Kutch.',
+    'Coral bleaching: 2016 event killed 70-80% of coral in parts of Gulf of Mannar and Lakshadweep.',
+    'Bay of Bengal generates 5-6 cyclones annually; east coast far more cyclone-prone than west coast.',
+    'Indian Tsunami Early Warning Centre (ITEWC) at INCOIS, Hyderabad — established 2007 after 2004 tsunami.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Andaman & Nicobar vs Lakshadweep",
-      "headers": [
-        "Feature",
-        "Andaman & Nicobar",
-        "Lakshadweep"
+      title: 'Andaman & Nicobar vs Lakshadweep',
+      headers: ['Feature', 'Andaman & Nicobar', 'Lakshadweep'],
+      rows: [
+        ['Location', 'Bay of Bengal', 'Arabian Sea'],
+        ['Number', '572 islands', '36 islands'],
+        ['Origin', 'Tectonic (submerged mountain chain)', 'Coral (atoll formation)'],
+        ['Capital', 'Port Blair', 'Kavaratti'],
+        ['Highest Point', 'Saddle Peak (732 m)', 'Very low elevation (~5 m max)'],
+        ['Key Feature', 'Active volcano (Barren Island)', 'Only coral atoll ecosystem in India'],
+        ['Separating Channel', 'Ten Degree Channel (internal)', 'Eight Degree Channel (from Maldives)'],
+        ['Indigenous Tribes', 'Jarawas, Sentinelese, Onges, Great Andamanese, Shompens', 'No indigenous tribes (Malayalam/Mahl speakers)'],
       ],
-      "rows": [
-        [
-          "Location",
-          "Bay of Bengal",
-          "Arabian Sea"
-        ],
-        [
-          "Number",
-          "572 islands",
-          "36 islands"
-        ],
-        [
-          "Origin",
-          "Tectonic (submerged mountain chain)",
-          "Coral (atoll formation)"
-        ],
-        [
-          "Capital",
-          "Port Blair",
-          "Kavaratti"
-        ],
-        [
-          "Highest Point",
-          "Saddle Peak (732 m)",
-          "Very low elevation"
-        ],
-        [
-          "Key Feature",
-          "Active volcano (Barren Island)",
-          "Only coral atoll ecosystem in India"
-        ],
-        [
-          "Separating Channel",
-          "Ten Degree Channel",
-          "Eight Degree Channel (from Maldives)"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Coastal States — Longest to Shortest",
-      "mnemonic": "Gujarat > Andhra Pradesh > Tamil Nadu > Maharashtra > Kerala > Karnataka > Odisha > Goa > West Bengal",
-      "explanation": "Gujarat has the longest state coastline. All 9 coastal states + 4 coastal UTs contribute to India's mainland coastline."
-    }
-  ]
+      title: 'Western Coast vs Eastern Coast',
+      headers: ['Feature', 'Western Coast', 'Eastern Coast'],
+      rows: [
+        ['Width', 'Narrow (50-65 km)', 'Broad (100-130 km)'],
+        ['Adjacent sea', 'Arabian Sea', 'Bay of Bengal'],
+        ['Deltas', 'Few (Narmada/Tapi have estuaries, not deltas)', 'Extensive (Ganga, Godavari, Krishna, Kaveri, Mahanadi)'],
+        ['Harbours', 'Many natural harbours (Mumbai, Kochi)', 'Few natural (only Visakhapatnam)'],
+        ['Cyclone exposure', 'Less frequent (increasing)', 'Highly cyclone-prone (5-6/year)'],
+        ['Key feature', 'Backwaters (Kerala), Konkan cliffs', 'Lagoons (Chilika, Pulicat), large deltas'],
+        ['Name segments', 'Konkan, Kanara, Malabar', 'Coromandel, Northern Circars'],
+      ],
+    },
+    {
+      title: 'Coastal States — Coastline Length (Top 9)',
+      headers: ['Rank', 'State', 'Coastline (km)', 'Key Feature'],
+      rows: [
+        ['1', 'Gujarat', '~1,600', 'Gulf of Kutch, Gulf of Khambhat, Rann'],
+        ['2', 'Andhra Pradesh', '~974', 'Krishna-Godavari delta, Visakhapatnam'],
+        ['3', 'Tamil Nadu', '~907', 'Coromandel coast, Marina Beach'],
+        ['4', 'Maharashtra', '~720', 'Konkan coast, Mumbai harbour'],
+        ['5', 'Kerala', '~590', 'Malabar coast, backwaters'],
+        ['6', 'Karnataka', '~300', 'Kanara coast, Mangalore'],
+        ['7', 'Odisha', '~480', 'Chilika, Bhitarkanika, Gahirmatha'],
+        ['8', 'Goa', '~160', 'Rocky coastline, beaches'],
+        ['9', 'West Bengal', '~158', 'Sundarbans delta'],
+      ],
+    },
+    {
+      title: 'Major Ports — Coast-wise Distribution',
+      headers: ['Port', 'State', 'Coast', 'Distinction'],
+      rows: [
+        ['JNPT (Nhava Sheva)', 'Maharashtra', 'West', 'Largest container port'],
+        ['Mumbai Port', 'Maharashtra', 'West', 'Oldest major port (1873)'],
+        ['Deendayal (Kandla)', 'Gujarat', 'West', 'Handles bulk cargo'],
+        ['Cochin', 'Kerala', 'West', 'Natural harbour'],
+        ['Visakhapatnam', 'AP', 'East', 'Only natural harbour on east coast; largest by cargo'],
+        ['Chennai', 'Tamil Nadu', 'East', '2nd oldest major port (1881); artificial harbour'],
+        ['Paradip', 'Odisha', 'East', 'Handles iron ore and coal'],
+        ['Kolkata/Haldia', 'West Bengal', 'East', 'Riverine port on Hooghly'],
+      ],
+    },
+    {
+      title: 'Maritime Zones Under UNCLOS',
+      headers: ['Zone', 'Distance from Baseline', 'Rights'],
+      rows: [
+        ['Internal Waters', 'Inside baseline', 'Full sovereignty'],
+        ['Territorial Sea', '0-12 nautical miles', 'Full sovereignty; innocent passage allowed'],
+        ['Contiguous Zone', '12-24 nautical miles', 'Customs, fiscal, immigration enforcement'],
+        ['EEZ', '0-200 nautical miles', 'Sovereign rights over resources; freedom of navigation for others'],
+        ['Continental Shelf', 'Up to 350 nm (if extended)', 'Seabed and subsoil resource rights'],
+        ['High Seas', 'Beyond EEZ', 'Freedom of navigation, fishing, research'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Coastal States — Longest to Shortest',
+      mnemonic: 'Gujarat > Andhra Pradesh > Tamil Nadu > Maharashtra > Kerala > Odisha > Karnataka > Goa > West Bengal',
+      explanation: 'Gujarat has the longest state coastline. All 9 coastal states + 4 coastal UTs contribute to India\'s mainland coastline.',
+    },
+    {
+      title: 'Island Channels',
+      mnemonic: 'TEN separates A&N (10°); EIGHT separates Lakshadweep-Maldives (8°); NINE separates Minicoy from main Lakshadweep (9°)',
+      explanation: 'The three important channels are named by their latitude: Ten Degree, Eight Degree, and Nine Degree.',
+    },
+    {
+      title: 'Coral Reef Regions (GALA)',
+      mnemonic: 'Gulf of Kutch, Andaman & Nicobar, Lakshadweep, Another Gulf (Mannar) — 4 major coral reef areas',
+      explanation: 'India has four major coral reef regions. Lakshadweep has atolls; others have fringing reefs.',
+    },
+    {
+      title: 'Mangrove States (WAG)',
+      mnemonic: 'West Bengal (42.5%, Sundarbans) > Andaman & Nicobar > Gujarat — top 3 in mangrove cover',
+      explanation: 'India has ~4,992 sq km mangrove cover. West Bengal alone has 2,114 sq km (Sundarbans).',
+    },
+    {
+      title: 'Eastern Coast Lagoons (CPV)',
+      mnemonic: 'Chilika (Odisha, largest) > Pulicat (AP-TN, 2nd) > Vembanad (Kerala, longest)',
+      explanation: 'The three major coastal lagoons of India on the eastern and western coasts.',
+    },
+  ],
 }

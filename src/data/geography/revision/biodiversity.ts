@@ -1,57 +1,145 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const biodiversityRevision: SubjectRevision = {
-  "topic": "biodiversity",
-  "bullets": [
-    "India is one of 17 megadiverse countries — hosts 7-8% of world's species on 2.4% of land.",
-    "India has 4 biodiversity hotspots: Western Ghats, Eastern Himalayas, Indo-Burma, Sundaland (Nicobar).",
-    "About 33% of Indian flora is endemic — found nowhere else in the world.",
-    "Asiatic Lion is found only in Gir National Park, Gujarat.",
-    "Sangai (Brow-antlered Deer) is found only in Keibul Lamjao, Manipur — only floating NP.",
-    "India has 106 National Parks and 567 Wildlife Sanctuaries (as of 2023).",
-    "Project Tiger launched in 1973; India has 52 Tiger Reserves and 3,167+ tigers (2022 census).",
-    "National Biodiversity Authority (NBA) is headquartered in Chennai under Biological Diversity Act 2002.",
-    "IUCN Red List categories: Extinct, Critically Endangered, Endangered, Vulnerable, Near Threatened, Least Concern.",
-    "India has 10 biogeographic zones: Trans-Himalayan, Himalayan, Indian Desert, Semi-Arid, Western Ghats, Deccan, Gangetic, Coast, NE, Islands.",
-    "India is a party to CBD, CITES, CMS, and Ramsar Convention."
+  topic: 'biodiversity',
+  bullets: [
+    'India is one of 17 megadiverse countries — hosts 7-8% of world\'s species on 2.4% of land area.',
+    'India has 4 biodiversity hotspots: Western Ghats, Eastern Himalayas, Indo-Burma, Sundaland (Nicobar).',
+    'About 33% of Indian flora is endemic — found nowhere else in the world.',
+    'Three levels of biodiversity: Genetic (within species), Species (variety of species), Ecosystem (variety of habitats).',
+    'Alpha diversity = within habitat; Beta diversity = between habitats; Gamma diversity = landscape/regional level.',
+    'India lies at junction of 3 biogeographic realms: Palearctic (Himalayan), Indo-Malayan (peninsular), Afrotropical (western).',
+    'India is a Vavilov Centre of origin for rice, mango, citrus, sugarcane, banana, pepper, turmeric.',
+    'India\'s 10 biogeographic zones: Trans-Himalayan, Himalayan, Desert, Semi-Arid, Western Ghats, Deccan, Gangetic, Coast, NE, Islands.',
+    'Western Ghats hotspot: 5,000+ flowering plants (1,700 endemic), 80%+ endemic amphibians; Lion-tailed Macaque, Nilgiri Tahr.',
+    'Eastern Himalayas: Red Panda, Snow Leopard, Golden Langur; rhododendrons (30 species), orchids.',
+    'Indo-Burma hotspot: NE India (Manipur, Mizoram, Nagaland); freshwater turtle diversity; Loktak Lake.',
+    'Sundaland hotspot: Nicobar Islands; Nicobar Megapode, Nicobar Pigeon, saltwater crocodile.',
+    'Asiatic Lion is found only in Gir National Park, Gujarat — ~700+ (2020 census).',
+    'Sangai (Brow-antlered Deer) found only in Keibul Lamjao NP, Manipur — world\'s only floating NP.',
+    'Hoolock Gibbon — India\'s only ape; found in NE India forests (Assam, Meghalaya, Arunachal Pradesh).',
+    'Gangetic River Dolphin — National Aquatic Animal since 2009; found in Ganga-Brahmaputra system; Endangered.',
+    'India has 106 NPs + 567 WLSs + 18 BRs + 85 Ramsar Sites + ~105 Conservation Reserves.',
+    'Project Tiger (1973): 56 tiger reserves; 3,682 tigers (2022); India has 75% of world\'s wild tigers.',
+    'Project Elephant (1992): 33 Elephant Reserves; ~29,964 elephants; human-elephant conflict is major issue.',
+    'NBA (Chennai) regulates access to bio-resources under Biological Diversity Act 2002; 3-tier: NBA-SBB-BMC.',
+    'IUCN Red List: EX, EW, CR, EN, VU, NT, LC, DD, NE — CR, EN, VU together = "threatened".',
+    'Species-Area Relationship: S = cA^z; z = 0.1-0.3 (continental), 0.6-1.2 (islands).',
+    'Rivet Popper Hypothesis (Ehrlich): losing species like losing airplane rivets — initially invisible, eventually catastrophic.',
+    'Keystone species: disproportionate ecosystem role relative to abundance (e.g., fig trees, elephants, pollinators).',
+    'Champion & Seth (1968): 16 major forest types, 221 sub-types in India.',
+    'Forest cover: 7,13,789 sq km = 21.71% of area (ISFR 2021); MP largest area; Mizoram highest %.',
+    'Mangrove cover: 4,992 sq km; Sundarbans largest (4,200 sq km Indian side); Bhitarkanika 2nd.',
+    'Mangroves = blue carbon sinks (3-5x more carbon/area than terrestrial forests); cyclone buffer.',
+    'Coral reefs: Gulf of Kutch, Gulf of Mannar, A&N, Lakshadweep — support 25% marine species on <1% ocean floor.',
+    'Coral bleaching caused by elevated SST; zooxanthellae expelled; mass events: 1998, 2010, 2016, 2020.',
+    'Shola-grassland ecosystem: unique Western Ghats montane mosaic; Nilgiri Tahr habitat; water catchment.',
+    'Banni grassland (Gujarat): largest natural grassland in Asia (~2,600 sq km); invaded by Prosopis juliflora.',
+    'Invasive species: Lantana camara (#1 forest weed), Water Hyacinth, Prosopis juliflora, Parthenium, Mikania micrantha.',
+    'Sacred Groves: >13,000 in India; Dev Vans (HP), Law Kyntang (Meghalaya), Kavu (Kerala), Orans (Rajasthan).',
+    'TKDL: 3.6 lakh formulations; successfully challenged neem, turmeric, Basmati biopiracy patents.',
+    'ZSI (Kolkata) records animal diversity; BSI (Kolkata) records plant diversity; FSI (Dehradun) monitors forests.',
+    'NBPGR (New Delhi): conserves 4.5 lakh+ crop germplasm accessions; ensures genetic diversity for food security.',
+    'Ecosystem services: provisioning (food, water), regulating (climate, floods), cultural (tourism), supporting (nutrient cycling).',
+    'TEEB: global ecosystem services valued at $125-145 trillion/year; India\'s forests ~Rs 7 lakh crore/year.',
+    'IPBES: "IPCC for biodiversity" — estimates 1 million species face extinction without transformative change.',
+    'India\'s NDC: additional carbon sink of 2.5-3 billion tonnes CO2e from forest/tree cover by 2030.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "India's 4 Biodiversity Hotspots",
-      "headers": [
-        "Hotspot",
-        "Region",
-        "Key Endemic Species"
+      title: 'India\'s 4 Biodiversity Hotspots',
+      headers: ['Hotspot', 'Region', 'Key Endemic Species', 'Unique Feature'],
+      rows: [
+        ['Western Ghats', 'Gujarat to Kerala', 'Lion-tailed Macaque, Nilgiri Tahr, Malabar Giant Squirrel', '80%+ endemic amphibians; shola-grassland ecosystem'],
+        ['Eastern Himalayas', 'NE India, Bhutan, S China', 'Red Panda, Snow Leopard, Golden Langur', '30+ rhododendron species; orchid diversity'],
+        ['Indo-Burma', 'NE India (Manipur, Mizoram), Myanmar', 'Freshwater turtles, endemic fish', 'Highest freshwater turtle diversity; Loktak Lake'],
+        ['Sundaland', 'Nicobar Islands', 'Nicobar Megapode, Nicobar Pigeon', 'Island biogeography; saltwater crocodile'],
       ],
-      "rows": [
-        [
-          "Western Ghats",
-          "Gujarat to Kerala",
-          "Lion-tailed Macaque, Nilgiri Tahr, Malabar Giant Squirrel"
-        ],
-        [
-          "Eastern Himalayas",
-          "NE India, Bhutan",
-          "Red Panda, Snow Leopard, Golden Langur"
-        ],
-        [
-          "Indo-Burma",
-          "NE India, Myanmar",
-          "Freshwater turtles, endemic fish"
-        ],
-        [
-          "Sundaland",
-          "Nicobar Islands",
-          "Nicobar Megapode, Nicobar Pigeon"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Megadiversity Hotspots in India (WEIS)",
-      "mnemonic": "Western Ghats, Eastern Himalayas, Indo-Burma, Sundaland",
-      "explanation": "India's 4 of 36 global biodiversity hotspots. Each has >1,500 endemic plant species and >70% habitat loss."
-    }
-  ]
+      title: 'Three Levels of Biodiversity',
+      headers: ['Level', 'Definition', 'Indian Example', 'Measurement'],
+      rows: [
+        ['Genetic', 'Variation in genes within a species', 'Wild rice varieties (Oryza nivara)', 'Allelic diversity, heterozygosity'],
+        ['Species', 'Variety of species in a region', 'Western Ghats — 5,000+ flowering plants', 'Species richness + evenness'],
+        ['Ecosystem', 'Variety of habitats/communities', 'Rainforests to deserts to coral reefs', 'Habitat diversity index'],
+      ],
+    },
+    {
+      title: '10 Biogeographic Zones of India',
+      headers: ['Zone', 'Key Habitat', 'Flagship Species'],
+      rows: [
+        ['Trans-Himalayan', 'Cold desert, high plateau (Ladakh UT)', 'Snow Leopard, Tibetan Wild Ass, Black-necked Crane'],
+        ['Himalayan', 'Temperate-alpine forests', 'Musk Deer, Red Panda, Himalayan Black Bear'],
+        ['Indian Desert', 'Thar Desert', 'Great Indian Bustard, Indian Wild Ass (khur)'],
+        ['Semi-Arid', 'Thorn forests, scrubland', 'Asiatic Lion (Gir), Chinkara'],
+        ['Western Ghats', 'Tropical evergreen, shola', 'Lion-tailed Macaque, Nilgiri Tahr'],
+        ['Deccan Peninsula', 'Dry deciduous forests', 'Blackbuck, Indian Wolf, Four-horned Antelope'],
+        ['Gangetic Plain', 'Alluvial grasslands', 'Gangetic Dolphin, Gharial, Barasingha'],
+        ['Coasts', 'Mangroves, coral reefs', 'Olive Ridley Turtle, Dugong'],
+        ['Northeast', 'Tropical/subtropical forests', 'One-horned Rhino, Hoolock Gibbon, Clouded Leopard'],
+        ['Islands', 'Coral reefs, tropical forests', 'Nicobar Pigeon, Narcondam Hornbill, Dugong'],
+      ],
+    },
+    {
+      title: 'Major Forest Types of India',
+      headers: ['Type', 'Rainfall', 'Region', 'Key Species'],
+      rows: [
+        ['Tropical Wet Evergreen', '>250 cm', 'Western Ghats, NE India, A&N', 'Rosewood, Ebony, Mahogany'],
+        ['Tropical Moist Deciduous', '100-200 cm', 'Central India (MP, CG, Odisha)', 'Sal, Teak, Bamboo'],
+        ['Tropical Dry Deciduous', '70-100 cm', 'Central-southern plateau', 'Teak, Tendu, Palash'],
+        ['Tropical Thorn', '<50 cm', 'Rajasthan, Gujarat', 'Babool, Khejri, Cacti'],
+        ['Temperate', '100-250 cm', 'Mid-altitude Himalaya', 'Oak, Deodar, Spruce, Fir'],
+        ['Alpine', 'Variable', 'Above treeline', 'Rhododendron, Juniper, Birch'],
+      ],
+    },
+    {
+      title: 'India\'s Marine Ecosystems',
+      headers: ['Ecosystem', 'Location', 'Key Species', 'Threat'],
+      rows: [
+        ['Coral Reefs', 'Gulf of Mannar, A&N, Lakshadweep, Gulf of Kutch', 'Reef fish, Sea anemones', 'Bleaching, acidification'],
+        ['Mangroves', 'Sundarbans, Bhitarkanika, Gujarat, A&N', 'Royal Bengal Tiger, Crocodile', 'Shrimp farming, urbanization'],
+        ['Seagrass beds', 'Gulf of Mannar, Palk Bay', 'Dugong, Green Turtle', 'Trawling, sedimentation'],
+        ['Deep sea', 'Arabian Sea, Bay of Bengal', 'Whale, Dolphin species', 'Deep-sea mining proposals'],
+      ],
+    },
+    {
+      title: 'Invasive Alien Species in India',
+      headers: ['Species', 'Origin', 'Impact Area', 'Key Problem'],
+      rows: [
+        ['Lantana camara', 'Central America', 'Forests across India', 'Occupies 40% of tiger range; suppresses native undergrowth'],
+        ['Water Hyacinth', 'South America', 'Freshwater bodies', '"Terror of Bengal"; depletes oxygen; blocks waterways'],
+        ['Prosopis juliflora', 'Americas', 'Rajasthan, Gujarat', 'Invaded Banni grasslands; depletes groundwater'],
+        ['Parthenium', 'Tropical America', 'Agricultural areas', 'Reduces crop yields; causes respiratory allergies'],
+        ['Mikania micrantha', 'Central/South America', 'NE India', '"Mile-a-minute vine"; smothers native vegetation'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Megadiversity Hotspots in India (WISE)',
+      mnemonic: 'Western Ghats, Indo-Burma, Sundaland, Eastern Himalayas',
+      explanation: 'India\'s 4 of 36 global biodiversity hotspots. Each has >1,500 endemic plant species and >70% habitat loss.',
+    },
+    {
+      title: '10 Biogeographic Zones',
+      mnemonic: 'This Himalayan Desert Seems Wet, Dry, Green, Covered in NE Islands',
+      explanation: 'Trans-Himalayan, Himalayan, Desert, Semi-Arid, Western Ghats, Deccan, Gangetic, Coast, Northeast, Islands.',
+    },
+    {
+      title: 'Three Levels of Biodiversity',
+      mnemonic: 'GSE — Genes, Species, Ecosystems',
+      explanation: 'Genetic diversity (within species), Species diversity (between species), Ecosystem diversity (between habitats). Alpha-Beta-Gamma measures spatial scale.',
+    },
+    {
+      title: 'IUCN Red List Categories (most to least threatened)',
+      mnemonic: 'Every Endangered Wolf Can Never Live — EX, EW, CR, EN, VU, NT, LC',
+      explanation: 'Extinct, Extinct in Wild, Critically Endangered, Endangered, Vulnerable, Near Threatened, Least Concern. Plus DD (Data Deficient) and NE (Not Evaluated).',
+    },
+    {
+      title: 'Ecosystem Services (MEA Categories)',
+      mnemonic: 'PRCS — Provisioning, Regulating, Cultural, Supporting',
+      explanation: 'Provisioning (food/water), Regulating (climate/floods), Cultural (spiritual/tourism), Supporting (nutrient cycling). Supporting underpins all others.',
+    },
+  ],
 }

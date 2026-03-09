@@ -1,51 +1,129 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const agricultureEconomyRevision: SubjectRevision = {
-  "topic": "agriculture-economy",
-  "bullets": [
-    "Agriculture: ~15% GDP, ~42% employment — indicates low productivity and disguised unemployment.",
-    "86% of farmers are small/marginal (holdings <2 hectares). Average farm size: 1.08 hectares.",
-    "Green Revolution (1960s): M.S. Swaminathan (India), Norman Borlaug. HYV seeds, fertilisers, irrigation.",
-    "MSP announced for 23 crops by CACP. Since 2018-19, MSP = 1.5 × A2+FL cost.",
-    "Swaminathan Commission: Recommended MSP at C2+50% (comprehensive cost including rent and interest).",
-    "NFSA 2013: 5 kg/person/month — Rice Rs 3/kg, Wheat Rs 2/kg, Coarse grains Rs 1/kg. Covers 67% population.",
-    "PM-KISAN: Rs 6,000/year in 3 instalments. Over 11 crore farmer families.",
-    "PMFBY: Crop insurance — 2% kharif, 1.5% rabi, 5% commercial crops. Drone/satellite assessment.",
-    "White Revolution (Operation Flood, 1970): Verghese Kurien, Amul. India = largest milk producer.",
-    "Three farm laws (2020) repealed in Nov 2021. e-NAM links APMCs electronically."
+  topic: 'agriculture-economy',
+  bullets: [
+    'Agriculture: ~15% GDP but ~42% employment — indicates low productivity and disguised unemployment.',
+    '86% of farmers are small/marginal (holdings <2 hectares). Average farm size: 1.08 hectares (declining due to fragmentation).',
+    'India is largest producer of: milk, spices, pulses, jute, bananas. 2nd largest: rice, wheat, fruits, vegetables, sugarcane, tea, cotton.',
+    'Total food grain production 2022-23: record 329.7 million tonnes. Gross cropped area: ~198 million hectares.',
+    'Green Revolution (1960s): M.S. Swaminathan (India), Norman Borlaug (global). HYV seeds + fertilisers + irrigation + mechanisation.',
+    'Green Revolution criticism: regional (Punjab, Haryana only), crop bias (wheat-rice only), environmental damage, inequality, water table depletion.',
+    'White Revolution (Operation Flood, 1970-96): Verghese Kurien, Amul. India = largest milk producer (230 MT, 2022-23).',
+    'Blue Revolution: fisheries. Yellow Revolution: oilseeds. Pink Revolution: meat/poultry. Golden Revolution: horticulture.',
+    'MSP announced for 23 crops by CACP. Since 2018-19, MSP = 1.5 x A2+FL cost. Swaminathan Commission recommended C2+50%.',
+    'MSP procurement concentrated in Punjab, Haryana (60%+ wheat, 30%+ rice). Many states/crops have poor procurement.',
+    'FCI (Food Corporation of India): Procures at MSP, stores in godowns/silos, distributes through PDS.',
+    'NFSA 2013: 5 kg/person/month — Rice Rs 3/kg, Wheat Rs 2/kg, Coarse grains Rs 1/kg. Covers 67% population (81.35 crore).',
+    'From January 2024, all NFSA grains are free (zero price). Annual food subsidy: Rs 2.12 lakh crore (FY24).',
+    'PM-KISAN: Rs 6,000/year in 3 instalments. Over 11.8 crore farmer families. Total disbursement: Rs 3.04+ lakh crore.',
+    'PMFBY: Crop insurance — 2% kharif, 1.5% rabi, 5% commercial crops. Drone/satellite assessment. 5.5 crore applications/year.',
+    'KCC (Kisan Credit Card): Short-term crop loans at 4% effective rate (7% minus 2% subvention minus 3% prompt repayment). 7.5+ crore KCCs.',
+    'NABARD (1982): Apex institution for rural/agricultural credit. Manages RIDF. Provides refinance to cooperative banks, RRBs.',
+    'Agriculture credit target FY25: Rs 22 lakh crore. PSL: 18% of ANBC must go to agriculture (8% to small/marginal farmers).',
+    'e-NAM (2016): Electronic trading platform linking 1,389 APMCs in 23 states. Limited actual inter-mandi trade.',
+    'Three farm laws (2020) repealed in November 2021. Issues: MSP guarantee, APMC weakening, corporate farming fears.',
+    'FPOs (Farmer Producer Organisations): Target 10,000 by 2027-28. About 7,500 registered (2024). Aggregate small farmers.',
+    'India imports ~60% edible oil needs (Rs 1.5+ lakh crore annually) — world\'s largest edible oil importer.',
+    'Cropping seasons: Kharif (June-Oct): rice, cotton, sugarcane. Rabi (Oct-Mar): wheat, mustard, gram. Zaid (Mar-Jun): vegetables, watermelon.',
+    'PMKSY: "Har Khet Ko Paani" + "Per Drop More Crop." Micro-irrigation coverage: 14.6 million ha (target 69 million).',
+    'India irrigated area: 74 million hectares (world\'s largest), but ~51% of net sown area still rainfed.',
+    'Soil Health Card: Tests 12 soil parameters. Over 23 crore cards distributed. Reduces excessive fertiliser use.',
+    'Fertiliser subsidy: Rs 1.88 lakh crore (FY24). Urea price fixed (Rs 242/45-kg bag). NBS for P&K fertilisers.',
+    'Nano-urea (IFFCO, 2021): 500-ml bottle replaces one 45-kg urea bag. Nano-DAP also introduced (2023).',
+    'NPK imbalance: India ratio 8.2:3.2:1 (ideal 4:2:1). Excessive urea use due to subsidised pricing.',
+    'Organic farming: India ranks 1st in number of organic farmers (4.43 million). Sikkim = first 100% organic state (2016).',
+    'NMNF (Natural Farming Mission): Subhash Palekar model. Cow-based inputs. AP CNMF: 10+ lakh farmers. Rs 2,481 crore (Budget 2024-25).',
+    'Agricultural exports 2022-23: $53.1 billion. India is world\'s largest rice exporter (40% global trade).',
+    'Food processing: Only 10% of food output processed (vs 65% in USA). Cold storage: 397 lakh MT capacity vs 750 lakh MT needed.',
+    'NSSO SAS 2018-19: Average farmer monthly income Rs 10,218. Only Rs 3,798 from crop production. 50.2% households indebted.',
+    'SVAMITYA Scheme: Drone-based survey of rural habitation land. Property cards for rural households. 1.52 crore cards distributed.',
+    'Doubling Farmers\' Income target by 2022 (from 2015-16 base) — widely acknowledged as not fully achieved.',
+    'Agri Infrastructure Fund: Rs 1 lakh crore for post-harvest infrastructure (cold storage, warehouses, processing plants).',
+    'Operation Greens: TOP crops (Tomato, Onion, Potato) — Rs 500 crore. Later expanded to all perishables.',
+    'India\'s dairy: 230 MT milk. 1.9 lakh dairy cooperatives. Fisheries: 175 lakh tonnes (2nd largest globally). PMMSY: Rs 20,050 crore.',
+    'Farmer suicides: ~10,000-11,000/year (NCRB). Main causes: debt, crop failure, water scarcity, exploitation by moneylenders.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "MSP Cost Concepts — A2, FL, C2",
-      "headers": [
-        "Cost Concept",
-        "Includes",
-        "Used For"
+      title: 'MSP Cost Concepts — A2, FL, C2',
+      headers: ['Cost Concept', 'Includes', 'Used For'],
+      rows: [
+        ['A2', 'Actual paid-out costs (seeds, fertiliser, labour hired, irrigation, machinery)', 'Minimum cost calculation'],
+        ['A2+FL', 'A2 + imputed family labour', 'Current MSP formula (1.5x A2+FL since 2018-19)'],
+        ['C2', 'A2+FL + rent on own land + interest on fixed capital', 'Swaminathan Commission recommendation (C2+50%)'],
       ],
-      "rows": [
-        [
-          "A2",
-          "Actual paid-out costs (seeds, fertiliser, labour hired)",
-          "Minimum cost calculation"
-        ],
-        [
-          "A2+FL",
-          "A2 + imputed family labour",
-          "MSP calculation (current formula: 1.5× A2+FL)"
-        ],
-        [
-          "C2",
-          "A2+FL + rent on land + interest on capital",
-          "Swaminathan Commission recommendation (C2+50%)"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Crop Seasons — KRZ",
-      "mnemonic": "Kharif (June-Oct): Rice, Maize, Cotton. Rabi (Oct-Mar): Wheat, Mustard, Gram. Zaid (Mar-Jun): Watermelon, Cucumber",
-      "explanation": "India has three cropping seasons. Kharif = monsoon crops (sown June, harvested Oct). Rabi = winter crops (sown Oct, harvested Mar). Zaid = short summer season. Remember: K=Kharif=Monsoon, R=Rabi=Winter, Z=Zaid=Summer."
-    }
-  ]
+      title: 'Green Revolution vs White Revolution',
+      headers: ['Feature', 'Green Revolution', 'White Revolution'],
+      rows: [
+        ['Period', '1960s-70s', '1970-1996 (Operation Flood)'],
+        ['Leader', 'M.S. Swaminathan (India), Norman Borlaug', 'Dr Verghese Kurien'],
+        ['Focus', 'Food grain production (wheat, rice)', 'Dairy/milk production'],
+        ['Model', 'HYV seeds + inputs + irrigation', 'Cooperative model (Anand/Amul pattern)'],
+        ['Result', 'India self-sufficient in food grains', 'India = world\'s largest milk producer'],
+        ['Criticism', 'Regional/crop bias, environmental damage', 'Low per-animal productivity persists'],
+      ],
+    },
+    {
+      title: 'PDS Before and After NFSA 2013',
+      headers: ['Feature', 'Pre-NFSA (TPDS)', 'Post-NFSA 2013'],
+      rows: [
+        ['Approach', 'Targeted: APL, BPL, AAY categories', 'Rights-based: 67% population covered'],
+        ['Entitlement', 'Varied by category', '5 kg/person/month (AAY: 35 kg/family)'],
+        ['Pricing', 'Different for APL/BPL', 'Rice Rs 3, Wheat Rs 2, Coarse Rs 1 (now free)'],
+        ['Legal status', 'Administrative scheme', 'Legal right under Act of Parliament'],
+        ['Coverage', 'About 18 crore families', '~81.35 crore individuals'],
+      ],
+    },
+    {
+      title: 'Organic Farming vs Natural Farming',
+      headers: ['Feature', 'Organic Farming', 'Natural Farming'],
+      rows: [
+        ['Inputs', 'Purchased organic inputs (vermicompost, neem oil, bone meal)', 'Only local resources (cow dung, cow urine, biomass)'],
+        ['External cost', 'Some input purchase cost', 'Zero external input cost'],
+        ['Certification', 'NPOP/PGS certification required', 'No formal certification (though evolving)'],
+        ['Model', 'PKVY — cluster-based, Rs 50,000/ha', 'NMNF — Subhash Palekar/Andhra Pradesh model'],
+        ['Scale', '5.9 million hectares', 'Rapidly expanding — 10+ lakh farmers in AP alone'],
+      ],
+    },
+    {
+      title: 'APMC System vs e-NAM vs Farm Laws (2020)',
+      headers: ['Feature', 'APMC System', 'e-NAM (2016)', 'Farm Laws (2020, repealed)'],
+      rows: [
+        ['Nature', 'Physical regulated mandis', 'Electronic trading platform', 'Allowed trade outside APMC'],
+        ['Regulation', 'State APMC Acts', 'Central platform linking state APMCs', 'Central laws overriding state APMC'],
+        ['Market fees', 'Multiple levies (8-15% in Punjab)', 'Single-point levy aim', 'No market fee outside APMC'],
+        ['Status', 'Operational', 'Operational (1,389 mandis linked)', 'Repealed November 2021'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Crop Seasons — KRZ',
+      mnemonic: 'Kharif (June-Oct): Rice, Maize, Cotton. Rabi (Oct-Mar): Wheat, Mustard, Gram. Zaid (Mar-Jun): Watermelon, Cucumber',
+      explanation: 'K=Kharif=Monsoon (sown June, harvested Oct). R=Rabi=Winter (sown Oct, harvested Mar). Z=Zaid=Summer (short season). Remember: KRZ — sounds like "cruise" through the seasons.',
+    },
+    {
+      title: 'Revolutions in Agriculture — "WBYG"',
+      mnemonic: 'White=Dairy (Kurien), Blue=Fisheries, Yellow=Oilseeds, Golden=Horticulture, Green=Food grains, Pink=Meat',
+      explanation: 'Each colour revolution addressed a different agricultural sector. Green Revolution was the first and most transformative (1960s). White Revolution/Operation Flood (1970) made India the largest milk producer.',
+    },
+    {
+      title: 'MSP Crops Count — "23 crops: 14K + 6R + 3S"',
+      mnemonic: '14 Kharif + 6 Rabi + Sugarcane FRP + Copra + De-husked coconut = 23',
+      explanation: 'CACP recommends MSP for 23 crops: 14 kharif crops (paddy, jowar, bajra, maize, ragi, arhar, moong, urad, groundnut, sunflower, soybean, sesamum, nigerseed, cotton) + 6 rabi (wheat, barley, gram, masoor, rapeseed/mustard, safflower) + sugarcane (FRP) + copra + de-husked coconut.',
+    },
+    {
+      title: 'NABARD Functions — "RRS"',
+      mnemonic: 'Refinance + RIDF + Supervision of cooperative banks',
+      explanation: 'NABARD (1982) has three key functions: provides Refinance to cooperative banks, RRBs, and commercial banks for agriculture; manages RIDF (Rural Infrastructure Development Fund, receives PSL shortfall deposits); and Supervises state cooperative banks and RRBs.',
+    },
+    {
+      title: 'PM-KISAN — "6-3-11"',
+      mnemonic: 'Rs 6,000/year in 3 instalments to 11+ crore farmers',
+      explanation: 'PM-KISAN (2019): Rs 6,000 annual income support in 3 equal instalments of Rs 2,000 each, directly to bank accounts. Over 11.8 crore beneficiary farmer families. Total disbursement exceeds Rs 3 lakh crore.',
+    },
+  ],
 }

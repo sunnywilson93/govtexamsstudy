@@ -23,6 +23,25 @@ export const casteReformMovementsRevision: HistoryRevision = {
     "Mangoo Ram — Ad Dharm movement (Punjab, 1926); asserted Dalits as original inhabitants of India.",
     "SC/ST Prevention of Atrocities Act (1989) — updated from Protection of Civil Rights Act (1955).",
     "Mandal Commission (1980, B.P. Mandal) — recommended 27% OBC reservation; implemented 1990 by V.P. Singh.",
+    "Gandhi used the term 'Harijan' (Children of God) for untouchables; Ambedkar rejected it as patronizing — preferred 'Depressed Classes' or 'Dalits.'",
+    "Gandhi wanted reform within Hinduism; Ambedkar wanted annihilation of caste and ultimately left Hinduism for Buddhism.",
+    "Poona Pact coercion: Ambedkar accepted joint electorates to save Gandhi's life during his fast-unto-death at Yerwada Jail.",
+    "Justice Party (1916, Madras) — T.M. Nair, P. Thyagaraja Chetty; won first Madras elections (1920); introduced communal reservation; later merged into Dravidar Kazhagam.",
+    "Shahu Maharaj of Kolhapur (1874-1922) — introduced 50% reservation (1902); patronized Phule's Satyashodhak Samaj; funded Ambedkar's education.",
+    "Tarabai Shinde — Stri Purush Tulana (1882); India's first feminist text; argued women's oppression was socially constructed, not natural.",
+    "Pandita Ramabai — Sanskrit scholar; 'The High Caste Hindu Woman' (1887); founded Mukti Mission for child widows.",
+    "Dalit Panthers (1972, Maharashtra) — Namdeo Dhasal, J.V. Pawar, Arun Kamble; modeled on American Black Panthers.",
+    "Kanshi Ram (1934-2006) — BAMCEF (1978), BSP (1984); Mayawati became UP CM four times (1995, 1997, 2002, 2007).",
+    "Temple Entry Proclamation (1936, Travancore) — Maharaja Chithira Thirunal opens all temples to all castes; Gandhi called it 'greatest event of the century.'",
+    "Kalaram Temple Movement (1930, Nasik) — led by Ambedkar for untouchable temple entry; temple authorities resisted; contributed to his decision to leave Hinduism.",
+    "Guruvayur Satyagraha (1931-32) — K. Kelappan led; demanded entry to Guruvayur Krishna Temple; Gandhi mediated.",
+    "Swami Achhootanand — Adi-Hindu Sabha (1922, UP); claimed untouchables were original inhabitants conquered by Aryan invaders.",
+    "Iyothee Thass (1845-1914) — Sakya Buddhist Society (1898, Madras); argued Tamil Dalits were originally Buddhists.",
+    "Indra Sawhney v. Union of India (1992) — upheld OBC reservations; imposed 50% ceiling; excluded 'creamy layer.'",
+    "Kaka Kalelkar Commission (1st Backward Classes Commission, 1953) — identified 2,399 backward castes; not implemented.",
+    "Hindu Code Bill (introduced 1951 by Ambedkar) — aimed to give women property, divorce, inheritance rights; conservative opposition forced Ambedkar to resign from Cabinet.",
+    "Article 25(2)(b) empowers state to open Hindu temples to all classes; Article 330-332 provides for SC/ST reservation in legislatures.",
+    "Battle of Koregaon (1818) — Mahar soldiers fought with the British against the Peshwa; celebrated annually by Dalits on January 1 as a symbol of martial pride.",
   ],
   comparisons: [
     {
@@ -47,6 +66,43 @@ export const casteReformMovementsRevision: HistoryRevision = {
         ["Ambedkar's view", "Supported separate electorates", "Accepted reluctantly to save Gandhi's life"],
       ],
     },
+    {
+      title: "Gandhi vs Ambedkar on Caste",
+      headers: ["Aspect", "Gandhi", "Ambedkar"],
+      rows: [
+        ["View on Caste System", "Reform from within; original Varnashrama was good", "Annihilate caste entirely; system is inherently oppressive"],
+        ["Term for Untouchables", "Harijan (Children of God)", "Depressed Classes / Dalits (rejected 'Harijan')"],
+        ["On Separate Electorates", "Opposed — divisive; fast-unto-death (1932)", "Supported — essential for genuine representation"],
+        ["On Hinduism", "Reform Hinduism; caste is a social evil, not religious", "Left Hinduism; caste has religious sanction in Shastras"],
+        ["Method", "Moral persuasion, temple entry, inter-dining", "Legal rights, political power, constitutional safeguards"],
+        ["Resolution", "Poona Pact (1932) — joint electorates", "Accepted reluctantly; later rejected Hinduism (1956)"],
+      ],
+    },
+    {
+      title: "Temple Entry Movements",
+      headers: ["Movement", "Year", "Location", "Leader(s)", "Outcome"],
+      rows: [
+        ["Vaikom Satyagraha", "1924-25", "Travancore (Kerala)", "T.K. Madhavan, Periyar, Gandhi", "Three of four roads opened"],
+        ["Kalaram Temple", "1930", "Nasik (Maharashtra)", "B.R. Ambedkar", "Temple authorities resisted; Ambedkar decided to leave Hinduism"],
+        ["Guruvayur Satyagraha", "1931-32", "Malabar (Kerala)", "K. Kelappan", "Suspended; temple opened after 1936 Proclamation"],
+        ["Temple Entry Proclamation", "1936", "Travancore (Kerala)", "Maharaja Chithira Thirunal", "All Hindu temples opened to all castes"],
+      ],
+    },
+    {
+      title: "Ambedkar's Publications and Organizations",
+      headers: ["Name", "Year", "Type", "Significance"],
+      rows: [
+        ["Mooknayak", "1920", "Newspaper", "First Dalit publication; articulated Dalit concerns"],
+        ["Bahishkrit Bharat", "1927", "Newspaper", "Voice of the excluded; reported on Mahad Satyagraha"],
+        ["Bahishkrit Hitakarini Sabha", "1924", "Organization", "Education and empowerment of Depressed Classes"],
+        ["Annihilation of Caste", "1936", "Book/Speech", "Radical philosophical critique; caste must be destroyed"],
+        ["Independent Labour Party", "1936", "Political Party", "First Dalit political party"],
+        ["Scheduled Caste Federation", "1942", "Political Party", "Successor to ILP; exclusive Dalit platform"],
+        ["Who Were the Shudras?", "1946", "Book", "Historical analysis of caste origins"],
+        ["The Buddha and His Dhamma", "1957", "Book", "Posthumous; Ambedkar's Buddhist philosophy"],
+        ["Republican Party of India", "1956", "Political Party", "Founded days before death; continued Dalit politics"],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -66,6 +122,18 @@ export const casteReformMovementsRevision: HistoryRevision = {
       mnemonic: "Article 17 = abolishes untouchability, 15 = no discrimination, 16 = equal opportunity/reservations, 46 = SC/ST welfare",
       explanation:
         "The four most important constitutional provisions related to caste reform and Dalit rights.",
+    },
+    {
+      title: "Ambedkar's Organizations (BIS-ILP-SCF-RPI)",
+      mnemonic: "Bahishkrit Hitakarini Sabha (1924), Independent Labour Party (1936), Scheduled Caste Federation (1942), Republican Party (1956) — 'Before Independence, Struggle Continues, Real Power Inevitable'",
+      explanation:
+        "Ambedkar's four major organizations in chronological order. BHS focused on education, ILP was his first political party, SCF was an exclusively Dalit platform, and RPI was his final political vehicle founded just before his death.",
+    },
+    {
+      title: "Kerala Anti-Caste Leaders (GAK — Guru, Ayyankali, Kelappan)",
+      mnemonic: "Guru consecrated (1899), Ayyankali agitated roads (1893), Kelappan fought temples (1931) — 'Great Acts of Kerala'",
+      explanation:
+        "Three key Kerala anti-caste figures: Sri Narayana Guru (Aruvippuram temple), Ayyankali (Villuvandi agitation for road access), and K. Kelappan (Guruvayur Satyagraha for temple entry).",
     },
   ],
 }

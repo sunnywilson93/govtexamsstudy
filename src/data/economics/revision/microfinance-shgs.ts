@@ -3,69 +3,128 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const microfinanceShgsRevision: SubjectRevision = {
   topic: 'microfinance-shgs',
   bullets: [
-    "SHG: Voluntary group of 10-20 people (typically women) who save regularly and lend to members from pooled savings.",
-    "SHG-Bank Linkage Programme: Launched by NABARD 1992. 119.4 lakh SHGs linked to banks. Rs 2.03 lakh crore savings (FY24).",
-    "Three SHG-BLP models: Model 1 (banks form+finance), Model 2 (NGO forms, bank finances — most common), Model 3 (NGO as intermediary).",
-    "DAY-NRLM (2011): GoI flagship SHG programme. 91 lakh SHGs, 10 crore women members. Centre-State 60:40 funding.",
-    "NBFC-MFI: RBI-regulated. 75%+ assets as qualifying microfinance loans. Largest: CreditAccess Grameen (Rs 30,000+ crore AUM).",
-    "Microfinance sector (Sep 2024): Rs 4.34 lakh crore portfolio, 7.36 crore borrowers. NBFC-MFIs 38%, Banks 32%, SFBs 18%.",
-    "AP Microfinance Crisis 2010: Aggressive MFI lending → over-indebtedness, suicides. AP ordinance restricted MFIs. Led to Malegam Committee (2011).",
-    "RBI 2022 revised framework: Microfinance = collateral-free loan to household with income ≤ Rs 3 lakh/year. Repayment ≤ 50% of household income.",
-    "JLG (Joint Liability Group): 4-10 members, mutual guarantee replaces collateral. NABARD promotes for tenant/landless farmers.",
-    "PM SVANidhi (2020): Working capital loans for street vendors. Rs 10K → 20K → 50K ladder. 54.2 lakh loans sanctioned.",
-    "SFBs converted from NBFC-MFIs: Bandhan Bank (2015), Equitas, Ujjivan, AU SFB. Must lend 75% ANBC to PSL, 50% in ≤ Rs 25 lakh tickets.",
-    "Women SHGs: 88% of all SHGs. Southern states dominate (AP, TN, Kerala, Karnataka = 60%+ of SHGs).",
-    "SHG default rate: Below 3% — far lower than commercial lending. Group social pressure ensures repayment.",
-    "DAY-NULM: Urban counterpart of NRLM. 9.7 lakh SHGs, 1.07 crore urban poor women. Budget: Rs 1,325 crore (FY25).",
-    "Credit bureau coverage: 95% microfinance borrowers have credit bureau records (up from <10% in 2010)."
-],
+    'SHG: Voluntary group of 10-20 people (typically women) who save regularly and lend to members from pooled savings.',
+    'SHG-Bank Linkage Programme: Launched by NABARD 1992. 119.4 lakh SHGs linked to banks. Rs 2.03 lakh crore savings (FY24).',
+    'Three SHG-BLP models: Model 1 (banks form+finance), Model 2 (NGO forms, bank finances — most common), Model 3 (NGO as intermediary).',
+    'DAY-NRLM (2011): GoI flagship SHG programme. 91 lakh SHGs, 10 crore women members. Centre-State 60:40 funding.',
+    'DAY-NRLM three-tier: SHGs (village) → Village Organisations/VOs (10-15 SHGs) → Cluster Level Federations/CLFs.',
+    'DAY-NRLM financial support: Revolving Fund Rs 15,000/SHG + Community Investment Fund Rs 50,000-1,00,000/VO.',
+    'DAY-NRLM sub-components: Farm livelihoods, non-farm (SVEP), skills (DDU-GKY), social development, nutrition gardens.',
+    'NBFC-MFI: RBI-regulated. 75%+ assets as qualifying microfinance loans. Largest: CreditAccess Grameen (Rs 30,000+ crore AUM).',
+    'Microfinance sector (Sep 2024): Rs 4.34 lakh crore portfolio, 7.36 crore borrowers. NBFC-MFIs 38%, Banks 32%, SFBs 18%.',
+    'AP Microfinance Crisis 2010: Aggressive MFI lending → over-indebtedness, suicides. AP ordinance restricted MFIs. Led to Malegam Committee (2011).',
+    'Malegam Committee (2011): Recommended NBFC-MFI category, interest rate caps, qualifying asset criteria, 2-MFI per borrower limit.',
+    'RBI 2022 revised framework: Microfinance = collateral-free loan to household with income up to Rs 3 lakh/year. Repayment cap 50% of household income.',
+    'RBI 2022 key change: Removed interest rate cap for NBFC-MFIs — left pricing to market competition. Controversial among critics.',
+    'Harmonised norms: 2022 framework applies uniformly to banks, NBFCs, NBFC-MFIs, SFBs — ended regulatory arbitrage.',
+    'JLG (Joint Liability Group): 4-10 members, mutual guarantee replaces collateral. NABARD promotes for tenant/landless farmers.',
+    'JLGs vs SHGs: JLGs focus on credit (no mandatory savings); SHGs start with savings. JLG size 4-10; SHG size 10-20.',
+    'Grameen Model (Bangladesh, 1976): Groups of 5 women, sequential lending, weekly repayments. Adapted by Indian MFIs.',
+    'Muhammad Yunus + Grameen Bank: Nobel Peace Prize 2006 for microfinance-based poverty reduction.',
+    'PM SVANidhi (2020): Working capital loans for street vendors. Rs 10K → 20K → 50K ladder. 54.2 lakh loans sanctioned.',
+    'PM SVANidhi: 7% interest subsidy + Rs 1,200/year digital incentive for UPI transactions. 78%+ repayment rate.',
+    'SFBs converted from NBFC-MFIs: Bandhan Bank (2015), Equitas, Ujjivan, AU SFB. Must lend 75% ANBC to PSL, 50% in ticket size up to Rs 25 lakh.',
+    'Women SHGs: 88% of all SHGs. Southern states dominate (AP, TN, Kerala, Karnataka = 60%+ of SHGs).',
+    'SHG default rate: Below 3% — far lower than commercial lending. Group social pressure ensures repayment.',
+    'DAY-NULM: Urban counterpart of NRLM. 9.7 lakh SHGs, 1.07 crore urban poor women. Budget: Rs 1,325 crore (FY25).',
+    'Credit bureau coverage: 95% microfinance borrowers have credit bureau records (up from <10% in 2010). Prevents over-lending.',
+    'SEWA Bank (1974): India\'s first women\'s cooperative bank, established in Ahmedabad. Pioneer of the SHG concept.',
+    'SROs: MFIN (Microfinance Institutions Network) and Sa-Dhan — industry self-regulatory organisations recognised by RBI.',
+    'SHG impact: 75% members report increased decision-making; average household income 84% higher than non-members (NABARD studies).',
+    'About 30% of SHG loans used for micro-enterprises (livestock, petty trade); rest for consumption smoothing, health, education, housing.',
+    'MFI interest rates: 18-26% p.a. — lower than moneylenders (36-120%) but higher than bank rates (10-14%). Reflects last-mile cost.',
+    'Over-indebtedness risk: Multiple lending in Karnataka, TN, UP, Bihar districts. RBI 2022 norms address via 50% repayment cap.',
+    'Mission drift: MFIs listed on stock exchanges (Equitas, CreditAccess) face pressure to prioritise shareholder returns over social mission.',
+    'Digital microfinance: App-based collections, credit scoring using digital footprints, cashless disbursement. Next frontier.',
+    'PMMY (PM Mudra Yojana): Rs 27.75 lakh crore cumulative. 44.46 crore loans. 68% women. Shishu/Kishore/Tarun categories.',
+    'Mudra NPA approximately 3.5%: Acceptable for micro-lending. Average ticket Rs 62,000. SC/ST borrowers: 23%.',
+    'Bihar\'s Jeevika: 1.2 crore women mobilised from near-zero base in 2011 — one of DAY-NRLM\'s biggest success stories.',
+    'SHPI model: NGOs as SHG Promoting Institutions. NABARD provides Rs 10,000/SHG grant. Over 3,000 SHPIs across India.',
+    'India\'s microfinance sector — world\'s largest by borrowers. Bangladesh pioneered the model; India scaled it through SHG-BLP.',
+    'COVID impact: Microfinance NPAs spiked to 15%+ in FY21, recovered to approximately 5% by FY24. Sector proved resilient.',
+    'Urban microfinance challenges: Heterogeneous population, high migrant mobility, competition from formal banking and fintech.',
+  ],
   comparisons: [
     {
-        "title": "SHG vs JLG",
-        "headers": [
-            "Feature",
-            "SHG",
-            "JLG"
-        ],
-        "rows": [
-            [
-                "Group size",
-                "10-20",
-                "4-10"
-            ],
-            [
-                "Primary focus",
-                "Savings first, then credit",
-                "Credit access (mutual guarantee)"
-            ],
-            [
-                "Formation",
-                "Community-driven, NGO-facilitated",
-                "Often MFI/bank promoted"
-            ],
-            [
-                "Interest rate",
-                "Group-decided (12-24% annual)",
-                "Institutional rate (18-26%)"
-            ],
-            [
-                "Target group",
-                "Women from poor households",
-                "Tenant farmers, landless labourers"
-            ]
-        ]
-    }
-],
-  mnemonics: [
-    {
-        "title": "MUDRA Categories — \"SKT\"",
-        "mnemonic": "Shishu ≤50K, Kishore 50K-5L, Tarun 5L-10L",
-        "explanation": "Three MUDRA categories by loan size — Shishu (smallest), Kishore (medium), Tarun (largest, up to Rs 10 lakh)."
+      title: 'SHG vs JLG',
+      headers: ['Feature', 'SHG', 'JLG'],
+      rows: [
+        ['Group size', '10-20', '4-10'],
+        ['Primary focus', 'Savings first, then credit', 'Credit access (mutual guarantee)'],
+        ['Formation', 'Community-driven, NGO-facilitated', 'Often MFI/bank promoted'],
+        ['Interest rate', 'Group-decided (12-24% annual)', 'Institutional rate (18-26%)'],
+        ['Target group', 'Women from poor households', 'Tenant farmers, landless labourers'],
+        ['Collateral', 'Group savings as collateral', 'Joint liability — mutual guarantee'],
+      ],
     },
     {
-        "title": "SHG-BLP Models — \"1-2-3\"",
-        "mnemonic": "Model 1: Bank forms+finances. Model 2: NGO forms, Bank finances. Model 3: NGO intermediary",
-        "explanation": "Three SHG-Bank Linkage models — Model 2 (NGO forms, bank finances) is the most common."
-    }
-],
+      title: 'Three SHG-BLP Models',
+      headers: ['Model', 'Who Forms SHG', 'Who Finances', 'Prevalence'],
+      rows: [
+        ['Model 1', 'Bank', 'Bank directly', 'Least common'],
+        ['Model 2', 'NGO/facilitating agency', 'Bank (NGO as facilitator)', 'Most common (70%+)'],
+        ['Model 3', 'NGO', 'NGO (as financial intermediary)', 'Declining — regulatory concerns'],
+      ],
+    },
+    {
+      title: 'RBI Microfinance Norms: 2015 vs 2022',
+      headers: ['Feature', '2015 NBFC-MFI Norms', '2022 Harmonised Norms'],
+      rows: [
+        ['Applicability', 'NBFC-MFIs only', 'All REs — banks, NBFCs, SFBs, NBFC-MFIs'],
+        ['Income cap', 'Rs 1.25L rural / Rs 2L urban', 'Rs 3 lakh household income'],
+        ['Interest rate', 'Capped at 2.75x base rate or cost+10%', 'No cap — market-determined'],
+        ['Borrower limit', 'Max 2 MFIs per borrower', 'Repayment cap: 50% of household income'],
+        ['Loan limit', 'Rs 75K first / Rs 1.25L subsequent', 'No individual loan limit — household income based'],
+      ],
+    },
+    {
+      title: 'DAY-NRLM vs DAY-NULM',
+      headers: ['Feature', 'DAY-NRLM (Rural)', 'DAY-NULM (Urban)'],
+      rows: [
+        ['Launched', '2011 (restructured from SGSY)', '2014 (restructured from SJSRY)'],
+        ['Target', '9-10 crore rural poor women', 'Urban poor, street vendors'],
+        ['SHGs', '91 lakh SHGs, 10 crore members', '9.7 lakh SHGs, 1.07 crore members'],
+        ['Funding', 'Centre:State 60:40 (90:10 NE)', 'Centre:State 60:40 (90:10 NE)'],
+        ['Budget FY25', 'Rs 14,129 crore', 'Rs 1,325 crore'],
+        ['Scale', 'Covers 6,988 blocks in 739 districts', 'Covers 790 cities'],
+      ],
+    },
+    {
+      title: 'Microfinance Market Share by Lender Type',
+      headers: ['Lender Type', 'Portfolio Share', 'Key Players', 'Regulation'],
+      rows: [
+        ['NBFC-MFIs', '38%', 'CreditAccess Grameen, Fusion, Muthoot', 'RBI (NBFC-MFI category)'],
+        ['Banks', '32%', 'Bandhan, SBI, IndusInd', 'RBI (banking regulation)'],
+        ['SFBs', '18%', 'Equitas, Ujjivan, AU SFB', 'RBI (SFB guidelines)'],
+        ['NBFCs', '12%', 'Manappuram, Arohan', 'RBI (NBFC norms)'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'MUDRA Categories — "SKT"',
+      mnemonic: 'Shishu up to Rs 50K, Kishore Rs 50K-5L, Tarun Rs 5L-10L',
+      explanation: 'Three MUDRA categories by loan size — Shishu (infant, smallest, 64% of loans by number), Kishore (youth, 28%), Tarun (young adult, largest, 8%). Total cumulative: Rs 27.75 lakh crore through 44.46 crore loans. Women: 68%.',
+    },
+    {
+      title: 'SHG-BLP Models — "1-2-3"',
+      mnemonic: 'Model 1: Bank forms+finances. Model 2: NGO forms, Bank finances (most common). Model 3: NGO as intermediary.',
+      explanation: 'Three SHG-Bank Linkage models — Model 2 (NGO forms and nurtures the SHG, bank finances directly) is the most common (70%+). Model 1 is bank-driven. Model 3 uses NGO as financial intermediary (declining).',
+    },
+    {
+      title: 'AP Crisis Sequence — "ACL-MR"',
+      mnemonic: 'Aggressive lending → Crisis (2010) → Legislation (AP Act) → Malegam Committee → RBI Regulation',
+      explanation: 'AP microfinance crisis (2010): SKS and other MFIs lent aggressively → over-indebtedness and suicides → AP passed ordinance restricting MFIs → RBI appointed Malegam Committee (2011) → NBFC-MFI regulatory category created → further harmonised in 2022.',
+    },
+    {
+      title: 'DAY-NRLM Tiers — "SVC"',
+      mnemonic: 'SHGs (village) → Village Organisations (VOs) → Cluster Level Federations (CLFs)',
+      explanation: 'DAY-NRLM builds a three-tier institutional architecture: SHGs of 10-20 women at village level, VOs (federation of 10-15 SHGs), and CLFs (federation of VOs). Each tier provides increasing capacity for financial management, market access, and collective bargaining.',
+    },
+    {
+      title: 'Microfinance Key Numbers — "119-4.3-7.3"',
+      mnemonic: '119 lakh SHGs linked, Rs 4.34 lakh crore total MFI portfolio, 7.36 crore borrowers',
+      explanation: 'India\'s microfinance sector has 119.4 lakh SHGs linked to banks (NABARD SHG-BLP) with Rs 2.03 lakh crore savings. Total microfinance portfolio (all lenders): Rs 4.34 lakh crore across 7.36 crore borrowers — world\'s largest by borrower count.',
+    },
+  ],
 }

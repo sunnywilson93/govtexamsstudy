@@ -3,69 +3,138 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const nabardSidbiRevision: SubjectRevision = {
   topic: 'nabard-sidbi',
   bullets: [
-    "NABARD: Est. July 12, 1982 (CRAFICARD/Sivaraman Committee). Apex DFI for agriculture and rural development. HQ: Mumbai.",
-    "NABARD replaced ARDC and took over RBI's agricultural credit functions. GoI holds 100% (RBI share transferred 2019).",
-    "NABARD functions: Refinance (Rs 3.11 lakh crore FY24), Supervision (cooperative banks, RRBs), Development (SHG-BLP, FPOs).",
-    "RIDF (Rural Infrastructure Development Fund): Banks' PSL shortfall deposited with NABARD. Cumulative: Rs 4.46 lakh crore, 8.4 lakh projects.",
-    "SHG-Bank Linkage Programme: World's largest microfinance. 119.4 lakh SHGs, Rs 2.03 lakh crore savings, Rs 2.05 lakh crore loans (FY24).",
-    "SIDBI: Est. April 2, 1990 (SIDBI Act 1989). Principal DFI for MSMEs. HQ: Lucknow.",
-    "SIDBI manages Fund of Funds for Startups (Rs 10,000 crore) — invested in 129 AIFs supporting 975+ startups.",
-    "MUDRA: Subsidiary of SIDBI. Three categories: Shishu (up to Rs 50K), Kishore (Rs 50K-5L), Tarun (Rs 5-10L).",
-    "CGTMSE: GoI + SIDBI trust. Collateral-free credit guarantee up to Rs 5 crore for MSMEs. 80+ lakh guarantees approved.",
-    "NaBFID: Est. 2021 (NaBFID Act). New DFI for long-term infrastructure financing. Authorised capital: Rs 1 lakh crore.",
-    "EXIM Bank: Est. 1982. Lines of Credit to 68 countries ($35.5 billion). Promotes Indian exports through tied aid.",
-    "NHB (National Housing Bank): Est. 1988. Apex housing finance regulator. Owned by RBI. Implements PMAY-CLSS. RESIDEX price index.",
-    "IDBI converted from DFI to bank (2004). ICICI converted 2002. NaBFID revives DFI concept with sovereign backing.",
-    "PSL targets: 40% of ANBC for domestic banks. Agriculture 18%, Micro 7.5%, Weaker sections 12%.",
-    "PSLCs (Priority Sector Lending Certificates): Tradable certificates — banks meet PSL targets via market mechanism. Rs 10 lakh crore+ annual trading."
-],
+    'NABARD: Est. July 12, 1982 (CRAFICARD/Sivaraman Committee). Apex DFI for agriculture and rural development. HQ: Mumbai.',
+    'NABARD replaced ARDC and took over RBI\'s agricultural credit functions. GoI holds 100% (RBI share transferred 2019).',
+    'NABARD functions: Refinance (Rs 3.11 lakh crore FY24), Supervision (cooperative banks, RRBs), Development (SHG-BLP, FPOs).',
+    'NABARD refinance split: Short-term Rs 1.68 lakh crore + Long-term Rs 1.43 lakh crore (FY24). To cooperative banks, RRBs, commercial banks.',
+    'NABARD supervisory role: Statutory inspection of State Cooperative Banks, DCCBs, and RRBs. Uses CAMEL rating system.',
+    'RIDF (Rural Infrastructure Development Fund): Banks\' PSL shortfall deposited with NABARD. Cumulative: Rs 4.46 lakh crore, 8.4 lakh projects.',
+    'RIDF: Established 1995-96. 29 tranches. Funds rural roads, bridges, irrigation, drinking water, schools, health centres for state governments.',
+    'SHG-Bank Linkage Programme: World\'s largest microfinance. 119.4 lakh SHGs, Rs 2.03 lakh crore savings, Rs 2.05 lakh crore loans (FY24).',
+    'NABARD promotes FPOs: Target 10,000 FPOs by 2027-28. Over 7,000 promoted by FY24. Rs 6,865 crore central scheme.',
+    'Agriculture Infrastructure Fund (AIF): Rs 1 lakh crore for post-harvest infrastructure. 3% interest subvention + CGTMSE guarantee.',
+    'Long Term Irrigation Fund (LTIF): Rs 30,000 crore raised by NABARD through bonds for 99 pending irrigation projects under PMKSY.',
+    'Warehouse Infrastructure Fund (WIF): Loans for scientific warehouses to CWC, SWC, cooperatives, private entities.',
+    'NABFINS (NABARD Financial Services): Subsidiary for direct lending to individuals, FPOs, SHGs, micro enterprises in rural areas.',
+    'SIDBI: Est. April 2, 1990 (SIDBI Act 1989). Principal DFI for MSMEs. HQ: Lucknow.',
+    'SIDBI: Originally subsidiary of IDBI. GoI majority shareholder. Cumulative assistance exceeded Rs 9 lakh crore since inception.',
+    'SIDBI functions: Direct financing (term loans, equipment finance), Indirect financing (refinance Rs 50,000 crore/year), Venture capital.',
+    'SIDBI manages Fund of Funds for Startups (Rs 10,000 crore) — invested in 129 AIFs supporting 975+ startups.',
+    'MUDRA: Subsidiary of SIDBI. Three categories: Shishu (up to Rs 50K), Kishore (Rs 50K-5L), Tarun (Rs 5-10L).',
+    'CGTMSE: GoI + SIDBI trust. Collateral-free credit guarantee up to Rs 5 crore for MSMEs. 80+ lakh guarantees approved.',
+    'CGTMSE guarantee fee: 0.37-2% based on loan size and gender/category. Guarantee cover 75-85% of loan amount.',
+    'NaBFID: Est. 2021 (NaBFID Act). New DFI for long-term infrastructure financing. Authorised capital: Rs 1 lakh crore.',
+    'NaBFID: GoI initial equity Rs 20,000 crore. GoI guarantee for bonds Rs 5 lakh crore. Can issue 30-year tax-free bonds.',
+    'NaBFID sanctions: Rs 1.22 lakh crore across 80+ projects (Dec 2024). Disbursed Rs 50,000+ crore. 10-year tax holiday.',
+    'NaBFID revives DFI concept: IDBI (1964→bank 2004), ICICI (1955→bank 2002) had converted. NaBFID fills the gap with sovereign backing.',
+    'EXIM Bank: Est. 1982. Lines of Credit to 68 countries ($35.5 billion). Tied aid — must procure Indian goods/services. Promotes exports.',
+    'EXIM Bank: 330+ LoCs. Major recipients: Africa, South Asia, Southeast Asia. Outstanding portfolio approximately Rs 2.5 lakh crore.',
+    'NHB (National Housing Bank): Est. 1988. Apex housing finance regulator. Owned by RBI (transferred from GoI 2019). HQ: New Delhi.',
+    'NHB: Regulates approximately 100 HFCs. Implements PMAY-CLSS. Publishes RESIDEX (residential property price index, 50 cities).',
+    'HDFC Ltd merged with HDFC Bank (2023) — largest HFC merger. Other major HFCs: LIC Housing, PNB Housing, Bajaj Housing.',
+    'PSL targets: 40% of ANBC for domestic banks. Agriculture 18% (8% small/marginal farmers), Micro 7.5%, Weaker sections 12%.',
+    'PSLCs (Priority Sector Lending Certificates): Tradable certificates — banks meet PSL targets via market mechanism. Rs 10 lakh crore+ annual trading.',
+    'PSL shortfall routing: NABARD (RIDF), SIDBI (MSME Fund), NHB (Housing Fund), MUDRA. Creates refinance ecosystem.',
+    'IFCI (1948): India\'s first DFI. ICICI (1955): With World Bank support. IDBI (1964): Apex DFI. All three declined post-liberalisation.',
+    'SFCs (State Financial Corporations, 1951): State-level DFIs. Most now defunct or merged. UTI (1964): First mutual fund, split after US-64 crisis.',
+    'DFI decline reasons: Post-1991 capital market liberalisation, asset-liability mismatch, mounting NPAs, Narasimham Committee recommendations.',
+    'Economic Survey 2020-21: Argued for dedicated DFI — commercial banks structurally unsuited for 15-25 year infrastructure lending.',
+    'NABARD: Green Climate Fund accredited entity. Implements watershed development, tribal development, climate adaptation in agriculture.',
+    'Cooperative bank structure: SCBs (state) → DCCBs (district) → PACS (primary, village). NABARD supervises SCBs and DCCBs.',
+    'RRBs: 43 RRBs (post-amalgamation). Sponsored by commercial banks. NABARD provides refinance and supervises.',
+    'SIDBI\'s ASPIRE: Promotes Livelihood Business Incubators and Technology Business Incubators for rural MSMEs.',
+  ],
   comparisons: [
     {
-        "title": "NABARD vs SIDBI",
-        "headers": [
-            "Feature",
-            "NABARD",
-            "SIDBI"
-        ],
-        "rows": [
-            [
-                "Established",
-                "1982",
-                "1990"
-            ],
-            [
-                "Focus",
-                "Agriculture & rural development",
-                "MSMEs"
-            ],
-            [
-                "HQ",
-                "Mumbai",
-                "Lucknow"
-            ],
-            [
-                "Key programme",
-                "SHG-Bank Linkage, RIDF",
-                "MUDRA, CGTMSE, Fund of Funds"
-            ],
-            [
-                "Ownership",
-                "100% GoI",
-                "GoI majority + others"
-            ]
-        ]
-    }
-],
-  mnemonics: [
-    {
-        "title": "MUDRA Categories — \"SKT\"",
-        "mnemonic": "Shishu (up to Rs 50K), Kishore (Rs 50K-5L), Tarun (Rs 5L-10L)",
-        "explanation": "Three MUDRA loan categories in ascending order of size — named after Sanskrit words for infant, youth, and young adult."
+      title: 'NABARD vs SIDBI',
+      headers: ['Feature', 'NABARD', 'SIDBI'],
+      rows: [
+        ['Established', '1982 (Sivaraman Committee)', '1990 (SIDBI Act 1989)'],
+        ['Focus', 'Agriculture & rural development', 'MSMEs'],
+        ['HQ', 'Mumbai', 'Lucknow'],
+        ['Key programme', 'SHG-BLP, RIDF, FPOs', 'MUDRA, CGTMSE, Fund of Funds'],
+        ['Ownership', '100% GoI', 'GoI majority + others'],
+        ['Refinance to', 'Cooperative banks, RRBs, commercial banks', 'Banks, NBFCs, MFIs for MSME lending'],
+        ['Supervisory role', 'Yes — inspects cooperative banks, RRBs', 'No statutory supervisory role'],
+      ],
     },
     {
-        "title": "DFI Timeline — \"IFCI-ICICI-IDBI-NABARD-SIDBI-NaBFID\"",
-        "mnemonic": "1948-1955-1964-1982-1990-2021",
-        "explanation": "India's DFI evolution: IFCI (1948), ICICI (1955), IDBI (1964), NABARD (1982), SIDBI (1990), NaBFID (2021)."
-    }
-],
+      title: 'India\'s Development Financial Institutions',
+      headers: ['DFI', 'Year', 'Focus', 'Current Status'],
+      rows: [
+        ['IFCI', '1948', 'Industrial finance', 'Sick — negligible operations'],
+        ['ICICI', '1955', 'Industrial credit', 'Converted to ICICI Bank (2002)'],
+        ['IDBI', '1964', 'Apex industrial DFI', 'Converted to IDBI Bank (2004), LIC owns 51%'],
+        ['NABARD', '1982', 'Agriculture & rural', 'Active — 100% GoI owned'],
+        ['EXIM Bank', '1982', 'Export-import financing', 'Active — Lines of Credit globally'],
+        ['NHB', '1988', 'Housing finance', 'Active — owned by RBI'],
+        ['SIDBI', '1990', 'MSMEs', 'Active — GoI majority'],
+        ['NaBFID', '2021', 'Infrastructure', 'Active — new DFI with sovereign backing'],
+      ],
+    },
+    {
+      title: 'PSL Targets for Banks',
+      headers: ['Category', 'Target (% of ANBC)', 'Key Detail'],
+      rows: [
+        ['Total PSL', '40%', 'For domestic scheduled commercial banks'],
+        ['Agriculture', '18%', 'Of which 8% to small/marginal farmers'],
+        ['Micro enterprises', '7.5%', 'Under MSME sector'],
+        ['Weaker sections', '12%', 'SC/ST, women, minorities, disabled'],
+        ['Education', 'No sub-target', 'Included in overall 40%'],
+        ['Housing', 'No sub-target', 'Up to Rs 35L (metro) / Rs 25L (non-metro)'],
+        ['Foreign banks (20+ branches)', '40%', 'Same as domestic banks'],
+        ['Foreign banks (<20 branches)', '40%', 'Can choose sub-target allocation'],
+      ],
+    },
+    {
+      title: 'NABARD Key Funds',
+      headers: ['Fund', 'Source', 'Purpose', 'Scale'],
+      rows: [
+        ['RIDF', 'Banks\' PSL shortfall deposits', 'Rural infrastructure for states', 'Rs 4.46L crore cumulative'],
+        ['LTIF', 'NABARD bond issuance', 'Pending irrigation projects (PMKSY)', 'Rs 30,000 crore'],
+        ['WIF', 'NABARD resources', 'Scientific warehouses', 'Multiple tranches'],
+        ['FIF', 'GoI contribution', 'Financial inclusion initiatives', 'Annual allocation'],
+        ['AIF', 'Central scheme', 'Post-harvest infrastructure', 'Rs 1 lakh crore target'],
+      ],
+    },
+    {
+      title: 'NaBFID vs Commercial Banks for Infra Lending',
+      headers: ['Feature', 'NaBFID', 'Commercial Banks'],
+      rows: [
+        ['Loan tenor', '15-30 years', '5-10 years typically'],
+        ['Funding source', 'Long-term bonds (30-year)', 'Short-term deposits (1-5 year)'],
+        ['ALM mismatch', 'Minimal — matched funding', 'Severe — short deposits, long loans'],
+        ['Expertise', 'Specialised project appraisal', 'General lending'],
+        ['Tax benefit', '10-year tax holiday', 'None'],
+        ['GoI backing', 'Rs 5 lakh crore guarantee', 'No sovereign guarantee on loans'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'MUDRA Categories — "SKT"',
+      mnemonic: 'Shishu (up to Rs 50K), Kishore (Rs 50K-5L), Tarun (Rs 5L-10L)',
+      explanation: 'Three MUDRA loan categories in ascending order of size — Shishu (infant, 64% of loans), Kishore (youth, 28%), Tarun (young adult, 8%). MUDRA is a subsidiary of SIDBI. Total cumulative: Rs 27.75 lakh crore.',
+    },
+    {
+      title: 'DFI Timeline — "IFCI-ICICI-IDBI-NABARD-SIDBI-NaBFID"',
+      mnemonic: '1948-1955-1964-1982-1990-2021',
+      explanation: 'India\'s DFI evolution in chronological order. First three (IFCI, ICICI, IDBI) declined post-liberalisation. NABARD and SIDBI remain active. NaBFID (2021) revives the concept for infrastructure with sovereign backing.',
+    },
+    {
+      title: 'NABARD Functions — "RSD"',
+      mnemonic: 'Refinance (Rs 3.11 lakh crore), Supervision (cooperative banks, RRBs), Development (SHG-BLP, FPOs)',
+      explanation: 'NABARD\'s three core functions: Refinance to cooperative banks, RRBs, commercial banks for agricultural credit; Supervision of cooperative banks and RRBs via statutory inspections; Development of SHG-BLP, FPOs, watershed, tribal programmes.',
+    },
+    {
+      title: 'PSL Shortfall Routing — "NSNM"',
+      mnemonic: 'NABARD (RIDF), SIDBI (MSME Fund), NHB (Housing Fund), MUDRA',
+      explanation: 'Banks that fall short of Priority Sector Lending targets must deposit the shortfall with NABARD (RIDF for rural infra), SIDBI (MSME Fund), NHB (Housing Fund), or MUDRA. This creates a refinance ecosystem — bank failures fund development.',
+    },
+    {
+      title: 'RIDF Numbers — "4.46-8.4-29"',
+      mnemonic: 'Rs 4.46 lakh crore sanctions, 8.4 lakh projects funded, 29 tranches since 1995-96',
+      explanation: 'RIDF is NABARD\'s flagship programme funded by banks\' PSL shortfall deposits. 29 tranches since 1995-96. Cumulative sanctions Rs 4.46 lakh crore for 8.4 lakh rural infrastructure projects — roads, bridges, irrigation, schools, health centres.',
+    },
+  ],
 }

@@ -1,61 +1,132 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const fiscalPolicyRevision: SubjectRevision = {
-  "topic": "fiscal-policy",
-  "bullets": [
-    "Fiscal Policy: Use of taxation and expenditure by government to influence the economy.",
-    "FRBM Act 2003: Target — fiscal deficit 3% of GDP, eliminate revenue deficit.",
-    "N.K. Singh Committee (2017): Debt-GDP ratio 40% (Centre), 20% (States), combined 60%. Fiscal Council proposed.",
-    "Escape Clause: Allows 0.5% GDP deviation in case of war, calamity, structural reform, or slowdown.",
-    "Fiscal deficit 2024-25: 4.9% of GDP. Target: below 4.5% by 2025-26.",
-    "Crowding Out: Heavy government borrowing raises interest rates, discourages private investment.",
-    "15th Finance Commission (NK Singh): 41% of divisible pool to states. Cess and surcharges NOT shared.",
-    "GST Compensation: States guaranteed 14% annual growth in GST revenue for 5 years (2017-22).",
-    "Expansionary fiscal policy: More spending/lower taxes → boost demand. Contractionary: Opposite.",
-    "Monetised Deficit: Fiscal deficit financed by RBI printing money. FRBM prohibits this."
+  topic: 'fiscal-policy',
+  bullets: [
+    'Fiscal Policy: Government\'s use of taxation and expenditure to influence the economy. Works alongside monetary policy.',
+    'FRBM Act 2003: Target — fiscal deficit 3% of GDP, eliminate revenue deficit. Annual reduction path mandated.',
+    'N.K. Singh Committee (2017): Debt-GDP ratio 40% (Centre), 20% (States), combined 60%. Fiscal Council proposed (not yet established).',
+    'Escape Clause: Allows 0.5% GDP deviation in case of war, calamity, structural reform, or slowdown (GDP growth 3%+ below 4Q average).',
+    'Fiscal deficit 2024-25 BE: 4.9% of GDP (Rs 16.13 lakh crore). Target: below 4.5% by 2025-26.',
+    'Revenue Deficit = Revenue Expenditure - Revenue Receipts. Means government is borrowing for consumption — dissaving.',
+    'Effective Revenue Deficit = Revenue Deficit - Grants for capital assets. Introduced 2011-12. Truer picture.',
+    'Fiscal Deficit = Total Expenditure - Total Receipts (excl. borrowings). Equals total borrowing requirement.',
+    'Primary Deficit = Fiscal Deficit - Interest Payments. If zero, entire borrowing is for past debt servicing.',
+    'Primary deficit (FY25 BE): 1.5% of GDP. Interest payments: Rs 11.90 lakh crore (3.7% of GDP) — single largest expenditure item.',
+    'Monetised Deficit: Fiscal deficit financed by RBI printing money. FRBM prohibits RBI from primary market G-Sec purchases.',
+    'COVID exception: RBI bought Rs 3.13 lakh crore G-Secs in FY21 through OMOs/G-SAPs — effective monetisation.',
+    'Crowding Out: Heavy government borrowing → higher interest rates → reduced private investment.',
+    'Crowding In: Capital expenditure (roads, railways) → improved infrastructure → attracts private investment.',
+    'Quality of deficit matters: 5% fiscal deficit for capex is better than 3% for subsidies/interest.',
+    'Capital expenditure: Rs 11.11 lakh crore (FY25 BE, 3.4% of GDP). Up from Rs 4.39 lakh crore in FY19 (1.6% of GDP).',
+    'Capex multiplier: 1.0-1.5x. Revenue expenditure multiplier: 0.3-0.6x. Capex is more growth-enhancing.',
+    'Interest payments: Rs 11.90 lakh crore (FY25) — 24.7% of total expenditure. Exceeds defence spending.',
+    'India\'s general government debt: ~83% of GDP (Centre ~57%, States ~26%). Above N.K. Singh target of 60%.',
+    '15th Finance Commission (NK Singh, 2020-26): 41% of divisible pool to states (same as 14th FC).',
+    '14th FC (Y.V. Reddy): Increased states\' share from 32% to 42% — largest-ever increase.',
+    '16th FC (Arvind Panagariya, 2024): Period FY27-FY32. Report expected October 2025.',
+    'Cess and surcharges are NOT part of the divisible pool — their share has risen from 10% to 25%+ of gross tax revenue.',
+    'Effective state share: While headline is 41%, actual share is ~30-32% due to rising cess/surcharge share.',
+    'GST Compensation: States guaranteed 14% annual revenue growth for 5 years (2017-22). Shortfall from Compensation Cess.',
+    'COVID shortfall: Rs 2.69 lakh crore. Government borrowed on behalf of states. Cess continues till March 2026 to repay.',
+    'Expansionary fiscal policy: More spending/lower taxes → boost demand. Used during recession. Widens deficit.',
+    'Contractionary fiscal policy: Less spending/higher taxes → control inflation. Narrows deficit. Slows growth.',
+    'Automatic stabilisers: Progressive income tax (collections fall during recession), unemployment benefits (rise during downturn). Weak in India.',
+    'Government borrowing: G-Secs (largest), T-Bills, Small Savings (PPF, NSC, KVP), External, Provident Funds.',
+    'Ways and Means Advances (WMA): Short-term RBI loans at repo rate. Overdraft: Repo + 2%. Must repay in 10 working days.',
+    'Small Savings rates: Revised quarterly. Formula: G-Sec yield + 25-100 bps. PPF 8.2%, NSC 7.7%, SCSS 8.2%.',
+    'Off-budget borrowings: States borrow through PSUs/SPVs — keeps debt off-budget. Centre now adjusting against borrowing limits.',
+    'Tax-GDP ratio: India ~18% (Centre + States). OECD average: 34%. Brazil: 33%. Low ratio constrains public spending.',
+    'Food subsidy: Rs 2.05 lakh crore. Fertiliser: Rs 1.64 lakh crore. Total explicit subsidies: ~Rs 4.10 lakh crore (~2.5% GDP).',
+    'DBT (Direct Benefit Transfer): Rs 36 lakh crore transferred since 2014. JAM trinity. Saved Rs 3.14 lakh crore.',
+    'Fiscal deficit history: 8% (1991), 5.7% (2002), 2.5% (2007), 9.2% (2021, COVID), 4.9% (2025 BE).',
+    'State FRBM: Most states target 3-3.5% of GSDP. 12 states exceeded 3% in FY24.',
+    'Freebies debate: SC-appointed committee (2022). OPS revival, free electricity, farm loan waivers — fiscal sustainability concerns.',
+    'OPS vs NPS: OPS (defined benefit, unfunded) vs NPS (defined contribution, market-linked). OPS revival creates massive future liabilities.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Expansionary vs Contractionary Fiscal Policy",
-      "headers": [
-        "Feature",
-        "Expansionary",
-        "Contractionary"
+      title: 'Expansionary vs Contractionary Fiscal Policy',
+      headers: ['Feature', 'Expansionary', 'Contractionary'],
+      rows: [
+        ['Government spending', 'Increased', 'Decreased'],
+        ['Taxes', 'Reduced', 'Increased'],
+        ['Fiscal deficit', 'Widens', 'Narrows'],
+        ['Used during', 'Recession/slowdown', 'Inflation/overheating'],
+        ['Effect on demand', 'Boosts aggregate demand', 'Reduces aggregate demand'],
+        ['India example', 'COVID-19 (FY21)', 'Post-COVID consolidation (FY23-25)'],
       ],
-      "rows": [
-        [
-          "Government spending",
-          "Increased",
-          "Decreased"
-        ],
-        [
-          "Taxes",
-          "Reduced",
-          "Increased"
-        ],
-        [
-          "Fiscal deficit",
-          "Widens",
-          "Narrows"
-        ],
-        [
-          "Used during",
-          "Recession/slowdown",
-          "Inflation/overheating"
-        ],
-        [
-          "Effect on demand",
-          "Boosts aggregate demand",
-          "Reduces aggregate demand"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "FRBM Targets — \"3% FD, Zero RD\"",
-      "mnemonic": "Fiscal Deficit: 3% of GDP; Revenue Deficit: Zero",
-      "explanation": "The original FRBM Act (2003) targeted fiscal deficit of 3% of GDP and elimination of revenue deficit. N.K. Singh Committee recommended a glide path with Debt-GDP ceiling of 60% (Centre 40%, States 20%)."
-    }
-  ]
+      title: 'Types of Deficits',
+      headers: ['Deficit', 'Formula', 'Significance'],
+      rows: [
+        ['Revenue Deficit', 'Rev Expenditure - Rev Receipts', 'Borrowing for consumption (dissaving)'],
+        ['Effective Rev Deficit', 'Rev Deficit - Grants for capital assets', 'Truer picture of consumption borrowing'],
+        ['Fiscal Deficit', 'Total Exp - Total Receipts (excl. borrowing)', 'Total borrowing requirement'],
+        ['Primary Deficit', 'Fiscal Deficit - Interest Payments', 'Borrowing need excluding legacy debt'],
+        ['Monetised Deficit', 'Deficit financed by RBI', 'Inflationary — printing money'],
+      ],
+    },
+    {
+      title: 'Revenue Expenditure vs Capital Expenditure',
+      headers: ['Feature', 'Revenue Expenditure', 'Capital Expenditure'],
+      rows: [
+        ['Creates assets?', 'No', 'Yes (roads, buildings, equipment)'],
+        ['Examples', 'Salaries, interest, subsidies', 'Infrastructure, defence equipment'],
+        ['Multiplier', '0.3-0.6x', '1.0-1.5x'],
+        ['Share of budget', '~77%', '~23% (rising)'],
+        ['Growth impact', 'Limited', 'Strong — crowds in private investment'],
+      ],
+    },
+    {
+      title: '14th vs 15th Finance Commission',
+      headers: ['Feature', '14th FC', '15th FC'],
+      rows: [
+        ['Chairman', 'Y.V. Reddy', 'N.K. Singh'],
+        ['Period', '2015-20', '2020-26'],
+        ['States\' share', '42%', '41% (J&K became UT)'],
+        ['Population data', '1971 census', '2011 census (15% weight)'],
+        ['Key feature', 'Largest-ever increase in devolution', 'Performance-based grants, defence/security'],
+      ],
+    },
+    {
+      title: 'Fiscal Policy vs Monetary Policy',
+      headers: ['Feature', 'Fiscal Policy', 'Monetary Policy'],
+      rows: [
+        ['Controlled by', 'Government (FM)', 'RBI (Governor)'],
+        ['Instruments', 'Tax, spending, borrowing', 'Repo rate, CRR, SLR, OMO'],
+        ['Objective', 'Growth, employment, equity', 'Price stability (inflation targeting)'],
+        ['Impact lag', 'Longer (budget cycle)', 'Shorter (immediate transmission)'],
+        ['Example', 'Capex increase, tax cut', 'Repo rate cut, liquidity injection'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'FRBM Targets — "3% FD, Zero RD"',
+      mnemonic: 'Fiscal Deficit: 3% of GDP; Revenue Deficit: Zero',
+      explanation: 'Original FRBM Act (2003) targets. N.K. Singh Committee added Debt-GDP ceiling of 60% (Centre 40%, States 20%).',
+    },
+    {
+      title: 'Deficit Hierarchy — "REFP-M"',
+      mnemonic: 'R: Revenue Deficit. E: Effective Revenue Deficit. F: Fiscal Deficit. P: Primary Deficit. M: Monetised Deficit',
+      explanation: 'Five types of budget deficits — each reveals a different aspect of government finances.',
+    },
+    {
+      title: 'Finance Commission — Article 280',
+      mnemonic: '280: Finance Commission. Every 5 years. Chairman + 4 members. Recommends tax devolution.',
+      explanation: 'Constitutional body. 15th FC: NK Singh. 41% to states. 16th FC: Arvind Panagariya (2024).',
+    },
+    {
+      title: 'N.K. Singh Debt Targets — "40-20-60"',
+      mnemonic: 'Centre: 40%. States: 20%. Combined: 60% of GDP',
+      explanation: 'N.K. Singh Committee (FRBM Review 2017) recommended debt-GDP targets. Current: ~83% (Centre 57%, States 26%) — far above target.',
+    },
+    {
+      title: 'Budget Expenditure — "SIDS-CD"',
+      mnemonic: 'S: Subsidies (Rs 4.1 lakh cr). I: Interest (Rs 11.9 lakh cr). D: Defence (Rs 6.2 lakh cr). S: Salaries/pensions. C: Capex (Rs 11.1 lakh cr). D: Development grants',
+      explanation: 'Major expenditure heads in Union Budget. Interest is the largest single item — exceeds defence spending.',
+    },
+  ],
 }

@@ -1,66 +1,132 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const digitalEconomyRevision: SubjectRevision = {
-  "topic": "digital-economy",
-  "bullets": [
-    "UPI: Real-time, 24/7, interbank transfers via mobile. By NPCI. Zero cost. 13+ billion txns/month (2024).",
-    "India Stack: Aadhaar (identity) + UPI/AEPS (payments) + DigiLocker (data) + Account Aggregator.",
-    "e-Rupee (CBDC): Digital form of legal tender issued by RBI. Pilot since Nov 2022. Retail + Wholesale.",
-    "Cryptocurrency: 30% flat tax on VDA income + 1% TDS on transfers (Budget 2022). Not legal tender.",
-    "Digital India (2015): 3 visions — digital infrastructure, governance on demand, digital empowerment.",
-    "Aadhaar: 12-digit unique ID by UIDAI. 1.38+ billion enrolments. Biometric + demographic.",
-    "India = 46% of global real-time digital payments. Total digital txns: 16,400+ crore (2023-24).",
-    "NEFT: Batch settlement. RTGS: Real-time (≥Rs 2 lakh). IMPS: 24/7 instant. NACH: Recurring payments.",
-    "ONDC (Open Network for Digital Commerce): Decentralised e-commerce, unbundles buyer/seller/logistics.",
-    "Digital Personal Data Protection Act 2023: Consent-based processing, Data Protection Board, penalties up to Rs 250 crore."
+  topic: 'digital-economy',
+  bullets: [
+    'UPI: Real-time, 24/7, interbank transfers via mobile. By NPCI. Zero cost for consumers. 16+ billion txns/month (late 2024). 46% of global real-time digital payments.',
+    'India Stack: Aadhaar (identity layer, 1.38B) + UPI/AEPS (payments layer) + DigiLocker (data layer) + Account Aggregator (consent layer). G20 endorsed for global replication.',
+    'e-Rupee (CBDC): Digital form of legal tender issued by RBI. Pilot since November 2022. Retail e₹-R (person-to-merchant) + Wholesale e₹-W (interbank settlement).',
+    'CBDC vs Cryptocurrency: CBDC is sovereign legal tender (RBI liability), centralised, no mining. Crypto is decentralised, not legal tender, speculative. CBDC does not threaten banking system.',
+    'Cryptocurrency regulation in India: 30% flat tax on VDA income (no loss offset) + 1% TDS on transfers (Budget 2022). Not banned but not legal tender. No separate crypto law yet.',
+    'Digital India (2015): 3 vision areas — digital infrastructure for every citizen, governance & services on demand, digital empowerment of citizens. Umbrella programme.',
+    'Aadhaar: 12-digit unique biometric ID by UIDAI (Nandan Nilekani). 1.38+ billion enrolments. Puttaswamy judgment (2018): Aadhaar valid for DBT/tax but not for private cos.',
+    'Aadhaar-enabled services: eKYC (1.4 billion+), Authentication (100 billion+), AEPS (banking for unbanked), DBT (~Rs 34 lakh crore cumulative savings), Aadhaar-linked mobile/bank.',
+    'Total digital payment transactions India: 16,400+ crore (FY 2023-24). Target: 1 lakh crore by 2025 (revised). Digital payments GDP ratio: 76% (FY24).',
+    'NEFT: Batch settlement (half-hourly, 24/7 from December 2019). RTGS: Real-time gross settlement (≥Rs 2 lakh, 24/7 from December 2020). IMPS: 24/7 instant up to Rs 5 lakh.',
+    'NACH (National Automated Clearing House): For recurring/bulk payments — SIP, insurance premium, EMI, salary, dividend. NPCI-operated. 1,200+ crore mandates.',
+    'ONDC (Open Network for Digital Commerce, 2022): Government-backed, decentralised e-commerce protocol. Unbundles buyer app / seller app / logistics. Anti-platform monopoly.',
+    'Digital Personal Data Protection Act 2023 (DPDPA): Consent-based processing, Data Fiduciary obligations, Data Protection Board (quasi-judicial), penalties up to Rs 250 crore. No data localisation mandate.',
+    'DPDPA key concepts: Data Principal (individual), Data Fiduciary (collector), Significant Data Fiduciary (extra obligations — DPIA, DPO appointment), Consent Manager.',
+    'BharatNet: Optical fibre to 6.5 lakh villages (target). PPP model approved (2023). Rs 19,041 crore Phase-II. Critical for rural broadband — only ~2 lakh GPs connected so far.',
+    'Telecom revolution: 120+ crore mobile subscribers. Average data consumption: 19.5 GB/month/user (highest globally). Jio effect: data prices crashed from Rs 269/GB (2014) to Rs 12/GB (2024).',
+    'India\'s internet users: 95+ crore (2024). Rural internet penetration: 44% (growing fast). Urban: 73%. Mobile internet: 85%+ of all access. Fixed broadband: only 4 crore connections.',
+    'e-Governance platforms: DigiLocker (30 crore users, 600 crore documents), UMANG (2,000+ services), GeM (Rs 4 lakh crore orders), e-Courts (29 crore+ case disposals), PARIVESH (environment clearances).',
+    'GeM (Government e-Marketplace, 2016): Mandatory for central government procurement. Rs 4+ lakh crore cumulative orders. 75+ lakh sellers/service providers. Reduced procurement costs 15-20%.',
+    'Fintech ecosystem: 2,100+ fintechs in India (3rd globally after USA, UK). Segments: payments (PhonePe, GPay), lending (Lendingkart), insurtech (Acko), wealthtech (Zerodha, Groww), neobanking.',
+    'Digital lending guidelines (RBI, 2022): Loan must be disbursed to borrower\'s bank account (not wallet). LSP (Lending Service Provider) cannot access funds. FLDG capped at 5%.',
+    'Account Aggregator (AA): RBI-regulated consent-based data sharing. 8 AAs licensed. Enables cash-flow lending for MSMEs (JAM + GST data = creditworthiness without collateral).',
+    'Cybersecurity: CERT-In is nodal agency. Indian Cyber Crime Coordination Centre (I4C). Cyber fraud losses: Rs 11,333 crore (2023). 6-hour incident reporting mandate (CERT-In, 2022).',
+    'India\'s data centre market: $4.5 billion (2024), growing 25%+ CAGR. 950+ MW capacity. Major investments: Adani ($5B), Reliance (Jamnagar), NTT, Equinix. Data Centre Policy 2020 — infra status.',
+    'AI India: IndiaAI Mission — Rs 10,372 crore (Budget 2024-25). 10,000 GPU compute capacity. AI datasets, application development, startups. National AI Strategy by NITI Aayog (2018).',
+    'Semiconductor mission: Rs 76,000 crore (India Semiconductor Mission). Tata-PSMC fab (Gujarat, 28nm), Tata OSAT (Assam), Micron ATMP (Gujarat). Target: chip design + packaging.',
+    'Open-source DPIs exported: MOSIP (modular identity — used by Philippines, Morocco), DIGIT (governance), Beckn (commerce protocol behind ONDC), CoWIN (vaccination — adopted by 80+ countries).',
+    'IT Act 2000 + IT Rules 2021: Safe harbour for intermediaries if due diligence followed. Social media: appoint Grievance Officer, Chief Compliance Officer. Fact-check unit (contested).',
+    'INDIAai + Bhashini: AI-powered real-time translation across 22 scheduled languages. Critical for bridging digital divide — 90% of India\'s internet users prefer vernacular content.',
+    'E-commerce market India: ~$83 billion (2024). Flipkart, Amazon dominate. FDI policy: marketplace model allowed, inventory model banned. ONDC aims to democratise.',
+    'UPI International: Accepted in 7+ countries (Singapore, UAE, France, Sri Lanka, Mauritius, Nepal, Bhutan). RuPay cards accepted in 200+ countries. Cross-border UPI linkages expanding.',
+    'Digital rupee vs UPI: UPI = bank-to-bank transfer (commercial bank money). e₹ = direct RBI liability (central bank money). e₹ is programmable (time-bound subsidies, targeted spending).',
+    'JAM Trinity success: 52+ crore Jan Dhan accounts + 1.38 billion Aadhaar + 120 crore mobiles = world\'s largest digital identity-payment infrastructure. DBT to 100+ schemes.',
+    'NPCI: National Payments Corporation of India (2008). Operates UPI, IMPS, NACH, AePS, RuPay, BBPS, FASTag, NETC. Section 25 company. Shareholders: banks. Dilip Asbe, MD & CEO.',
+    'FASTag: Mandatory for all 4-wheelers (February 2021). Electronic toll collection on national highways. 8.1+ crore FASTags issued. Rs 62,000+ crore collected (FY24). Reduced toll wait times.',
+    'Digital health: ABHA (Ayushman Bharat Health Account) — 14-digit health ID. 60+ crore ABHAs created. Health records on Ayushman Bharat Digital Mission. CoWIN: 220+ crore vaccine doses tracked.',
+    'Startup India: 1.4+ lakh DPIIT-recognised startups (2024). 110+ unicorns. 3rd largest startup ecosystem. Tax holiday (Section 80-IAC: 3-year exemption in 10 years for eligible startups).',
+    'Open API economy: India has 73+ open APIs in banking (UPI, AA, BBPS), identity (Aadhaar), commerce (ONDC). API-first approach enables interoperability without platform lock-in.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "NEFT vs RTGS vs IMPS vs UPI",
-      "headers": [
-        "Feature",
-        "NEFT",
-        "RTGS",
-        "IMPS",
-        "UPI"
+      title: 'NEFT vs RTGS vs IMPS vs UPI',
+      headers: ['Feature', 'NEFT', 'RTGS', 'IMPS', 'UPI'],
+      rows: [
+        ['Settlement', 'Half-hourly batches', 'Real-time gross', 'Immediate', 'Immediate'],
+        ['Minimum amount', 'No minimum', 'Rs 2 lakh', 'Re 1', 'Re 1'],
+        ['Maximum amount', 'No cap', 'No cap', 'Rs 5 lakh', 'Rs 1-5 lakh (varies)'],
+        ['Availability', '24/7 (since Dec 2019)', '24/7 (since Dec 2020)', '24/7', '24/7'],
+        ['Channel', 'Bank (net banking)', 'Bank (net banking)', 'Bank/mobile app', 'Mobile app (VPA)'],
+        ['Operator', 'RBI', 'RBI', 'NPCI', 'NPCI'],
       ],
-      "rows": [
-        [
-          "Settlement",
-          "Half-hourly batches",
-          "Real-time gross",
-          "Immediate",
-          "Immediate"
-        ],
-        [
-          "Minimum",
-          "No minimum",
-          "Rs 2 lakh",
-          "Re 1",
-          "Re 1"
-        ],
-        [
-          "Availability",
-          "24/7",
-          "24/7",
-          "24/7",
-          "24/7"
-        ],
-        [
-          "Channel",
-          "Bank",
-          "Bank",
-          "Bank/app",
-          "Mobile app"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "India Stack Layers — \"IPD\"",
-      "mnemonic": "Identity (Aadhaar), Payments (UPI), Data (DigiLocker/AA)",
-      "explanation": "India's Digital Public Infrastructure has three layers: Identity layer (Aadhaar — 1.38B enrolments), Payment layer (UPI — 13B+ monthly txns), Data layer (DigiLocker, Account Aggregator). This \"India Stack\" was endorsed by G20 for global adoption."
-    }
-  ]
+      title: 'CBDC (e-Rupee) vs UPI vs Cryptocurrency',
+      headers: ['Feature', 'e-Rupee (CBDC)', 'UPI', 'Cryptocurrency'],
+      rows: [
+        ['Issuer', 'RBI (central bank)', 'NPCI (intermediary)', 'Decentralised (no issuer)'],
+        ['Legal tender', 'Yes — sovereign guarantee', 'No — facilitates bank money transfer', 'No — not legal tender in India'],
+        ['Backing', 'RBI liability (like physical cash)', 'Bank deposits', 'Market sentiment, mining cost'],
+        ['Programmability', 'Yes — time-bound subsidies possible', 'Limited', 'Smart contracts (Ethereum)'],
+        ['Anonymity', 'Small value: anonymous. Large: traceable', 'Fully traceable', 'Pseudonymous (blockchain public)'],
+        ['Tax', 'Normal income tax rules', 'Normal income tax rules', '30% flat + 1% TDS (India)'],
+      ],
+    },
+    {
+      title: 'Digital India vs India Stack vs IndiaAI',
+      headers: ['Feature', 'Digital India (2015)', 'India Stack', 'IndiaAI Mission (2024)'],
+      rows: [
+        ['Focus', 'Citizen digital empowerment', 'Digital Public Infrastructure (DPI)', 'AI compute, datasets, applications'],
+        ['Components', 'BharatNet, DigiLocker, UMANG, CSCs', 'Aadhaar, UPI, DigiLocker, AA', '10,000 GPUs, AI datasets, startups'],
+        ['Budget', 'Rs 1.13 lakh crore (Phase I+II)', 'Multiple agency budgets', 'Rs 10,372 crore'],
+        ['Global impact', 'Domestic programme', 'G20 endorsed, MOSIP exported', 'Bhashini (multilingual AI)'],
+        ['Status', 'Operational — continuous evolution', 'Mature — global benchmark', 'Early stage — building capacity'],
+      ],
+    },
+    {
+      title: 'IT Act 2000 vs DPDPA 2023',
+      headers: ['Feature', 'IT Act 2000', 'DPDPA 2023'],
+      rows: [
+        ['Focus', 'E-commerce validity, cybercrime', 'Personal data protection'],
+        ['Scope', 'Electronic transactions, intermediary liability', 'Data collection, processing, consent'],
+        ['Enforcement', 'Adjudicating officers, Cyber Appellate Tribunal', 'Data Protection Board of India'],
+        ['Penalties', 'Up to Rs 5 crore (Section 43A)', 'Up to Rs 250 crore'],
+        ['Consent framework', 'Limited (Section 43A reasonable practices)', 'Comprehensive — informed, specific, revocable'],
+        ['Children\'s data', 'Not specifically addressed', 'Verifiable parental consent required'],
+      ],
+    },
+    {
+      title: 'India vs Global Digital Payment Adoption',
+      headers: ['Country', 'Real-Time Payments (2023)', 'Key System', 'Global Share'],
+      rows: [
+        ['India', '129 billion txns', 'UPI', '46%'],
+        ['China', '42 billion txns', 'Alipay/WeChat Pay', '15%'],
+        ['Brazil', '30 billion txns', 'PIX', '11%'],
+        ['Thailand', '16 billion txns', 'PromptPay', '6%'],
+        ['South Korea', '8 billion txns', 'Open Banking', '3%'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'India Stack Layers — "IPDC"',
+      mnemonic: 'Identity (Aadhaar), Payments (UPI/AePS), Data (DigiLocker), Consent (Account Aggregator)',
+      explanation: 'India\'s Digital Public Infrastructure has four layers: Identity (Aadhaar — 1.38B), Payments (UPI — 16B+ monthly txns, AePS for offline), Data (DigiLocker — 30 crore users), Consent (Account Aggregator — data empowerment). G20 endorsed for global adoption.',
+    },
+    {
+      title: 'NPCI Products — "UINARABFN"',
+      mnemonic: 'UPI, IMPS, NACH, AePS, RuPay, AADHAR Bridge, BBPS, FASTag, NETC',
+      explanation: 'NPCI operates 10+ payment systems: UPI (P2P/P2M), IMPS (instant transfer), NACH (recurring), AePS (Aadhaar-enabled banking), RuPay (card network), Bharat BillPay (utilities), FASTag (tolls), NETC (electronic toll). NPCI is a Section 25 company owned by banks.',
+    },
+    {
+      title: 'DPDPA 2023 — "DPB 250"',
+      mnemonic: 'Data Protection Board adjudicates. Max penalty Rs 250 crore. Consent-based. No data localisation.',
+      explanation: 'Digital Personal Data Protection Act 2023: Data Protection Board of India is quasi-judicial body. Maximum penalty Rs 250 crore. Processing based on consent or legitimate uses. No data localisation requirement (unlike earlier drafts). Children\'s data needs parental consent.',
+    },
+    {
+      title: 'Digital Payment Numbers — "16K Crore, 46%"',
+      mnemonic: 'India: 16,400 crore digital transactions (FY24). 46% of global real-time payments. UPI: 16B+ txns/month.',
+      explanation: 'India\'s digital payments dominance: 16,400+ crore total digital transactions in FY 2023-24. India processes 46% of all global real-time digital payments. UPI alone handles 16+ billion transactions per month. Digital payments/GDP ratio: 76%.',
+    },
+    {
+      title: 'Semiconductor Mission — "76K Crore, 3 Fabs"',
+      mnemonic: 'Rs 76,000 crore. Tata-PSMC (Gujarat fab, 28nm). Tata OSAT (Assam). Micron ATMP (Gujarat).',
+      explanation: 'India Semiconductor Mission: Rs 76,000 crore to build domestic chip capacity. Three approved projects: Tata-PSMC fabrication plant (Gujarat, 28nm chips), Tata OSAT packaging (Assam), Micron advanced packaging (Gujarat). India currently imports 100% of chips — strategic vulnerability.',
+    },
+  ],
 }

@@ -1,100 +1,142 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const pressureBeltsWindsRevision: SubjectRevision = {
-  "topic": "pressure-belts-winds",
-  "bullets": [
-    "Standard atmospheric pressure at sea level: 1013.25 mb (hPa) = 760 mm Hg.",
-    "7 pressure belts: Equatorial Low (Doldrums), 2 Subtropical Highs (Horse Latitudes), 2 Subpolar Lows, 2 Polar Highs.",
-    "Planetary winds: Trade Winds (30°→0°), Westerlies (30°→60°), Polar Easterlies (90°→60°).",
-    "Coriolis Effect: winds deflect right in NH, left in SH; zero at equator, maximum at poles.",
-    "ITCZ (Inter-Tropical Convergence Zone) shifts seasonally — over India in summer, driving SW monsoon.",
-    "Three-cell model: Hadley Cell (0-30°), Ferrel Cell (30-60°), Polar Cell (60-90°).",
-    "Subtropical Jet Stream (STJ) withdrawal from India triggers SW monsoon onset in June.",
-    "Tropical Easterly Jet (TEJ) flows from east to west over peninsular India during summer monsoon.",
-    "Somali Jet — low-level jet bringing moisture from the Indian Ocean; strengthened by cold Somali Current.",
-    "Local winds in India: Loo (hot, NW India), Norwesters/Kalbaishakhi (thunderstorms, E India), Mango Showers (pre-monsoon, Kerala).",
-    "Trade winds are the most consistent winds; Westerlies bring Western Disturbances to India.",
-    "SW Monsoon (June-Sept) brings 75% of India's annual rainfall; NE Monsoon (Oct-Dec) gives rain to Tamil Nadu.",
-    "Buys Ballot's Law: stand with back to wind in NH — low pressure is to your left.",
-    "IMD (est. 1875, HQ Delhi) is India's national meteorological agency.",
-    "Pressure belts shift 5-10° with apparent movement of the Sun — critical for monsoon mechanism."
+  topic: 'pressure-belts-winds',
+  bullets: [
+    'Standard atmospheric pressure at sea level: 1013.25 mb (hPa) = 760 mm Hg = 1 atm.',
+    'Pressure decreases with altitude — approximately 1 mb per 10 m rise near the surface.',
+    'Warm air = low pressure (air rises); Cold air = high pressure (air sinks) — fundamental rule.',
+    'Moist air is lighter than dry air at the same temperature — water vapour (18 g/mol) is lighter than N2 (28) or O2 (32).',
+    '7 pressure belts (equator to pole): Equatorial Low → Subtropical High → Subpolar Low → Polar High (alternating).',
+    'Equatorial Low (Doldrums, 0-5°N/S): intense convection, calms, heavy rainfall, thunderstorms; ITCZ lies here.',
+    'Subtropical High (Horse Latitudes, ~30°N/S): descending air, clear skies, arid; all major hot deserts (Sahara, Thar, Arabian, Kalahari) are here.',
+    'Subpolar Low (~60°N/S): convergence of warm westerlies and cold polar air; fronts, mid-latitude cyclones, precipitation.',
+    'Polar High (90°N/S): extremely cold, dense sinking air; dry — Antarctica is technically a desert.',
+    'Pressure belts shift 5-10° seasonally with the apparent movement of the Sun — critical for the Indian monsoon.',
+    'Coriolis Effect (Coriolis, 1835): deflects winds right in NH, left in SH; zero at equator, maximum at poles.',
+    'Buys Ballot\'s Law (1857): stand with back to wind in NH → low pressure is to your left.',
+    'Trade Winds: 30°→0°; NE Trades in NH, SE Trades in SH — most consistent winds on Earth.',
+    'Westerlies: 30°→60°; SW in NH, NW in SH; variable; carry Western Disturbances to India in winter.',
+    'Polar Easterlies: 90°→60°; cold, dry, weak; NE in NH.',
+    'Roaring Forties (40°S), Furious Fifties (50°S), Screaming Sixties (60°S) — strong unobstructed westerlies in the Southern Ocean.',
+    'Three-cell model: Hadley Cell (0-30°, strongest, thermally direct), Ferrel Cell (30-60°, weakest, thermally indirect), Polar Cell (60-90°).',
+    'Hadley Cell: air rises at ITCZ → poleward aloft → sinks at ~30° (subtropical high) → returns as trade winds.',
+    'ITCZ (Inter-Tropical Convergence Zone) shifts to ~25°N over the Ganga Plain in summer — drives the SW monsoon.',
+    'Monsoon trough: the axis of the ITCZ over India; its position determines active and break monsoon spells.',
+    'SW Monsoon (June-Sept): brings ~75% of India\'s annual rainfall; two branches — Arabian Sea and Bay of Bengal.',
+    'NE Monsoon (Oct-Dec): retreating monsoon; dry for most of India but gives crucial rain to Tamil Nadu (Bay of Bengal moisture).',
+    'Mawsynram (Meghalaya, 11,872 mm/yr) — world\'s wettest place (annual average); Cherrapunji 2nd; both on the Khasi Hills.',
+    'Arabian Sea branch hits Western Ghats first (~June 1); Bay of Bengal branch enters NE India and moves westward along the Ganga Plain.',
+    'Western Disturbances: extra-tropical cyclones from the Mediterranean, carried by the westerly jet; bring winter rain to N India (rabi crop).',
+    'Subtropical Jet Stream (STJ): ~30°N at 9-12 km altitude; its withdrawal from south of the Himalayas triggers SW monsoon onset.',
+    'Tropical Easterly Jet (TEJ): flows east→west over peninsular India in summer; linked to good monsoon performance.',
+    'Somali Jet (East African Low-Level Jet): crosses the equator at ~1.5 km altitude; primary moisture carrier for Indian monsoon; strengthened by the cold Somali Current.',
+    'Rossby Waves: large-scale meanders in the jet stream; influence prolonged heat/cold/rain spells over mid-latitudes.',
+    'Loo — hot, dry wind in the Indo-Gangetic Plain (May-June), temperatures 45-50°C; dangerous heatwave wind.',
+    'Norwesters/Kalbaishakhi — thunderstorms in eastern India (WB, Bihar, Assam) in April-May; bring pre-monsoon rain; crucial for jute, tea.',
+    'Mango Showers — pre-monsoon showers in Kerala and Karnataka coast (March-May); help mango ripening.',
+    'Chinook — warm, dry foehn-type wind on the eastern slopes of the Rockies; can melt snow rapidly (called "snow-eater").',
+    'Foehn — warm, dry wind descending on the leeward side of the Alps.',
+    'Sirocco — hot, dry wind from the Sahara blowing across the Mediterranean to southern Europe.',
+    'Mistral — cold, dry northwesterly in the Rhone Valley, southern France.',
+    'Harmattan — dry, dusty wind from the Sahara across West Africa; called "the doctor" because it provides relief from humid conditions.',
+    'IMD (est. 1875, HQ Delhi) — India\'s national meteorological agency; uses Doppler radar, INSAT satellites, NWP models.',
+    'Lines connecting places of equal pressure are isobars; closely spaced isobars = steep pressure gradient = strong winds.',
+    'Land-sea breeze: sea breeze during day (land heats faster), land breeze at night (land cools faster) — significant in Mumbai, Chennai.',
+    'Valley breeze (anabatic): upslope during day; Mountain breeze (katabatic): downslope at night — common in Himalayan valleys.',
+    'Cyclone (low): winds spiral inward counterclockwise in NH; anticyclone (high): winds spiral outward clockwise in NH.',
+    'Indian monsoon is also influenced by El Nino (weakens monsoon), La Nina (strengthens monsoon), and IOD (positive IOD strengthens).',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Planetary Wind Systems",
-      "headers": [
-        "Wind",
-        "Direction (NH)",
-        "Zone",
-        "Characteristics"
+      title: 'Pressure Belts — Characteristics',
+      headers: ['Pressure Belt', 'Latitude', 'Nature', 'Features'],
+      rows: [
+        ['Equatorial Low (Doldrums)', '0-5°N/S', 'Thermally induced low', 'Intense convection; calms; heavy rain; ITCZ'],
+        ['Subtropical High (Horse Latitudes)', '~30°N/S', 'Dynamically induced high', 'Descending air; clear skies; arid; deserts'],
+        ['Subpolar Low', '~60°N/S', 'Dynamically induced low', 'Frontal convergence; cyclonic activity; precipitation'],
+        ['Polar High', '90°N/S', 'Thermally induced high', 'Extremely cold; dense sinking air; dry'],
       ],
-      "rows": [
-        [
-          "Trade Winds",
-          "NE to SW",
-          "30°→0°",
-          "Most consistent; drive ocean currents"
-        ],
-        [
-          "Westerlies",
-          "SW to NE",
-          "30°→60°",
-          "Variable; carry Western Disturbances"
-        ],
-        [
-          "Polar Easterlies",
-          "NE to SW",
-          "90°→60°",
-          "Cold, dry, weak"
-        ]
-      ]
     },
     {
-      "title": "SW Monsoon vs NE Monsoon",
-      "headers": [
-        "Feature",
-        "SW Monsoon",
-        "NE Monsoon"
+      title: 'Planetary Wind Systems',
+      headers: ['Wind', 'Direction (NH)', 'Zone', 'Characteristics'],
+      rows: [
+        ['Trade Winds', 'NE to SW', '30°→0°', 'Most consistent; drive tropical ocean currents; ITCZ convergence'],
+        ['Westerlies', 'SW to NE', '30°→60°', 'Variable; carry Western Disturbances; strongest in SH (Roaring 40s)'],
+        ['Polar Easterlies', 'NE to SW', '90°→60°', 'Cold, dry, weak; meet westerlies at Polar Front'],
       ],
-      "rows": [
-        [
-          "Period",
-          "June-September",
-          "October-December"
-        ],
-        [
-          "Wind direction",
-          "Southwest",
-          "Northeast"
-        ],
-        [
-          "Moisture source",
-          "Indian Ocean (Arabian Sea + Bay of Bengal)",
-          "Bay of Bengal"
-        ],
-        [
-          "Rainfall coverage",
-          "Most of India",
-          "Mainly Tamil Nadu, SE coast"
-        ],
-        [
-          "Share of annual rain",
-          "~75%",
-          "~10-15%"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
-    {
-      "title": "Pressure Belt Order (Equator to Pole)",
-      "mnemonic": "Every Student Seems Perfectly — EL, STH, SPL, PH",
-      "explanation": "Equatorial Low, Subtropical High, Subpolar Low, Polar High — alternating low and high pressure belts."
     },
     {
-      "title": "Monsoon Onset Trigger",
-      "mnemonic": "STJ Shifts North → Monsoon Starts",
-      "explanation": "The withdrawal of the Subtropical Jet Stream from south of the Himalayas to north triggers the sudden onset of the SW monsoon."
-    }
-  ]
+      title: 'SW Monsoon vs NE Monsoon',
+      headers: ['Feature', 'SW Monsoon (Advancing)', 'NE Monsoon (Retreating)'],
+      rows: [
+        ['Period', 'June-September', 'October-December'],
+        ['Wind direction', 'Southwest', 'Northeast'],
+        ['Moisture source', 'Indian Ocean (Arabian Sea + Bay of Bengal)', 'Bay of Bengal'],
+        ['Rainfall coverage', 'Most of India — heaviest on Western Ghats, NE India', 'Mainly Tamil Nadu, SE coast, Sri Lanka'],
+        ['Share of annual rain', '~75%', '~10-15% (but ~50% for Tamil Nadu)'],
+        ['Trigger', 'STJ withdrawal + ITCZ shift north', 'Land-sea temperature reversal'],
+      ],
+    },
+    {
+      title: 'Jet Streams Affecting India',
+      headers: ['Jet Stream', 'Altitude', 'Direction', 'Role in Indian Weather'],
+      rows: [
+        ['Subtropical Jet (STJ)', '9-12 km', 'West→East', 'Winter: south of Himalayas, brings Western Disturbances; Summer: shifts north, triggers monsoon'],
+        ['Tropical Easterly Jet (TEJ)', '12-14 km', 'East→West', 'Summer only; over peninsula at ~14°N; strong TEJ = good monsoon'],
+        ['Somali Jet (Low-Level)', '~1.5 km', 'SW→NE', 'Summer; crosses equator; primary moisture carrier for SW monsoon'],
+        ['Polar Front Jet', '9-12 km', 'West→East', 'At ~60°N; guides mid-latitude cyclones; indirect effect on Indian weather'],
+      ],
+    },
+    {
+      title: 'Three-Cell Model of Atmospheric Circulation',
+      headers: ['Cell', 'Latitude Range', 'Surface Wind', 'Characteristics'],
+      rows: [
+        ['Hadley Cell', '0°-30°', 'Trade Winds (toward equator)', 'Strongest, thermally direct; drives ITCZ and monsoon'],
+        ['Ferrel Cell', '30°-60°', 'Westerlies (toward pole)', 'Weakest, thermally indirect; maintained by momentum transfer'],
+        ['Polar Cell', '60°-90°', 'Polar Easterlies (toward equator)', 'Thermally direct; cold air sinks at pole, rises at ~60°'],
+      ],
+    },
+    {
+      title: 'Local Winds — India and World',
+      headers: ['Wind', 'Region', 'Type', 'Effect'],
+      rows: [
+        ['Loo', 'Indo-Gangetic Plain (India)', 'Hot, dry', 'Heatwave conditions; 45-50°C; May-June'],
+        ['Norwesters/Kalbaishakhi', 'Eastern India (WB, Bihar)', 'Thunderstorm', 'Pre-monsoon rain; crucial for jute and tea'],
+        ['Mango Showers', 'Kerala, Karnataka coast', 'Pre-monsoon rain', 'Helps mango ripening; March-May'],
+        ['Chinook', 'Eastern Rockies (N America)', 'Warm, dry (foehn)', 'Melts snow rapidly; "snow-eater"'],
+        ['Sirocco', 'Sahara → Mediterranean', 'Hot, dry', 'Dust-laden; affects S Europe'],
+        ['Mistral', 'Rhone Valley, France', 'Cold, dry', 'Strong northwesterly; affects agriculture'],
+        ['Harmattan', 'Sahara → West Africa', 'Dry, dusty', 'Called "the doctor" — relief from humidity'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Pressure Belt Order (Equator to Pole)',
+      mnemonic: 'Every Student Seems Perfect — Equatorial Low, Subtropical High, Subpolar Low, Polar High',
+      explanation: 'Alternating low and high pressure belts from equator to pole. Thermally induced at equator/poles; dynamically induced at 30°/60°.',
+    },
+    {
+      title: 'Three-Cell Model',
+      mnemonic: 'HFP — Hadley (0-30°), Ferrel (30-60°), Polar (60-90°)',
+      explanation: 'Three atmospheric circulation cells from equator to pole. Hadley is the largest and strongest.',
+    },
+    {
+      title: 'Monsoon Onset Trigger',
+      mnemonic: 'STJ Shifts North → Monsoon Starts; TEJ Appears → Monsoon Strengthens',
+      explanation: 'Withdrawal of STJ from south of Himalayas triggers monsoon onset. TEJ over peninsula sustains it.',
+    },
+    {
+      title: 'Coriolis Deflection',
+      mnemonic: 'Right in NH, Left in SH; Zero at Equator, Max at Poles',
+      explanation: 'The Coriolis effect deflects moving objects (winds, currents) due to Earth\'s rotation.',
+    },
+    {
+      title: 'SW Monsoon Branches',
+      mnemonic: 'Arabian branch → Western Ghats first (June 1); Bay branch → NE India → westward along Ganga Plain',
+      explanation: 'Two moisture-carrying branches of the SW monsoon enter India from different directions.',
+    },
+  ],
 }

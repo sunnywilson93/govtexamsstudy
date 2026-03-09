@@ -1,51 +1,125 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const industryPolicyRevision: SubjectRevision = {
-  "topic": "industry-policy",
-  "bullets": [
-    "IPR 1948: Mixed economy. IPR 1956: 3 schedules (A-state, B-mixed, C-private). Mahalanobis influence.",
-    "New Industrial Policy 1991: De-licensing (retained for 2: defence, atomic energy), de-reservation, FDI liberalisation.",
-    "MSME definition (2020): Micro (investment ≤1cr, turnover ≤5cr), Small (≤10cr, ≤50cr), Medium (≤50cr, ≤250cr).",
-    "MSMEs: ~30% GDP, ~45% manufacturing, ~48% exports, ~11 crore jobs.",
-    "PLI Scheme (2020): 14 sectors, Rs 1.97 lakh crore. 4-6% incentive on incremental sales for 5 years.",
-    "Make in India (2014): 25 sectors. Four pillars: New Processes, Infrastructure, Sectors, Mindset.",
-    "CCI (Competition Commission): Regulates anti-competitive agreements, abuse of dominant position, mergers.",
-    "DMIC (Delhi-Mumbai Industrial Corridor): 1,504 km along Dedicated Freight Corridor. JICA funding.",
-    "Udyam Registration: Online MSME registration (Aadhaar-linked). Replaced UAM.",
-    "CGTMSE: Collateral-free loans up to Rs 5 crore for MSMEs."
+  topic: 'industry-policy',
+  bullets: [
+    "IPR 1948: Mixed economy, 4 categories. IPR 1956: 3 schedules (A-state 17, B-mixed 12, C-private). Mahalanobis model.",
+    "New Industrial Policy 1991: De-licensing (retained for 2: defence, atomic energy), de-reservation, FDI liberalisation, disinvestment.",
+    "IDR Act 1951: Industrial licensing system — needed government permission to set up/expand. Created 'Licence Raj'. Abolished 1991.",
+    "MRTP Act 1969 (size-based control) replaced by Competition Act 2002 (behaviour-based regulation). CCI functional since 2009.",
+    "MSME definition (2020): Micro (investment <=1cr, turnover <=5cr), Small (<=10cr, <=50cr), Medium (<=50cr, <=250cr).",
+    "MSMEs: ~30% GDP, ~45% manufacturing, ~48% exports, ~11 crore jobs. 6.3 crore MSMEs. 99% are micro enterprises.",
+    "MSME credit gap: Demand Rs 70 lakh crore vs supply Rs 22 lakh crore — gap of Rs 48 lakh crore. Only 16% have formal credit.",
+    "PLI Scheme (2020): 14 sectors, Rs 1.97 lakh crore. 4-6% incentive on incremental sales for 5 years. Production Rs 10.8 lakh crore by 2024.",
+    "Make in India (2014): 25 sectors. Four pillars: New Processes, Infrastructure, Sectors, Mindset. EoDB: 142 (2014) to 63 (2020).",
+    "India Semiconductor Mission: Rs 76,000 crore. Micron (Gujarat OSAT), Tata (Dholera fab + Assam OSAT), CG Power OSAT.",
+    "CCI: Section 3 (agreements), Section 4 (dominance abuse), Section 5-6 (mergers). Google penalty Rs 1,337.76 crore (2022).",
+    "Competition Amendment 2023: Deal value threshold Rs 2,000 crore (targets digital acquisitions). Settlement/commitment framework.",
+    "DMIC (Delhi-Mumbai Industrial Corridor): 1,504 km along DFC. JICA funding. 24 nodes, 8 smart cities.",
+    "11 industrial corridors, 32 projects. PM Gati Shakti: GIS master plan for 16 ministries. 1,500+ data layers.",
+    "268 operational SEZs. Cumulative exports Rs 22.5 lakh crore. 27 lakh employed. Most are IT/ITES focused.",
+    "Udyam Registration: Online MSME registration (Aadhaar+PAN). 2.8+ crore registrations. Replaced UAM.",
+    "CGTMSE: Collateral-free loans up to Rs 5 crore for MSEs. SAMADHAAN: Delayed payment monitoring portal.",
+    "Aatmanirbhar Bharat: Rs 20 lakh crore package (2020). ECLGS: Rs 5 lakh crore credit. 1.19 crore borrowers.",
+    "Defence production: Rs 1.27 lakh crore (FY24). Exports Rs 21,083 crore. FDI: 74% automatic, 100% govt route.",
+    "Positive Indigenisation Lists: 509 items banned from import — forcing domestic defence procurement.",
+    "LCA Tejas, INS Vikrant, BrahMos, Arjun MBT — landmark indigenous defence platforms.",
+    "Startup India: 1.17 lakh+ recognised startups. 111+ unicorns. 3rd largest ecosystem globally.",
+    "India's R&D spending: 0.65% of GDP (vs Israel 5.4%, S Korea 4.8%, China 2.4%). NRF: Rs 50,000 crore over 5 years.",
+    "Textile industry: 4.5 crore jobs. PM MITRA: 7 mega textile parks. PLI for textiles: Rs 10,683 crore (MMF focus).",
+    "Pharma: 3rd largest by volume. 20% global generic supply. API import dependence on China: 68%. PLI: Rs 15,000 crore.",
+    "Auto: 3rd largest market. EV sales 16 lakh (FY24). PM E-DRIVE replaced FAME II. PLI for ACC batteries: Rs 18,100 crore.",
+    "Steel: 2nd largest producer (144 MT). Target 300 MT by 2030-31. PLI for specialty steel: Rs 6,322 crore.",
+    "Food processing: Only ~10% food processed (vs 65-70% in developed). PM SAMPADA, Mega Food Parks (42), PLI Rs 10,900 crore.",
+    "IIP: Mining (14.4%), Manufacturing (77.6%), Electricity (8%). Base year 2011-12. 8 Core Industries: 40.27% of IIP weight.",
+    "Mining: Coal 908 MT (FY24). DMF: 30% of royalty for mining-affected areas. Rs 74,000 crore collected.",
+    "Critical minerals: Lithium in J&K (5.9 MT). KABIL for overseas acquisition. Auction-based allocation since 2015.",
+    "Manufacturing share of GDP: ~17% — stagnant for 2 decades. Target 25% under National Manufacturing Policy.",
+    "CPSEs: 389 total, 265 operational. 12 Maharatnas. Air India privatised (Tata, 2022). LIC IPO Rs 20,557 crore.",
+    "Jan Vishwas Act 2023: Decriminalised 183 offences across 42 Acts — reducing fear factor for businesses.",
+    "SPICe+: Integrated company incorporation — DIN, PAN, TAN, EPFO, ESIC, GST in single form. 2 days vs 30 days earlier.",
+    "IBC 2016: Creditor-friendly resolution. Average 330 days (vs 4.3 years before). Recovery rate: 36% (up from 26%).",
+    "Patent filings: 83,000+ (FY24). Section 3(d): Prevents evergreening. Novartis Glivec case (2013) upheld India's right.",
+    "PM Jan Aushadhi Kendras: 10,000+ stores. Generic medicines at 50-90% discount. NPPA controls essential medicine prices.",
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "MSME Classification (Revised 2020)",
-      "headers": [
-        "Category",
-        "Investment Limit",
-        "Turnover Limit"
+      title: "MSME Classification (Revised 2020)",
+      headers: ["Category", "Investment Limit", "Turnover Limit"],
+      rows: [
+        ["Micro", "Up to Rs 1 crore", "Up to Rs 5 crore"],
+        ["Small", "Up to Rs 10 crore", "Up to Rs 50 crore"],
+        ["Medium", "Up to Rs 50 crore", "Up to Rs 250 crore"],
       ],
-      "rows": [
-        [
-          "Micro",
-          "Up to Rs 1 crore",
-          "Up to Rs 5 crore"
-        ],
-        [
-          "Small",
-          "Up to Rs 10 crore",
-          "Up to Rs 50 crore"
-        ],
-        [
-          "Medium",
-          "Up to Rs 50 crore",
-          "Up to Rs 250 crore"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "MSME Limits — \"1-5, 10-50, 50-250\"",
-      "mnemonic": "Micro: 1 cr investment/5 cr turnover. Small: 10/50. Medium: 50/250.",
-      "explanation": "Investment AND turnover criteria (whichever is higher determines category). Both manufacturing and services have same limits (distinction removed in 2020). Udyam Registration is the portal."
-    }
-  ]
+      title: "Industrial Policy Evolution",
+      headers: ["Policy", "Year", "Key Feature", "Ideology"],
+      rows: [
+        ["IPR 1948", "1948", "Mixed economy, 4 categories", "Nehruvian socialism"],
+        ["IPR 1956", "1956", "3 Schedules (A/B/C), Mahalanobis model", "Socialist pattern"],
+        ["IPR 1977", "1977", "Small-scale emphasis, decentralisation", "Gandhian"],
+        ["IPR 1991", "1991", "De-licensing, FDI, disinvestment", "Liberalisation"],
+      ],
+    },
+    {
+      title: "PLI Scheme — Key Sectors",
+      headers: ["Sector", "Outlay (Rs Cr)", "Key Outcome"],
+      rows: [
+        ["Mobile/Electronics", "40,951", "India: 2nd largest phone manufacturer"],
+        ["Auto/ACC Batteries", "44,038", "EV supply chain development"],
+        ["Pharma", "15,000", "Reducing API import dependence"],
+        ["Specialty Steel", "6,322", "Import substitution"],
+        ["Textiles", "10,683", "MMF/technical textiles push"],
+        ["Food Processing", "10,900", "Value addition, MSME support"],
+      ],
+    },
+    {
+      title: "CCI Major Penalty Cases",
+      headers: ["Entity", "Year", "Penalty (Rs Crore)", "Violation"],
+      rows: [
+        ["Cement cartel", "2012", "6,307 (modified)", "Price fixing/cartel"],
+        ["Google (Android)", "2022", "1,337.76", "Abuse of dominant position"],
+        ["Google (PlayStore)", "2022", "936", "Anti-competitive billing"],
+        ["Coal India", "2014", "1,773 (set aside)", "Unfair conditions"],
+      ],
+    },
+    {
+      title: "Maharatna vs Navratna vs Miniratna CPSEs",
+      headers: ["Feature", "Maharatna", "Navratna", "Miniratna"],
+      rows: [
+        ["Number", "12", "14", "128 (Cat I+II)"],
+        ["Investment limit", "Rs 5,000 crore/project", "Rs 1,000 crore/project", "Rs 500 crore (Cat I)"],
+        ["Examples", "ONGC, NTPC, IOC, Coal India", "HAL, NHPC, NLC", "Various"],
+        ["Criteria", "3 yr profit, networth Rs 15,000 cr", "60 out of 100 score", "Profit for 3 years"],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: "MSME Limits — '1-5, 10-50, 50-250'",
+      mnemonic: "Micro: 1 cr investment/5 cr turnover. Small: 10/50. Medium: 50/250.",
+      explanation: "Investment AND turnover criteria (whichever is higher determines category). Both manufacturing and services have same limits (distinction removed in 2020).",
+    },
+    {
+      title: "IPR 1956 Schedules — 'ABC-17-12-Rest'",
+      mnemonic: "Schedule A: 17 industries (state exclusive). Schedule B: 12 (state + private). Schedule C: Rest (private)",
+      explanation: "The 'economic constitution of India' based on Mahalanobis model. Dominated industrial policy for 35 years until 1991 reforms.",
+    },
+    {
+      title: "1991 Reforms — 'DLDF'",
+      mnemonic: "De-Licensing, De-reservation (public sector), Disinvestment, FDI liberalisation",
+      explanation: "Four pillars of the New Industrial Policy 1991 that ended the Licence Raj and opened India's economy.",
+    },
+    {
+      title: "PLI Sectors — 'Mobile Pharma Auto Solar'",
+      mnemonic: "Mobile phones, Pharma, Auto+ACC, Solar PV, Telecom, Food, Textiles, Steel, White goods, Drones, Semiconductor — 14 total",
+      explanation: "14 PLI sectors with Rs 1.97 lakh crore total outlay. Mobile/electronics is the largest beneficiary.",
+    },
+    {
+      title: "CCI Sections — '3-4-5'",
+      mnemonic: "Section 3: Anti-competitive agreements, Section 4: Abuse of dominance, Section 5-6: Mergers",
+      explanation: "Three mandates in ascending section numbers. Section 3 covers cartels (presumed AAEC) and vertical agreements (rule of reason).",
+    },
+  ],
 }

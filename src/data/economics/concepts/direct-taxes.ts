@@ -51,5 +51,5 @@ export const directTaxesConcept: SubjectConcept = {
   ],
   examTags: ['UPSC CSE', 'SSC CGL', 'SSC CHSL', 'IBPS PO', 'RRB NTPC', 'CDS', 'State PSCs'],
   examRelevance:
-    'Direct taxes are extensively tested across all exams. UPSC Prelims asks about MAT, DDT abolition, GAAR, capital gains regime, and DTAA provisions. Budget-related changes (new regime, slab changes) are standard current affairs questions. SSC CGL and CHSL test basic concepts — heads of income, TDS, PAN, assessment year vs previous year. IBPS PO asks about CBDT, corporate tax rates, and recent amendments. UPSC Mains GS Paper 3 has questions on tax reforms, black money measures, and international taxation.',
+    'Direct taxes are extensively tested across all exams. UPSC Prelims asks about MAT, DDT abolition, GAAR, capital gains regime, DTAA provisions, and Pillar 1/Pillar 2 global tax framework. Budget-related changes (new regime, slab changes, capital gains overhaul) are standard current affairs questions. SSC CGL and CHSL test basic concepts — heads of income, TDS, PAN, assessment year vs previous year. IBPS PO asks about CBDT, corporate tax rates, and recent amendments. UPSC Mains GS Paper 3 has questions on tax reforms, black money measures, international taxation, and the direct-to-indirect tax ratio.',
 }

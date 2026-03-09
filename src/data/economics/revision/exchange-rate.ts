@@ -1,61 +1,127 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const exchangeRateRevision: SubjectRevision = {
-  "topic": "exchange-rate",
-  "bullets": [
-    "India follows managed float (dirty float) since 1993 — market-determined with RBI intervention.",
-    "Rupee devalued ~20% in July 1991 (two steps) during BoP crisis.",
-    "Current account convertibility achieved in 1994. Capital account: partial convertibility.",
-    "FEMA 1999 replaced FERA 1973 — shift from conservation to management. FEMA violations are civil offences.",
-    "Forex reserves: ~$640 billion (early 2025). Components: FCAs (~95%), Gold, SDRs, IMF reserve position.",
-    "Import cover = Forex Reserves / Monthly imports. India: ~10 months (comfortable: 3-6 months).",
-    "REER >100: Currency overvalued (exports less competitive). REER <100: Undervalued.",
-    "Appreciation: Rupee strengthens (82→80/dollar). Depreciation: Rupee weakens (80→82/dollar).",
-    "Tarapore Committee-I (1997) and II (2006) recommended full capital account convertibility — not yet achieved.",
-    "Masala Bonds: Rupee-denominated bonds issued overseas — exchange rate risk on investor."
+  topic: 'exchange-rate',
+  bullets: [
+    'India follows managed float (dirty float) since 1993 — market-determined with RBI intervention to curb volatility.',
+    'Exchange rate history: Fixed to GBP (1947-71) → Basket peg (1975) → LERMS dual rate (1992) → Unified managed float (1993).',
+    'Rupee devalued 36.5% in 1966 (Rs 4.76 → Rs 7.50/$). Devalued ~20% in July 1991 (two steps) during BoP crisis.',
+    'Current account convertibility achieved in 1994 under Article VIII of IMF. Capital account: partial convertibility.',
+    'FEMA 1999 replaced FERA 1973 — conservation → management. FEMA violations are civil offences (FERA: criminal).',
+    'Forex reserves: ~$640 billion (early 2025). Components: FCAs (~93%), Gold (~8-9%, 854 tonnes), SDRs, IMF reserve position.',
+    'Reserves peaked at ~$705 billion (September 2021). Declined due to RBI\'s $100B+ dollar sales to defend rupee (2022-23).',
+    'Import cover = Forex Reserves / Monthly imports. India: ~10 months. Comfortable level: 3-6 months.',
+    'Guidotti-Greenspan rule: Reserves should cover 100% of short-term debt. India: reserves cover 445% of short-term debt.',
+    'REER > 100: Currency overvalued (exports less competitive). REER < 100: Undervalued (exports more competitive).',
+    'Appreciation: Rupee strengthens (82→80/$) — imports cheaper, exports costlier. Depreciation: opposite.',
+    'Devaluation = deliberate government action. Depreciation = market-driven weakening. Key conceptual distinction.',
+    'Tarapore Committee-I (1997): Full CAC with preconditions (FD <3.5%, inflation 3-5%, NPA <5%). Committee-II (2006): Revised roadmap.',
+    'Masala Bonds: Rupee-denominated bonds issued overseas — exchange rate risk on investor, not issuer. HDFC, NTPC issued.',
+    'Taper Tantrum (2013): Rupee fell Rs 54 → Rs 68.85 (26%). India in "Fragile Five." FCNR(B) swap attracted $34 billion.',
+    'RBI intervenes via: Spot market (buy/sell dollars), Forward market, NDF market (offshore), Swap auctions, Interest rates.',
+    'Sterilisation: RBI buys dollars → injects rupee liquidity → sells G-Secs (OMO) to absorb excess liquidity. Cost to government.',
+    'Market Stabilisation Scheme (MSS, 2004): Special bonds for sterilisation. Separates monetary policy from forex management.',
+    'LRS (Liberalised Remittance Scheme): $250,000/year for residents for current/capital account transactions. TCS 5-20%.',
+    'Rupee internationalisation: RBI\'s rupee trade settlement framework (July 2022). Special Rupee Vostro Accounts (SRVAs).',
+    'SRVAs opened by banks from Russia, Sri Lanka for rupee trade. Gained urgency post-Western sanctions on Russia (2022).',
+    'Bilateral swaps: India-Japan $75 billion (largest globally). BRICS CRA $100 billion (India: $18B).',
+    'Impossible Trinity: Cannot have fixed exchange rate + free capital mobility + independent monetary policy simultaneously.',
+    'India chose: Independent monetary policy + managed float + partial capital mobility.',
+    'PPP: India GDP $3.7T (market rate) vs $14.6T (PPP) — 3rd largest at PPP. Big Mac Index: rupee 59% undervalued.',
+    'Rupee trajectory: Rs 31/$ (1993) → Rs 44 (2000) → Rs 48 (2010) → Rs 62 (2015) → Rs 74 (2020) → Rs 85 (2025).',
+    'Long-term depreciation trend: 3-4% annually due to India-US inflation differential (Balassa-Samuelson effect).',
+    'CBDC — Digital Rupee: Wholesale e₹-W (Nov 2022, G-Sec settlement), Retail e₹-R (Dec 2022, P2P/P2M). 5M+ users.',
+    'Currency derivatives: USD-INR futures/options on NSE/BSE. Hedging instruments for exporters/importers.',
+    'NEER: Nominal weighted exchange rate vs trading partners. REER: NEER adjusted for relative inflation. RBI publishes 6- and 40-currency baskets.',
+    'Oil price impact: $10/barrel increase adds ~$15 billion to import bill, ~0.4% to CAD, weakens rupee.',
+    'RBI gold purchases: Bought 80+ tonnes in 2024 alone. Diversification from dollar assets + geopolitical hedge.',
+    'India remittances: $125 billion (FY24) — world\'s largest. Counter-cyclical: NRIs send more when rupee depreciates.',
+    'Dollar Index (DXY): When DXY rises, most EM currencies including rupee weaken — independent of India\'s fundamentals.',
+    'INR not in SDR basket (USD 43.38%, EUR 29.31%, CNY 12.28%, JPY 7.59%, GBP 7.44%). Requires fuller CAC and deeper forex market.',
+    'Asian Clearing Union (ACU): India settles trade with 8 member countries using ACU dollar — reduces USD dependency.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "FERA vs FEMA",
-      "headers": [
-        "Feature",
-        "FERA (1973)",
-        "FEMA (1999)"
+      title: 'FERA vs FEMA',
+      headers: ['Feature', 'FERA (1973)', 'FEMA (1999)'],
+      rows: [
+        ['Approach', 'Conservation of forex', 'Management of forex'],
+        ['Violations', 'Criminal offence (arrest)', 'Civil offence (penalty)'],
+        ['Objective', 'Restrict forex outflows', 'Facilitate external trade/payments'],
+        ['Current account', 'Restricted', 'Fully convertible (1994)'],
+        ['Capital account', 'Highly restricted', 'Partially liberalised'],
+        ['Enforcement', 'Police/courts', 'Enforcement Directorate (ED), ATFE'],
       ],
-      "rows": [
-        [
-          "Approach",
-          "Conservation of forex",
-          "Management of forex"
-        ],
-        [
-          "Violations",
-          "Criminal offence",
-          "Civil offence"
-        ],
-        [
-          "Objective",
-          "Restrict forex outflows",
-          "Facilitate external trade/payments"
-        ],
-        [
-          "Current account",
-          "Restricted",
-          "Fully convertible"
-        ],
-        [
-          "Capital account",
-          "Highly restricted",
-          "Partially liberalised"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Exchange Rate Timeline — \"Fixed → Basket → Float\"",
-      "mnemonic": "1947-71: Fixed to GBP. 1975: Basket. 1993: Managed Float",
-      "explanation": "India's exchange rate evolution: Fixed rate pegged to British Pound (1947-71), then to a basket of currencies (1975), and finally a market-determined managed float (1993). The 1991 devaluation was the pivot."
-    }
-  ]
+      title: 'Fixed vs Floating vs Managed Float',
+      headers: ['Feature', 'Fixed', 'Floating', 'Managed Float (India)'],
+      rows: [
+        ['Rate determination', 'Government/central bank', 'Market forces', 'Market + CB intervention'],
+        ['Reserve need', 'Large', 'Minimal', 'Moderate-large'],
+        ['Monetary policy', 'Constrained', 'Independent', 'Independent'],
+        ['Volatility', 'Low (but crisis-prone)', 'High', 'Moderate'],
+        ['Example', 'Hong Kong, Saudi Arabia', 'USA, UK', 'India, China'],
+      ],
+    },
+    {
+      title: 'Devaluation vs Depreciation',
+      headers: ['Feature', 'Devaluation', 'Depreciation'],
+      rows: [
+        ['Action', 'Deliberate government/CB action', 'Market-driven'],
+        ['Exchange regime', 'Fixed rate system', 'Floating/managed float'],
+        ['Trigger', 'Policy decision', 'Supply-demand forces'],
+        ['India example', '1966, 1991 (devaluation)', '2013, 2022 (depreciation)'],
+      ],
+    },
+    {
+      title: 'NRI Deposit Types',
+      headers: ['Feature', 'FCNR(B)', 'NRE', 'NRO'],
+      rows: [
+        ['Currency', 'Foreign currency', 'Indian rupee', 'Indian rupee'],
+        ['Repatriability', 'Fully repatriable', 'Fully repatriable', 'Conditionally ($1M/year)'],
+        ['Tax on interest', 'Tax-free in India', 'Tax-free in India', 'Taxable in India'],
+        ['Deposit type', 'Fixed (1-5 years)', 'Savings/Fixed', 'Savings/Fixed'],
+        ['Exchange risk', 'Borne by bank', 'Borne by depositor', 'Borne by depositor'],
+        ['Outstanding', '~$28 billion', '~$113 billion', '~$16 billion'],
+      ],
+    },
+    {
+      title: 'NEER vs REER',
+      headers: ['Feature', 'NEER', 'REER'],
+      rows: [
+        ['Adjustment', 'No inflation adjustment', 'Adjusted for relative inflation'],
+        ['Measures', 'Nominal competitiveness', 'Real competitiveness'],
+        ['Interpretation', 'Trade-weighted exchange rate', 'True price competitiveness'],
+        ['India value', 'Declining trend (depreciation)', 'Above 100 (mildly overvalued)'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Exchange Rate Timeline — "Fixed → Basket → Float"',
+      mnemonic: '1947-71: Fixed to GBP. 1975: Basket. 1992: LERMS. 1993: Managed Float',
+      explanation: 'India\'s exchange rate evolution through four phases. The 1991 devaluation was the pivot. LERMS (1992) was the transition (40:60 dual rate) before full managed float (1993).',
+    },
+    {
+      title: 'Forex Reserve Components — "FoGS-R"',
+      mnemonic: 'F: Foreign Currency Assets (93%). G: Gold (8%). S: SDRs. R: Reserve Tranche Position (IMF)',
+      explanation: 'Four components of India\'s forex reserves. FCAs dominate. Gold share has been rising (RBI buying 80+ tonnes/year). SDRs are IMF allocation.',
+    },
+    {
+      title: 'Impossible Trinity — "Fix-Free-Float"',
+      mnemonic: 'Cannot have all three: Fixed exchange rate, Free capital mobility, Independent monetary policy',
+      explanation: 'Mundell-Fleming trilemma. India chose independent monetary policy + managed float (partial capital mobility as adjustment variable).',
+    },
+    {
+      title: 'Tarapore Preconditions — "FIN"',
+      mnemonic: 'F: Fiscal deficit <3.5%. I: Inflation 3-5%. N: NPA <5%',
+      explanation: 'Tarapore Committee-I (1997) preconditions for full capital account convertibility. None fully met even today — hence partial CAC.',
+    },
+    {
+      title: 'Major Rupee Crises — "66-91-13-22"',
+      mnemonic: '1966: Devaluation (36.5%). 1991: BoP crisis (20%). 2013: Taper Tantrum (26%). 2022: Russia-Ukraine (15%)',
+      explanation: 'Four major exchange rate stress episodes. Each triggered policy innovation — 1966 led to import substitution, 1991 to LPG, 2013 to FCNR swap, 2022 to rupee trade settlement.',
+    },
+  ],
 }

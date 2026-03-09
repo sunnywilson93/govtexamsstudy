@@ -1,51 +1,145 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const governmentSchemesRevision: SubjectRevision = {
-  "topic": "government-schemes",
-  "bullets": [
-    "MGNREGA (2006): 100 days wage guarantee. Demand-driven. 15-day limit. 60:40 wage-material ratio.",
-    "PM-KISAN (2019): Rs 6,000/year in 3 instalments. All farmer families. DBT to bank accounts.",
-    "Mudra (PMMY, 2015): Shishu (≤Rs 50K), Kishore (50K-5L), Tarun (5L-10L). Collateral-free.",
-    "Jan Dhan (2014): Zero-balance, RuPay card, Rs 1L accident cover, Rs 30K life cover. 51+ crore accounts.",
-    "Ayushman Bharat PM-JAY (2018): Rs 5L/family/year health cover. ~55 crore beneficiaries. Cashless.",
-    "Ujjwala (2016): Free LPG connections to BPL women. 9+ crore connections (Phase 1+2).",
-    "Sukanya Samriddhi: Girl child savings. ~8.2% interest. EEE tax status.",
-    "PMFBY (2016): Crop insurance — 2% kharif, 1.5% rabi, 5% commercial.",
-    "Jal Jeevan Mission (2019): Piped water (55 lpcd) to every rural household.",
-    "Start-Up India (2016): Tax holiday, Fund of Funds, self-certification. 1 lakh+ recognised start-ups."
+  topic: 'government-schemes',
+  bullets: [
+    'MGNREGA (2006): 100 days guaranteed wage employment per rural household. Demand-driven. 60:40 wage-material ratio. 15-day payment limit.',
+    'MGNREGA: 15+ crore job cards. FY24: Rs 86,000 crore expenditure. 290+ crore person-days generated. Average wage: Rs 230-350/day (state-specific).',
+    'MGNREGA assets: 3+ crore durable assets — water conservation (50%+), rural connectivity, land development. Social audit mandatory.',
+    'PM-KISAN (2019): Rs 6,000/year in 3 instalments (Rs 2,000 each). All landholding farmer families. DBT to bank accounts. 11+ crore beneficiaries.',
+    'PM-KISAN exclusions: Income taxpayers, institutional landholders, govt employees, professionals (doctors, engineers, lawyers, CAs). Total disbursement: Rs 3+ lakh crore.',
+    'Mudra (PMMY, 2015): Shishu (up to Rs 50K), Kishore (50K-5L), Tarun (5L-10L). Collateral-free. 45+ crore loans, Rs 27+ lakh crore disbursed. 68% to women.',
+    'Jan Dhan (PMJDY, 2014): Zero-balance, RuPay card, Rs 2L accident cover, Rs 30K life cover. 51+ crore accounts. Rs 2.2+ lakh crore deposits. Overdraft Rs 10,000.',
+    'JAM Trinity: Jan Dhan + Aadhaar + Mobile. Enables DBT (Direct Benefit Transfer). Rs 36+ lakh crore transferred since 2014. Saved Rs 3.14+ lakh crore (leakage reduction).',
+    'Ayushman Bharat PM-JAY (2018): Rs 5 lakh/family/year health cover. 55+ crore beneficiaries (bottom 40%). 29,000+ empanelled hospitals. 7+ crore treatments.',
+    'Ayushman Bharat: Two pillars — (1) PM-JAY (insurance for hospitalisation) + (2) Health & Wellness Centres (1.6 lakh HWCs — primary care, renamed Ayushman Arogya Mandirs).',
+    'Ujjwala (2016): Free LPG connections to BPL women. Phase 1: 8 crore (2016-19). Phase 2: 1 crore (2021). Total 9.6+ crore. Refill challenge: 3.01 average refills vs 7 target.',
+    'Ujjwala debate: Low refill rates indicate continued biomass use. Affordability barrier — Rs 900+ per cylinder. Subsidy: Rs 200/cylinder for Ujjwala beneficiaries (12 cylinders/year).',
+    'Sukanya Samriddhi Yojana (2015): Girl child savings (0-10 years). 8.2% interest (Q1 FY25). Min Rs 250/year. Max Rs 1.5 lakh/year. 21-year maturity. EEE tax status.',
+    'PMFBY (2016): Crop insurance — 2% premium kharif, 1.5% rabi, 5% commercial/horticultural. Government bears remaining premium. Claim-to-premium ratio: 87.7%.',
+    'PMFBY reforms: Voluntary for loanee farmers (2020). Remote sensing + AI for crop cutting experiments. 28 crore+ farmer applications (2016-24). State exits: Bihar, WB, Gujarat (partial).',
+    'Jal Jeevan Mission (2019): Piped water (55 lpcd) to every rural household by 2024. 75% coverage achieved (15.2 crore connections out of 19.4 crore). Rs 3.6 lakh crore outlay.',
+    'Swachh Bharat Mission (2014): ODF (Open Defecation Free) achieved 2019. 12+ crore toilets built. Phase 2: ODF Plus (solid/liquid waste management). 1.5 lakh villages ODF Plus.',
+    'PM Awas Yojana (2015): Affordable housing. Gramin: 2.95 crore houses sanctioned (Rs 1.2-1.3 lakh per unit in plains). Urban: 1.18 crore houses sanctioned. Interest subsidy 3-6.5%.',
+    'PMAY-G: Rs 1.20 lakh (plains), Rs 1.30 lakh (hilly/difficult). 90-95 days MGNREGA convergence. Geo-tagged construction monitoring. Houses in woman\'s name or joint.',
+    'Stand-Up India (2016): Loans Rs 10 lakh-1 crore for SC/ST and women entrepreneurs. 1 SC/ST + 1 woman per bank branch. Manufacturing, services, trading, agri-allied.',
+    'Start-Up India (2016): Tax holiday (Section 80-IAC, 3 years), Fund of Funds via SIDBI (Rs 10,000 crore), angel tax abolished (2024). 1.4 lakh+ recognised start-ups.',
+    'PLI Scheme (2020): 14 sectors. Rs 1.97 lakh crore outlay. 4-6% incentive on incremental sales for 5 years. Key success: Apple iPhone manufacturing in India ($7B+ exports).',
+    'Skill India (2015): PMKVY (Pradhan Mantri Kaushal Vikas Yojana) — short-term training (STT) + Recognition of Prior Learning (RPL). 1.4+ crore trained. NSQF (National Skills Qualification Framework).',
+    'Digital India (2015): BharatNet (fibre to 6 lakh villages), DigiLocker (30+ crore users), UMANG app (1,700+ services), UPI (14 billion transactions/month, Rs 20+ lakh crore/month).',
+    'Make in India (2014): 25 focus sectors. Manufacturing share target: 25% of GDP (current: 17%). FDI inflows: $700+ billion (2000-24). Limited manufacturing growth; services still dominate.',
+    'National Education Policy (NEP 2020): 5+3+3+4 structure. Multidisciplinary. GER target: 50% by 2035 (current: 28%). Vernacular instruction. Academic Bank of Credits. NHERC as single regulator.',
+    'Atal Pension Yojana (APY, 2015): Guaranteed pension Rs 1,000-5,000/month (age 60+). Unorganised sector. 5.6+ crore subscribers. Government co-contribution (for those without IT/social security).',
+    'PM SVANidhi (2020): Micro-credit for street vendors — Rs 10,000 (1st), Rs 20,000 (2nd), Rs 50,000 (3rd tranche). 7% interest subsidy. Digital payment incentive. 65+ lakh loans.',
+    'UDAN (2016): Regional Connectivity Scheme — subsidised air fares (Rs 2,500/hour for 500 km). 500+ routes awarded. 1 crore+ passengers. 74 airports activated (including helipads, water aerodromes).',
+    'Aspirational Districts Programme (2018, NITI Aayog): 112 backward districts. Real-time ranking on 49 KPIs (health, education, agriculture, infrastructure, financial inclusion). Delta ranking approach.',
+    'PM Vishwakarma (2023): Support for 18 traditional crafts (carpenters, blacksmiths, goldsmiths, potters, etc.). Collateral-free loans up to Rs 3 lakh. Skill training. Digital empowerment.',
+    'SVAMITVA (2020): Drone-based mapping of rural residential areas. Property cards to village households. 2.35+ crore property cards distributed. Enables bank loans against rural property.',
+    'PM Surya Ghar (2024): Free electricity via rooftop solar. 1 crore households target. 300 units/month free. Central subsidy Rs 30,000-78,000. Net metering for surplus.',
+    'National Health Mission (NHM): Covers NRHM (rural) + NUHM (urban). ASHAs (10.5 lakh), ANMs. Immunisation (MR campaign — 41 crore children). JSY — institutional deliveries Rs 700-1,400 incentive.',
+    'Saubhagya (2017): Free electricity connections to all willing households. 2.86 crore connections. 100% household electrification declared (March 2019). Follow-up: PM Surya Ghar (2024).',
+    'Lakhpati Didi (2023-24): Target 2 crore rural SHG women to earn Rs 1 lakh+ annually. Part of DAY-NRLM (Deendayal Antyodaya Yojana). 10 crore SHG members across 88 lakh SHGs.',
+    'Viksit Bharat Sankalp Yatra (2023-24): Saturation approach — ensure 100% coverage of 10 key schemes (PM-KISAN, PM-JAY, Ujjwala, PMAY, etc.) at household level.',
+    'PM JANMAN (2024): Rs 24,000 crore for 75 Particularly Vulnerable Tribal Groups (PVTGs). Housing, roads, mobile medical units, Eklavya schools. 5 lakh PVTG families targeted.',
+    'One District One Product (ODOP): District-level cluster approach for local products. 741 districts. Linked to GI tags, export promotion, PLI. Integration with PM Vishwakarma.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Mudra Loan Categories",
-      "headers": [
-        "Category",
-        "Loan Amount",
-        "Target"
+      title: 'Mudra Loan Categories',
+      headers: ['Category', 'Loan Amount', 'Target', 'Share in Disbursement'],
+      rows: [
+        ['Shishu', 'Up to Rs 50,000', 'Start-up/early stage micro-enterprises', '~40% (by accounts, largest)'],
+        ['Kishore', 'Rs 50,001 to Rs 5 lakh', 'Growing micro-enterprises', '~35%'],
+        ['Tarun', 'Rs 5,00,001 to Rs 10 lakh', 'Established small enterprises', '~25% (by amount, largest)'],
       ],
-      "rows": [
-        [
-          "Shishu",
-          "Up to Rs 50,000",
-          "Start-up/early stage micro-enterprises"
-        ],
-        [
-          "Kishore",
-          "Rs 50,001 to Rs 5 lakh",
-          "Growing micro-enterprises"
-        ],
-        [
-          "Tarun",
-          "Rs 5,00,001 to Rs 10 lakh",
-          "Established small enterprises"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Mudra Categories — \"SKT\"",
-      "mnemonic": "Shishu (baby = small loan), Kishore (youth = medium), Tarun (adult = large)",
-      "explanation": "Mudra loans are categorised by growth stage: Shishu (up to Rs 50K) for start-ups, Kishore (50K-5L) for growing, Tarun (5L-10L) for established. Remember: age/size increases from Shishu to Tarun."
-    }
-  ]
+      title: 'Financial Inclusion — Key Schemes',
+      headers: ['Scheme', 'Year', 'Benefit', 'Coverage (2024)'],
+      rows: [
+        ['PM Jan Dhan', '2014', 'Zero-balance bank account + RuPay + insurance', '51+ crore accounts'],
+        ['PM-KISAN', '2019', 'Rs 6,000/year income support', '11+ crore farmers'],
+        ['PM SVANidhi', '2020', 'Rs 10K-50K micro-loans for vendors', '65+ lakh loans'],
+        ['Mudra (PMMY)', '2015', 'Collateral-free Rs 50K-10L loans', '45+ crore loans'],
+        ['Stand-Up India', '2016', 'Rs 10L-1Cr for SC/ST/women', '2+ lakh accounts'],
+        ['APY', '2015', 'Rs 1,000-5,000/month pension', '5.6+ crore subscribers'],
+      ],
+    },
+    {
+      title: 'Social Security Architecture',
+      headers: ['Scheme', 'Sector', 'Benefit Type', 'Coverage'],
+      rows: [
+        ['EPFO', 'Organised', 'Provident fund + pension', '7 crore active subscribers'],
+        ['APY', 'Unorganised', 'Guaranteed pension (Rs 1K-5K)', '5.6 crore subscribers'],
+        ['PM-SYM', 'Unorganised', 'Rs 3,000/month pension (60+)', '46 lakh enrolled'],
+        ['PM-KISAN', 'Farmers', 'Rs 6,000/year income transfer', '11 crore beneficiaries'],
+        ['PM-JAY', 'Bottom 40%', 'Rs 5 lakh health insurance', '55 crore eligible'],
+        ['PMJJBY', 'All (18-50)', 'Rs 2 lakh life insurance (Rs 436/yr)', '16+ crore enrolled'],
+        ['PMSBY', 'All (18-70)', 'Rs 2 lakh accident cover (Rs 20/yr)', '35+ crore enrolled'],
+      ],
+    },
+    {
+      title: 'Housing — PMAY Gramin vs Urban',
+      headers: ['Feature', 'PMAY-Gramin', 'PMAY-Urban'],
+      rows: [
+        ['Target', 'Rural homeless/kutcha houses', 'Urban poor/EWS/LIG/MIG'],
+        ['Assistance', 'Rs 1.20-1.30 lakh (flat grant)', 'Interest subsidy 3-6.5% (CLSS)'],
+        ['Houses sanctioned', '2.95 crore', '1.18 crore'],
+        ['Convergence', 'MGNREGA (90 days), SBM toilet', 'State schemes, PPP'],
+        ['Ownership', 'Woman\'s name or joint', 'Women co-ownership encouraged'],
+        ['Monitoring', 'Geo-tagged photos (AwaasSoft)', 'PMAY-U CLAP portal'],
+      ],
+    },
+    {
+      title: 'Rural Development — Key Schemes',
+      headers: ['Scheme', 'Objective', 'Key Feature', 'Budget (FY25)'],
+      rows: [
+        ['MGNREGA', '100 days wage employment', 'Demand-driven, right to work', 'Rs 86,000 crore'],
+        ['PMAY-G', 'Housing for all (rural)', 'Rs 1.20-1.30 lakh per house', 'Rs 54,500 crore'],
+        ['PMGSY', 'All-weather rural roads', 'Habitations 500+ (250+ in hills)', 'Rs 19,000 crore'],
+        ['DAY-NRLM', 'Livelihoods via SHGs', '88 lakh SHGs, 10 crore women', 'Rs 15,047 crore'],
+        ['Jal Jeevan Mission', 'Piped water to all', '55 lpcd, 15.2 crore connections', 'Rs 70,163 crore'],
+        ['SBM-G Phase 2', 'ODF Plus (waste mgmt)', 'GOBARDHAN, biodegradable waste', 'Rs 7,192 crore'],
+      ],
+    },
+    {
+      title: 'Health Schemes Comparison',
+      headers: ['Scheme', 'Launched', 'Coverage', 'Key Feature'],
+      rows: [
+        ['PM-JAY', '2018', '55 crore (bottom 40%)', 'Rs 5 lakh cashless hospitalisation'],
+        ['JSY', '2005', 'BPL pregnant women', 'Rs 700-1,400 institutional delivery incentive'],
+        ['PMMVY', '2017', 'First live birth', 'Rs 11,000 maternity benefit (DBT, 3 instalments)'],
+        ['RBSK', '2013', 'Children 0-18', 'Screening for 4Ds (defects, diseases, deficiencies, disabilities)'],
+        ['NHM (ASHA)', '2005', 'All rural areas', '10.5 lakh ASHAs — link between community & health system'],
+        ['Mission Indradhanush', '2014', 'All children <2', 'Full immunisation — 12 diseases (added rotavirus, PCV, MR)'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Mudra Categories — "SKT"',
+      mnemonic: 'Shishu (baby = small loan up to Rs 50K), Kishore (youth = medium 50K-5L), Tarun (adult = large 5L-10L)',
+      explanation: 'Mudra loans categorised by growth stage: size increases from Shishu to Tarun. 68% of loans go to women entrepreneurs.',
+    },
+    {
+      title: 'JAM Trinity — "Jan Dhan + Aadhaar + Mobile"',
+      mnemonic: 'J: Jan Dhan (bank account). A: Aadhaar (identity). M: Mobile (connectivity)',
+      explanation: 'JAM trinity enables Direct Benefit Transfer (DBT). Rs 36+ lakh crore transferred, Rs 3.14+ lakh crore saved by eliminating ghost beneficiaries.',
+    },
+    {
+      title: 'Ayushman Bharat — "Two Pillars"',
+      mnemonic: 'Pillar 1: PM-JAY (Rs 5 lakh health insurance). Pillar 2: HWCs / Ayushman Arogya Mandirs (1.6 lakh primary care centres)',
+      explanation: 'Comprehensive healthcare — PM-JAY covers hospitalisation for bottom 40%, HWCs provide preventive + primary care at grassroot level.',
+    },
+    {
+      title: 'MGNREGA Principles — "DWARM"',
+      mnemonic: 'D: Demand-driven (not supply). W: Wage-material 60:40. A: Asset creation focus. R: Right to work (legal guarantee). M: Mandatory social audit',
+      explanation: 'Five core features of MGNREGA that distinguish it from previous wage employment programmes (SGRY, NFWP).',
+    },
+    {
+      title: 'Insurance Trio — "JAY-JJBY-SBY"',
+      mnemonic: 'PM-JAY: Rs 5 lakh health (free). PMJJBY: Rs 2 lakh life (Rs 436/yr). PMSBY: Rs 2 lakh accident (Rs 20/yr)',
+      explanation: 'Three government insurance schemes covering health, life, and accident risks at minimal premium — forming a social security net for the poor.',
+    },
+  ],
 }

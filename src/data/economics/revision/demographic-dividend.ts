@@ -1,61 +1,130 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const demographicDividendRevision: SubjectRevision = {
-  "topic": "demographic-dividend",
-  "bullets": [
-    "Demographic Dividend: Working-age (15-64) > dependent population → growth potential.",
-    "India surpassed China as most populous country (April 2023). ~1.44 billion.",
-    "India's working-age: ~68%. Dependency ratio: ~44 (declining). Dividend window: ~2005-2060.",
-    "TFR: 2.0 (NFHS-5, 2019-21) — below replacement level (2.1) for first time.",
-    "Census 2011: 1.21 billion, literacy 73%, sex ratio 943, urbanisation 31.16%. Census 2021 postponed.",
-    "Public spending on education: ~3% GDP. NEP 2020 targets 6%.",
-    "Only 5% of India's workforce has formal vocational training (vs 52% in USA).",
-    "India's remittances: $125 billion (2023) — highest in the world.",
-    "HDI 0.644. IMR 28/1000. MMR 97/100,000. Life expectancy 70.19 years.",
-    "India is 3rd largest producer of pharma by volume — 'Pharmacy of the world' for generics."
+  topic: 'demographic-dividend',
+  bullets: [
+    'Demographic Dividend: Working-age (15-64) > dependent population → economic growth potential. Coined by David Bloom. Dividend is not automatic — requires investment in health, education, jobs.',
+    'India surpassed China as most populous country (April 2023, UN estimate). ~1.44 billion. India adds ~10 million to working-age population annually.',
+    'India\'s working-age population: ~68% (950 million). Dependency ratio: ~44 (declining). Dividend window: ~2005-2060 (35 years). Peak working-age share: ~2035.',
+    'Demographic Transition Theory: Stage 1 (high birth/death rates) → Stage 2 (death rate falls) → Stage 3 (birth rate falls) → Stage 4 (low birth/death). India is in late Stage 3.',
+    'TFR: 2.0 (NFHS-5, 2019-21) — below replacement level (2.1) for first time. Urban TFR: 1.6. Rural: 2.1. Bihar: 2.98, Kerala: 1.8.',
+    'Census 2011: 1.21 billion, literacy 73%, sex ratio 943 (940 in Census 2001), child sex ratio 914, urbanisation 31.16%. Census 2021 postponed (COVID).',
+    'Population growth rate declining: 2.14% (1971-81) → 1.64% (2001-11) → estimated 0.9% (2024). India\'s population projected to peak at ~1.7 billion by 2060s.',
+    'NFHS-5 (2019-21) key findings: TFR 2.0, overall sex ratio 1020 (female > male for first time), IMR 35.2, Under-5 mortality 41.9, stunting 35.5%, anaemia women 57%.',
+    'HDI 0.644, rank 134 (UNDP 2024). IMR 28/1000 (SRS 2020). MMR 97/100,000 (SRS 2018-20). Life expectancy: 70.19 years (Male 68.5, Female 71.8).',
+    'India\'s LFPR (Labour Force Participation Rate): 57.9% (PLFS 2022-23, 15+ years). Male: 78.5%. Female: 37.0% (rising from 23.3% in 2017-18 — significant improvement).',
+    'Female LFPR U-shaped hypothesis: Initially high (agriculture), drops with initial urbanisation/education, rises again with higher education and service economy. India at the turning point.',
+    'Only 5% of India\'s workforce has formal vocational training (vs 52% in USA, 75% in Germany, 96% in South Korea). Skill India (2015): Target 40 crore by 2022.',
+    'PMKVY (Pradhan Mantri Kaushal Vikas Yojana): Flagship skill programme. 1.4+ crore enrolled across PMKVY 1.0 (2015), 2.0 (2016), 3.0 (2020), 4.0 (2023).',
+    'NEP 2020 targets: 6% GDP on education (current ~3%), GER 50% by 2035 (current ~28%), multidisciplinary institutions, vocational integration from Class 6.',
+    'ASER 2022: 25.1% of Class 8 students cannot read Class 2 text. Learning poverty is India\'s core education challenge — not enrolment.',
+    'India\'s remittances: $125 billion (2023) — highest in the world. Sources: UAE (32%), US (23%), Saudi Arabia (14%). Remittances = 3.4% of GDP.',
+    'India is 3rd largest producer of pharma by volume — "Pharmacy of the world" for generics. Supplies 60% of global vaccines. 20% of global generics.',
+    'India\'s IT/ITES sector: $254 billion revenue (FY24). 5.4 million direct employees. 1,600+ Global Capability Centres (GCCs) — largest outside USA.',
+    'Regional demographic divide: South + West (below replacement TFR, ageing) vs North (Bihar, UP, MP — still young, higher TFR). By 2036, southern states will have 18%+ elderly.',
+    'Migration: Inter-state migrants ~45 crore (Census 2011). Remittances from internal migration underestimated. e-Shram portal: 30+ crore unorganised workers registered.',
+    'Urbanisation: 31.16% (2011) → ~36% (2024 estimate). 100 Smart Cities Mission (2015). AMRUT: urban infra for 500 cities. PMAY-U: Housing for All.',
+    'India\'s urbanisation is lower than peers: China 65%, Brazil 87%, Indonesia 58%. Urban transition will accelerate dividend — need 700-900 million square metres of commercial space by 2030.',
+    'Ageing: India\'s 60+ population: 10.5% (2021) → projected 20.8% by 2050. No universal old-age pension. IGNOAPS: Rs 200/month (abysmally low). Atal Pension Yojana: 5.3 crore subscribers.',
+    'Japan/South Korea captured dividend through export-oriented manufacturing + mass education. East Asian Tigers: dividend explains 30-40% of their miracle growth.',
+    'India risks "getting old before getting rich" if employment not generated. Need 8-10 million non-farm jobs/year. Manufacturing share of employment stuck at ~12%.',
+    'Nutrition challenge: 35.5% children under 5 are stunted, 19.3% wasted, 32.1% underweight (NFHS-5). Anaemia: 57% women, 67% children. Cognitive impact = demographic disaster.',
+    'POSHAN Abhiyaan (PM\'s Overarching Scheme for Holistic Nutrition, 2018): Target 2% reduction in stunting/year. Integrated Child Development Services (ICDS) is delivery backbone.',
+    'India\'s GER (Gross Enrolment Ratio): Primary 104%, Secondary 79%, Higher Education 28.4% (AISHE 2021-22). States vary: Tamil Nadu 51%, Bihar 14%.',
+    'Gig economy: 7.7 million gig workers (2020-21, NITI Aayog). Projected 23.5 million by 2029-30. Code on Social Security 2020 provides framework but not fully notified.',
+    'India\'s employment structure: 45.8% self-employed, 22% casual labour, 24.4% regular wage/salaried (PLFS 2022-23). High informality = low productivity.',
+    'PLI (Production Linked Incentive) scheme across 14 sectors — Rs 1.97 lakh crore outlay to boost manufacturing employment. Mobile phones: $15 billion+ exports achieved.',
+    'Brain drain vs brain gain: 18 million Indian diaspora globally. 38% of doctors in USA are Indian-origin. Reverse brain drain increasing — returnees to startups.',
+    'India adds 2.5 crore children to education system annually. Quality of education, not just access, determines whether dividend is captured or wasted.',
+    'PLFS (Periodic Labour Force Survey): Annual by NSO. Key labour market data source. Replaced 5-yearly Employment-Unemployment surveys. Quarterly bulletin for urban areas.',
+    'Youth unemployment (15-24): 10.3% (PLFS 2022-23) — lower than earlier but disguised unemployment in agriculture remains high. Graduate unemployment: ~15%.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "India's Demographic Dividend vs China",
-      "headers": [
-        "Feature",
-        "India",
-        "China"
+      title: 'India\'s Demographic Dividend vs China',
+      headers: ['Feature', 'India', 'China'],
+      rows: [
+        ['Population (2024)', '~1.44 billion (1st)', '~1.42 billion (2nd)'],
+        ['Median age', '~28 years', '~39 years'],
+        ['Working-age trend', 'Expanding until ~2055', 'Already declining since 2015'],
+        ['TFR', '2.0 (below replacement)', '1.0 (well below replacement — crisis)'],
+        ['Dividend window', '2005-2060 (35 years)', 'Already closing (1980-2015)'],
+        ['Policy response', 'Skill India, NEP, PLI', 'Reversed one-child to three-child policy (2021)'],
       ],
-      "rows": [
-        [
-          "Population (2024)",
-          "~1.44 billion (1st)",
-          "~1.42 billion (2nd)"
-        ],
-        [
-          "Median age",
-          "~28 years",
-          "~39 years"
-        ],
-        [
-          "Working-age trend",
-          "Expanding until ~2055",
-          "Already declining"
-        ],
-        [
-          "TFR",
-          "2.0",
-          "1.0 (well below replacement)"
-        ],
-        [
-          "Dividend window",
-          "2005-2060",
-          "Closing"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "NFHS-5 Key Data — \"TFR 2, SR 1020, IMR 35\"",
-      "mnemonic": "TFR: 2.0. Sex Ratio at Birth: 929. Overall Sex Ratio: 1020 (females per 1000 males)",
-      "explanation": "NFHS-5 (2019-21) key findings: TFR = 2.0 (below replacement for first time). Sex ratio at birth: 929 (improving). For the first time, overall sex ratio favours females (1020 per 1000 males) due to higher female life expectancy."
-    }
-  ]
+      title: 'NFHS-4 (2015-16) vs NFHS-5 (2019-21)',
+      headers: ['Indicator', 'NFHS-4 (2015-16)', 'NFHS-5 (2019-21)', 'Direction'],
+      rows: [
+        ['TFR', '2.2', '2.0', 'Improved'],
+        ['Sex ratio at birth', '919', '929', 'Improved'],
+        ['Overall sex ratio', 'Males > females', '1020 (females > males first time)', 'Improved'],
+        ['Stunting (under 5)', '38.4%', '35.5%', 'Improved (but still high)'],
+        ['Anaemia (women)', '53.1%', '57.0%', 'Worsened'],
+        ['Institutional births', '78.9%', '88.6%', 'Improved'],
+        ['Female literacy (15-49)', '68.4%', '71.5%', 'Improved'],
+      ],
+    },
+    {
+      title: 'Skill India vs NEP 2020 vs PLI',
+      headers: ['Feature', 'Skill India (2015)', 'NEP 2020', 'PLI Scheme (2020)'],
+      rows: [
+        ['Focus', 'Vocational training', 'Education reform K-12 + higher ed', 'Manufacturing employment'],
+        ['Target', '40 crore skilled workers', '6% GDP education spend, GER 50%', 'Rs 1.97 lakh crore incentives'],
+        ['Key programme', 'PMKVY, DDU-GKY', 'Multidisciplinary, 4-year UG, FYUP', '14 sectors — electronics, pharma, auto'],
+        ['Employment link', 'Direct — certified workers', 'Indirect — employable graduates', 'Direct — factory jobs, export growth'],
+        ['Challenge', 'Low placement rates (~15%)', 'Implementation slow, states vary', 'Capital-intensive, not labour-intensive'],
+      ],
+    },
+    {
+      title: 'Demographic Transition: India\'s North vs South',
+      headers: ['Feature', 'North (UP, Bihar, MP, Rajasthan)', 'South (TN, Kerala, AP, Karnataka)'],
+      rows: [
+        ['TFR', '2.3-3.0 (above replacement)', '1.5-1.8 (well below replacement)'],
+        ['Median age', '~22-25 years', '~32-35 years'],
+        ['Dividend phase', 'Peak dividend ahead (2030-2050)', 'Dividend closing, ageing beginning'],
+        ['Literacy', '60-75%', '75-96%'],
+        ['Female LFPR', 'Lower (social norms)', 'Higher (better education, norms)'],
+        ['Policy need', 'Education, health, jobs', 'Elderly care, pension, migration policy'],
+      ],
+    },
+    {
+      title: 'Employment Indicators: India vs Peers',
+      headers: ['Indicator', 'India', 'China', 'Indonesia', 'Brazil'],
+      rows: [
+        ['LFPR (15+)', '57.9%', '68%', '70%', '63%'],
+        ['Female LFPR', '37.0%', '61%', '54%', '53%'],
+        ['Formal employment', '~20%', '~55%', '~40%', '~45%'],
+        ['Manufacturing in GDP', '~14%', '~28%', '~20%', '~12%'],
+        ['Youth unemployment', '10.3%', '15%', '14%', '18%'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'NFHS-5 Key Data — "TFR 2, SR 1020, Stunting 35"',
+      mnemonic: 'TFR: 2.0. Overall Sex Ratio: 1020. Stunting: 35.5%. Anaemia women: 57%',
+      explanation: 'NFHS-5 (2019-21) four critical numbers: TFR = 2.0 (below replacement for first time), Overall sex ratio: 1020 females per 1000 males (first time female surplus), Stunting: 35.5% (still high), Anaemia women: 57% (worsened). Remember: "2-1020-35-57".',
+    },
+    {
+      title: 'Demographic Transition — "4 Stages"',
+      mnemonic: 'Stage 1: High-High. Stage 2: High-Low (population explosion). Stage 3: Low-Low. Stage 4: Low-Low (stable/declining).',
+      explanation: 'Demographic Transition Model: Stage 1 = high birth + high death rates (pre-industrial). Stage 2 = death rate falls, birth rate still high (population explosion). Stage 3 = birth rate also falls. Stage 4 = both low, stable population. India is in late Stage 3. Japan, Germany in Stage 4 (declining).',
+    },
+    {
+      title: 'India\'s Dividend Window — "2005-2060"',
+      mnemonic: '35-year window. Peak 2035. Must create 8-10 million non-farm jobs/year.',
+      explanation: 'India\'s demographic dividend window is approximately 2005-2060 (35 years). Working-age share peaks around 2035. To capture the dividend, India needs to create 8-10 million quality non-farm jobs annually, invest in education quality (not just enrolment), and address nutrition challenges.',
+    },
+    {
+      title: 'Skills Gap — "5 vs 75"',
+      mnemonic: 'India: 5% formally skilled. Germany: 75%. South Korea: 96%. Need: PMKVY + ITIs + NEP.',
+      explanation: 'Only 5% of India\'s workforce has formal vocational training — vs 52% USA, 75% Germany, 96% South Korea. This is the single biggest bottleneck in capturing the demographic dividend. Key programmes: PMKVY (centrally certified), DDU-GKY (rural), ITIs (industrial), NEP 2020 (vocational from Class 6).',
+    },
+    {
+      title: 'Remittances — "$125B #1"',
+      mnemonic: 'India = world\'s largest remittance recipient: $125 billion (2023). UAE 32%, US 23%, Saudi 14%.',
+      explanation: 'India\'s diaspora sends $125 billion annually (2023) — world\'s highest. Key sources: UAE (32% — construction/services workers), USA (23% — IT professionals), Saudi Arabia (14% — labour). Remittances = 3.4% GDP, exceed FDI, and are more stable than FPI. 18 million Indians abroad.',
+    },
+  ],
 }

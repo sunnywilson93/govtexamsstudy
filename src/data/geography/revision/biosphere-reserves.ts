@@ -1,112 +1,141 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const biosphereReservesRevision: SubjectRevision = {
-  "topic": "biosphere-reserves",
-  "bullets": [
-    "Biosphere Reserves under UNESCO's Man and the Biosphere (MAB) Programme (1971).",
-    "India has 18 BRs; 12 are in the UNESCO World Network of Biosphere Reserves (WNBR).",
-    "Three zones: Core (strict protection), Buffer (limited activities), Transition (sustainable development).",
-    "Nilgiri BR (1986) — India's first BR; first to enter WNBR (2000); covers TN, Kerala, Karnataka.",
-    "Gulf of Mannar BR (1989) — India's first marine BR; 21 islands with coral reefs.",
-    "Kachchh BR (Gujarat, 2008) — largest BR in India (12,454 sq km).",
-    "Sundarbans BR (1989, WB) — world's largest mangrove; Royal Bengal Tiger; UNESCO WHS.",
-    "Nokrek BR (Meghalaya) — home of Citrus indica (wild citrus, origin of all citrus).",
-    "Keibul Lamjao NP (within Loktak area) — world's only floating national park.",
-    "BRs are NOT under specific Indian legislation (unlike NPs/WSs under WPA 1972).",
-    "Core zones usually overlap with existing NPs/WSs that have legal protection.",
-    "12 UNESCO WNBR: Nilgiri, Gulf of Mannar, Sundarbans, Nanda Devi, Nokrek, Pachmarhi, Simlipal, Achanakmar-Amarkantak, Great Nicobar, Agasthyamalai, Khangchendzonga, Panna.",
-    "6 NOT in WNBR: Manas, Dibru-Saikhowa, Dehang-Debang, Kachchh, Cold Desert, Seshachalam.",
-    "Agasthyamalai BR — Kani tribe benefit-sharing for Arogyapacha plant; landmark case.",
-    "Cold Desert BR (HP) — Pin Valley NP; snow leopard, ibex; Spiti Valley."
+  topic: 'biosphere-reserves',
+  bullets: [
+    'Biosphere Reserves under UNESCO\'s Man and the Biosphere (MAB) Programme (launched 1971); first BRs designated 1976.',
+    'India has 18 BRs; 12 are in the UNESCO World Network of Biosphere Reserves (WNBR).',
+    'Three zones: Core (strict protection, no human activity), Buffer (limited activities), Transition (sustainable development).',
+    'Core zones usually overlap with existing NPs/WSs that have legal protection under WPA 1972.',
+    'BRs are NOT under specific Indian legislation — unlike NPs/WSs which are legally established under WPA 1972.',
+    'Three functions of BR: Conservation (biodiversity), Development (sustainable living), Logistic (research/education).',
+    'Nilgiri BR (1986) — India\'s first BR; first to enter WNBR (2000); TN, Kerala, Karnataka; 5,520 sq km.',
+    'Gulf of Mannar BR (1989) — India\'s first marine BR; 21 islands with coral reefs; dugong; TN.',
+    'Kachchh BR (Gujarat, 2008) — largest BR in India (12,454 sq km); Indian wild ass (khur), flamingos.',
+    'Sundarbans BR (1989, WB) — world\'s largest mangrove; Royal Bengal Tiger; UNESCO WHS; 9,630 sq km.',
+    'Nanda Devi BR (1988, UK) — includes Nanda Devi NP + Valley of Flowers NP (both UNESCO WHS); WNBR: 2004.',
+    'Nokrek BR (1988, Meghalaya) — home of Citrus indica (origin of all citrus species); red panda; WNBR: 2009.',
+    'Simlipal BR (1994, Odisha) — Barehipani Falls (399 m); melanistic (black) tigers reported; WNBR: 2009.',
+    'Great Nicobar BR (1989, A&N) — Nicobar megapode, leatherback turtle nesting; WNBR: 2013; mega-project controversy.',
+    'Khangchendzonga BR (2000, Sikkim) — greatest altitudinal range; sacred Buddhist landscape; WNBR: 2018.',
+    'Agasthyamalai BR (2001, Kerala-TN) — Kani tribe benefit-sharing for Arogyapacha plant; landmark ABS case; WNBR: 2016.',
+    'Achanakmar-Amarkantak BR (2005, CG-MP) — origin of Narmada, Son, Johilla rivers; Baiga tribe; WNBR: 2012.',
+    'Panna BR (2011, MP) — tiger reintroduction success (0 to 70+ tigers); Ken River; WNBR: 2020.',
+    'Cold Desert BR (2009, HP) — Pin Valley NP; snow leopard, ibex; Spiti Valley; Buddhist monasteries.',
+    'Seshachalam BR (2010, AP) — red sanders (Pterocarpus santalinus) poaching crisis; Tirumala Hills; not in WNBR.',
+    'Manas BR (1989, Assam) — UNESCO WHS; golden langur, pygmy hog; not in WNBR.',
+    'Dibru-Saikhowa BR (1997, Assam) — Brahmaputra floodplains; white-winged wood duck; feral horses; not in WNBR.',
+    'Dehang-Debang BR (1998, Arunachal Pradesh) — deep gorges; Mishmi takin; Adi and Mishmi tribes; not in WNBR.',
+    'Pachmarhi BR (1999, MP) — Satpura NP; MP\'s only hill station; Gond and Korku tribes; WNBR: 2009.',
+    '12 WNBR: Nilgiri, Gulf of Mannar, Sundarbans, Nanda Devi, Nokrek, Pachmarhi, Simlipal, Achanakmar-Amarkantak, Great Nicobar, Agasthyamalai, Khangchendzonga, Panna.',
+    '6 NOT in WNBR: Manas, Dibru-Saikhowa, Dehang-Debang, Kachchh, Cold Desert, Seshachalam.',
+    'Total area of all 18 BRs: ~89,700+ sq km = ~2.7% of India\'s geographic area.',
+    'Seville Strategy (1995) — framework for BR management; Statutory Framework mandates periodic review every 10 years.',
+    'Lima Action Plan (2016-2025) — current strategic document; links BRs to SDGs and climate action.',
+    'Indian National MAB Committee (under MOEFCC) coordinates BR activities and UNESCO WNBR nominations.',
+    'States with most BRs: MP (3 — Pachmarhi, Achanakmar-Amarkantak part, Panna); TN (3 — partial Nilgiri, Gulf of Mannar, partial Agasthyamalai).',
+    'NE India has 4 BRs: Manas, Dibru-Saikhowa, Dehang-Debang, Nokrek — reflecting exceptional biodiversity.',
+    'Ken-Betwa river linking threatens Panna BR (WNBR site) — will submerge ~100 sq km including tiger habitat.',
+    'Great Nicobar mega-project (Rs 72,000 crore port, airport, township) threatens WNBR site and Shompen tribe.',
+    'Ecotourism in BRs operates in buffer/transition zones; Nilgiri and Sundarbans are most visited.',
+    'BRs as climate observatories: Sundarbans (sea-level rise), Nanda Devi (glacial retreat), Cold Desert (permafrost thaw).',
+    'Tribal communities in BRs: Toda (Nilgiri), Kani (Agasthyamalai), Baiga (Achanakmar), Garo (Nokrek), Adi/Mishmi (Dehang-Debang).',
+    'India ranks among top countries globally in WNBR entries (12 out of 738+ worldwide).',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "NP vs WS vs BR",
-      "headers": [
-        "Feature",
-        "National Park",
-        "Wildlife Sanctuary",
-        "Biosphere Reserve"
+      title: 'NP vs WS vs BR',
+      headers: ['Feature', 'National Park', 'Wildlife Sanctuary', 'Biosphere Reserve'],
+      rows: [
+        ['Legal framework', 'WPA 1972', 'WPA 1972', 'UNESCO MAB (no specific Indian law)'],
+        ['Human activity', 'Strictly prohibited', 'Limited (grazing, NTFP with CWW approval)', 'Allowed in buffer/transition zones'],
+        ['Zones', 'Single zone', 'Single zone', 'Core + Buffer + Transition'],
+        ['Boundary change', 'State legislature required', 'State govt/CWW can alter', 'Flexible — transition zone modifiable'],
+        ['Size (typical)', 'Smaller', 'Medium', 'Largest (landscape level)'],
+        ['Number in India', '106', '567', '18 (12 in UNESCO WNBR)'],
+        ['Private ownership', 'Not allowed', 'May continue', 'Present in transition zone'],
       ],
-      "rows": [
-        [
-          "Legal framework",
-          "WPA 1972",
-          "WPA 1972",
-          "UNESCO MAB (no specific law)"
-        ],
-        [
-          "Human activity",
-          "Not allowed",
-          "Limited allowed",
-          "Allowed in buffer/transition"
-        ],
-        [
-          "Zones",
-          "Single zone",
-          "Single zone",
-          "Core + Buffer + Transition"
-        ],
-        [
-          "Size",
-          "Smaller",
-          "Medium",
-          "Largest"
-        ],
-        [
-          "Number",
-          "106",
-          "567",
-          "18"
-        ]
-      ]
     },
     {
-      "title": "India's BRs in UNESCO WNBR (Year)",
-      "headers": [
-        "BR",
-        "Year",
-        "State(s)"
+      title: 'Complete List of India\'s 18 BRs',
+      headers: ['BR Name', 'Year', 'State(s)', 'Area (sq km)', 'WNBR Year'],
+      rows: [
+        ['Nilgiri', '1986', 'TN, Kerala, Karnataka', '5,520', '2000'],
+        ['Nanda Devi', '1988', 'Uttarakhand', '5,860', '2004'],
+        ['Nokrek', '1988', 'Meghalaya', '820', '2009'],
+        ['Gulf of Mannar', '1989', 'Tamil Nadu', '10,500', '2001'],
+        ['Sundarbans', '1989', 'West Bengal', '9,630', '2001'],
+        ['Manas', '1989', 'Assam', '2,837', 'Not yet'],
+        ['Simlipal', '1994', 'Odisha', '4,374', '2009'],
+        ['Great Nicobar', '1989', 'A&N Islands', '885', '2013'],
+        ['Dibru-Saikhowa', '1997', 'Assam', '765', 'Not yet'],
+        ['Dehang-Debang', '1998', 'Arunachal Pradesh', '5,112', 'Not yet'],
+        ['Pachmarhi', '1999', 'Madhya Pradesh', '4,926', '2009'],
+        ['Khangchendzonga', '2000', 'Sikkim', '2,620', '2018'],
+        ['Agasthyamalai', '2001', 'Kerala, TN', '3,500', '2016'],
+        ['Achanakmar-Amarkantak', '2005', 'Chhattisgarh, MP', '3,835', '2012'],
+        ['Kachchh', '2008', 'Gujarat', '12,454', 'Not yet'],
+        ['Cold Desert', '2009', 'Himachal Pradesh', '7,770', 'Not yet'],
+        ['Seshachalam', '2010', 'Andhra Pradesh', '4,755', 'Not yet'],
+        ['Panna', '2011', 'Madhya Pradesh', '2,998', '2020'],
       ],
-      "rows": [
-        [
-          "Nilgiri",
-          "2000",
-          "TN, Kerala, Karnataka"
-        ],
-        [
-          "Gulf of Mannar",
-          "2001",
-          "Tamil Nadu"
-        ],
-        [
-          "Sundarbans",
-          "2001",
-          "West Bengal"
-        ],
-        [
-          "Nanda Devi",
-          "2004",
-          "Uttarakhand"
-        ],
-        [
-          "Panna",
-          "2020",
-          "Madhya Pradesh"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
-    {
-      "title": "3 BR Zones",
-      "mnemonic": "CBT — Core, Buffer, Transition",
-      "explanation": "Core = strict protection, Buffer = limited activities, Transition = sustainable development with communities."
     },
     {
-      "title": "First BR & Largest BR",
-      "mnemonic": "Nilgiri = First (1986); Kachchh = King (largest, 12,454 sq km)",
-      "explanation": "Nilgiri was India's first BR. Great Rann of Kutch/Kachchh is the largest."
-    }
-  ]
+      title: 'BRs with UNESCO World Heritage Sites Overlap',
+      headers: ['BR', 'WHS within BR', 'WHS Year', 'Type'],
+      rows: [
+        ['Nanda Devi', 'Nanda Devi NP + Valley of Flowers NP', '1988/2005', 'Natural'],
+        ['Sundarbans', 'Sundarbans NP', '1987', 'Natural'],
+        ['Manas', 'Manas WS', '1985', 'Natural'],
+        ['Khangchendzonga', 'Khangchendzonga NP', '2016', 'Mixed (natural + cultural)'],
+      ],
+    },
+    {
+      title: 'Three Zones of a BR',
+      headers: ['Zone', 'Purpose', 'Activities Allowed', 'Legal Status'],
+      rows: [
+        ['Core', 'Strict biodiversity conservation', 'Non-destructive research only', 'Usually NP/WS — WPA protected'],
+        ['Buffer', 'Shield for core; compatible activities', 'Research, education, ecotourism, limited NTFP', 'Managed by forest dept + communities'],
+        ['Transition', 'Sustainable development demonstration', 'Agriculture, settlements, industry', 'No specific legal protection'],
+      ],
+    },
+    {
+      title: 'Key Controversies in BRs',
+      headers: ['BR', 'Issue', 'Impact', 'Status'],
+      rows: [
+        ['Panna', 'Ken-Betwa River Linking', 'Submerge ~100 sq km of tiger habitat', 'Approved; implementation ongoing'],
+        ['Great Nicobar', 'Rs 72,000 crore mega-project', 'Threatens Nicobar Megapode, Shompen tribe', 'EIA approved; contested by environmentalists'],
+        ['Seshachalam', 'Red sanders poaching', 'Endemic species smuggled to China/SE Asia', 'Ongoing enforcement challenge'],
+        ['Sundarbans', 'Sea-level rise + cyclones', 'Island erosion; 200+ sq km lost', 'Climate adaptation needed'],
+        ['Simlipal', 'Bauxite mining proposals', 'Threatens elephant corridors', 'Contested; mining deferred'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: '3 BR Zones',
+      mnemonic: 'CBT — Core, Buffer, Transition',
+      explanation: 'Core = strict protection (NP/WS inside), Buffer = limited activities (research, ecotourism), Transition = sustainable development with communities.',
+    },
+    {
+      title: 'First BR & Largest BR',
+      mnemonic: 'Nilgiri = First (1986); Kachchh = King (largest, 12,454 sq km)',
+      explanation: 'Nilgiri was India\'s first BR and first to enter WNBR (2000). Great Rann of Kutch/Kachchh is the largest but not yet in WNBR.',
+    },
+    {
+      title: '6 BRs NOT in UNESCO WNBR',
+      mnemonic: 'MDDKCS — "Many Distant Deserts Keep Cold Secrets"',
+      explanation: 'Manas, Dibru-Saikhowa, Dehang-Debang, Kachchh, Cold Desert, Seshachalam — the 6 Indian BRs yet to be included in the UNESCO World Network.',
+    },
+    {
+      title: '3 Functions of a BR',
+      mnemonic: 'CDL — Conservation, Development, Logistics (research)',
+      explanation: 'Every BR must serve three functions: conserve biodiversity, promote sustainable development, and provide research/education support (logistics).',
+    },
+    {
+      title: 'BRs Designated in 1989 (Most in Any Year)',
+      mnemonic: 'Gulf Sundarbans Manas Nicobar — "Giant Sea Mammals Navigate"',
+      explanation: 'Four BRs were designated in 1989: Gulf of Mannar, Sundarbans, Manas, and Great Nicobar — the most productive year for BR designation in India.',
+    },
+  ],
 }

@@ -7,85 +7,110 @@ export const governorGeneralsConcept: HistoryConcept = {
     "The office of Governor-General evolved from the Governor of Bengal (1757) to Governor-General of Bengal (1773, Regulating Act), to Governor-General of India (1833, Charter Act), and finally to Viceroy and Governor-General (1858, after the Crown took over from the Company). Each Governor-General/Viceroy left a distinct mark through administrative, judicial, or military reforms.",
   period: "Modern India",
   keyDates: [
-    {
-      year: "1772-85",
-      event:
-        "Warren Hastings — first Governor-General of Bengal (under Regulating Act 1773); founded Asiatic Society (1784) with William Jones",
-    },
-    {
-      year: "1786-93",
-      event:
-        "Lord Cornwallis — introduced Permanent Settlement (1793), Civil Service reforms, Cornwallis Code (separation of revenue and justice)",
-    },
-    {
-      year: "1798-1805",
-      event:
-        "Lord Wellesley — introduced Subsidiary Alliance System; established Fort William College (1800)",
-    },
-    {
-      year: "1828-35",
-      event:
-        "Lord William Bentinck — first Governor-General of India (1833 Charter Act); abolished Sati (1829), suppressed Thuggee",
-    },
-    {
-      year: "1848-56",
-      event:
-        "Lord Dalhousie — Doctrine of Lapse; introduced railways (1853), telegraph, Post Office Act (1854); annexed Punjab, Awadh",
-    },
-    {
-      year: "1858-62",
-      event:
-        "Lord Canning — first Viceroy of India (after Government of India Act 1858); handled aftermath of 1857 Revolt; Indian Councils Act 1861",
-    },
-    {
-      year: "1880-84",
-      event:
-        "Lord Ripon — 'Father of Local Self-Government' (Resolution of 1882); Ilbert Bill controversy; First Factory Act (1881)",
-    },
-    {
-      year: "1899-1905",
-      event:
-        "Lord Curzon — Partition of Bengal (1905); Ancient Monuments Preservation Act (1904); established Agricultural Research Institute at Pusa",
-    },
-    {
-      year: "1943-47",
-      event:
-        "Lord Mountbatten — last Viceroy; oversaw the Partition and Independence of India (August 15, 1947); first Governor-General of free India",
-    },
+    { year: "1772-85", event: "Warren Hastings — first Governor-General of Bengal (under Regulating Act 1773); founded Asiatic Society (1784) with William Jones; impeached by Edmund Burke (1787-95, acquitted)" },
+    { year: "1786-93", event: "Lord Cornwallis — introduced Permanent Settlement (1793), Civil Service reforms, Cornwallis Code (separation of revenue and justice); Third Anglo-Mysore War" },
+    { year: "1798-1805", event: "Lord Wellesley — introduced Subsidiary Alliance System; established Fort William College (1800); Fourth Anglo-Mysore War (Tipu Sultan killed, 1799)" },
+    { year: "1813-23", event: "Lord Hastings — ended Maratha power (Third Anglo-Maratha War, 1817-18); abolished Pindari system; Ryotwari Settlement introduced in Madras Presidency" },
+    { year: "1828-35", event: "Lord William Bentinck — first Governor-General of India (1833 Charter Act); abolished Sati (1829), suppressed Thuggee; Macaulay's Minute (1835) introduced English education" },
+    { year: "1848-56", event: "Lord Dalhousie — Doctrine of Lapse; introduced railways (1853), telegraph, Post Office Act (1854); annexed Punjab, Awadh, Lower Burma; Wood's Dispatch (1854)" },
+    { year: "1856-62", event: "Lord Canning — last Governor-General and first Viceroy (GoI Act 1858); handled 1857 Revolt; Indian Councils Act 1861; IPC enacted (1860)" },
+    { year: "1869-72", event: "Lord Mayo — Statistical Survey of India; financial decentralization; assassinated in Andaman Islands by Sher Ali (only Viceroy assassinated in office)" },
+    { year: "1876-80", event: "Lord Lytton — Delhi Durbar (1877, Queen Victoria as Empress); Vernacular Press Act (1878); Arms Act (1878); lowered ICS age from 21 to 19" },
+    { year: "1880-84", event: "Lord Ripon — 'Father of Local Self-Government' (Resolution of 1882); repealed Vernacular Press Act; First Factory Act (1881); Ilbert Bill controversy" },
+    { year: "1899-1905", event: "Lord Curzon — Partition of Bengal (1905); Ancient Monuments Preservation Act (1904); Indian Universities Act (1904); established Agricultural Research Institute at Pusa" },
+    { year: "1916-21", event: "Lord Chelmsford — Montagu-Chelmsford Reforms (GoI Act 1919, Dyarchy); Rowlatt Act (1919); Jallianwala Bagh Massacre (1919)" },
+    { year: "1926-31", event: "Lord Irwin — Simon Commission (1928); Dandi March (1930); Gandhi-Irwin Pact (1931); Lahore Session — Purna Swaraj" },
+    { year: "1936-43", event: "Lord Linlithgow — GoI Act 1935 implemented; August Offer (1940); Cripps Mission (1942); Quit India Movement (1942); longest-serving Viceroy (7 years)" },
+    { year: "1943-47", event: "Lord Mountbatten — last Viceroy; Mountbatten Plan (3 June 1947); oversaw Partition and Independence (15 August 1947); first Governor-General of free India" },
   ],
   notes: [
     {
       section: "Warren Hastings (1772-85)",
       content:
-        "Warren Hastings was the first Governor-General of Bengal under the Regulating Act of 1773 (previously Governor of Bengal from 1772). Key reforms: abolished the Dual System of administration in Bengal started by Clive; introduced a Board of Revenue at Calcutta; established Diwani and Faujdari Adalats (civil and criminal courts); fixed land revenue with the five-yearly auction system (farming system); laid the foundation of civil services; patronized learning — established the Madrasa at Calcutta (1781), and the Asiatic Society was founded during his tenure by Sir William Jones (1784). He fought the First Anglo-Maratha War (Treaty of Salbai, 1782). He was later impeached by the British Parliament (1787-95) on charges brought by Edmund Burke but was acquitted.",
+        "Warren Hastings was the first Governor-General of Bengal under the Regulating Act of 1773 (previously Governor of Bengal from 1772). Key reforms: abolished the Dual System of administration in Bengal started by Clive; introduced a Board of Revenue at Calcutta; established Diwani and Faujdari Adalats (civil and criminal courts); fixed land revenue with the five-yearly auction system (farming system); laid the foundation of civil services; patronized learning — established the Madrasa at Calcutta (1781), and the Asiatic Society was founded during his tenure by Sir William Jones (1784). He commissioned the translation of the Bhagavad Gita into English by Charles Wilkins (1785, the first direct translation of a Sanskrit work). He fought the First Anglo-Maratha War (Treaty of Salbai, 1782) and the Second Anglo-Mysore War. He was later impeached by the British Parliament (1787-95) on charges brought by Edmund Burke (corruption, extortion from the Begums of Awadh, execution of Nandakumar) but was acquitted after a seven-year trial.",
     },
     {
       section: "Lord Cornwallis (1786-93)",
       content:
-        "Lord Cornwallis is known as the 'Father of Civil Services in India' for his reforms in administration. Key reforms: introduced the Permanent Settlement of Bengal (1793) with Zamindars — fixed revenue in perpetuity at 89% of the rental (Zamindars kept 11%); introduced the Cornwallis Code, which separated revenue administration from justice (judicial and executive functions); established a graded civil service and barred Indians from holding posts worth more than 500 pounds a year; reformed the police system by creating the post of Daroga (Indian police superintendent) at district and thana levels. He also fought the Third Anglo-Mysore War (Treaty of Srirangapatnam, 1792).",
+        "Lord Cornwallis is known as the 'Father of Civil Services in India' for his reforms in administration. Key reforms: introduced the Permanent Settlement of Bengal (1793) with Zamindars — fixed revenue in perpetuity at 89% of the rental (Zamindars kept 11%); introduced the Cornwallis Code, which separated revenue administration from justice (judicial and executive functions); established a graded civil service and barred Indians from holding posts worth more than 500 pounds a year (racial discrimination in services); reformed the police system by creating the post of Daroga (Indian police superintendent) at district and thana levels; abolished the system of paying civil servants through trade commissions, replacing it with fixed salaries. He fought the Third Anglo-Mysore War and personally led the campaign that resulted in the Treaty of Srirangapatnam (1792) with Tipu Sultan, who ceded half his territory and sent his sons as hostages.",
+    },
+    {
+      section: "Lord Wellesley (1798-1805)",
+      content:
+        "Lord Wellesley was the most expansionist Governor-General, calling himself the 'Bengal Tiger.' He introduced the Subsidiary Alliance System — Indian states had to maintain a British resident and a British contingent paid for by the state, surrender external relations to the British, and dismiss European employees other than British. States that accepted: Hyderabad (first, 1798), Mysore, Awadh, Tanjore, Surat, Carnatic. He fought the Fourth Anglo-Mysore War (1799, Tipu Sultan killed at Srirangapatnam) and the Second Anglo-Maratha War (1803-05). He established Fort William College (1800) in Calcutta for training civil servants (closed in 1854, replaced by Haileybury College in England). He also introduced the Censorship of the Press Act (1799). He was recalled because the Court of Directors disapproved of his expensive wars.",
     },
     {
       section: "Lord William Bentinck (1828-35)",
       content:
-        "Lord William Bentinck was the first Governor-General of India (under the Charter Act of 1833, which expanded his authority from Bengal to all of British India). He is remembered as a progressive reformer. Key measures: abolished Sati in 1829 (Regulation XVII) with the support of Raja Ram Mohan Roy; suppressed the Thuggee cult with the help of Colonel William Sleeman; allowed Hindu widows to remarry and banned female infanticide; introduced English as the medium of instruction (based on Macaulay's Minute of 1835); established the Elphinstone College (Bombay) and medical colleges; carried out revenue settlements in NW Provinces. Described by Macaulay as the ruler who 'never inflicted a wound.'",
+        "Lord William Bentinck was the first Governor-General of India (under the Charter Act of 1833, which expanded his authority from Bengal to all of British India). He is remembered as the most progressive reformer. Key measures: abolished Sati in 1829 (Regulation XVII) with the support of Raja Ram Mohan Roy — the first major social reform legislation in India; suppressed the Thuggee cult with the help of Colonel William Sleeman; banned female infanticide; introduced English as the medium of higher education (based on Macaulay's Minute of 1835, which declared that 'a single shelf of a good European library was worth the whole native literature of India and Arabia'); established the Elphinstone College (Bombay) and medical colleges; carried out revenue settlements in NW Provinces. He signed a Treaty of Friendship with Ranjit Singh of the Sikh Empire (1831). Described by Macaulay as the ruler who 'never inflicted a wound.' He also initiated the construction of the Grand Trunk Road from Calcutta to Delhi.",
     },
     {
       section: "Lord Dalhousie (1848-56)",
       content:
-        "Lord Dalhousie is considered the 'Maker of Modern India' for his modernization efforts but also the most aggressive annexationist. Key policies: applied the Doctrine of Lapse to annex Satara (1848), Jhansi (1853), Nagpur (1854), and others; annexed Punjab (1849) by right of conquest; annexed Awadh (1856) on grounds of misgovernance; annexed Pegu/Lower Burma (1852). Modernization: introduced the first railway line in India (Bombay to Thane, 1853); the first telegraph line (Calcutta to Agra, 1853); Post Office Act (1854) with uniform postage rates; the first Indian Stamp Act; established the PWD (Public Works Department); Wood's Dispatch (1854) for education — proposed a network of graded schools and universities (Calcutta, Bombay, Madras — established 1857).",
+        "Lord Dalhousie is considered the 'Maker of Modern India' for his modernization efforts but also the most aggressive annexationist. Key policies: applied the Doctrine of Lapse to annex states where rulers died without a natural heir — Satara (1848, first application), Jaitpur (1849), Sambalpur (1849), Baghat (1850), Udaipur (1852), Jhansi (1853), Nagpur (1854); annexed Punjab (1849) by right of conquest after the Second Anglo-Sikh War; annexed Awadh (1856) on grounds of misgovernance (this was particularly controversial as Awadh had a legitimate ruler); annexed Pegu/Lower Burma (1852) after the Second Anglo-Burmese War. Modernization: introduced the first railway line in India (Bombay to Thane, 16 April 1853, 21 miles); the first telegraph line (Calcutta to Agra, 1853); Post Office Act (1854) with uniform postage rates; established the PWD (Public Works Department); Wood's Dispatch (1854) for education — proposed a network of graded schools and universities, leading to the establishment of universities at Calcutta, Bombay, and Madras in 1857. He also established a separate department for railways and introduced the Indian Stamp Act.",
     },
     {
-      section: "Key Viceroys (1858-1905)",
+      section: "Lord Canning to Lord Lawrence (1856-69)",
       content:
-        "Lord Canning (1856-62): last Governor-General and first Viceroy after the Government of India Act 1858; introduced Indian Councils Act 1861 (legislative councils with nominated Indian members); enacted the Indian Penal Code (1860, drafted by Macaulay); introduced White Mutiny (European soldiers' discontent). Lord Mayo (1869-72): started the Statistical Survey of India; introduced financial decentralization; established the Department of Agriculture and Commerce; assassinated by Sher Ali in the Andaman Islands. Lord Lytton (1876-80): held the Delhi Durbar (1877) to declare Queen Victoria as 'Empress of India'; passed the Vernacular Press Act (1878) and the Arms Act (1878); lowered the age limit for ICS from 21 to 19 (Lytton's act of racial discrimination). Lord Ripon (1880-84): repealed the Vernacular Press Act; passed the First Factory Act (1881); introduced Local Self-Government through the resolution of 1882; the Ilbert Bill controversy (1883) was a setback. Lord Curzon (1899-1905): partitioned Bengal (1905) — a landmark event that triggered the Swadeshi Movement; Indian Universities Act (1904); Ancient Monuments Preservation Act (1904); established the Agricultural Research Institute at Pusa.",
+        "Lord Canning (1856-62): last Governor-General and first Viceroy after the Government of India Act 1858, which transferred power from the East India Company to the British Crown following the Revolt of 1857. He handled the Revolt firmly but fairly — his clemency policy earned him the nickname 'Clemency Canning.' Key measures: Indian Councils Act 1861 (legislative councils with nominated Indian members); Indian Penal Code enacted (1860, drafted by Macaulay); Indian High Courts Act (1861) — High Courts established at Calcutta, Bombay, and Madras; 'White Mutiny' (European soldiers' discontent over transfer to Crown service). Lord Elgin I (1862-63): died in India. Lord Lawrence (1864-69): he followed the policy of 'masterly inactivity' regarding Afghanistan (non-interference in its internal affairs); established the High Courts; created the telegraph system connecting India to Europe; founded the Famine Commission after the Orissa Famine of 1866 (one million dead).",
     },
     {
-      section: "Key Viceroys (1905-1947)",
+      section: "Lord Mayo to Lord Lytton (1869-80)",
       content:
-        "Lord Minto II (1905-10): Morley-Minto Reforms (Indian Councils Act 1909) — introduced separate electorates for Muslims, sowing seeds of communalism. Lord Hardinge (1910-16): annulled the Partition of Bengal (1911); shifted the capital from Calcutta to Delhi (1911); Delhi Durbar (1911). Lord Chelmsford (1916-21): Montagu-Chelmsford Reforms (GoI Act 1919) — introduced Dyarchy in provinces; Rowlatt Act (1919); Jallianwala Bagh Massacre (1919). Lord Reading (1921-26): Chauri Chaura incident (1922) led Gandhi to withdraw Non-Cooperation Movement; repeal of the Rowlatt Act. Lord Irwin (1926-31): Simon Commission (1928); Nehru Report (1928); Lahore Session (1929) — Purna Swaraj; Gandhi-Irwin Pact (1931); Dandi March (1930). Lord Linlithgow (1936-43): GoI Act 1935 implemented; August Offer (1940); Cripps Mission (1942); Quit India Movement (1942). Lord Wavell (1943-47): Wavell Plan and Simla Conference (1945); Cabinet Mission (1946). Lord Mountbatten (1947): last Viceroy; announced the Mountbatten Plan (3 June 1947); oversaw Partition and Independence on 15 August 1947; became the first Governor-General of independent India (till June 1948).",
+        "Lord Mayo (1869-72): started the Statistical Survey of India; introduced financial decentralization (provinces got fixed grants from central revenue, not annual allocations); established the Department of Agriculture and Commerce; founded the Mayo College at Ajmer for the education of Rajput princes; was assassinated by Sher Ali, a Pathan convict, in the Andaman Islands (February 1872) — the only Viceroy assassinated in office. Lord Northbrook (1872-76): handled the Bihar Famine (1873-74) efficiently; opposed interference in Afghanistan. Lord Lytton (1876-80): held the Grand Delhi Durbar (1 January 1877) to proclaim Queen Victoria as 'Empress of India' (Kaiser-i-Hind); passed the Vernacular Press Act (1878, called the 'gagging act' — restricted Indian-language press while exempting English press); passed the Arms Act (1878, restricted Indians from possessing arms without a licence); lowered the maximum age for ICS examination from 21 to 19 (racially motivated — made it harder for Indians); his vice-royalty saw the Great Famine of 1876-78 (estimated 5.5 million deaths in Madras, Bombay, Mysore).",
+    },
+    {
+      section: "Lord Ripon (1880-84)",
+      content:
+        "Lord Ripon is remembered as the most liberal and popular Viceroy. Key measures: repealed the Vernacular Press Act (1882); passed the First Factory Act (1881, banned child labour under 7 in factories with 100+ workers); introduced Local Self-Government through the resolution of 1882 — establishing elected municipal boards and district boards with Indian members, including non-official chairmen — earning him the title 'Father of Local Self-Government in India'; introduced the Ilbert Bill (1883, named after Law Member C.P. Ilbert) which sought to allow Indian judges to try European offenders — this created a storm of racist opposition from the European community in Calcutta (the 'White Mutiny'), and the Bill was diluted to require a European jury. The Ilbert Bill controversy was significant as it united Indian nationalists and is considered a precursor to the formation of the Indian National Congress (1885). Lord Ripon left India amid farewell demonstrations by grateful Indians.",
+    },
+    {
+      section: "Lord Curzon (1899-1905)",
+      content:
+        "Lord Curzon was perhaps the most controversial Viceroy — efficient but authoritarian. Key measures: Partition of Bengal (16 October 1905, effective 7 days after announcement) — ostensibly for administrative efficiency but actually to divide Hindu-majority West Bengal from Muslim-majority East Bengal and Assam, thus weakening the nationalist movement in Bengal. This triggered the Swadeshi and Boycott movements, the first major nationalist mass agitation. Other measures: Indian Universities Act (1904, increased government control over universities — opposed by nationalists as restricting Indian higher education); Ancient Monuments Preservation Act (1904, for conservation of historical monuments — one of his positive legacies); established the Agricultural Research Institute at Pusa (Bihar); created the North-West Frontier Province (NWFP) as a separate province; appointed a Police Commission under Andrew Fraser; reformed railways and irrigation. Curzon resigned in 1905 after a dispute with Lord Kitchener (Commander-in-Chief) over military administration.",
+    },
+    {
+      section: "Lord Minto II to Lord Chelmsford (1905-21)",
+      content:
+        "Lord Minto II (1905-10): Morley-Minto Reforms (Indian Councils Act 1909) — expanded legislative councils and introduced separate electorates for Muslims (the first communal franchise), which sowed the seeds of communalism; the reforms were designed to divide the moderate nationalists by co-opting some Indians while isolating extremists. Lord Hardinge (1910-16): annulled the Partition of Bengal (1911, at the Delhi Durbar before King George V — the only British monarch to visit India); shifted the capital from Calcutta to Delhi (announced at the same Durbar); survived a bomb attack during his entry into Delhi (1912, bomb thrown by Rash Behari Bose); established the Hindu University at Benaras (BHU, 1916, by Madan Mohan Malaviya) and Aligarh Muslim University (1920). Lord Chelmsford (1916-21): Montagu-Chelmsford Reforms (Government of India Act 1919) — introduced Dyarchy in provinces (transferred subjects like education, health, local self-government under Indian ministers; reserved subjects like police, finance, revenue under British control); expanded franchise but still very limited. His tenure saw the Rowlatt Act (1919), Jallianwala Bagh Massacre (13 April 1919), the Third Afghan War (1919), and the Non-Cooperation-Khilafat Movement (1920-22).",
+    },
+    {
+      section: "Lord Reading to Lord Irwin (1921-31)",
+      content:
+        "Lord Reading (1921-26): the Chauri Chaura incident (1922) led Gandhi to withdraw the Non-Cooperation Movement during his tenure; repealed the Rowlatt Act (1922); presided over the arrest and trial of Gandhi (sentenced to 6 years, released 1924); handled the Moplah Rebellion (1921); established the Swaraj Party (1923, by C.R. Das and Motilal Nehru) entering legislatures. Lord Irwin (1926-31): one of the most significant tenures. Key events: appointed the Simon Commission (1927, all-British, no Indian members — boycotted with 'Simon Go Back' slogan); Lala Lajpat Rai died after being beaten during a Simon Commission protest (November 1928); the Lahore Congress Session (December 1929) declared Purna Swaraj under Nehru; the Dandi March (12 March - 6 April 1930) launched the Civil Disobedience Movement; the Gandhi-Irwin Pact (5 March 1931) suspended CDM; Irwin declared (31 October 1929) that dominion status was the natural issue of India's constitutional progress — the 'Irwin Declaration.' Bhagat Singh, Rajguru, and Sukhdev were executed on 23 March 1931 during his tenure.",
+    },
+    {
+      section: "Lord Willingdon to Lord Linlithgow (1931-43)",
+      content:
+        "Lord Willingdon (1931-36): suppressed the relaunched Civil Disobedience Movement (1932); arrested Gandhi and other Congress leaders; the Communal Award (1932) and Poona Pact (1932) occurred during his tenure; the Government of India Act 1935 was passed (the last major constitutional Act before independence); the Third Round Table Conference (1932) was held. Lord Linlithgow (1936-43): the longest-serving Viceroy (7 years). Key events: implemented the Government of India Act 1935 — Congress won the 1937 provincial elections and formed ministries in 7 of 11 provinces; Congress ministries resigned in 1939 when Linlithgow declared India a belligerent in WWII without consulting Indian leaders; the Muslim League observed 'Deliverance Day' (22 December 1939); the Lahore Resolution/Pakistan Resolution (March 1940); the August Offer (1940 — dominion status after the war, rejected by Congress); the Individual Satyagraha Movement (1940-41, Vinoba Bhave as the first Satyagrahi); the Cripps Mission (March 1942, failed); the Quit India Movement (8 August 1942 — he arrested the entire Congress leadership). The Bengal Famine of 1943 (estimated 3 million deaths) began during his tenure.",
+    },
+    {
+      section: "Lord Wavell & Lord Mountbatten (1943-47)",
+      content:
+        "Lord Wavell (1943-47): faced the continuing Bengal Famine; released Gandhi (1944) and other Congress leaders; proposed the Wavell Plan and Simla Conference (June 1945) — offered a reconstituted Viceroy's Executive Council with equal Hindu and Muslim representation, but failed because Jinnah insisted that only the Muslim League could nominate Muslim members; oversaw the Cabinet Mission (March 1946) — proposed a three-tier federation rejecting partition; supervised the Interim Government (September 1946, headed by Nehru); Direct Action Day (16 August 1946) and the Great Calcutta Killings occurred during his tenure; he was recalled by Attlee for being unable to resolve the crisis. Lord Mountbatten (March-August 1947): the last Viceroy, sent with a clear mandate to transfer power. He advanced the date of British withdrawal from June 1948 to August 1947. Key events: the Mountbatten Plan (3 June 1947) announced partition; the Indian Independence Act (18 July 1947, Royal Assent) provided the legal framework; independence on 15 August 1947; the Radcliffe Award (17 August 1947) demarcated the boundary. Mountbatten became the first Governor-General of independent India (August 1947 - June 1948). C. Rajagopalachari was the last (and only Indian) Governor-General (1948-50).",
+    },
+    {
+      section: "Revenue Settlement Systems",
+      content:
+        "The British introduced three major land revenue systems: (1) Permanent Settlement/Zamindari System (1793, Lord Cornwallis) — in Bengal, Bihar, Orissa, and parts of northern India; Zamindars recognized as owners of the land; revenue fixed permanently (89% to government, 11% to Zamindar); created a parasitic landlord class; Zamindars could be dispossessed if they failed to pay. (2) Ryotwari System (introduced by Thomas Munro in Madras, 1820; Alexander Reed in Bombay) — direct settlement with the cultivator (ryot); no intermediary; revenue assessed periodically (usually 30 years); covered about 51% of British India; peasants could be evicted for non-payment. (3) Mahalwari System (introduced by Holt Mackenzie in the NW Provinces, 1822; modified by Lord William Bentinck) — village (mahal) as the unit for revenue assessment; village headman or body of co-sharers jointly responsible; revenue periodically revised; covered about 30% of British India. Each system had distinct social and economic impacts — the Permanent Settlement created absentee landlords in Bengal, while the Ryotwari system gave nominal ownership to peasants but with oppressive revenue demands.",
+    },
+    {
+      section: "Social Reform Legislation by GGs/Viceroys",
+      content:
+        "British India saw significant social reform legislation driven by both Indian reformers and progressive Governors-General. Abolition of Sati (1829, Regulation XVII, Lord William Bentinck, with Ram Mohan Roy's support). Suppression of Thuggee (1830s, Colonel William Sleeman under Bentinck). Hindu Widows' Remarriage Act (1856, Lord Dalhousie, supported by Ishwar Chandra Vidyasagar). Indian Penal Code (1860, Lord Canning, drafted by Thomas Babington Macaulay). Female Infanticide Prevention Act (1870, under Lord Mayo). Age of Consent Act (1891, Lord Lansdowne, raised marriage age for girls to 12, prompted by the Phulmoni case where a 10-year-old girl died). Sarda Act/Child Marriage Restraint Act (1929, Lord Irwin, raised marriage age to 14 for girls and 18 for boys, championed by Harbilas Sarda). The Factory Acts: First Factory Act (1881, Lord Ripon), Second (1891, Lord Lansdowne), Indian Mines Act (1901, Lord Curzon). These reforms were often driven by Indian social reformers who petitioned the government, rather than being initiated by the British alone.",
+    },
+    {
+      section: "Press Legislation & Civil Liberties",
+      content:
+        "The British attitude towards the Indian press oscillated between control and relaxation. The Censorship of the Press Act (1799, Lord Wellesley) — first censorship law. Licensing Regulations (1823, acting GG John Adam) — required a licence to operate a press; Ram Mohan Roy protested. Metcalfe's Act (1835, Sir Charles Metcalfe, acting GG) — liberated the press; Metcalfe called the 'Liberator of the Indian Press.' Indian Press Act (1857, during the Revolt). Vernacular Press Act (1878, Lord Lytton) — imposed restrictions on the Indian-language press (English press exempted); modelled after the Irish Coercion Act; called the 'gagging act'; Amrita Bazar Patrika converted overnight from Bengali to English to escape the Act. Repealed by Lord Ripon (1882). Indian Press Act (1910, Lord Minto II) — revived press restrictions. Rowlatt Act (1919, Lord Chelmsford) — allowed detention without trial and trial without jury. Indian Press (Emergency Powers) Act (1931, Lord Irwin). These Acts reflect the constant tension between the colonial state and Indian public opinion.",
+    },
+    {
+      section: "Governor-Generals of Free India",
+      content:
+        "After independence, the office of Governor-General continued briefly. Lord Mountbatten (August 1947 - June 1948): served as the first Governor-General of independent India at Jawaharlal Nehru's request. He played a crucial role in the integration of princely states — Sardar Patel, as Home Minister, led the actual integration effort with V.P. Menon (Secretary, Ministry of States), but Mountbatten's diplomatic skills helped persuade reluctant rulers. Key events during his tenure: the accession of Junagadh, Hyderabad, and Jammu & Kashmir; the first India-Pakistan war over Kashmir (October 1947). C. Rajagopalachari (June 1948 - January 1950): the last and only Indian Governor-General. He was a veteran Congress leader, Gandhi's confidant, and later founded the Swatantra Party (1959, India's first organized free-market opposition party). During his tenure, the Constituent Assembly completed the drafting of the Constitution. The office of Governor-General was abolished when the Constitution came into force on 26 January 1950, and Dr. Rajendra Prasad became the first President of India.",
     },
   ],
   examTags: ["UPSC Prelims", "SSC CGL", "SSC CHSL", "RRB NTPC", "CDS", "UPPSC"],
   examRelevance:
-    "Governor-Generals and Viceroys are among the most frequently tested topics across all government exams. UPSC Prelims asks match-the-following questions on GGs/Viceroys with their reforms. SSC and RRB exams ask direct factual questions — 'Who introduced the Permanent Settlement?', 'Who abolished Sati?', 'Who was the last Viceroy?' etc. Understanding the chronological sequence and the key policy/reform associated with each is essential.",
+    "Governor-Generals and Viceroys are among the most frequently tested topics across all government exams. UPSC Prelims asks match-the-following questions on GGs/Viceroys with their reforms, the evolution of the office (GG of Bengal vs GG of India vs Viceroy), land revenue systems, and social reform legislation. SSC and RRB exams ask direct factual questions. Understanding the chronological sequence and the key policy/reform associated with each is essential.",
 }

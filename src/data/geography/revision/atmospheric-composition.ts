@@ -1,104 +1,136 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const atmosphericCompositionRevision: SubjectRevision = {
-  "topic": "atmospheric-composition",
-  "bullets": [
-    "Atmosphere composition: Nitrogen 78.08%, Oxygen 20.95%, Argon 0.93%, CO2 0.04% (~420 ppm in 2024), trace gases.",
-    "CO2 has risen from 280 ppm (pre-industrial) to 420+ ppm — highest in 800,000 years; primary greenhouse gas.",
-    "Water vapour (0-4%) is the most abundant greenhouse gas; varies by location; concentrated in the lower troposphere.",
-    "Five atmospheric layers: Troposphere (0-18 km), Stratosphere (18-50 km), Mesosphere (50-80 km), Thermosphere (80-700 km), Exosphere (>700 km).",
-    "Troposphere: 75% of atmospheric mass, all weather, temp decreases at 6.5°C/1000 m (normal lapse rate).",
-    "Stratosphere: contains ozone layer (20-25 km), temp increases with altitude, jet aircraft fly here.",
-    "Ozone layer absorbs 97-99% of UV-B radiation; discovered depleted (Antarctic ozone hole) in 1985.",
-    "Montreal Protocol (1987): phasing out CFCs — ratified by all 198 UN members; most successful environmental treaty.",
-    "Solar constant: ~1,361 W/m² at top of atmosphere; Earth reflects 30% (planetary albedo).",
-    "Earth's heat budget: 30% reflected, 23% absorbed by atmosphere, 47% absorbed by surface.",
-    "Greenhouse effect keeps Earth at ~15°C instead of -18°C; enhanced greenhouse effect causes global warming.",
-    "Temperature inversion: reversal of normal lapse rate; causes fog and smog; common in Indo-Gangetic Plain in winter.",
-    "Three types of rainfall: convectional (equatorial), orographic (Western Ghats), cyclonic/frontal (Western Disturbances).",
-    "Mawsynram/Cherrapunji — world's wettest places (~11,873 mm/year) due to orographic rainfall on Khasi Hills.",
-    "Western Disturbances — extratropical storms from the Mediterranean bringing winter rain to north India.",
-    "Loo — hot dry winds in Indo-Gangetic Plain (May-June); Norwesters (Kalbaishakhi) — thunderstorms in eastern India (April-May).",
-    "India's NCAP (2019): targets 20-30% reduction in PM2.5/PM10 in 131 cities by 2025-26."
+  topic: 'atmospheric-composition',
+  bullets: [
+    'Atmosphere composition: Nitrogen 78.08%, Oxygen 20.95%, Argon 0.93%, CO2 0.04% (~420 ppm in 2024), trace gases.',
+    'CO2 has risen from 280 ppm (pre-industrial) to 420+ ppm — highest in 800,000 years; primary greenhouse gas.',
+    'Water vapour (0-4%) is the most abundant greenhouse gas; varies by location; concentrated in the lower troposphere.',
+    'Methane (CH4): 80x more potent than CO2 over 20 years; from rice paddies, cattle, landfills, natural gas.',
+    'Five atmospheric layers: Troposphere (0-18 km), Stratosphere (18-50 km), Mesosphere (50-80 km), Thermosphere (80-700 km), Exosphere (>700 km).',
+    'Troposphere: 75% of atmospheric mass, all weather, temp decreases at 6.5 degrees C/1000 m (normal lapse rate).',
+    'Troposphere height varies: ~8 km at poles, ~18 km at equator (due to stronger convection at equator).',
+    'Stratosphere: contains ozone layer (20-25 km), temp increases with altitude, jet aircraft fly here.',
+    'Mesosphere: coldest layer (~-90 degrees C at mesopause); meteors burn up here; noctilucent clouds form here.',
+    'Thermosphere: contains ionosphere (80-400 km, reflects radio waves); auroras occur; ISS orbits here (~400 km).',
+    'Ozone layer absorbs 97-99% of UV-B radiation; measured in Dobson Units (DU); normal ~300 DU.',
+    'Antarctic ozone hole discovered 1985; drops below 220 DU; caused by CFCs releasing chlorine in stratosphere.',
+    'Montreal Protocol (1987): phasing out CFCs — ratified by all 198 UN members; most successful environmental treaty.',
+    'Kigali Amendment (2016): amends Montreal Protocol to phase down HFCs (CFC replacements, potent GHGs).',
+    'Solar constant: ~1,361 W/m2 at top of atmosphere; Earth reflects 30% (planetary albedo).',
+    'Earth\'s heat budget: 30% reflected, 23% absorbed by atmosphere, 47% absorbed by surface.',
+    'Greenhouse effect keeps Earth at ~15 degrees C instead of -18 degrees C; enhanced greenhouse effect causes warming.',
+    'Temperature inversion: reversal of normal lapse rate; causes fog and smog; common in Indo-Gangetic Plain in winter.',
+    'Three types of inversion: radiation (clear nights), subsidence (high pressure), frontal (warm over cold air).',
+    'Three types of rainfall: convectional (equatorial), orographic (Western Ghats), cyclonic/frontal (Western Disturbances).',
+    'Mawsynram/Cherrapunji — world\'s wettest places (~11,873 mm/year) due to orographic rainfall on Khasi Hills.',
+    'Western Disturbances — extratropical storms from the Mediterranean bringing winter rain to north India.',
+    'Loo — hot dry winds in Indo-Gangetic Plain (May-June); Nor\'westers (Kalbaishakhi) — thunderstorms in eastern India (April-May).',
+    'Mango Showers — pre-monsoon showers in Kerala/Karnataka; Cherry Blossoms aid coffee flowering in Karnataka.',
+    'India\'s NCAP (2019): targets 20-30% reduction in PM2.5/PM10 in 131 cities by 2025-26.',
+    'Dry Adiabatic Lapse Rate (DALR): 10 degrees C/km; Saturated (Wet) Adiabatic: ~5-6 degrees C/km.',
+    'Atmospheric stability: stable if ELR < SALR (clear skies); unstable if ELR > DALR (thunderstorms).',
+    'Three-Cell Model: Hadley (0-30 degrees), Ferrel (30-60 degrees), Polar (60-90 degrees).',
+    'ITCZ (Doldrums): equatorial convergence zone; shifts to Ganga Plain in summer = monsoon trough.',
+    'Jet Streams: narrow fast westerly winds at 9-12 km; STJ at ~30 degrees; Polar Front Jet at ~60 degrees.',
+    'Tropical Easterly Jet (TEJ): forms over Indian Ocean in summer; associated with SW Monsoon onset.',
+    'Cumulonimbus clouds: produce thunderstorms, heavy rain, hail, lightning; reach 12+ km; anvil-shaped top.',
+    'Lightning kills ~2,500 people annually in India — more than any other natural disaster; UP, Bihar worst affected.',
+    'Radiation fog dominates Indo-Gangetic Plain (Nov-Feb); Delhi: 15-20 dense fog days in Dec-Jan.',
+    'Delhi AQI routinely enters Severe (401-500) in winter; air pollution causes ~1.69 million premature deaths/year in India.',
+    'GRAP (Graded Response Action Plan): emergency measures triggered at different AQI levels in Delhi-NCR.',
+    'Rayleigh Scattering: blue sky (shorter wavelengths scattered more); red sunset (blue scattered away at low angles).',
+    'Sea breeze: day, sea to land; Land breeze: night, land to sea; strongest in coastal cities like Mumbai.',
+    'Frost damages rabi crops in north India (Dec-Jan); frost hollows form in valley bottoms (katabatic cold air).',
+    'IMD (India Meteorological Department, est. 1875, HQ New Delhi): India\'s primary weather forecasting agency.',
+    'Buys Ballot\'s Law: back to wind in NH, low pressure is on your LEFT; helps locate cyclone centres.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Atmospheric Layers",
-      "headers": [
-        "Layer",
-        "Altitude",
-        "Temperature",
-        "Key Features"
+      title: 'Atmospheric Layers',
+      headers: ['Layer', 'Altitude', 'Temperature', 'Key Features'],
+      rows: [
+        ['Troposphere', '0-8/18 km', 'Decreases (6.5 degrees C/km)', 'All weather, 75% of mass'],
+        ['Stratosphere', '18-50 km', 'Increases (ozone absorbs UV)', 'Ozone layer, jet aircraft'],
+        ['Mesosphere', '50-80 km', 'Decreases', 'Coldest layer (-90 degrees C), meteors burn'],
+        ['Thermosphere', '80-700 km', 'Increases (>1500 degrees C)', 'Ionosphere, auroras, ISS orbit'],
+        ['Exosphere', '>700 km', 'Varies', 'Transition to space, satellites'],
       ],
-      "rows": [
-        [
-          "Troposphere",
-          "0-8/18 km",
-          "Decreases (6.5°C/km)",
-          "All weather, 75% of mass"
-        ],
-        [
-          "Stratosphere",
-          "18-50 km",
-          "Increases (ozone absorbs UV)",
-          "Ozone layer, jet aircraft"
-        ],
-        [
-          "Mesosphere",
-          "50-80 km",
-          "Decreases",
-          "Coldest layer (-90°C), meteors burn"
-        ],
-        [
-          "Thermosphere",
-          "80-700 km",
-          "Increases (>1500°C)",
-          "Ionosphere, auroras, ISS orbit"
-        ],
-        [
-          "Exosphere",
-          ">700 km",
-          "Varies",
-          "Transition to space, satellites"
-        ]
-      ]
     },
     {
-      "title": "Types of Rainfall",
-      "headers": [
-        "Type",
-        "Mechanism",
-        "Indian Example"
+      title: 'Types of Rainfall',
+      headers: ['Type', 'Mechanism', 'Indian Example'],
+      rows: [
+        ['Convectional', 'Intense heating causes rising air', 'Summer afternoon thundershowers'],
+        ['Orographic', 'Moist air forced over mountains', 'Mawsynram, Western Ghats windward'],
+        ['Cyclonic/Frontal', 'Air mass convergence at fronts', 'Western Disturbances (winter rain)'],
       ],
-      "rows": [
-        [
-          "Convectional",
-          "Intense heating → convection",
-          "Summer afternoon thundershowers"
-        ],
-        [
-          "Orographic",
-          "Moist air forced over mountains",
-          "Mawsynram, Western Ghats windward"
-        ],
-        [
-          "Cyclonic/Frontal",
-          "Air mass convergence",
-          "Western Disturbances (winter rain)"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
-    {
-      "title": "Atmospheric Layers (bottom to top)",
-      "mnemonic": "Totally Sexy Men Turn Everywhere",
-      "explanation": "Troposphere, Stratosphere, Mesosphere, Thermosphere, Exosphere — from surface upward."
     },
     {
-      "title": "Atmosphere Composition",
-      "mnemonic": "Never Offer Arjun Carbon — 78, 21, 1, 0.04",
-      "explanation": "Nitrogen 78%, Oxygen 21%, Argon ~1%, CO2 0.04% — approximate percentages of major atmospheric gases."
-    }
-  ]
+      title: 'Adiabatic Lapse Rates',
+      headers: ['Type', 'Rate', 'Condition'],
+      rows: [
+        ['Normal Lapse Rate (ELR)', '~6.5 degrees C/km', 'Average actual rate in atmosphere'],
+        ['Dry Adiabatic (DALR)', '10 degrees C/km', 'Unsaturated rising air'],
+        ['Wet/Saturated (SALR)', '~5-6 degrees C/km', 'Saturated air (latent heat released)'],
+      ],
+    },
+    {
+      title: 'Types of Temperature Inversion',
+      headers: ['Type', 'Cause', 'Location/Season'],
+      rows: [
+        ['Radiation', 'Ground radiates heat on clear nights', 'Indo-Gangetic Plain, winter; valleys'],
+        ['Subsidence', 'Descending air warms adiabatically', 'Subtropical high pressure belts'],
+        ['Frontal', 'Warm air rises over cold at a front', 'Mid-latitude weather fronts'],
+      ],
+    },
+    {
+      title: 'Major Indian Weather Phenomena',
+      headers: ['Phenomenon', 'Season', 'Region'],
+      rows: [
+        ['Western Disturbances', 'Winter (Dec-Feb)', 'NW India — Punjab, HP, J&K'],
+        ['Loo', 'Summer (May-Jun)', 'NW India — Rajasthan, Punjab, UP'],
+        ['Nor\'westers (Kalbaishakhi)', 'Pre-monsoon (Apr-May)', 'Eastern India — WB, Assam, Odisha'],
+        ['Mango Showers', 'Pre-monsoon (Apr-May)', 'Kerala, Karnataka'],
+        ['October Heat', 'Post-monsoon (Oct)', 'All India — high humidity + temp'],
+        ['NE Monsoon Cyclones', 'Oct-Dec', 'TN, AP coast'],
+      ],
+    },
+    {
+      title: 'Global Atmospheric Circulation Cells',
+      headers: ['Cell', 'Latitude', 'Surface Winds', 'Weather'],
+      rows: [
+        ['Hadley', '0-30 degrees', 'Trade Winds (NE in NH)', 'Equatorial rain; subtropical deserts'],
+        ['Ferrel', '30-60 degrees', 'Westerlies (SW in NH)', 'Mid-latitude cyclones; frontal rain'],
+        ['Polar', '60-90 degrees', 'Polar Easterlies', 'Cold, stable; polar front storms'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Atmospheric Layers (bottom to top)',
+      mnemonic: 'The Sun Makes Things Exciting — Troposphere, Stratosphere, Mesosphere, Thermosphere, Exosphere',
+      explanation: 'Five atmospheric layers from surface upward. Temperature alternates: decreases, increases, decreases, increases.',
+    },
+    {
+      title: 'Atmosphere Composition',
+      mnemonic: 'Never Offer Arjun Carbon — 78, 21, 1, 0.04',
+      explanation: 'Nitrogen 78%, Oxygen 21%, Argon ~1%, CO2 0.04% — approximate percentages of major atmospheric gases.',
+    },
+    {
+      title: 'Heat Budget Split',
+      mnemonic: '30-23-47 — Reflected, Atmosphere, Surface',
+      explanation: '30% reflected (albedo), 23% absorbed by atmosphere, 47% absorbed by surface. Total incoming = total outgoing.',
+    },
+    {
+      title: 'Three-Cell Model',
+      mnemonic: 'HFP — Hadley (0-30), Ferrel (30-60), Polar (60-90)',
+      explanation: 'Global circulation: Hadley is the strongest (trade winds), Ferrel is weakest (westerlies), Polar (easterlies).',
+    },
+    {
+      title: 'Coriolis Deflection',
+      mnemonic: 'RIGHT in North, LEFT in South — "RN-LS"',
+      explanation: 'Coriolis Force deflects winds right in Northern Hemisphere, left in Southern. Zero at equator, max at poles.',
+    },
+  ],
 }

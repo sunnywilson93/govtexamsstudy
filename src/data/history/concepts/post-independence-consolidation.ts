@@ -12,8 +12,16 @@ export const postIndependenceConsolidationConcept: HistoryConcept = {
       event: "Partition-related violence and refugee crisis — estimated 12-15 million displaced, 200,000-2 million killed; Gandhi assassinated (January 30, 1948) by Nathuram Godse",
     },
     {
+      year: "1948",
+      event: "Atomic Energy Commission established under Homi Bhabha; RSS banned (later lifted); Mahatma Gandhi National Rural Employment Guarantee scheme conceptualized for rural rehabilitation",
+    },
+    {
+      year: "1949",
+      event: "Constitution adopted on November 26 (now celebrated as Constitution Day/Samvidhan Divas since 2015); Constituent Assembly doubles as provisional parliament",
+    },
+    {
       year: "1950",
-      event: "Constitution of India comes into effect (January 26); India becomes a Republic; Rajendra Prasad elected first President; first general elections scheduled",
+      event: "Constitution comes into effect (January 26); India becomes a Republic; Rajendra Prasad elected first President; Planning Commission established",
     },
     {
       year: "1951-1952",
@@ -21,23 +29,39 @@ export const postIndependenceConsolidationConcept: HistoryConcept = {
     },
     {
       year: "1951",
-      event: "First Five Year Plan launched (1951-56) — Harrod-Domar model; focus on agriculture, irrigation, power; Bhakra-Nangal Dam commenced",
+      event: "First Five Year Plan launched (1951-56) — Harrod-Domar model; focus on agriculture, irrigation, power; Bhakra-Nangal Dam; First Amendment to Constitution passed",
     },
     {
       year: "1953",
-      event: "States Reorganisation Commission (SRC) appointed under Fazl Ali after the death of Potti Sreeramulu (Telugu agitation); Andhra Pradesh created as first linguistic state",
+      event: "States Reorganisation Commission appointed under Fazl Ali after the death of Potti Sreeramulu; Andhra State created as first linguistic state (October 1)",
+    },
+    {
+      year: "1954",
+      event: "Panchsheel Agreement with China (Five Principles of Peaceful Coexistence); Nehru-Zhou Enlai joint statement; Special Marriage Act passed",
     },
     {
       year: "1955",
-      event: "Bandung Conference (Indonesia) — India plays a key role; Non-Alignment principles articulated; Panchsheel Agreement with China (1954)",
+      event: "Bandung Conference (Indonesia); Avadi Resolution (Congress adopts 'socialist pattern of society'); Hindu Code Bills passed; Untouchability (Offences) Act enacted",
     },
     {
       year: "1956",
-      event: "States Reorganisation Act — 14 states and 6 union territories; Second Five Year Plan launched (Mahalanobis model, heavy industry focus — Bhilai, Rourkela, Durgapur steel plants)",
+      event: "States Reorganisation Act — 14 states and 6 UTs; Second Five Year Plan (Mahalanobis model); Industrial Policy Resolution; Bhilai, Rourkela, Durgapur steel plants",
+    },
+    {
+      year: "1957",
+      event: "Second General Elections; Kerala elects world's first democratically elected Communist government (E.M.S. Namboodiripad); Saka calendar adopted as national calendar",
+    },
+    {
+      year: "1959",
+      event: "Swatantra Party founded by C. Rajagopalachari (free-enterprise opposition); Dalai Lama flees to India after Chinese suppress Tibetan revolt; Panchayati Raj inaugurated (Nagaur, Rajasthan)",
+    },
+    {
+      year: "1960",
+      event: "Bombay state bifurcated into Maharashtra (capital Bombay) and Gujarat (capital Ahmedabad) after Samyukta Maharashtra Samiti agitation",
     },
     {
       year: "1962",
-      event: "Sino-Indian War (October-November) — India's humiliating defeat in NEFA and Aksai Chin; exposes military unpreparedness; Nehru's reputation shaken",
+      event: "Sino-Indian War (October-November) — India's humiliating defeat in NEFA and Aksai Chin; exposes military unpreparedness; Nehru's reputation shaken; Krishna Menon resigns",
     },
     {
       year: "1964",
@@ -53,7 +77,7 @@ export const postIndependenceConsolidationConcept: HistoryConcept = {
     {
       section: "The Constitution & Democratic Foundations",
       content:
-        "The Constituent Assembly, elected in 1946 and comprising 299 members (reduced to 299 after partition — it had originally 389 seats including princely states and Pakistan areas), framed the Constitution of India over 2 years, 11 months, and 18 days. Dr. B.R. Ambedkar chaired the Drafting Committee; other key members included Alladi Krishnaswamy Ayyar, N. Gopalaswami Ayyangar, K.M. Munshi, and T.T. Krishnamachari. The Constitution drew from multiple sources: British parliamentary model (Westminster system), US Bill of Rights (Fundamental Rights), Irish Directive Principles, Canadian federal structure with strong centre, and the Government of India Act 1935 (which provided most of the administrative and governance framework). The Constitution came into effect on January 26, 1950 (chosen to commemorate the 1930 Purna Swaraj resolution), making India a sovereign democratic republic. Key features: federal structure with unitary bias, parliamentary system, fundamental rights (Part III), directive principles (Part IV), single citizenship, independent judiciary, and secularism (added explicitly as 'secular' and 'socialist' in the Preamble by the 42nd Amendment, 1976). The first general elections (1951-52), organized by Chief Election Commissioner Sukumar Sen, were the world's largest democratic exercise — 173 million eligible voters, 45% turnout. The Election Commission used ballot boxes with party symbols since most voters were illiterate.",
+        "The Constituent Assembly, elected in 1946 and comprising 299 members (reduced after partition — it had originally 389 seats including princely states and Pakistan areas), framed the Constitution of India over 2 years, 11 months, and 18 days. Dr. B.R. Ambedkar chaired the Drafting Committee; other key members included Alladi Krishnaswamy Ayyar, N. Gopalaswami Ayyangar, K.M. Munshi, and T.T. Krishnamachari. The Constitution drew from multiple sources: British parliamentary model (Westminster system), US Bill of Rights (Fundamental Rights), Irish Directive Principles, Canadian federal structure with strong centre, and the Government of India Act 1935 (which provided most of the administrative and governance framework). The Constitution came into effect on January 26, 1950 (chosen to commemorate the 1930 Purna Swaraj resolution), making India a sovereign democratic republic. Key features: federal structure with unitary bias, parliamentary system, fundamental rights (Part III), directive principles (Part IV), single citizenship, independent judiciary, and secularism (added explicitly as 'secular' and 'socialist' in the Preamble by the 42nd Amendment, 1976). The first general elections (1951-52), organized by Chief Election Commissioner Sukumar Sen, were the world's largest democratic exercise — 173 million eligible voters, 45% turnout. The Election Commission used ballot boxes with party symbols since most voters were illiterate.",
     },
     {
       section: "Linguistic Reorganization of States",
@@ -79,6 +103,41 @@ export const postIndependenceConsolidationConcept: HistoryConcept = {
       section: "Challenges — Communalism, Kashmir & China War",
       content:
         "The Nehruvian era faced serious challenges. Communalism: despite Nehru's commitment to secularism, communal tensions persisted — riots in Jabalpur (1961), Rourkela (1964), and elsewhere; the Jana Sangh (founded 1951 by Syama Prasad Mookerjee) emerged as a Hindu nationalist party opposing Nehru's secularism. Kashmir: the accession of Kashmir to India (October 26, 1947), the Indo-Pak War of 1947-48, the UN ceasefire (January 1, 1949), Nehru's promise of a plebiscite (which was never held), and the special status under Article 370 remained contentious. Sheikh Abdullah, initially Nehru's ally, was dismissed and arrested in 1953 after his alleged separatist leanings. The Sino-Indian War (October-November 1962) was the most traumatic event of the Nehruvian era — China's surprise attack in NEFA (Arunachal Pradesh, an Indian state) and Aksai Chin shattered the 'Hindi-Chini Bhai Bhai' illusion and exposed India's military unpreparedness. Defence Minister Krishna Menon resigned; Nehru's health declined after the war. The Henderson-Brooks Report (an internal military review of the war) remains classified. The war also ended the Panchsheel (Five Principles of Peaceful Coexistence) era in India-China relations — Panchsheel had been agreed upon in the 1954 trade agreement regarding Tibet.",
+    },
+    {
+      section: "Land Reforms & Agrarian Changes",
+      content:
+        "Land reform was a central component of Nehruvian nation-building. The zamindari abolition laws (enacted by states between 1948-1956) eliminated the intermediary landlord system created by the British — the Permanent Settlement (1793) in Bengal and the Ryotwari/Mahalwari variants elsewhere. About 20 million tenants became landowners. However, zamindars circumvented the laws through benami transactions and retained large holdings. Tenancy reform laws attempted to provide security of tenure and regulate rents, but were unevenly implemented. Ceiling legislation (1960s) aimed to limit individual landholding and redistribute surplus land, but loopholes allowed evasion — personal cultivation exemptions, family partitions, and legal challenges weakened these laws. The Community Development Programme (1952, launched on Gandhi's birthday) and the National Extension Service aimed to modernize rural India through block-level development — each block covering 100 villages with an extension officer. The Balwantrai Mehta Committee (1957) recommended three-tier Panchayati Raj (village, block, district) to decentralize rural governance; Rajasthan was the first state to implement it (Nagaur, October 2, 1959). The Nagpur Resolution (1959) of the Congress advocated cooperative farming, alarming the landed elite and partly motivating C. Rajagopalachari's founding of the Swatantra Party.",
+    },
+    {
+      section: "Kerala — First Communist Government",
+      content:
+        "In 1957, the Communist Party of India won the Kerala state elections, forming the world's first democratically elected Communist government under E.M.S. Namboodiripad. The government introduced landmark legislation: the Kerala Agrarian Relations Bill (radical land reform), the Education Bill (bringing private schools under government oversight — fiercely opposed by the Catholic Church and the Nair Service Society), and the Kerala Industrial Relations Bill. The opposition to the Education Bill triggered the 'Liberation Struggle' (Vimochana Samaram) — a broad coalition of the Congress, Muslim League, Catholic Church, and NSS mobilized mass protests. The central government invoked Article 356 (President's Rule) to dismiss the Kerala government in 1959 — the first use of Article 356 for political purposes. Nehru, despite his democratic credentials, authorized this dismissal, setting a controversial precedent. The Kerala episode raised fundamental questions about centre-state relations, the scope of Article 356, and the limits of democratic governance that remain relevant today.",
+    },
+    {
+      section: "Foreign Policy — Non-Alignment & Bandung",
+      content:
+        "Nehru was the principal architect of India's foreign policy, based on the principles of non-alignment, anti-colonialism, and peaceful coexistence. The Panchsheel Agreement (1954) with China established five principles: mutual respect for sovereignty, non-aggression, non-interference, equality and mutual benefit, and peaceful coexistence. India played a key role at the Bandung Conference (1955, Indonesia) — the first large-scale Afro-Asian gathering, attended by 29 nations, which articulated the spirit of non-alignment (though the formal NAM was established at Belgrade, 1961). Nehru, along with Tito (Yugoslavia) and Nasser (Egypt), became the founding leaders of the Non-Aligned Movement. India supported decolonization — backing independence movements in Indonesia, Indo-China, and Africa; opposed apartheid in South Africa; and championed the cause of developing nations in the UN. India's participation in the Korean War peacekeeping (1950-53, V.K. Krishna Menon's role in the armistice negotiations) and the Suez Crisis (1956, supporting Egypt) established India's international prestige. However, the 1962 China war severely damaged Nehru's non-alignment credibility, as India sought Western military aid. The relationship with Pakistan remained fraught — the Kashmir dispute, the Liaquat-Nehru Pact (1950, protecting minorities), and periodic border tensions defined this period.",
+    },
+    {
+      section: "Democratic Opposition & Political Pluralism",
+      content:
+        "The Nehruvian era, while dominated by the Congress, saw the emergence of vibrant democratic opposition. The Communist Party of India (CPI), founded in 1925, was the principal opposition in Parliament and won power in Kerala (1957). It split in 1964 into CPI and CPI(M) over the Sino-Indian war and Soviet-China ideological dispute. The Socialist Party, led by Jayaprakash Narayan, Ram Manohar Lohia, and Acharya Narendra Deva, advocated democratic socialism distinct from Nehru's centralized planning. The Jana Sangh (1951, Syama Prasad Mookerjee) represented Hindu nationalist politics — Mookerjee's death in detention in Kashmir (1953) while protesting against the permit system became a rallying point. The Swatantra Party (1959, C. Rajagopalachari) championed free enterprise, individual liberty, and opposed Nehru's 'licence-permit raj.' The Dravida Munnetra Kazhagam (DMK) in Tamil Nadu, the Akali Dal in Punjab, and the tribal parties in the Northeast represented regional aspirations. Despite Congress's overwhelming majority, Nehru respected parliamentary debate — he engaged with critics like Lohia and Rajagopalachari, and the democratic culture of disagreement was firmly established.",
+    },
+    {
+      section: "Transport, Communication & Industrial Infrastructure",
+      content:
+        "The Nehruvian era witnessed massive infrastructure development. The railway network, inherited from the British (54,000 km at independence), was reorganized into zones — the Railway Board was restructured, new manufacturing units were established at Chittaranjan (locomotives, 1950), Perambur (coaches), and the Diesel Locomotive Works at Varanasi (1961). The national highway system was planned (National Highways Act, 1956). Air India was nationalized in 1953 (from J.R.D. Tata), creating Air India for international routes and Indian Airlines for domestic. All India Radio (AIR) expanded to cover most of the country — it became a key instrument of nation-building, broadcasting in multiple languages. The Hindustan Machine Tools (HMT, 1953), Hindustan Aeronautics Limited (HAL, 1964), Heavy Engineering Corporation (HEC, Ranchi), and Bharat Heavy Electricals Limited (BHEL, 1964) were established as public sector undertakings (PSUs). The Industrial Development and Regulation Act (1951) required industrial licensing for all significant industries, creating the 'licence raj' that was later criticized for stifling private enterprise. Despite criticisms, this period laid the physical and institutional infrastructure foundation that India built upon in subsequent decades.",
+    },
+    {
+      section: "Linguistic & Cultural Nation-Building",
+      content:
+        "Language policy was a sensitive issue. The Constitution designated Hindi in Devanagari script as the official language (Article 343), with English continuing for 15 years (until 1965). The Official Languages Act (1963) allowed English to continue indefinitely as an associate official language after severe anti-Hindi agitations in Tamil Nadu (1965). The Eighth Schedule initially listed 14 languages (now 22 after successive amendments). The Three-Language Formula (recommended by the Kothari Commission, 1964-66) proposed that students learn Hindi, English, and a modern Indian language — but implementation remained uneven. Cultural nation-building included: the national emblem (Lion Capital of Sarnath, adopted January 26, 1950), the national flag (tricolour with Ashoka Chakra), the national anthem (Jana Gana Mana by Tagore), and the national song (Vande Mataram by Bankim Chandra). Nehru promoted the idea of 'unity in diversity' — celebrating India's plural cultural heritage while building a modern, secular nation. Films (especially Hindi cinema), All India Radio, and Doordarshan (launched 1959 as experimental service) became vehicles for creating a shared national culture.",
+    },
+    {
+      section: "Nehru's Legacy — Assessment & Criticism",
+      content:
+        "Nehru died on May 27, 1964, after 17 years as Prime Minister. His legacy is debated. Achievements: establishing a functioning democracy in a poor, diverse country; creating institutions (IITs, AIIMS, public sector); building an industrial base; maintaining secularism; founding the non-aligned movement; and nurturing scientific temper. Criticisms: the 1962 China war exposed strategic naivety; the 'licence raj' stifled private enterprise; land reforms were inadequate; Kashmir policy was mishandled (UN reference, Article 370's ambiguity); the Congress party was not adequately democratized; and dynastic tendencies emerged with the rise of Indira Gandhi. Lal Bahadur Shastri succeeded Nehru after a brief power struggle — Morarji Desai was passed over through the 'Kamaraj Plan' (1963) and the 'Syndicate' (powerful Congress leaders including K. Kamaraj, Atulya Ghosh, S.K. Patil, Sanjiva Reddy). Shastri's brief tenure (1964-66) saw the 1965 India-Pakistan war and the Tashkent Declaration. After Shastri's death in Tashkent (January 11, 1966), Indira Gandhi became PM — beginning a new chapter in Indian politics.",
     },
     {
       section: "Exam Significance & Key Questions",

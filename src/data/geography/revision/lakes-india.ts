@@ -1,113 +1,139 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const lakesIndiaRevision: SubjectRevision = {
-  "topic": "lakes-india",
-  "bullets": [
-    "Wular Lake (J&K) — largest freshwater lake in India (~130 sq km); tectonic origin; Ramsar site.",
-    "Chilika Lake (Odisha) — largest coastal lagoon (~1,100 sq km); Irrawaddy dolphins; Ramsar site.",
-    "Sambhar Lake (Rajasthan) — largest inland saline lake (~230 sq km); produces 8.7% of India's salt.",
-    "Vembanad Lake (Kerala) — longest lake in India (96.5 km); backwaters; Nehru Trophy Boat Race.",
-    "Pangong Tso (Ladakh) — 134 km long (60% in China); saltwater; ~4,350 m altitude; strategic.",
-    "Loktak Lake (Manipur) — largest freshwater lake in NE India; phumdis; Keibul Lamjao floating NP.",
-    "Lonar Lake (Maharashtra) — only crater lake in basaltic rock (meteorite impact ~50,000 years ago); saline-alkaline.",
-    "Dal Lake (Srinagar, J&K) — houseboats, floating gardens (Rad); faces eutrophication.",
-    "Lake types: tectonic (Wular), glacial (Gurudongmar), volcanic/crater (Lonar), lagoon (Chilika), oxbow, man-made.",
-    "Gobind Sagar (HP) — formed by Bhakra Dam on Satluj; one of India's largest reservoirs.",
-    "Gurudongmar Lake (Sikkim, 5,430 m) — one of highest lakes in India; sacred to Buddhists and Sikhs.",
-    "Roopkund (Uttarakhand, 5,029 m) — 'Skeleton Lake' with 600-800 human skeletons from 9th century.",
-    "Pulicat Lake (AP-TN border) — 2nd largest brackish lagoon; flamingo breeding site.",
-    "Hussain Sagar (Hyderabad) — man-made (1562); connects twin cities; severely polluted.",
-    "Bengaluru has lost 85% of its lakes in 50 years due to encroachment and urbanization."
+  topic: 'lakes-india',
+  bullets: [
+    'Wular Lake (J&K) — largest freshwater lake in India (~130 sq km); tectonic origin; on Jhelum River; Ramsar site.',
+    'Chilika Lake (Odisha) — largest coastal lagoon in India (~1,100 sq km); Irrawaddy dolphins; India\'s first Ramsar site (1981).',
+    'Sambhar Lake (Rajasthan) — largest inland saline lake (~230 sq km); produces 8.7% of India\'s salt; Ramsar site.',
+    'Vembanad Lake (Kerala) — longest lake in India (96.5 km); part of Kerala backwaters; Nehru Trophy Boat Race; Ramsar site.',
+    'Pangong Tso (Ladakh) — 134 km long (60% in China); saltwater at ~4,350 m; endorheic; strategically sensitive area.',
+    'Loktak Lake (Manipur) — largest freshwater lake in NE India (~287 sq km); phumdis (floating vegetation); Keibul Lamjao floating NP.',
+    'Loktak is on the Montreux Record due to ecological degradation caused by Ithai Barrage (1983).',
+    'Lonar Lake (Maharashtra) — only crater lake in basaltic rock globally (meteorite impact ~50,000 years ago); saline-alkaline; turned pink in 2020.',
+    'Lonar Lake is declared a National Geo-heritage Monument.',
+    'Dal Lake (Srinagar, J&K) — houseboats, floating gardens (Rad); faces severe eutrophication from sewage.',
+    'Lake types: tectonic (Wular), glacial (Gurudongmar), volcanic/crater (Lonar), lagoon (Chilika), oxbow, man-made.',
+    'Gobind Sagar (HP) — formed by Bhakra Dam (226 m) on Satluj; one of India\'s largest reservoirs.',
+    'Gurudongmar Lake (Sikkim, 5,430 m) — one of highest lakes in India; sacred to Buddhists and Sikhs.',
+    'Roopkund (Uttarakhand, 5,029 m) — "Skeleton Lake" with 600-800 human skeletons from 9th century; glacial lake.',
+    'Tso Moriri (Ladakh, 4,522 m) — Ramsar site; breeding ground for bar-headed goose and great crested grebe.',
+    'Tso Kar (Ladakh, ~4,530 m) — white salt crust around shores; historical salt trade route.',
+    'Pulicat Lake (AP-TN border) — 2nd largest brackish lagoon after Chilika; flamingo breeding site; Dutch trading post.',
+    'Hussain Sagar (Hyderabad) — man-made (1562, Ibrahim Quli Qutb Shah); connects twin cities; severely polluted.',
+    'Upper Lake/Bhoj Wetland (Bhopal) — one of oldest man-made lakes (11th century, Raja Bhoj); Ramsar site.',
+    'Sukhna Lake (Chandigarh) — man-made (1958); part of Le Corbusier\'s city plan.',
+    'Manasbal Lake (J&K) — "Jewel of Kashmir"; deepest lake in Kashmir (13 m); lotus blooms.',
+    'Hemkund Sahib (Uttarakhand, 4,632 m) — glacial lake with Sikh gurudwara on its shore; Dasam Granth.',
+    'Bengaluru has lost 85%+ of its lakes in 50 years; Bellandur Lake caught fire multiple times from pollution.',
+    'Kabar Taal/Kabar Lake (Bihar) — Asia\'s largest freshwater oxbow lake; Ramsar site.',
+    'Ashtamudi Lake (Kerala) — "eight-armed" estuary; Ramsar site; Kollam district.',
+    'Nainital (Uttarakhand) — crescent-shaped tectonic lake at 1,938 m in Kumaon Hills.',
+    'Kuttanad (Kerala) — region around Vembanad where rice farming occurs below sea level.',
+    'Jaisamand/Dhebar Lake (Rajasthan) — built 1685; was once largest artificial lake in Asia.',
+    'India has 75+ Ramsar wetlands (2023) covering ~13.27 lakh hectares — many are lakes.',
+    'National Lake Conservation Plan (NLCP) — now merged into National Plan for Conservation of Aquatic Eco-systems (NPCA).',
+    'Wetlands (Conservation and Management) Rules 2017 — notified under EPA 1986; aims to prevent encroachment.',
+    'Water hyacinth (Eichhornia crassipes) — invasive species that chokes Loktak, Hussain Sagar, and many other lakes.',
+    'Black-necked crane — endangered bird found at Tso Moriri and Pangong Tso (Ladakh); breeds in high-altitude lakes.',
+    'Sangai (brow-antlered deer) — found only in Keibul Lamjao NP on Loktak Lake phumdis; state animal of Manipur.',
+    'Indira Sagar (MP, Narmada) — one of India\'s largest reservoirs by area (~913 sq km).',
+    'Hirakud Reservoir (Odisha) — ~743 sq km; serves irrigation, flood control, and hydropower.',
+    'Stanley Reservoir (TN) — formed by Mettur Dam on Kaveri (1934); oldest major dam reservoir.',
+    'Tamil Nadu has about 39,000 tanks/eris — traditional man-made lakes for irrigation.',
+    'Eutrophication — nutrient enrichment causing algal blooms and oxygen depletion — main threat to urban lakes.',
+    'India ranks 5th in number of Ramsar sites; UK is 1st. All 75+ Indian Ramsar sites are "wetlands of international importance".',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Major Lakes of India",
-      "headers": [
-        "Lake",
-        "State",
-        "Type",
-        "Special Feature"
+      title: 'Major Lakes of India — Key Facts',
+      headers: ['Lake', 'State', 'Type', 'Special Feature'],
+      rows: [
+        ['Wular', 'J&K', 'Freshwater (tectonic)', 'Largest freshwater lake'],
+        ['Chilika', 'Odisha', 'Brackish (coastal lagoon)', 'Largest coastal lagoon; Irrawaddy dolphins'],
+        ['Sambhar', 'Rajasthan', 'Saline (inland)', 'Largest inland saline lake; 8.7% of India\'s salt'],
+        ['Vembanad', 'Kerala', 'Brackish (lagoon)', 'Longest lake (96.5 km); backwaters'],
+        ['Pangong Tso', 'Ladakh', 'Saline (endorheic)', '134 km; 60% in China; strategic'],
+        ['Loktak', 'Manipur', 'Freshwater', 'Phumdis; floating NP; Montreux Record'],
+        ['Lonar', 'Maharashtra', 'Saline-alkaline (crater)', 'Meteorite impact; only basaltic crater lake'],
+        ['Dal', 'J&K', 'Freshwater', 'Houseboats; Rad floating gardens'],
       ],
-      "rows": [
-        [
-          "Wular",
-          "J&K",
-          "Freshwater (tectonic)",
-          "Largest freshwater lake"
-        ],
-        [
-          "Chilika",
-          "Odisha",
-          "Brackish (coastal lagoon)",
-          "Largest coastal lagoon"
-        ],
-        [
-          "Sambhar",
-          "Rajasthan",
-          "Saline (inland)",
-          "Largest inland saline lake"
-        ],
-        [
-          "Vembanad",
-          "Kerala",
-          "Brackish (lagoon)",
-          "Longest lake (96.5 km)"
-        ],
-        [
-          "Pangong Tso",
-          "Ladakh",
-          "Saline (endorheic)",
-          "134 km; 60% in China"
-        ],
-        [
-          "Lonar",
-          "Maharashtra",
-          "Saline-alkaline (crater)",
-          "Meteorite impact crater"
-        ]
-      ]
     },
     {
-      "title": "Freshwater vs Saline Lakes",
-      "headers": [
-        "Feature",
-        "Freshwater",
-        "Saline"
+      title: 'Freshwater vs Saline vs Brackish Lakes',
+      headers: ['Feature', 'Freshwater', 'Saline', 'Brackish'],
+      rows: [
+        ['Dissolved salts', 'Low (<0.5 ppt)', 'High (>30 ppt)', 'Intermediate (0.5-30 ppt)'],
+        ['Outflow', 'Has outlet', 'Endorheic (no outlet)', 'Connected to sea (intermittently)'],
+        ['Formation', 'Tectonic, glacial, man-made', 'Evaporation in closed basins', 'Coastal processes (lagoons)'],
+        ['Examples', 'Wular, Dal, Loktak', 'Sambhar, Pangong, Tso Kar', 'Chilika, Pulicat, Vembanad'],
+        ['Cause of salinity', 'N/A', 'Evaporation concentrates salts', 'Mixing of fresh and sea water'],
       ],
-      "rows": [
-        [
-          "Dissolved salts",
-          "Low",
-          "High"
-        ],
-        [
-          "Outflow",
-          "Has outlet",
-          "Endorheic (no outlet)"
-        ],
-        [
-          "Examples",
-          "Wular, Dal, Loktak",
-          "Sambhar, Pangong, Tso Kar"
-        ],
-        [
-          "Cause of salinity",
-          "N/A",
-          "Evaporation concentrates salts"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
-    {
-      "title": "Largest Lakes by Type",
-      "mnemonic": "WCS — Wular (freshwater), Chilika (coastal lagoon), Sambhar (inland saline)",
-      "explanation": "India's largest lakes by category."
     },
     {
-      "title": "Lonar Lake Facts",
-      "mnemonic": "Lonar = Lunar crater — meteorite impact, basaltic, saline-alkaline, Maharashtra",
-      "explanation": "Lonar is the only known crater lake in basaltic rock, formed by a meteorite impact ~50,000 years ago."
-    }
-  ]
+      title: 'High-Altitude Lakes of India',
+      headers: ['Lake', 'State/UT', 'Altitude (m)', 'Special Feature'],
+      rows: [
+        ['Gurudongmar', 'Sikkim', '5,430', 'One of highest; sacred to Buddhists and Sikhs'],
+        ['Roopkund', 'Uttarakhand', '5,029', '"Skeleton Lake" — 600-800 human skeletons'],
+        ['Hemkund', 'Uttarakhand', '4,632', 'Sikh gurudwara; Dasam Granth mention'],
+        ['Tso Kar', 'Ladakh', '~4,530', 'White salt crust; historical salt trade'],
+        ['Tso Moriri', 'Ladakh', '4,522', 'Ramsar site; bar-headed goose breeding'],
+        ['Pangong Tso', 'Ladakh', '~4,350', '134 km; 60% in China; colour-changing'],
+        ['Se La', 'Arunachal', '4,170', 'Near Se La Pass on Tawang road'],
+        ['Tsomgo/Changu', 'Sikkim', '3,753', 'Glacial; on Nathu La road'],
+      ],
+    },
+    {
+      title: 'Man-Made Lakes/Reservoirs — Top 5',
+      headers: ['Reservoir', 'Dam', 'River', 'State', 'Area (sq km)'],
+      rows: [
+        ['Indira Sagar', 'Indira Sagar Dam', 'Narmada', 'MP', '~913'],
+        ['Hirakud', 'Hirakud Dam', 'Mahanadi', 'Odisha', '~743'],
+        ['Nagarjuna Sagar', 'Nagarjuna Sagar Dam', 'Krishna', 'Telangana-AP', '~285'],
+        ['Gobind Sagar', 'Bhakra Dam', 'Satluj', 'HP', '~168'],
+        ['Sardar Sarovar', 'Sardar Sarovar Dam', 'Narmada', 'Gujarat', '~375'],
+      ],
+    },
+    {
+      title: 'Ramsar Sites — Selected Lake Entries',
+      headers: ['Lake/Wetland', 'State', 'Year of Designation', 'Significance'],
+      rows: [
+        ['Chilika', 'Odisha', '1981', 'India\'s 1st Ramsar site; largest lagoon'],
+        ['Loktak', 'Manipur', '1990', 'On Montreux Record; phumdis'],
+        ['Wular', 'J&K', '1990', 'Largest freshwater lake'],
+        ['Sambhar', 'Rajasthan', '1990', 'Largest inland saline lake'],
+        ['Vembanad-Kol', 'Kerala', '2002', 'Longest lake; backwaters'],
+        ['Tso Moriri', 'Ladakh', '2002', 'High-altitude; black-necked crane'],
+        ['Upper Lake (Bhoj Wetland)', 'MP', '2002', 'One of oldest man-made lakes'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Largest Lakes by Type (WCS)',
+      mnemonic: 'Wular (freshwater), Chilika (coastal lagoon), Sambhar (inland saline)',
+      explanation: 'India\'s largest lakes by category. Vembanad is the longest.',
+    },
+    {
+      title: 'Lonar Lake Facts',
+      mnemonic: 'Lonar = Lunar crater — meteorite impact, basaltic, saline-alkaline, Maharashtra, turned pink 2020',
+      explanation: 'Lonar is the only known crater lake in basaltic rock, formed by a meteorite impact ~50,000 years ago. National Geo-heritage Monument.',
+    },
+    {
+      title: 'Loktak Lake — 3 Ps',
+      mnemonic: 'Phumdis + (only) floating Park (Keibul Lamjao) + Problem (Ithai barrage → Montreux Record)',
+      explanation: 'Loktak Lake (Manipur) is known for three P-facts: phumdis (floating vegetation masses), the world\'s only floating national park, and its Montreux Record listing due to the Ithai Barrage.',
+    },
+    {
+      title: 'Skeleton Lake Identity',
+      mnemonic: 'Roopkund = 5,029 m + Uttarakhand + 600 skeletons + 9th century + hailstorm pilgrimage',
+      explanation: 'Quick recall for Roopkund Lake facts frequently asked in exams.',
+    },
+    {
+      title: 'Lake Pollution Hotspots',
+      mnemonic: 'BHD — Bellandur (Bengaluru, fire), Hussain Sagar (Hyderabad, sewage), Dal (Srinagar, eutrophication)',
+      explanation: 'Three most polluted urban lakes in India. Bellandur has caught fire from foam; Hussain Sagar receives 80+ MLD sewage; Dal faces eutrophication and encroachment.',
+    },
+  ],
 }

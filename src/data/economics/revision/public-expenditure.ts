@@ -1,61 +1,141 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const publicExpenditureRevision: SubjectRevision = {
-  "topic": "public-expenditure",
-  "bullets": [
-    "Revenue Expenditure: Does not create assets (salaries, pensions, interest, subsidies). Capital Expenditure: Creates assets or reduces liabilities.",
-    "Major subsidies: Food (~Rs 2 lakh crore), Fertiliser (~Rs 1.64 lakh crore), LPG/petroleum.",
-    "FCI (Food Corporation of India): Procures, stores, distributes food grains under PDS.",
-    "DBT via JAM Trinity eliminates ghost beneficiaries — saved over Rs 2.7 lakh crore cumulatively.",
-    "Capital expenditure multiplier: Rs 1 of CapEx generates Rs 2.5-4.0 of output (IMF estimates for India).",
-    "CapEx budget has risen sharply: Rs 4.39L cr (21-22) → Rs 11.11L cr (24-25).",
-    "NMP (National Monetisation Pipeline): Rs 6 lakh crore from leasing brownfield assets (not privatisation).",
-    "Disinvestment: Sale of government stake in PSUs. Air India sold to Tata Group (2022).",
-    "Central Sector Schemes: 100% Centre funded. Centrally Sponsored: Centre + State funding (60:40 etc.).",
-    "Outcome Budgeting: Focus on results/outcomes rather than just expenditure allocation."
+  topic: 'public-expenditure',
+  bullets: [
+    'Revenue Expenditure: Does not create assets (salaries, pensions, interest, subsidies). Capital Expenditure: Creates assets or reduces liabilities.',
+    'Revenue Expenditure approximately 77% of total; Capital Expenditure approximately 23% (FY25 BE). Ratio shifting toward CapEx.',
+    'Major subsidies FY25: Food (Rs 2.05 lakh crore), Fertiliser (Rs 1.64 lakh crore), Petroleum/LPG (Rs 11,925 crore). Total approximately Rs 3.8 lakh crore.',
+    'Food subsidy: FCI procures at MSP, distributes through PDS at subsidised prices. Economic Cost of rice approximately Rs 39/kg; issue price Rs 0 (free under PMGKAY).',
+    'Fertiliser subsidy: Urea at controlled price (Rs 242/45kg bag — unchanged since 2002). NBS (Nutrient Based Subsidy) for P&K fertilisers since 2010.',
+    'DBT via JAM Trinity (Jan Dhan + Aadhaar + Mobile): Eliminated ghost beneficiaries. Cumulative savings over Rs 2.73 lakh crore.',
+    'LPG subsidy: PAHAL (DBTL) scheme — subsidy directly to bank account. Ujjwala: 10.3 crore free connections to BPL women.',
+    'Capital expenditure multiplier: Rs 1 of CapEx generates Rs 2.5-4.0 of output (IMF estimates for India). Revenue expenditure multiplier: approximately 0.9-1.0.',
+    'CapEx budget FY25: Rs 11.11 lakh crore (3.4% of GDP). Rose from Rs 4.39 lakh crore in FY22 — 2.5x in 3 years.',
+    'Interest payments: Largest single expenditure item. Rs 11.63 lakh crore (FY25 BE) — approximately 25% of total expenditure, 40% of revenue receipts.',
+    'Defence expenditure: Rs 6.22 lakh crore (FY25). Capital component approximately 27%. India 4th largest defence spender globally.',
+    'NMP (National Monetisation Pipeline 2021-25): Rs 6 lakh crore target from leasing brownfield assets. Not privatisation — assets remain government-owned.',
+    'Disinvestment: Sale of government stake in PSUs. Air India sold to Tata Group (2022, Rs 18,000 crore). LIC IPO (2022, Rs 20,557 crore).',
+    'FY25 disinvestment target: Rs 50,000 crore. Chronic underachievement — actual receipts usually 40-60% of target.',
+    'Strategic disinvestment: Government sells majority stake + management control. NITI Aayog identifies candidates. Non-strategic: Government retains management.',
+    'Central Sector Schemes (CS): 100% Centre funded, implemented by central agencies. Examples: PMKISAN, PMAY-G, PM Mudra.',
+    'Centrally Sponsored Schemes (CSS): Centre + State funding. Ratios: 60:40 (general), 90:10 (NE/special states). States implement. Examples: MGNREGA, PMAY.',
+    'CSS restructured: 30+ CSS merged into 28 umbrella schemes. States given more flexibility in fund use.',
+    'Outcome Budget (since 2006-07): Links allocation to measurable outcomes. Output-Outcome Framework for 66 ministries.',
+    'FRBM Act mandates revenue deficit and fiscal deficit targets. Revenue deficit = Revenue expenditure exceeds revenue receipts.',
+    'Effective Revenue Deficit = Revenue Deficit minus Grants for creation of capital assets. Concept introduced by 13th FC.',
+    'Committed expenditure (interest + pensions + salaries + subsidies) = approximately 65-70% of revenue expenditure. Leaves little fiscal space.',
+    'Expenditure Profile: Establishment approximately 10%, Subsidies approximately 10%, Interest approximately 25%, Pensions approximately 5%, Defence approximately 13%, Transfers to States approximately 20%.',
+    'Off-budget borrowings: Government borrows through PSUs/agencies (FCI, NHAI) to keep fiscal deficit low. Flagged by CAG and 15th FC.',
+    'N.K. Singh Committee (2017) recommended elimination of off-budget borrowings. Government committed to phasing them out.',
+    'Extra Budgetary Resources (EBR): IEBR (Internal and Extra Budgetary Resources) of PSUs. Not part of Union Budget but significant.',
+    'PM Gati Shakti (2021): Rs 100 lakh crore multi-modal connectivity plan. Digital platform integrates 16 ministries for infrastructure planning.',
+    'CapEx through grants to states: Rs 1.3 lakh crore (FY25) for capital asset creation at state level. Effectively CapEx.',
+    'Subsidy rationalisation: Fuel subsidy fell from Rs 2.4 lakh crore (FY13) to Rs 12,000 crore (FY25) after deregulation.',
+    'Food subsidy surged during COVID: Rs 5.41 lakh crore (FY21) from Rs 1.08 lakh crore (FY20) due to free food programme.',
+    'Fiscal impulse = Change in fiscal deficit/GDP ratio. Positive fiscal impulse = expansionary, negative = contractionary.',
+    'Wagner\'s Law: Government expenditure rises more than proportionally with economic development. Validated for India.',
+    'Wiseman-Peacock Hypothesis: Expenditure rises in steps after crises (wars, pandemics). COVID spending validated this.',
+    'Zero-based budgeting: Every expenditure must be justified from scratch each year, not just incremental changes. Attempted but not fully implemented.',
+    'Expenditure Finance Committee (EFC) and Standing Finance Committee (SFC): Appraise and approve new expenditure proposals.',
+    'PFMS (Public Financial Management System): Real-time expenditure tracking. Links 66 lakh bank accounts. DBT payments through PFMS.',
+    'Gender Budget Statement: Expenditure benefiting women shown separately since 2005-06. Part A (100% women) + Part B (30%+ women).',
+    'Outcome Budgeting challenge: Ministries often report outputs (schools built) not outcomes (learning improvement). Process compliance > impact measurement.',
+    'Revenue expenditure on education approximately 3% of GDP (target 6% per NEP). Health approximately 2.1% of GDP (target 2.5% by NHP 2017).',
+    'Fiscal marksmanship: Difference between budget estimates and actuals. Revenue receipts often overestimated, expenditure underestimated.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Revenue vs Capital Expenditure",
-      "headers": [
-        "Feature",
-        "Revenue Expenditure",
-        "Capital Expenditure"
+      title: 'Revenue vs Capital Expenditure',
+      headers: ['Feature', 'Revenue Expenditure', 'Capital Expenditure'],
+      rows: [
+        ['Asset creation', 'No — consumed in same year', 'Yes — creates durable assets'],
+        ['Examples', 'Salaries, pensions, subsidies, interest', 'Roads, bridges, defence equipment, loans given'],
+        ['Fiscal multiplier', 'Lower (0.9-1.0x)', 'Higher (2.5-4.0x)'],
+        ['Share of budget (FY25)', 'Approximately 77%', 'Approximately 23% (rising)'],
+        ['Growth impact', 'Consumption support, short-term', 'Long-term productive capacity building'],
+        ['Financed by', 'Revenue receipts ideally', 'Capital receipts (borrowing, disinvestment)'],
       ],
-      "rows": [
-        [
-          "Asset creation",
-          "No",
-          "Yes"
-        ],
-        [
-          "Examples",
-          "Salaries, pensions, subsidies",
-          "Roads, bridges, defence equipment"
-        ],
-        [
-          "Fiscal multiplier",
-          "Lower",
-          "Higher (2.5-4x)"
-        ],
-        [
-          "Share of budget",
-          "~77%",
-          "~23%"
-        ],
-        [
-          "Growth impact",
-          "Consumption support",
-          "Long-term productive capacity"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Three Big Subsidies — \"FFF\"",
-      "mnemonic": "Food, Fertiliser, Fuel (petroleum/LPG)",
-      "explanation": "The three major explicit subsidies in India's budget are Food (FCI/PDS), Fertiliser (urea/NBS), and Fuel (LPG/kerosene). Together they account for ~7-10% of central government expenditure."
-    }
-  ]
+      title: 'Three Major Subsidies',
+      headers: ['Subsidy', 'FY25 (Rs crore)', 'Implementing Agency', 'Key Reform'],
+      rows: [
+        ['Food', '2,05,250', 'FCI (procurement + PDS)', 'PMGKAY (free food), ONORC portability'],
+        ['Fertiliser', '1,64,000', 'DoF (urea) + NBS scheme', 'NBS for P&K (2010), Neem-coated urea (2015)'],
+        ['Petroleum/LPG', '11,925', 'OMCs + Ujjwala', 'DBTL/PAHAL, deregulation of diesel (2014)'],
+      ],
+    },
+    {
+      title: 'Central Sector vs Centrally Sponsored Schemes',
+      headers: ['Feature', 'Central Sector (CS)', 'Centrally Sponsored (CSS)'],
+      rows: [
+        ['Funding', '100% Centre', 'Centre + State (60:40 or 90:10)'],
+        ['Implementation', 'Central agencies', 'State governments'],
+        ['Examples', 'PM-KISAN, PMAY-G, Mudra', 'MGNREGA, SSA, NHM, PMAY-Urban'],
+        ['Flexibility', 'Centre decides all parameters', 'States can modify within framework'],
+        ['Number', 'Approximately 500+', '28 umbrella schemes'],
+      ],
+    },
+    {
+      title: 'NIP vs NMP',
+      headers: ['Feature', 'NIP', 'NMP'],
+      rows: [
+        ['Full form', 'National Infrastructure Pipeline', 'National Monetisation Pipeline'],
+        ['Nature', 'New infrastructure creation', 'Leasing brownfield assets (not selling)'],
+        ['Target', 'Rs 111 lakh crore investment', 'Rs 6 lakh crore from existing assets'],
+        ['Period', '2020-2025', '2021-2025'],
+        ['Funding split', 'Centre 39%, States 40%, Private 21%', 'Revenue from private operators (TOT, InvIT)'],
+        ['Key sectors', 'Roads, railways, urban, power', 'Roads, railways, power, telecom, mining'],
+      ],
+    },
+    {
+      title: 'Expenditure Theories',
+      headers: ['Theory', 'Proponent', 'Key Idea', 'India Applicability'],
+      rows: [
+        ['Wagner\'s Law', 'Adolph Wagner', 'Government spending rises faster than GDP', 'Yes — expenditure/GDP ratio has risen'],
+        ['Wiseman-Peacock', 'Wiseman & Peacock', 'Spending jumps in steps during crises', 'Yes — COVID spending spike (FY21 FD 9.2%)'],
+        ['Musgrave', 'Richard Musgrave', 'Three fiscal functions: allocation, distribution, stabilisation', 'Budget serves all three functions'],
+        ['Keynesian', 'J.M. Keynes', 'Counter-cyclical fiscal policy during recessions', 'COVID stimulus, MGNREGA expansion in FY21'],
+      ],
+    },
+    {
+      title: 'Disinvestment vs Privatisation',
+      headers: ['Feature', 'Disinvestment', 'Strategic Disinvestment/Privatisation'],
+      rows: [
+        ['Stake sold', 'Minority stake (government retains majority)', 'Majority stake + management control'],
+        ['Management', 'Government retains control', 'Transfer to private buyer'],
+        ['Examples', 'ONGC OFS, NHPC IPO, Coal India OFS', 'Air India (Tata), BPCL (pending)'],
+        ['Purpose', 'Revenue generation + market discipline', 'Efficiency improvement + exit from non-strategic'],
+        ['Controversy', 'Lower — government still in control', 'Higher — opposition calls it "selling family silver"'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Three Big Subsidies — "FFF"',
+      mnemonic: 'Food, Fertiliser, Fuel (petroleum/LPG)',
+      explanation: 'The three major explicit subsidies in India\'s budget are Food (FCI/PDS, approximately Rs 2 lakh crore), Fertiliser (urea/NBS, approximately Rs 1.6 lakh crore), and Fuel (LPG/Ujjwala, approximately Rs 12,000 crore). Together they account for approximately 7-10% of total expenditure. Subsidy rationalisation is a key fiscal reform agenda.',
+    },
+    {
+      title: 'JAM Trinity — "Jan Dhan + Aadhaar + Mobile"',
+      mnemonic: 'J = Jan Dhan (52 crore accounts). A = Aadhaar (139 crore). M = Mobile (117 crore).',
+      explanation: 'JAM Trinity enables Direct Benefit Transfer (DBT) — subsidy goes directly to beneficiary\'s bank account, identified by Aadhaar, notification on mobile. Eliminated ghosts, duplicates, and leakages. Cumulative savings: Rs 2.73 lakh crore.',
+    },
+    {
+      title: 'CapEx Multiplier — "2.5 to 4"',
+      mnemonic: 'Rs 1 of CapEx → Rs 2.5-4.0 of GDP output. Revenue multiplier: only approximately 1x.',
+      explanation: 'IMF estimates India\'s capital expenditure multiplier at 2.5-4.0x — every rupee spent on roads, bridges, railways generates 2.5-4 rupees of economic output through demand creation, employment, and productivity gains. Revenue expenditure multiplier is approximately 0.9-1.0x — it supports consumption but does not build productive capacity.',
+    },
+    {
+      title: 'Budget Classification — "RCRC"',
+      mnemonic: 'Revenue Receipts, Capital Receipts, Revenue Expenditure, Capital Expenditure',
+      explanation: 'Union Budget has four parts: Revenue Receipts (tax + non-tax), Capital Receipts (borrowing + disinvestment + loan recovery), Revenue Expenditure (no asset creation), Capital Expenditure (asset creation). Revenue Deficit = RevExp - RevReceipts. Fiscal Deficit = Total Exp - Total Receipts (excluding borrowing).',
+    },
+    {
+      title: 'Off-Budget Borrowings — "FNP"',
+      mnemonic: 'FCI borrowing, NHAI bonds, PSU extra-budgetary resources — hidden fiscal deficit',
+      explanation: 'Government borrows through FCI, NHAI, and other PSUs to keep fiscal deficit artificially low. CAG and 15th FC flagged this practice. N.K. Singh Committee recommended eliminating off-budget borrowings. Government has been phasing them out — FCI borrowing moved on-budget from FY21.',
+    },
+  ],
 }

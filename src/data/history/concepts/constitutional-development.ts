@@ -52,6 +52,36 @@ export const constitutionalDevelopmentConcept: HistoryConcept = {
       event:
         "Indian Independence Act 1947 — created two independent dominions: India and Pakistan; abolished the office of Secretary of State for India; Governor-General became constitutional head",
     },
+    {
+      year: "1813",
+      event:
+        "Charter Act of 1813 — ended EIC's monopoly over Indian trade (except China trade and tea); allocated Rs 1 lakh for Indian education; missionaries allowed entry",
+    },
+    {
+      year: "1853",
+      event:
+        "Charter Act of 1853 — last Charter Act; separated legislative and executive functions; introduced open competition for civil services (ICS)",
+    },
+    {
+      year: "1892",
+      event:
+        "Indian Councils Act 1892 — enlarged councils; introduced indirect election (word 'election' avoided); budget discussion (without vote) allowed",
+    },
+    {
+      year: "1946",
+      event:
+        "Cabinet Mission Plan (1946) — proposed three-tier federation; rejected by Muslim League; Constituent Assembly formed on 9 December 1946",
+    },
+    {
+      year: "1917",
+      event:
+        "Montagu Declaration (August 1917) — promised 'progressive realisation of responsible government in India'; basis for GoI Act 1919",
+    },
+    {
+      year: "1928",
+      event:
+        "Simon Commission arrives in India (all-white, no Indian member) — met with 'Simon Go Back' protests; Lala Lajpat Rai died from lathi charge injuries",
+    },
   ],
   notes: [
     {
@@ -83,6 +113,41 @@ export const constitutionalDevelopmentConcept: HistoryConcept = {
       section: "Indian Independence Act (1947)",
       content:
         "The Indian Independence Act 1947 was passed by the British Parliament on 18 July 1947, based on the Mountbatten Plan (3 June 1947). Key provisions: (1) Created two independent dominions — India and Pakistan (effective 15 August 1947); (2) Abolished the office of Secretary of State for India; (3) The Governor-General of each dominion was to be appointed by the Crown on the advice of the respective dominion cabinet; (4) Constituent Assemblies of both dominions were empowered to frame constitutions; (5) Until new constitutions were framed, the GoI Act 1935 would govern (with necessary modifications); (6) Princely States were free to accede to either dominion or remain independent; (7) The British Crown's suzerainty over Princely States ended. Lord Mountbatten became the first Governor-General of independent India. C. Rajagopalachari was the last (and only Indian) Governor-General of India (1948-50).",
+    },
+    {
+      section: "Simon Commission & Nehru Report (1927-28)",
+      content:
+        "The Simon Commission (1927-28): The GoI Act 1919 had provided for a statutory commission to review the working of reforms after 10 years. The Simon Commission was appointed in November 1927 under Sir John Simon — it was composed entirely of British members with no Indian representative, which offended Indian opinion across the political spectrum. The Commission arrived in India in February 1928 and was greeted with nationwide 'Simon Go Back' protests. During a demonstration in Lahore on 30 October 1928, Lala Lajpat Rai was brutally lathi-charged by police superintendent J.P. Saunders; Rai died on 17 November 1928, becoming a martyr. To avenge his death, Bhagat Singh, Rajguru, and Chandrashekhar Azad assassinated Saunders on 17 December 1928. The Commission's report (published in 1930) recommended abolition of Dyarchy and extension of responsible government in provinces but was largely ignored. The Nehru Report (1928): In response to the Simon Commission's exclusion of Indians, the All Parties Conference appointed a committee under Motilal Nehru to draft a constitutional framework for India. The Nehru Report (August 1928) was India's first serious attempt at constitution-making. It demanded Dominion Status (not Purna Swaraj), joint electorates (rejecting separate electorates), fundamental rights, a federal structure, and responsible government. Jinnah rejected the report and proposed his 14 Points (March 1929) — demanding federal government, separate electorates, one-third Muslim representation, and residuary powers with provinces. Jawaharlal Nehru and Subhas Bose rejected the Dominion Status demand and pushed for Purna Swaraj at the Lahore Congress (1929).",
+    },
+    {
+      section: "The Constituent Assembly and Making of the Constitution",
+      content:
+        "The idea of a Constituent Assembly for India was first proposed by M.N. Roy (1934). The Congress formally demanded it in 1935. The Cabinet Mission Plan (1946) provided the framework: the Constituent Assembly was to be elected by the provincial legislative assemblies (not by universal adult franchise) through proportional representation; seats were allocated among the three main communities — General, Muslim, and Sikh. The Assembly had 389 members (292 from British India, 93 from Princely States, 4 from Chief Commissioners' provinces). Key facts: the Assembly first met on 9 December 1946; Dr. Sachidananda Sinha was the temporary chairman; Dr. Rajendra Prasad was elected permanent president. The Muslim League boycotted the Assembly; after Partition, the Assembly's strength was reduced to 299 members. The Objectives Resolution (moved by Jawaharlal Nehru on 13 December 1946, adopted 22 January 1947) outlined the principles of the future Constitution — sovereignty of the people, social/economic/political justice, equality, and fundamental freedoms. Key committees: Drafting Committee (chaired by B.R. Ambedkar, 7 members), Union Powers Committee (Jawaharlal Nehru), Advisory Committee on Fundamental Rights and Minorities (Sardar Patel), Rules of Procedure Committee (Rajendra Prasad). The Constitution was adopted on 26 November 1949 and came into effect on 26 January 1950 (Republic Day). It took 2 years, 11 months, and 18 days to draft; the Assembly held 11 sessions and sat for 165 days; the final draft had 395 Articles and 8 Schedules.",
+    },
+    {
+      section: "Sources and Influences on the Indian Constitution",
+      content:
+        "The Indian Constitution drew extensively from the Government of India Act 1935 and from the constitutional practices of several countries. From the GoI Act 1935: federal structure, office of Governor, judiciary, emergency provisions, Public Service Commission, administrative details (approximately 250 provisions were directly incorporated). From Britain: parliamentary form of government, rule of law, legislative procedure, single citizenship, bicameralism, cabinet system, writs. From the United States: fundamental rights, independence of the judiciary, judicial review, impeachment of the President, removal of Supreme Court and High Court judges. From Ireland: Directive Principles of State Policy, method of election of the President, nomination of members to the Rajya Sabha. From Canada: federation with a strong centre, residuary powers with the Centre, appointment of state Governors by the Centre, advisory jurisdiction of the Supreme Court. From Australia: Concurrent List, freedom of trade and commerce, joint sitting of two Houses. From Germany (Weimar Constitution): suspension of fundamental rights during emergency. From South Africa: amendment of the Constitution, election of Rajya Sabha members. From the Soviet Union (USSR): fundamental duties, the ideal of social, economic, and political justice in the Preamble. From France: Republic, ideals of liberty, equality, and fraternity in the Preamble. The GoI Act 1935 is considered the most important single source — Ambedkar himself acknowledged that many provisions were borrowed from it.",
+    },
+    {
+      section: "The Three Lists and Division of Powers",
+      content:
+        "The Government of India Act 1935 introduced three legislative lists — a system that was adopted by the Indian Constitution with modifications. The Federal List (now Union List) contained subjects on which only the central legislature could make laws — defence, foreign affairs, currency, banking, railways, post and telegraph, census. The Provincial List (now State List) contained subjects on which only provincial legislatures could make laws — police, public health, agriculture, local government, land revenue, irrigation. The Concurrent List contained subjects on which both the centre and provinces could legislate — criminal law and procedure, civil procedure, marriage, divorce, bankruptcy, trade unions, electricity, newspapers. In case of conflict between central and provincial law on a concurrent subject, the central law prevailed. Residuary powers (subjects not in any list) were vested in the Governor-General (under the 1935 Act) and in Parliament (under the Indian Constitution). This division was inspired by the Canadian model of federation with a strong centre — deliberately designed to prevent the centrifugal tendencies that had characterized Indian history. The 1935 Act had 59 items in the Federal List, 54 in the Provincial List, and 36 in the Concurrent List. The Indian Constitution expanded these to 97 (Union), 66 (State), and 47 (Concurrent) items in the Seventh Schedule. The 42nd Amendment (1976) transferred five subjects from the State List to the Concurrent List: education, forests, weights and measures, protection of wild animals and birds, and administration of justice.",
+    },
+    {
+      section: "The Role of Viceroys and Governor-Generals in Constitutional Evolution",
+      content:
+        "The succession of Viceroys and Governor-Generals was crucial to the constitutional evolution of British India. Warren Hastings (first Governor-General of Bengal, 1773-85): operated under the Regulating Act; established revenue and judicial administration. Lord Cornwallis (1786-93): Cornwallis Code — separated judicial and revenue functions; Permanent Settlement (1793) in Bengal. Lord William Bentinck (first Governor-General of India, 1828-35): under Charter Act 1833; abolished Sati (1829); promoted English education (Macaulay's Minute, 1835). Lord Dalhousie (1848-56): Doctrine of Lapse; annexation of Punjab, Awadh; railways, telegraph. Lord Canning (first Viceroy, 1856-62): handled the Revolt of 1857; oversaw the transition from Company to Crown rule (1858); Indian Penal Code enacted (1860). Lord Ripon (1880-84): 'Father of Local Self-Government' — introduced elected local bodies (1882); repealed the Vernacular Press Act; Ilbert Bill controversy. Lord Curzon (1899-1905): Partition of Bengal (1905); Ancient Monuments Act; educational reforms. Lord Minto II (1905-10): Morley-Minto Reforms (1909); separate electorates. Lord Chelmsford (1916-21): Montagu-Chelmsford Reforms (1919); Rowlatt Act; Jallianwala Bagh. Lord Irwin (1926-31): Simon Commission; Gandhi-Irwin Pact (1931). Lord Linlithgow (1936-43): GoI Act 1935 implementation; WWII declaration; Quit India Movement. Lord Wavell (1943-47): Simla Conference (1945); Cabinet Mission. Lord Mountbatten (last Viceroy and first Governor-General of free India, 1947): executed Partition and independence.",
+    },
+    {
+      section: "Features Borrowed by the Indian Constitution from GoI Act 1935",
+      content:
+        "The Government of India Act 1935 is the most important single source of the Indian Constitution, with approximately 250 provisions directly borrowed or adapted. Specific features borrowed: (1) Federal structure with division of powers (Union List, State List, Concurrent List — adapted from the 1935 Act's Federal, Provincial, and Concurrent Lists). (2) Office of the Governor — appointed by the Centre, with discretionary powers. (3) Emergency provisions — the President's power to proclaim emergency (Article 352) derives from the Governor-General's emergency powers under the 1935 Act. (4) Judiciary — the Federal Court established under the 1935 Act became the model for the Supreme Court. (5) Public Service Commission — the 1935 Act established the Federal Public Service Commission, which became the Union Public Service Commission. (6) Administrative machinery — the detailed administrative provisions, including the civil service structure. (7) Residuary powers with the Centre. (8) Governor's power to reserve bills for the President's consideration. (9) Distribution of revenues between the Centre and states. However, the Indian Constitution also made crucial departures from the 1935 Act: fundamental rights (borrowed from the US), Directive Principles (from Ireland), parliamentary system (from Britain), universal adult franchise (the 1935 Act had limited franchise), abolition of separate electorates, and provisions for social justice (reservations for SCs/STs). Ambedkar described the 1935 Act as providing the 'bony framework' upon which the Indian Constitution was built.",
+    },
+    {
+      section: "Exam-Critical Points and Common Traps",
+      content:
+        "Key distinctions frequently tested: (1) Regulating Act 1773 created Governor-General of BENGAL (not India) — Charter Act 1833 made it Governor-General of INDIA. (2) Pitt's India Act 1784 established DUAL control — Board of Control + Court of Directors. (3) GoI Act 1858 ended Company rule and started CROWN rule — triggered by the Revolt of 1857. (4) Indian Councils Act 1861 introduced NOMINATED (not elected) Indians — the first Indians in the legislative process. (5) Indian Councils Act 1892 introduced INDIRECT election — but avoided the word 'election.' (6) Morley-Minto Reforms 1909 introduced SEPARATE ELECTORATES for Muslims — the most consequential provision. (7) Dyarchy was introduced in PROVINCES by GoI Act 1919 — NOT at the centre. (8) GoI Act 1935 abolished Dyarchy in PROVINCES and introduced provincial autonomy — but its federal provisions were NEVER implemented. (9) The Indian Independence Act 1947 created TWO dominions — not one. (10) Lord Canning was the first VICEROY; Lord Mountbatten was the LAST Viceroy and FIRST Governor-General of free India; C. Rajagopalachari was the LAST Governor-General. (11) The GoI Act 1935 is the principal source of the Indian Constitution, NOT the British Constitution. (12) The Nehru Report (1928) demanded DOMINION STATUS; Purna Swaraj was adopted at LAHORE (1929).",
     },
   ],
   examTags: ["UPSC Prelims", "SSC CGL", "SSC CHSL", "RRB NTPC", "CDS", "UPPSC"],

@@ -1,69 +1,149 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const industriesRevision: SubjectRevision = {
-  "topic": "industries",
-  "bullets": [
-    "India is the 2nd largest crude steel producer (after China) — about 125 million tonnes/year.",
-    "TISCO (1907, Jamshedpur) — India's first integrated steel plant, founded by Jamsetji Tata.",
-    "Bhilai (Chhattisgarh, Russian collaboration) is the largest public sector steel plant.",
-    "Cotton textiles is India's largest industry by employment (45 million workers).",
-    "Mumbai was called \"Cottonopolis of India\"; Ahmedabad is \"Manchester of India\".",
-    "India is the 2nd largest producer of jute goods; West Bengal produces 80% (Hooghly belt).",
-    "Karnataka produces 70% of India's silk; Muga silk is unique to Assam.",
-    "Bengaluru is \"Silicon Valley of India\"; India's IT industry generates  billion revenue.",
-    "India is \"Pharmacy of the World\" — 20% of global generic medicines; 50%+ of global vaccines.",
-    "Chennai is \"Detroit of India\" — major automobile hub (Hyundai, BMW).",
-    "Jamnagar (Reliance) has the largest private oil refinery in the world.",
-    "Make in India (2014) and PLI Scheme cover 14 sectors to boost manufacturing."
+  topic: 'industries',
+  bullets: [
+    'India is the 2nd largest crude steel producer (after China) — about 125 million tonnes/year; target 300 MT by 2030.',
+    'TISCO (1907, Jamshedpur) — India\'s first integrated steel plant, founded by Jamsetji Tata.',
+    'Bhilai (Chhattisgarh, Russian collaboration) is the largest public sector steel plant by production.',
+    'Rourkela (Odisha, German) — first to use LD process in Asia; Durgapur (WB, British); Bokaro (Jharkhand, Russian).',
+    'JSW Steel (Bellary, Karnataka) — largest private sector steel producer in India.',
+    'Cotton textiles is India\'s largest industry by employment (45 million workers); 6% of GDP; 12% of exports.',
+    'Mumbai = "Cottonopolis"; Ahmedabad = "Manchester of India"; Coimbatore = "Manchester of South India".',
+    'First cotton mill in Mumbai (1854, C.N. Davar); first jute mill at Rishra near Kolkata (1855).',
+    'India is the 2nd largest producer of jute goods; West Bengal produces 80% (Hooghly belt).',
+    'Karnataka produces 70% of India\'s silk; Muga silk is unique to Assam (golden, GI tag).',
+    'Bengaluru is "Silicon Valley of India"; India\'s IT-BPM sector: $245 billion revenue, 5.4 million jobs.',
+    'India leads global IT outsourcing (55% of $250+ billion market); Digital India programme (2015).',
+    'India is "Pharmacy of the World" — 20% of global generic medicines; 50%+ of global vaccines.',
+    'Serum Institute (Pune) = world\'s largest vaccine manufacturer; Bharat Biotech developed Covaxin.',
+    'Chennai is "Detroit of India" — produces 40% of India\'s automobiles; Hyundai, BMW, Renault-Nissan.',
+    'Maruti Suzuki (Gurugram) = India\'s largest car manufacturer; Hero MotoCorp = world\'s largest two-wheeler maker.',
+    'Jamnagar (Reliance) has the world\'s largest single-location oil refinery (68.2 MMTPA).',
+    'India imports 85% of crude oil; Bombay High (offshore Mumbai) — largest domestic production area.',
+    'Digboi (Assam) — India\'s oldest refinery (1901) and oldest oilfield (1889).',
+    'Cement: India is 2nd largest producer; Rajasthan leads (limestone); UltraTech is largest company.',
+    'Sugar: UP is largest producer (40%+); Maharashtra 2nd; mills must be within 50-60 km of sugarcane fields.',
+    'Make in India (2014) — targets manufacturing at 25% of GDP; PLI Scheme covers 14 sectors, Rs 1.97 lakh crore.',
+    'SEZ Act 2005: ~268 operational SEZs; contribute 30% of exports; Kandla was first operational SEZ.',
+    'DMIC (Delhi-Mumbai Industrial Corridor) — flagship project, 1,504 km, Japanese collaboration.',
+    'MSMEs: 30% of GDP, 45% of manufacturing, 48% of exports; 111 million employed; 63+ million enterprises.',
+    'Surat: 90% of world\'s diamonds cut and polished here; also major synthetic textile centre.',
+    'Tiruppur (TN) = knitwear export capital; Sivakasi = fireworks/matches; Moradabad = brass ("Peetal Nagari").',
+    'MUDRA Yojana: Shishu/Kishore/Tarun loans for micro enterprises; Rs 23+ lakh crore disbursed.',
+    'Micron\'s ATMP unit at Sanand, Gujarat — India\'s first major semiconductor facility.',
+    'Lithium reserves discovered in J&K (Reasi — 5.9 MT estimated) and Rajasthan (Degana).',
+    'HAL (Bengaluru) — India\'s largest defence PSU; produces Tejas LCA, Dhruv helicopter.',
+    'INS Vikrant — India\'s first indigenous aircraft carrier; built by Cochin Shipyard; commissioned 2022.',
+    'BrahMos cruise missile — India-Russia JV; Mach 2.8; world\'s fastest operational cruise missile.',
+    'Weber\'s theory: MI > 1 = weight-losing, locate near raw material; MI < 1 = weight-gaining, near market.',
+    'Bhopal Gas Tragedy (1984, Union Carbide) — world\'s worst industrial disaster; led to EPA 1986.',
+    'Operation Flood (1970-96, Verghese Kurien) — made India world\'s largest milk producer; Amul model.',
+    'India\'s food processing: $535 billion sector; only 10% processed (vs 65% in US); growing at 8%+ CAGR.',
+    'Sagarmala Programme (2015): port-led development; targets logistics cost reduction from 14% to 10% of GDP.',
+    'JNPT (Navi Mumbai) — India\'s largest container port; handles 50%+ of container traffic.',
+    'Alang (Gujarat) — world\'s largest ship-breaking yard.',
+    'Defence exports: Rs 686 crore (2013-14) to Rs 16,000+ crore (2022-23); target Rs 35,000 crore.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Major Steel Plants — Collaboration",
-      "headers": [
-        "Steel Plant",
-        "Location",
-        "State",
-        "Collaboration"
+      title: 'Major Steel Plants — Collaboration',
+      headers: ['Steel Plant', 'Location', 'State', 'Collaboration'],
+      rows: [
+        ['Bhilai', 'Durg', 'Chhattisgarh', 'Russia (USSR)'],
+        ['Rourkela', 'Sundargarh', 'Odisha', 'Germany'],
+        ['Durgapur', 'Burdwan', 'West Bengal', 'UK (Britain)'],
+        ['Bokaro', 'Bokaro', 'Jharkhand', 'Russia (USSR)'],
+        ['TISCO', 'Jamshedpur', 'Jharkhand', 'Private (Tata, 1907)'],
+        ['VSP', 'Visakhapatnam', 'Andhra Pradesh', 'Shore-based (SAIL)'],
+        ['JSW', 'Bellary', 'Karnataka', 'Private (largest)'],
       ],
-      "rows": [
-        [
-          "Bhilai",
-          "Durg",
-          "Chhattisgarh",
-          "Russia (USSR)"
-        ],
-        [
-          "Rourkela",
-          "Sundargarh",
-          "Odisha",
-          "Germany"
-        ],
-        [
-          "Durgapur",
-          "Burdwan",
-          "West Bengal",
-          "UK (Britain)"
-        ],
-        [
-          "Bokaro",
-          "Bokaro",
-          "Jharkhand",
-          "Russia (USSR)"
-        ],
-        [
-          "TISCO",
-          "Jamshedpur",
-          "Jharkhand",
-          "Private (Tata, 1907)"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Steel Plants Collaboration (BRD-B)",
-      "mnemonic": "Bhilai-Russia, Rourkela-Germany, Durgapur-Britain, Bokaro-Russia",
-      "explanation": "Major public sector steel plants and their foreign collaboration partners during the Five Year Plans."
-    }
-  ]
+      title: 'Industrial Nicknames of Indian Cities',
+      headers: ['City', 'Nickname', 'Reason'],
+      rows: [
+        ['Ahmedabad', 'Manchester of India', 'Cotton textile industry hub'],
+        ['Mumbai', 'Cottonopolis of India', 'Historic cotton mills centre'],
+        ['Bengaluru', 'Silicon Valley of India', 'IT and software industry hub'],
+        ['Chennai', 'Detroit of India', 'Automobile manufacturing hub'],
+        ['Coimbatore', 'Manchester of South India', 'Cotton textiles and engineering'],
+        ['Kanpur', 'Manchester of North India', 'Textiles and leather industry'],
+        ['Surat', 'Diamond Capital', '90% of world\'s diamonds cut here'],
+        ['Ludhiana', 'Hosiery Capital', 'Knitwear and bicycle parts'],
+        ['Jamshedpur', 'Steel City', 'India\'s first steel plant'],
+      ],
+    },
+    {
+      title: 'PLI Scheme — Key Sectors',
+      headers: ['Sector', 'Outlay (Rs Crore)', 'Key Achievement'],
+      rows: [
+        ['Mobile/Electronics', '40,951', 'Mobile exports $11 billion (2023)'],
+        ['Pharmaceuticals', '15,000', 'Reducing API import dependence'],
+        ['Automotive', '25,938', 'EV ecosystem development'],
+        ['Solar PV Modules', '24,000', 'Domestic manufacturing push'],
+        ['ACC Batteries', '18,100', '50 GWh capacity target'],
+        ['Specialty Steel', '6,322', 'Import substitution'],
+        ['Textiles', '10,683', 'MMF and technical textiles'],
+        ['Food Processing', '10,900', '12 product categories'],
+      ],
+    },
+    {
+      title: 'Silk Types in India',
+      headers: ['Type', 'Leading State', 'Characteristic'],
+      rows: [
+        ['Mulberry', 'Karnataka (70%)', 'Most common; Mysore silk famous'],
+        ['Tasar/Tussar', 'Jharkhand', 'Wild/semi-wild; copper-brown colour'],
+        ['Muga', 'Assam', 'Golden silk; unique to India; GI tag'],
+        ['Eri', 'Assam', '"Peace silk" — moth not killed'],
+      ],
+    },
+    {
+      title: 'Weight-Losing vs Weight-Gaining Industries',
+      headers: ['Feature', 'Weight-Losing (MI > 1)', 'Weight-Gaining (MI < 1)'],
+      rows: [
+        ['Location', 'Near raw material', 'Near market'],
+        ['Examples', 'Steel, sugar, cement', 'Soft drinks, bakery, furniture'],
+        ['Reason', 'Raw material heavier than product', 'Product heavier than raw material'],
+        ['Transport logic', 'Save transport of heavy inputs', 'Save transport of bulky outputs'],
+      ],
+    },
+    {
+      title: 'Major Industrial Corridors',
+      headers: ['Corridor', 'Route', 'Length', 'Support'],
+      rows: [
+        ['DMIC', 'Delhi-Mumbai', '1,504 km', 'Japanese (JICA)'],
+        ['CBIC', 'Chennai-Bengaluru', '560 km', 'Japanese'],
+        ['AKIC', 'Amritsar-Kolkata', '1,839 km', 'Along Eastern DFC'],
+        ['VCIC', 'Vizag-Chennai', '800 km', 'ADB'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Steel Plants Collaboration (BRD-B)',
+      mnemonic: 'Bhilai-Russia, Rourkela-Germany, Durgapur-Britain, Bokaro-Russia',
+      explanation: 'Major public sector steel plants and their foreign collaboration partners during the Five Year Plans.',
+    },
+    {
+      title: 'Silk Types (MTME)',
+      mnemonic: 'Mulberry (Karnataka), Tasar (Jharkhand), Muga (Assam — golden), Eri (Assam — peace)',
+      explanation: 'Four types of silk produced in India. Muga is unique to India and Eri is called peace silk because the moth is not killed.',
+    },
+    {
+      title: 'Weber\'s Material Index',
+      mnemonic: 'MI > 1 = Raw Material pull; MI < 1 = Market pull; MI = 1 = Either',
+      explanation: 'Material Index determines industrial location. Steel (MI~4) near coal/ore; bakery (MI<1) near consumers.',
+    },
+    {
+      title: 'LPG Reforms 1991',
+      mnemonic: 'L=Liberalisation, P=Privatisation, G=Globalisation — triggered by BOP crisis',
+      explanation: 'The 1991 New Economic Policy dismantled the License Raj through delicensing, disinvestment, and FDI liberalisation.',
+    },
+    {
+      title: 'India\'s Largest Producers — Key Industries',
+      mnemonic: '2nd Steel, 2nd Textiles, 2nd Silk, 3rd Pharma (volume), 3rd Auto market, 4th Refining',
+      explanation: 'India\'s global ranking in key industries. All are "2nd or 3rd" — after China in most cases.',
+    },
+  ],
 }

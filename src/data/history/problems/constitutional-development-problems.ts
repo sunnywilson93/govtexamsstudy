@@ -211,4 +211,238 @@ export const constitutionalDevelopmentProblems: HistoryProblem[] = [
     examYear: 2019,
     difficulty: "medium",
   },
+  {
+    id: "cd-13",
+    topic: "constitutional-development",
+    question:
+      "Consider the following statements about the Charter Act of 1833:\n1. It made the Governor-General of Bengal the Governor-General of India.\n2. It ended the EIC's commercial activities.\n3. Lord William Bentinck was the first Governor-General of India.\n4. It introduced separate electorates for Muslims.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "1, 3 and 4 only",
+      "1, 2, 3 and 4",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Statements 1, 2, and 3 are correct. Statement 4 is incorrect — separate electorates for Muslims were introduced by the Indian Councils Act 1909 (Morley-Minto Reforms), not the Charter Act of 1833. The 1833 Act also established a Law Commission under Macaulay for the codification of laws.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "cd-14",
+    topic: "constitutional-development",
+    question:
+      "Assertion (A): The Simon Commission faced widespread protests in India.\nReason (R): The Commission had no Indian member.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are correct and R is the correct explanation of A",
+      "Both A and R are correct but R is NOT the correct explanation of A",
+      "A is correct but R is incorrect",
+      "A is incorrect but R is correct",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are correct, and R correctly explains A. The Simon Commission (1927) was composed entirely of British members with no Indian representative. This was seen as deeply insulting, and nationwide 'Simon Go Back' protests were organized by Indians across the political spectrum. Lala Lajpat Rai was fatally injured during a lathi charge at a protest in Lahore on 30 October 1928.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "cd-15",
+    topic: "constitutional-development",
+    question:
+      "Consider the following statements about the Nehru Report (1928):\n1. It demanded Purna Swaraj (complete independence).\n2. It proposed joint electorates.\n3. It was India's first attempt at constitution-making.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Statements 2 and 3 are correct. Statement 1 is incorrect — the Nehru Report demanded DOMINION STATUS, not Purna Swaraj. Jawaharlal Nehru and Subhas Bose rejected this and pushed for Purna Swaraj, which was adopted at the Lahore Congress (1929). The Nehru Report did propose joint electorates (rejecting separate electorates) and was India's first serious attempt at a constitutional framework.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "hard",
+  },
+  {
+    id: "cd-16",
+    topic: "constitutional-development",
+    question:
+      "The Constituent Assembly of India was formed on the basis of proposals made by the:",
+    options: [
+      "Cripps Mission (1942)",
+      "Cabinet Mission Plan (1946)",
+      "Simon Commission (1928)",
+      "Nehru Report (1928)",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Constituent Assembly was formed on the basis of the proposals made by the Cabinet Mission Plan (1946). The Cabinet Mission proposed that the Assembly be elected by provincial legislative assemblies through proportional representation, with seats allocated among General, Muslim, and Sikh communities. The Assembly first met on 9 December 1946.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "cd-17",
+    topic: "constitutional-development",
+    question:
+      "Consider the following statements about the Government of India Act 1935:\n1. It abolished Dyarchy in provinces and introduced provincial autonomy.\n2. Its federal provisions were fully implemented.\n3. It established three legislative lists.\n4. It established a Federal Court.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1, 2 and 3 only",
+      "1, 3 and 4 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Statements 1, 3, and 4 are correct. Statement 2 is incorrect — the FEDERAL provisions of the GoI Act 1935 were NEVER implemented because the Princely States refused to join the proposed All-India Federation. Provincial autonomy was implemented, and the 1937 elections were held under this Act. The Federal Court was established in 1937 and served as the precursor to the Supreme Court.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "hard",
+  },
+  {
+    id: "cd-18",
+    topic: "constitutional-development",
+    question:
+      "Who was the chairman of the Drafting Committee of the Constituent Assembly?",
+    options: [
+      "Jawaharlal Nehru",
+      "Dr. Rajendra Prasad",
+      "Dr. B.R. Ambedkar",
+      "Sardar Vallabhbhai Patel",
+    ],
+    correctIndex: 2,
+    explanation:
+      "Dr. B.R. Ambedkar was the chairman of the Drafting Committee of the Constituent Assembly. The committee had 7 members and was responsible for drafting the Indian Constitution. Dr. Rajendra Prasad was the permanent president of the Constituent Assembly. Jawaharlal Nehru chaired the Union Powers Committee, and Sardar Patel chaired the Advisory Committee on Fundamental Rights.",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "cd-19",
+    topic: "constitutional-development",
+    question:
+      "Assertion (A): The GoI Act 1935 is considered the most important single source of the Indian Constitution.\nReason (R): Approximately 250 provisions of the Indian Constitution were borrowed or adapted from the 1935 Act.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are correct and R is the correct explanation of A",
+      "Both A and R are correct but R is NOT the correct explanation of A",
+      "A is correct but R is incorrect",
+      "A is incorrect but R is correct",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are correct, and R correctly explains A. The GoI Act 1935 is the most important single source of the Indian Constitution, with approximately 250 provisions directly borrowed or adapted. These include the federal structure, three legislative lists, office of Governor, emergency provisions, and Public Service Commission. Ambedkar called it the 'bony framework' of the Constitution.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "cd-20",
+    topic: "constitutional-development",
+    question:
+      "The Directive Principles of State Policy in the Indian Constitution were borrowed from the constitution of:",
+    options: [
+      "United States of America",
+      "Canada",
+      "Ireland",
+      "Australia",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Directive Principles of State Policy (Part IV, Articles 36-51) were borrowed from the Constitution of Ireland (1937), which in turn was inspired by the Spanish Constitution. Other features borrowed from Ireland include the method of election of the President and the nomination of members to the Rajya Sabha.",
+    examName: "SSC CHSL",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "cd-21",
+    topic: "constitutional-development",
+    question:
+      "Consider the following statements:\n1. The Charter Act of 1853 introduced open competition for civil services.\n2. The Charter Act of 1853 was the last Charter Act.\n3. The Charter Act of 1813 ended the EIC's monopoly over Indian trade.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three statements are correct. The Charter Act of 1853 introduced a system of open competition for recruitment to the Indian Civil Service and was the last Charter Act. The Charter Act of 1813 ended the EIC's monopoly over Indian trade (except China trade and tea), allocated Rs 1 lakh for Indian education, and allowed missionaries to enter India.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "medium",
+  },
+  {
+    id: "cd-22",
+    topic: "constitutional-development",
+    question:
+      "Lord Ripon is known as the 'Father of Local Self-Government' because he:",
+    options: [
+      "Introduced separate electorates",
+      "Introduced elected local bodies in 1882",
+      "Established the Federal Court",
+      "Abolished the Dual System",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Lord Ripon (Viceroy, 1880-84) is called the 'Father of Local Self-Government' because he introduced elected local bodies through a resolution in 1882. He established the principle of election as the basis for local governance and gave local bodies control over local affairs with non-official chairmen. He also repealed the Vernacular Press Act.",
+    examName: "RRB NTPC",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "cd-23",
+    topic: "constitutional-development",
+    question:
+      "Consider the following statements about the Indian Councils Act 1892:\n1. It introduced direct elections to the legislative councils.\n2. It allowed members to discuss the budget.\n3. It expanded the size of legislative councils.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Statements 2 and 3 are correct. Statement 1 is incorrect — the Indian Councils Act 1892 introduced INDIRECT election, not direct election. The word 'election' was deliberately avoided; members were 'recommended' by local bodies and chambers of commerce. Members could discuss the budget but could not vote on it. Direct elections were first introduced by the GoI Act 1919.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "hard",
+  },
+  {
+    id: "cd-24",
+    topic: "constitutional-development",
+    question:
+      "Assertion (A): The Constituent Assembly adopted the Constitution on 26 November 1949.\nReason (R): 26 November is celebrated as Constitution Day (Samvidhan Divas) in India.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are correct and R is the correct explanation of A",
+      "Both A and R are correct but R is NOT the correct explanation of A",
+      "A is correct but R is incorrect",
+      "A is incorrect but R is correct",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are correct, and R is the correct explanation of A. The Constituent Assembly adopted the Constitution on 26 November 1949, and this date is celebrated as Constitution Day (Samvidhan Divas) in India. The Constitution came into effect on 26 January 1950, which is celebrated as Republic Day.",
+    examName: "CDS",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "cd-25",
+    topic: "constitutional-development",
+    question:
+      "The idea of a Constituent Assembly for India was first proposed by:",
+    options: [
+      "Mahatma Gandhi",
+      "M.N. Roy",
+      "Jawaharlal Nehru",
+      "B.R. Ambedkar",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The idea of a Constituent Assembly for India was first proposed by M.N. Roy (Manabendra Nath Roy), the Communist leader, in 1934. The Indian National Congress formally demanded a Constituent Assembly in 1935. The demand was partially accepted by the Cabinet Mission Plan of 1946, which provided the framework for the Constituent Assembly's formation.",
+    examName: "UPSC Prelims",
+    examYear: 2020,
+    difficulty: "hard",
+  },
 ]

@@ -3,70 +3,110 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const pppModelRevision: SubjectRevision = {
   topic: 'ppp-model',
   bullets: [
-    "PPP: Long-term contract between government and private entity for public infrastructure/services. Private bears risk and management.",
-    "BOT (Build-Operate-Transfer): Private builds, operates for concession period, transfers back. BOT-Toll (revenue risk with private) vs BOT-Annuity (with government).",
-    "HAM (Hybrid Annuity Model, 2015): Government pays 40% during construction + annuity over 15 years for remaining 60%. Dominant highway PPP model.",
-    "TOT (Toll-Operate-Transfer): Government auctions toll rights on built highways for 30 years. 3 bundles raised Rs 36,000+ crore.",
-    "VGF (Viability Gap Funding): Grant up to 30% of TPC from Centre + 30% from state/ministry = up to 60%. Makes unviable PPPs bankable.",
-    "NIP (National Infrastructure Pipeline 2020): Rs 111 lakh crore investment target. PPP expected for 21% of projects.",
-    "Airport PPPs: Delhi (GMR), Bangalore (BIAL), Hyderabad (GMR). 6 AAI airports leased to Adani (2019).",
-    "NHAI: Dominant PPP implementing agency. Built 10,457 km in FY24 (28.6 km/day record). Total NH: 1,46,145 km.",
-    "Bharatmala Pariyojana (2017): Rs 5.35 lakh crore, 34,800 km. Mix of EPC, HAM, BOT.",
-    "Major Port Authorities Act 2021: Landlord model — port authority manages land, private operators build+operate terminals.",
-    "InvITs: SEBI-regulated trusts owning infrastructure assets. IndiGrid, IRB InvIT, PowerGrid InvIT.",
-    "LARR Act 2013: Consent 80% (private), 70% (PPP). Compensation 2x urban/4x rural market value. SIA mandatory.",
-    "Kelkar Committee (2015): Recommended independent PPP institution (3PI) for renegotiation. Standardised concession agreements.",
-    "Smart Cities Mission: 100 cities, Rs 2.05 lakh crore. PPP for ICCC, waste-to-energy, smart water, e-buses.",
-    "Key challenge: Land acquisition, contract renegotiation (moral hazard), financing mismatch (banks' 3-5 year deposits vs 15-25 year infra loans)."
-],
+    'PPP: Long-term contract between government and private entity for public infrastructure/services. Private bears risk and management.',
+    'BOT (Build-Operate-Transfer): Private builds, operates for concession period, transfers back. BOT-Toll (revenue risk with private) vs BOT-Annuity (with government).',
+    'HAM (Hybrid Annuity Model, 2015): Government pays 40% during construction + annuity over 15 years for remaining 60%. Dominant highway PPP model.',
+    'TOT (Toll-Operate-Transfer): Government auctions toll rights on built highways for 30 years. 3 bundles raised Rs 36,000+ crore.',
+    'DBFOT (Design-Build-Finance-Operate-Transfer): Most comprehensive model — private handles everything. Used for NHAI highway projects.',
+    'VGF (Viability Gap Funding): Grant up to 30% of TPC from Centre + 30% from state/ministry = up to 60%. Makes unviable PPPs bankable.',
+    'VGF expanded 2023: Now covers social infrastructure (schools, hospitals) with revenue support annuity for first 5 years.',
+    'NIP (National Infrastructure Pipeline 2020): Rs 111 lakh crore investment target. PPP expected for 21% of projects.',
+    'Airport PPPs: Delhi (GMR), Bangalore (BIAL), Hyderabad (GMR). 6 AAI airports leased to Adani (2019). 153 operational airports (2024).',
+    'NHAI: Dominant PPP implementing agency. Built 10,457 km in FY24 (28.6 km/day record). Total NH: 1,46,145 km.',
+    'Bharatmala Pariyojana (2017): Rs 5.35 lakh crore, 34,800 km. Economic corridors, inter-corridors, feeder routes. Mix of EPC, HAM, BOT.',
+    'Major Port Authorities Act 2021: Landlord Model — port authority manages land/regulation, private builds/operates terminals.',
+    'Sagarmala Programme (2015): Rs 8.5 lakh crore for port modernisation, coastal shipping, port-led industrialisation.',
+    'InvITs (Infrastructure Investment Trusts): SEBI-regulated. Own/operate infrastructure assets. IndiGrid, IRB InvIT, PowerGrid InvIT.',
+    'LARR Act 2013: Consent 80% (private), 70% (PPP). Compensation 2-4x market value. SIA mandatory. Biggest PPP bottleneck.',
+    'Kelkar Committee (2015): Recommended independent PPP institution (3PI) for renegotiation. Standardised concession agreements.',
+    'Smart Cities Mission: 100 cities, Rs 2.05 lakh crore. PPP for ICCC, waste-to-energy, smart water, e-buses. SPVs with 50:50 Centre-State.',
+    'Highway PPP phases: BOT-Toll dominated (2005-12) → BOT collapsed (2013-15) → EPC shift → HAM era (2015-present).',
+    'HAM model: Bidding on lowest annuity. 50% new NHAI projects are HAM, 30% EPC, 20% BOT-Toll.',
+    'IIFCL: Government-owned infra financing company. Takeout financing — refinances banks\' infra exposure. NaBFID for long-term DFI.',
+    'Railway PPP: Slow adoption. Tejas Express (IRCTC), station redevelopment (123 stations), Vande Bharat manufacturing.',
+    'Metro rail PPP: Mumbai Metro Line 3, Pune Metro. Urban water supply: Nagpur — first 24x7 water PPP.',
+    'PMAY PPP: In-situ slum redevelopment (private developer builds housing + commercial); AHP (Rs 1.5 lakh/unit subsidy).',
+    'PPP challenge — contract renegotiation: Aggressive bidders win, then demand modifications. Moral hazard problem.',
+    'PPP challenge — financing: Banks have 3-5 year deposits but infra needs 15-25 year loans. Asset-liability mismatch.',
+    '5/25 refinancing (2014): Banks extend loan tenure to 25 years, refinance every 5 years. Partially addresses mismatch.',
+    'First BOT road: Jaipur-Kishangarh highway (1995). Mumbai-Pune Expressway — early landmark BOT project.',
+    'Greenfield airports: Mopa-Goa (GMR, 2022), Navi Mumbai (Adani/CIDCO, under construction), Jewar-Noida (Zurich Airport).',
+    'Private ports handle 47% of India\'s cargo. Mundra (Adani) — India\'s largest private port. Total port capacity: 2,600+ MTPA.',
+    'PM Gati Shakti: Integrated multi-modal connectivity. Digital platform for planning infrastructure across ministries.',
+    'Dispute resolution: Arbitration under Indian law slow (3-5 years). PPP contracts specify arbitration but enforcement delayed.',
+    'Social infrastructure PPP shift: From revenue-generating (toll roads) to social (schools, hospitals) with government VGF support.',
+    'India was world\'s 2nd largest PPP market for roads (2005-12). Highway sector remains India\'s most successful PPP story.',
+    'PPP in healthcare: Management contracts, co-location (private on govt campus), full PPP. PMJAY empanels 30K+ hospitals.',
+    'Key PPP challenge — capacity: State govts and ULBs lack technical capacity to structure and manage complex PPP contracts.',
+  ],
   comparisons: [
     {
-        "title": "BOT-Toll vs HAM vs EPC",
-        "headers": [
-            "Feature",
-            "BOT-Toll",
-            "HAM",
-            "EPC"
-        ],
-        "rows": [
-            [
-                "Revenue risk",
-                "Private sector",
-                "Shared (annuity-based)",
-                "Government (100%)"
-            ],
-            [
-                "Construction funding",
-                "100% private",
-                "40% govt + 60% private",
-                "100% government"
-            ],
-            [
-                "Concession period",
-                "20-30 years",
-                "15 years annuity",
-                "No concession (hand over on completion)"
-            ],
-            [
-                "When used",
-                "High traffic routes",
-                "Medium traffic routes",
-                "Low traffic / strategic routes"
-            ],
-            [
-                "Private incentive",
-                "High (toll revenue)",
-                "Moderate (annuity)",
-                "Low (construction only)"
-            ]
-        ]
-    }
-],
+      title: 'BOT-Toll vs HAM vs EPC',
+      headers: ['Feature', 'BOT-Toll', 'HAM', 'EPC'],
+      rows: [
+        ['Revenue risk', 'Private sector', 'Shared (annuity-based)', 'Government (100%)'],
+        ['Construction funding', '100% private', '40% govt + 60% private', '100% government'],
+        ['Concession period', '20-30 years', '15 years annuity', 'No concession (hand over)'],
+        ['When used', 'High traffic routes', 'Medium traffic routes', 'Low traffic / strategic routes'],
+        ['Private incentive', 'High (toll revenue)', 'Moderate (annuity)', 'Low (construction only)'],
+      ],
+    },
+    {
+      title: 'PPP Models Summary',
+      headers: ['Model', 'Full Form', 'Who Finances', 'Key Feature'],
+      rows: [
+        ['BOT', 'Build-Operate-Transfer', 'Private', 'Toll or annuity revenue'],
+        ['BOOT', 'Build-Own-Operate-Transfer', 'Private', 'Private owns during concession'],
+        ['DBFOT', 'Design-Build-Finance-Operate-Transfer', 'Private', 'Most comprehensive'],
+        ['HAM', 'Hybrid Annuity Model', '40% Govt + 60% Private', 'Balanced risk sharing'],
+        ['TOT', 'Toll-Operate-Transfer', 'Private buys toll rights', 'For built highways only'],
+        ['O&M', 'Operation & Maintenance', 'Government builds', 'Lowest risk for private'],
+      ],
+    },
+    {
+      title: 'Major Airport PPPs',
+      headers: ['Airport', 'Operator', 'Type', 'Year'],
+      rows: [
+        ['Delhi IGI', 'GMR', 'Brownfield (30-year concession)', '2006'],
+        ['Bengaluru', 'BIAL (Fairfax/Siemens)', 'Greenfield', '2008'],
+        ['Hyderabad', 'GMR', 'Greenfield', '2008'],
+        ['6 AAI airports', 'Adani Group', 'Brownfield lease (50 years)', '2019'],
+        ['Mopa-Goa', 'GMR', 'Greenfield', '2022'],
+        ['Navi Mumbai', 'Adani/CIDCO', 'Greenfield (under construction)', 'Expected 2025'],
+      ],
+    },
+    {
+      title: 'NIP vs NMP',
+      headers: ['Feature', 'NIP', 'NMP'],
+      rows: [
+        ['Full form', 'National Infrastructure Pipeline', 'National Monetisation Pipeline'],
+        ['Target', 'Rs 111 lakh crore new investment', 'Rs 6 lakh crore from existing assets'],
+        ['Nature', 'New infrastructure creation', 'Leasing brownfield assets (not selling)'],
+        ['Period', '2020-2025', '2021-2025'],
+        ['Funding split', 'Centre 39%, States 40%, Private 21%', 'Revenue from private operators'],
+      ],
+    },
+  ],
   mnemonics: [
     {
-        "title": "PPP Models — \"BOT-HAM-TOT\"",
-        "mnemonic": "BOT (Build-Operate-Transfer), HAM (Hybrid Annuity), TOT (Toll-Operate-Transfer)",
-        "explanation": "Three main highway PPP models — BOT (private builds and tolls), HAM (40-60 cost sharing), TOT (government sells toll rights on built roads)."
-    }
-],
+      title: 'PPP Models — "BOT-HAM-TOT"',
+      mnemonic: 'BOT (Build-Operate-Transfer), HAM (Hybrid Annuity), TOT (Toll-Operate-Transfer)',
+      explanation: 'Three main highway PPP models — BOT (private builds and tolls), HAM (40-60 cost sharing, annuity-based), TOT (government sells toll rights on already-built roads).',
+    },
+    {
+      title: 'HAM Numbers — "40-60-15"',
+      mnemonic: 'Government pays 40% during construction, Private finances 60%, Annuity over 15 years',
+      explanation: 'HAM introduced in 2015 balances risk — government provides 40% of project cost in 5 construction milestones, private raises 60%, government pays annuity with interest on private investment over 15 years.',
+    },
+    {
+      title: 'VGF Limits — "30+30=60"',
+      mnemonic: 'Centre 30% + State/Ministry 30% = Maximum 60% of Total Project Cost',
+      explanation: 'VGF makes economically justified but financially unviable PPP projects bankable. Total VGF cannot exceed 60% of project cost. Projects above Rs 200 crore need Empowered Committee (DEA Secretary) approval.',
+    },
+    {
+      title: 'LARR Consent — "70-80"',
+      mnemonic: 'PPP: 70% consent. Private: 80% consent. Compensation: 2x urban / 4x rural market value.',
+      explanation: 'LARR Act 2013 requires 70% landowner consent for PPP land acquisition and 80% for purely private projects. Compensation at 2 times market value in urban and 4 times in rural areas. Social Impact Assessment mandatory.',
+    },
+  ],
 }

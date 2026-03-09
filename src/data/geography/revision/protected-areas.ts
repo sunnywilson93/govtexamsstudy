@@ -1,78 +1,149 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const protectedAreasRevision: SubjectRevision = {
-  "topic": "protected-areas",
-  "bullets": [
-    "India has 106 National Parks, 567 Wildlife Sanctuaries, 52 Tiger Reserves, 18 Biosphere Reserves.",
-    "Jim Corbett (Uttarakhand, 1936) — India's first National Park and first Tiger Reserve (1973).",
-    "Hemis (Ladakh) — largest National Park in India by area; snow leopard habitat.",
-    "Kaziranga (Assam) — one-horned rhinoceros; highest tiger density; UNESCO World Heritage Site.",
-    "Gir (Gujarat) — only habitat of the Asiatic Lion in the world.",
-    "Keibul Lamjao (Manipur) — only floating National Park; habitat of Sangai deer.",
-    "India has 3,167+ tigers (2022 census) — 75% of world's wild tiger population.",
-    "18 Biosphere Reserves in India; Nilgiri BR (1986) was the first; 12 in UNESCO World Network.",
-    "India has 75 Ramsar Sites (2023); Tamil Nadu has the most sites (16).",
-    "India has 7 Natural UNESCO World Heritage Sites.",
-    "Eco-Sensitive Zones (ESZ) are buffer zones (up to 10 km) around NPs and WLSs.",
-    "Sacred Groves are community-protected forest patches — contribute to traditional conservation."
+  topic: 'protected-areas',
+  bullets: [
+    'India has 106 National Parks, 567 Wildlife Sanctuaries, 105 Conservation Reserves, 220 Community Reserves — together ~5.26% of India\'s area.',
+    'India also has 52 Tiger Reserves, 33 Elephant Reserves, 18 Biosphere Reserves, 85 Ramsar Sites (2024), 7 Natural UNESCO World Heritage Sites.',
+    'Wildlife Protection Act 1972 (WLPA) — provides the legal framework for NPs, WLS, CRs, and CmRs; amended in 2002 and 2022.',
+    'National Parks: highest protection under WLPA; no grazing, cultivation, or forestry; boundaries changed only by State Legislature.',
+    'Wildlife Sanctuaries: limited human activity permitted (grazing, collecting minor forest produce); State Government can declare.',
+    'Conservation Reserves (105): buffer/corridor areas between PAs; declared by State Govt after community consultation (WLPA 2002).',
+    'Community Reserves (220): managed by local communities on community or private land adjoining PAs (WLPA 2002).',
+    'Jim Corbett NP (Uttarakhand, 1936) — India\'s first National Park and first Tiger Reserve (1973).',
+    'Hemis NP (Ladakh) — largest NP in India by area; snow leopard habitat; high-altitude cold desert.',
+    'Kaziranga NP (Assam) — one-horned rhinoceros (~2,613, 2022); highest tiger density; UNESCO World Heritage Site.',
+    'Gir NP (Gujarat) — only habitat of the Asiatic Lion in the world; population grew from ~180 (1974) to ~674 (2020).',
+    'Sundarbans NP (West Bengal) — Royal Bengal Tiger in mangrove habitat; UNESCO WHS; world\'s largest mangrove delta.',
+    'Kanha NP (MP) — Barasingha (hard-ground swamp deer); inspiration for Kipling\'s "The Jungle Book".',
+    'Silent Valley NP (Kerala) — undisturbed tropical evergreen rainforest; Lion-tailed Macaque; saved from a dam project by public movement.',
+    'Namdapha NP (Arunachal Pradesh) — only PA in the world with 4 big cat species: tiger, leopard, snow leopard, clouded leopard.',
+    'Valley of Flowers NP (Uttarakhand) — alpine meadows with 600+ flowering plant species; UNESCO WHS (with Nanda Devi).',
+    'Keibul Lamjao NP (Manipur) — world\'s only floating National Park; on phumdis in Loktak Lake; Sangai (brow-antlered) deer.',
+    'Periyar NP/TR (Kerala) — elephants, tigers; Cardamom Hills; artificial lake Periyar created by Mullaperiyar Dam.',
+    'Ranthambore NP/TR (Rajasthan) — open dry deciduous habitat; best-known for tiger tourism; historic Ranthambore Fort.',
+    'Project Tiger launched April 1, 1973 — initially 9 reserves; now 52 Tiger Reserves across 18 states.',
+    'NTCA (National Tiger Conservation Authority, est. 2006) — statutory body overseeing tiger conservation; mandate under WLPA.',
+    'Tiger Reserves: Core/Critical Tiger Habitat (inviolate) + Buffer Zone (limited, regulated activities).',
+    'India\'s tiger population: 1,411 (2006, first camera-trap census) → 2,226 (2014) → 2,967 (2018) → 3,167 (2022) — 75% of world\'s wild tigers.',
+    'Nagarjunasagar-Srisailam TR (AP/Telangana) — largest Tiger Reserve by area.',
+    'Sariska TR (Rajasthan) — lost all tigers to poaching by 2004; successfully reintroduced tigers from Ranthambore.',
+    'Panna TR (MP) — similar successful tiger reintroduction after local extinction.',
+    'Project Elephant launched 1992 — 33 Elephant Reserves; protects corridors and habitats; Karnataka has highest elephant population.',
+    'India has ~29,964 elephants (2017 census); Karnataka (~6,049), Kerala (~3,054), Assam (~5,719) — top 3 states.',
+    '18 Biosphere Reserves in India; Nilgiri BR (1986) was the first; 12 included in UNESCO World Network of BRs.',
+    'BR Zones: Core (strict protection), Buffer (limited research/education), Transition (sustainable use, settlements).',
+    'Key BRs: Nilgiri (TN-KA-KL), Gulf of Mannar (TN — marine, dugong), Sundarbans (WB), Nanda Devi (UK), Nokrek (Meghalaya — Red Panda).',
+    'BRs in UNESCO World Network: Nilgiri, Gulf of Mannar, Sundarbans, Nanda Devi, Nokrek, Pachmarhi, Simlipal, Great Nicobar, Agasthyamalai, Amarkantak, Panna, Khangchendzonga.',
+    '7 Natural UNESCO WHS in India: Kaziranga, Manas, Keoladeo Ghana, Sundarbans, Nanda Devi+Valley of Flowers, Western Ghats, Great Himalayan NP.',
+    'Eco-Sensitive Zones (ESZ): buffer zones up to 10 km around NPs and WLSs; regulated activities; notified by MoEFCC.',
+    'Sacred Groves: community-protected forest patches — Devvan (Maharashtra), Sarna (Jharkhand), Kavus (Kerala), Umang Lai (Manipur).',
+    'Marine Protected Areas: Gulf of Mannar Marine NP, Wandur Marine NP (Andaman), Mahatma Gandhi Marine NP (Andaman), Gulf of Kutch Marine NP.',
+    'Madhya Pradesh has the most Tiger Reserves (6+) and is called the "Tiger State" — Kanha, Bandhavgarh, Panna, Pench, Satpura, Sanjay-Dubri.',
+    'TRAFFIC India — wildlife trade monitoring network; part of WWF-IUCN; combats illegal wildlife trade.',
+    'Wildlife Crime Control Bureau (WCCB, est. 2007) — statutory body under MoEFCC to combat wildlife crime.',
+    'National Board for Wildlife (NBWL) — chaired by the Prime Minister; apex advisory body on wildlife conservation.',
+    'State Boards for Wildlife — chaired by the Chief Minister; advise state governments on wildlife matters.',
+    'CITES (Convention on International Trade in Endangered Species) — India is a signatory; regulates trade in wildlife products.',
+    'CMS (Convention on Migratory Species/Bonn Convention) — India hosted CMS COP-13 in Gandhinagar (2020); protects migratory species.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Key National Parks & Their Species",
-      "headers": [
-        "National Park",
-        "State",
-        "Key Species"
+      title: 'Protected Area Categories Under WLPA',
+      headers: ['Category', 'Number', 'Human Activity', 'Declared By'],
+      rows: [
+        ['National Park', '106', 'Strictly prohibited (no grazing, forestry, cultivation)', 'State Legislature (boundary change)'],
+        ['Wildlife Sanctuary', '567', 'Limited allowed (grazing, minor forest produce)', 'State Government notification'],
+        ['Conservation Reserve', '105', 'Regulated; serves as wildlife corridor/buffer', 'State Govt after community consultation'],
+        ['Community Reserve', '220', 'Community-managed conservation on private/community land', 'State Govt on application by community'],
       ],
-      "rows": [
-        [
-          "Jim Corbett",
-          "Uttarakhand",
-          "Bengal Tiger (first NP)"
-        ],
-        [
-          "Kaziranga",
-          "Assam",
-          "One-horned Rhinoceros"
-        ],
-        [
-          "Gir",
-          "Gujarat",
-          "Asiatic Lion"
-        ],
-        [
-          "Sundarbans",
-          "West Bengal",
-          "Royal Bengal Tiger (mangrove)"
-        ],
-        [
-          "Kanha",
-          "Madhya Pradesh",
-          "Barasingha (hard-ground swamp deer)"
-        ],
-        [
-          "Periyar",
-          "Kerala",
-          "Indian Elephant"
-        ],
-        [
-          "Silent Valley",
-          "Kerala",
-          "Lion-tailed Macaque"
-        ],
-        [
-          "Namdapha",
-          "Arunachal Pradesh",
-          "4 big cats (tiger, leopard, snow leopard, clouded leopard)"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Protected Area Hierarchy",
-      "mnemonic": "NP > WLS > CR > CmR (National Park > Wildlife Sanctuary > Conservation Reserve > Community Reserve)",
-      "explanation": "National Parks have highest protection (no human activity). WLS allows limited activity. CR/CmR are buffer/corridor areas."
-    }
-  ]
+      title: 'Key National Parks & Their Flagship Species',
+      headers: ['National Park', 'State', 'Flagship Species', 'Special Feature'],
+      rows: [
+        ['Jim Corbett', 'Uttarakhand', 'Bengal Tiger', 'India\'s first NP (1936) and first TR (1973)'],
+        ['Kaziranga', 'Assam', 'One-horned Rhinoceros', 'UNESCO WHS; highest tiger density'],
+        ['Gir', 'Gujarat', 'Asiatic Lion', 'Only habitat worldwide; ~674 lions (2020)'],
+        ['Sundarbans', 'West Bengal', 'Royal Bengal Tiger', 'Mangrove habitat; UNESCO WHS'],
+        ['Kanha', 'Madhya Pradesh', 'Barasingha (Swamp Deer)', '"Jungle Book" inspiration'],
+        ['Namdapha', 'Arunachal Pradesh', '4 Big Cats', 'Tiger, leopard, snow leopard, clouded leopard'],
+        ['Keibul Lamjao', 'Manipur', 'Sangai Deer', 'Only floating NP; on Loktak Lake phumdis'],
+        ['Valley of Flowers', 'Uttarakhand', '600+ flowering plants', 'Alpine meadows; UNESCO WHS'],
+      ],
+    },
+    {
+      title: 'Tiger Population Trend (All India Tiger Estimation)',
+      headers: ['Year', 'Tiger Population', 'Key Development'],
+      rows: [
+        ['1973', '~1,827 (Pugmark method)', 'Project Tiger launched with 9 reserves'],
+        ['2006', '1,411', 'First camera-trap based estimation; wake-up call'],
+        ['2010', '1,706', 'Recovery begins; NTCA strengthened'],
+        ['2014', '2,226', 'Steady recovery across most landscapes'],
+        ['2018', '2,967', 'India declared 75% of global wild tigers'],
+        ['2022', '3,167', '52 Tiger Reserves; MP, Karnataka, Uttarakhand lead'],
+      ],
+    },
+    {
+      title: 'Biosphere Reserves — Core vs Buffer vs Transition',
+      headers: ['Zone', 'Purpose', 'Activities Allowed', 'Example'],
+      rows: [
+        ['Core Zone', 'Strict protection of ecosystems', 'Research only; no human activity', 'Equivalent to NP/WLS within BR'],
+        ['Buffer Zone', 'Surrounds core; limited use', 'Non-destructive research, education, eco-tourism', 'Managed access for scientists/students'],
+        ['Transition Zone', 'Outermost; sustainable use', 'Settlements, agriculture, forestry, tourism', 'Livelihood activities with conservation'],
+      ],
+    },
+    {
+      title: 'Key Conservation Projects',
+      headers: ['Project', 'Year', 'Target Species', 'Current Status'],
+      rows: [
+        ['Project Tiger', '1973', 'Bengal Tiger', '52 Tiger Reserves; 3,167 tigers (2022)'],
+        ['Project Elephant', '1992', 'Asian Elephant', '33 Elephant Reserves; ~29,964 elephants'],
+        ['Indian Crocodile Conservation', '1975', 'Gharial, Mugger, Saltwater', 'Breeding centres; Chambal, Bhitarkanika'],
+        ['Project Snow Leopard', '2009', 'Snow Leopard', 'Landscape-level conservation in Himalayas/Trans-Himalayas'],
+        ['Sea Turtle Conservation', 'Various', 'Olive Ridley, Green', 'Gahirmatha, Gulf of Mannar, Andaman'],
+        ['Indian Rhino Vision 2020', '2005', 'One-horned Rhinoceros', 'Translocated rhinos to Manas NP from Kaziranga'],
+      ],
+    },
+    {
+      title: 'Natural UNESCO World Heritage Sites in India',
+      headers: ['Site', 'State', 'Year Inscribed', 'Key Feature'],
+      rows: [
+        ['Kaziranga', 'Assam', '1985', 'One-horned rhino; highest tiger density'],
+        ['Manas', 'Assam', '1985', 'Golden Langur, Pygmy Hog'],
+        ['Keoladeo Ghana', 'Rajasthan', '1985', '350+ bird species; migratory birds'],
+        ['Sundarbans', 'West Bengal', '1987', 'Largest mangrove; Royal Bengal Tiger'],
+        ['Nanda Devi + Valley of Flowers', 'Uttarakhand', '1988/2005', 'Alpine biodiversity; glaciers'],
+        ['Western Ghats', '6 states', '2012', 'Biodiversity hotspot; high endemism'],
+        ['Great Himalayan NP', 'Himachal Pradesh', '2014', 'Western Himalayan temperate forests'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Protected Area Hierarchy',
+      mnemonic: 'NP > WLS > CR > CmR — protection decreases from National Park to Community Reserve',
+      explanation: 'National Parks have highest protection (no human activity). WLS allows limited activity. CR/CmR are buffer/corridor areas added by WLPA 2002.',
+    },
+    {
+      title: 'Tiger Census Milestones',
+      mnemonic: '2006: 1,411 → 2014: 2,226 → 2018: 2,967 → 2022: 3,167',
+      explanation: 'India\'s tiger population has more than doubled since the first camera-trap census in 2006.',
+    },
+    {
+      title: 'First NP and TR',
+      mnemonic: 'Jim Corbett = First Everything — First NP (1936), First TR (1973)',
+      explanation: 'Jim Corbett National Park in Uttarakhand was both India\'s first National Park and first Tiger Reserve.',
+    },
+    {
+      title: '12 BRs in UNESCO World Network',
+      mnemonic: 'NGSN-NPSA-GAPK — Nilgiri, Gulf of Mannar, Sundarbans, Nanda Devi, Nokrek, Pachmarhi, Simlipal, Agasthyamalai, Great Nicobar, Amarkantak, Panna, Khangchendzonga',
+      explanation: 'India has 18 Biosphere Reserves total, of which 12 are in the UNESCO World Network of Biosphere Reserves.',
+    },
+    {
+      title: 'Key "Only" Facts',
+      mnemonic: 'Gir = Only Asiatic Lion; Keibul Lamjao = Only Floating NP; Namdapha = Only PA with 4 Big Cats; Barren Island = Only Active Volcano',
+      explanation: 'Unique "only" facts about Indian protected areas — frequently tested in all exams.',
+    },
+  ],
 }

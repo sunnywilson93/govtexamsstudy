@@ -3,64 +3,132 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const sezCorridorsRevision: SubjectRevision = {
   topic: 'sez-corridors',
   bullets: [
-    "SEZ Act 2005 + Rules 2006. SEZs are duty-free enclaves treated as 'foreign territory' for trade operations.",
-    "272 SEZs operational (of 425 approved). 5,829 units. Employment: 30.92 lakh. Exports: Rs 15.2 lakh crore (FY24).",
-    "SEZ tax benefits: 100% income tax exemption for 5 years, 50% for next 5, 50% ploughed-back for next 5 (Section 10AA).",
-    "IT/ITES SEZs account for 60%+ of SEZ exports. Major clusters: Bangalore, Hyderabad, Chennai, Pune.",
-    "DESH Bill (proposed 2022): Replace SEZ Act. Development Hubs for export + domestic. WTO-compliant. Not yet tabled.",
-    "DMIC (Delhi-Mumbai Industrial Corridor): Flagship. 1,504 km along Western DFC. 8 cities. Japan funding (JICA).",
-    "Dholera SIR (Gujarat): India's largest planned industrial city (920 sq km). Solar park (5,000 MW planned).",
-    "11 industrial corridors, 32 nodes under National Industrial Corridor Development Programme (NICDP).",
-    "WDFC: 1,504 km Dadri-JNPT. JICA funded. EDFC: 1,337 km Ludhiana-Dankuni. World Bank funded.",
-    "DFC impact: Delhi-Mumbai freight from 3 days → 30 hours. Double-stack containers. 25-tonne axle load.",
-    "PM GatiShakti NMP (2021): GIS-based digital planning for multi-modal connectivity. Integrates all infrastructure.",
-    "India's logistics cost: 14-16% of GDP (vs 8-10% developed). Target: 8% by 2030 under National Logistics Policy 2022.",
-    "PLI schemes: Rs 1.97 lakh crore across 14 sectors. Mobile exports: Rs 1.2 lakh crore (FY24, up from Rs 11,000 crore FY19).",
-    "GIFT City IFSC: Regulated by IFSCA. 10-year tax holiday. Banking, insurance, fund management, aircraft leasing.",
-    "Semiconductor Mission: Rs 76,000 crore. Micron (Gujarat), Tata (Assam, Gujarat), CG Power (Sanand)."
-],
+    'SEZ Act 2005 + Rules 2006. SEZs are duty-free enclaves treated as "foreign territory" for trade operations.',
+    'India\'s first EPZ: Kandla (Gujarat, 1965). EPZs converted to SEZs in 2000. Model inspired by China\'s Shenzhen SEZ (1980).',
+    '272 SEZs operational (of 425 approved). 5,829 units. Employment: 30.92 lakh. Exports: Rs 15.2 lakh crore (FY24, ~30% of total).',
+    'SEZ tax benefits (Section 10AA): 100% income tax exemption for 5 years, 50% for next 5, 50% ploughed-back for next 5. Sunset: units pre-March 2020.',
+    'IT/ITES SEZs account for 60%+ of SEZ exports. Major clusters: Bangalore, Hyderabad, Chennai, Pune.',
+    'Minimum SEZ area: Multi-product 500 hectares, Sector-specific 50 hectares, IT/ITES 10 hectares, FTWZ 40 hectares.',
+    'DESH Bill (proposed 2022): Replace SEZ Act. Development Hubs for export + domestic. WTO-compliant. Not yet tabled.',
+    'WTO incompatibility: SEZ export subsidies violate WTO SCM Agreement since India\'s per capita GNI crossed $1,000.',
+    'DMIC (Delhi-Mumbai Industrial Corridor): Flagship. 1,504 km along Western DFC. 8 cities. Japan/JICA funding ($9B).',
+    'Dholera SIR (Gujarat): India\'s largest planned industrial city (920 sq km). Solar park (5,000 MW planned). DMIC node.',
+    'AURIC (Shendra-Bidkin, Maharashtra): India\'s first operational industrial city under NICDP.',
+    '11 industrial corridors, 32 nodes under NICDP. Rs 1.52 lakh crore sanctioned. NICDC manages implementation.',
+    'WDFC: 1,504 km Dadri-JNPT. JICA funded (~$9B). Double-stack containers, 25-tonne axle load, 100 km/h.',
+    'EDFC: 1,337 km Ludhiana-Dankuni. World Bank funded (~$5.6B). Coal, food grain, cement, fertiliser, steel.',
+    'DFC impact: Delhi-Mumbai freight from 3 days to 14-16 hours. Modal shift: target 45% rail freight by 2030 (from 27%).',
+    'PM GatiShakti NMP (Oct 2021): GIS-based digital planning integrating 16 ministries. Identifies connectivity gaps.',
+    'National Logistics Policy (Sep 2022): Target logistics cost from 14-16% to 8% of GDP. ULIP, ELOS, 35 MMLPs planned.',
+    'India\'s logistics ranking: 44th (2014) to 38th (2023) on World Bank LPI. Target: top 25 by 2030.',
+    'PLI schemes: Rs 1.97 lakh crore across 14 sectors. Mobile exports: Rs 1.2 lakh crore (FY24, from Rs 11,000 crore FY19).',
+    'GIFT City IFSC: Regulated by IFSCA (2020). 10-year tax holiday. Banking, insurance, fund management, aircraft leasing. 200+ entities.',
+    'Semiconductor Mission: Rs 76,000 crore. Micron ($2.75B OSAT, Gujarat), Tata ($11B fab, Dholera), CG Power (Sanand OSAT).',
+    'India electronics production: Rs 9.52 lakh crore (FY24) — 2nd largest mobile phone manufacturer globally.',
+    'Sagarmala (2015): Port-led development. 802 projects, Rs 5.8 lakh crore. Port turnaround: 4.1 days (2014) to 2.5 days (2024).',
+    '14 Coastal Economic Zones planned. Inland waterways cheapest (Rs 1-1.5/tonne-km vs Rs 5 for road) but handle only 3% freight.',
+    'Nandigram (2007): Land acquisition protests against chemical SEZ led to violence and political change in West Bengal.',
+    'LARR Act 2013: Tightened land acquisition norms — consent, R&R provisions. Made large SEZ creation more difficult.',
+    'Defence Industrial Corridors: UP (Aligarh-Agra-Kanpur-Jhansi-Chitrakoot-Lucknow) and Tamil Nadu (Chennai-Hosur-Salem-Coimbatore-Tiruchirappalli).',
+    'Make in India (2014): Target manufacturing 25% of GDP (stuck at 17-18%). Ease of Doing Business: 142nd to 63rd (2019).',
+    'Freight modal split: Road 65%, Rail 27%, Coastal 5%, Waterways 3%. DFCs aim to shift freight to rail.',
+    'Green Hydrogen Mission: Rs 19,744 crore. Production zones in SEZs/industrial parks for decarbonising steel, fertiliser, refining.',
+    'CEPI identifies 43 critically polluted industrial clusters in India.',
+    'National Waterway-1 (Ganga): Allahabad-Haldia, 1,620 km. World Bank funded. Multi-modal logistics parks at Varanasi.',
+    'SEZ GST treatment: Zero-rated (either IGST exemption or pay + claim refund). Refund delays create working capital stress.',
+    'BoA (Board of Approval): Inter-ministerial body under Commerce Secretary that approves SEZ proposals.',
+    'Processing area: At least 50% of SEZ must be for processing (manufacturing/services). Rest for non-processing.',
+    'Apple suppliers in India through PLI: Foxconn (Chennai, Karnataka), Pegatron (Chennai), Wistron (Karnataka).',
+    'India\'s Ease of Doing Business: 142nd (2014) to 63rd (2019) under Make in India push.',
+    'Every 1% reduction in logistics cost saves approximately $30 billion for the economy.',
+    'FTWZs: Duty-free warehousing for re-export. Mundra (Gujarat) and Sriperumbudur (Tamil Nadu) operational.',
+    'ULIP: Unified Logistics Interface Platform integrating 34 systems of 7 ministries for digital logistics.',
+  ],
   comparisons: [
     {
-        "title": "SEZ vs Industrial Corridor",
-        "headers": [
-            "Feature",
-            "SEZ",
-            "Industrial Corridor"
-        ],
-        "rows": [
-            [
-                "Purpose",
-                "Export promotion, FDI",
-                "Manufacturing hub, logistics integration"
-            ],
-            [
-                "Scale",
-                "100-1,000+ hectares",
-                "1,000+ km corridor with multiple nodes"
-            ],
-            [
-                "Key benefit",
-                "Tax/duty exemptions",
-                "Multi-modal connectivity, trunk infrastructure"
-            ],
-            [
-                "Examples",
-                "Jamnagar (Reliance), Infosys SEZ",
-                "DMIC, CBIC, AKIC"
-            ],
-            [
-                "Governance",
-                "SEZ Act 2005, Board of Approval",
-                "DPIIT, NICDC, State SPVs"
-            ]
-        ]
-    }
-],
+      title: 'SEZ vs Industrial Corridor',
+      headers: ['Feature', 'SEZ', 'Industrial Corridor'],
+      rows: [
+        ['Purpose', 'Export promotion, FDI', 'Manufacturing hub, logistics integration'],
+        ['Scale', '10-500+ hectares', '1,000+ km corridor with multiple nodes'],
+        ['Key benefit', 'Tax/duty exemptions', 'Multi-modal connectivity, trunk infrastructure'],
+        ['Examples', 'Jamnagar (Reliance), Infosys SEZ', 'DMIC, CBIC, AKIC'],
+        ['Governance', 'SEZ Act 2005, Board of Approval', 'DPIIT, NICDC, State SPVs'],
+        ['WTO concern', 'Export subsidies may violate SCM', 'No WTO issue — location-based'],
+      ],
+    },
+    {
+      title: 'Western DFC vs Eastern DFC',
+      headers: ['Feature', 'Western DFC', 'Eastern DFC'],
+      rows: [
+        ['Route', 'Dadri (UP) to JNPT (Maharashtra)', 'Ludhiana (Punjab) to Dankuni (WB)'],
+        ['Length', '1,504 km', '1,337 km'],
+        ['Funding', 'JICA (Japan) ~$9B', 'World Bank ~$5.6B'],
+        ['Key cargo', 'Containers (double-stack)', 'Coal, food grain, cement, steel'],
+        ['Industrial corridor', 'DMIC', 'AKIC'],
+        ['States covered', 'UP, Haryana, Rajasthan, Gujarat, Maharashtra', 'Punjab, Haryana, UP, Bihar, Jharkhand, WB'],
+      ],
+    },
+    {
+      title: 'PLI Scheme — Key Sectors',
+      headers: ['Sector', 'Outlay (Rs crore)', 'Key Achievement'],
+      rows: [
+        ['Mobile phones', '40,951', 'Exports from Rs 11,000 cr to Rs 1.2 lakh cr'],
+        ['Auto/components', '25,938', 'EV manufacturing boost'],
+        ['ACC batteries', '18,100', 'Critical for EV ecosystem'],
+        ['Solar PV modules', '24,000', 'Reducing import dependence on China'],
+        ['Pharma', '15,000', 'Bulk drug and medical device manufacturing'],
+        ['Semiconductor', '76,000', 'Micron, Tata, CG Power fabs/OSAT'],
+      ],
+    },
+    {
+      title: 'Freight Transport Modes — Cost Comparison',
+      headers: ['Mode', 'Cost (Rs/tonne-km)', 'Current Share', 'Target'],
+      rows: [
+        ['Inland Waterways', '1.0-1.5', '3%', 'Increase significantly'],
+        ['Railways', '2.5', '27%', '45% by 2030'],
+        ['Coastal Shipping', '2.0', '5%', 'Double through Sagarmala'],
+        ['Road', '5.0', '65%', 'Reduce to <50%'],
+      ],
+    },
+    {
+      title: 'SEZ Act vs Proposed DESH Bill',
+      headers: ['Feature', 'SEZ Act 2005', 'DESH Bill (proposed)'],
+      rows: [
+        ['Orientation', 'Export-only', 'Export + Domestic'],
+        ['DTA sales', 'Pay customs duty', 'No duty on domestic sales'],
+        ['WTO compliance', 'Export subsidy — incompatible', 'WTO-compliant incentive structure'],
+        ['Area requirements', 'Fixed minimums', 'Flexible — smaller hubs possible'],
+        ['Connectivity', 'Not integrated', 'Aligned with PM GatiShakti'],
+        ['Status', 'Operational', 'Not yet tabled in Parliament'],
+      ],
+    },
+  ],
   mnemonics: [
     {
-        "title": "DFC Routes — \"WE\"",
-        "mnemonic": "Western DFC: Dadri→JNPT (JICA funded). Eastern DFC: Ludhiana→Dankuni (World Bank)",
-        "explanation": "Two Dedicated Freight Corridors — Western (1,504 km, Japan funded) and Eastern (1,337 km, World Bank funded)."
-    }
-],
+      title: 'DFC Routes — "WE"',
+      mnemonic: 'Western DFC: Dadri to JNPT (JICA funded). Eastern DFC: Ludhiana to Dankuni (World Bank)',
+      explanation: 'Two Dedicated Freight Corridors — Western (1,504 km, Japan/JICA funded, containers) and Eastern (1,337 km, World Bank funded, coal/grain).',
+    },
+    {
+      title: 'GatiShakti 7 Engines — "RRPWAM-L"',
+      mnemonic: 'Railways, Roads, Ports, Waterways, Airports, Mass transport, Logistics infrastructure',
+      explanation: 'Seven engines of growth under PM GatiShakti NMP — all mapped on a single GIS-based digital platform integrating 16 ministries.',
+    },
+    {
+      title: 'SEZ Tax — "100-50-50" (15 years)',
+      mnemonic: '100% for 5 years, 50% for next 5, 50% ploughed-back for next 5',
+      explanation: 'Section 10AA income tax exemption for SEZ units: Full exemption for first 5 years, half for next 5, half of reinvested profits for final 5 years. Sunset: units must have started pre-March 2020.',
+    },
+    {
+      title: 'DMIC Cities — "DS-GVKJ-PA"',
+      mnemonic: 'Dholera, Shendra-Bidkin, Greater Noida, Vikram Udyogpuri, Khushkhera-Bhiwadi, Jodhpur-Pali, Pithampur, Ahmedabad-Dholera',
+      explanation: 'Eight planned industrial cities along the Delhi-Mumbai Industrial Corridor — Dholera SIR (Gujarat) is the most advanced and India\'s largest planned industrial city.',
+    },
+    {
+      title: 'Semiconductor Players — "MTG" Trio',
+      mnemonic: 'Micron (Gujarat OSAT), Tata (Dholera fab + Assam OSAT), CG Power (Sanand OSAT)',
+      explanation: 'Three key semiconductor projects under India Semiconductor Mission — Micron at Sanand, Tata at Dholera and Morigaon, CG Power at Sanand.',
+    },
+  ],
 }

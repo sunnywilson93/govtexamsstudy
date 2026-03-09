@@ -3,84 +3,135 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const foodSecurityRevision: SubjectRevision = {
   topic: 'food-security',
   bullets: [
-    "NFSA 2013: Rights-based food security. 81.35 crore beneficiaries (75% rural, 50% urban).",
-    "NFSA entitlements: PHH — 5 kg/person/month. AAY — 35 kg/household/month. From Jan 2024, all grain free (Rs 0).",
-    "FCI: Established 1965. Procures at MSP, maintains buffer stocks, distributes through PDS.",
-    "MSP set by government on CACP (Commission for Agricultural Costs & Prices) recommendation. 22 crops covered.",
-    "MSP 2024-25: Wheat Rs 2,275/quintal. Paddy Rs 2,300/quintal. Policy: 1.5x A2+FL cost (since 2018).",
-    "Buffer stock norms: Jan 27.58 MT, April 21.04 MT, July 41.12 MT, October 30.78 MT.",
-    "Targeted PDS (1997) replaced universal PDS. NFSA-based PDS (2013) replaced TPDS.",
-    "ONORC (One Nation One Ration Card, 2019): Inter-state portability. 130+ crore transactions. All 36 states/UTs covered.",
-    "PMGKAY (2020): Free 5 kg/person/month extra grain during COVID. 33 months. 116.3 MT distributed. Cost Rs 3.91 lakh crore.",
-    "ePoS devices at 5.4 lakh FPS (out of 5.5 lakh). Aadhaar-linked ration cards: 95%+. Leakage reduced from 47% to ~10%.",
-    "Food subsidy: Rs 2.05 lakh crore (FY24). FCI + state agencies procured 78.2 MT rice + 26.2 MT wheat (FY24).",
-    "Rice fortification: Mandatory with iron, folic acid, vitamin B12 for PDS. Target: 100% by 2024.",
-    "NFHS-5 nutrition: 35.5% children stunted, 19.3% wasted, 57% women anaemic. Nutritional insecurity persists despite caloric security.",
-    "PM POSHAN (Mid-Day Meal): 11.8 crore children in 11.2 lakh schools. 450 kcal (primary), 700 kcal (upper primary).",
-    "Shanta Kumar Committee (2015): Recommended capping NFSA at 40%, cash transfers, FCI restructuring. Not implemented."
-],
+    'NFSA 2013: Rights-based food security. 81.35 crore beneficiaries (75% rural, 50% urban). Replaces Targeted PDS.',
+    'NFSA entitlements: PHH — 5 kg/person/month. AAY — 35 kg/household/month. From Jan 2024, all grain free (Rs 0).',
+    'FCI: Established 1965. Procures at MSP, maintains buffer stocks, distributes through PDS. 2,000+ depots nationwide.',
+    'MSP set by government on CACP (Commission for Agricultural Costs & Prices) recommendation. 22 mandatory crops + sugarcane FRP.',
+    'MSP 2024-25: Wheat Rs 2,275/quintal. Paddy Rs 2,300/quintal. Policy: 1.5x A2+FL cost (since 2018). Swaminathan Committee recommended C2+50%.',
+    'Buffer stock norms (million tonnes): Jan 1 — 27.58 MT, April 1 — 21.04 MT, July 1 — 41.12 MT, October 1 — 30.78 MT.',
+    'Actual stocks often exceed norms: 80+ MT at peak. Excess storage costs Rs 8,000/MT/year. Open storage losses: 5-10%.',
+    'Targeted PDS (1997) replaced universal PDS. NFSA-based PDS (2013) replaced TPDS. Ration cards: Antyodaya (yellow), PHH (pink/green).',
+    'ONORC (One Nation One Ration Card, 2019): Inter-state portability. 130+ crore transactions. All 36 states/UTs covered by 2024.',
+    'PMGKAY (2020): Free 5 kg/person/month extra grain during COVID. 33 months. 116.3 MT distributed. Cost Rs 3.91 lakh crore. Ended Dec 2022.',
+    'ePoS devices at 5.4 lakh FPS (out of 5.5 lakh). Aadhaar-linked ration cards: 95%+. Leakage reduced from 47% (2012) to ~10%.',
+    'Food subsidy: Rs 2.05 lakh crore (FY24). FCI + state agencies procured 78.2 MT rice + 26.2 MT wheat (FY24).',
+    'Economic cost of rice: Rs 39.12/kg (FY24). Economic cost of wheat: Rs 27.65/kg. Distributed free → entire cost is subsidy.',
+    'Rice fortification: Mandatory with iron, folic acid, vitamin B12 for PDS, ICDS, PM POSHAN. Target: 100% by 2024. Covers 100+ MT rice.',
+    'NFHS-5 nutrition: 35.5% children stunted, 19.3% wasted, 32.1% underweight, 57% women anaemic. Nutritional insecurity persists despite caloric security.',
+    'PM POSHAN (Mid-Day Meal): 11.8 crore children in 11.2 lakh schools. 450 kcal (primary), 700 kcal (upper primary). Budget Rs 12,467 crore (FY25).',
+    'ICDS (1975): 6 services — supplementary nutrition, immunisation, health check-up, referral, pre-school education, nutrition education. 13.9 lakh AWCs.',
+    'Saksham Anganwadi (2022): Upgraded ICDS with Wi-Fi-enabled centres, POSHAN tracker app, growth monitoring devices. 2 lakh AWCs upgraded.',
+    'POSHAN Abhiyaan (2018): Target — reduce stunting by 2% per year, anaemia by 3% per year. Convergence of 20+ schemes. POSHAN Tracker monitors 10+ crore beneficiaries.',
+    'Shanta Kumar Committee (2015): Recommended capping NFSA at 40%, cash transfers instead of grain, FCI restructuring, outsource procurement. Not implemented.',
+    'Green Revolution (1960s-70s): HYV seeds (Borlaug), irrigation expansion, fertiliser subsidy, MSP procurement. Punjab, Haryana, Western UP transformed. India from deficit to surplus.',
+    'Second Green Revolution: Eastern India (Bihar, Odisha, Assam, Jharkhand) focus. BGREI (Bringing Green Revolution to Eastern India, 2010). Rice intensification, micro-irrigation.',
+    'Evergreen Revolution (M.S. Swaminathan): Productivity increase without ecological damage. Organic farming, precision agriculture, GMO debate.',
+    'WTO & Food Security: Peace Clause (Bali 2013) — India exempt from dispute if MSP procurement exceeds 10% of production value. India demands permanent solution.',
+    'WTO calculation flaw: External Reference Price (ERP) uses 1986-88 prices (not adjusted for inflation) — makes India\'s subsidy appear artificially high.',
+    'State PDS innovations: Chhattisgarh (decentralised procurement, community monitoring — best PDS), Tamil Nadu (universal PDS), Kerala (civil supplies corporation), Odisha (KALIA income support).',
+    'National Food Security Mission (NFSM): Target crops — rice, wheat, pulses, coarse cereals, nutri-cereals, oilseeds. Cluster approach for 734 districts.',
+    'India\'s food production: 330+ MT foodgrains (2023-24 — record). Rice: 136 MT, Wheat: 113 MT, Pulses: 23 MT, Coarse cereals: 55 MT.',
+    'India is world\'s largest producer of: milk (231 MT), pulses, spices, jute. Second largest: rice, wheat, fruits, vegetables, sugarcane.',
+    'Millet Mission (2023): International Year of Millets (India-led UN resolution). Millets included in PDS, ICDS, PM POSHAN. ODOP linkage.',
+    'PM Garib Kalyan Ann Yojana (PMGKAY 2.0, 2024): Free 5 kg per person per month for all NFSA beneficiaries — merged into NFSA permanently.',
+    'Community kitchens: Tamil Nadu (Amma Canteen), Rajasthan (Indira Rasoi), Odisha (Aahaar), Delhi (subsidy canteens). Rs 5-10 meals for urban poor.',
+    'Food processing: PMKSY (PM Kisan SAMPADA Yojana) — mega food parks, cold chains, backward-forward linkages. PLI for food processing: Rs 10,900 crore.',
+    'Seed security: National Seed Policy, PPV&FR Act 2001 (farmers\' rights over seeds), Seed Village Programme. GM crops: only Bt cotton approved; Bt brinjal under moratorium since 2010.',
+    'Climate & food security: 4.5% GDP from agriculture (15% workers). Heat waves reduce wheat yield 10-15%. Erratic monsoons affect kharif. Need climate-resilient varieties.',
+    'Zero Hunger goal (SDG 2): India ranks 111/125 on Global Hunger Index (2023) — "serious" category. Paradox: food surplus but persistent malnutrition.',
+    'Food wastage: 7-10% post-harvest losses (FCI estimate). ICAR: 20-30% for fruits/vegetables. Cold chain capacity: only 4% of perishables.',
+    'Ethanol Blending Programme: 20% blending target by 2025-26. Diverts foodgrains (rice, maize) to ethanol — trade-off with food security. Current blending: 15%.',
+  ],
   comparisons: [
     {
-        "title": "MSP Cost Concepts",
-        "headers": [
-            "Concept",
-            "Full Form",
-            "Includes"
-        ],
-        "rows": [
-            [
-                "A2",
-                "Actual paid-out costs",
-                "Seeds, fertilisers, hired labour, fuel, irrigation, rent paid"
-            ],
-            [
-                "A2+FL",
-                "A2 + Family Labour",
-                "A2 + imputed value of family members' labour"
-            ],
-            [
-                "C2",
-                "Comprehensive cost",
-                "A2+FL + imputed rent on owned land + interest on owned capital"
-            ]
-        ]
+      title: 'MSP Cost Concepts',
+      headers: ['Concept', 'Full Form', 'Includes', 'MSP Recommendation'],
+      rows: [
+        ['A2', 'Actual paid-out costs', 'Seeds, fertilisers, hired labour, fuel, irrigation, rent paid', 'Not used alone'],
+        ['A2+FL', 'A2 + Family Labour', 'A2 + imputed value of family members\' labour', 'MSP = 1.5x A2+FL (current policy)'],
+        ['C2', 'Comprehensive cost', 'A2+FL + imputed rent on owned land + interest on owned capital', 'Swaminathan: MSP = 1.5x C2 (not adopted)'],
+      ],
     },
     {
-        "title": "PDS Evolution",
-        "headers": [
-            "Phase",
-            "Period",
-            "Feature"
-        ],
-        "rows": [
-            [
-                "Universal PDS",
-                "1947-1997",
-                "All households, no targeting, high leakage"
-            ],
-            [
-                "Targeted PDS",
-                "1997-2013",
-                "BPL/APL categories, exclusion/inclusion errors"
-            ],
-            [
-                "NFSA-based",
-                "2013-present",
-                "Rights-based, PHH/AAY categories, Aadhaar-linked"
-            ]
-        ]
-    }
-],
+      title: 'PDS Evolution',
+      headers: ['Phase', 'Period', 'Feature', 'Key Issue'],
+      rows: [
+        ['Universal PDS', '1947-1997', 'All households, no targeting', 'High leakage (40%+), urban bias, fiscal burden'],
+        ['Targeted PDS', '1997-2013', 'BPL/APL categories', 'Inclusion/exclusion errors, ghost cards, corruption'],
+        ['NFSA-based', '2013-present', 'Rights-based, PHH/AAY, Aadhaar-linked', 'High cost, nutritional quality questions'],
+      ],
+    },
+    {
+      title: 'NFSA — PHH vs AAY',
+      headers: ['Feature', 'Priority Household (PHH)', 'Antyodaya Anna Yojana (AAY)'],
+      rows: [
+        ['Target group', '75% rural, 50% urban population', 'Poorest of the poor (2.5 crore families)'],
+        ['Entitlement', '5 kg per person per month', '35 kg per household per month'],
+        ['Identification', 'State government criteria', 'Widows, disabled, elderly, primitive tribes'],
+        ['Price (post-2024)', 'Free (Rs 0)', 'Free (Rs 0)'],
+        ['Original price', 'Rs 1/2/3 per kg (rice/wheat/coarse)', 'Rs 2/3 per kg (wheat/rice)'],
+      ],
+    },
+    {
+      title: 'Key Food Security Schemes',
+      headers: ['Scheme', 'Year', 'Target Group', 'Key Feature'],
+      rows: [
+        ['NFSA/PDS', '2013', '81.35 crore people', 'Rights-based food grain entitlement'],
+        ['PM POSHAN', '1995/2021', '11.8 crore children', 'Mid-day meals in schools (govt + aided)'],
+        ['ICDS', '1975', 'Children <6, pregnant/lactating women', '6 services including supplementary nutrition'],
+        ['POSHAN Abhiyaan', '2018', 'Children, women, adolescents', 'Convergence platform — reduce stunting/anaemia'],
+        ['PM-KISAN', '2019', 'All farmer families', 'Rs 6,000/year income support (not food)'],
+        ['PMFBY', '2016', 'Crop-growing farmers', 'Crop insurance at subsidised premiums'],
+      ],
+    },
+    {
+      title: 'Food Security Committees & Recommendations',
+      headers: ['Committee', 'Year', 'Key Recommendations', 'Status'],
+      rows: [
+        ['Shanta Kumar', '2015', 'Cap NFSA at 40%, cash transfers, FCI restructuring', 'Not implemented'],
+        ['Swaminathan (NCFFS)', '2004-06', 'MSP = C2 + 50%, universal PDS, community grain banks', 'MSP formula partially adopted (A2+FL, not C2)'],
+        ['Ramesh Chand', '2015', 'Market reforms, contract farming, eNAM', 'eNAM launched, farm laws repealed'],
+        ['High Level Committee on food', '2002', 'Food stamps, direct cash transfer pilot', 'DBT adopted later (JAM trinity)'],
+      ],
+    },
+    {
+      title: 'India vs Global Food Security Indicators',
+      headers: ['Indicator', 'India', 'China', 'World Average'],
+      rows: [
+        ['Global Hunger Index rank', '111/125 (Serious)', '~2 (Low)', '—'],
+        ['Stunting (children <5)', '35.5%', '4.8%', '22.3%'],
+        ['Wasting (children <5)', '19.3%', '1.9%', '6.7%'],
+        ['Anaemia (women 15-49)', '57%', '15.3%', '29.9%'],
+        ['Food grain per capita (kg/yr)', '250', '480', '350'],
+        ['PDS/food subsidy (% GDP)', '~0.8%', '~0.3%', 'Varies'],
+      ],
+    },
+  ],
   mnemonics: [
     {
-        "title": "NFSA Quantities — \"5-35\"",
-        "mnemonic": "PHH: 5 kg per person per month. AAY: 35 kg per household per month",
-        "explanation": "Two entitlement levels under NFSA — Priority Household (5 kg/person) and Antyodaya Anna Yojana (35 kg/household)."
+      title: 'NFSA Quantities — "5-35"',
+      mnemonic: 'PHH: 5 kg per person per month. AAY: 35 kg per household per month',
+      explanation: 'Two entitlement levels under NFSA — Priority Household (5 kg/person) and Antyodaya Anna Yojana (35 kg/household).',
     },
     {
-        "title": "MSP Formula — \"1.5x A2+FL\"",
-        "mnemonic": "MSP = at least 1.5 times A2+FL cost",
-        "explanation": "Government policy since 2018: MSP set at minimum 150% of A2+FL (actual paid-out costs + imputed family labour value)."
-    }
-],
+      title: 'MSP Formula — "1.5x A2+FL"',
+      mnemonic: 'MSP = at least 1.5 times A2+FL cost',
+      explanation: 'Government policy since 2018: MSP set at minimum 150% of A2+FL (actual paid-out costs + imputed family labour value). Swaminathan recommended C2+50% which is higher.',
+    },
+    {
+      title: 'ICDS 6 Services — "SNIHPN"',
+      mnemonic: 'S: Supplementary Nutrition. N: Nutrition & health education. I: Immunisation. H: Health check-ups. P: Pre-school education. R: Referral services',
+      explanation: 'Six services under ICDS (1975) delivered through 13.9 lakh Anganwadi Centres. Supplementary nutrition is the costliest component.',
+    },
+    {
+      title: 'Food Security Chain — "PPMBD"',
+      mnemonic: 'P: Procurement (MSP). P: Processing (FCI). M: Movement (rail/road). B: Buffer stocking. D: Distribution (PDS/FPS)',
+      explanation: 'Five stages of India\'s food security supply chain managed primarily by FCI and state agencies.',
+    },
+    {
+      title: 'Nutrition Indicators — "SWAU"',
+      mnemonic: 'S: Stunting (35.5% — chronic). W: Wasting (19.3% — acute). A: Anaemia (57% women). U: Underweight (32.1% — composite)',
+      explanation: 'NFHS-5 key nutrition indicators. India has "serious" Global Hunger Index score. Stunting indicates chronic malnutrition, wasting indicates acute.',
+    },
+  ],
 }

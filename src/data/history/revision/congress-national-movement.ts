@@ -23,6 +23,28 @@ export const congressNationalMovementRevision: HistoryRevision = {
     "Udham Singh assassinated Michael O'Dwyer (Lt. Governor of Punjab who endorsed Dyer) in London in 1940.",
     "Lahore Congress Session (1929) under Jawaharlal Nehru adopted 'Purna Swaraj' (complete independence) as the goal.",
     "26 January 1930 was declared as Independence Day (Purna Swaraj Day); later chosen as Republic Day (1950).",
+    "Non-Cooperation Movement (1920-22): boycott of schools, courts, councils, foreign cloth; Khilafat alliance; ended after Chauri Chaura (5 Feb 1922).",
+    "Chauri Chaura (5 Feb 1922, Gorakhpur, UP): mob burned police station killing 22 policemen; Gandhi called off Non-Cooperation — controversial decision.",
+    "Swaraj Party (1923) — founded by C.R. Das and Motilal Nehru for council entry after Non-Cooperation was called off.",
+    "Salt March / Dandi March (12 March - 6 April 1930): Gandhi walked 385 km from Sabarmati to Dandi with 78 followers; broke the salt law.",
+    "Dharasana Salt Works raid (21 May 1930): led by Sarojini Naidu and Abbas Tyabji; reported by American journalist Webb Miller.",
+    "Gandhi-Irwin Pact (5 March 1931): Congress stopped CDM; political prisoners released; salt manufacture for personal use allowed; Gandhi attended 2nd RTC.",
+    "Quit India Movement (8 August 1942, Bombay): Gandhi's 'Do or Die'; all top leaders arrested immediately; leaderless popular uprising.",
+    "Underground leaders during Quit India: Ram Manohar Lohia, Aruna Asaf Ali (hoisted flag at Gowalia Tank), Jayaprakash Narayan, Usha Mehta (Congress Radio).",
+    "Parallel governments: Tamluk (Bengal — Tamralipta Jatiya Sarkar), Satara (Maharashtra — Prati Sarkar, Nana Patil), Ballia (UP).",
+    "Bhagat Singh + Batukeshwar Dutt — threw bombs in Central Legislative Assembly (8 April 1929); Bhagat Singh, Sukhdev, Rajguru hanged (23 March 1931).",
+    "HSRA (Hindustan Socialist Republican Association, 1928) — Chandrashekhar Azad, Bhagat Singh, Sukhdev; earlier HRA (1924).",
+    "Kakori Conspiracy Case (1925): Ram Prasad Bismil, Ashfaqullah Khan — train robbery to fund revolution; hanged.",
+    "Subhas Chandra Bose — INA/Azad Hind Fauj; Provisional Government (21 Oct 1943, Singapore); 'Dilli Chalo'; Rani of Jhansi Regiment.",
+    "INA trials at Red Fort (1945-46) — Shah Nawaz Khan, P.K. Sahgal, G.S. Dhillon; created massive nationalist sentiment.",
+    "Government of India Act 1935: provincial autonomy, federal structure (never implemented), separate electorates, Federal Court.",
+    "Congress won 7 of 11 provinces in 1937 elections; Congress ministries resigned Oct 1939 over WWII declaration without consultation.",
+    "Muslim League celebrated 22 December 1939 as 'Deliverance Day' after Congress ministries resigned.",
+    "Lahore Resolution (23 March 1940): Muslim League demanded independent Muslim states; called 'Pakistan Resolution.'",
+    "Cabinet Mission Plan (1946): proposed three-tier federation; initially accepted by both, then rejected by League; led to Direct Action Day (16 Aug 1946).",
+    "Dadabhai Naoroji — Drain of Wealth theory; 'Poverty and Un-British Rule in India' (1901); estimated annual drain at 200-300 million rupees.",
+    "Sarojini Naidu — first Indian woman Congress president (1925); 'Nightingale of India'; led Dharasana raid; first woman Governor (UP, 1947).",
+    "Annie Besant — first woman president of INC (1917, Irish-born); co-founded Home Rule League; interned by Madras government (1917).",
   ],
   comparisons: [
     {
@@ -52,6 +74,42 @@ export const congressNationalMovementRevision: HistoryRevision = {
         ["1942", "Bombay", "Abul Kalam Azad", "Quit India Resolution passed"],
       ],
     },
+    {
+      title: "Gandhi's Three Mass Movements",
+      headers: ["Aspect", "Non-Cooperation (1920-22)", "Civil Disobedience (1930-34)", "Quit India (1942)"],
+      rows: [
+        ["Year", "1920-22", "1930-34", "1942-44"],
+        ["Trigger", "Rowlatt Act, Jallianwala Bagh, Khilafat", "Salt tax; demand for Purna Swaraj", "Failure of Cripps Mission; WWII"],
+        ["Programme", "Boycott schools, courts, councils, foreign cloth", "Salt March; breaking salt law; no-tax", "Complete withdrawal of British; 'Do or Die'"],
+        ["Called off because", "Chauri Chaura violence (Feb 1922)", "Gandhi-Irwin Pact (1931); revived 1932", "Leaders arrested; continued leaderless till 1944"],
+        ["Key feature", "Hindu-Muslim unity (Khilafat)", "Women's mass participation; Salt March", "Leaderless uprising; parallel governments"],
+        ["Outcome", "Swaraj Party formed; movement weakened", "RTC attendance; GoI Act 1935", "Moral authority of British rule shattered"],
+      ],
+    },
+    {
+      title: "Revolutionary Nationalists — Key Events",
+      headers: ["Event", "Year", "Key Persons", "Significance"],
+      rows: [
+        ["Muzaffarpur Bombing", "1908", "Khudiram Bose, Prafulla Chaki", "Attempted assassination of Kingsford; Bose hanged at 18"],
+        ["Ghadar Movement", "1913", "Lala Har Dayal (San Francisco)", "Planned armed revolt with Sikh soldiers"],
+        ["Kakori Conspiracy", "1925", "Ram Prasad Bismil, Ashfaqullah Khan", "Train robbery; all four hanged"],
+        ["Assembly Bombing", "8 April 1929", "Bhagat Singh, Batukeshwar Dutt", "'To make the deaf hear'; not to kill"],
+        ["Chittagong Armoury Raid", "18 April 1930", "Surya Sen (Masterda)", "Armed raid on British armoury"],
+        ["Lahore Conspiracy executions", "23 March 1931", "Bhagat Singh, Sukhdev, Rajguru", "Hanged; became martyrs; Shaheed Diwas"],
+      ],
+    },
+    {
+      title: "Key Constitutional Reforms",
+      headers: ["Reform", "Year", "Key Provisions"],
+      rows: [
+        ["Indian Councils Act (Morley-Minto)", "1909", "Separate electorates for Muslims; expanded councils"],
+        ["Government of India Act (Montagu-Chelmsford)", "1919", "Dyarchy in provinces; bicameral legislature at centre"],
+        ["Government of India Act", "1935", "Provincial autonomy; federal structure (never implemented); Federal Court"],
+        ["Cripps Mission", "1942", "Dominion Status after WWII; opt-out for provinces; rejected"],
+        ["Cabinet Mission Plan", "1946", "Three-tier federation; no Pakistan; rejected by League"],
+        ["Mountbatten Plan", "3 June 1947", "Partition; Independence on 15 August 1947"],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -65,6 +123,18 @@ export const congressNationalMovementRevision: HistoryRevision = {
       mnemonic: "Swaraj, Swadeshi, Boycott, National Education",
       explanation:
         "The four resolutions adopted at the Calcutta Congress Session of 1906 under Dadabhai Naoroji's presidency, marking the formal adoption of assertive nationalism within the Congress.",
+    },
+    {
+      title: "Gandhi's Movements in Order (NCQ)",
+      mnemonic: "Non-Cooperation (1920), Civil Disobedience (1930), Quit India (1942) — 'Never Compromise Quality'",
+      explanation:
+        "Gandhi's three mass movements in chronological order with 10-year gaps: NCM called off after Chauri Chaura (1922), CDM after Gandhi-Irwin Pact (1931), QIM was leaderless uprising (1942-44). Each was more radical than the last.",
+    },
+    {
+      title: "Lal-Bal-Pal Extremist Trio",
+      mnemonic: "Lala Lajpat Rai (Punjab), Bal Gangadhar Tilak (Maharashtra), Bipin Chandra Pal (Bengal) — 'Three Provinces, One Goal: Swaraj'",
+      explanation:
+        "The three most prominent Extremist leaders from different regions of India. Tilak gave 'Swaraj is my birthright'; Lala Lajpat Rai died after lathi charge during Simon Commission protest (1928); Bipin Chandra Pal was the 'Father of Revolutionary Thoughts.'",
     },
   ],
 }

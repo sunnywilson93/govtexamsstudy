@@ -3,100 +3,126 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const balanceOfPaymentsRevision: SubjectRevision = {
   topic: 'balance-of-payments',
   bullets: [
-    "BoP: Systematic record of all economic transactions between residents and rest of world. India follows IMF BPM6 framework.",
-    "BoP = Current Account + Capital Account + Financial Account + Errors & Omissions = 0 (always balances in accounting sense).",
-    "Current Account: Trade balance (goods) + Services trade + Primary income + Secondary income (transfers/remittances).",
-    "India's merchandise trade deficit FY24: ~$240 billion. Services surplus: ~$163 billion. Net services partially offset goods deficit.",
-    "India is world's largest remittance recipient — $125 billion (2023). Major sources: UAE, US, Saudi Arabia.",
-    "CAD (Current Account Deficit): Total imports > total exports. India's CAD FY24: ~1.2% of GDP ($23.3 billion) — comfortable.",
-    "Sustainable CAD for India: 2-2.5% of GDP. Worst CAD: 4.8% of GDP in FY13 (Taper Tantrum).",
-    "Capital/Financial Account: FDI ($71B FY24), FPI (volatile), ECBs ($190B outstanding), NRI deposits ($157B).",
-    "1991 BoP crisis: Forex reserves fell to $1.2 billion (2 weeks imports). India pledged 47 tonnes gold. IMF bailout triggered LPG reforms.",
-    "2013 Taper Tantrum: CAD 4.8%, rupee crashed Rs 55→68/$. RBI's FCNR(B) swap attracted $34 billion, stabilised situation.",
-    "Forex reserves composition: FCAs (~$590B), Gold (~$57B, 854 tonnes), SDRs (~$18B), IMF reserve position (~$5B).",
-    "Reserve adequacy: Import cover ~11 months (benchmark: 3 months). Short-term debt cover ~3x. Guidotti-Greenspan rule met.",
-    "India's forex reserves peaked at $704 billion (September 2024) before declining due to RBI intervention.",
-    "Sterilised intervention: When RBI buys dollars, it sells G-Secs/issues MSS bonds to absorb excess rupee liquidity.",
-    "India's external debt/GDP: ~19% (comfortable; crisis threshold 40%+). Debt service ratio: 6.7% (safe; danger: 20%+).",
-    "FDI is most stable CAD financing. Debt-financed CAD is riskier. FPI is most volatile."
-],
+    'BoP: Systematic record of all economic transactions between residents and rest of world. India follows IMF BPM6 framework.',
+    'BoP = Current Account + Capital Account + Financial Account + Errors & Omissions = 0 (always balances in accounting sense).',
+    'Current Account: Trade balance (goods) + Services trade + Primary income + Secondary income (transfers/remittances).',
+    'India\'s merchandise trade deficit FY24: ~$240 billion. Exports $437B, imports $677B. Crude oil is largest import (25-30%).',
+    'India is net services exporter — services surplus ~$163 billion (FY24). IT/ITES is dominant. 1,600+ GCCs employ 1.66 million.',
+    'India is world\'s largest remittance recipient — $125 billion (2023). Major sources: UAE (32%), US (23%), Saudi Arabia (14%).',
+    'CAD (Current Account Deficit): Total imports > total exports. India\'s CAD FY24: ~1.2% of GDP ($23.3 billion) — comfortable.',
+    'Sustainable CAD for India: 2-2.5% of GDP. Worst CAD: 4.8% of GDP in FY13 (Taper Tantrum). Best: +0.9% surplus in FY21 (COVID).',
+    'Structural causes of CAD: Oil dependence (85% imported), gold imports ($45-50B), electronics imports ($77B), low mfg exports.',
+    '$10/barrel oil price rise widens CAD by ~$15 billion. Oil is the single biggest vulnerability in India\'s external sector.',
+    'Capital/Financial Account: FDI ($71B FY24), FPI (volatile), ECBs ($190B outstanding), NRI deposits ($157B).',
+    'FDI top sources: Singapore (27%), Mauritius (15%), US (9%), Netherlands (7%), Japan (6%). Top sectors: services, IT, telecom.',
+    'FPI is most volatile — $16.5B outflow in FY23, $10.4B outflow in October 2024 alone (China pivot). FPI in India: ~$690B cumulative.',
+    'ECBs regulated by RBI: eligible borrowers, all-in-cost ceiling, end-use restrictions, minimum maturity. Masala Bonds: rupee-denominated offshore.',
+    'NRI deposits: FCNR(B) (foreign currency, no forex risk), NRE (rupee, freely repatriable, tax-free), NRO (rupee, conditional repatriation).',
+    '1991 BoP crisis: Forex reserves $1.2 billion (2 weeks imports). Pledged 47 tonnes gold. IMF bailout $2.2B. Triggered LPG reforms.',
+    '1966 devaluation: Rupee devalued 36.5% (Rs 4.76 to Rs 7.50/$). Drought + Pakistan war + declining foreign aid.',
+    '2013 Taper Tantrum: CAD 4.8%, rupee crashed Rs 55 to Rs 68/$. RBI\'s FCNR(B) swap attracted $34 billion, stabilised situation.',
+    'Forex reserves composition: FCAs (~$590B), Gold (~$57B, 854 tonnes), SDRs (~$18B), IMF reserve position (~$5B).',
+    'Reserve adequacy: Import cover ~11 months (benchmark: 3 months). Short-term debt cover ~3x. Guidotti-Greenspan rule met.',
+    'India\'s forex reserves peaked at $704 billion (September 2024). Declined to ~$640B by March 2025 due to rupee defence.',
+    'RBI sold ~$72 billion in FY23 to defend rupee. Rebuilt by buying ~$50 billion in FY24 as flows improved.',
+    'Sterilised intervention: RBI buys dollars → pays rupees → sells G-Secs/issues MSS bonds to absorb excess rupee liquidity.',
+    'REER (Real Effective Exchange Rate): Trade-weighted, inflation-adjusted. India\'s REER consistently above 100 — rupee overvalued.',
+    'India\'s external debt: ~$682 billion (June 2024). External debt/GDP ~19% (safe; crisis 40%+). Debt service ratio: 6.7%.',
+    'External debt composition: ECBs 33%, NRI deposits 23%, trade credits 18%, multilateral 10%. Dollar-denominated: 53%, Rupee: 32%.',
+    'FEMA (1999) replaced FERA (1973). Shifted from conservation to management of forex. Current account convertible since 1994.',
+    'Capital account not fully convertible. LRS limit: $250,000/year for residents. Tarapore Committee (1997, 2006) recommended phased convertibility.',
+    'India withdrew from RCEP (2019). FTAs with UAE (2022), Australia (2022), EFTA (2024). UK and EU FTA negotiations ongoing.',
+    'India\'s trade deficit with China alone: ~$85 billion — 35%+ of total merchandise trade deficit.',
+    'SDR: International reserve asset. Basket: USD (43.38%), EUR (29.31%), CNY (12.28%), JPY (7.59%), GBP (7.44%).',
+    'India\'s IMF quota: 2.75%. SDR allocation: ~$18 billion (largest in August 2021: $12.5 billion for COVID support).',
+    'Rupee internationalisation: RBI allowed rupee trade settlement (July 2022). 22 countries approved for SRVAs. India-Russia partial rupee trade.',
+    'JP Morgan GBI-EM Index inclusion (June 2024): Indian G-Secs included, attracting $10+ billion passive flows. Boosts rupee demand.',
+    'FDI is most stable CAD financing. Debt-financed CAD is riskier. FPI is most volatile — composition of financing matters.',
+    'India\'s NIIP (Net International Investment Position): Net debtor — foreign-owned assets in India exceed Indian assets abroad.',
+    'LRS outflows growing: ~$32 billion (FY24). 20% TCS on remittances exceeding Rs 7 lakh (from October 2023).',
+  ],
   comparisons: [
     {
-        "title": "Current Account vs Capital Account",
-        "headers": [
-            "Feature",
-            "Current Account",
-            "Capital/Financial Account"
-        ],
-        "rows": [
-            [
-                "Records",
-                "Trade in goods, services, income, transfers",
-                "Cross-border capital/financial flows"
-            ],
-            [
-                "Components",
-                "Trade balance, services, remittances",
-                "FDI, FPI, ECBs, NRI deposits"
-            ],
-            [
-                "Nature",
-                "Flow account (income/expenditure)",
-                "Stock-changing account (assets/liabilities)"
-            ],
-            [
-                "India position",
-                "Usually deficit (imports > exports)",
-                "Usually surplus (capital inflows)"
-            ]
-        ]
+      title: 'Current Account vs Capital Account',
+      headers: ['Feature', 'Current Account', 'Capital/Financial Account'],
+      rows: [
+        ['Records', 'Trade in goods, services, income, transfers', 'Cross-border capital/financial flows'],
+        ['Components', 'Trade balance, services, remittances, investment income', 'FDI, FPI, ECBs, NRI deposits, trade credits'],
+        ['Nature', 'Flow account (income/expenditure)', 'Stock-changing account (assets/liabilities)'],
+        ['India position', 'Usually deficit (imports > exports)', 'Usually surplus (capital inflows)'],
+        ['Key indicator', 'CAD/GDP ratio (target <2.5%)', 'Net capital flows, FDI-FPI mix'],
+      ],
     },
     {
-        "title": "1991 Crisis vs 2013 Taper Tantrum",
-        "headers": [
-            "Feature",
-            "1991 Crisis",
-            "2013 Taper Tantrum"
-        ],
-        "rows": [
-            [
-                "Trigger",
-                "Gulf War, USSR collapse, political instability",
-                "US Fed signalling QE tapering"
-            ],
-            [
-                "CAD/GDP",
-                "3.1%",
-                "4.8%"
-            ],
-            [
-                "Forex reserves",
-                "$1.2 billion (2 weeks imports)",
-                "$270 billion (7 months imports)"
-            ],
-            [
-                "Response",
-                "IMF bailout, gold pledge, LPG reforms",
-                "FCNR(B) swap ($34B), rate hikes"
-            ],
-            [
-                "Outcome",
-                "Structural reforms — liberalisation",
-                "Temporary — situation stabilised in months"
-            ]
-        ]
-    }
-],
+      title: '1991 Crisis vs 2013 Taper Tantrum',
+      headers: ['Feature', '1991 Crisis', '2013 Taper Tantrum'],
+      rows: [
+        ['Trigger', 'Gulf War, USSR collapse, political instability', 'US Fed signalling QE tapering'],
+        ['CAD/GDP', '3.1%', '4.8% (worst ever)'],
+        ['Forex reserves', '$1.2 billion (2 weeks imports)', '$270 billion (7 months imports)'],
+        ['Response', 'IMF bailout, gold pledge, LPG reforms', 'FCNR(B) swap ($34B), rate hikes, gold duty'],
+        ['Outcome', 'Structural reforms — liberalisation', 'Temporary — situation stabilised in months'],
+        ['Long-term impact', 'Transformed Indian economy permanently', 'Strengthened reserve management practices'],
+      ],
+    },
+    {
+      title: 'FDI vs FPI',
+      headers: ['Feature', 'FDI (Foreign Direct Investment)', 'FPI (Foreign Portfolio Investment)'],
+      rows: [
+        ['Nature', 'Long-term, management control (10%+ stake)', 'Short-term, financial return, no control'],
+        ['Stability', 'Sticky, difficult to withdraw quickly', 'Highly volatile, can exit overnight'],
+        ['Regulator', 'DPIIT (policy), RBI (routes)', 'SEBI (registration, limits)'],
+        ['India inflow FY24', '~$71 billion', '~$44 billion (but $16.5B outflow in FY23)'],
+        ['CAD financing quality', 'Best — creates productive assets', 'Risky — can reverse on global sentiment'],
+      ],
+    },
+    {
+      title: 'NRI Deposit Types — FCNR vs NRE vs NRO',
+      headers: ['Feature', 'FCNR(B)', 'NRE', 'NRO'],
+      rows: [
+        ['Currency', 'Foreign currency (USD, GBP, EUR, etc.)', 'Indian Rupee', 'Indian Rupee'],
+        ['Exchange risk', 'Borne by bank (no risk for NRI)', 'Borne by NRI', 'Borne by NRI'],
+        ['Repatriability', 'Freely repatriable', 'Freely repatriable', 'Conditional (up to $1M/year)'],
+        ['Tax in India', 'Tax-free', 'Tax-free', 'Taxable'],
+        ['Deposit type', 'Term deposits only (1-5 years)', 'Savings + Term deposits', 'Savings + Current + Term'],
+      ],
+    },
+    {
+      title: 'Exchange Rate Regimes — India\'s Evolution',
+      headers: ['Period', 'Regime', 'Mechanism'],
+      rows: [
+        ['1947-1971', 'Fixed rate', 'Pegged to pound sterling, then dollar'],
+        ['1971-1991', 'Adjustable peg', 'Pegged to currency basket, periodic adjustments'],
+        ['1992-1993', 'LERMS (dual rate)', '60% market rate, 40% official rate'],
+        ['1993-present', 'Managed float', 'Market-determined, RBI smooths volatility'],
+      ],
+    },
+  ],
   mnemonics: [
     {
-        "title": "Current Account — \"GIST\"",
-        "mnemonic": "Goods trade, Invisibles (services), Secondary income (transfers), primary income (investment income)",
-        "explanation": "Four components of the current account: Goods (merchandise trade), Invisible services trade, Secondary income (remittances, grants), primary income (dividends, interest)."
+      title: 'Current Account — "GIST"',
+      mnemonic: 'Goods trade, Invisibles (services), Secondary income (transfers), primary income (investment income)',
+      explanation: 'Four components of the current account remembered as GIST: Goods (merchandise), Invisible services, Secondary income (remittances), primary income (dividends/interest).',
     },
     {
-        "title": "Forex Reserve Components — \"FGSR\"",
-        "mnemonic": "Foreign Currency Assets, Gold, SDRs, Reserve position in IMF",
-        "explanation": "Four components of India's forex reserves in order of size: FCAs (largest), Gold, Special Drawing Rights, Reserve position in IMF."
-    }
-],
+      title: 'Forex Reserve Components — "FGSR"',
+      mnemonic: 'Foreign Currency Assets, Gold, SDRs, Reserve position in IMF',
+      explanation: 'Four components in order of size: FCAs (~$590B, largest), Gold (~$57B), SDRs (~$18B), Reserve position in IMF (~$5B).',
+    },
+    {
+      title: '1991 Crisis Numbers — "1.2-47-2.2"',
+      mnemonic: '$1.2 billion reserves, 47 tonnes gold pledged, $2.2 billion IMF bailout',
+      explanation: 'The three critical numbers of the 1991 BoP crisis that every exam tests.',
+    },
+    {
+      title: 'Reserve Adequacy — "3-100-11"',
+      mnemonic: '3 months import cover (minimum), 100% short-term debt (Guidotti-Greenspan), India has 11 months cover',
+      explanation: 'Key adequacy benchmarks: minimum 3 months import cover, Guidotti-Greenspan rule (reserves >= 100% short-term debt), India comfortably at 11 months and 3x short-term debt.',
+    },
+    {
+      title: 'Fragile Five — "BITSI"',
+      mnemonic: 'Brazil, India, Turkey, South Africa, Indonesia — 2013 Taper Tantrum vulnerable economies',
+      explanation: 'Morgan Stanley coined "Fragile Five" during 2013 Taper Tantrum — five emerging markets most vulnerable to capital outflows due to large CADs and dependence on foreign capital.',
+    },
+  ],
 }

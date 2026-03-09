@@ -1,113 +1,137 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const nationalParksSanctuariesRevision: SubjectRevision = {
-  "topic": "national-parks-sanctuaries",
-  "bullets": [
-    "India has 106 National Parks, 567 Wildlife Sanctuaries, 105 Conservation Reserves, 220 Community Reserves (2024).",
-    "Protected areas cover ~5.26% of India's geographic area (~173,000 sq km).",
-    "Jim Corbett NP (Uttarakhand, 1936) — India's first national park; tiger conservation.",
-    "Hemis NP (Ladakh, 4,400 sq km) — India's largest national park; snow leopard habitat.",
-    "Gir NP (Gujarat) — only habitat of the Asiatic Lion (~674 lions, 2020).",
-    "Kaziranga NP (Assam) — ~2,613 one-horned rhinos (2/3 of world population); UNESCO WHS.",
-    "Sundarbans NP (WB) — world's largest mangrove; Royal Bengal Tiger; UNESCO WHS.",
-    "Project Tiger (1973): 54 tiger reserves; India has 3,682 tigers (2022 census) — 75% of world total.",
-    "Project Elephant (1992): 33 reserves; India has ~30,000 Asian elephants (~60% of world).",
-    "NTCA (National Tiger Conservation Authority) established 2006 under WPA Amendment.",
-    "Keibul Lamjao NP (Manipur) — world's only floating national park; Sangai deer habitat.",
-    "Keoladeo/Bharatpur NP (Rajasthan) — UNESCO WHS; major birding site; Ramsar site.",
-    "NP vs WS: NP = strictest protection (no grazing/habitation); WS = limited activities allowed.",
-    "7 Natural UNESCO WHS: Kaziranga, Manas, Keoladeo, Sundarbans, Nanda Devi+Valley of Flowers, Western Ghats, Great Himalayan NP.",
-    "Wildlife Protection Act 1972 — legal framework for NPs, WSs, and species protection.",
-    "India's tiger population trend: 1,411 (2006) → 2,226 (2014) → 3,682 (2022)."
+  topic: 'national-parks-sanctuaries',
+  bullets: [
+    'India has 106 National Parks, 567 Wildlife Sanctuaries, 105 Conservation Reserves, 220 Community Reserves (2024) = 998 PAs total.',
+    'Protected areas cover ~5.26% of India\'s geographic area (~173,000 sq km) — below global average of ~17%.',
+    'Jim Corbett NP (Uttarakhand, 1936) — India\'s first national park; named after hunter-conservationist Jim Corbett; first Tiger Reserve (1973).',
+    'Hemis NP (Ladakh, 4,400 sq km) — India\'s largest national park; snow leopard habitat (~200 snow leopards).',
+    'Desert NP (Rajasthan, 3,162 sq km) — 2nd largest NP; Great Indian Bustard habitat; Thar Desert ecosystem.',
+    'Gir NP (Gujarat) — only habitat of the Asiatic Lion (~674 lions, 2020 census).',
+    'Kaziranga NP (Assam) — ~2,613 one-horned rhinos (2/3 of world population); highest tiger density; UNESCO WHS.',
+    'Sundarbans NP (WB) — world\'s largest mangrove; Royal Bengal Tiger adapted to swim; UNESCO WHS; saltwater crocodile.',
+    'Kanha NP (MP) — "Jungle Book" inspiration; saved Barasingha (hard-ground swamp deer) from extinction.',
+    'Bandhavgarh NP (MP) — highest tiger density in central India; white tigers first recorded here.',
+    'Namdapha NP (Arunachal, 1,985 sq km) — only park with 4 big cats: tiger, leopard, snow leopard, clouded leopard.',
+    'Keibul Lamjao NP (Manipur) — world\'s only floating national park (on Loktak Lake); last habitat of Sangai deer.',
+    'Silent Valley NP (Kerala) — pristine tropical evergreen; saved from dam by public campaign; Lion-tailed Macaque habitat.',
+    'Eravikulam NP (Kerala) — Nilgiri Tahr conservation; Anamudi peak (2,695 m, highest in South India) is within the park.',
+    'Valley of Flowers NP (Uttarakhand) — UNESCO WHS; alpine meadows with ~600 flowering plant species.',
+    'Project Tiger (1973): started with 9 reserves, now 54; India has 3,682 tigers (2022 census) — 75% of world total.',
+    'Tiger population trend: 1,411 (2006) → 1,706 (2010) → 2,226 (2014) → 2,967 (2018) → 3,682 (2022).',
+    'NTCA (National Tiger Conservation Authority) established 2006 under WPA Amendment after Sariska tiger extinction crisis.',
+    'Project Elephant (1992): 33 reserves; India has ~30,000 Asian elephants (~60% of world); ~500 human deaths/year from HWC.',
+    'Project Snow Leopard (2009): conservation in trans-Himalayan India; 400-700 snow leopards estimated in India.',
+    'Project Cheetah (2022): African cheetahs reintroduced at Kuno NP, MP; Indian cheetah went extinct in 1952.',
+    'Gharial (critically endangered, ~650 adults) — National Chambal Sanctuary is key habitat.',
+    'Great Indian Bustard (critically endangered, ~150 remaining) — Desert NP, Rajasthan; SC ordered powerline undergrounding.',
+    'NP vs WS: NP = strictest protection (no grazing/habitation, boundary change needs State Legislature); WS = limited activities allowed.',
+    'Conservation Reserves (105) = buffer/corridor zones; Community Reserves (220) = community-managed on private/community land.',
+    'Eco-Sensitive Zones (ESZ): buffer up to 10 km around NPs/WLS; regulated activities; 2022 SC ordered minimum 1 km ESZ for all.',
+    '7 Natural UNESCO WHS: Kaziranga, Manas, Keoladeo, Sundarbans, Nanda Devi+Valley of Flowers, Western Ghats, Great Himalayan NP.',
+    'Khangchendzonga NP (Sikkim) is a Mixed (natural + cultural) UNESCO WHS.',
+    'Wildlife Protection Act 1972 — legal framework; Schedule I = highest protection (tiger, lion, rhino, elephant); Schedules I-IV.',
+    'WCCB (Wildlife Crime Control Bureau, 2007) — statutory body under MoEFCC for combating wildlife crime; works with Interpol/CITES.',
+    'M-STrIPES — mobile app used by forest guards for tiger reserve patrolling and monitoring.',
+    'Nilgiri BR (1986) was India\'s first Biosphere Reserve; 18 BRs total, 12 in UNESCO World Network.',
+    'India is party to CITES, CBD, CMS (hosted COP-13 in Gandhinagar, 2020), and Ramsar Convention.',
+    'Kunming-Montreal GBF (2022) target: 30% land and sea protected by 2030 (30x30); India currently at ~5.26%.',
+    'Invasive species threatening PAs: Lantana camara (most widespread), Prosopis juliflora, water hyacinth, Parthenium.',
+    'India has 4 biodiversity hotspots: Western Ghats, Eastern Himalayas, Indo-Burma, Sundaland (Nicobar).',
+    'Largest tiger reserve by area: Nagarjunasagar-Srisailam (AP/Telangana, 3,728 sq km).',
+    'States with most tigers (2022): MP (785), Karnataka (563), Uttarakhand (560), Maharashtra (444).',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "National Park vs Wildlife Sanctuary",
-      "headers": [
-        "Feature",
-        "National Park",
-        "Wildlife Sanctuary"
+      title: 'National Park vs Wildlife Sanctuary',
+      headers: ['Feature', 'National Park', 'Wildlife Sanctuary'],
+      rows: [
+        ['Legal status', 'Highest protection under WPA', 'Lower protection level'],
+        ['Human activity', 'No grazing, habitation, or exploitation', 'Limited activities allowed with permission'],
+        ['Private land', 'Not allowed — all rights extinguished', 'May continue with restrictions'],
+        ['Boundary change', 'Only by State Legislature resolution', 'By State Government notification'],
+        ['Declaration', 'State Govt on NBWL recommendation', 'State Government directly'],
+        ['Number (2024)', '106 (44,378 sq km)', '567 (1,22,420 sq km)'],
       ],
-      "rows": [
-        [
-          "Legal status",
-          "Highest protection under WPA",
-          "Lower protection"
-        ],
-        [
-          "Human activity",
-          "No grazing, habitation, or exploitation",
-          "Limited activities allowed"
-        ],
-        [
-          "Private land",
-          "Not allowed",
-          "May continue with restrictions"
-        ],
-        [
-          "Boundary change",
-          "Only by State Legislature",
-          "By State Government"
-        ],
-        [
-          "Number (2024)",
-          "106",
-          "567"
-        ]
-      ]
     },
     {
-      "title": "Key National Parks and Species",
-      "headers": [
-        "NP",
-        "State",
-        "Key Species",
-        "Special Feature"
+      title: 'Key National Parks — Species and State',
+      headers: ['National Park', 'State', 'Key Species', 'Special Feature'],
+      rows: [
+        ['Jim Corbett', 'Uttarakhand', 'Tiger, elephant', 'First NP (1936), first TR (1973)'],
+        ['Kaziranga', 'Assam', 'One-horned Rhino', 'UNESCO WHS; 2/3 of world rhinos'],
+        ['Gir', 'Gujarat', 'Asiatic Lion (~674)', 'Only lion habitat in the world'],
+        ['Sundarbans', 'West Bengal', 'Swimming Bengal Tiger', 'World\'s largest mangrove; UNESCO WHS'],
+        ['Hemis', 'Ladakh', 'Snow Leopard', 'Largest NP (4,400 sq km)'],
+        ['Namdapha', 'Arunachal Pradesh', '4 big cats', 'Only park with tiger+leopard+snow leopard+clouded leopard'],
+        ['Keibul Lamjao', 'Manipur', 'Sangai deer', 'Only floating NP in the world'],
+        ['Silent Valley', 'Kerala', 'Lion-tailed Macaque', 'Pristine tropical evergreen forest'],
       ],
-      "rows": [
-        [
-          "Jim Corbett",
-          "Uttarakhand",
-          "Tiger",
-          "First NP (1936)"
-        ],
-        [
-          "Kaziranga",
-          "Assam",
-          "One-horned Rhino",
-          "UNESCO WHS; 2/3 of world rhinos"
-        ],
-        [
-          "Gir",
-          "Gujarat",
-          "Asiatic Lion",
-          "Only lion habitat"
-        ],
-        [
-          "Sundarbans",
-          "West Bengal",
-          "Royal Bengal Tiger",
-          "Largest mangrove"
-        ],
-        [
-          "Hemis",
-          "Ladakh",
-          "Snow Leopard",
-          "Largest NP (4,400 sq km)"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
-    {
-      "title": "First NP & Largest NP",
-      "mnemonic": "Jim Corbett = First (1936); Hemis = Heaviest (largest, 4,400 sq km)",
-      "explanation": "Jim Corbett NP in Uttarakhand was India's first national park. Hemis NP in Ladakh is the largest."
     },
     {
-      "title": "Tiger Census Numbers",
-      "mnemonic": "14-17-22-29-36 → 2006: 1,411 → 2010: 1,706 → 2014: 2,226 → 2018: 2,967 → 2022: 3,682",
-      "explanation": "India's tiger population has been growing steadily since the first scientific census in 2006."
-    }
-  ]
+      title: 'Major Conservation Projects',
+      headers: ['Project', 'Year', 'Target Species', 'Key Fact'],
+      rows: [
+        ['Project Tiger', '1973', 'Bengal Tiger', '54 reserves; 3,682 tigers (2022)'],
+        ['Project Elephant', '1992', 'Asian Elephant', '33 reserves; ~30,000 elephants'],
+        ['Crocodile Conservation', '1975', 'Mugger, Saltwater, Gharial', 'Gharial critically endangered (~650)'],
+        ['Project Snow Leopard', '2009', 'Snow Leopard', '400-700 in India; trans-Himalayan'],
+        ['Project Cheetah', '2022', 'African Cheetah', 'Reintroduced at Kuno NP, MP'],
+        ['Sea Turtle Conservation', '1999+', 'Olive Ridley', 'Gahirmatha, Odisha; Operation Olivia'],
+      ],
+    },
+    {
+      title: 'UNESCO Natural World Heritage Sites in India',
+      headers: ['Site', 'State', 'Year', 'Key Feature'],
+      rows: [
+        ['Kaziranga NP', 'Assam', '1985', 'One-horned Rhinoceros'],
+        ['Manas NP', 'Assam', '1985', 'Golden Langur, Pygmy Hog'],
+        ['Keoladeo Ghana NP', 'Rajasthan', '1985', 'Migratory birds; on Montreux Record'],
+        ['Sundarbans NP', 'West Bengal', '1987', 'World\'s largest mangrove'],
+        ['Nanda Devi + Valley of Flowers', 'Uttarakhand', '1988/2005', 'Alpine meadows, 600+ plant species'],
+        ['Western Ghats', '4 states', '2012', 'Biodiversity hotspot; 39 serial sites'],
+        ['Great Himalayan NP', 'HP', '2014', 'Western Tragopan; temperate forests'],
+      ],
+    },
+    {
+      title: 'Categories of Protected Areas',
+      headers: ['Category', 'Number', 'Area (sq km)', 'Key Feature'],
+      rows: [
+        ['National Parks', '106', '~44,378', 'Strictest protection; no human activity'],
+        ['Wildlife Sanctuaries', '567', '~1,22,420', 'Limited human activity allowed'],
+        ['Conservation Reserves', '105', '~5,000+', 'Buffer zones and corridors'],
+        ['Community Reserves', '220', '~1,500+', 'Community-managed conservation'],
+        ['Tiger Reserves', '54', '~75,796', 'Core + buffer zones under NTCA'],
+        ['Biosphere Reserves', '18', 'Varies', 'UNESCO MAB; core + buffer + transition'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'First NP & Largest NP',
+      mnemonic: 'Jim Corbett = First (1936, Uttarakhand); Hemis = Heaviest (largest, 4,400 sq km, Ladakh)',
+      explanation: 'Jim Corbett NP was India\'s first national park. Hemis NP in Ladakh is the largest.',
+    },
+    {
+      title: 'Tiger Census Numbers (2006-2022)',
+      mnemonic: '14-17-22-29-36 → 1,411 → 1,706 → 2,226 → 2,967 → 3,682',
+      explanation: 'India\'s tiger population has grown steadily since the first scientific census in 2006.',
+    },
+    {
+      title: '7 UNESCO Natural WHS — "KaMaSuN NaWG"',
+      mnemonic: 'Ka-Ma-Su-N-Na-W-G → Kaziranga, Manas, Sundarbans, Nanda Devi+VoF, Keoladeo (Nato), Western Ghats, Great Himalayan',
+      explanation: 'India has 7 Natural World Heritage Sites (plus 1 Mixed — Khangchendzonga).',
+    },
+    {
+      title: 'Conservation Projects Timeline',
+      mnemonic: '1973-Tiger, 1975-Croc, 1992-Elephant, 2009-Snow Leopard, 2022-Cheetah',
+      explanation: 'Major conservation projects in chronological order with their target species.',
+    },
+    {
+      title: 'NP with Unique Features',
+      mnemonic: 'KSGN = Keibul(floating), Silent Valley(saved from dam), Gir(only lion), Namdapha(4 big cats)',
+      explanation: 'Four national parks with unique distinguishing features frequently asked in exams.',
+    },
+  ],
 }

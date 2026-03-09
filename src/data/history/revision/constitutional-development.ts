@@ -22,6 +22,25 @@ export const constitutionalDevelopmentRevision: HistoryRevision = {
     "Lord Mountbatten was the first Governor-General of free India; C. Rajagopalachari was the last.",
     "Until the new Constitution was framed, GoI Act 1935 governed India (with modifications).",
     "Separate electorates (Morley-Minto, 1909) are considered the 'seeds of communalism' and Pakistan.",
+    "Simon Commission (1927): all-British, no Indian member; 'Simon Go Back' protests nationwide; Lala Lajpat Rai died after lathi charge (30 Oct 1928, Lahore).",
+    "Nehru Report (1928): India's first constitution draft; demanded Dominion Status, joint electorates, fundamental rights, federal structure.",
+    "Jinnah's 14 Points (1929): rejected Nehru Report; demanded federal government, separate electorates, one-third Muslim representation.",
+    "Constituent Assembly first met 9 December 1946; Dr. Sachidananda Sinha was temporary chairman; Rajendra Prasad elected permanent president.",
+    "Objectives Resolution moved by Nehru (13 Dec 1946, adopted 22 Jan 1947) — sovereignty of people, justice, equality, freedoms.",
+    "Drafting Committee: B.R. Ambedkar (chairman), 7 members; Constitution adopted 26 November 1949; effective 26 January 1950.",
+    "Constitution took 2 years, 11 months, 18 days; 11 sessions; 165 sitting days; 395 Articles and 8 Schedules in final draft.",
+    "GoI Act 1935 is the principal source of the Indian Constitution — approximately 250 provisions borrowed; Ambedkar called it 'bony framework.'",
+    "Sources: UK (parliamentary system), USA (fundamental rights), Ireland (DPSP), Canada (strong centre), Australia (concurrent list), Germany (emergency).",
+    "Three Lists: Federal/Union (defence, currency), Provincial/State (police, land), Concurrent (criminal law, education) — centre prevails in conflict.",
+    "Lord Ripon (1880-84) — 'Father of Local Self-Government'; introduced elected local bodies (1882).",
+    "Lord Curzon (1899-1905) — Partition of Bengal (1905); Ancient Monuments Act; Universities Act.",
+    "Lord Linlithgow (1936-43) — implemented GoI Act 1935; declared India at war (WWII) without consultation.",
+    "Lord Mountbatten was the last Viceroy AND the first Governor-General of independent India.",
+    "Cabinet Mission Plan (1946): three-tier federation proposed; no Pakistan; initially accepted by both Congress and League.",
+    "42nd Amendment (1976): transferred education, forests, weights & measures, wild animals, justice administration from State to Concurrent List.",
+    "Charter Act 1833: included anti-racial discrimination clause (not implemented); Macaulay as first Law Commission chairman.",
+    "First Supreme Court at Calcutta (1774, Regulating Act): Sir Elijah Impey was the first Chief Justice.",
+    "Indian Councils Act 1892 — members could discuss budget but NOT vote on it; indirect election via local bodies and chambers.",
   ],
   comparisons: [
     {
@@ -51,6 +70,49 @@ export const constitutionalDevelopmentRevision: HistoryRevision = {
         ["Industries", "Press"],
       ],
     },
+    {
+      title: "Sources of the Indian Constitution",
+      headers: ["Country", "Borrowed Features"],
+      rows: [
+        ["GoI Act 1935", "Federal structure, three lists, Governor's office, emergency provisions, Public Service Commission, Federal Court"],
+        ["Britain", "Parliamentary system, rule of law, cabinet system, single citizenship, bicameralism, writs"],
+        ["USA", "Fundamental rights, independence of judiciary, judicial review, impeachment, President's removal"],
+        ["Ireland", "Directive Principles of State Policy, President's election method, Rajya Sabha nominations"],
+        ["Canada", "Federation with strong centre, residuary powers with Centre, Governor appointment"],
+        ["Australia", "Concurrent List, freedom of trade/commerce, joint sitting of Houses"],
+        ["Germany (Weimar)", "Suspension of fundamental rights during emergency"],
+        ["USSR", "Fundamental duties, social/economic/political justice in Preamble"],
+        ["France", "Republic, liberty/equality/fraternity in Preamble"],
+        ["South Africa", "Constitutional amendment procedure, Rajya Sabha election method"],
+      ],
+    },
+    {
+      title: "Key Viceroys and Their Contributions",
+      headers: ["Viceroy/GG", "Period", "Key Constitutional Act/Event"],
+      rows: [
+        ["Warren Hastings", "1773-85", "First GG of Bengal; Regulating Act"],
+        ["Lord William Bentinck", "1828-35", "First GG of India; Charter Act 1833"],
+        ["Lord Canning", "1856-62", "First Viceroy; GoI Act 1858; post-1857 transition"],
+        ["Lord Ripon", "1880-84", "Father of Local Self-Government (1882)"],
+        ["Lord Minto II", "1905-10", "Morley-Minto Reforms (1909); separate electorates"],
+        ["Lord Chelmsford", "1916-21", "GoI Act 1919; Montagu-Chelmsford Reforms"],
+        ["Lord Irwin", "1926-31", "Simon Commission; Gandhi-Irwin Pact"],
+        ["Lord Linlithgow", "1936-43", "GoI Act 1935 implementation; WWII"],
+        ["Lord Mountbatten", "1947", "Last Viceroy; Partition; Independence Act"],
+      ],
+    },
+    {
+      title: "Constituent Assembly Key Committees",
+      headers: ["Committee", "Chairman", "Function"],
+      rows: [
+        ["Drafting Committee", "B.R. Ambedkar", "Draft the Constitution (7 members)"],
+        ["Union Powers Committee", "Jawaharlal Nehru", "Distribution of powers between Centre and States"],
+        ["Advisory Committee on Fundamental Rights", "Sardar Patel", "Fundamental rights and minority rights"],
+        ["Rules of Procedure Committee", "Rajendra Prasad", "Assembly's rules and procedures"],
+        ["States Committee", "Jawaharlal Nehru", "Negotiations with Princely States"],
+        ["Steering Committee", "Rajendra Prasad", "Overall guidance of Assembly's work"],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -64,6 +126,18 @@ export const constitutionalDevelopmentRevision: HistoryRevision = {
       mnemonic: "FAPF: Federation proposed, Autonomy granted, Provincial+Federal+Concurrent lists, Federal Court established",
       explanation:
         "The four key features of the GoI Act 1935: All-India Federation (never materialized), Provincial Autonomy (replaced Dyarchy), Three Legislative Lists, and establishment of a Federal Court. The 1935 Act formed the foundation of the Indian Constitution of 1950.",
+    },
+    {
+      title: "First GGs and Viceroys (WHB-C)",
+      mnemonic: "Warren Hastings (1st GG Bengal), William Bentinck (1st GG India), Canning (1st Viceroy) — 'WHB-C: We Hate British Control'",
+      explanation:
+        "The three critical 'first' appointments: Warren Hastings — first GG of Bengal (Regulating Act 1773), Lord William Bentinck — first GG of India (Charter Act 1833), Lord Canning — first Viceroy (GoI Act 1858, after the 1857 Revolt).",
+    },
+    {
+      title: "Constitution Sources by Country (BUIC-AGFS)",
+      mnemonic: "Britain (parliament), USA (rights), Ireland (DPSP), Canada (strong centre), Australia (concurrent), Germany (emergency), France (republic), South Africa (amendment)",
+      explanation:
+        "Key countries from which the Indian Constitution borrowed features. The GoI Act 1935 is the PRINCIPAL source overall, but specific features were borrowed from each country listed.",
     },
   ],
 }

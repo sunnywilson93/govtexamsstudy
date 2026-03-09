@@ -1,67 +1,146 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const bankingSystemRevision: SubjectRevision = {
-  "topic": "banking-system",
-  "bullets": [
-    "Bank of Calcutta (1806) — first bank in India (later became Bank of Bengal).",
-    "Imperial Bank of India (1921) = merger of Bank of Bengal + Bank of Bombay + Bank of Madras. Became SBI in 1955.",
-    "1st nationalisation (1969): 14 banks with deposits >Rs 50 crore. 2nd nationalisation (1980): 6 more banks.",
-    "Currently 12 PSBs (after 2020 mega-merger of 10 into 4), 21 private banks, 46 foreign banks.",
-    "Small Finance Banks: Must lend 75% to priority sector. 50% of loans <Rs 25 lakh. Examples: AU SFB, Equitas, Ujjivan.",
-    "Payments Banks: Accept deposits up to Rs 2 lakh. Cannot lend. Examples: Paytm, India Post, Airtel, Jio.",
-    "RRBs: Established 1976. Shareholding: Centre 50%, State 15%, Sponsor Bank 35%. First RRB: Prathama Bank (1975, Moradabad).",
-    "Jan Dhan Yojana (2014): Zero-balance account, RuPay card, Rs 1 lakh accident insurance. 51+ crore accounts.",
-    "Narasimham Committee-I (1991): Reduce CRR/SLR, capital adequacy, DRTs. Narasimham-II (1998): Bank mergers, CRAR 10%.",
-    "JAM Trinity: Jan Dhan + Aadhaar + Mobile — enables Direct Benefit Transfer (DBT)."
+  topic: 'banking-system',
+  bullets: [
+    'Bank of Calcutta (1806) — first bank in India (later became Bank of Bengal). Presidency Banks: Bengal (1806), Bombay (1840), Madras (1843).',
+    'Imperial Bank of India (1921) = merger of three Presidency Banks. Became SBI in 1955 (SBI Act 1955). SBI subsidiaries merged into SBI in 2017.',
+    '1st nationalisation (1969): 14 banks with deposits >Rs 50 crore under PM Indira Gandhi. 2nd nationalisation (1980): 6 more banks (deposits >Rs 200 crore).',
+    'Currently 12 PSBs (after 2020 mega-merger of 10 into 4), 21 private banks, 46 foreign banks, 43 RRBs, 12 SFBs, 6 Payments Banks.',
+    'PSB mega-merger (2020): Oriental Bank + United → PNB; Syndicate → Canara; Andhra + Corporation → Union; Allahabad → Indian Bank. SBI had absorbed associates in 2017.',
+    'Small Finance Banks (SFBs): Nachiket Mor Committee recommendation. Must lend 75% to PSL. 50% of loans must be <Rs 25 lakh. Minimum capital Rs 200 crore.',
+    'SFB examples: AU SFB, Equitas, Ujjivan, Suryoday, Jana, ESAF, Fincare (merged with AU), Capital, Unity (first joint venture — BPP + Centrum). 12 operational.',
+    'Payments Banks: Accept deposits up to Rs 2 lakh (raised from Rs 1 lakh). Cannot lend. Invest only in G-Secs. Examples: Paytm, India Post, Airtel, Jio, Fino.',
+    'RRBs: Established under RRB Act 1976 on Narasimham Working Group recommendation. Shareholding: Centre 50%, State 15%, Sponsor Bank 35%.',
+    'First RRB: Prathama Grameen Bank (October 2, 1975, Moradabad, UP). Sponsor: Syndicate Bank. Originally 196 RRBs, consolidated to 43.',
+    'Cooperative Banks: Two-tier (urban) or three-tier (rural — State Cooperative Bank → District Central → PACS). 97,000+ PACS at village level.',
+    'PACS computerisation: Rs 2,516 crore scheme to computerise 63,000 PACS. Multi-service centres: dairy, fertiliser distribution, storage.',
+    'Jan Dhan Yojana (PMJDY, August 2014): Zero-balance account, RuPay card, Rs 1 lakh accident + Rs 30,000 life insurance, overdraft up to Rs 10,000.',
+    'PMJDY accounts: 52+ crore (March 2024). Total deposits: Rs 2.27 lakh crore. Women accounts: 55.5%. 67% in rural/semi-urban areas.',
+    'JAM Trinity: Jan Dhan + Aadhaar + Mobile — backbone of Direct Benefit Transfer (DBT). Rs 34+ lakh crore cumulative DBT savings by eliminating leakage.',
+    'Narasimham Committee-I (1991): Reduce CRR/SLR, introduce CRAR, DRTs, asset classification, deregulate interest rates, no directed credit. Liberalisation agenda.',
+    'Narasimham Committee-II (1998): CRAR 10%, merger of strong banks, 3-tier structure (international banks, national banks, local banks), VRS for surplus staff.',
+    'P.J. Nayak Committee (2014): Governance of bank boards. Recommended repealing Bank Nationalisation Acts, Government holding through Bank Investment Company (BIC).',
+    'Banking Regulation Act 1949: Licensing, inspection, capital adequacy, SLR, management oversight by RBI. Section 35A: RBI can give directions. Section 22: Banking licence.',
+    'DICGC (Deposit Insurance and Credit Guarantee Corporation): Insurance up to Rs 5 lakh per depositor per bank (raised from Rs 1 lakh in 2020). Premium: 12 paise per Rs 100.',
+    'DICGC Amendment 2021: Banks under moratorium/NCLT must pay insured deposits within 90 days (earlier no time limit).',
+    'FRDI Bill 2017 (Financial Resolution and Deposit Insurance): Withdrawn due to controversial bail-in clause that could have converted deposits to equity.',
+    'Priority Sector Lending (PSL): 40% of ANBC for domestic banks. Sub-targets: Agriculture 18% (8% small/marginal), Micro 7.5%, Weaker Sections 12%, Education, Housing.',
+    'PSL shortfall: Banks failing targets must deposit shortfall in RIDF (NABARD), SIDBI, NHB, or MUDRA at below-market rates.',
+    'Basel III: Implemented in India from 2013 (phased). CRAR 11.5% (Pillar 1 minimum 9% + CCB 2.5%). India\'s average CRAR: 16.8% (FY24).',
+    'Basel III components: Pillar 1 (minimum capital), Pillar 2 (supervisory review — ICAAP), Pillar 3 (market discipline — disclosure).',
+    'CET1 (Common Equity Tier-1): Highest quality capital. India requires 5.5% (globally 4.5%). India banks: avg 13.9% CET1 — well above minimum.',
+    'Bank consolidation: 27 PSBs (2017) → 12 PSBs (2024). Rationale: economies of scale, stronger balance sheets, global competitiveness.',
+    'Financial Inclusion Index (RBI): Composite of access, usage, quality. Score: 60.1 (March 2023, from 43.4 in 2017). Target: universal access.',
+    'EASE Reforms: Enhanced Access and Service Excellence. PSB Alliance agenda. EASE 1.0 (2018) to EASE 5.0 (2023). Covers governance, technology, HR, lending.',
+    'Banking Ombudsman Scheme merged into RBI Integrated Ombudsman Scheme (2021): Centralised complaint filing at RBI. One-stop for banks, NBFCs, payment system operators.',
+    'White Label ATMs: Non-bank entities (Tata Indicash, Muthoot). Brown Label ATMs: Bank-branded but managed by non-bank. Total ATMs: 2.6 lakh+.',
+    'Digital Banking Units (DBUs): 75 launched on October 16, 2022 (India\'s 75th anniversary). Paperless, digital-first branches across 75 districts.',
+    'KYC (Know Your Customer): Full KYC, e-KYC (Aadhaar OTP), V-CIP (Video Customer Identification Process). PMLA 2002 mandates KYC compliance.',
+    'NBFC regulation: Scale-Based Regulation (SBR) from October 2022. Four layers — Base, Middle, Upper, Top. Upper Layer NBFCs face bank-like regulations.',
+    'Banking correspondent (BC) model: Doorstep banking in unbanked areas. Banks use CSCs, post offices, retail shops as BCs. 14+ lakh BC outlets.',
+    'Financial Stability Report (FSR): Published by RBI bi-annually. Covers banking stability, macro-stress tests, systemic risk assessment.',
+    'Account Aggregator (AA) framework: RBI-regulated. Consent-based financial data sharing. 8 AAs operational. Enables cash-flow based lending for MSMEs.',
+    'CERSAI (Central Registry of Securitisation): Records security interests in property, intangible assets. Prevents fraud of multiple loans against same asset.',
+    'India Post Payments Bank (IPPB): Leverages 1.55 lakh post offices. Largest banking network. Focus: rural financial inclusion. 6+ crore accounts.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Public Sector Banks vs Private Banks vs Foreign Banks",
-      "headers": [
-        "Feature",
-        "PSBs",
-        "Private Banks",
-        "Foreign Banks"
+      title: 'Public Sector Banks vs Private Banks vs Foreign Banks',
+      headers: ['Feature', 'PSBs', 'Private Banks', 'Foreign Banks'],
+      rows: [
+        ['Ownership', 'Government >51%', 'Private shareholders', 'Foreign parent bank'],
+        ['Number', '12', '21', '46'],
+        ['Largest', 'SBI (Rs 61L crore assets)', 'HDFC Bank (Rs 35L crore)', 'Standard Chartered'],
+        ['PSL target', '40% of ANBC', '40% of ANBC', '40% (with sub-targets)'],
+        ['Focus', 'Social banking, rural, inclusion', 'Urban, retail, technology', 'Corporate, forex, trade finance'],
+        ['Governance', 'FSIB recommends MD/CEO', 'Board-appointed, RBI fit & proper', 'Global parent appoints, RBI approval'],
       ],
-      "rows": [
-        [
-          "Ownership",
-          "Government >51%",
-          "Private shareholders",
-          "Foreign parent bank"
-        ],
-        [
-          "Number",
-          "12",
-          "21",
-          "46"
-        ],
-        [
-          "Largest",
-          "SBI",
-          "HDFC Bank",
-          "Standard Chartered"
-        ],
-        [
-          "PSL target",
-          "40% of ANBC",
-          "40% of ANBC",
-          "40% (with sub-targets)"
-        ],
-        [
-          "Focus",
-          "Social banking, rural",
-          "Urban, retail, technology",
-          "Corporate, forex, trade"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Bank Nationalisation — \"14 in '69, 6 in '80\"",
-      "mnemonic": "14 banks (1969) + 6 banks (1980) = 20 nationalised banks",
-      "explanation": "First phase (1969): 14 banks with deposits over Rs 50 crore under PM Indira Gandhi. Second phase (1980): 6 more banks with deposits over Rs 200 crore. New Bank of India later merged with PNB (1993)."
-    }
-  ]
+      title: 'SFBs vs Payments Banks vs RRBs',
+      headers: ['Feature', 'Small Finance Banks', 'Payments Banks', 'Regional Rural Banks'],
+      rows: [
+        ['Can lend?', 'Yes — 75% to PSL', 'No — cannot lend', 'Yes — rural and agriculture focus'],
+        ['Deposits', 'No limit', 'Up to Rs 2 lakh', 'No limit'],
+        ['Investment', 'Can invest in G-Secs, corporates', 'Only G-Secs (up to 1 year)', 'G-Secs and approved securities'],
+        ['Capital requirement', 'Rs 200 crore', 'Rs 100 crore', 'Varies (Centre + State + Sponsor Bank)'],
+        ['Examples', 'AU SFB, Equitas, Ujjivan', 'Paytm, India Post, Airtel', 'Baroda UP Gramin Bank, Aryavart'],
+        ['Number', '12', '6 operational', '43'],
+      ],
+    },
+    {
+      title: 'Narasimham Committee I vs II',
+      headers: ['Feature', 'Narasimham-I (1991)', 'Narasimham-II (1998)'],
+      rows: [
+        ['Focus', 'Financial sector liberalisation', 'Strengthening banking system'],
+        ['CRAR', 'Introduce 8% CRAR (Basel I)', 'Raise to 10% CRAR'],
+        ['CRR/SLR', 'Reduce to 3-5% (CRR) and 25% (SLR)', 'Further rationalise'],
+        ['NPAs', 'Establish DRTs for recovery', 'Strengthen tribunals, 3-year NPA recognition'],
+        ['Structure', '4-tier (SBI, national, local, rural)', '3-tier (international, national, local)'],
+        ['Interest rates', 'Deregulate lending rates', 'Complete deregulation, benchmark lending'],
+        ['Mergers', 'Did not emphasise', 'Merge weak banks with strong ones'],
+      ],
+    },
+    {
+      title: 'DICGC Insurance: India vs Global',
+      headers: ['Feature', 'India (DICGC)', 'USA (FDIC)', 'UK (FSCS)'],
+      rows: [
+        ['Coverage', 'Rs 5 lakh (~$6,000)', '$250,000', 'GBP 85,000 (~$107,000)'],
+        ['Premium paid by', 'Banks', 'Banks', 'Banks'],
+        ['Premium rate', '12 paise per Rs 100/year', 'Risk-based (0-40 bps)', 'Levy-based'],
+        ['Payout timeline', '90 days (post-2021 amendment)', '2 business days', '7 days'],
+        ['Scope', 'All commercial + cooperative banks', 'FDIC-insured banks', 'PRA-authorised firms'],
+      ],
+    },
+    {
+      title: 'Basel I vs Basel II vs Basel III',
+      headers: ['Feature', 'Basel I (1988)', 'Basel II (2004)', 'Basel III (2010)'],
+      rows: [
+        ['Focus', 'Credit risk only', 'Credit + Market + Operational risk', 'Liquidity + Leverage + Capital quality'],
+        ['CRAR', '8%', '8%', '10.5% (with CCB) — India: 11.5%'],
+        ['India adopted', '1992', '2009', '2013 (phased)'],
+        ['Key innovation', 'Risk-weighted assets', 'Three pillars (capital, supervision, disclosure)', 'CET1, LCR, NSFR, countercyclical buffer'],
+        ['Limitation', 'One-size-fits-all risk weights', 'Pro-cyclical, model-dependent', 'Complex, higher capital costs'],
+      ],
+    },
+    {
+      title: 'Financial Inclusion Schemes Comparison',
+      headers: ['Scheme', 'Year', 'Key Feature', 'Scale'],
+      rows: [
+        ['PMJDY', '2014', 'Zero-balance account + RuPay + insurance', '52+ crore accounts'],
+        ['MUDRA', '2015', 'Collateral-free loans (Shishu/Kishore/Tarun)', 'Rs 27+ lakh crore disbursed'],
+        ['Stand-Up India', '2016', 'Loans Rs 10L-1Cr for SC/ST/Women', '2.1+ lakh loans'],
+        ['PM SVANidhi', '2020', 'Working capital for street vendors', '78+ lakh loans'],
+        ['PMEGP', '2008', 'Margin money for micro-enterprises', '9.5+ lakh units financed'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Bank Nationalisation — "14 in \'69, 6 in \'80"',
+      mnemonic: '14 banks (1969) + 6 banks (1980) = 20 nationalised banks',
+      explanation: 'First phase (1969): 14 banks with deposits over Rs 50 crore under PM Indira Gandhi. Second phase (1980): 6 more banks with deposits over Rs 200 crore. New Bank of India later merged with PNB (1993). Rationale: expand banking to rural India, align with planned development.',
+    },
+    {
+      title: 'PSL Sub-Targets — "18-7.5-12"',
+      mnemonic: 'Agriculture 18% (8% small), Micro Enterprises 7.5%, Weaker Sections 12%',
+      explanation: 'Priority Sector Lending: Total 40% of ANBC. Within that: Agriculture 18% (of which 8% to small & marginal farmers), Micro Enterprises 7.5%, Weaker Sections 12%. Remaining 12.5% includes education, housing, export credit, social infrastructure.',
+    },
+    {
+      title: 'Basel III Capital — "5.5-1.5-2.5"',
+      mnemonic: 'CET1: 5.5% + AT1: 1.5% + Tier 2: 2% + CCB: 2.5% = 11.5% CRAR',
+      explanation: 'India\'s Basel III capital structure: Common Equity Tier-1 (5.5%) is the highest quality (equity shares + retained earnings). Additional Tier 1 (1.5%) includes perpetual bonds. Tier 2 (2%) includes subordinated debt. Capital Conservation Buffer (2.5%) = total 11.5% CRAR.',
+    },
+    {
+      title: 'PMJDY Features — "ZRAID"',
+      mnemonic: 'Zero balance, RuPay card, Accident insurance (Rs 1L), Life Insurance (Rs 30K), Direct benefit transfer',
+      explanation: 'PM Jan Dhan Yojana (2014) five key features: Zero-balance no-frill account, RuPay debit card, Rs 1 lakh accident insurance, Rs 30,000 life cover, eligibility for DBT. 52+ crore accounts opened, 55.5% women beneficiaries.',
+    },
+    {
+      title: 'Bank Types — "PSB-PVT-FB-SFB-PB-RRB"',
+      mnemonic: '12 PSBs, 21 Private, 46 Foreign, 12 SFBs, 6 Payments, 43 RRBs',
+      explanation: 'India\'s Scheduled Commercial Bank structure: 12 Public Sector Banks (post-2020 merger), 21 Private Sector Banks, 46 Foreign Banks, 12 Small Finance Banks, 6 Payments Banks, and 43 Regional Rural Banks. Plus cooperative banking sector (State, District, PACS).',
+    },
+  ],
 }

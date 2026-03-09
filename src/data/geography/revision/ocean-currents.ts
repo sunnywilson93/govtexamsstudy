@@ -1,101 +1,129 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const oceanCurrentsRevision: SubjectRevision = {
-  "topic": "ocean-currents",
-  "bullets": [
-    "Ocean currents: continuous, predictable movements of seawater driven by wind, thermohaline differences, Coriolis effect, and basin shape.",
-    "Warm currents: Gulf Stream, Kuroshio, Brazil, N Atlantic Drift, Agulhas. Cold currents: Labrador, Canary, Benguela, Peru/Humboldt, California.",
-    "Indian Ocean currents reverse seasonally due to monsoon — unique among oceans.",
-    "Somali Current reverses: northward (cold upwelling) in summer, southward in winter.",
-    "Thermohaline circulation (ocean conveyor belt): density-driven deep circulation; ~1,000 years for one cycle; redistributes heat globally.",
-    "Gulf Stream transports 30 million m³/s — keeps Western Europe 5-10°C warmer than similar latitudes.",
-    "Upwelling zones produce ~50% of world's fish catch despite covering <1% of ocean area.",
-    "El Niño: trade winds weaken, warm water flows east in Pacific; often causes below-normal Indian monsoon.",
-    "La Niña: trade winds strengthen; generally associated with above-normal Indian monsoon.",
-    "Southern Oscillation Index (SOI): pressure difference Tahiti - Darwin; Sir Gilbert Walker (DG India, 1904-24) discovered it.",
-    "IOD (Indian Ocean Dipole): SST difference between western and eastern equatorial Indian Ocean; positive IOD = better monsoon.",
-    "Cold currents cause coastal deserts: Peru/Humboldt→Atacama, Benguela→Namib, California→Sonoran.",
-    "Cold currents cause fog: San Francisco fog from California Current cooling moist air.",
-    "Upwelling off Kerala coast during SW monsoon supports sardine and mackerel fisheries.",
-    "India is the 3rd largest fish producer (~14.2 million tonnes, 2021-22)."
+  topic: 'ocean-currents',
+  bullets: [
+    'Ocean currents: continuous, predictable movements of seawater driven by wind, thermohaline differences, Coriolis effect, and basin shape.',
+    'Warm currents: Gulf Stream, Kuroshio, Brazil, N Atlantic Drift, Agulhas, E Australian. Cold currents: Labrador, Canary, Benguela, Peru/Humboldt, California.',
+    'Western boundary currents (Gulf Stream, Kuroshio) — narrow, deep, fast, warm. Eastern boundary currents (California, Peru) — broad, shallow, slow, cold.',
+    'Indian Ocean currents reverse seasonally due to monsoon wind reversal — unique among the world\'s oceans.',
+    'Somali Current reverses: northward (cold upwelling, up to 3.7 m/s — one of world\'s fastest) in summer, southward in winter.',
+    'SW Monsoon Current flows eastward from Arabian Sea to Bay of Bengal in summer; NE Monsoon Current flows westward in winter.',
+    'Thermohaline circulation (ocean conveyor belt): density-driven deep circulation; ~1,000 years for one cycle; redistributes heat globally.',
+    'NADW (North Atlantic Deep Water) forms when cold salty water sinks near Greenland — drives the conveyor belt.',
+    'AMOC (Atlantic Meridional Overturning Circulation) has weakened ~15% since mid-20th century — potential climate tipping point.',
+    'Gulf Stream transports 30 million m3/s — keeps Western Europe 5-10 degrees C warmer than similar latitudes in N America.',
+    'Labrador (cold) meets Gulf Stream (warm) at Grand Banks, Newfoundland — fog + one of the world\'s richest fishing grounds.',
+    'Upwelling zones produce ~50% of world\'s fish catch despite covering <1% of ocean area.',
+    'Coastal upwelling: wind-driven Ekman Transport moves surface water offshore; cold deep water rises to replace it.',
+    'Major upwelling zones: Peru, California, Canary (NW Africa), Benguela (SW Africa), Somali coast.',
+    'Upwelling off Kerala coast during SW monsoon supports sardine and mackerel fisheries.',
+    'El Nino: trade winds weaken, warm water flows east in Pacific; often causes below-normal Indian monsoon.',
+    'La Nina: trade winds strengthen; eastern Pacific cools; generally associated with above-normal Indian monsoon.',
+    'Southern Oscillation Index (SOI): pressure difference Tahiti - Darwin; Negative SOI = El Nino, Positive = La Nina.',
+    'Sir Gilbert Walker (DG Indian Observatories, 1904-24) discovered the Southern Oscillation while studying monsoon variability.',
+    'IOD (Indian Ocean Dipole): SST difference between western and eastern equatorial Indian Ocean.',
+    'Positive IOD = warmer western IO = better monsoon; can counteract El Nino (as in 2019, 2023).',
+    'Negative IOD + El Nino = worst scenario for Indian monsoon — severe drought risk.',
+    'IOD peaks in October-November; affects the latter half of monsoon more strongly.',
+    'Cold currents cause coastal deserts: Peru/Humboldt→Atacama, Benguela→Namib, California→Sonoran.',
+    'Cold currents cause advection fog: San Francisco fog (California Current), Grand Banks fog (Labrador meets Gulf Stream).',
+    'Warm currents fuel tropical cyclones: Bay of Bengal (28-30 degrees C) fuels cyclones hitting India.',
+    'Antarctic Circumpolar Current (ACC/West Wind Drift) — largest current by volume (~130 million m3/s); encircles Antarctica.',
+    'Roaring Forties (40S), Furious Fifties (50S), Screaming Sixties (60S) — strong westerly winds in Southern Ocean.',
+    'El Nino Modoki (Central Pacific El Nino) — becoming more common; different impacts on India than traditional Eastern Pacific El Nino.',
+    'ENSO events recur every 2-7 years with no strict periodicity.',
+    'India is 3rd largest fish producer (~14.2 million tonnes, 2021-22); 2nd largest aquaculture producer.',
+    'INCOIS (Hyderabad) provides Potential Fishing Zone (PFZ) advisories to fishermen based on ocean current/temperature data.',
+    'NIO (Goa) — India\'s premier oceanographic research institute; IITM (Pune) leads ENSO/IOD and monsoon prediction research.',
+    'India has deployed 500+ Argo floats in the Indian Ocean for current and temperature monitoring.',
+    'Great Pacific Garbage Patch (~1.6 million sq km) in the North Pacific Gyre — currents concentrate marine plastic debris.',
+    'Climate change may increase El Nino frequency and IOD variability, increasing Indian monsoon unpredictability.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Warm vs Cold Currents",
-      "headers": [
-        "Feature",
-        "Warm Currents",
-        "Cold Currents"
+      title: 'Warm vs Cold Currents',
+      headers: ['Feature', 'Warm Currents', 'Cold Currents'],
+      rows: [
+        ['Temperature', 'Warmer than surrounding water', 'Colder than surrounding water'],
+        ['Location in basin', 'Generally western side (western boundary)', 'Generally eastern side (eastern boundary)'],
+        ['Effect on coast', 'Warm and wet; increases rainfall', 'Cool and dry; causes coastal deserts'],
+        ['Speed/depth', 'Narrow, deep, fast (1-2 m/s)', 'Broad, shallow, slow (0.1-0.3 m/s)'],
+        ['Fog formation', 'Less fog (stable warm air)', 'Causes advection fog (cools moist air)'],
+        ['Examples', 'Gulf Stream, Kuroshio, Brazil', 'Labrador, Peru/Humboldt, Benguela, California'],
       ],
-      "rows": [
-        [
-          "Temperature",
-          "Warmer than surroundings",
-          "Colder than surroundings"
-        ],
-        [
-          "Effect on coast",
-          "Warm and wet",
-          "Cool and dry (deserts)"
-        ],
-        [
-          "Location",
-          "Generally western side of oceans",
-          "Generally eastern side of oceans"
-        ],
-        [
-          "Examples",
-          "Gulf Stream, Kuroshio",
-          "Labrador, Peru/Humboldt"
-        ]
-      ]
     },
     {
-      "title": "El Niño vs La Niña",
-      "headers": [
-        "Feature",
-        "El Niño",
-        "La Niña"
+      title: 'El Nino vs La Nina',
+      headers: ['Feature', 'El Nino', 'La Nina'],
+      rows: [
+        ['Trade winds', 'Weaken or reverse', 'Strengthen'],
+        ['Eastern Pacific', 'Warmer, wetter; upwelling suppressed', 'Colder, drier; upwelling enhanced'],
+        ['Western Pacific', 'Cooler, drier', 'Warmer, wetter; more convection'],
+        ['Indian monsoon', 'Usually below-normal (~60-65% chance)', 'Usually above-normal'],
+        ['SOI', 'Negative', 'Positive'],
+        ['Peru fisheries', 'Collapse (no upwelling)', 'Productive (strong upwelling)'],
       ],
-      "rows": [
-        [
-          "Trade winds",
-          "Weaken or reverse",
-          "Strengthen"
-        ],
-        [
-          "Eastern Pacific",
-          "Warmer, wetter",
-          "Colder, drier"
-        ],
-        [
-          "Western Pacific",
-          "Cooler, drier",
-          "Warmer, wetter"
-        ],
-        [
-          "Indian monsoon effect",
-          "Usually below-normal",
-          "Usually above-normal"
-        ],
-        [
-          "SOI",
-          "Negative",
-          "Positive"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
-    {
-      "title": "Warm Currents of Atlantic",
-      "mnemonic": "GNB — Gulf Stream, N Atlantic Drift, Brazil",
-      "explanation": "Major warm currents in the Atlantic Ocean flowing poleward."
     },
     {
-      "title": "ENSO Impact on India",
-      "mnemonic": "El Niño = Less rain, La Niña = Lots of rain",
-      "explanation": "General relationship between ENSO and Indian monsoon rainfall."
-    }
-  ]
+      title: 'ENSO vs IOD',
+      headers: ['Feature', 'ENSO', 'IOD'],
+      rows: [
+        ['Ocean', 'Pacific Ocean', 'Indian Ocean'],
+        ['Discovery', 'Walker (1920s)', 'Saji et al. (1999)'],
+        ['Measurement', 'SOI (Tahiti - Darwin pressure)', 'IOD Index (W IO SST - E IO SST)'],
+        ['Periodicity', '2-7 years', 'Annual (peaks Oct-Nov)'],
+        ['Impact on India', 'El Nino reduces monsoon', 'Positive IOD enhances monsoon'],
+        ['Interaction', 'Independent but linked', 'Can counteract El Nino effect'],
+      ],
+    },
+    {
+      title: 'Indian Ocean Currents — Summer vs Winter',
+      headers: ['Feature', 'Summer (SW Monsoon)', 'Winter (NE Monsoon)'],
+      rows: [
+        ['N Indian Ocean pattern', 'Clockwise', 'Counterclockwise'],
+        ['Somali Current', 'Northward (cold upwelling)', 'Southward (warm)'],
+        ['SW/NE Monsoon Current', 'Eastward (Arabian → Bay)', 'Westward (Bay → Arabian)'],
+        ['Kerala coast upwelling', 'Active (supports fisheries)', 'Inactive'],
+        ['Bay of Bengal', 'Receives moisture (cyclone source)', 'Provides moisture to TN coast'],
+      ],
+    },
+    {
+      title: 'Cold Currents and Their Effects',
+      headers: ['Current', 'Ocean', 'Coastal Desert Created', 'Fog/Fisheries'],
+      rows: [
+        ['Peru/Humboldt', 'Pacific', 'Atacama (driest non-polar)', 'World\'s largest anchovy fishery'],
+        ['Benguela', 'Atlantic', 'Namib', 'Rich fisheries off Namibia/SA'],
+        ['California', 'Pacific', 'Contributes to Sonoran', 'San Francisco fog; sardine/anchovy'],
+        ['Canary', 'Atlantic', 'Reinforces Sahara on coast', 'Rich fisheries off Mauritania'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Warm Currents of Atlantic',
+      mnemonic: 'GNB — Gulf Stream, North Atlantic Drift, Brazil',
+      explanation: 'Major warm currents in the Atlantic Ocean flowing poleward.',
+    },
+    {
+      title: 'ENSO Impact on India',
+      mnemonic: 'El Nino = Less rain, La Nina = Lots of rain (generally)',
+      explanation: 'General relationship between ENSO phases and Indian monsoon rainfall.',
+    },
+    {
+      title: 'IOD and Indian Monsoon',
+      mnemonic: 'Positive IOD = Positive for India; can save monsoon even during El Nino',
+      explanation: 'Positive IOD (warm western IO) enhances moisture supply to India, counteracting El Nino.',
+    },
+    {
+      title: 'Cold Currents Creating Deserts — "PBCC"',
+      mnemonic: 'Peru→Atacama, Benguela→Namib, California→Sonoran, Canary→Saharan coast',
+      explanation: 'Four major cold currents and the coastal deserts they help create or reinforce.',
+    },
+    {
+      title: 'Southern Ocean Latitudes',
+      mnemonic: 'Roaring 40s, Furious 50s, Screaming 60s',
+      explanation: 'Strong westerly winds in the Southern Hemisphere at 40S, 50S, and 60S latitudes.',
+    },
+  ],
 }

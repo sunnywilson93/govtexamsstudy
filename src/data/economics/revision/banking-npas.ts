@@ -1,67 +1,132 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const bankingNpasRevision: SubjectRevision = {
-  "topic": "banking-npas",
-  "bullets": [
-    "NPA: Loan where interest/principal overdue for more than 90 days.",
-    "Classification: Standard → Sub-Standard (NPA <12 months) → Doubtful (NPA >12 months) → Loss.",
-    "SMA: SMA-0 (1-30 days overdue), SMA-1 (31-60 days), SMA-2 (61-90 days).",
-    "Gross NPA = total NPAs before provisions. Net NPA = Gross NPA − Provisions.",
-    "Gross NPA ratio of SCBs: peaked at 11.2% (2017-18), improved to ~2.8% (2024).",
-    "SARFAESI Act 2002: Banks can seize assets without court. Not for agri land or loans <Rs 1 lakh.",
-    "IBC 2016: Time-bound insolvency resolution (180+90 days, max 330 days). NCLT adjudicates.",
-    "IBC waterfall: Resolution costs → Workmen dues (24 months) → Secured creditors → Unsecured → Govt → Equity.",
-    "NARCL (Bad Bank, 2021): Acquires stressed assets >Rs 500 crore. Government guarantee Rs 30,600 crore.",
-    "Twin Balance Sheet Problem: Overleveraged corporates + stressed banks — identified in Economic Survey 2016-17."
+  topic: 'banking-npas',
+  bullets: [
+    'NPA: Loan where interest/principal overdue for more than 90 days (since March 2004; earlier 180 days).',
+    'Classification: Standard → Sub-Standard (NPA <12 months) → Doubtful (NPA >12 months) → Loss (uncollectable).',
+    'SMA: SMA-0 (1-30 days overdue), SMA-1 (31-60 days), SMA-2 (61-90 days). Early warning system.',
+    'CRILC: Banks report all exposures above Rs 5 crore (including SMA status) to RBI weekly.',
+    'Gross NPA = total NPAs before provisions. Net NPA = Gross NPA minus Provisions. PCR = Provisions/Gross NPAs x 100.',
+    'Gross NPA ratio of SCBs: peaked at 11.2% (FY18), improved to 3.9% (FY23), to ~2.8% (FY24). Net NPA: 0.6% (FY24).',
+    'PSBs\' combined profit: Rs 1.41 lakh crore (FY24) vs aggregate loss of Rs 85,370 crore in FY18.',
+    'Twin Balance Sheet Problem: Overleveraged corporates + stressed banks — identified in Economic Survey 2016-17.',
+    'Provisioning: Sub-standard 15% (25% unsecured). Doubtful: 25%/40%/100% by years. Loss: 100%.',
+    'SARFAESI Act 2002: Banks seize secured assets without court. Not for agri land or loans <Rs 1 lakh.',
+    'DRTs (1993): Recovery of debts >Rs 20 lakh. 39 DRTs, 5 DRATs across India. Average disposal >4 years.',
+    'ARCs: Buy bad loans at discount (20-30% of book value). Issue Security Receipts. 28 registered ARCs.',
+    'CDR (1999-2015): Consortium debt restructuring. Misused for evergreening. JLF, SDR, S4A — all pre-IBC mechanisms.',
+    'IBC 2016: Unified insolvency resolution. BLRC (T.K. Viswanathan) committee recommendations.',
+    'IBC timeline: 180 days + 90 extension = max 330 days. In practice, average 653 days. NCLT adjudicates.',
+    'IBC process: Application → Moratorium → IRP/RP appointed → CoC formed → Resolution plan (66% vote) → NCLT approval.',
+    'If no resolution → Liquidation. Waterfall: CIRP costs → Workmen (24m) → Secured → Unsecured → Govt → Equity.',
+    'Section 29A: Disqualifies wilful defaulters, promoters of NPA companies (>1 year) from submitting resolution plans.',
+    'IBC statistics (March 2024): 7,325 CIRPs admitted. 1,009 resolved (Rs 3.16L crore recovered vs Rs 10.54L crore claims ~30%).',
+    'Landmark IBC cases: Essar Steel (ArcelorMittal, Rs 42,000 crore), Bhushan Steel (Tata Steel), DHFL (Piramal Group).',
+    'NARCL (Bad Bank, 2021): Acquires stressed assets >Rs 500 crore. PSBs 51%, private 49%. Govt guarantee Rs 30,600 crore on SRs.',
+    'IDRCL: Operational entity to manage/resolve NARCL assets. Private banks 51%, PSBs 49%.',
+    'PCA Framework: Triggers on CRAR <10.875%, Net NPA >6%, negative ROA for 2 years. Restricts lending, branches, dividends.',
+    '11 PSBs were under PCA in 2017-18. All exited by 2022 as NPAs declined and capital improved.',
+    'Government recapitalised PSBs: Rs 3.5+ lakh crore since 2015-16 (budgetary + recap bonds + market raising).',
+    '4R strategy: Recognition (AQR), Resolution (IBC, SARFAESI, NARCL), Recapitalisation (capital infusion), Reforms (mergers, EASE).',
+    'Wilful defaulters: 2,391 owing Rs 1.96 lakh crore (March 2023). Barred from fresh institutional finance for 5 years.',
+    'Major frauds: Nirav Modi-PNB (Rs 14,000 crore, SWIFT LoU), ABG Shipyard (Rs 22,842 crore — largest CBI case).',
+    'Fugitive Economic Offenders Act 2018: Confiscation without conviction. Nirav Modi, Mehul Choksi, Vijay Mallya designated.',
+    'IL&FS default (September 2018): Rs 91,000 crore debt. Triggered NBFC liquidity crisis. DHFL — first financial firm under IBC.',
+    'RBI Scale-Based Regulation for NBFCs (2022): Base → Middle → Upper → Top layers. Upper Layer faces bank-like regulation.',
+    'NBFC Gross NPA: 4.0% (March 2024, from 6.3% in FY21). Microfinance elevated. Unsecured personal loan risk weights raised to 125%.',
+    'Write-offs: Rs 10.6 lakh crore written off by SCBs (FY15-FY23). Rs 1.3 lakh crore recovered from written-off accounts.',
+    'Pre-packaged insolvency (PPIRP, 2021): For MSMEs. Debtor retains management. 120-day timeline. Faster resolution.',
+    'ECL (Expected Credit Loss): RBI proposed transition from incurred loss model. Provision from Day 1 based on default probability.',
+    'Sectoral NPA (FY24): Industry 3.1%, Services 3.2%, Agriculture 6.1%, Retail 1.3%. Agriculture remains highest.',
+    'Credit growth revived: 5% (FY17) → 16% (FY24) as bank balance sheets cleaned up.',
+    'SCBs\' CRAR: 16.8% (FY24) — well above 11.5% regulatory minimum. PSBs: 15.5%. Private: 17.8%.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "SARFAESI Act vs IBC vs DRT",
-      "headers": [
-        "Feature",
-        "SARFAESI (2002)",
-        "IBC (2016)",
-        "DRT (1993)"
+      title: 'SARFAESI Act vs IBC vs DRT',
+      headers: ['Feature', 'SARFAESI (2002)', 'IBC (2016)', 'DRT (1993)'],
+      rows: [
+        ['Nature', 'Asset seizure without court', 'Insolvency resolution/liquidation', 'Debt recovery tribunal'],
+        ['Timeline', 'No fixed timeline', '180+90 days (max 330)', 'No strict timeline (avg 4+ years)'],
+        ['Applicability', 'Secured loans >Rs 1 lakh', 'All types of debt (Rs 1 crore threshold)', 'Debts >Rs 20 lakh'],
+        ['Adjudicator', 'Bank itself (appeal to DRT)', 'NCLT for companies, DRT for individuals', 'DRT/DRAT'],
+        ['Key limitation', 'Not for agri land', 'Average time 653 days vs 330 target', 'Chronic delays'],
+        ['Recovery rate', '~14%', '~30% for financial creditors', '~5%'],
       ],
-      "rows": [
-        [
-          "Nature",
-          "Asset seizure without court",
-          "Insolvency resolution",
-          "Debt recovery tribunal"
-        ],
-        [
-          "Timeline",
-          "No fixed timeline",
-          "180+90 days (max 330)",
-          "No strict timeline"
-        ],
-        [
-          "Applicability",
-          "Secured loans >Rs 1 lakh",
-          "All types of debt",
-          "Debts >Rs 20 lakh"
-        ],
-        [
-          "Adjudicator",
-          "Bank itself",
-          "NCLT",
-          "DRT/DRAT"
-        ],
-        [
-          "Key limitation",
-          "Not for agri land",
-          "Liquidation if no resolution",
-          "Often delayed"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "NPA 90-Day Rule — \"3 months = NPA\"",
-      "mnemonic": "Overdue >90 days = NPA. SMA: 30-60-90 (SMA-0, SMA-1, SMA-2)",
-      "explanation": "A loan becomes NPA when interest or principal remains overdue for more than 90 days. The SMA classification provides early warning: SMA-0 (1-30 days), SMA-1 (31-60), SMA-2 (61-90)."
-    }
-  ]
+      title: 'NPA Classification & Provisioning',
+      headers: ['Category', 'Duration', 'Provisioning (Secured)', 'Provisioning (Unsecured)'],
+      rows: [
+        ['Standard', 'No default', '0.25-1%', '0.25-1%'],
+        ['Sub-Standard', 'NPA up to 12 months', '15%', '25%'],
+        ['Doubtful (D1)', 'NPA 12-24 months', '25%', '100%'],
+        ['Doubtful (D2)', 'NPA 24-36 months', '40%', '100%'],
+        ['Doubtful (D3)', 'NPA > 36 months', '100%', '100%'],
+        ['Loss', 'Uncollectable', '100% (write-off)', '100% (write-off)'],
+      ],
+    },
+    {
+      title: 'NARCL vs International Bad Banks',
+      headers: ['Feature', 'NARCL (India)', 'Securum (Sweden)', 'KAMCO (Korea)'],
+      rows: [
+        ['Ownership', 'PSBs 51%, private 49%', '100% government', '100% government'],
+        ['Govt guarantee', 'Rs 30,600 crore on SRs', 'Full sovereign backing', 'Full sovereign backing'],
+        ['Resolution powers', 'Must use IBC/bilateral', 'Direct resolution authority', 'Direct restructuring power'],
+        ['Speed', 'Slow — 15 accounts in 3 years', 'Profitable within 5 years', 'Resolved in 3-4 years'],
+        ['Recovery mechanism', 'Security Receipts (85% of value)', 'Direct asset management', 'Asset purchase at market value'],
+      ],
+    },
+    {
+      title: 'PSB vs Private Bank NPA Performance',
+      headers: ['Metric', 'PSBs (FY24)', 'Private Banks (FY24)'],
+      rows: [
+        ['Gross NPA ratio', '3.7%', '1.8%'],
+        ['Net NPA ratio', '0.8%', '0.4%'],
+        ['CRAR', '15.5%', '17.8%'],
+        ['PCR', '~74%', '~78%'],
+        ['Combined profit', 'Rs 1.41 lakh crore', 'Rs 1.1 lakh crore'],
+      ],
+    },
+    {
+      title: 'IBC Waterfall Priority',
+      headers: ['Priority', 'Category', 'Notes'],
+      rows: [
+        ['1st', 'CIRP costs + workmen dues (24 months)', 'Insolvency process costs and worker wages given highest priority'],
+        ['2nd', 'Secured creditors', 'Can relinquish security for higher priority or retain it'],
+        ['3rd', 'Unsecured financial creditors', 'Including remaining workmen dues beyond 24 months'],
+        ['4th', 'Government dues', 'Central, state, local government taxes and dues'],
+        ['5th', 'Remaining unsecured creditors', 'Operational creditors, trade creditors'],
+        ['6th', 'Preference shareholders → Equity', 'Last in priority — usually get nothing in liquidation'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'NPA 90-Day Rule — "3 months = NPA"',
+      mnemonic: 'Overdue >90 days = NPA. SMA: 30-60-90 (SMA-0, SMA-1, SMA-2)',
+      explanation: 'A loan becomes NPA when interest or principal remains overdue for more than 90 days. The SMA classification provides early warning: SMA-0 (1-30 days), SMA-1 (31-60), SMA-2 (61-90).',
+    },
+    {
+      title: 'IBC Waterfall — "CWS-UGE"',
+      mnemonic: 'CIRP costs + Workmen, Secured, Unsecured, Government, Equity',
+      explanation: 'IBC liquidation waterfall priority: CIRP costs and Workmen dues first, then Secured creditors, Unsecured financial, Government dues, remaining unsecured, preference shareholders, Equity last.',
+    },
+    {
+      title: '4R Strategy — "RRRR"',
+      mnemonic: 'Recognition, Resolution, Recapitalisation, Reforms',
+      explanation: 'Government\'s comprehensive NPA strategy: Recognise true NPAs (AQR), Resolve through IBC/SARFAESI/NARCL, Recapitalise PSBs (Rs 3.5L crore), Reform governance (mergers, EASE, FSIB).',
+    },
+    {
+      title: 'IBBI — "IBC\'s Regulator"',
+      mnemonic: 'IBBI regulates IPs, IPAs, and IUs (Insolvency Professionals, Agencies, Information Utilities)',
+      explanation: 'Insolvency and Bankruptcy Board of India regulates the three pillars of IBC infrastructure: Insolvency Professionals who manage CIRP, IPAs that enroll them, and IUs (NeSL) that store financial data.',
+    },
+    {
+      title: 'NPA Peak to Trough — "11.2 to 2.8"',
+      mnemonic: 'Gross NPA peaked at 11.2% (FY18), improved to 2.8% (FY24) — best in 12+ years',
+      explanation: 'The dramatic NPA turnaround: from crisis peak of 11.2% in 2017-18 to decade-low 2.8% by 2024. This was achieved through AQR (recognition), IBC (resolution), recap bonds, and PSB mergers.',
+    },
+  ],
 }

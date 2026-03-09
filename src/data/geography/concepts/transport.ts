@@ -48,7 +48,6 @@ export const transportConcept: SubjectConcept = {
       content:
         'India has the world\'s 2nd largest telecom network with over 1.17 billion subscribers (2023). Mobile subscriber base exceeds 1.1 billion. India has the highest monthly mobile data consumption per user globally (about 19 GB/month) and cheapest data rates. Key milestones: first telephone exchange in Kolkata (1882); first STD service between Kanpur and Lucknow (1960); MTNL and BSNL are government telecom companies. Digital India Programme (2015) aims for digital infrastructure, governance, and empowerment. India Stack (Aadhaar, UPI, DigiLocker) is a unique digital infrastructure; UPI processed over 10 billion transactions monthly (2023). BharatNet (National Optical Fibre Network) aims to connect all 2.5 lakh Gram Panchayats with broadband. India Post is the world\'s largest postal network with 1.55 lakh+ post offices (89% in rural areas). India also has 6 satellite launch vehicles (PSLV, GSLV) and operates communication satellites (INSAT series, GSAT series) through ISRO. 5G rollout began in October 2022 by Jio and Airtel.',
     },
-  ],
     {
       section: 'Indian Railways — Zones, Gauges, and Modernization',
       content:

@@ -24,6 +24,24 @@ export const buddhismJainismRevision: HistoryRevision = {
     "Nalanda (Bihar), founded in the 5th century CE, was the most famous Buddhist university — attracted scholars from across Asia.",
     "Ashoka sent his son Mahinda and daughter Sanghamitta to spread Buddhism in Sri Lanka.",
     "The Milinda Panho records the dialogue between Indo-Greek king Menander (Milinda) and Buddhist monk Nagasena.",
+    "Pratityasamutpada (Dependent Origination) — 12 nidanas: Avidya → Samskara → Vijnana → Namarupa → Shadayatana → Sparsha → Vedana → Trishna → Upadana → Bhava → Jati → Jaramarana.",
+    "Gandhara school of art (Greco-Roman influence, stucco/stone, around Peshawar/Taxila) vs Mathura school (indigenous, red sandstone, Kushana period) — both created the first anthropomorphic images of Buddha.",
+    "Sarnath Buddha (Gupta period, 5th century CE) — Buddha in Dharmachakrapravartana mudra; considered the finest Buddhist sculpture in India.",
+    "The Amaravati Stupa (Andhra Pradesh, Satavahana period, 2nd century CE) — distinctive narrative marble sculptures showing Buddhist scenes; important Mahayana center.",
+    "Dilwara Temples at Mount Abu — Vimal Vasahi (1031 CE, built by Vimal Shah) and Luna Vasahi (1230 CE, built by Tejpal and Vastupal); finest white marble Jain temple carvings.",
+    "Gommateshwara statue at Shravanabelagola (983 CE) — 57-foot monolithic statue of Bahubali; Mahamastakabhisheka held every 12 years.",
+    "Jain manuscript painting (Gujarat/Rajasthan, 11th century onwards) — Kalpasutra manuscripts with stylized figures and gold leaf; early Indian miniature painting tradition.",
+    "Eight types of Jain karma: Jnanavarniya, Darshanavarniya, Vedaniya, Mohaniya, Ayushya, Nama, Gotra, Antaraya — karma is a PHYSICAL substance in Jainism.",
+    "Sallekhana (voluntary fasting unto death) is the highest Jain ascetic practice; Chandragupta Maurya died by sallekhana at Shravanabelagola.",
+    "Vikramashila (Bihar, founded by Dharmapala of Pala dynasty) — second most important Buddhist university; produced Atisha Dipankara who revived Buddhism in Tibet.",
+    "Somapura Mahavihara (Bangladesh, founded by Dharmapala) — one of the largest monasteries; UNESCO World Heritage Site.",
+    "Shankaracharya is called 'Prachhanna Bauddha' (crypto-Buddhist) — his Advaita absorbed many Buddhist ideas while philosophically defeating Buddhism in debates.",
+    "The decline of Buddhism: revival of Hinduism, loss of distinctive identity (Mahayana adopted Hindu practices), loss of royal patronage, internal decay, and Turkish invasions (Bakhtiyar Khalji destroyed Nalanda c. 1200 CE).",
+    "Kanchipuram was a major Buddhist center — Dignaga (5th century), founder of Buddhist logic (Pramana), was born near Kanchi.",
+    "Silappadikaram (by Ilango Adigal, a Jain prince) — one of the five great Tamil epics; Jain monks believed to have introduced Brahmi script to South India.",
+    "Sittanavasal cave paintings (Pudukottai, 7th-9th century CE) — important Jain paintings depicting a Samavasarana (divine preaching hall).",
+    "Hathigumpha inscription of Kharavela (Udayagiri, Odisha, 1st century BCE) — describes military conquests and Jain patronage of this Kalinga ruler.",
+    "Dr. B.R. Ambedkar converted to Buddhism on 14 October 1956 at Nagpur with ~600,000 followers — Navayana Buddhism; modern revival of Buddhism in India.",
   ],
   comparisons: [
     {
@@ -55,6 +73,41 @@ export const buddhismJainismRevision: HistoryRevision = {
         ["4th (c. 72 CE)", "Kundalvana (Kashmir)", "Vasumitra", "Kanishka", "Split into Hinayana and Mahayana"],
       ],
     },
+    {
+      title: "Buddhist Schools of Philosophy",
+      headers: ["School", "Founder", "Key Doctrine", "Tradition"],
+      rows: [
+        ["Madhyamika (Shunyavada)", "Nagarjuna (2nd century CE)", "Shunyata — all phenomena are empty of inherent existence", "Mahayana"],
+        ["Yogachara (Vijnanavada)", "Asanga & Vasubandhu (4th century CE)", "Consciousness is the only reality; external objects are mental projections", "Mahayana"],
+        ["Sautrantika", "Kumaralata", "Only sutras are authoritative; external objects exist but are inferred", "Hinayana"],
+        ["Vaibhashika", "Based on Vibhasha commentary", "External objects directly perceived; atoms are real", "Hinayana"],
+      ],
+    },
+    {
+      title: "Buddhist Universities",
+      headers: ["University", "Location", "Founded by / Period", "Key Facts"],
+      rows: [
+        ["Nalanda", "Bihar", "Kumaragupta I (Gupta dynasty), 5th century CE", "10,000 students, 2,000 teachers; Xuanzang studied here; destroyed by Bakhtiyar Khalji c. 1200"],
+        ["Vikramashila", "Bihar", "Dharmapala (Pala dynasty), 8th century", "Second most important; produced Atisha Dipankara; also destroyed by Khalji"],
+        ["Taxila", "Gandhara (Pakistan)", "Pre-Buddhist; thrived 6th century BCE onward", "Chanakya and Panini studied here; not organized like Nalanda"],
+        ["Vallabhi", "Gujarat", "5th-8th century CE", "Center for Buddhist and Brahmanical learning; hosted 2nd Jain Council"],
+        ["Odantapuri", "Bihar", "Dharmapala (Pala dynasty)", "Model for the Tibetan monastery at Samye"],
+        ["Somapura", "Bangladesh", "Dharmapala (Pala dynasty)", "One of the largest monasteries; UNESCO World Heritage Site"],
+      ],
+    },
+    {
+      title: "Gandhara vs Mathura School of Art",
+      headers: ["Aspect", "Gandhara School", "Mathura School"],
+      rows: [
+        ["Location", "Peshawar/Taxila region (NW India/Pakistan)", "Mathura (UP)"],
+        ["Influence", "Greco-Roman (Hellenistic)", "Indigenous Indian"],
+        ["Material", "Grey/blue schist stone, stucco", "Red sandstone"],
+        ["Buddha portrayal", "Wavy hair, muscular body, toga-like robe, halo", "Shaven head, thin muslin garment, Indian features"],
+        ["Period", "1st-5th century CE (Kushana)", "1st-3rd century CE (Kushana)"],
+        ["Patrons", "Kanishka and Kushana kings", "Kushana kings"],
+        ["Key feature", "Greek facial features, deep eyes", "Smiling expression, spiritual serenity"],
+      ],
+    },
   ],
   mnemonics: [
     {
@@ -74,6 +127,18 @@ export const buddhismJainismRevision: HistoryRevision = {
       mnemonic: "Rajgriha, Vaishali, Pataliputra, Kashmir — Remember Vedas Provide Knowledge",
       explanation:
         "The four Buddhist Councils in order: 1st at Rajgriha (under Ajatashatru), 2nd at Vaishali (Kalashoka), 3rd at Pataliputra (Ashoka), 4th at Kundalvana/Kashmir (Kanishka).",
+    },
+    {
+      title: "Mahayana Philosophy Schools (MSVY)",
+      mnemonic: "Madhyamika (Nagarjuna), Sautrantika, Vaibhashika, Yogachara (Asanga) — 'My Students Value Yoga'",
+      explanation:
+        "Four major Buddhist philosophical schools: Madhyamika/Shunyavada (Nagarjuna — emptiness), Sautrantika (only sutras valid), Vaibhashika (realist — atoms are real), Yogachara/Vijnanavada (Asanga/Vasubandhu — consciousness only). First two are Mahayana, last two are Hinayana.",
+    },
+    {
+      title: "Buddhist Universities (NVT-VOS)",
+      mnemonic: "Nalanda, Vikramashila, Taxila, Vallabhi, Odantapuri, Somapura — 'Never Vacate The Very Old Schools'",
+      explanation:
+        "Six major Buddhist centers of learning. Nalanda (Gupta period, Bihar), Vikramashila (Pala dynasty, Bihar), Taxila (Gandhara), Vallabhi (Gujarat), Odantapuri (Pala, Bihar — model for Samye in Tibet), Somapura (Pala, Bangladesh — UNESCO site).",
     },
   ],
 }

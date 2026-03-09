@@ -1,69 +1,138 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const irrigationRevision: SubjectRevision = {
-  "topic": "irrigation",
-  "bullets": [
-    "India has the largest irrigated area in the world — about 68.4 million hectares net irrigated area.",
-    "Only about 52% of agricultural land is irrigated; rest depends on monsoon.",
-    "Wells and tubewells (groundwater) provide about 62% of irrigation — dominant source.",
-    "Canals provide about 24% of irrigation — dominant in Punjab, Haryana, UP, Rajasthan.",
-    "India is the largest groundwater user in the world (about 25% of global withdrawal).",
-    "Indira Gandhi Canal (649 km) — world's longest canal; brings Sutlej-Beas water to Thar Desert.",
-    "Bhakra-Nangal Dam (Sutlej) — highest gravity dam in India (226 m); Gobind Sagar reservoir.",
-    "Tehri Dam (Bhagirathi) — highest dam in India overall (260.5 m, earth/rock fill).",
-    "Hirakud Dam (Mahanadi, Odisha) — longest earthen dam in India (25.8 km).",
-    "PMKSY: \"Har Khet Ko Paani\" and \"Per Drop More Crop\" — umbrella irrigation scheme (2015).",
-    "Tank irrigation is traditional in Tamil Nadu, Karnataka, AP — now declining.",
-    "Only 5-6% of irrigated land uses micro-irrigation (drip/sprinkler)."
+  topic: 'irrigation',
+  bullets: [
+    'India has the largest irrigated area in the world — about 68.4 million hectares net irrigated area.',
+    'Only about 52% of agricultural land is irrigated; rest depends on monsoon.',
+    'Wells and tubewells (groundwater) provide about 62% of irrigation — dominant source.',
+    'Canals provide about 24% of irrigation — dominant in Punjab, Haryana, UP, Rajasthan.',
+    'India is the largest groundwater user in the world (about 25% of global withdrawal).',
+    'Indira Gandhi Canal (649 km) — world\'s longest canal; brings Sutlej-Beas water to Thar Desert.',
+    'Bhakra-Nangal Dam (Sutlej) — highest gravity dam in India (226 m); Gobind Sagar reservoir.',
+    'Tehri Dam (Bhagirathi) — highest dam in India overall (260.5 m, earth/rock fill).',
+    'Hirakud Dam (Mahanadi, Odisha) — longest earthen dam in India (25.8 km including dykes).',
+    'PMKSY: "Har Khet Ko Paani" and "Per Drop More Crop" — umbrella irrigation scheme (2015).',
+    'Tank irrigation is traditional in Tamil Nadu, Karnataka, AP — now declining.',
+    'Only 5-6% of irrigated land uses micro-irrigation (drip/sprinkler); target is 10 million hectares under PMKSY.',
+    'Punjab has the highest irrigation coverage (~99% of net sown area); Mizoram/Nagaland among lowest.',
+    'Critical/over-exploited blocks: 1,186 blocks (17% of total) have groundwater extraction >100% of recharge.',
+    'Central Ground Water Board (CGWB) monitors groundwater levels through ~24,000 observation wells.',
+    'Ken-Betwa Link Project (2021) — India\'s first river interlinking project; connects surplus Ken to deficit Betwa.',
+    'National Water Policy 2012 recommends priority: drinking > irrigation > hydropower > ecology > industry.',
+    'Command Area Development Programme (CADP, 1974) improves water use efficiency in canal commands.',
+    'Accelerated Irrigation Benefits Programme (AIBP, 1996) funds completion of stalled irrigation projects.',
+    'Green Revolution (1960s-70s) spread irrigation via tubewells in Punjab, Haryana, western UP — wheat/rice yields tripled.',
+    'Waterlogging affects ~8.5 million hectares in Punjab, Haryana canal-irrigated areas; caused by over-irrigation.',
+    'Usar/reh (saline-alkaline soil) affects ~7 million hectares in UP, Punjab, Haryana due to canal seepage.',
+    'India\'s irrigation potential created: 139.89 million hectares; utilised: ~112 million hectares (80%).',
+    'Bamboo drip irrigation — indigenous micro-irrigation by Khasi-Jaintia tribes of Meghalaya; for betel and pepper.',
+    'Kuhls (HP), Zabo (Nagaland), Eri (TN), Johads (Rajasthan), Ahar-Pyne (Bihar) — traditional irrigation systems.',
+    'Interstate Water Disputes Act 1956 governs river water sharing; 8+ tribunals constituted (Cauvery, Krishna, etc.).',
+    'Cauvery Water Disputes Tribunal (1990): Karnataka-TN-Kerala-Puducherry; SC upheld allocation in 2018.',
+    'Polavaram Project (Godavari, AP) — national project status since 2014; massive multipurpose dam.',
+    'Sardar Sarovar (Narmada, Gujarat) — height raised to 138.68 m in 2017; Narmada Bachao Andolan opposed it.',
+    'Farakka Barrage (Ganga, WB, 1975) — diverts water to Hooghly to flush silt for Kolkata Port.',
+    'Mettur Dam (Kaveri, TN, 1934) — oldest major dam in operation; Stanley Reservoir.',
+    'India has about 5,334 large dams (ICOLD); ranks 3rd globally after China and USA.',
+    'Per capita water availability: ~1,486 cubic metres/year (2021) — rapidly approaching "water stress" threshold of 1,700.',
+    'Jal Shakti Abhiyan (2019) and Jal Jeevan Mission (2019) — focus on water conservation and tap water to all rural homes.',
+    'National River Linking Project proposes 30 link canals connecting 37 rivers; Ken-Betwa is the first.',
+    'Lift irrigation (using pumps to lift water to higher elevations) — significant in Maharashtra, Telangana, AP.',
+    'Kaleshwaram Lift Irrigation Project (Telangana) — world\'s largest multi-stage lift; lifts Godavari water.',
+    'Drip irrigation saves 30-70% water vs flood irrigation; Israel pioneered it; India is expanding rapidly.',
+    'Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan (PM-KUSUM) — solar-powered irrigation pumps.',
+    'Atal Bhujal Yojana (2020) — community-led groundwater management in 7 states; World Bank-assisted.',
+    'Dam Safety Act 2021 — provides for surveillance, inspection, and maintenance of all large dams.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Major Dams of India",
-      "headers": [
-        "Dam",
-        "River",
-        "State",
-        "Distinction"
+      title: 'Major Dams of India',
+      headers: ['Dam', 'River', 'State', 'Distinction'],
+      rows: [
+        ['Tehri', 'Bhagirathi', 'Uttarakhand', 'Highest dam in India (260.5 m)'],
+        ['Bhakra-Nangal', 'Sutlej', 'HP-Punjab', 'Highest gravity dam (226 m)'],
+        ['Hirakud', 'Mahanadi', 'Odisha', 'Longest earthen dam (25.8 km)'],
+        ['Sardar Sarovar', 'Narmada', 'Gujarat', 'One of largest concrete gravity dams'],
+        ['Nagarjuna Sagar', 'Krishna', 'Telangana-AP', 'Largest masonry dam in world'],
+        ['Mettur', 'Kaveri', 'Tamil Nadu', 'Oldest major dam in operation (1934)'],
+        ['Farakka Barrage', 'Ganga', 'West Bengal', 'Diverts water to Hooghly (1975)'],
       ],
-      "rows": [
-        [
-          "Tehri",
-          "Bhagirathi",
-          "Uttarakhand",
-          "Highest dam in India (260.5 m)"
-        ],
-        [
-          "Bhakra-Nangal",
-          "Sutlej",
-          "HP-Punjab",
-          "Highest gravity dam (226 m)"
-        ],
-        [
-          "Hirakud",
-          "Mahanadi",
-          "Odisha",
-          "Longest earthen dam (25.8 km)"
-        ],
-        [
-          "Sardar Sarovar",
-          "Narmada",
-          "Gujarat",
-          "One of largest concrete gravity dams"
-        ],
-        [
-          "Nagarjuna Sagar",
-          "Krishna",
-          "Telangana-AP",
-          "Largest masonry dam in world"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "Sources of Irrigation (WCTO)",
-      "mnemonic": "Wells (62%) > Canals (24%) > Tanks (3%) > Other (11%)",
-      "explanation": "Groundwater (wells/tubewells) is the dominant source of irrigation in India, followed by canals."
-    }
-  ]
+      title: 'Sources of Irrigation — Share',
+      headers: ['Source', 'Share (%)', 'Dominant Region', 'Key Feature'],
+      rows: [
+        ['Wells/Tubewells', '~62%', 'UP, Rajasthan, MP, Punjab', 'Groundwater; over-exploited in many areas'],
+        ['Canals', '~24%', 'Punjab, Haryana, UP, Rajasthan', 'Surface water; government-built'],
+        ['Tanks', '~3%', 'Tamil Nadu, Karnataka, AP', 'Traditional; declining due to encroachment'],
+        ['Other sources', '~11%', 'Various', 'Springs, rivers, lift irrigation'],
+      ],
+    },
+    {
+      title: 'Traditional Irrigation Systems',
+      headers: ['System', 'Region/State', 'Method'],
+      rows: [
+        ['Kuhls', 'Himachal Pradesh', 'Gravity-fed channel from streams'],
+        ['Zabo/Ruza', 'Nagaland', 'Rainwater + cattle yard drainage to paddy'],
+        ['Eri/Tank', 'Tamil Nadu', 'Small reservoirs in every village'],
+        ['Johads', 'Rajasthan', 'Earthen check dams for rainwater harvesting'],
+        ['Ahar-Pyne', 'South Bihar', 'Rectangular catchment + diversion channels'],
+        ['Bamboo Drip', 'Meghalaya', 'Bamboo pipes channel spring water to crops'],
+        ['Phad', 'Maharashtra (Tapi basin)', 'Community-managed canal from weir'],
+        ['Surangam', 'Kasaragod, Kerala', 'Horizontal tunnel into laterite hillside'],
+      ],
+    },
+    {
+      title: 'Major Interstate Water Disputes',
+      headers: ['Dispute', 'States', 'River', 'Status'],
+      rows: [
+        ['Cauvery', 'Karnataka vs TN (+ Kerala, Puducherry)', 'Cauvery', 'SC upheld tribunal award 2018'],
+        ['Krishna', 'Maharashtra vs Karnataka vs AP/Telangana', 'Krishna', 'Brijesh Kumar Tribunal ongoing'],
+        ['Narmada', 'Gujarat vs MP vs Maharashtra vs Rajasthan', 'Narmada', 'NWDT award 1979; implemented'],
+        ['Ravi-Beas', 'Punjab vs Haryana vs Rajasthan', 'Ravi-Beas', 'SYL Canal dispute pending'],
+        ['Mahanadi', 'Odisha vs Chhattisgarh', 'Mahanadi', 'Tribunal constituted 2018'],
+        ['Mahadayi/Mandovi', 'Goa vs Karnataka vs Maharashtra', 'Mahadayi', 'Tribunal constituted 2010'],
+      ],
+    },
+    {
+      title: 'Flood Irrigation vs Micro-Irrigation',
+      headers: ['Feature', 'Flood/Surface Irrigation', 'Micro-Irrigation (Drip/Sprinkler)'],
+      rows: [
+        ['Water efficiency', '30-40%', '70-90%'],
+        ['Water saving', 'Baseline', '30-70% less water used'],
+        ['Yield impact', 'Standard', '20-50% higher yields (targeted delivery)'],
+        ['Cost', 'Low initial cost', 'High initial; subsidy under PMKSY'],
+        ['Suitability', 'Rice, wheat (paddy)', 'Horticulture, sugarcane, cotton, vegetables'],
+        ['Problem', 'Waterlogging, salinization', 'Clogging of drippers, maintenance'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Sources of Irrigation (WCTO)',
+      mnemonic: 'Wells (62%) > Canals (24%) > Tanks (3%) > Other (11%)',
+      explanation: 'Groundwater (wells/tubewells) is the dominant source of irrigation in India, followed by canals.',
+    },
+    {
+      title: 'Traditional Systems — State Mapping',
+      mnemonic: 'Kuhls-HP, Zabo-Nagaland, Eri-TN, Johads-Rajasthan, Ahar-Bihar, Bamboo-Meghalaya, Phad-Maharashtra',
+      explanation: 'Traditional water harvesting systems specific to each state/region. These are frequently tested in UPSC Prelims.',
+    },
+    {
+      title: 'Highest Dams (TTB)',
+      mnemonic: 'Tehri (260.5 m, Bhagirathi) > Bhakra (226 m, Sutlej) — Tehri = Tallest overall; Bhakra = highest Gravity',
+      explanation: 'Tehri is an earth/rockfill dam (highest overall), Bhakra is a concrete gravity dam (highest gravity dam). Both on Himalayan rivers.',
+    },
+    {
+      title: 'PMKSY Components',
+      mnemonic: 'HPAW — Har Khet Ko Paani, Per Drop More Crop, AIBP, Watershed Development',
+      explanation: 'Four components of PMKSY (2015). "Har Khet Ko Paani" expands coverage; "Per Drop More Crop" promotes micro-irrigation.',
+    },
+    {
+      title: 'River Interlinking — First Project',
+      mnemonic: 'KB-First = Ken (surplus, MP) → Betwa (deficit, UP) — India\'s 1st river link (2021)',
+      explanation: 'The Ken-Betwa Link Project was approved in 2021 as the first project under the National River Linking plan. It will irrigate Bundelkhand region.',
+    },
+  ],
 }

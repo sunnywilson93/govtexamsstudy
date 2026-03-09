@@ -1,61 +1,113 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const planningRevision: SubjectRevision = {
-  "topic": "planning",
-  "bullets": [
-    "Planning Commission: 1950 (Cabinet Resolution, extra-constitutional). PM as chairman. Replaced by NITI Aayog (2015).",
-    "1st FYP (1951-56): Agriculture, Harrod-Domar model. 2nd FYP (1956-61): Heavy industry, Mahalanobis model.",
-    "7th FYP (1985-90): Best growth until then (6.01%). 12th FYP (2012-17): Last Five Year Plan.",
-    "NITI Aayog: Think tank (not directive planner). PM chairs. Governing Council: All CMs.",
-    "NITI Aayog has no fund allocation power — this went to Finance Commission.",
-    "Aspirational Districts Programme: 112 backward districts ranked on 5 parameters.",
-    "Gadgil Formula (1969): Plan fund allocation to states — population (60%), per capita income (25%).",
-    "Import Substitution (1950s-80s) → Export orientation (post-1991).",
-    "Mahalanobis Model: Two-sector model emphasising capital goods for long-run growth.",
-    "15-year Vision Document, 7-year Strategy, 3-year Action Agenda replaced Five Year Plans."
+  topic: 'planning',
+  bullets: [
+    'Planning Commission: 1950 (Cabinet Resolution, extra-constitutional). PM as chairman. Replaced by NITI Aayog (2015).',
+    '1st FYP (1951-56): Agriculture, Harrod-Domar model, Bhakra Nangal. Growth: 3.6% (target 2.1%). 2nd FYP (1956-61): Heavy industry, Mahalanobis model, steel plants.',
+    '3rd FYP (1961-66): Self-reliance target; failed due to 1962 China war, 1965 Pak war, drought. Growth: 2.8%.',
+    'Plan Holiday (1966-69): Three annual plans. Food crisis, devaluation, Green Revolution began.',
+    '4th FYP (1969-74): Social justice, Gadgil Formula, bank nationalisation. 5th FYP (1974-79): Garibi Hatao, Minimum Needs Programme.',
+    '7th FYP (1985-90): Best growth until then (6.01%). Technology focus under Rajiv Gandhi.',
+    '8th FYP (1992-97): First post-liberalisation plan. Growth 6.8%. Market orientation.',
+    '12th FYP (2012-17): Last Five Year Plan. "Faster, Sustainable, More Inclusive Growth." Actual growth approximately 6.7%.',
+    'NITI Aayog: Think tank (not directive planner). PM chairs. Governing Council: All CMs and LG.',
+    'NITI Aayog has no fund allocation power — this went to Finance Commission. Vice-Chairman: Suman Bery (2022-present).',
+    'Aspirational Districts Programme: 112 backward districts ranked on 49 KPIs across 5 sectors. Quarterly ranking.',
+    'Atal Innovation Mission (AIM): 10,000+ Atal Tinkering Labs in schools. 68 Atal Incubation Centres.',
+    'Gadgil Formula (1969): Plan fund allocation — population (60%), per capita income (25%), tax effort (7.5%), special problems (7.5%).',
+    '14th Finance Commission (Y.V. Reddy): Increased tax devolution from 32% to 42%. Absorbed Gadgil Formula role.',
+    '15th Finance Commission (N.K. Singh): 41% devolution (42% minus J&K UT adjustment). Used 2011 Census population.',
+    'Import Substitution (1950s-80s) → Export orientation (post-1991). ISI led to "licence raj."',
+    'Mahalanobis Model: Two-sector (capital goods + consumer goods). Invest in K sector for long-run growth. 2nd FYP basis.',
+    'Harrod-Domar: Growth = Savings rate / Capital-output ratio. 1st FYP basis. Limitation: ignores technology.',
+    'Lewis Model: Development = transfer of surplus labour from agriculture to industry. India\'s incomplete structural transformation.',
+    '15-year Vision Document, 7-year Strategy, 3-year Action Agenda replaced Five Year Plans after NITI Aayog.',
+    'Pre-independence plans: Visvesvaraya (1934), NPC under Nehru (1938), Bombay Plan (1944, Tata-Birla), Gandhian Plan, People\'s Plan.',
+    'NDC (National Development Council, 1952): Approved Five Year Plans. All CMs + PC members. Effectively replaced by NITI Governing Council.',
+    'Plan vs Non-Plan expenditure abolished in Budget FY18. Now only Revenue/Capital classification.',
+    'Special Category States: 8 NE states + J&K + Uttarakhand + HP. Received 90% grant / 10% loan (vs 30:70 for general states).',
+    'Industrial Policy Resolution 1956: Public sector = commanding heights. Schedule A (monopoly public), B (predominant public), C (private).',
+    'Licence Raj: Every new factory, expansion, product diversification, import, technology needed government permission.',
+    'SDG India Index (NITI Aayog): Ranks states on 16 SDGs. Top: Kerala, Tamil Nadu, Goa. Bottom: Bihar, Jharkhand.',
+    'Composite Water Management Index: NITI Aayog. 21 cities face Day Zero by 2030 without intervention.',
+    'DMEO (Development Monitoring and Evaluation Office): Replaced PEO. Monitors 400+ government schemes.',
+    'Rolling Plan tried by Janata government (1978) under PM Morarji Desai. Abandoned by Indira Gandhi.',
+    'Solow Model: Long-run growth from technological progress (TFP), not just capital accumulation. India\'s TFP improved post-1991.',
+    'NITI Aayog privatisation role: Recommended Air India sale, BPCL disinvestment, strategic vs non-strategic sector classification.',
+    'GST Council (Article 279A): Most successful federal body. 75% weighted majority (Centre 33%, States 67%). Consensus-based.',
+    'District Planning Committees (73rd/74th Amendments): Mandated integrated development plans. Weak in practice — 3F problem (funds, functions, functionaries).',
+    'Economic Survey regularly discusses India\'s growth strategy: CapEx-led growth, PLI for manufacturing, cooperative federalism.',
+    'India\'s "opportunity cost" of slow growth: If India had grown at 6% from 1960 instead of 3.5%, per capita income would have been 4x higher by 1990.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Planning Commission vs NITI Aayog",
-      "headers": [
-        "Feature",
-        "Planning Commission",
-        "NITI Aayog"
+      title: 'Planning Commission vs NITI Aayog',
+      headers: ['Feature', 'Planning Commission', 'NITI Aayog'],
+      rows: [
+        ['Established', '1950', '2015'],
+        ['Nature', 'Directive planner', 'Advisory think tank'],
+        ['Fund allocation', 'Yes (Plan transfers, Gadgil Formula)', 'No (shifted to Finance Commission)'],
+        ['Approach', 'Top-down, centralised', 'Bottom-up, cooperative federalism'],
+        ['Chairman', 'PM', 'PM (Vice-Chairman runs operations)'],
+        ['States\' role', 'Dependent on Centre for funds', 'Compete on rankings, indices'],
       ],
-      "rows": [
-        [
-          "Established",
-          "1950",
-          "2015"
-        ],
-        [
-          "Nature",
-          "Directive planner",
-          "Advisory think tank"
-        ],
-        [
-          "Fund allocation",
-          "Yes (Plan transfers)",
-          "No (shifted to Finance Commission)"
-        ],
-        [
-          "Approach",
-          "Top-down",
-          "Bottom-up, cooperative federalism"
-        ],
-        [
-          "Chairman",
-          "PM",
-          "PM (with Vice-Chairman for operations)"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "FYP Focus — \"Agriculture, Industry, Self-reliance...\"",
-      "mnemonic": "1st: Agriculture. 2nd: Heavy Industry. 3rd: Self-reliance. 4th: Social Justice. 5th: Poverty",
-      "explanation": "First five FYPs in order: 1st = Agriculture (Harrod-Domar), 2nd = Heavy Industry (Mahalanobis), 3rd = Self-reliance (disrupted by wars), 4th = Social Justice (Gadgil Formula, Green Revolution), 5th = Poverty eradication (Garibi Hatao)."
-    }
-  ]
+      title: 'Finance Commission vs Planning Commission',
+      headers: ['Feature', 'Finance Commission', 'Planning Commission (now NITI)'],
+      rows: [
+        ['Constitutional status', 'Article 280 (constitutional)', 'Cabinet Resolution (extra-constitutional)'],
+        ['Transfer type', 'Tax devolution (untied)', 'Plan transfers (tied/conditional)'],
+        ['Basis', 'Formula-based (population, area, income)', 'Gadgil Formula + discretionary'],
+        ['Frequency', 'Every 5 years', 'Annual plan allocation'],
+        ['Current status', 'Active (15th FC)', 'Abolished/replaced by NITI Aayog'],
+      ],
+    },
+    {
+      title: 'Key Five Year Plans',
+      headers: ['FYP', 'Period', 'Model/Focus', 'Growth'],
+      rows: [
+        ['1st', '1951-56', 'Harrod-Domar / Agriculture', '3.6%'],
+        ['2nd', '1956-61', 'Mahalanobis / Heavy Industry', '4.1%'],
+        ['5th', '1974-79', 'Garibi Hatao / Poverty', '4.8%'],
+        ['7th', '1985-90', 'Technology / Modernisation', '6.01%'],
+        ['8th', '1992-97', 'Post-LPG / Market', '6.8%'],
+        ['12th', '2012-17', 'Inclusive Growth / Last FYP', 'approximately 6.7%'],
+      ],
+    },
+    {
+      title: 'Pre-Independence Economic Plans',
+      headers: ['Plan', 'Year', 'Proponent', 'Key Idea'],
+      rows: [
+        ['Visvesvaraya Plan', '1934', 'M. Visvesvaraya', 'Planned industrialisation; double income in 10 years'],
+        ['Bombay Plan', '1944', 'Tata, Birla et al', 'Rs 10,000 crore state-led investment; 15 years'],
+        ['Gandhian Plan', '1944', 'Sriman Narayan', 'Village-centred, cottage industry, decentralised'],
+        ['People\'s Plan', '1945', 'M.N. Roy', 'Marxist: collectivised agriculture, state ownership'],
+        ['Sarvodaya Plan', '1950', 'Jayaprakash Narayan', 'Gandhian sarvodaya, decentralised governance'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'FYP Focus — "Agriculture, Industry, Self-reliance..."',
+      mnemonic: '1st: Agriculture. 2nd: Heavy Industry. 3rd: Self-reliance. 4th: Social Justice. 5th: Poverty',
+      explanation: 'First five FYPs in order: 1st = Agriculture (Harrod-Domar), 2nd = Heavy Industry (Mahalanobis), 3rd = Self-reliance (disrupted by wars), 4th = Social Justice (Gadgil Formula, Green Revolution), 5th = Poverty eradication (Garibi Hatao).',
+    },
+    {
+      title: 'Gadgil Formula Weights — "60-25-7.5-7.5"',
+      mnemonic: 'Population 60%, Per Capita Income 25%, Tax effort 7.5%, Special problems 7.5%',
+      explanation: 'Original Gadgil Formula (1969) for allocating central Plan assistance to states. Modified in 1980 (Indira Gandhi) and 1990 (Pranab Mukherjee). Became irrelevant after NITI Aayog replaced Planning Commission.',
+    },
+    {
+      title: 'Plan Holidays — "66-69 and 90-92"',
+      mnemonic: 'First: 1966-69 (wars + drought). Second: 1990-92 (political instability + BOP crisis)',
+      explanation: 'Two plan holidays when Five Year Plans were suspended and annual plans operated. First due to Indo-China War (1962), Indo-Pak War (1965), and drought. Second due to political instability (VP Singh, Chandra Shekhar govts) and the 1991 Balance of Payments crisis.',
+    },
+    {
+      title: 'NITI Aayog Key Indices — "SAW-CI"',
+      mnemonic: 'SDG India Index, Aspirational Districts, Water Management Index, Composite Health Index, Innovation Index',
+      explanation: 'NITI Aayog publishes multiple state ranking indices that promote competitive federalism: SDG India Index, Aspirational Districts Programme, Composite Water Management Index, Health Index, India Innovation Index.',
+    },
+  ],
 }

@@ -1,61 +1,142 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const infrastructureRevision: SubjectRevision = {
-  "topic": "infrastructure",
-  "bullets": [
-    "India: 2nd largest road network (~6.4 million km). National Highways ~1.46 lakh km.",
-    "Bharatmala: Highway development. Sagarmala: Port-led development. UDAN: Regional air connectivity.",
-    "Indian Railways: 4th largest network (~68,000 km). DFC: Eastern (1,337 km) and Western (1,506 km).",
-    "Installed power capacity: ~430 GW. Thermal ~57%, Renewable ~43% (solar ~18%, wind ~11%, hydro ~11%).",
-    "Net Zero target: 2070. Non-fossil fuel capacity: 500 GW by 2030. COP26 Glasgow announcements.",
-    "National Green Hydrogen Mission: 5 MMT by 2030. Rs 19,744 crore outlay.",
-    "PPP Models: BOT-Toll, BOT-Annuity, DBFOT, HAM (40% govt + 60% annuity), EPC (100% govt).",
-    "NIP (National Infrastructure Pipeline): Rs 111 lakh crore (2020-25).",
-    "Jal Jeevan Mission: Piped water to all rural households. 17% (2019) → ~77% (2024).",
-    "ISA (International Solar Alliance): India-France, HQ Gurugram. 120+ members."
+  topic: 'infrastructure',
+  bullets: [
+    'India: 2nd largest road network (~6.4 million km). National Highways ~1.46 lakh km (2% of network, 40% of traffic). State Highways ~1.79 lakh km.',
+    'Bharatmala Pariyojana: Phase I — 34,800 km (Rs 5.35 lakh crore). Economic corridors, inter-corridors, feeder routes, border/coastal roads. Approved 2017.',
+    'Sagarmala: Port-led development. 12 major + 200+ minor ports. Cargo capacity target: 3,500+ MTPA. Port modernisation, coastal shipping, inland waterways.',
+    'UDAN (Ude Desh ka Aam Naagrik): Regional Connectivity Scheme (2017). Fare cap Rs 2,500 for 1 hour. 480+ UDAN routes awarded. Viability gap funding for airlines.',
+    'Indian Railways: 4th largest network (~68,000 km). DFC: Eastern (1,337 km Ludhiana-Dankuni) + Western (1,506 km Dadri-JNPT). JICA-funded.',
+    'Vande Bharat Express: Semi-high-speed (max 160 km/h). 100+ trains planned. Designed by ICF Chennai. Indigenously built (Make in India showcase).',
+    'Railway electrification: 100% broad gauge electrification target by 2023-24 (achieved ~95% by 2024). Net zero railways by 2030.',
+    'Kavach: Indigenous Automatic Train Protection system. SIL-4 safety standard. Prevents collisions. 1,500 km sanctioned. Rs 30,000 crore allocation.',
+    'Installed power capacity: ~430 GW (2024). Thermal ~57% (coal ~49%, gas ~6%, nuclear ~2%), Renewable ~43% (solar ~18%, wind ~11%, hydro ~11%, bio ~3%).',
+    'Solar: 81.8 GW installed (2024). PM Surya Ghar Muft Bijli Yojana: 1 crore rooftop solar households. ISA HQ Gurugram, 120+ members.',
+    'National Solar Mission (JNNSM 2010): Target revised from 20 GW to 100 GW by 2022 (achieved ~81 GW). Solar park scheme: 40 parks, 40 GW.',
+    'Wind energy: ~46 GW installed. Gujarat, Tamil Nadu, Rajasthan, Karnataka top states. Offshore wind target: 37 GW by 2030. First offshore park: Gulf of Khambhat.',
+    'National Green Hydrogen Mission: 5 MMT by 2030. Rs 19,744 crore. SIGHT scheme for electrolyser and production incentives. Target: $1/kg green hydrogen.',
+    'Net Zero target: India committed to 2070 (COP26 Glasgow, 2021). Panchamrit pledges: 500 GW non-fossil by 2030, 50% energy from renewables, reduce 1 BT carbon.',
+    'Carbon Credit Trading Scheme (2023): MoEFCC notification. Compliance market (Perform Achieve Trade - PAT) + voluntary market. Bureau of Energy Efficiency as administrator.',
+    'PPP Models: BOT-Toll (private bears revenue risk), BOT-Annuity (govt pays annuity), HAM (40% govt + 60% annuity — dominant model since 2016), EPC (100% govt), DBFOT.',
+    'NIP (National Infrastructure Pipeline): Rs 111 lakh crore (2020-25). Sectors: energy 24%, roads 18%, railways 12%, urban 16%. Centre 39%, states 40%, private 21%.',
+    'National Monetisation Pipeline (NMP): Rs 6 lakh crore (2021-25). Monetise brownfield assets (roads, railways, power, telecom towers, airports). InvITs/REITs.',
+    'PM Gati Shakti: National Master Plan for multimodal connectivity (2021). 16 ministries on single GIS platform. 7 engines: roads, railways, airports, ports, mass transit, waterways, logistics.',
+    'Jal Jeevan Mission: Piped water (55 lpcd) to all rural households. Rs 3.6 lakh crore. Coverage: 17% (2019) → ~77% (2024). Har Ghar Jal certification for states.',
+    'Swachh Bharat Mission: SBM-G Phase I (ODF) + Phase II (ODF Plus — solid/liquid waste). SBM-Urban 2.0: garbage-free cities. 12+ crore toilets built.',
+    'PMAY (Pradhan Mantri Awas Yojana): Housing for All. PMAY-Urban: 1.2+ crore houses sanctioned. PMAY-Gramin: 2.95 crore houses. CLSS for EWS/LIG/MIG.',
+    'Digital infrastructure: 9.5 lakh km OFC laid. BharatNet: 6.4 lakh GPs connected. 5G: 4.15 lakh towers (2024). India Stack: Aadhaar + UPI + DigiLocker.',
+    'Smart Cities Mission: 100 cities selected. Rs 2.05 lakh crore total investment. Integrated Command & Control Centres (ICCC). Convergence with AMRUT.',
+    'AMRUT 2.0: Water supply + sewerage in 500 cities. Rs 2.87 lakh crore. Water bodies rejuvenation. 100% coverage of household tap connections target.',
+    'Logistics Performance: India ranked 38th in LPI (2023, up from 44th in 2018). Logistics cost: ~14-16% of GDP (target: <10%). National Logistics Policy (2022).',
+    'Aviation: 148 airports (from 74 in 2014). DISHA (Digitally Integrated & Sustainable Hub for Aviation). Air India privatisation (Tata, 2022). IndiGo = world\'s 7th largest.',
+    'Inland waterways: 111 National Waterways declared (NW Act 2016). NW-1 (Ganga, 1,620 km) most developed. JMVP (Jal Marg Vikas Project) with World Bank.',
+    'Nuclear energy: 23 reactors, 7,480 MW capacity. 10 fleet-mode PHWR (700 MW each) under construction. Civil Nuclear Agreement (2008) with NSG waiver.',
+    'Dedicated Freight Corridor: EDFC (operational) + WDFC (near completion 2024). Speed: 100 km/h freight. Double-stack containers on Western corridor.',
+    'Irrigation: Net irrigated area ~73 million hectares (~55% of net sown area). PMKSY (2015): Har Khet ko Paani. Micro-irrigation: 1.42 crore hectares coverage.',
+    'Infrastructure financing: IIFCL, NaBFID (Rs 1 lakh crore capitalisation), NIIF (Rs 40,000 crore). Municipal bonds (Pune, Indore pioneers). Green bonds by sovereign.',
+    'India Infrastructure Finance Company (IIFCL): Take-out finance, subordinate debt for PPP. NaBFID (2021): Development Finance Institution for long-tenure infra lending.',
+    'Telecom: India = 2nd largest mobile market (1.17 billion subscribers). Data cost: cheapest globally (~Rs 10/GB). Tele-density: 85%. 4G/5G coverage expanding rapidly.',
+    'PM E-Vidya: One Nation One Digital Platform. DIKSHA (school), SWAYAM (higher ed), e-PG Pathshala, National Digital Library. Digital education infrastructure.',
+    'Water crisis: Per capita water availability declining (5,177 m3 in 1951 → 1,486 m3 in 2021). Water-stressed threshold: 1,700 m3. Composite Water Management Index by NITI.',
+    'Dam safety: Dam Safety Act 2021. National Committee on Dam Safety. State Dam Safety Organisations. India has 5,700+ large dams (3rd highest globally).',
+    'EV infrastructure: FAME-II scheme (Rs 10,000 crore). 12,146 public charging stations (2024). Battery swapping policy. PLI for ACC battery: Rs 18,100 crore.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "PPP Models in Infrastructure",
-      "headers": [
-        "Model",
-        "Govt Funding",
-        "Risk Bearer",
-        "Used For"
+      title: 'PPP Models in Infrastructure',
+      headers: ['Model', 'Govt Funding', 'Risk Bearer', 'Typical Use'],
+      rows: [
+        ['BOT-Toll', 'Nil', 'Private (revenue risk)', 'High-traffic highways'],
+        ['BOT-Annuity', 'Annuity payments', 'Government (revenue)', 'Moderate-traffic roads'],
+        ['HAM', '40% during construction', 'Shared (construction: private, revenue: govt)', 'Most highway projects since 2016'],
+        ['EPC', '100%', 'Government', 'Low-traffic / strategic areas'],
+        ['DBFOT', 'Nil (Design-Build-Finance-Operate-Transfer)', 'Private', 'Premium expressways'],
       ],
-      "rows": [
-        [
-          "BOT-Toll",
-          "Nil",
-          "Private (revenue risk)",
-          "High-traffic highways"
-        ],
-        [
-          "BOT-Annuity",
-          "Annuity payments",
-          "Government (revenue)",
-          "Moderate-traffic roads"
-        ],
-        [
-          "HAM",
-          "40% during construction",
-          "Shared",
-          "Most highway projects"
-        ],
-        [
-          "EPC",
-          "100%",
-          "Government",
-          "Low-traffic areas"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "India's Maritime & Land Initiatives — \"BSU\"",
-      "mnemonic": "Bharatmala (roads), Sagarmala (ports), UDAN (airports)",
-      "explanation": "Three major connectivity initiatives: Bharatmala Pariyojana = highway network. Sagarmala = port-led development and coastal shipping. UDAN (Ude Desh ka Aam Naagrik) = regional air connectivity to underserved airports."
-    }
-  ]
+      title: 'Key Connectivity Missions',
+      headers: ['Mission', 'Sector', 'Launch Year', 'Key Target', 'Funding'],
+      rows: [
+        ['Bharatmala', 'Highways', '2017', '34,800 km Phase I', 'Rs 5.35 lakh crore'],
+        ['Sagarmala', 'Ports & Coastal', '2015', '3,500+ MTPA cargo capacity', 'Rs 8 lakh crore (est.)'],
+        ['UDAN', 'Aviation', '2017', '480+ routes, Rs 2,500 fare cap', 'Viability Gap Funding'],
+        ['PM Gati Shakti', 'Multimodal', '2021', '16 ministries on GIS', 'Integrated planning'],
+        ['BharatNet', 'Digital/Telecom', '2011', '6.4 lakh GPs broadband', 'Rs 61,109 crore'],
+      ],
+    },
+    {
+      title: 'Energy Mix — Installed Capacity (2024)',
+      headers: ['Source', 'Capacity (GW)', '% Share', 'Key Initiative'],
+      rows: [
+        ['Coal', '~210', '~49%', 'Supercritical technology push'],
+        ['Solar', '~82', '~18%', 'PM Surya Ghar, Solar parks'],
+        ['Wind', '~46', '~11%', 'Offshore wind 37 GW target'],
+        ['Hydro', '~47', '~11%', 'PSP (pumped storage) expansion'],
+        ['Gas', '~25', '~6%', 'Stranded assets, LNG import'],
+        ['Nuclear', '~7.5', '~2%', '10 PHWR fleet-mode construction'],
+        ['Biomass/Others', '~12', '~3%', 'Waste-to-energy, co-generation'],
+      ],
+    },
+    {
+      title: 'Infrastructure Financing Institutions',
+      headers: ['Institution', 'Est.', 'Type', 'Key Role'],
+      rows: [
+        ['IIFCL', '2006', 'GoI company', 'Take-out finance, subordinate debt for PPP'],
+        ['NaBFID', '2021', 'DFI (RBI-regulated)', 'Long-tenure infra lending, Rs 1 lakh crore'],
+        ['NIIF', '2015', 'Sovereign wealth fund', 'Anchor + co-invest (Master Fund, FoF, Strategic)'],
+        ['IREDA', '1987', 'NBFC', 'Renewable energy project finance'],
+        ['InvITs/REITs', '2014 (SEBI regs)', 'Trust', 'Asset monetisation, retail investor access'],
+      ],
+    },
+    {
+      title: 'Urban Infrastructure Missions',
+      headers: ['Mission', 'Focus', 'Cities Covered', 'Outlay', 'Key Feature'],
+      rows: [
+        ['Smart Cities', 'Technology + governance', '100', 'Rs 2.05 lakh crore', 'ICCC, Area-Based Development'],
+        ['AMRUT 2.0', 'Water + sewerage', '500', 'Rs 2.87 lakh crore', '100% HH tap connections'],
+        ['PMAY-Urban', 'Housing for All', 'All statutory towns', 'Rs 2+ lakh crore', 'CLSS, In-situ slum rehabilitation'],
+        ['SBM-Urban 2.0', 'Sanitation + waste', 'All ULBs', 'Rs 1.41 lakh crore', 'Garbage-free cities, ODF++'],
+        ['Metro expansion', 'Mass rapid transit', '27 cities', 'Rs 3+ lakh crore', '900+ km operational, 1,000+ km planned'],
+      ],
+    },
+    {
+      title: 'Water Infrastructure Programmes',
+      headers: ['Programme', 'Sector', 'Target', 'Outlay', 'Status'],
+      rows: [
+        ['Jal Jeevan Mission', 'Rural drinking water', 'Piped water all HH (55 lpcd)', 'Rs 3.6 lakh crore', '~77% coverage (2024)'],
+        ['PMKSY', 'Irrigation', 'Har Khet ko Paani', 'Rs 93,068 crore', 'Micro-irrigation 1.42 crore ha'],
+        ['Namami Gange', 'River cleaning', 'Clean Ganga + tributaries', 'Rs 37,396 crore', '42 STPs commissioned'],
+        ['AMRUT 2.0', 'Urban water', '100% urban tap connections', 'Rs 2.87 lakh crore', 'Ongoing'],
+        ['Dam Rehabilitation', 'Dam safety', '736 dams across 19 states', 'Rs 10,211 crore (DRIP)', 'World Bank-assisted'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Connectivity Missions — "BSU-G"',
+      mnemonic: 'Bharatmala (roads), Sagarmala (ports), UDAN (airports), Gati Shakti (multimodal)',
+      explanation: 'Four major connectivity initiatives covering all transport modes. Bharatmala = highways. Sagarmala = port-led. UDAN = regional aviation. PM Gati Shakti = integrated multimodal master plan on GIS.',
+    },
+    {
+      title: 'Panchamrit Pledges (COP26) — "5-N-R-1-Z"',
+      mnemonic: '500 GW non-fossil, Net zero 2070, Renewable 50%, 1 BT carbon reduction, Zero net (from projected)',
+      explanation: 'India\'s five climate pledges at Glasgow COP26: 500 GW non-fossil capacity by 2030, net zero by 2070, 50% energy from renewables by 2030, reduce total projected carbon by 1 billion tonnes by 2030, reduce carbon intensity by 45% by 2030.',
+    },
+    {
+      title: 'Infrastructure DFIs — "I-N-N-I"',
+      mnemonic: 'IIFCL, NaBFID, NIIF, IREDA',
+      explanation: 'Key infrastructure financing institutions. IIFCL (2006): take-out finance for PPP. NaBFID (2021): new-age DFI with Rs 1 lakh crore. NIIF (2015): sovereign fund. IREDA (1987): renewable energy finance.',
+    },
+    {
+      title: 'NIP Sector Split — "ERRU"',
+      mnemonic: 'Energy 24%, Roads 18%, Railways 12%, Urban 16%',
+      explanation: 'National Infrastructure Pipeline (Rs 111 lakh crore, 2020-25) sector allocation. Energy sector gets largest share, followed by roads, urban infrastructure, and railways. Centre:States:Private = 39:40:21.',
+    },
+    {
+      title: 'PPP Progression — "B-B-H-E"',
+      mnemonic: 'BOT-Toll → BOT-Annuity → HAM → EPC (risk shifts from private to government)',
+      explanation: 'PPP model spectrum by risk allocation. BOT-Toll = 100% private risk. BOT-Annuity = govt pays annuity. HAM = 40-60 hybrid. EPC = 100% govt funded. Post-2016, HAM dominates highway contracts.',
+    },
+  ],
 }

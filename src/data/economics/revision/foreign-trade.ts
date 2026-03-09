@@ -1,56 +1,124 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const foreignTradeRevision: SubjectRevision = {
-  "topic": "foreign-trade",
-  "bullets": [
-    "India's total trade (2023-24): ~$1.56 trillion. Merchandise exports: ~$437B. Services exports: ~$340B.",
-    "Trade deficit (merchandise): ~$240 billion. Services surplus: ~$160 billion.",
-    "Largest trade partner: USA. Largest import source: China. Key imports: crude oil, gold, electronics.",
-    "CAD (Current Account Deficit): ~1.2% of GDP (2023-24). BoP = Current Account + Capital Account.",
-    "WTO: India is founding member (1995). MFN principle: Non-discrimination among WTO members.",
-    "India withdrew from RCEP (2019) — concerns about cheap Chinese imports.",
-    "Recent FTAs: India-UAE CEPA (2022), India-Australia ECTA (2022).",
-    "RoDTEP replaced MEIS: Remission of duties and taxes on exported products.",
-    "SEZs: Tax incentives for export-oriented units. Regulated under SEZ Act 2005.",
-    "Anti-dumping duty: When foreign goods sold below fair market value to capture market."
+  topic: 'foreign-trade',
+  bullets: [
+    'India\'s total trade (2023-24): ~$1.56 trillion. Merchandise exports: ~$437B. Services exports: ~$340B.',
+    'Trade deficit (merchandise): ~$240 billion. Services surplus: ~$162 billion. Net CAD: ~1.2% of GDP.',
+    'Key exports: Petroleum products, IT services, gems & jewellery, pharma (60% global vaccines), engineering goods, textiles, rice (world\'s largest).',
+    'Key imports: Crude oil (27%, ~$160B — imports 85%), gold (~$45B), electronics ($75B), coal ($35B), machinery, chemicals, vegetable oils.',
+    'Largest trade partner: USA ($118B). Largest import source: China ($101B imports, $17B exports, $84B deficit).',
+    'CAD (Current Account Deficit): ~1.2% of GDP (FY24). Was 4.8% in FY13 (crisis). Sustainable level: 2-2.5%.',
+    'BoP = Current Account + Capital Account. Surplus → reserves increase. Deficit → reserves decrease.',
+    'Current Account: Trade balance + Services + Primary income (investment income) + Secondary income (remittances).',
+    'Capital Account: FDI + FPI + ECBs + NRI deposits + Banking capital + Short-term credits.',
+    'WTO: Founded 1995. India founding member. HQ Geneva. Key: GATT (goods), GATS (services), TRIPS (IP), AoA (agriculture).',
+    'MFN (Most Favoured Nation): Non-discrimination — concession to one WTO member extends to all. Exception: FTAs.',
+    'India withdrew from RCEP (2019) — concerns about Chinese imports. 15 countries (10 ASEAN + China + Japan + South Korea + Australia + NZ).',
+    'Recent FTAs: India-UAE CEPA (2022), India-Australia ECTA (2022). Ongoing: India-UK, India-EU, India-GCC.',
+    'FTP 2023: No sunset clause. RoDTEP for remission. Districts as Export Hubs. E-commerce exports promotion.',
+    'RoDTEP replaced MEIS (WTO-compliant). Remits unrebated taxes: electricity duty, mandi tax, fuel used in transport.',
+    'Anti-dumping duty: Foreign goods sold below fair value. DGTR investigates. India: 300+ measures (50%+ against China).',
+    'Countervailing duty: Offsets foreign government subsidies. Safeguard duty: Temporary protection against import surge.',
+    'SEZs: 268 operational. SEZ Act 2005. Exports: Rs 16+ lakh crore. Employment: 29 lakh. Tax benefits sunset for new units.',
+    'EXIM Bank: Lines of Credit to 65+ countries ($31+B) — development diplomacy. Buyer\'s credit, project exports.',
+    'ECGC: Export credit insurance. Political + commercial risk. Standard: 90% cover. Nirvik scheme (2020) enhanced coverage.',
+    'India-China deficit: $84 billion. Key imports: electronic components, APIs (70% of India\'s requirement), solar panels, machinery.',
+    'Atmanirbhar Bharat: PLI for electronics/pharma to reduce China dependency. Press Note 3 blocks Chinese FDI. 300+ apps banned.',
+    'Services exports: $340B — 4th largest globally. IT/BPM ~$200B. GCCs: 1,600+ in India (50% of global GCCs).',
+    'Remittances: $125 billion (FY24) — world\'s largest recipient. Counter-cyclical (more when rupee depreciates).',
+    'India\'s average tariff: 18.1% (WTO data) — among highest in major economies. China: 7.5%, USA: 3.4%, EU: 5.1%.',
+    'FTA utilisation rate: ~25% (low). ASEAN countries: 50-60%. Complex rules of origin certification deters use.',
+    'WTO Bali (2013): Peace clause for public stockholding for food security. India demands permanent solution.',
+    'WTO TRIPS: Doha Declaration (2001) — right to compulsory licensing for medicines. India issued CL for Nexavar (2012).',
+    'CBAM (EU): Carbon border tax from 2023. Impacts Indian steel, aluminium, cement exports. India calls it "green protectionism."',
+    'China+1 strategy: Companies diversifying from China. Apple, Samsung, Google expanding India manufacturing.',
+    'Oil price impact: $10/barrel crude increase → ~$15B import bill increase → ~0.4% to CAD → rupee weakens.',
+    'India\'s trade evolution: Import substitution (pre-1991) → Trade liberalisation (1991-2014) → Strategic trade (2014-present, Atmanirbhar).',
+    'Supply chain resilience: National Logistics Policy (2022) target: Logistics cost from 14% to 8% of GDP. PM Gati Shakti for connectivity.',
+    'Digital trade: India opposes WTO e-commerce moratorium. Estimates $500M annual revenue loss from moratorium.',
+    'Trade facilitation: India implemented TFA (Trade Facilitation Agreement, WTO 2017). ICEGATE for electronic customs. Faceless customs.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Current Account vs Capital Account of BoP",
-      "headers": [
-        "Feature",
-        "Current Account",
-        "Capital Account"
+      title: 'Current Account vs Capital Account of BoP',
+      headers: ['Feature', 'Current Account', 'Capital Account'],
+      rows: [
+        ['Includes', 'Trade, services, income, remittances', 'FDI, FPI, ECBs, NRI deposits'],
+        ['Nature', 'Income/consumption flows', 'Investment/borrowing flows'],
+        ['India\'s position', 'Usually deficit (CAD)', 'Usually surplus'],
+        ['Key component', 'Trade balance + IT services', 'FDI + FPI'],
+        ['Volatility', 'Moderate (oil-linked)', 'High (FPI is volatile)'],
       ],
-      "rows": [
-        [
-          "Includes",
-          "Trade, services, remittances",
-          "FDI, FPI, ECBs, NRI deposits"
-        ],
-        [
-          "Nature",
-          "Income/consumption flows",
-          "Investment/borrowing flows"
-        ],
-        [
-          "India's position",
-          "Usually deficit (CAD)",
-          "Usually surplus"
-        ],
-        [
-          "Key component",
-          "Trade balance",
-          "FDI + FPI"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "BoP = CA + KA — \"Current + Capital\"",
-      "mnemonic": "Balance of Payments = Current Account + Capital Account",
-      "explanation": "The BoP has two main accounts. Current Account covers trade, services, income, and transfers. Capital Account covers investment flows (FDI, FPI) and borrowings. Overall BoP surplus → forex reserves increase."
-    }
-  ]
+      title: 'FTA vs CEPA vs ECTA',
+      headers: ['Agreement', 'Full Form', 'Coverage', 'India Example'],
+      rows: [
+        ['FTA', 'Free Trade Agreement', 'Tariff reduction on goods', 'SAFTA, AIFTA (ASEAN)'],
+        ['CEPA', 'Comprehensive Economic Partnership', 'Goods + services + investment + IP', 'India-Japan, India-UAE'],
+        ['CECA', 'Comprehensive Economic Cooperation', 'Broader than FTA, sector-wise', 'India-Singapore'],
+        ['ECTA', 'Economic Cooperation and Trade', 'Interim/limited scope', 'India-Australia'],
+        ['PTA', 'Preferential Trade Agreement', 'Limited tariff preferences', 'India-MERCOSUR, India-Chile'],
+      ],
+    },
+    {
+      title: 'Trade Defence Instruments',
+      headers: ['Instrument', 'Trigger', 'Duration', 'Purpose'],
+      rows: [
+        ['Anti-dumping duty', 'Goods sold below fair value', '5 years (renewable)', 'Counter unfair pricing'],
+        ['Countervailing duty', 'Foreign govt subsidies', '5 years', 'Offset foreign subsidies'],
+        ['Safeguard duty', 'Sudden import surge', '4 years (max 8)', 'Temporary protection'],
+      ],
+    },
+    {
+      title: 'India\'s Trade with Key Partners (2023-24)',
+      headers: ['Country', 'Total Trade ($B)', 'India\'s Balance', 'Key Trade Items'],
+      rows: [
+        ['USA', '118', 'Surplus', 'IT services, pharma, gems → India; machinery, oil'],
+        ['China', '118', 'Deficit ($84B)', 'Electronics, APIs → India; iron ore, chemicals'],
+        ['UAE', '83', 'Deficit', 'Oil → India; gems, petroleum products'],
+        ['Saudi Arabia', '52', 'Deficit', 'Crude oil → India; petroleum products, rice'],
+        ['Singapore', '35', 'Deficit', 'Electronics → India; petroleum products'],
+      ],
+    },
+    {
+      title: 'MEIS vs RoDTEP',
+      headers: ['Feature', 'MEIS', 'RoDTEP'],
+      rows: [
+        ['Full form', 'Merchandise Exports from India Scheme', 'Remission of Duties and Taxes on Exported Products'],
+        ['WTO compliance', 'Challenged as export subsidy', 'WTO-compliant (remission not incentive)'],
+        ['Benefit', '2-5% of FOB value as scrips', '0.3-4.3% of FOB value'],
+        ['Coverage', 'Specified products/markets', 'All exported goods (with exceptions)'],
+        ['Status', 'Replaced from Jan 2021', 'Currently operational'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'BoP = CA + KA — "Current + Capital"',
+      mnemonic: 'Balance of Payments = Current Account + Capital Account + Errors & Omissions',
+      explanation: 'Current Account covers trade, services, income, transfers. Capital Account covers FDI, FPI, borrowings. BoP surplus → reserves increase.',
+    },
+    {
+      title: 'WTO Agreements — "GATS-TRIPS-AoA"',
+      mnemonic: 'GATT (goods), GATS (services), TRIPS (intellectual property), TRIMS (investment), AoA (agriculture), SPS (sanitary), TBT (technical barriers)',
+      explanation: 'Key WTO agreements. India is active in AoA (public stockholding), TRIPS (medicines), and GATS (Mode 4 — movement of persons).',
+    },
+    {
+      title: 'Trade Deficit Drivers — "OGE"',
+      mnemonic: 'O: Oil ($160B). G: Gold ($45B). E: Electronics ($75B)',
+      explanation: 'Three items account for ~75% of India\'s merchandise trade deficit. Reducing dependence on these imports is key to CAD management.',
+    },
+    {
+      title: 'India\'s Recent FTAs — "UAE-AUS"',
+      mnemonic: 'India-UAE CEPA (2022). India-Australia ECTA (2022). Ongoing: UK, EU, GCC',
+      explanation: 'First major FTAs in a decade after RCEP withdrawal (2019). CEPA is comprehensive (goods + services + investment). ECTA is interim.',
+    },
+    {
+      title: 'RCEP — Why India Withdrew',
+      mnemonic: 'C-SAAM: China flood fears. S: Safeguards inadequate. A: Agriculture vulnerable. A: Auto-trigger rejected. M: Market access asymmetric',
+      explanation: 'India withdrew from RCEP (2019) — 15 countries (10 ASEAN + 5). Concerns about cheap Chinese imports, inadequate safeguards, dairy/agriculture vulnerability.',
+    },
+  ],
 }

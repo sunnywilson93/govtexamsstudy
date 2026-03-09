@@ -1,69 +1,129 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const naturalVegetationRevision: SubjectRevision = {
-  "topic": "natural-vegetation",
-  "bullets": [
-    "Tropical Deciduous Forests are the most widespread type — about 65% of India's forest area.",
-    "Two sub-types of deciduous: Moist Deciduous (100-200 cm rainfall — teak, sal) and Dry Deciduous (70-100 cm).",
-    "Tropical Evergreen Forests found in areas with >200 cm rainfall — Western Ghats, NE India, Andaman Islands.",
-    "Teak dominates moist deciduous forests of central/south India; Sal dominates in eastern moist deciduous.",
-    "Thorn Forests found in <70 cm rainfall — Rajasthan, Gujarat; Khejri is state tree of Rajasthan.",
-    "Sundarbans (West Bengal) — largest mangrove area in India and the world.",
-    "India has about 4,992 sq km of mangroves (ISFR 2021).",
-    "Montane forests show vertical zonation: tropical (foothills) → sub-tropical → temperate → alpine meadows.",
-    "Shola forests (stunted montane evergreen) with grasslands found above 1,500 m in Nilgiris, Anaimalai.",
-    "Madhya Pradesh has the largest forest cover by area (77,482 sq km); Mizoram has highest % (84.53%).",
-    "National Forest Policy 1988 targets 33% geographic area under forest cover.",
-    "Forest Rights Act 2006 recognizes rights of forest-dwelling tribal communities."
+  topic: 'natural-vegetation',
+  bullets: [
+    'Tropical Deciduous Forests are the most widespread type — about 65% of India\'s forest area; trees shed leaves in dry season.',
+    'Two sub-types: Moist Deciduous (100-200 cm rainfall — teak, sal, bamboo) and Dry Deciduous (70-100 cm — teak, neem, palash).',
+    'Tropical Evergreen Forests found in areas with >200 cm rainfall — Western Ghats, NE India, Andaman Islands; dense canopy, 45-60 m tall.',
+    'Teak dominates moist deciduous forests of central/south India (MP, Maharashtra, Karnataka, Kerala).',
+    'Sal dominates eastern moist deciduous forests (Jharkhand, Chhattisgarh, Odisha, E. MP, sub-Himalayan belt).',
+    'Thorn Forests found in <70 cm rainfall — Rajasthan, Gujarat, Punjab, Haryana; trees: babool, ber, khejri, cactus.',
+    'Khejri (Prosopis cineraria) — state tree of Rajasthan; Bishnoi community sacrificed 363 lives protecting khejri trees in 1730.',
+    'Sundarbans (West Bengal) — largest mangrove area in India and the world (~4,260 sq km Indian side).',
+    'India has about 4,992 sq km of mangroves (ISFR 2021); 4th largest mangrove area globally.',
+    'Montane forests show vertical zonation: tropical (foothills) → subtropical (chir pine) → temperate (deodar, spruce) → alpine meadows.',
+    'Shola forests (stunted montane evergreen) with grasslands found above 1,500 m in Nilgiris, Anaimalai, Palani hills.',
+    'Bugyals (Uttarakhand) and Margs (Kashmir) — high-altitude alpine meadows used for seasonal grazing.',
+    'Western Ghats — UNESCO WHS (2012); one of 8 hottest biodiversity hotspots; 35% plant endemism; Silent Valley is pristine example.',
+    'Neelakurinji blooms once every 12 years in Western Ghats shola-grassland zone (last 2018, next 2030).',
+    'India has 4 biodiversity hotspots: Western Ghats, Eastern Himalayas, Indo-Burma, Sundaland (Nicobar Islands).',
+    'India is one of 17 megadiverse countries — hosts ~8% of world\'s species (~49,000 plant species, ~12,000 endemic).',
+    'Champion and Seth classification (1968) — standard Indian classification: 16 major forest types, 221 sub-types.',
+    'Madhya Pradesh has the largest forest cover by area (77,482 sq km); Mizoram has highest % (84.53%).',
+    'Total forest cover: 7,13,789 sq km (21.71%); forest + tree cover = 24.62% (ISFR 2021).',
+    'National Forest Policy 1988 targets 33% geographic area under forest cover (60% for hills, 20% for plains).',
+    'Indian Forest Act 1927 — classifies forests: Reserved (55%, strictest), Protected (29%), Village forests.',
+    'Forest Conservation Act 1980 — Central Govt approval needed to divert forest land to non-forest use.',
+    'Forest Rights Act 2006 — recognizes individual and community forest rights of forest-dwelling tribals.',
+    'CAMPA (Compensatory Afforestation) — ~Rs 54,000 crore accumulated; 90% to states for afforestation.',
+    'Green India Mission targets 5 million hectares additional forest + 5 million hectares quality improvement by 2030.',
+    'Jhum/Shifting cultivation — NE India (Mizoram, Nagaland, Meghalaya); fallow period shortened from 15-25 to 3-5 years.',
+    'NTFPs: Tendu leaves (~Rs 3,000 crore trade), sal seeds, lac (India = 50-60% world production), mahua, bamboo, honey.',
+    'National Bamboo Mission (2018) — promotes bamboo cultivation; India has 2nd-largest bamboo area after China.',
+    'India\'s forests are net carbon sink of 330.7 million tonnes CO2 equivalent/year (BUR-3 to UNFCCC).',
+    'Joint Forest Management (JFM) — ~1.18 lakh committees manage 28+ million hectares; community-based protection.',
+    'Invasive species: Lantana camara (most widespread), Prosopis juliflora, Parthenium, water hyacinth degrade Indian forests.',
+    'Grasslands — often classified as "wastelands"; support Great Indian Bustard, Indian wolf, blackbuck; need conservation policy.',
+    'Banni grassland (Gujarat, ~3,847 sq km) — India\'s largest tropical grassland; in Kutch district.',
+    'India\'s NDC under Paris Agreement: additional carbon sink of 2.5-3 billion tonnes CO2 by 2030 through forests.',
+    'Mangroves provide: coastal cyclone protection, fish breeding grounds, blue carbon sequestration (3-5x more than terrestrial forests).',
+    'Deodar (Cedrus deodara) — state tree of HP; "timber of the gods"; prized Himalayan temperate species.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Forest Types by Rainfall",
-      "headers": [
-        "Forest Type",
-        "Rainfall",
-        "Key Species",
-        "Region"
+      title: 'Forest Types by Rainfall and Key Species',
+      headers: ['Forest Type', 'Rainfall', 'Key Species', 'Region'],
+      rows: [
+        ['Tropical Evergreen', '>200 cm', 'Rosewood, ebony, mahogany', 'Western Ghats, NE India, Andaman'],
+        ['Moist Deciduous', '100-200 cm', 'Teak, sal, bamboo, sandalwood', 'Shiwaliks, NE, E. slopes W Ghats'],
+        ['Dry Deciduous', '70-100 cm', 'Teak, sal, neem, palash', 'Peninsular India, UP, Bihar'],
+        ['Thorn/Scrub', '<70 cm', 'Babool, ber, khejri, cactus', 'Rajasthan, Gujarat, rain-shadow'],
+        ['Mangrove', 'Coastal/tidal', 'Sundari, Rhizophora, Avicennia', 'Sundarbans, Bhitarkanika, Pichavaram'],
       ],
-      "rows": [
-        [
-          "Tropical Evergreen",
-          ">200 cm",
-          "Rosewood, ebony, mahogany",
-          "Western Ghats, NE India"
-        ],
-        [
-          "Moist Deciduous",
-          "100-200 cm",
-          "Teak, sal, bamboo",
-          "Shiwaliks, NE, E Ghats"
-        ],
-        [
-          "Dry Deciduous",
-          "70-100 cm",
-          "Teak, sal, neem",
-          "Peninsular India, UP, Bihar"
-        ],
-        [
-          "Thorn",
-          "<70 cm",
-          "Acacia, babool, khejri",
-          "Rajasthan, Gujarat"
-        ],
-        [
-          "Mangrove",
-          "Coastal/tidal",
-          "Rhizophora, Avicennia",
-          "Sundarbans, Bhitarkanika"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "States with Most Forest Cover",
-      "mnemonic": "MP > Arunachal > Chhattisgarh > Odisha > Maharashtra",
-      "explanation": "Top 5 states by absolute forest cover area. By percentage: Mizoram > Arunachal > Meghalaya > Manipur > Nagaland."
-    }
-  ]
+      title: 'Himalayan Vegetation Zonation',
+      headers: ['Zone', 'Altitude', 'Vegetation', 'Examples'],
+      rows: [
+        ['Tropical', 'Up to 1,000 m', 'Sal, teak, bamboo', 'Terai foothills'],
+        ['Subtropical', '1,000-2,000 m', 'Chir pine (W), oak/chestnut (E)', 'Shimla, Mussoorie belt'],
+        ['Temperate', '1,500-3,000 m', 'Deodar, spruce, silver fir, oak', 'Manali, Nainital, Darjeeling'],
+        ['Sub-alpine', '3,000-3,500 m', 'Juniper, rhododendron, birch', 'Tungnath, high passes'],
+        ['Alpine meadows', '3,500-4,500 m', 'Grasses, sedges, wildflowers', 'Bugyals (UK), Margs (Kashmir)'],
+        ['Tundra/Snow', 'Above 4,500 m', 'Mosses, lichens only', 'Permanent snowline'],
+      ],
+    },
+    {
+      title: 'Teak vs Sal Distribution',
+      headers: ['Feature', 'Teak (Tectona grandis)', 'Sal (Shorea robusta)'],
+      rows: [
+        ['Region', 'Central and South India', 'Eastern India and sub-Himalayan belt'],
+        ['States', 'MP, Maharashtra, Karnataka, Kerala', 'Jharkhand, Chhattisgarh, Odisha, UP'],
+        ['Forest type', 'Moist deciduous (dominant species)', 'Moist deciduous (dominant in east)'],
+        ['Value', 'Best Indian timber; termite-resistant', 'Hard, durable; railway sleepers'],
+        ['Cultural', 'No specific religious association', 'Sacred (Buddha born under sal tree)'],
+      ],
+    },
+    {
+      title: 'Forest Cover — Top States',
+      headers: ['By Area', 'sq km', 'By Percentage', '%'],
+      rows: [
+        ['Madhya Pradesh', '77,482', 'Mizoram', '84.53%'],
+        ['Arunachal Pradesh', '66,688', 'Arunachal Pradesh', '79.33%'],
+        ['Chhattisgarh', '55,547', 'Meghalaya', '76.33%'],
+        ['Odisha', '51,619', 'Manipur', '74.34%'],
+        ['Maharashtra', '50,778', 'Nagaland', '73.90%'],
+      ],
+    },
+    {
+      title: 'Forest Legislation Timeline',
+      headers: ['Law/Policy', 'Year', 'Key Provision'],
+      rows: [
+        ['Indian Forest Act', '1927', 'Reserved, Protected, Village forests classification'],
+        ['National Forest Policy', '1952', 'First post-independence policy; stressed protection'],
+        ['Forest Conservation Act', '1980', 'Central Govt approval for forest diversion'],
+        ['National Forest Policy', '1988', 'Ecological focus; 33% target; introduced JFM'],
+        ['Forest Rights Act (FRA)', '2006', 'Individual and community rights of forest-dwelling tribals'],
+        ['CAMPA Act', '2016', 'Compensatory afforestation fund management'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'States with Most Forest Cover (by area)',
+      mnemonic: 'MAC-OM → Madhya Pradesh > Arunachal > Chhattisgarh > Odisha > Maharashtra',
+      explanation: 'Top 5 states by absolute forest cover area. By percentage: Mizoram > Arunachal > Meghalaya > Manipur > Nagaland.',
+    },
+    {
+      title: 'Forest Types by Rainfall (descending)',
+      mnemonic: 'Every Moist Dry Thorn → Evergreen (>200) > Moist Deciduous (100-200) > Dry Deciduous (70-100) > Thorn (<70)',
+      explanation: 'The four major lowland forest types arranged by decreasing rainfall requirement.',
+    },
+    {
+      title: 'Himalayan Zones (ascending)',
+      mnemonic: 'Tropical-Subtropical-Temperate-Subalpine-Alpine-Tundra = "The Sun Touches Snow At Top"',
+      explanation: 'Six vegetation zones in the Himalayas from foothills to snowline.',
+    },
+    {
+      title: 'Key Forest Acts',
+      mnemonic: '1927-Forest Act, 1980-Conservation, 1988-Policy, 2006-FRA = "27-80-88-06"',
+      explanation: 'Four key forest legislation years: IFA 1927, FCA 1980, NFP 1988, FRA 2006.',
+    },
+    {
+      title: 'India\'s 4 Biodiversity Hotspots',
+      mnemonic: 'WEIS → Western Ghats, Eastern Himalayas, Indo-Burma, Sundaland (Nicobar)',
+      explanation: 'India has 4 of the world\'s 36 biodiversity hotspots.',
+    },
+  ],
 }

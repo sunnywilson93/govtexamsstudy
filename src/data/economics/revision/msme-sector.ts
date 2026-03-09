@@ -3,79 +3,124 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const msmeSectorRevision: SubjectRevision = {
   topic: 'msme-sector',
   bullets: [
-    "MSME classification (revised 2020): Both investment AND turnover criteria. No manufacturing-services distinction.",
-    "Micro: Investment ≤ Rs 1 crore AND Turnover ≤ Rs 5 crore. Small: ≤ Rs 10 crore AND ≤ Rs 50 crore. Medium: ≤ Rs 50 crore AND ≤ Rs 250 crore.",
-    "Udyam Registration: Aadhaar-based, free, paperless. 4.67 crore registrations (Dec 2024). Micro: 96% of registered MSMEs.",
-    "MSME sector: 30% of GDP. 48% of exports. 11.1 crore jobs. 6.3 crore estimated total MSMEs.",
-    "Credit gap: Demand Rs 69.3 lakh crore. Formal supply Rs 27 lakh crore. Gap Rs 42 lakh crore.",
-    "PMMY (MUDRA): Rs 27.75 lakh crore cumulative through 44.46 crore loans. Women: 68%. Average ticket: Rs 62,000.",
-    "CGTMSE: Collateral-free guarantee up to Rs 5 crore. GoI + SIDBI trust. 80+ lakh guarantees approved.",
-    "ECLGS (COVID): 20% additional credit. Rs 5 lakh crore guarantee cover. Rs 3.48 lakh crore disbursed. Prevented mass MSME bankruptcy.",
-    "GeM: Government procurement platform. GMV Rs 4.5+ lakh crore. 70+ lakh sellers (57% MSMEs). 25% procurement from MSMEs mandatory.",
-    "TReDS: Trade Receivables Discounting System. Rs 1.5+ lakh crore factored. RXIL, M1xchange, Invoicemart.",
-    "MSME Samadhaan: Delayed payment monitoring portal. Section 15-23 MSMED Act: Payment within 45 days mandatory.",
-    "PM Vishwakarma (2023): 18 traditional trades. Training, toolkit (Rs 15K), credit (Rs 1L+2L at 5%). Target: 30 lakh artisans.",
-    "ZED (Zero Defect Zero Effect): Quality certification for MSMEs. 32,000+ certified. Preference in government procurement.",
-    "ODOP (One District One Product): 1,233 products from 761 districts. Marketing and export promotion support.",
-    "MSME employment intensity: 120 workers per Rs 1 crore investment vs ~5 for large enterprises."
-],
+    'MSME classification (revised 2020): Both investment AND turnover criteria. No manufacturing-services distinction.',
+    'Micro: Investment up to Rs 1 crore AND Turnover up to Rs 5 crore. Small: up to Rs 10 crore AND up to Rs 50 crore. Medium: up to Rs 50 crore AND up to Rs 250 crore.',
+    'Both conditions must be met. If either exceeds threshold, enterprise classified in higher category.',
+    'Previous classification (pre-2020): Investment-only. Separate limits for manufacturing and services. Much lower thresholds.',
+    'Udyam Registration: Aadhaar-based, free, paperless. 4.67 crore registrations (Dec 2024). Micro: 96% of registered MSMEs.',
+    'Udyam Assist Platform (2023): For enterprises without PAN. Allows informal sector to register and access MSME benefits.',
+    'MSME sector: 30% of GDP. 48% of exports. 11.1 crore jobs. 6.3 crore estimated total MSMEs (including unregistered).',
+    'Employment intensity: MSMEs employ approximately 120 workers per Rs 1 crore investment vs approximately 5 for large enterprises.',
+    'State distribution: UP (14.2%), West Bengal (14%), Tamil Nadu (8%), Maharashtra (8%), Karnataka (6%), Bihar (5.5%).',
+    'Sectoral: Agriculture & allied (8%), Manufacturing (31%), Trade (36%), Other services (25%).',
+    'Credit gap: Demand Rs 69.3 lakh crore. Formal supply Rs 27 lakh crore. Gap Rs 42 lakh crore (IFC-Intellecap study).',
+    'PMMY (MUDRA): Rs 27.75 lakh crore cumulative through 44.46 crore loans. Women: 68%. Average ticket: Rs 62,000.',
+    'CGTMSE: Collateral-free guarantee up to Rs 5 crore (raised from Rs 2 crore in 2023). GoI + SIDBI trust. 80+ lakh guarantees.',
+    'ECLGS (COVID): 20% additional credit guaranteed by GoI. Rs 5 lakh crore guarantee cover. Rs 3.48 lakh crore disbursed. Prevented mass MSME bankruptcy.',
+    'ECLGS extended through 5 phases (1.0 to 5.0). Coverage expanded to healthcare, hospitality, aviation, and stressed MSMEs.',
+    'GeM: Government procurement platform. GMV Rs 4.5+ lakh crore. 70+ lakh sellers (57% MSMEs). 25% procurement from MSMEs mandatory.',
+    'GeM MSME provisions: 4% from SC/ST-owned MSMEs, 3% from women-owned MSMEs. 15% price preference for MSMEs.',
+    'MSMEs exempt from EMD (earnest money deposit) and security deposit on GeM. Levels the playing field against large firms.',
+    'TReDS: Trade Receivables Discounting System. Rs 1.5+ lakh crore factored. RXIL, M1xchange, Invoicemart. PSUs must onboard.',
+    'TReDS working: MSME uploads invoice → buyer accepts → financier pays MSME upfront (at discount). Solves working capital crunch.',
+    'MSME Samadhaan: Delayed payment monitoring portal. Section 15-23 MSMED Act: Payment within 45 days mandatory. 1.5 lakh complaints.',
+    'PM Vishwakarma (2023): 18 traditional trades. Training + toolkit (Rs 15K) + credit (Rs 1L+2L at 5%). Target: 30 lakh artisans.',
+    'PM Vishwakarma trades: Carpenter, blacksmith, goldsmith, potter, sculptor, cobbler, mason, tailor, barber, etc. (18 trades).',
+    'PM Vishwakarma: 1.27 crore applications, 82 lakh verified (Dec 2024). Budget Rs 13,000 crore for FY24-28.',
+    'ZED (Zero Defect Zero Effect): Quality certification for MSMEs (Bronze/Silver/Gold/Diamond). 32,000+ certified. Procurement preference.',
+    'ODOP (One District One Product): 1,233 products from 761 districts. Marketing and export promotion support. GI-tagging push.',
+    'CLCS-TUS: 15% capital subsidy on institutional finance (up to Rs 15 lakh) for technology upgradation. 78,000+ MSMEs benefited.',
+    'PMEGP (PM Employment Generation Programme): Margin money subsidy 15-35% for new micro enterprises. KVIC implements. 7.5 lakh units.',
+    'MSME Champions Portal: Single-window for all MSME services — registration, credit, procurement, technology, grievance.',
+    'ONDC integration: Open network allows MSMEs to list products without marketplace commissions. 50+ lakh sellers onboarded.',
+    'PSL sub-target: Banks must lend 7.5% of ANBC to micro enterprises. Shortfall deposited with SIDBI\'s MSME Fund.',
+    'Industry 4.0 challenge: AI, IoT, robotics adoption — barriers of cost, skills, awareness, infrastructure for MSMEs.',
+    'SIDBI Digital Sakhi: Trains MSME owners in digital literacy, online marketing, e-commerce.',
+    'MSME NPA approximately 8-10%: Higher than overall bank NPA. COVID stressed sector significantly. ECLGS helped prevent bankruptcy.',
+    'Cluster development: CFCs at Tirupur (textiles), Moradabad (brassware), Ludhiana (hosiery), Surat (diamonds), Rajkot (engineering).',
+    'MSMED Act 2006: Legal framework. Key provisions — registration, delayed payment remedy, facilitation councils, promotion measures.',
+    'Informal MSMEs: 95%+ are micro, unregistered. No GST, no formal accounts. Udyam + Udyam Assist aim to formalise them.',
+    'MSME exports: Rs 12+ lakh crore. Top sectors: textiles, gems & jewellery, leather, handicrafts, engineering goods, pharma.',
+    'Formalisation drive: GST registration, digital payments, Udyam portal together push informal MSMEs toward formal economy.',
+  ],
   comparisons: [
     {
-        "title": "MSME Classification (2020)",
-        "headers": [
-            "Category",
-            "Investment",
-            "Turnover"
-        ],
-        "rows": [
-            [
-                "Micro",
-                "≤ Rs 1 crore",
-                "≤ Rs 5 crore"
-            ],
-            [
-                "Small",
-                "≤ Rs 10 crore",
-                "≤ Rs 50 crore"
-            ],
-            [
-                "Medium",
-                "≤ Rs 50 crore",
-                "≤ Rs 250 crore"
-            ]
-        ]
+      title: 'MSME Classification (2020)',
+      headers: ['Category', 'Investment', 'Turnover'],
+      rows: [
+        ['Micro', 'Up to Rs 1 crore', 'Up to Rs 5 crore'],
+        ['Small', 'Up to Rs 10 crore', 'Up to Rs 50 crore'],
+        ['Medium', 'Up to Rs 50 crore', 'Up to Rs 250 crore'],
+      ],
     },
     {
-        "title": "MUDRA Loan Categories",
-        "headers": [
-            "Category",
-            "Loan Limit",
-            "Share of Loans"
-        ],
-        "rows": [
-            [
-                "Shishu",
-                "Up to Rs 50,000",
-                "64% by number"
-            ],
-            [
-                "Kishore",
-                "Rs 50,000 – Rs 5 lakh",
-                "28%"
-            ],
-            [
-                "Tarun",
-                "Rs 5 lakh – Rs 10 lakh",
-                "8%"
-            ]
-        ]
-    }
-],
+      title: 'MSME Classification: Old vs New',
+      headers: ['Feature', 'Old (Pre-2020)', 'New (2020)'],
+      rows: [
+        ['Criteria', 'Investment only', 'Investment AND turnover'],
+        ['Manufacturing-Services', 'Separate limits', 'Unified — no distinction'],
+        ['Micro (manufacturing)', 'Up to Rs 25 lakh investment', 'Up to Rs 1 crore investment + Rs 5 crore turnover'],
+        ['Medium (manufacturing)', 'Up to Rs 10 crore', 'Up to Rs 50 crore investment + Rs 250 crore turnover'],
+        ['Registration', 'Udyog Aadhaar (semi-manual)', 'Udyam (fully online, auto-verified)'],
+      ],
+    },
+    {
+      title: 'MUDRA Loan Categories',
+      headers: ['Category', 'Loan Limit', 'Share of Loans', 'Target'],
+      rows: [
+        ['Shishu', 'Up to Rs 50,000', '64% by number', 'Street vendors, micro artisans'],
+        ['Kishore', 'Rs 50,000 to Rs 5 lakh', '28%', 'Small shopkeepers, services'],
+        ['Tarun', 'Rs 5 lakh to Rs 10 lakh', '8%', 'Growing micro enterprises'],
+      ],
+    },
+    {
+      title: 'MSME Credit Support Schemes',
+      headers: ['Scheme', 'Nature', 'Key Feature', 'Scale'],
+      rows: [
+        ['PMMY/MUDRA', 'Refinance for micro loans', 'Shishu/Kishore/Tarun tiers', 'Rs 27.75L crore cumulative'],
+        ['CGTMSE', 'Collateral-free guarantee', 'Up to Rs 5 crore per MSME', '80+ lakh guarantees'],
+        ['ECLGS', 'COVID credit guarantee', '20% additional credit', 'Rs 3.48L crore disbursed'],
+        ['TReDS', 'Invoice discounting platform', 'MSME gets paid immediately', 'Rs 1.5+ lakh crore factored'],
+        ['PSL', 'Mandatory bank lending', '7.5% of ANBC to micro', 'Shortfall to SIDBI Fund'],
+      ],
+    },
+    {
+      title: 'GeM vs Traditional Procurement',
+      headers: ['Feature', 'GeM', 'Traditional (Manual)'],
+      rows: [
+        ['Process', 'Online, transparent', 'Paper-based, opaque'],
+        ['MSME access', '57% sellers are MSMEs', 'Dominated by large firms'],
+        ['Price discovery', 'Reverse auction, dynamic', 'Rate contracts, static'],
+        ['EMD/security', 'MSMEs exempt', 'Required from all bidders'],
+        ['Mandate', '25% from MSMEs (4% SC/ST, 3% women)', 'No formal MSME quota'],
+      ],
+    },
+  ],
   mnemonics: [
     {
-        "title": "MSME Limits — \"1-5, 10-50, 50-250\"",
-        "mnemonic": "Micro: 1cr/5cr. Small: 10cr/50cr. Medium: 50cr/250cr (Investment/Turnover)",
-        "explanation": "MSME classification uses dual criteria — both investment and turnover thresholds must be met."
-    }
-],
+      title: 'MSME Limits — "1-5, 10-50, 50-250"',
+      mnemonic: 'Micro: 1cr/5cr. Small: 10cr/50cr. Medium: 50cr/250cr (Investment/Turnover)',
+      explanation: 'MSME classification uses dual criteria — both investment and turnover thresholds must be met. If either exceeds the threshold, enterprise moves to higher category. No separate manufacturing-services distinction since 2020.',
+    },
+    {
+      title: 'MSME Contribution — "30-48-11"',
+      mnemonic: '30% of GDP, 48% of exports, 11.1 crore jobs',
+      explanation: 'India\'s MSME sector contributes approximately 30% of GDP, 48% of merchandise exports, and employs 11.1 crore people. Second largest employer after agriculture. Employment intensity is 120 workers per Rs 1 crore investment vs 5 for large enterprises.',
+    },
+    {
+      title: 'ECLGS Phases — "1 to 5"',
+      mnemonic: 'Rs 5 lakh crore guarantee. 1.0 (general) → 2.0 (stressed) → 3.0 (hospitality) → 4.0 (healthcare) → 5.0 (civil aviation)',
+      explanation: 'Emergency Credit Line Guarantee Scheme was India\'s most successful COVID intervention for MSMEs. Five phases expanded coverage from general MSMEs to hospitality, healthcare, and civil aviation. Rs 3.48 lakh crore disbursed across 1.47 crore accounts.',
+    },
+    {
+      title: 'TReDS Mechanism — "UIFp"',
+      mnemonic: 'Upload invoice → buyer accepts → Financier pays MSME → buyer pays financier later',
+      explanation: 'Trade Receivables Discounting System solves the delayed payment problem. MSME uploads invoice on RXIL/M1xchange/Invoicemart, buyer accepts, financier discounts (pays MSME immediately). Companies with Rs 500+ crore turnover must onboard TReDS.',
+    },
+    {
+      title: 'PM Vishwakarma — "18 TTT"',
+      mnemonic: '18 Traditional Trades. Training + Toolkit (Rs 15K) + Credit at 5% (Rs 1L + Rs 2L)',
+      explanation: 'PM Vishwakarma supports 18 traditional crafts: carpenter, blacksmith, goldsmith, potter, sculptor, cobbler, mason, tailor, barber, etc. Provides skill training, Rs 15K toolkit grant, and collateral-free credit at 5% interest. Target: 30 lakh artisans.',
+    },
+  ],
 }

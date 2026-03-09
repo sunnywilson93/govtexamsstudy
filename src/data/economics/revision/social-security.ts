@@ -1,61 +1,149 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const socialSecurityRevision: SubjectRevision = {
-  "topic": "social-security",
-  "bullets": [
-    "29 labour laws consolidated into 4 codes: Wages (2019), Industrial Relations (2020), Social Security (2020), OSH (2020).",
-    "EPF: 12% employee + 12% employer. Interest ~8.25%. For establishments with 20+ employees.",
-    "ESI: Employer 3.25% + Employee 0.75%. For employees earning ≤Rs 21,000/month. 10+ employee establishments.",
-    "Gratuity: 15 days' wages per year of service after 5 years. Maximum Rs 20 lakh.",
-    "Maternity leave: 26 weeks (first 2 children), 12 weeks (subsequent). 10+ employee establishments.",
-    "Informal sector: ~90% of workforce (~450 million). e-Shram portal: 30+ crore registrations.",
-    "Gig workers: Code on Social Security 2020 — first recognition. Social Security Fund from platform contributions.",
-    "PM-SYM: Pension Rs 3,000/month for unorganised workers after 60. Equal govt co-contribution.",
-    "7th Pay Commission: Minimum pay Rs 18,000/month. Fitment factor 2.57. Pay ratio 1:13.85.",
-    "Code on Wages: National Floor Wage to be set by Centre. States can set higher."
+  topic: 'social-security',
+  bullets: [
+    '29 labour laws consolidated into 4 codes: Wages (2019), Industrial Relations (2020), Social Security (2020), OSH (2020). Rules notified but implementation pending — states must notify rules first.',
+    'Code on Wages 2019 merged 4 laws (Minimum Wages Act, Payment of Wages Act, Payment of Bonus Act, Equal Remuneration Act). Introduces National Floor Wage set by Centre — states can only set higher. Universal applicability to all employees (organised + unorganised).',
+    'Industrial Relations Code 2020 merged 3 laws (Trade Unions Act, Industrial Disputes Act, Industrial Employment). Firms with up to 300 workers can hire/fire without government permission (earlier 100). Fixed-term employment legalised with equal benefits.',
+    'Code on Social Security 2020 merged 9 laws — first to cover gig and platform workers. Social Security Fund from platform company contributions (1-2% of turnover). National Social Security Board for unorganised workers.',
+    'OSH Code 2020 merged 13 laws. Covers establishments with 10+ workers (20+ if without power). Inter-state migrant worker provisions: journey allowance, annual home visit. Applies to all industries including IT/ITES.',
+    'EPF: 12% employee + 12% employer of basic + DA. Of employer\'s 12%, 8.33% goes to EPS (pension fund), 3.67% to EPF. Interest rate: 8.25% (FY24). Applies to establishments with 20+ employees. EPFO manages Rs 20+ lakh crore corpus.',
+    'EPS 1995: Pension after 10 years of service + age 58. Monthly pension = (pensionable salary x pensionable service) / 70. Minimum pension: Rs 1,000/month. 7.5 crore pensioners. Supreme Court (2022) allowed higher pension option on actual salary.',
+    'EDLI 1976: Life insurance for EPF members. Lump sum to nominee on death during service. Maximum: Rs 7 lakh (30x average monthly wages). Premium: 0.5% paid by employer. No employee contribution.',
+    'ESI: Employer 3.25% + Employee 0.75% = 4% total. Covers employees earning ≤Rs 21,000/month (Rs 25,000 for PwD). Applicable to establishments with 10+ employees. Benefits: medical (self + family), sickness (70% wages for 91 days), maternity (26 weeks full wages), disablement, funeral.',
+    'Gratuity: 15 days\' wages per completed year of service after 5 years continuous service. Maximum Rs 20 lakh. Formula: (Last drawn salary x 15 x years of service) / 26. 7th Pay Commission recommended increasing ceiling to Rs 20 lakh from Rs 10 lakh.',
+    'Maternity Benefit Act (now in SS Code): 26 weeks paid leave for first 2 children, 12 weeks for subsequent. Creche mandatory for 50+ employees. Commissioning/adopting mothers: 12 weeks. Work-from-home option post-maternity.',
+    'MGNREGA (2005): 100 days guaranteed wage employment per household per year in rural areas. Wage linked to CPI-AL (state-wise). Demand-driven — right to employment. Job cards for households. 60:40 wage-material ratio. Social audit mandatory.',
+    'MGNREGA performance: 15.4 crore active job cards. 5.4 crore households provided employment (FY24). Average days per household: 48 (well below 100-day guarantee). Budget: Rs 86,000 crore (FY24). Women participation: 57%.',
+    'PM-SYM: Monthly pension Rs 3,000 after age 60 for unorganised workers earning ≤Rs 15,000/month. Entry age 18-40. Monthly contribution Rs 55-200 (age-based). Equal government co-contribution. 46 lakh enrolled (below target).',
+    'PMSBY (PM Suraksha Bima Yojana): Accidental death/disability insurance. Rs 2 lakh (death/full disability), Rs 1 lakh (partial). Premium: Rs 20/year. Age 18-70. Bank account holders. 34.4 crore enrolled (FY24).',
+    'PMJJBY (PM Jeevan Jyoti Bima Yojana): Life insurance (any cause death). Rs 2 lakh cover. Premium: Rs 436/year (revised from Rs 330 in 2022). Age 18-50. Auto-debited from bank. 16.2 crore enrolled. Claim ratio improving.',
+    'APY (Atal Pension Yojana): Monthly pension Rs 1,000-5,000 after age 60 based on contribution. Age 18-40. Government co-contributes 50% for 5 years (for those joining before Dec 2015 without IT liability). 5.7 crore subscribers. Regulated by PFRDA.',
+    'NPS (National Pension System): Defined contribution. Two tiers — Tier I (retirement, tax benefit u/s 80CCD) and Tier II (savings). Regulated by PFRDA. Corpus: Rs 12.8 lakh crore. 7.3 crore subscribers. Annuity purchase (40% of corpus) mandatory at 60.',
+    'e-Shram Portal: National database of unorganised workers. Aadhaar-linked. 30+ crore registrations across 400+ occupations. Workers get Rs 2 lakh accidental insurance (PMSBY). Links workers to social security schemes. MoL&E administers.',
+    'Minimum Wages: Code on Wages introduces National Floor Wage — Centre fixes, states can set higher. Variable DA linked to CPI. Currently no national floor wage notified. State-wise minimum wages vary from Rs 200 to Rs 700/day.',
+    'Equal pay: Code on Wages mandates equal remuneration for men and women for same/similar work. Prohibition of gender discrimination in recruitment. Replaced Equal Remuneration Act 1976.',
+    'Child labour: Child Labour (Prohibition and Regulation) Amendment Act 2016 — complete ban on employing children below 14 in all occupations. Adolescents (14-18) banned from hazardous occupations. PENCIL portal for complaint monitoring.',
+    'Bonded Labour: Bonded Labour System (Abolition) Act 1976. Central sector scheme for rehabilitation: Rs 1 lakh (adult male), Rs 2 lakh (female/child), Rs 3 lakh (child in hazardous). District magistrate is implementing authority.',
+    'Contract Labour: Contract Labour (Regulation and Abolition) Act 1970 (now OSH Code). Applicable to 10+ contract workers. Registration of principal employer + licensing of contractor. Equal wages with regular workers for similar work.',
+    'Building Workers Welfare: Building and Other Construction Workers Act 1996 (now in SS Code). Welfare cess: 1-2% of construction cost. State welfare boards manage. Rs 65,000 crore accumulated in cess funds — underutilisation is a major issue.',
+    'JAM Trinity (Jan Dhan + Aadhaar + Mobile): Backbone of DBT. 52.8 crore Jan Dhan accounts (Rs 2.3 lakh crore balance). 138 crore Aadhaar. 117 crore mobile subscribers. DBT savings: Rs 3.48 lakh crore (cumulative, by eliminating ghosts/duplicates).',
+    'Skill India Mission: PMKVY (Pradhan Mantri Kaushal Vikas Yojana) — short-term training + recognition of prior learning. 1.4 crore trained under PMKVY 1.0-4.0. National Skill Development Corporation (NSDC) implementing body. Sector Skill Councils for industry-relevant curriculum.',
+    'Labour welfare: Employees\' Compensation Act 1923 (now in SS Code) — compensation for injury/death during employment. Amount based on age and wages. No fault liability for employer in scheduled employments.',
+    'International Labour Organisation (ILO): India is a founding member (1919). 8 core conventions — India has ratified 6 of 8 (not ratified: Freedom of Association C87, Right to Organise C98). 47 conventions ratified in total.',
+    'Occupational safety: National database of unorganised workers links with ESIC for eventual universal health coverage. Target: social security coverage for all 500 million workers by 2030 (currently ~10% covered by formal SS).',
+    'Pay Commissions: 7th CPC (2016): Minimum pay Rs 18,000/month. Fitment factor 2.57. Maximum: Rs 2.5 lakh (Cabinet Secretary). Pay ratio 1:13.85. HRA: 27%/18%/9% for X/Y/Z cities. 8th CPC expected by 2026.',
+    'Industrial disputes: IR Code introduces Recognition of Negotiating Union/Council. Strikes/lockouts: 14-day notice mandatory (up from 6 weeks in public utility). Grievance Redressal Committee mandatory for 20+ worker establishments.',
+    'Social security spending: India spends ~1.5% of GDP on social protection (vs 11% OECD average). Health expenditure: 2.1% of GDP (NHP target: 2.5% by 2025). Out-of-pocket: 47.1% (declining from 62.6% in 2014).',
+    'PM CARES Fund: Created March 2020. Not under RTI. Provides ventilators, oxygen plants, PM CARES for Children (orphans — Rs 10 lakh on turning 23, free education, health insurance).',
+    'Welfare state provisions: DPSP Article 38 (social order for welfare), 39 (livelihood, equal pay), 41 (right to work, education, public assistance), 42 (just and humane working conditions), 43 (living wage), 43A (worker participation in management).',
+    'Gig economy: India has 7.7 million gig workers (NITI Aayog 2022) — projected 23.5 million by 2029-30. Platforms: Zomato, Swiggy, Uber, Ola, Urban Company. SS Code 2020 mandates social security fund from platform fees but rules not yet framed.',
+    'One Nation One Ration Card (ONORC): Portability of ration card benefits across states. Beneficiaries can lift subsidised grain from any FPS. Biometric authentication via ePoS machines. Covers 81.35 crore NFSA beneficiaries.',
+    'PM Garib Kalyan Anna Yojana (PMGKAY): Free foodgrain (5 kg/person/month) to NFSA beneficiaries. Started during COVID (April 2020). Extended and merged with NFSA from January 2024 — no charge for rice, wheat, coarse grains.',
+    'NFSA 2013: Covers 75% rural + 50% urban population (81.35 crore). Rice Rs 3/kg, wheat Rs 2/kg, coarse grains Rs 1/kg (now free under PMGKAY). Antyodaya Anna Yojana (AAY) for poorest — 35 kg per household.',
+    'Women-specific: Maternity Benefit 26 weeks, PMMVY (Rs 5,000 for first child institutional delivery), Beti Bachao Beti Padhao, Ujjwala (10.35 crore LPG connections), PM AASHA (agricultural marketing), SHG-Bank Linkage (Rs 1.5 lakh crore disbursed).',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Four Labour Codes",
-      "headers": [
-        "Code",
-        "Year",
-        "Laws Merged",
-        "Key Feature"
+      title: 'Four Labour Codes — Detailed',
+      headers: ['Code', 'Year', 'Laws Merged', 'Key Feature', 'Coverage'],
+      rows: [
+        ['Code on Wages', '2019', '4 laws', 'National Floor Wage, universal coverage', 'All employees — organised and unorganised'],
+        ['Industrial Relations', '2020', '3 laws', 'Hire/fire up to 300 workers; fixed-term employment', 'Industrial establishments, trade unions'],
+        ['Social Security', '2020', '9 laws', 'Covers gig/platform workers; Social Security Fund', 'All workers including gig, platform, unorganised'],
+        ['OSH Code', '2020', '13 laws', 'Safety norms; inter-state migrant provisions', 'Establishments with 10+ workers (20+ without power)'],
       ],
-      "rows": [
-        [
-          "Code on Wages",
-          "2019",
-          "4 laws",
-          "National Floor Wage, universal coverage"
-        ],
-        [
-          "Industrial Relations",
-          "2020",
-          "3 laws",
-          "Hire/fire up to 300 workers without approval"
-        ],
-        [
-          "Social Security",
-          "2020",
-          "9 laws",
-          "Covers gig/platform workers for first time"
-        ],
-        [
-          "OSH Code",
-          "2020",
-          "13 laws",
-          "Safety norms, working conditions, inter-state migrants"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "EPF + ESI — \"12+12 and 3.25+0.75\"",
-      "mnemonic": "EPF: 12% each (employee + employer). ESI: 3.25% employer + 0.75% employee = 4%",
-      "explanation": "EPF: Both employee and employer contribute 12% of basic salary. Of employer's 12%, 8.33% goes to EPS (pension). ESI: Total 4% (employer 3.25% + employee 0.75%). ESI applies to employees earning up to Rs 21,000/month."
-    }
-  ]
+      title: 'EPF vs NPS',
+      headers: ['Feature', 'EPF', 'NPS'],
+      rows: [
+        ['Type', 'Defined benefit (guaranteed return)', 'Defined contribution (market-linked)'],
+        ['Interest/Return', '8.25% (FY24, declared annually)', 'Market-linked (8-14% historically)'],
+        ['Employer contribution', '12% of basic + DA', 'Government: 14%; Private: 10%'],
+        ['Regulator', 'EPFO', 'PFRDA'],
+        ['Tax treatment', 'EEE (exempt-exempt-exempt up to Rs 2.5L)', 'EET (taxable on 60% withdrawal)'],
+        ['Corpus', 'Rs 20+ lakh crore', 'Rs 12.8 lakh crore'],
+        ['Applicability', '20+ employee establishments', 'All citizens (mandatory for Govt employees post-2004)'],
+      ],
+    },
+    {
+      title: 'Key Social Security Schemes',
+      headers: ['Scheme', 'Benefit', 'Premium/Cost', 'Target Group'],
+      rows: [
+        ['PMSBY', 'Rs 2 lakh accident insurance', 'Rs 20/year', 'Bank account holders 18-70 years'],
+        ['PMJJBY', 'Rs 2 lakh life insurance', 'Rs 436/year', 'Bank account holders 18-50 years'],
+        ['APY', 'Rs 1,000-5,000/month pension', 'Rs 42-1,454/month', 'Unorganised workers 18-40 years'],
+        ['PM-SYM', 'Rs 3,000/month pension', 'Rs 55-200/month', 'Unorganised workers ≤Rs 15,000/month'],
+        ['PMGKAY/NFSA', 'Free/subsidised foodgrain', 'Government-funded', '81.35 crore beneficiaries'],
+        ['PMMVY', 'Rs 5,000 cash transfer', 'Government-funded', 'First-time pregnant women'],
+      ],
+    },
+    {
+      title: 'Organised vs Unorganised Sector',
+      headers: ['Feature', 'Organised', 'Unorganised'],
+      rows: [
+        ['Share of workforce', '~10% (50 million)', '~90% (450 million)'],
+        ['Social security coverage', 'EPF, ESI, Gratuity', 'Mostly uncovered; e-Shram registration'],
+        ['Wage protection', 'Minimum Wages + regular payment', 'Wages often below minimum; irregular'],
+        ['Job security', 'Labour law protections', 'No formal contracts; at-will'],
+        ['Key challenge', 'Compliance burden on employers', 'Formalisation and coverage extension'],
+        ['Government approach', 'EPF/ESI mandatory coverage', 'e-Shram, PM-SYM, PMSBY, PMJJBY'],
+      ],
+    },
+    {
+      title: 'MGNREGA — Key Metrics',
+      headers: ['Metric', 'Target/Design', 'Actual (FY24)'],
+      rows: [
+        ['Days guaranteed', '100 per household/year', 'Average 48 days per household'],
+        ['Wage payment', 'Within 15 days', 'Delays common — 40%+ beyond 15 days'],
+        ['Women participation', '33% minimum', '57% (exceeds target)'],
+        ['Job cards', 'Demand-driven', '15.4 crore active'],
+        ['Wage-material ratio', '60:40', 'Maintained in most states'],
+        ['Social audit', 'Mandatory', 'Uneven — strong in AP/Telangana, weak elsewhere'],
+      ],
+    },
+    {
+      title: 'ILO Core Conventions — India\'s Status',
+      headers: ['Convention', 'Subject', 'India\'s Status'],
+      rows: [
+        ['C29', 'Forced Labour', 'Ratified (1954)'],
+        ['C105', 'Abolition of Forced Labour', 'Ratified (2000)'],
+        ['C100', 'Equal Remuneration', 'Ratified (1958)'],
+        ['C111', 'Discrimination (Employment)', 'Ratified (1960)'],
+        ['C138', 'Minimum Age', 'Ratified (2017)'],
+        ['C182', 'Worst Forms of Child Labour', 'Ratified (2017)'],
+        ['C87', 'Freedom of Association', 'NOT ratified'],
+        ['C98', 'Right to Organise', 'NOT ratified'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Four Labour Codes — "WISO"',
+      mnemonic: 'Wages (2019), Industrial Relations (2020), Social Security (2020), OSH (2020)',
+      explanation: '29 labour laws consolidated into 4 codes — WISO. Code on Wages was passed first (2019), other three in 2020. All four have received Presidential assent but await state-level rule notification for implementation.',
+    },
+    {
+      title: 'EPF + ESI — "12+12 and 3.25+0.75"',
+      mnemonic: 'EPF: 12% each (employee + employer). ESI: 3.25% employer + 0.75% employee = 4%',
+      explanation: 'EPF: Both contribute 12% of basic + DA. Of employer\'s 12%, 8.33% goes to EPS (pension). ESI: Total 4%. ESI applies to employees earning up to Rs 21,000/month. EPF for 20+ employee establishments, ESI for 10+.',
+    },
+    {
+      title: 'Social Security Schemes — "JAM-PSA" Trio',
+      mnemonic: 'PMJJBY (Life), APY (Pension), PM-SYM (Pension for unorganised) + PMSBY (Accident) — linked through Jan Dhan + Aadhaar + Mobile',
+      explanation: 'Three pension/insurance schemes delivered through JAM infrastructure. PMJJBY: Rs 436/year for Rs 2 lakh life cover. PMSBY: Rs 20/year for Rs 2 lakh accident cover. APY: Rs 1,000-5,000 monthly pension. PM-SYM: Rs 3,000 monthly pension for unorganised workers.',
+    },
+    {
+      title: 'MGNREGA — "100-15-33-60" Rule',
+      mnemonic: '100 days guaranteed, 15 days wage payment, 33% women (minimum), 60:40 wage-material ratio',
+      explanation: '100 days per household, wages within 15 days (else unemployment allowance), at least 1/3 women beneficiaries, 60% expenditure on wages and 40% on material. Social audit mandatory. Demand-driven entitlement.',
+    },
+    {
+      title: 'DPSP Labour Articles — "38-39-41-42-43"',
+      mnemonic: 'Art 38 (welfare), 39 (livelihood + equal pay), 41 (right to work), 42 (humane conditions), 43 (living wage), 43A (worker participation)',
+      explanation: 'Constitutional basis for labour welfare in Part IV (Directive Principles). These articles guide labour legislation even though they are not justiciable. Art 43A was added by 42nd Amendment (1976).',
+    },
+  ],
 }

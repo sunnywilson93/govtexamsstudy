@@ -32,8 +32,24 @@ export const philosophicalSchoolsConcept: HistoryConcept = {
       event: "Kanada's Vaisheshika Sutras systematize atomistic theory — the universe is composed of paramanu (atoms) of earth, water, fire, and air",
     },
     {
+      year: "c. 150 CE",
+      event: "Nagarjuna founds the Madhyamika (Shunyavada) school of Buddhist philosophy — doctrine of emptiness (Sunyata) and dependent origination",
+    },
+    {
+      year: "c. 300 CE",
+      event: "Asanga and Vasubandhu found the Yogachara (Vijnanavada) school of Buddhist philosophy — consciousness-only doctrine",
+    },
+    {
       year: "c. 500 CE",
       event: "Ishvarakrishna's Samkhya Karika — the earliest surviving Samkhya text; enumerates 25 tattvas (principles of reality)",
+    },
+    {
+      year: "c. 600 CE",
+      event: "Prashastapada composes Padarthadharmasamgraha — most important Vaisheshika commentary; Dignaga and Dharmakirti develop Buddhist epistemology",
+    },
+    {
+      year: "c. 700 CE",
+      event: "Kumarila Bhatta and Prabhakara — two great Mimamsa philosophers; Kumarila's critique of Buddhism aids Brahmanical intellectual revival",
     },
     {
       year: "c. 788-820 CE",
@@ -42,6 +58,10 @@ export const philosophicalSchoolsConcept: HistoryConcept = {
     {
       year: "c. 1017-1137 CE",
       event: "Ramanujacharya propounds Vishishtadvaita (qualified non-dualism); Madhvacharya (1238-1317) establishes Dvaita (dualism) school of Vedanta",
+    },
+    {
+      year: "c. 1300 CE",
+      event: "Gangesha Upadhyaya of Mithila founds Navya-Nyaya (New Logic) — becomes the standard logical method across all Indian philosophical schools",
     },
   ],
   notes: [
@@ -76,9 +96,44 @@ export const philosophicalSchoolsConcept: HistoryConcept = {
         "Vedanta (Uttara Mimamsa) focuses on the Jnana Kanda (knowledge portion) of the Vedas, particularly the Upanishads. Its foundational texts are the Prasthanatrayi: the Upanishads, the Brahma Sutras (by Badarayana, c. 200 BCE), and the Bhagavad Gita. Three major sub-schools emerged: Advaita (non-dualism) of Shankaracharya (c. 788-820 CE) — Brahman alone is real, the world is Maya (illusion), and the individual soul (Atman) is identical with Brahman; liberation comes through Jnana (knowledge). Vishishtadvaita (qualified non-dualism) of Ramanujacharya (1017-1137 CE) — Brahman is real and has attributes (Saguna); individual souls and the material world are real but dependent on Brahman; liberation through Bhakti (devotion) to Vishnu/Narayana. Dvaita (dualism) of Madhvacharya (1238-1317 CE) — Brahman (Vishnu) and individual souls are eternally distinct; five-fold difference (Pancha-Bheda) between God, soul, and matter; liberation through grace of Vishnu. Other important Vedanta sub-schools include Shuddhadvaita (pure non-dualism) of Vallabhacharya, Dvaitadvaita (dualistic non-dualism) of Nimbarkacharya, and Achintya Bhedabheda (inconceivable oneness and difference) of Chaitanya Mahaprabhu. Shankaracharya's four mathas (monasteries) at Sringeri, Dwarka, Puri, and Joshimath continue to be major centres of Hindu learning.",
     },
     {
+      section: "Advaita Vedanta — Shankaracharya's System in Detail",
+      content:
+        "Shankaracharya's Advaita (non-dualism) is the most influential Vedanta sub-school and one of the most sophisticated philosophical systems in world history. Key concepts: Brahman (the ultimate, attributeless reality — Nirguna Brahman), Maya/Avidya (cosmic ignorance that projects the appearance of the world), Vivartavada (the world is an apparent transformation of Brahman, not a real transformation), the rope-snake analogy (a rope mistaken for a snake illustrates how Brahman is mistaken for the world), and Adhyasa (superimposition — the fundamental error of attributing properties of one thing to another). Shankaracharya distinguished three levels of reality: Paramarthika Satya (ultimate reality — Brahman alone), Vyavaharika Satya (empirical/transactional reality — the everyday world, real for practical purposes but not ultimately real), and Pratibhasika Satya (apparent reality — dreams, illusions). Liberation (Moksha) comes through Jnana (knowledge) that the individual self (Atman) is identical with Brahman — 'Tat Tvam Asi' (Thou art That). The four qualifications for a student of Vedanta: Viveka (discrimination between real and unreal), Vairagya (dispassion), Shat-Sampat (six virtues: shama, dama, uparati, titiksha, shraddha, samadhana), and Mumukshutva (intense desire for liberation). Shankaracharya's four mathas: Sringeri (South, Yajurveda), Dwarka (West, Samaveda), Puri (East, Rigveda), Joshimath (North, Atharvaveda).",
+    },
+    {
       section: "Heterodox Schools — Charvaka, Buddhism, Jainism",
       content:
         "The three Nastika (heterodox) schools reject the authority of the Vedas. Charvaka (Lokayata), attributed to Brihaspati, is the Indian materialist school — it accepts only Pratyaksha (perception) as a valid Pramana, denies the existence of God, soul, afterlife, and karma, and holds that consciousness arises from the material body (like intoxication from fermented grain). The Charvaka motto: 'Yavat jivet sukham jivet, rinam kritva ghritam pibet' (As long as you live, live happily; borrow and drink ghee). No original Charvaka text survives — the school is known only through references in Buddhist, Jain, and Hindu texts that critique it. Buddhism (founded by Siddhartha Gautama, c. 563-483 BCE) rejects both the Vedas and the permanent self (Anatta/Anatman); its epistemology centres on the Four Noble Truths, Dependent Origination (Pratityasamutpada), and the Middle Path. Jainism (systematized by Mahavira, c. 540-468 BCE) posits a pluralistic realist metaphysics with infinite eternal souls (Jiva) and non-living matter (Ajiva); its distinctive epistemological contribution is Anekantavada (many-sidedness of truth) and Syadvada (conditional predication — seven modes of asserting truth). Buddhism and Jainism are covered in detail in separate topics.",
+    },
+    {
+      section: "Buddhist Philosophy — Madhyamika & Yogachara",
+      content:
+        "Buddhist philosophy developed several sophisticated schools. Nagarjuna (c. 150 CE) founded the Madhyamika (Middle Way) or Shunyavada (emptiness doctrine) school. His Mulamadhyamakakarika argues that all phenomena are empty (shunya) of inherent existence — they arise only through dependent origination (pratityasamutpada). This 'emptiness' is not nihilism but the recognition that nothing exists independently. The two truths doctrine (Dve Satye): conventional truth (Samvriti Satya) and ultimate truth (Paramartha Satya). Asanga and Vasubandhu (c. 4th-5th century CE) founded the Yogachara (Yoga Practice) or Vijnanavada (Consciousness-Only) school, which holds that only consciousness (vijnana) is ultimately real — the external world is a projection of consciousness. The concept of Alaya-Vijnana (store consciousness) served as a precursor to ideas about the unconscious mind. Dignaga (c. 480-540 CE) and Dharmakirti (c. 600-660 CE) developed Buddhist epistemology (Pramana) into a rigorous system accepting only two valid means of knowledge: Pratyaksha (perception) and Anumana (inference) — rejecting Shabda (testimony) as an independent Pramana. Their logical works were so influential that they were studied even in Hindu philosophical schools. The Abhidharma tradition (systematic Buddhist philosophy) produced detailed analyses of consciousness, causation, and the nature of time.",
+    },
+    {
+      section: "Jain Philosophy — Anekantavada & Syadvada",
+      content:
+        "Jain philosophy makes distinctive epistemological contributions. Anekantavada (many-sidedness or non-absolutism) holds that reality is complex and can be viewed from multiple perspectives — no single description can capture the complete truth. This is illustrated by the parable of the blind men and the elephant. Syadvada (the doctrine of conditional predication) formalizes this into seven modes of assertion (Saptabhangi): (1) In some way, it is (syad asti); (2) In some way, it is not (syad nasti); (3) In some way, it both is and is not; (4) In some way, it is indescribable; (5) In some way, it is and is indescribable; (6) In some way, it is not and is indescribable; (7) In some way, it is, is not, and is indescribable. Nayavada (the theory of standpoints) provides seven nayas (perspectives) from which truth can be approached. Jain metaphysics posits six eternal substances (Dravyas): Jiva (soul), Pudgala (matter), Dharma (motion), Adharma (rest), Akasha (space), and Kala (time). The soul's natural state is omniscience (Kevala Jnana), but it is obscured by karmic matter that adheres to it. Liberation comes through the three jewels (Tri-Ratna): Right Faith (Samyak Darshana), Right Knowledge (Samyak Jnana), and Right Conduct (Samyak Charitra). Jain philosophy influenced Indian logic, mathematics (concept of infinity), and the development of relativistic thinking in Indian intellectual traditions.",
+    },
+    {
+      section: "Shankaracharya's Four Mathas & Philosophical Debates",
+      content:
+        "Adi Shankaracharya (c. 788-820 CE) is credited with reviving Hinduism during a period when Buddhism was the dominant intellectual and institutional force in India. According to tradition, he travelled across India engaging in philosophical debates (Shastrartha) with Buddhist, Jain, and rival Hindu scholars. His most famous debate was with Mandana Mishra (a Mimamsa scholar) at Mahishmati — Mandana's wife Ubhaya Bharati served as judge; after losing the debate, Mandana became Shankaracharya's disciple and took the monastic name Sureshvaracharya. Shankaracharya established four mathas (monasteries) at the four corners of India to propagate Advaita Vedanta: Sringeri Sharada Peetham (South, Karnataka — Yajurveda, presided by Sureshvaracharya), Dvaraka Peetham (West, Gujarat — Samaveda, presided by Hastamalaka), Govardhan Peetham (East, Puri, Odisha — Rigveda, presided by Padmapada), and Jyotir Math (North, Joshimath, Uttarakhand — Atharvaveda, presided by Totakacharya). He composed numerous works: Bhashyas (commentaries) on the Prasthanatrayi, the Vivekachudamani (Crest Jewel of Discrimination), the Upadeshasahasri, and devotional hymns (Bhaja Govindam, Soundarya Lahari). Despite dying at approximately 32 years of age, his philosophical and institutional legacy is immense.",
+    },
+    {
+      section: "Later Vedanta & Bhakti Philosophers",
+      content:
+        "After Shankaracharya, Vedanta continued to evolve. Ramanujacharya (1017-1137 CE, associated with Srirangam and Tirupati) developed Vishishtadvaita by synthesizing the Alvar devotional tradition with Vedantic philosophy. His key works: Sri Bhashya (commentary on Brahma Sutras), Vedarthasangraha, and Gitabhashya. He argued that Brahman (Vishnu/Narayana) has real attributes (Saguna), and individual souls and matter are the 'body' of Brahman — hence 'qualified' non-dualism. Madhvacharya (1238-1317 CE, from Udupi, Karnataka) established Dvaita (dualism), asserting eternal and fundamental distinction between God (Vishnu), souls, and matter. His Pancha-Bheda (five-fold difference): between God and soul, God and matter, soul and soul, soul and matter, and matter and matter. Other Vedanta sub-schools: Vallabhacharya (1479-1531) — Shuddhadvaita (pure non-dualism), emphasis on Krishna Bhakti and Pushti Marga (path of grace); Nimbarkacharya (c. 12th-13th century) — Dvaitadvaita (dualistic non-dualism); Chaitanya Mahaprabhu (1486-1534) — Achintya Bhedabheda (inconceivable oneness and difference), founder of Gaudiya Vaishnavism. These later philosophers were as much religious reformers as they were metaphysicians — their systems provided the theological foundations for major Hindu devotional movements.",
+    },
+    {
+      section: "Indian Logic — From Nyaya to Navya-Nyaya",
+      content:
+        "Indian logic has a sophisticated history that parallels and in some respects exceeds Greek and European logical traditions. The Nyaya school's five-membered syllogism (Panchavayava) was the foundational system. Debate culture was formalized into three types: Vaada (honest truth-seeking dialogue), Jalpa (debate aimed at victory using any means), and Vitanda (destructive criticism without establishing a counter-thesis). The classification of fallacies (Hetvabhasa) included: Savyabhichara (irregular middle term), Viruddha (contradictory), Prakaranasama (counterbalanced), Sadhyasama (unproved), and Kalatita (mistimed). Buddhist logicians Dignaga and Dharmakirti refined Indian logic by reformulating inference into a three-membered syllogism (Trairupya — the middle term must be present in the subject, present in similar cases, and absent in dissimilar cases). Gangesha Upadhyaya of Mithila (c. 13th century) founded Navya-Nyaya (New Logic), which introduced a technical metalanguage for precise philosophical analysis. Navya-Nyaya became the standard tool for philosophical debate across all Indian schools — even Vedantins and Mimamsakas adopted its analytical framework. Raghunatha Shiromani (16th century, Navadvipa) further refined Navya-Nyaya, developing it into one of the most rigorous logical systems in pre-modern world philosophy.",
+    },
+    {
+      section: "Philosophy & Indian Science",
+      content:
+        "Indian philosophical schools contributed significantly to scientific thinking. Vaisheshika's atomic theory (Paramanu Vada) anticipated modern atomic concepts: indivisible, eternal atoms of four elements (earth, water, fire, air) combine in specific ways to create all physical objects. Kanada's idea that the movement of atoms requires an external force (Adrishta) parallels Newton's first law conceptually. Samkhya's theory of evolution from Prakriti through successive transformations (Parinama) influenced Indian cosmological and biological thinking. Nyaya's logical method provided the basis for scientific reasoning and hypothesis testing in Indian tradition. Jain concepts of infinity and classification of numbers (enumerable, innumerable, infinite) influenced Indian mathematics. The Buddhist concept of Kshanikavada (momentariness — everything exists only for a moment) parallels modern process philosophy and quantum mechanics' understanding of the impermanence of particles. Ayurveda drew heavily from Samkhya (three gunas mapped to three doshas — Vata, Pitta, Kapha) and Vaisheshika (theory of five elements). The philosophical emphasis on systematic observation (Pratyaksha), logical inference (Anumana), and testimony of reliable authorities (Shabda) constituted a proto-scientific methodology.",
     },
     {
       section: "Exam-Relevant Comparisons & Common Questions",
