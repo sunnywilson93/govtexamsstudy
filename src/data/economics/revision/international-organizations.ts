@@ -1,61 +1,101 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const internationalOrganizationsRevision: SubjectRevision = {
-  "topic": "international-organizations",
-  "bullets": [
-    "IMF: HQ Washington DC. 190 members. India's quota: ~2.75%. SDR = international reserve asset.",
-    "World Bank Group: 5 institutions — IBRD, IDA, IFC, MIGA, ICSID. HQ: Washington DC. President: Ajay Banga.",
-    "India graduated from IDA (concessional loans) in 2014 — now borrows from IBRD.",
-    "ADB: HQ Manila. Established 1966. India: founding member, 4th largest shareholder.",
-    "AIIB: HQ Beijing. Established 2016. India: 2nd largest shareholder (~7.5% vote). Focus: infrastructure.",
-    "NDB: BRICS bank. HQ Shanghai. First President: K.V. Kamath (India). Focus: infrastructure in emerging economies.",
-    "WTO: Established 1995 (replaced GATT). India: founding member. Key agreements: GATT, GATS, TRIPS.",
-    "G20: India hosted presidency in 2023. Theme: 'Vasudhaiva Kutumbakam'. African Union admitted as member.",
-    "OECD: 38 members (rich countries). India is not a member but a 'Key Partner'.",
-    "SDR basket: USD, EUR, CNY, JPY, GBP. Indian Rupee is NOT in the SDR basket."
+  topic: 'international-organizations',
+  bullets: [
+    'IMF: HQ Washington DC. 190 members. India\'s quota: ~2.75% (8th largest). MD: Kristalina Georgieva. Traditionally European.',
+    'SDR basket: USD (~43%), EUR (~29%), CNY (~12%), JPY (~8%), GBP (~8%). Indian Rupee is NOT in SDR basket.',
+    'SDR: Not a currency but a claim on freely usable currencies. 2021: Historic $650 billion allocation post-COVID.',
+    'IMF conditionality: Structural adjustment (fiscal discipline, liberalisation). India borrowed in 1981 and 1991 (BoP crisis).',
+    'World Bank Group: 5 institutions \u2014 IBRD, IDA, IFC, MIGA, ICSID. HQ Washington DC. President: Ajay Banga (Indian-origin).',
+    'India graduated from IDA in 2014. Now borrows from IBRD at market rates. India is NOT a member of ICSID.',
+    'US has ~16% voting power in World Bank (effective veto since 85% needed for major decisions).',
+    'WTO: HQ Geneva. 164 members. DG: Ngozi Okonjo-Iweala (Nigeria). Principles: MFN, National Treatment, Tariff Binding.',
+    'WTO key agreements: GATT (goods), GATS (services), TRIPS (IP), AoA (Agriculture), SPS, TBT.',
+    'WTO Dispute Settlement: "Crown jewel." Appellate Body non-functional since 2019 (US blocks appointments).',
+    'India\'s WTO concerns: Public stockholding (MSP for PDS), SSM, fisheries subsidies, TRIPS waiver, e-commerce moratorium.',
+    'Bali Peace Clause (2013): Interim protection for food stockholding. India demands permanent solution.',
+    'ADB: HQ Manila. Established 1966. India: founding member, 4th largest shareholder. Largest borrower. President: traditionally Japanese.',
+    'AIIB: HQ Beijing. 109 members. India: 2nd largest shareholder (~7.5%). Largest borrower. President: Jin Liqun.',
+    'NDB: BRICS bank. HQ Shanghai. First President: K.V. Kamath (India). Current: Dilma Rousseff. Equal voting share.',
+    'G20: 19 countries + EU + African Union. ~85% GDP, ~75% trade. Not a formal organisation. Troika system.',
+    'India G20 2023: Theme "Vasudhaiva Kutumbakam." Key: AU admitted, IMEC announced, DPI endorsed, Global Biofuels Alliance.',
+    'BRICS: Brazil, Russia, India, China, South Africa. ~31% GDP (PPP). NDB + CRA ($100B, India access: $18B).',
+    'BRICS expanded 2024: Egypt, Ethiopia, Iran, UAE, Saudi Arabia joined. ~46% population, ~37% GDP (PPP).',
+    'OECD: HQ Paris. 38 members. India: NOT member, "Key Partner." BEPS initiative for global tax reform.',
+    'BEPS Pillar 1: Reallocate taxing rights of large MNEs. Pillar 2: 15% global minimum tax. 145+ jurisdictions.',
+    'India withdrew Equalisation Levy (2024) as part of BEPS Pillar 1 negotiations.',
+    'UNCTAD: HQ Geneva. Promotes developing country trade interests. Publications: WIR, TDR. Created S&DT concept.',
+    'UNDP: HQ New York. HDI rankings. India: 134/193. Components: Life expectancy, education, GNI per capita.',
+    'Credit ratings: India \u2014 BBB- (S&P/Fitch), Baa3 (Moody\'s). Lowest investment grade. India argues methodology is biased.',
+    'SCO: HQ Beijing. Members include India (joined 2017), China, Russia, Pakistan. Focus: Security, counter-terrorism.',
+    'SAARC: HQ Kathmandu. 8 members. Stalled since 2014 summit. India promotes BIMSTEC as alternative.',
+    'BIMSTEC: HQ Dhaka. 7 members. Excludes Pakistan. India, Bangladesh, Myanmar, Sri Lanka, Thailand, Nepal, Bhutan.',
+    'Quad: India, US, Japan, Australia. Free and open Indo-Pacific, maritime security, supply chains.',
+    'India withdrew from RCEP (2019): Feared Chinese goods flooding. India-China trade deficit: ~$85B (2023-24).',
+    'India-UAE CEPA (2022) and India-Australia ECTA (2022): Recent FTAs. India-UK FTA under advanced negotiation.',
+    'WHO GCTM (Global Centre for Traditional Medicine): HQ Jamnagar, Gujarat. First such WHO centre.',
+    'Global Hunger Index 2024: India ranked 105/127 ("serious"). India disputes methodology.',
+    'India\'s UNSC permanent membership demand: Long-standing. G4 group: India, Brazil, Germany, Japan.',
+    'WTO AoA: Three pillars \u2014 Market Access, Domestic Support (Green/Blue/Amber Box), Export Subsidies.',
+    'Amber Box subsidies: Based on 1986-88 reference prices. Outdated \u2014 India\'s MSP appears as "excess" subsidy.',
+    'FAO: HQ Rome. Food security. ILO: HQ Geneva. Labour standards. UNEP: HQ Nairobi. Environment.',
+    'GSP (Generalised System of Preferences): UNCTAD-initiated. US withdrew GSP for India in 2019. EU GSP continues.',
+    'IMF quota formula: GDP (50%), openness (30%), economic variability (15%), reserves (5%). 16th review ongoing.',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "IMF vs World Bank",
-      "headers": [
-        "Feature",
-        "IMF",
-        "World Bank (IBRD)"
+      title: 'IMF vs World Bank',
+      headers: ['Feature', 'IMF', 'World Bank (IBRD)'],
+      rows: [
+        ['Focus', 'Monetary stability, BoP assistance', 'Development, poverty reduction'],
+        ['Lending', 'Short-term crisis loans', 'Long-term project loans'],
+        ['Head', 'Managing Director (European tradition)', 'President (American tradition)'],
+        ['Conditionality', 'Structural adjustments', 'Project-specific conditions'],
+        ['India borrowed', '1981 and 1991 BoP crisis', 'Various development projects'],
+        ['Voting power', 'Based on quota share', 'Based on share capital'],
       ],
-      "rows": [
-        [
-          "Focus",
-          "Monetary stability, BoP assistance",
-          "Development, poverty reduction"
-        ],
-        [
-          "Lending",
-          "Short-term crisis loans",
-          "Long-term project loans"
-        ],
-        [
-          "Head",
-          "Managing Director (European)",
-          "President (American — tradition)"
-        ],
-        [
-          "Conditionality",
-          "Structural adjustments",
-          "Project-specific conditions"
-        ],
-        [
-          "India borrowed",
-          "1991 BoP crisis",
-          "Various development projects"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "World Bank Group — \"I-I-I-M-I\"",
-      "mnemonic": "IBRD, IDA, IFC, MIGA, ICSID",
-      "explanation": "Five institutions: IBRD (middle-income loans), IDA (poorest country grants), IFC (private sector), MIGA (political risk insurance), ICSID (investment disputes). Remember: \"India's Investment In Making Infrastructure.\""
-    }
-  ]
+      title: 'Multilateral Development Banks \u2014 India\'s Role',
+      headers: ['Bank', 'HQ', 'Established', 'India\'s Status'],
+      rows: [
+        ['World Bank (IBRD)', 'Washington DC', '1945', 'Founding member; graduated from IDA 2014'],
+        ['ADB', 'Manila', '1966', 'Founding member; 4th largest shareholder; largest borrower'],
+        ['AIIB', 'Beijing', '2016', '2nd largest shareholder (~7.5%); largest borrower'],
+        ['NDB', 'Shanghai', '2014', 'Founding BRICS member; equal ~20% share; K.V. Kamath first president'],
+      ],
+    },
+    {
+      title: 'WTO Subsidy Boxes',
+      headers: ['Box', 'Type', 'Limit', 'Example'],
+      rows: [
+        ['Green Box', 'Minimal distortion', 'No limits', 'Research, disease control, food aid'],
+        ['Blue Box', 'Production-limiting', 'Limited', 'Payments tied to area/yields (with production limits)'],
+        ['Amber Box', 'Trade-distorting', 'De minimis 10% (developing)', 'India\'s MSP procurement counted here'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'World Bank Group \u2014 "I-I-I-M-I"',
+      mnemonic: 'IBRD, IDA, IFC, MIGA, ICSID',
+      explanation: 'Five institutions: IBRD (middle-income loans), IDA (poorest country grants), IFC (private sector), MIGA (political risk insurance), ICSID (investment disputes). India is NOT a member of ICSID.',
+    },
+    {
+      title: 'SDR Basket \u2014 "USE CJ"',
+      mnemonic: 'USD, Sterling (GBP), Euro, CNY (Chinese Yuan), JPY (Japanese Yen)',
+      explanation: 'Five currencies in SDR basket. Indian Rupee is NOT included. CNY added in 2016. Weights: USD ~43%, EUR ~29%, CNY ~12%, JPY ~8%, GBP ~8%.',
+    },
+    {
+      title: 'BRICS Order \u2014 "Brazil-Russia-India-China-South Africa"',
+      mnemonic: 'Original 5 + 2024 expansion: Egypt, Ethiopia, Iran, UAE, Saudi Arabia',
+      explanation: 'BRICS formed 2009 (BRIC) + South Africa (2010). Expanded to 10 members in 2024. Key institutions: NDB (Shanghai) + CRA ($100 billion).',
+    },
+    {
+      title: 'G20 India Outcomes \u2014 "ADDIG"',
+      mnemonic: 'AU admitted, DPI endorsed, Debt sustainability, IMEC announced, Global Biofuels Alliance',
+      explanation: 'Key outcomes of India\'s G20 presidency (2023). African Union as permanent member, Digital Public Infrastructure model, India-Middle East-Europe Corridor, Global Biofuels Alliance launched.',
+    },
+  ],
 }

@@ -259,4 +259,184 @@ export const delhiSultanateProblems: HistoryProblem[] = [
     examYear: 2022,
     difficulty: "medium",
   },
+  {
+    id: "ds-16",
+    topic: "delhi-sultanate",
+    question:
+      "Which Sultan of Delhi introduced the Iqta system to India?",
+    options: [
+      "Qutbuddin Aibak",
+      "Iltutmish",
+      "Balban",
+      "Muhammad bin Tughlaq",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Iltutmish (1210-1236) introduced the Iqta system to India. Under this system, the empire was divided into Iqtas (revenue assignments) given to nobles/officers (Iqtadars/Muqtis) in lieu of salary. The Iqtadar collected revenue from the assigned area, kept a portion for himself and his troops, and remitted the rest to the Sultan. The system was similar to European feudalism but the Iqtas were not hereditary — they could be transferred or revoked.",
+    examName: "SSC CGL",
+    examYear: 2020,
+    difficulty: "medium",
+  },
+  {
+    id: "ds-17",
+    topic: "delhi-sultanate",
+    question:
+      "Consider the following statements about Alauddin Khalji\\'s market reforms:\n1. He established four separate markets — grain, cloth, horses, and cattle/slaves.\n2. He used secret agents (munhiyans) to monitor market prices.\n3. His market reforms survived after his death.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "1 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Statements 1 and 2 are correct. Alauddin Khalji established four regulated markets and used an elaborate intelligence network including munhiyans (secret reporters) to ensure compliance with fixed prices. Statement 3 is incorrect — his market reforms collapsed immediately after his death in 1316, as they were sustained entirely by his authoritarian enforcement. His successors could not maintain the complex system of price controls.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "hard",
+  },
+  {
+    id: "ds-18",
+    topic: "delhi-sultanate",
+    question:
+      "The Turkan-i-Chahalgani (Group of Forty) were powerful Turkish nobles during the reign of:",
+    options: [
+      "Qutbuddin Aibak",
+      "Iltutmish",
+      "Alauddin Khalji",
+      "Firoz Shah Tughlaq",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Turkan-i-Chahalgani (Chalisa or Group of Forty) were a group of powerful Turkish slave-nobles organized during the reign of Iltutmish. They wielded enormous influence in the Sultanate and played the role of kingmakers after Iltutmish\\'s death, installing and deposing several sultans. Their power was finally broken by Balban (1266-1287), who ruthlessly eliminated or reduced the influence of the Chahalgani nobles to establish his own autocratic authority.",
+    examName: "CDS",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "ds-19",
+    topic: "delhi-sultanate",
+    question:
+      "Assertion (A): Muhammad bin Tughlaq is considered the most learned Delhi Sultan.\nReason (R): Despite his intellectual brilliance, his ambitious schemes like the capital transfer and token currency were poorly implemented.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Both A and R are true, but R is not the correct explanation of A. Muhammad bin Tughlaq was indeed the most learned sultan — he was well-versed in philosophy, mathematics, medicine, astronomy, and was a calligrapher. His schemes (capital transfer, token currency, Khurasan expedition) were often conceptually sound but failed due to poor implementation and timing. R describes the paradox of his reign but does not explain why he was considered learned.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "hard",
+  },
+  {
+    id: "ds-20",
+    topic: "delhi-sultanate",
+    question:
+      "The Sufi saint Nizamuddin Auliya lived during the period of which Delhi Sultans?",
+    options: [
+      "Iltutmish to Balban",
+      "Balban to Muhammad bin Tughlaq",
+      "Alauddin Khalji to Firoz Shah Tughlaq",
+      "Firoz Shah Tughlaq to Bahlol Lodi",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Nizamuddin Auliya (1238-1325 CE), the greatest Sufi saint of the Chishti order, lived during the reigns of seven Delhi Sultans from Balban to Muhammad bin Tughlaq. He refused to visit the royal court, famously saying \\'Hanuz Dilli dur ast\\' (Delhi is still far away) when Muhammad bin Tughlaq\\'s father invited him. He died just before Muhammad bin Tughlaq entered Delhi. His dargah in Delhi remains one of the most visited Sufi shrines in India.",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "ds-21",
+    topic: "delhi-sultanate",
+    question:
+      "The five dynasties that ruled the Delhi Sultanate in chronological order were:",
+    options: [
+      "Mamluk, Tughlaq, Khalji, Sayyid, Lodi",
+      "Mamluk, Khalji, Tughlaq, Sayyid, Lodi",
+      "Khalji, Mamluk, Tughlaq, Lodi, Sayyid",
+      "Mamluk, Khalji, Sayyid, Tughlaq, Lodi",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The five dynasties of the Delhi Sultanate in chronological order were: Mamluk/Slave Dynasty (1206-1290), Khalji Dynasty (1290-1320), Tughlaq Dynasty (1320-1414), Sayyid Dynasty (1414-1451), and Lodi Dynasty (1451-1526). The Sultanate ended when Babur defeated Ibrahim Lodi at the First Battle of Panipat in 1526 and established the Mughal Empire.",
+    examName: "RRB NTPC",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "ds-22",
+    topic: "delhi-sultanate",
+    question:
+      "Alauddin Khalji\\'s Deccan campaigns were led by his general:",
+    options: [
+      "Ghazi Malik",
+      "Malik Kafur",
+      "Khizr Khan",
+      "Amir Khusrau",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Alauddin Khalji\\'s Deccan campaigns (1296-1311) were led by his brilliant slave-general Malik Kafur, also known as \\'Hazar Dinari\\' (bought for a thousand dinars). Kafur conquered the Yadavas of Devagiri, the Kakatiyas of Warangal, the Hoysalas of Dwarasamudra, and the Pandyas of Madurai, bringing enormous wealth back to Delhi. Ghazi Malik later became Sultan as Ghiyas-ud-din Tughlaq.",
+    examName: "SSC CHSL",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "ds-23",
+    topic: "delhi-sultanate",
+    question:
+      "Consider the following statements about the Delhi Sultanate architecture:\n1. The Quwwat-ul-Islam mosque was built using materials from demolished Hindu temples.\n2. True arches and domes were first used in the Alai Darwaza.\n3. Firoz Shah Tughlaq brought Ashokan pillars to Delhi.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three statements are correct. The Quwwat-ul-Islam mosque (begun by Qutbuddin Aibak in 1192) was built using materials from 27 demolished Hindu and Jain temples. The Alai Darwaza (1311) by Alauddin Khalji was the first building in India with true Islamic arches and domes. Firoz Shah Tughlaq (1351-1388) transported two Ashokan pillars — one from Topra (Haryana) and one from Meerut — to Delhi, demonstrating his interest in ancient Indian heritage.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "hard",
+  },
+  {
+    id: "ds-24",
+    topic: "delhi-sultanate",
+    question:
+      "Ibrahim Lodi, the last Delhi Sultan, was defeated at the First Battle of Panipat by:",
+    options: [
+      "Sher Shah Suri",
+      "Babur",
+      "Humayun",
+      "Ahmad Shah Abdali",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Ibrahim Lodi, the last Sultan of Delhi and last ruler of the Lodi Dynasty, was defeated and killed by Babur at the First Battle of Panipat on 21 April 1526. Babur was invited to invade India by Daulat Khan Lodi (Governor of Punjab) and Alam Khan (Ibrahim\\'s uncle), who were disgruntled with Ibrahim\\'s despotic rule. Babur\\'s superior use of artillery and the Tulughma (flanking) tactic proved decisive against Ibrahim\\'s larger army.",
+    examName: "SSC CGL",
+    examYear: 2021,
+    difficulty: "easy",
+  },
+  {
+    id: "ds-25",
+    topic: "delhi-sultanate",
+    question:
+      "The Lodi Gardens in Delhi contain the tombs of rulers from which dynasty?",
+    options: [
+      "The Khalji Dynasty",
+      "The Tughlaq Dynasty",
+      "The Sayyid and Lodi Dynasties",
+      "The Mughal Dynasty",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Lodi Gardens in Delhi contain the tombs of rulers from both the Sayyid and Lodi Dynasties. The most notable structures include the tomb of Muhammad Shah (Sayyid, 1444), the tomb of Sikandar Lodi (1517), the Bara Gumbad and Shish Gumbad. These tombs represent the architectural style of the later Delhi Sultanate period, featuring octagonal and square designs with domes. The gardens were laid out by the British and are now a popular park.",
+    examName: "RRB NTPC",
+    examYear: 2023,
+    difficulty: "easy",
+  },
 ]

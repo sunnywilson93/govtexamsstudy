@@ -206,4 +206,238 @@ export const independencePartitionProblems: HistoryProblem[] = [
     examYear: 2021,
     difficulty: "medium",
   },
+  {
+    id: "ip-13",
+    topic: "independence-partition",
+    question:
+      "Consider the following statements about the Attlee Declaration (February 1947):\n1. It announced that Britain would transfer power to India by June 1948.\n2. It appointed Lord Mountbatten as the new Viceroy.\n3. It accepted the demand for Pakistan.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 only",
+      "1 and 2 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Statements 1 and 2 are correct. On 20 February 1947, PM Clement Attlee declared that Britain would transfer power by June 1948 at the latest and appointed Lord Mountbatten as the last Viceroy. Statement 3 is incorrect — the declaration did not accept the demand for Pakistan; the decision on partition came later through the Mountbatten Plan (3 June 1947).",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "ip-14",
+    topic: "independence-partition",
+    question:
+      "The Noakhali Riots (October 1946) are significant because:",
+    options: [
+      "They led to the formation of the Muslim League",
+      "They triggered massive communal violence in Bengal and Gandhi\\'s peace mission",
+      "They were the first instance of communal violence in India",
+      "They led to the annulment of partition",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Noakhali Riots (October 1946) were devastating communal violence in the Noakhali district of Bengal, following the Great Calcutta Killings. Mahatma Gandhi undertook a walking peace mission through Noakhali villages from November 1946 to March 1947. These riots underscored the breakdown of communal relations and strengthened the case for partition.",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "ip-15",
+    topic: "independence-partition",
+    question:
+      "Assertion (A): The Indian Independence Act 1947 created two independent dominions — India and Pakistan.\nReason (R): Both India and Pakistan were given the right to frame their own constitutions.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Both A and R are true, but R is not the correct explanation of A. The Act created two dominions (A is true), and both were given the right to frame their own constitutions (R is true). However, the creation of two dominions was because of the acceptance of partition, not because of the right to frame constitutions — the right to frame constitutions was a consequence of dominion status, not the reason for creating two dominions.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "hard",
+  },
+  {
+    id: "ip-16",
+    topic: "independence-partition",
+    question:
+      "The integration of princely states into India was primarily handled by:",
+    options: [
+      "Jawaharlal Nehru and Lord Mountbatten",
+      "Sardar Vallabhbhai Patel and V.P. Menon",
+      "Dr. B.R. Ambedkar and Jawaharlal Nehru",
+      "Lord Wavell and Stafford Cripps",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The integration of 562 princely states into the Indian Union was primarily handled by Deputy PM Sardar Vallabhbhai Patel (as Home Minister) and his secretary V.P. Menon. Patel used persuasion, pressure, and the Instrument of Accession to bring almost all princely states into India. Junagadh, Hyderabad, and Jammu & Kashmir required special intervention.",
+    examName: "SSC CGL",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "ip-17",
+    topic: "independence-partition",
+    question:
+      "Consider the following statements about the Simla Conference (1945):\n1. It was convened by Lord Wavell.\n2. It proposed the reconstitution of the Viceroy\\'s Executive Council.\n3. It failed because the Muslim League insisted that only it could nominate Muslim members.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three statements are correct. The Simla Conference (June-July 1945) was convened by Lord Wavell based on the Wavell Plan. It proposed to reconstitute the Executive Council with equal Hindu and Muslim representation. It failed because Jinnah insisted that the Muslim League alone had the right to nominate Muslim members, which the Congress (which had Muslim members like Azad) rejected.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "ip-18",
+    topic: "independence-partition",
+    question:
+      "The Interim Government of India, formed in September 1946, was headed by:",
+    options: [
+      "Lord Wavell",
+      "Jawaharlal Nehru",
+      "Sardar Patel",
+      "C. Rajagopalachari",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Interim Government was formed on 2 September 1946 with Jawaharlal Nehru as Vice President of the Executive Council (de facto PM). The Muslim League initially refused to join but later joined in October 1946. However, the League members often obstructed the functioning of the government, deepening the political deadlock.",
+    examName: "RRB NTPC",
+    examYear: 2021,
+    difficulty: "easy",
+  },
+  {
+    id: "ip-19",
+    topic: "independence-partition",
+    question:
+      "During the partition of India, the estimated number of people who migrated across the new borders was:",
+    options: [
+      "About 1 million",
+      "About 5 million",
+      "About 10-15 million",
+      "About 30 million",
+    ],
+    correctIndex: 2,
+    explanation:
+      "During partition, an estimated 10-15 million people migrated across the India-Pakistan borders — one of the largest mass migrations in human history. Hindus and Sikhs moved from Pakistan to India, and Muslims moved from India to Pakistan. An estimated 1-2 million people died in the accompanying communal violence.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "ip-20",
+    topic: "independence-partition",
+    question:
+      "Consider the following about the Cripps Mission (1942):\n1. It offered dominion status to India after the war.\n2. Any province could opt out of the Indian Union.\n3. It was rejected by both Congress and Muslim League.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three statements are correct. The Cripps Mission offered dominion status after WWII and allowed provinces to opt out (implicitly accepting the possibility of partition). Congress rejected it because the offer of self-determination to provinces could lead to partition, and because the proposal did not transfer immediate power. The Muslim League rejected it because it did not concede Pakistan explicitly. Gandhi called it a \\u2018post-dated cheque on a crashing bank.\\u2019",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "hard",
+  },
+  {
+    id: "ip-21",
+    topic: "independence-partition",
+    question:
+      "Assertion (A): Mahatma Gandhi was not present at the official independence celebrations in Delhi on 15 August 1947.\nReason (R): Gandhi was in Calcutta trying to stop communal riots.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. While India celebrated independence in Delhi on 15 August 1947, Gandhi was in Calcutta fasting and working to stop communal violence. He called partition a \\u2018spiritual tragedy\\u2019 and spent independence day in mourning and prayer rather than celebration.",
+    examName: "SSC CHSL",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "ip-22",
+    topic: "independence-partition",
+    question:
+      "The Two-Nation Theory, which formed the ideological basis for Pakistan, was formally articulated by:",
+    options: [
+      "Sir Syed Ahmad Khan",
+      "Muhammad Ali Jinnah",
+      "Muhammad Iqbal",
+      "Liaquat Ali Khan",
+    ],
+    correctIndex: 1,
+    explanation:
+      "While the idea of Hindus and Muslims being separate nations had roots in Sir Syed Ahmad Khan\\'s writings and Muhammad Iqbal\\'s Allahabad Address (1930), it was Muhammad Ali Jinnah who formally articulated and politically championed the Two-Nation Theory. At the 1940 Lahore Session, Jinnah declared that Hindus and Muslims were two separate nations by every definition.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "ip-23",
+    topic: "independence-partition",
+    question:
+      "Consider the following events in chronological order:\n1. Quit India Movement\n2. Cabinet Mission\n3. Direct Action Day\n4. Mountbatten Plan\n\nSelect the correct chronological order:",
+    options: [
+      "1, 2, 3, 4",
+      "2, 1, 3, 4",
+      "1, 3, 2, 4",
+      "2, 3, 1, 4",
+    ],
+    correctIndex: 0,
+    explanation:
+      "The correct chronological order is: Quit India Movement (August 1942), Cabinet Mission (March-June 1946), Direct Action Day (16 August 1946), and Mountbatten Plan (3 June 1947). Each event progressively moved the political situation toward partition and independence.",
+    examName: "SSC CGL",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "ip-24",
+    topic: "independence-partition",
+    question:
+      "The Instrument of Accession required princely states to accede to India in which subjects?",
+    options: [
+      "All subjects",
+      "Defence, External Affairs, and Communications only",
+      "Defence and Finance only",
+      "Law and Order and Revenue only",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Instrument of Accession, drafted by V.P. Menon, required princely states to accede to India in only three subjects: Defence, External Affairs, and Communications. Internal autonomy was initially retained by the states. This limited accession was a key strategy used by Sardar Patel to secure the accession of most states quickly.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "ip-25",
+    topic: "independence-partition",
+    question:
+      "Assertion (A): Pakistan was created as two geographically separate territories — West Pakistan and East Pakistan.\nReason (R): Muslim-majority areas were concentrated in the northwest (Punjab, Sindh, NWFP, Balochistan) and northeast (Bengal) of British India with Hindu-majority areas in between.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. The geographical distribution of Muslim-majority areas in the northwest and east of British India, separated by over 1,600 km of Indian territory, resulted in Pakistan being created as two separate wings. This geographical separation was a fundamental structural weakness that eventually led to the breakup and creation of Bangladesh in 1971.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "hard",
+  },
 ]

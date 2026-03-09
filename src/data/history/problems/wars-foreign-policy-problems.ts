@@ -201,4 +201,238 @@ export const warsForeignPolicyProblems: HistoryProblem[] = [
     examYear: 2022,
     difficulty: "hard",
   },
+  {
+    id: "wfp-13",
+    topic: "wars-foreign-policy",
+    question:
+      "India\\'s 'Look East Policy' was launched in 1991 under which Prime Minister?",
+    options: [
+      "Rajiv Gandhi",
+      "P.V. Narasimha Rao",
+      "Atal Bihari Vajpayee",
+      "Manmohan Singh",
+    ],
+    correctIndex: 1,
+    explanation:
+      "India\\'s Look East Policy was launched in 1991 under PM P.V. Narasimha Rao. It aimed at strengthening economic and strategic ties with Southeast Asian nations (ASEAN) after the end of the Cold War and India\\'s economic liberalization. Under PM Modi (2014), it was upgraded to the \\'Act East Policy,\\' emphasizing not just economic but also strategic engagement with the Indo-Pacific region.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "wfp-14",
+    topic: "wars-foreign-policy",
+    question:
+      "Operation Meghdoot (1984) was an Indian military operation to secure:",
+    options: [
+      "Kargil sector",
+      "Siachen Glacier",
+      "Aksai Chin",
+      "Arunachal Pradesh",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Operation Meghdoot (April 1984) was the Indian military operation to secure the Siachen Glacier in the Karakoram range, the world\\'s highest battlefield. India pre-emptively occupied the glacier before Pakistan could establish control. Indian troops were airlifted to key passes (Sia La and Bilafond La) at altitudes above 20,000 feet. India has maintained military presence there since, at enormous human and financial cost.",
+    examName: "CDS",
+    examYear: 2020,
+    difficulty: "easy",
+  },
+  {
+    id: "wfp-15",
+    topic: "wars-foreign-policy",
+    question:
+      "Consider the following statements about the Indo-Pak War of 1965:\n1. It was triggered by Pakistan\\'s Operation Gibraltar in Kashmir.\n2. India crossed the international border to attack Lahore.\n3. The war ended with the Tashkent Declaration.\n4. India gained significant territory in the war.\n\nWhich of the above statements are correct?",
+    options: [
+      "1, 2 and 3 only",
+      "1 and 3 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Statements 1, 2, and 3 are correct. The 1965 war was triggered by Pakistan\\'s Operation Gibraltar (infiltrating guerrillas into Indian Kashmir) followed by Operation Grand Slam (armored attack on Akhnoor). India responded by crossing the international border toward Lahore and Sialkot. The war ended with the Tashkent Declaration (January 1966). Statement 4 is incorrect — the Tashkent Declaration restored the status quo ante bellum (pre-war positions), so neither side retained captured territory.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "hard",
+  },
+  {
+    id: "wfp-16",
+    topic: "wars-foreign-policy",
+    question:
+      "Assertion (A): The Bandung Conference (1955) is considered a precursor to the Non-Aligned Movement.\nReason (R): It brought together Afro-Asian nations to promote economic and cultural cooperation and oppose colonialism.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. The Bandung Conference (April 1955) in Indonesia brought together 29 Afro-Asian nations to promote economic and cultural cooperation and oppose colonialism and neo-colonialism. It articulated the \\'Bandung Principles,\\' including respect for sovereignty, non-aggression, and non-interference. These principles formed the ideological foundation for the formal establishment of the Non-Aligned Movement at Belgrade in 1961.",
+    examName: "UPSC Prelims",
+    examYear: 2020,
+    difficulty: "medium",
+  },
+  {
+    id: "wfp-17",
+    topic: "wars-foreign-policy",
+    question:
+      "The Pokhran-II nuclear tests (1998) were code-named:",
+    options: [
+      "Smiling Buddha",
+      "Operation Shakti",
+      "Operation Vijay",
+      "Operation Parakram",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Pokhran-II nuclear tests (May 11 and 13, 1998) were code-named Operation Shakti. Five nuclear devices were detonated — three on May 11 (one thermonuclear, one fission, one sub-kiloton) and two sub-kiloton tests on May 13. PM Atal Bihari Vajpayee declared India a nuclear weapons state. Smiling Buddha was the code name for Pokhran-I (1974). The tests led to international sanctions, which were gradually lifted.",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "wfp-18",
+    topic: "wars-foreign-policy",
+    question:
+      "The McMahon Line demarcates the boundary between India and:",
+    options: [
+      "Pakistan",
+      "China (Tibet)",
+      "Myanmar",
+      "Nepal",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The McMahon Line demarcates the boundary between India (specifically Arunachal Pradesh) and China (Tibet). It was drawn by Sir Henry McMahon at the Simla Conference (1914) between British India and Tibet. India considers the McMahon Line as the legal international boundary, while China does not recognize it, claiming Arunachal Pradesh as \\'South Tibet.\\' This dispute was a major cause of the 1962 Sino-Indian War.",
+    examName: "SSC CHSL",
+    examYear: 2021,
+    difficulty: "easy",
+  },
+  {
+    id: "wfp-19",
+    topic: "wars-foreign-policy",
+    question:
+      "The Indus Waters Treaty (1960) was mediated by:",
+    options: [
+      "The United Nations",
+      "The Soviet Union",
+      "The World Bank",
+      "The United States",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Indus Waters Treaty (1960) was mediated by the World Bank (International Bank for Reconstruction and Development). Signed by PM Nehru and President Ayub Khan, it allocated the three eastern rivers (Ravi, Beas, Sutlej) to India and the three western rivers (Indus, Jhelum, Chenab) to Pakistan. It is considered one of the most successful international water treaties and has survived three wars between India and Pakistan.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "wfp-20",
+    topic: "wars-foreign-policy",
+    question:
+      "Consider the following statements about India\\'s liberation of Goa (1961):\n1. Goa was a Portuguese colony for over 450 years.\n2. Operation Vijay liberated Goa.\n3. The liberation was opposed by the UN Security Council.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 only",
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Only statement 1 is correct. Goa was a Portuguese colony since 1510, for over 450 years. Statement 2 is misleading — the liberation of Goa in December 1961 was actually called Operation Vijay, but this was a different operation from the 1999 Kargil Operation Vijay. Statement 3 is partially accurate but overstated — while some Western nations criticized India\\'s military action and a resolution was introduced in the UNSC, it was vetoed by the Soviet Union. The operation lasted about 36 hours.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "hard",
+  },
+  {
+    id: "wfp-21",
+    topic: "wars-foreign-policy",
+    question:
+      "The Lahore Declaration (1999) was signed between:",
+    options: [
+      "Atal Bihari Vajpayee and Pervez Musharraf",
+      "Atal Bihari Vajpayee and Nawaz Sharif",
+      "Rajiv Gandhi and Benazir Bhutto",
+      "Manmohan Singh and Pervez Musharraf",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Lahore Declaration (February 1999) was signed between Indian PM Atal Bihari Vajpayee and Pakistani PM Nawaz Sharif during Vajpayee\\'s historic bus journey to Lahore. The declaration committed both nations to peaceful resolution of disputes, confidence-building measures, and nuclear risk reduction. However, just months later, the Kargil War erupted, undermining the spirit of the declaration.",
+    examName: "SSC CGL",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "wfp-22",
+    topic: "wars-foreign-policy",
+    question:
+      "The 'Forward Policy' adopted by India before the 1962 war referred to:",
+    options: [
+      "Building roads and military posts near the Chinese border",
+      "India\\'s aggressive naval expansion in the Indian Ocean",
+      "India\\'s policy of preemptive strikes against Pakistan",
+      "India\\'s push to join the UN Security Council",
+    ],
+    correctIndex: 0,
+    explanation:
+      "The \\'Forward Policy\\' was India\\'s strategy of establishing military outposts along the disputed India-China border, particularly in Aksai Chin and NEFA. Adopted by PM Nehru and Defence Minister Krishna Menon, the policy aimed to assert Indian territorial claims by physical presence. However, the Indian Army was inadequately prepared and supplied. China responded with a massive military offensive in October 1962, resulting in India\\'s defeat.",
+    examName: "CDS",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "wfp-23",
+    topic: "wars-foreign-policy",
+    question:
+      "India\\'s first peacekeeping mission abroad was the Indian Peace Keeping Force (IPKF) deployed to:",
+    options: [
+      "Korea",
+      "Sri Lanka",
+      "Congo",
+      "Somalia",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Indian Peace Keeping Force (IPKF) was deployed to Sri Lanka in 1987-90 under the Indo-Sri Lanka Accord signed by Rajiv Gandhi and J.R. Jayewardene. The IPKF was meant to disarm the LTTE and maintain peace, but it became embroiled in fierce fighting with the LTTE. Over 1,200 Indian soldiers were killed. The IPKF was withdrawn in 1990 under PM V.P. Singh. India had earlier participated in UN peacekeeping in Korea (1950s) and Congo, but the IPKF was India\\'s own initiative.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "medium",
+  },
+  {
+    id: "wfp-24",
+    topic: "wars-foreign-policy",
+    question:
+      "The Agra Summit (2001) between India and Pakistan was held between:",
+    options: [
+      "Vajpayee and Nawaz Sharif",
+      "Vajpayee and Pervez Musharraf",
+      "Manmohan Singh and Pervez Musharraf",
+      "Vajpayee and Benazir Bhutto",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Agra Summit (July 2001) was held between Indian PM Atal Bihari Vajpayee and Pakistani President General Pervez Musharraf. The summit was an attempt to resolve outstanding issues between the two countries, including Kashmir. However, the summit ended without any agreement, primarily due to Pakistan\\'s insistence on making Kashmir the central and only issue of discussion.",
+    examName: "RRB NTPC",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "wfp-25",
+    topic: "wars-foreign-policy",
+    question:
+      "Consider the following statements about the Kargil War (1999):\n1. Pakistani intruders occupied posts on the Indian side of the Line of Control.\n2. India deliberately did not cross the LoC during operations.\n3. The Indian Air Force used MiG-21s and Mirage 2000s in the conflict.\n4. Pakistan acknowledged that its regular army was involved.\n\nWhich of the above statements are correct?",
+    options: [
+      "1, 2 and 3 only",
+      "1 and 2 only",
+      "1, 3 and 4 only",
+      "1, 2, 3 and 4",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Statements 1, 2, and 3 are correct. Pakistani soldiers and militants crossed the LoC to occupy Indian posts in the Kargil sector. India, on PM Vajpayee\\'s orders, deliberately did not cross the LoC to avoid escalation into a full-scale war. The IAF used MiG-21s, MiG-27s, MiG-29s, and Mirage 2000s (which delivered laser-guided bombs at Tiger Hill). Statement 4 is incorrect — Pakistan initially denied involvement of its regular army, claiming the intruders were \\'Kashmiri freedom fighters,\\' though evidence later proved Pakistani Army involvement.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "hard",
+  },
 ]

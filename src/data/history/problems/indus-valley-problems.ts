@@ -300,4 +300,94 @@ export const indusValleyProblems: HistoryProblem[] = [
     examYear: 2020,
     difficulty: "easy",
   },
+  {
+    id: "iv-21",
+    topic: "indus-valley",
+    question:
+      "Consider the following statements about the granary found at Harappa:\n1. It had rows of circular working platforms nearby.\n2. The platforms may have been used for threshing grain.\n3. The granary had ventilation ducts in its floor.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three statements are correct. The Great Granary at Harappa had rows of circular working platforms nearby, which contained wheat and barley husks, suggesting they were used for threshing grain. The granary\\'s floor had ventilation ducts (air passages) to keep the stored grain dry and prevent spoilage. At Mohenjo-daro, a similar granary was found near the Great Bath, situated on the citadel mound.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "hard",
+  },
+  {
+    id: "iv-22",
+    topic: "indus-valley",
+    question:
+      "The site of Banawali in Haryana is notable for which specific find?",
+    options: [
+      "The Great Bath",
+      "A toy plough and barley",
+      "The largest dockyard",
+      "The Dancing Girl figurine",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Banawali (Hisar district, Haryana) is notable for the discovery of a toy plough and evidence of barley cultivation. It also had a unique oval-shaped settlement plan, unlike the typical rectangular grid pattern of other Harappan sites. The discovery of the toy plough suggests that agriculture using ploughs was common in Harappan culture. The site also shows both pre-Harappan and Harappan phases.",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "iv-23",
+    topic: "indus-valley",
+    question:
+      "Assertion (A): The Indus Valley Civilization is classified as a Bronze Age civilization.\nReason (R): The Harappan people extensively used bronze (an alloy of copper and tin) for tools, weapons, and ornaments but did not know the use of iron.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. The Indus Valley Civilization (c. 2600-1900 BCE) is classified as a Bronze Age civilization because the Harappan people used bronze (an alloy of copper and tin) for manufacturing tools, weapons, ornaments, and household objects. They did not know the use of iron, which came to the Indian subcontinent later during the Vedic period. The presence of bronze and absence of iron is the defining feature of the Bronze Age classification.",
+    examName: "SSC CHSL",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "iv-24",
+    topic: "indus-valley",
+    question:
+      "The Harappan site of Alamgirpur is significant because it is:",
+    options: [
+      "The westernmost Harappan site",
+      "The easternmost Harappan site (in UP)",
+      "The northernmost Harappan site",
+      "The only Harappan site in South India",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Alamgirpur (Meerut district, Uttar Pradesh) is significant because it is the easternmost known site of the Harappan Civilization, located on the banks of the Hindon river. It was excavated by Y.D. Sharma in 1958. The site represents the furthest eastern extension of Harappan culture into the Ganga-Yamuna doab. The westernmost site is Sutkagendor (Balochistan, Pakistan), the northernmost is Manda (J&K), and the southernmost is Daimabad (Maharashtra).",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "iv-25",
+    topic: "indus-valley",
+    question:
+      "Consider the following statements about the Indus Valley trade:\n1. Harappan seals have been found in Mesopotamia.\n2. The Harappans imported tin, copper, and lapis lazuli.\n3. Internal trade was conducted using a standardized system of weights and measures.\n4. Evidence suggests the Harappans used a wheeled cart for transport.\n\nWhich of the above statements are correct?",
+    options: [
+      "1 and 3 only",
+      "1, 2 and 3 only",
+      "1, 3 and 4 only",
+      "1, 2, 3 and 4",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All four statements are correct. Harappan seals have been found at Mesopotamian sites like Ur and Tell Asmar, confirming trade links. The Harappans imported tin (from Afghanistan/Central Asia), copper (from Rajasthan/Oman), and lapis lazuli (from Badakhshan, Afghanistan). They used standardized cubical chert weights in multiples of 16 for trade. Terracotta models of wheeled carts have been found at several sites, indicating their use in land transport.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "hard",
+  },
 ]

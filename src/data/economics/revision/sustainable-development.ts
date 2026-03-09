@@ -1,56 +1,142 @@
 import type { SubjectRevision } from '@/types/subject-notes'
 
 export const sustainableDevelopmentRevision: SubjectRevision = {
-  "topic": "sustainable-development",
-  "bullets": [
-    "Sustainable Development: Meeting present needs without compromising future generations (Brundtland, 1987).",
-    "Paris Agreement (2015): Limit warming to 1.5-2°C. India signed. NDC updated in 2022.",
-    "India's Net Zero target: 2070 (announced at COP26 Glasgow, 2021).",
-    "Updated NDC: 50% non-fossil fuel energy capacity, 45% carbon intensity reduction (from 2005) by 2030.",
-    "International Solar Alliance (ISA): India-France, HQ Gurugram. 120+ members. Promote solar.",
-    "National Green Hydrogen Mission: 5 MMT by 2030. Rs 19,744 crore.",
-    "CBDR: Common But Differentiated Responsibilities — developed countries should bear greater burden.",
-    "India's per capita emissions: ~2.4 tonnes CO2 (global avg ~4.7, US ~14).",
-    "Sovereign Green Bonds: First issued Jan 2023 (Rs 16,000 crore). For green projects.",
-    "Carbon Credit Trading Scheme (2023): Under Energy Conservation Amendment Act 2022."
+  topic: 'sustainable-development',
+  bullets: [
+    'Sustainable Development: Meeting present needs without compromising future generations (Brundtland Commission, 1987). Three pillars: Economic, Social, Environmental.',
+    'Paris Agreement (2015): Limit warming to 1.5-2\u00B0C. Bottom-up approach — each country sets its own NDC. 196 parties.',
+    'India\'s Updated NDC (Aug 2022): 50% non-fossil fuel energy capacity, 45% carbon intensity reduction (from 2005 levels) by 2030.',
+    'India\'s Net Zero target: 2070 (COP26 Glasgow, 2021). EU/US: 2050. China: 2060.',
+    'Panchamrit Pledges: 500 GW RE by 2030, 50% energy from renewables, 1 billion tonnes CO2 cut, 45% intensity cut, net-zero 2070.',
+    '17 SDGs adopted in 2015 under 2030 Agenda (replaced 8 MDGs). 169 targets, 232 indicators.',
+    'NITI Aayog publishes SDG India Index — top states: Kerala, Tamil Nadu, Himachal Pradesh. India\'s composite score improved from 57 (2018) to 71.',
+    'CBDR-RC: Common But Differentiated Responsibilities and Respective Capabilities — developed countries bear greater burden due to historical emissions.',
+    'India\'s per capita emissions: ~2.4 tonnes CO2 (global avg ~4.7, US ~14). Total 3rd largest after China, US.',
+    'Kyoto Protocol (1997): Top-down, binding for Annex I (developed) only. CDM, JI, Emissions Trading. US never ratified.',
+    'Paris Agreement (2015): Bottom-up, universal. NDCs voluntary, reporting mandatory. Ratchet mechanism — each NDC more ambitious.',
+    'COP26 Glasgow: "Phase-down" of coal (not phase-out). COP27 Sharm el-Sheikh: Loss & Damage Fund. COP28 Dubai: First Global Stocktake.',
+    'COP29 Baku (2024): NCQG $300 billion/year by 2035. Article 6 carbon market rules finalised.',
+    'NAPCC (2008): 8 missions — Solar, Enhanced Energy Efficiency, Sustainable Habitat, Water, Himalayan Ecosystem, Green India, Sustainable Agriculture, Strategic Knowledge.',
+    'National Solar Mission: Target 100 GW solar by 2022 (achieved ~73 GW). Overall RE target: 500 GW by 2030.',
+    'National Green Hydrogen Mission: 5 MMT by 2030. Rs 19,744 crore. For steel, fertiliser, transport.',
+    'Green Climate Fund (GCF): Largest dedicated climate fund. HQ Songdo, South Korea. India is contributor and recipient.',
+    'Sovereign Green Bonds: First issued Jan 2023 (Rs 16,000 crore). For solar, wind, metro, afforestation.',
+    'ESG: Environmental, Social, Governance. SEBI mandated BRSR for top 1,000 listed companies from FY23.',
+    'Carbon Credit Trading Scheme (CCTS, 2023): Under Energy Conservation Amendment Act 2022. BEE administers.',
+    'PAT (Perform, Achieve, Trade): Energy efficiency for 13 industrial sectors. ESCerts (Energy Saving Certificates) traded.',
+    'International Solar Alliance (ISA): India-France, HQ Gurugram, 120+ members. OSOWOG — global solar grid.',
+    'CDRI: Coalition for Disaster Resilient Infrastructure. India-led, HQ Delhi, 40+ members.',
+    'LiFE (Lifestyle for Environment): Individual behavioural change. Endorsed by G20.',
+    'Single-use plastic ban: 75 items banned from July 1, 2022. Carry bag thickness: 120 microns (from Dec 2023).',
+    'EPR (Extended Producer Responsibility): Producers manage end-of-life products. Covers plastics, e-waste, batteries, tyres.',
+    'Circular Economy: NITI Aayog plan covering 11 focus areas. GOBARdhan for biogas. SATAT for CBG plants.',
+    'EIA Notification 2006 (amended 2020): Mandatory for projects above thresholds. Criticised for dilution in 2020 amendment.',
+    'Forest cover: 21.76% of geographic area (ISFR 2023). Target: 33%. FSI publishes biennial State of Forest Report.',
+    'Kunming-Montreal GBF (2022): "30x30" target — protect 30% of land and 30% of oceans by 2030.',
+    'Ramsar Convention: Wetlands protection. India has 80+ Ramsar sites — highest in South Asia.',
+    'Loss and Damage Fund: Established COP27. Operationalised COP28 with ~$700 million (need: $400 billion/year).',
+    'Adaptation: Adjust to climate effects (flood defences, drought crops). Mitigation: Reduce emissions (RE, afforestation).',
+    'India: 7th most climate-vulnerable country. Risks: monsoon variability, GLOFs, sea-level rise, heat waves, cyclones.',
+    'Green GDP: Adjusts GDP for environmental degradation and resource depletion. Not officially adopted by India.',
+    'Polluter Pays Principle + Precautionary Principle: Upheld by SC in Vellore Citizens case (1996).',
+    'E20 target: 20% ethanol blending in petrol by 2025-26. Already achieved ~12%.',
+    'PM KUSUM: Solar pumps for farmers. Reduces diesel use, provides clean energy.',
+    'Ethanol blending, green hydrogen, EV adoption (FAME II/PM E-DRIVE), and RE expansion are India\'s key transition pathways.',
+    'RE capacity: Solar ~73 GW, Wind ~46 GW, Large Hydro ~47 GW, Biomass ~11 GW, Nuclear 7.48 GW. Total 190+ GW (4th globally).',
+    'Solar tariffs: Rs 17/unit (2010) \u2192 Rs 1.99/unit (lowest 2024). Competitive with coal. PM Surya Ghar: 1 crore homes, Rs 75,000 subsidy.',
+    'EV sales: 1.5 million in FY24 (10x from FY21). FAME II Rs 10,000 crore. PM E-DRIVE Rs 10,900 crore. PLI for batteries Rs 18,100 crore.',
+    'NCAP (2019): 40% PM2.5/PM10 reduction target by 2025-26 in 131 non-attainment cities. CAQM for NCR: GRAP Stage I-IV.',
+    'Waste: India generates 62 MT solid waste/year. Only 12 MT treated. 3.2 MT e-waste (5th globally). 95% handled by informal sector.',
+    'EIA: 4 stages \u2014 Screening, Scoping, Public Hearing, Appraisal. Cat A: Central (MoEFCC). Cat B: State (SEIAA). B1 needs EIA, B2 only EMP.',
+    'Vedanta Niyamgiri case (SC 2013): Dongria Kondh Gram Sabhas rejected bauxite mining. Landmark environmental justice ruling.',
+    'India needs $2.5 trillion climate finance by 2030. Green bond market $25+ billion. RBI green deposits framework (2023).',
+    'Clean Ganga: Namami Gange Rs 30,000+ crore. 183 STPs completed. 302 polluted river stretches (CPCB).',
+    'Climate-resilient agriculture: NMSA, Soil Health Cards (23 crore), PMKSY micro-irrigation (80 lakh ha), PKVY organic farming.',
+    'Right to clean environment: Part of Article 21 (Right to Life). SC: MC Mehta cases, Subhash Kumar v State of Bihar (1991).',
   ],
-  "comparisons": [
+  comparisons: [
     {
-      "title": "Key Climate Conferences",
-      "headers": [
-        "COP",
-        "Year/City",
-        "Key Outcome"
+      title: 'Kyoto Protocol vs Paris Agreement',
+      headers: ['Feature', 'Kyoto Protocol (1997)', 'Paris Agreement (2015)'],
+      rows: [
+        ['Approach', 'Top-down (binding targets for developed)', 'Bottom-up (voluntary NDCs for all)'],
+        ['Coverage', 'Annex I countries only', 'Universal (196 parties)'],
+        ['Targets', 'Legally binding emission cuts', 'NDCs voluntary; reporting binding'],
+        ['US participation', 'Never ratified', 'Joined (withdrew 2020, rejoined 2021)'],
+        ['Mechanism', 'CDM, JI, Emissions Trading', 'NDCs, Global Stocktake, Art. 6 markets'],
+        ['India\'s role', 'No binding target; CDM host', 'NDC targets; net-zero 2070'],
       ],
-      "rows": [
-        [
-          "COP21",
-          "2015 Paris",
-          "Paris Agreement — 1.5-2°C target, NDCs"
-        ],
-        [
-          "COP26",
-          "2021 Glasgow",
-          "India: Net Zero by 2070, Glasgow Pact"
-        ],
-        [
-          "COP27",
-          "2022 Sharm el-Sheikh",
-          "Loss and Damage Fund established"
-        ],
-        [
-          "COP28",
-          "2023 Dubai",
-          "First Global Stocktake; transition from fossil fuels"
-        ]
-      ]
-    }
-  ],
-  "mnemonics": [
+    },
     {
-      "title": "NAPCC 8 Missions — \"SEEDS WHAT\"",
-      "mnemonic": "Solar, Enhanced Energy Efficiency, Sustainable Development (Habitat), Water, Himalayan Ecosystem, Agriculture, Technology (Strategic Knowledge)",
-      "explanation": "National Action Plan on Climate Change has 8 missions. The first letter of each: S-Solar, E-Enhanced Energy, E-Ecosystem (Himalayan), D-Development (Sustainable Habitat), S-Sustaining Agriculture, W-Water, H-Habitat, A-Agriculture, T-Technology."
-    }
-  ]
+      title: 'Key Climate Conferences',
+      headers: ['COP', 'Year/City', 'Key Outcome'],
+      rows: [
+        ['COP3', '1997 Kyoto', 'Kyoto Protocol — binding targets for developed countries'],
+        ['COP21', '2015 Paris', 'Paris Agreement — 1.5-2\u00B0C target, NDCs'],
+        ['COP26', '2021 Glasgow', 'India: Net Zero 2070, Glasgow Climate Pact, phase-down of coal'],
+        ['COP27', '2022 Sharm el-Sheikh', 'Loss and Damage Fund established'],
+        ['COP28', '2023 Dubai', 'First Global Stocktake; "transition away from fossil fuels"'],
+        ['COP29', '2024 Baku', 'NCQG $300B/yr by 2035; Art. 6 rules finalised'],
+      ],
+    },
+    {
+      title: 'India\'s RE Capacity (March 2024)',
+      headers: ['Source', 'Capacity (GW)', 'Key Target', 'Top States'],
+      rows: [
+        ['Solar', '~73 GW', '280 GW by 2030', 'Rajasthan, Gujarat, Karnataka'],
+        ['Wind', '~46 GW', '140 GW by 2030', 'Tamil Nadu, Gujarat, Karnataka, Rajasthan'],
+        ['Large Hydro', '~47 GW', '70 GW potential', 'Himachal, Uttarakhand, J&K, Arunachal'],
+        ['Nuclear', '7.48 GW', '22.48 GW by 2031', 'Tamil Nadu, Maharashtra, Rajasthan, Gujarat'],
+        ['Biomass/Waste', '~11 GW', '25 GW potential', 'Maharashtra, UP, Karnataka'],
+      ],
+    },
+    {
+      title: 'India-Led International Climate Initiatives',
+      headers: ['Initiative', 'Launched', 'HQ', 'Key Feature'],
+      rows: [
+        ['ISA (International Solar Alliance)', 'COP21 (2015)', 'Gurugram', '120+ members; promote solar in sunshine countries'],
+        ['CDRI', 'UN Summit 2019', 'New Delhi', '40+ members; disaster-resilient infrastructure'],
+        ['LiFE (Lifestyle for Environment)', 'COP26 (2021)', 'N/A', 'Individual behavioural change; G20 endorsed'],
+        ['Global Biofuels Alliance', 'G20 2023', 'N/A', 'India, USA, Brazil; ethanol, biodiesel, SAF'],
+        ['LeadIT', '2019', 'Stockholm', 'India-Sweden; decarbonise hard-to-abate industry'],
+      ],
+    },
+    {
+      title: 'Carbon Pricing Mechanisms',
+      headers: ['Mechanism', 'How It Works', 'India Example', 'Global Example'],
+      rows: [
+        ['Carbon Tax', 'Direct tax on emissions', 'Coal cess Rs 400/tonne', 'Sweden $130/tonne (highest)'],
+        ['Cap-and-Trade (ETS)', 'Set cap, allocate permits, trade', 'India CCTS (2023)', 'EU ETS (since 2005, largest)'],
+        ['PAT', 'Energy efficiency targets + trade ESCerts', '13 industrial sectors', 'Unique to India'],
+        ['Offset Credits (CDM/Art.6)', 'Projects earn credits for sale', 'CDM host (2nd after China)', 'Art. 6.4 replacing CDM'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'NAPCC 8 Missions — "SEN WH GAS"',
+      mnemonic: 'Solar, Energy Efficiency, National Sustainable Habitat, Water, Himalayan Ecosystem, Green India, Agriculture, Strategic Knowledge',
+      explanation: 'S-Solar, E-Enhanced Energy Efficiency, N-National Sustainable Habitat, W-Water, H-Himalayan Ecosystem, G-Green India, A-Sustainable Agriculture, S-Strategic Knowledge for Climate Change.',
+    },
+    {
+      title: 'Panchamrit (5 Pledges) — "500-50-1B-45-2070"',
+      mnemonic: '500 GW RE, 50% from renewables, 1 Billion tonne CO2 cut, 45% intensity reduction, Net-Zero by 2070',
+      explanation: 'Five climate pledges by PM Modi at COP26 Glasgow. Remember as decreasing specificity: capacity → share → absolute cut → intensity → timeline.',
+    },
+    {
+      title: 'SDGs Count — "17 Goals, 169 Targets"',
+      mnemonic: '17-169-232: 17 Goals, 169 Targets, 232 Indicators',
+      explanation: 'SDGs adopted 2015 under 2030 Agenda. Replaced 8 MDGs. Key for India: SDG 1 (poverty), 2 (hunger), 5 (gender), 7 (energy), 13 (climate).',
+    },
+    {
+      title: 'EIA Stages \u2014 "SSPA"',
+      mnemonic: 'Screening, Scoping, Public Hearing, Appraisal',
+      explanation: 'Four stages of Environmental Impact Assessment process. Category A: Central clearance (MoEFCC). Category B: State clearance (SEIAA). B2 projects need only Environmental Management Plan.',
+    },
+    {
+      title: 'Net-Zero Targets \u2014 "EU50-CH60-IN70"',
+      mnemonic: 'EU/US: 2050, China: 2060, India: 2070',
+      explanation: 'Net-zero target years by major economies. India\'s later target justified by lower per capita emissions (~2.4 tonnes vs global avg ~4.7) and CBDR principle.',
+    },
+  ],
 }

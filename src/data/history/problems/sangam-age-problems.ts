@@ -169,4 +169,231 @@ export const sangamAgeProblems: HistoryProblem[] = [
     examYear: 2021,
     difficulty: "easy",
   },
+  {
+    id: "sa-12",
+    topic: "sangam-age",
+    question:
+      "Consider the following statements about Neduncheliyan, the Pandya king mentioned in Silappadikaram:\n1. He ordered the execution of Kovalan mistakenly.\n2. He died of remorse when Kannagi proved Kovalan\\'s innocence.\n3. The city of Madurai was set on fire by Kannagi\\'s wrath.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 only",
+      "1 and 2 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three statements are correct according to Silappadikaram by Ilango Adigal. Neduncheliyan executed Kovalan for allegedly stealing the queen\\'s anklet. Kannagi proved her husband\\'s innocence by breaking her anklet to reveal rubies (the queen\\'s had pearls). The king died of shock and Kannagi\\'s wrath set Madurai ablaze. This epic illustrates the concept of royal justice in Tamil tradition.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "sa-13",
+    topic: "sangam-age",
+    question:
+      "The Ettuttokai (Eight Anthologies) and Pattuppattu (Ten Idylls) together form the core of:",
+    options: [
+      "Sanskrit literature",
+      "Pali canon",
+      "Sangam literature",
+      "Bhakti poetry",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Ettuttokai (Eight Anthologies — including Purananuru, Akananooru, Kuruntokai, Natrinai, etc.) and Pattuppattu (Ten Long Poems — including Maduraikanchi, Pattinappalai, etc.) form the core corpus of Sangam literature. Together with the Kilkanakku (Eighteen Minor Works, including Tirukkural), they comprise the entire surviving body of Third Sangam literature.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "sa-14",
+    topic: "sangam-age",
+    question:
+      "Assertion (A): The Chera kingdom had extensive trade with the Roman Empire.\nReason (R): The port of Muzris (Muchiri) on the Malabar coast was the primary hub for the pepper and spice trade with Rome.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. Muzris (Muchiri, near modern Kodungallur in Kerala) was the busiest port on the Malabar coast for trade with the Roman Empire. The Periplus of the Erythraean Sea and Ptolemy\\'s Geography both mention Muzris as a major trading port. Pepper, spices, ivory, and gems were exported; Roman gold coins and wine were imported.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "sa-15",
+    topic: "sangam-age",
+    question:
+      "The presiding deity of the \\u2018Marutam\\u2019 Tinai (agricultural plains) in Sangam literature is:",
+    options: ["Murugan", "Indra", "Varuna", "Korravai"],
+    correctIndex: 1,
+    explanation:
+      "Indra is the presiding deity of the Marutam Tinai, which represents the agricultural plains and is associated with the theme of lovers\\u2019 quarrel (infidelity). The five Tinais and their deities are: Kurinji (Murugan), Mullai (Mayon/Vishnu), Marutam (Indra), Neytal (Varuna), and Palai (Korravai).",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "hard",
+  },
+  {
+    id: "sa-16",
+    topic: "sangam-age",
+    question:
+      "The Chola emblem during the Sangam Age was:",
+    options: ["Fish", "Bow", "Tiger", "Eagle"],
+    correctIndex: 2,
+    explanation:
+      "The Tiger was the royal emblem of the Chola dynasty. The three major Sangam-age dynasties had distinct emblems: Cholas (Tiger), Pandyas (Fish/Double Fish), and Cheras (Bow). These emblems appeared on their coins, seals, and banners. The Chola capital was at Uraiyur (near modern Tiruchirappalli), with Puhar (Kaveripattinam) as a major port.",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "sa-17",
+    topic: "sangam-age",
+    question:
+      "Consider the following statements about the Sangam-era economy:\n1. Agriculture was the primary occupation, with rice as the main crop.\n2. The society had a well-developed system of internal and external trade.\n3. Roman coins found across Tamil Nadu confirm literary references to Indo-Roman trade.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three are correct. Agriculture (especially rice cultivation in the Kaveri delta) was the main occupation. Internal trade was organized through markets (angadi), and external trade with Rome, Southeast Asia, and China was flourishing. Thousands of Roman gold coins (denarii and aurei of Augustus, Tiberius, Nero) have been found at sites across Tamil Nadu and Kerala, confirming the literary evidence.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "sa-18",
+    topic: "sangam-age",
+    question:
+      "Pattinappalai, a Sangam poem, describes the grandeur of which city?",
+    options: ["Madurai", "Uraiyur", "Puhar (Kaveripattinam)", "Vanchi"],
+    correctIndex: 2,
+    explanation:
+      "Pattinappalai (one of the Pattuppattu) describes the grandeur of Puhar (Kaveripattinam), the Chola port city at the mouth of the Kaveri. It depicts the city\\'s markets, warehouses, streets, ships, and cosmopolitan population. The poem was composed by Kadiyalur Uruttiran Kannanar in praise of the Chola king Karikala.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "hard",
+  },
+  {
+    id: "sa-19",
+    topic: "sangam-age",
+    question:
+      "The Periplus of the Erythraean Sea, which describes South Indian trade ports, was written by:",
+    options: [
+      "A Greek or Roman merchant-sailor",
+      "A Chinese Buddhist pilgrim",
+      "An Arab geographer",
+      "A Tamil poet",
+    ],
+    correctIndex: 0,
+    explanation:
+      "The Periplus of the Erythraean Sea (c. 1st century CE) was written by an anonymous Greek or Roman merchant-sailor based in Egypt. It is a practical guide to the trade routes of the Indian Ocean, describing ports from the Red Sea to India and East Africa. It mentions Muzris, Nelcynda, and other South Indian ports, along with commodities traded.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "sa-20",
+    topic: "sangam-age",
+    question:
+      "Consider the following pairs:\n\nSangam Work — Author\n1. Silappadikaram — Ilango Adigal\n2. Manimekalai — Sittalai Sattanar\n3. Tolkappiyam — Thiruvalluvar\n4. Tirukkural — Tolkappiyar\n\nWhich of the above pairs is/are correctly matched?",
+    options: [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "1, 2 and 4 only",
+      "1, 2, 3 and 4",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Only pairs 1 and 2 are correctly matched. Silappadikaram was authored by Ilango Adigal and Manimekalai by Sittalai Sattanar. Pairs 3 and 4 are swapped — Tolkappiyam was authored by Tolkappiyar (not Thiruvalluvar), and Tirukkural was authored by Thiruvalluvar (not Tolkappiyar).",
+    examName: "SSC CGL",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "sa-21",
+    topic: "sangam-age",
+    question:
+      "The Sangam Age social structure included an important class called \\u2018Kadaisiyar\\u2019 who were:",
+    options: [
+      "Priests and scholars",
+      "Landless agricultural labourers",
+      "Merchant guilds",
+      "Royal bodyguards",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Kadaisiyar were landless agricultural labourers in Sangam-era Tamil society. Though Sangam society did not have a rigid Vedic varna system, social stratification existed based on occupation and land ownership. The major social groups included the Arasar (royalty), Vaishyar (merchants), Vellalar (landowning farmers), and Kadaisiyar (labourers).",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "hard",
+  },
+  {
+    id: "sa-22",
+    topic: "sangam-age",
+    question:
+      "Senguttuvan, the greatest Chera king, is famous for:",
+    options: [
+      "Building the Grand Anicut",
+      "Carrying Himalayan stones to build a temple for Kannagi",
+      "Defeating Alexander\\'s army",
+      "Patronizing the Third Sangam",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Senguttuvan (Cheran Senguttuvan or Red Chera) is famous in Sangam literature for his legendary expedition to the Himalayas to bring stones for a temple to Kannagi (Pattini Devi). This account is described in Silappadikaram. He is considered the most powerful Chera king of the Sangam era, ruling from Vanchi (Karur).",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "sa-23",
+    topic: "sangam-age",
+    question:
+      "Which of the following is NOT a Sangam-age port mentioned in ancient trade literature?",
+    options: ["Muzris (Muchiri)", "Tondi", "Korkai", "Tamralipti"],
+    correctIndex: 3,
+    explanation:
+      "Tamralipti (modern Tamluk in West Bengal) was NOT a Sangam-age South Indian port — it was an ancient port in the Gangetic delta used for trade with Southeast Asia. Muzris (Chera coast, Kerala), Tondi (Pandya coast), and Korkai (Pandya pearl-fishing centre) were all Sangam-era ports mentioned in both Tamil literature and the Periplus.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "hard",
+  },
+  {
+    id: "sa-24",
+    topic: "sangam-age",
+    question:
+      "Assertion (A): The Kalabhras are called the \\u2018Dark Age\\u2019 rulers of Tamil history.\nReason (R): They disrupted the established Chola, Chera, and Pandya dynasties, and little is known about them from literary sources.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. The Kalabhra interregnum (c. 3rd-6th century CE) is called the \\u2018Dark Age\\u2019 of Tamil history because the Kalabhras overthrew the established Sangam-era dynasties, and there is very limited literary or epigraphic evidence about this period. The Pandyas, Cholas, and Cheras re-emerged after the Kalabhras were defeated.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "hard",
+  },
+  {
+    id: "sa-25",
+    topic: "sangam-age",
+    question:
+      "Maduraikanchi, a famous Sangam poem, describes the glory of which city?",
+    options: ["Puhar", "Uraiyur", "Madurai", "Vanchi"],
+    correctIndex: 2,
+    explanation:
+      "Maduraikanchi (one of the Pattuppattu) describes the glory of Madurai, the Pandya capital, in vivid detail. It was composed by the poet Mankudi Maruthanaar in praise of the Pandya king Neduncheliyan. The poem describes Madurai\\'s markets, streets, fortifications, temples, and the vibrant social life of its inhabitants.",
+    examName: "RRB NTPC",
+    examYear: 2022,
+    difficulty: "medium",
+  },
 ]

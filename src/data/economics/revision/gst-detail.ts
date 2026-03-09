@@ -3,70 +3,135 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const gstDetailRevision: SubjectRevision = {
   topic: 'gst-detail',
   bullets: [
-    "GST launched July 1, 2017. Replaced 17 indirect taxes + 13 cesses. 101st Constitutional Amendment Act 2016.",
-    "Article 246A: Concurrent power to Centre and States. Article 269A: IGST on inter-state supply. Article 279A: GST Council.",
-    "GST Council: Union FM (Chairman) + State FMs. Centre 1/3 voting, States 2/3. Decisions by 3/4th majority.",
-    "Dual GST: CGST (Centre) + SGST (State) on intra-state. IGST on inter-state. UTGST for UTs without legislature.",
-    "4 slabs: 5% (essentials), 12% (standard), 18% (most goods/services), 28% (luxury/sin goods + cess).",
-    "Exempt: Fresh fruits/vegetables, milk, eggs, unbranded grains, healthcare, education, sanitary napkins.",
-    "Outside GST: Alcohol for human consumption (state excise), 5 petroleum products, electricity, real estate (stamp duty).",
-    "ITC mechanism: Input tax on purchases offsets output tax on sales — eliminates cascading. CGST offsets CGST, SGST offsets SGST.",
-    "Blocked ITC (Section 17(5)): Motor vehicles, food/beverages, club membership, construction of immovable property.",
-    "GSTN: IT backbone. 1.46 crore registrants. Returns: GSTR-1 (outward, by 11th) + GSTR-3B (summary+payment, by 20th).",
-    "Composition Scheme: Turnover ≤ Rs 1.5 crore. Flat rates: 1% (manufacturers), 5% (restaurants). No ITC. 17 lakh businesses.",
-    "E-way Bill: Required for goods movement > Rs 50,000. About 10 crore/month generated.",
-    "E-invoicing: Mandatory for turnover > Rs 5 crore. Reduces fake invoicing and improves ITC verification.",
-    "Revenue: FY24 Rs 20.18 lakh crore. Highest single month: April 2024 Rs 2.10 lakh crore. Monthly average FY25: Rs 1.82 lakh crore.",
-    "GST Compensation Cess: On luxury/sin goods. Original 5-year period ended June 2022. Continues till March 2026 to repay COVID borrowings.",
-    "SC ruled (2022): GST Council recommendations are recommendatory, not binding on Parliament/State Legislatures."
-],
+    'GST launched July 1, 2017. Replaced 17 indirect taxes + 13 cesses. 101st Constitutional Amendment Act 2016 (passed August 8, 2016).',
+    'Article 246A: Concurrent power to Centre and States for GST. Article 269A: IGST on inter-state supply. Article 279A: GST Council.',
+    'GST Council: Union FM (Chairman) + State FMs. Centre 1/3 voting, States 2/3. Decisions by 3/4th majority. 55+ meetings held.',
+    'Dual GST: CGST (Centre) + SGST (State) on intra-state. IGST on inter-state + imports. UTGST for UTs without legislature.',
+    '4 slabs: 5% (essentials), 12% (standard), 18% (most goods/services), 28% (luxury/sin goods + cess). Special: Gold 3%, diamonds 0.25%.',
+    'Exempt (0%): Fresh fruits/vegetables, milk, eggs, unbranded grains, healthcare, education, sanitary napkins (exempted July 2018).',
+    'Outside GST: Alcohol for human consumption (state excise), 5 petroleum products (crude, gas, ATF, petrol, diesel), electricity, stamps.',
+    'Article 366(12A): GST defined as tax on supply of goods/services EXCEPT alcoholic liquor for human consumption.',
+    'ITC mechanism: Input tax offsets output tax — eliminates cascading. CGST→CGST, SGST→SGST, IGST→IGST/CGST/SGST.',
+    'Blocked ITC (Section 17(5)): Motor vehicles, food/beverages, club membership, construction of immovable property, personal consumption.',
+    'ITC fraud: Rs 1.14 lakh crore in fake ITC claims detected (FY24). Countermeasures: e-invoicing, Aadhaar authentication, GSTN analytics.',
+    'GSTN: 100% government-owned (Centre 50%, States 50%, converted 2018). 1.46 crore registrants. Processes 1 billion invoices/month.',
+    'Returns: GSTR-1 (outward supplies, by 11th), GSTR-3B (summary + tax payment, by 20th), GSTR-2B (auto-generated ITC statement).',
+    'Composition Scheme: Turnover up to Rs 1.5 crore (Rs 75 lakh services). Rates: 1% manufacturers, 5% restaurants, 6% services. No ITC.',
+    'E-way Bill: Required for goods movement > Rs 50,000. About 10 crore/month generated. Valid for distance-time period.',
+    'E-invoicing: Mandatory for turnover > Rs 5 crore (from Aug 2023). IRN (Invoice Reference Number) + QR code from Invoice Registration Portal.',
+    'Revenue: FY24 Rs 20.18 lakh crore. Highest month: April 2024 Rs 2.10 lakh crore. Monthly avg FY25: Rs 1.82 lakh crore.',
+    'Revenue growth: FY18 Rs 7.41L crore → FY24 Rs 20.18L crore. Buoyancy > 1 since FY23 (revenue grows faster than GDP).',
+    'Compensation Cess: On luxury/sin goods. 14% annual growth guaranteed for 5 years (FY17-22). Cess continues till March 2026.',
+    'COVID borrowing: Rs 2.69 lakh crore borrowed on behalf of states during FY21-22 when compensation cess collections crashed.',
+    'SC ruled (Mohit Minerals, 2022): GST Council recommendations are recommendatory, not binding — affirms parliamentary sovereignty.',
+    'RCM (Reverse Charge): Recipient pays GST in specified cases — imports, GTA, legal, sponsorship, e-commerce (Swiggy/Zomato).',
+    'Online gaming: 28% on full face value (50th Council, July 2023). Industry wanted 18% on GGR. Revenue: Rs 5,200 crore (Oct-Dec 2023).',
+    'Real estate GST: Under-construction 5% (no ITC), affordable housing 1% (no ITC). Ready-to-move exempt (stamp duty applies).',
+    'Inverted duty structure: Output rate < input rate (textiles 5%, yarn 12%). Causes ITC accumulation. Refund formula excludes input services.',
+    'Rate rationalisation: GoM recommended merging 12% and 18% slabs into 15-16%. Delayed due to political sensitivity. Weighted avg: ~11.6%.',
+    'Revenue-neutral rate (RNR): Estimated 15-15.5%. Actual weighted average ~11.6% (2024) due to rate reductions and exemptions.',
+    'TCS by e-commerce operators: 1% (0.5% CGST + 0.5% SGST) on net value of taxable supplies through platform.',
+    'Export: Zero-rated (0% GST but ITC available). Distinct from exempt (0% GST, no ITC). Benefits IT/ITeS exporters.',
+    'Pre-GST system: 17 taxes + 13 cesses. Cascading, no inter-state credit, octroi delays, classification disputes (goods vs services).',
+    'GSTAT (GST Appellate Tribunal): Established 2023. Principal bench Delhi + 31 state benches. Resolves conflicting advance rulings.',
+    'Anti-profiteering: Section 171 CGST Act. NAA (2017-2022) ordered Rs 2,500+ crore returned to consumers. CCI took over from Dec 2022.',
+    'Kelkar Task Force (2000): First formal GST proposal. 115th CAB (UPA, 2011): Lapsed. 122nd CAB (NDA, 2014): Became 101st Amendment.',
+    'Filing compliance: Improved from ~60% (FY18) to ~85% (FY24). Active return filers: 1.13 crore (FY24) vs 72 lakh (FY18).',
+    'GST on insurance: Life and health at 18%. 54th Council (Sep 2024): Senior citizen health insurance — 0% for policies up to Rs 5L.',
+    'Financial services: 18% GST. Banking charges, insurance, brokerage, mutual fund management fees all at 18%. Interest on loans: exempt.',
+    'Petroleum inclusion: Both Centre and states benefit from current excise + VAT on petrol/diesel (25-35% of state tax revenue). Neither wants GST inclusion.',
+    'Pre-packed food controversy (July 2022): 5% GST on pre-packed labelled food items (rice, wheat, curd) below 25 kg. Criticism: "tax on food."',
+  ],
   comparisons: [
     {
-        "title": "CGST vs SGST vs IGST",
-        "headers": [
-            "Feature",
-            "CGST",
-            "SGST/UTGST",
-            "IGST"
-        ],
-        "rows": [
-            [
-                "Levied by",
-                "Centre",
-                "State/UT",
-                "Centre"
-            ],
-            [
-                "On",
-                "Intra-state supply",
-                "Intra-state supply",
-                "Inter-state supply + imports"
-            ],
-            [
-                "Revenue to",
-                "Centre",
-                "State/UT",
-                "Apportioned (CGST→Centre, SGST→consumer state)"
-            ],
-            [
-                "Rate",
-                "Half of total GST rate",
-                "Half of total GST rate",
-                "Full GST rate"
-            ]
-        ]
-    }
-],
-  mnemonics: [
-    {
-        "title": "Items Outside GST — \"PAPER\"",
-        "mnemonic": "Petroleum products (5), Alcohol, Property (stamp duty), Electricity, Real estate",
-        "explanation": "Key items outside GST framework — each has separate taxation regime (state excise, central excise, stamp duty, electricity duty)."
+      title: 'CGST vs SGST vs IGST',
+      headers: ['Feature', 'CGST', 'SGST/UTGST', 'IGST'],
+      rows: [
+        ['Levied by', 'Centre', 'State/UT', 'Centre'],
+        ['On', 'Intra-state supply', 'Intra-state supply', 'Inter-state supply + imports'],
+        ['Revenue to', 'Centre', 'State/UT', 'Apportioned (CGST to Centre, SGST to consumer state)'],
+        ['Rate', 'Half of total GST rate', 'Half of total GST rate', 'Full GST rate'],
+      ],
     },
     {
-        "title": "GST Articles — \"246-269-279\"",
-        "mnemonic": "246A (concurrent power), 269A (IGST), 279A (GST Council)",
-        "explanation": "Three key constitutional articles for GST framework."
-    }
-],
+      title: 'Pre-GST vs Post-GST Tax System',
+      headers: ['Feature', 'Pre-GST', 'Post-GST'],
+      rows: [
+        ['Number of taxes', '17 central + state taxes + 13 cesses', '1 unified GST (CGST+SGST/IGST)'],
+        ['Cascading', 'Severe — no cross-credit (excise vs VAT)', 'Eliminated via ITC chain'],
+        ['Inter-state trade', 'CST (non-creditable), checkposts, octroi delays', 'Seamless — IGST settles via destination principle'],
+        ['Compliance', 'Different registrations per state', 'Single registration, unified returns'],
+        ['Tax base', 'Fragmented — goods vs services distinction', 'Unified "supply" concept'],
+      ],
+    },
+    {
+      title: 'GST Slab Rates with Examples',
+      headers: ['Slab', 'Examples of Goods', 'Examples of Services'],
+      rows: [
+        ['5%', 'Sugar, tea, edible oils, basic clothing', 'Transport, economy hotels, small restaurants'],
+        ['12%', 'Processed food, computers, mobile phones', 'Business class hotels, non-AC restaurants (with ITC)'],
+        ['18%', 'Soap, toothpaste, capital goods, industrial inputs', 'IT services, telecom, banking, financial, professional'],
+        ['28%', 'Automobiles, cement, ACs, aerated drinks', 'Luxury hotels (>Rs 7,500/night), online gaming'],
+      ],
+    },
+    {
+      title: 'Zero-Rated vs Exempt vs Nil-Rated vs Non-GST',
+      headers: ['Category', 'GST Rate', 'ITC Available?', 'Example'],
+      rows: [
+        ['Zero-rated', '0%', 'Yes — refundable', 'Exports of goods/services'],
+        ['Exempt', '0%', 'No — blocked', 'Healthcare, education, fresh milk'],
+        ['Nil-rated', '0% (in rate schedule)', 'No', 'Unbranded loose grains'],
+        ['Non-GST', 'Outside GST', 'Not applicable', 'Alcohol, petroleum, electricity'],
+      ],
+    },
+    {
+      title: 'Composition Scheme vs Regular Scheme',
+      headers: ['Feature', 'Composition Scheme', 'Regular Scheme'],
+      rows: [
+        ['Turnover limit', 'Rs 1.5 crore (Rs 75L services)', 'No limit'],
+        ['Tax rate', '1% manufacturers, 5% restaurants, 6% services', 'Standard slab rates (5-28%)'],
+        ['ITC', 'Not available', 'Available'],
+        ['Returns', 'Quarterly', 'Monthly (GSTR-1 + GSTR-3B)'],
+        ['Inter-state supply', 'Not allowed', 'Allowed'],
+      ],
+    },
+    {
+      title: 'India GST vs Global VAT/GST',
+      headers: ['Country', 'Model', 'Rate(s)', 'Key Feature'],
+      rows: [
+        ['India', 'Dual GST', '5/12/18/28%', 'Federal GST Council, multiple rates'],
+        ['Singapore', 'Single GST', '9%', 'Single rate, simple'],
+        ['New Zealand', 'Single GST', '15%', 'Broadest base, minimal exemptions'],
+        ['EU', 'VAT', '17-27% (varies)', 'Each country sets standard + reduced rate'],
+        ['Canada', 'Dual (GST+PST/HST)', '5% federal + 0-10% provincial', 'Closest comparison to India'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Items Outside GST — "PAPER"',
+      mnemonic: 'Petroleum products (5), Alcohol, Property (stamp duty), Electricity, Real estate',
+      explanation: 'Key items outside GST framework — each has a separate taxation regime (state excise, central excise, stamp duty, electricity duty).',
+    },
+    {
+      title: 'GST Articles — "246-269-279"',
+      mnemonic: '246A (concurrent power), 269A (IGST), 279A (GST Council)',
+      explanation: 'Three key constitutional articles for GST framework inserted by 101st Amendment.',
+    },
+    {
+      title: 'GST Slabs — "5-12-18-28"',
+      mnemonic: 'Five for essentials, Twelve standard, Eighteen most, Twenty-eight luxury',
+      explanation: 'Four main GST slab rates. 5% for food/essentials, 12% processed goods, 18% maximum revenue slab, 28% luxury + compensation cess.',
+    },
+    {
+      title: 'Blocked ITC — "MFCC"',
+      mnemonic: 'Motor vehicles, Food/beverages, Club membership, Construction of immovable property',
+      explanation: 'Key categories where Input Tax Credit is blocked under Section 17(5) of CGST Act.',
+    },
+    {
+      title: 'Pre-GST Taxes Subsumed — "EVES LOC"',
+      mnemonic: 'Excise, VAT, Entry tax, Service tax, Luxury tax, Octroi, CST',
+      explanation: 'Major central and state taxes subsumed into GST. 17 taxes and 13 cesses replaced by one unified GST.',
+    },
+  ],
 }

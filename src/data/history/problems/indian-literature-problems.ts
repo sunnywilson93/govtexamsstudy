@@ -181,4 +181,223 @@ export const indianLiteratureProblems: HistoryProblem[] = [
     examYear: 2023,
     difficulty: "medium",
   },
+  {
+    id: "il-13",
+    topic: "indian-literature",
+    question:
+      "Consider the following statements about the Upanishads:\n1. They are the concluding portions of the Vedas (Vedanta).\n2. They deal with philosophical and metaphysical questions.\n3. The phrase \\u2018Satyameva Jayate\\u2019 (Truth alone triumphs) comes from the Mundaka Upanishad.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three are correct. The Upanishads (also called Vedanta — \\u2018end of the Vedas\\u2019) are the philosophical concluding portions of the Vedas. They explore metaphysical questions about the nature of Brahman, Atman, and reality. \\u2018Satyameva Jayate,\\u2019 India\\'s national motto, comes from the Mundaka Upanishad (3.1.6). There are 108 Upanishads traditionally, of which 13 are considered principal.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "il-14",
+    topic: "indian-literature",
+    question:
+      "Kautilya\\'s Arthashastra is primarily a treatise on:",
+    options: [
+      "Religion and philosophy",
+      "Statecraft, economics, and governance",
+      "Grammar and linguistics",
+      "Medicine and surgery",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Arthashastra by Kautilya (Chanakya) is a comprehensive treatise on statecraft, economics, military strategy, diplomacy, and governance. It was composed around the 4th century BCE and was rediscovered by R. Shamasastry in 1905. It covers taxation, espionage, foreign policy (Shadgunya — six-fold policy), and administration in extraordinary detail.",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "il-15",
+    topic: "indian-literature",
+    question:
+      "Assertion (A): Bankim Chandra Chattopadhyay is called the \\u2018Father of the Indian Novel.\\u2019\nReason (R): His novel \\u2018Anandamath\\u2019 (1882) contained the song \\u2018Vande Mataram,\\u2019 which became the rallying cry of the freedom movement.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Both A and R are true, but R is not the correct explanation of A. Bankim Chandra is called the Father of the Indian Novel because of his pioneering contribution to Bengali and Indian novel writing (Durgeshnandini, 1865, was the first Bengali novel). The song Vande Mataram from Anandamath is a separate contribution — it does not explain why he is called the Father of the Indian Novel.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "il-16",
+    topic: "indian-literature",
+    question:
+      "Consider the following pairs:\n\nAncient Text — Subject\n1. Charaka Samhita — Medicine\n2. Surya Siddhanta — Astronomy\n3. Arthashastra — Grammar\n4. Natyashastra — Performing arts\n\nWhich of the above pairs is/are correctly matched?",
+    options: [
+      "1 and 2 only",
+      "1, 2 and 4 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Pairs 1, 2, and 4 are correctly matched. Charaka Samhita (by Charaka) deals with medicine (Ayurveda), Surya Siddhanta is an astronomical text, and Natyashastra (by Bharata Muni) covers performing arts. Pair 3 is incorrect — Arthashastra (by Kautilya) deals with statecraft and governance, not grammar. Ashtadhyayi by Panini is the grammar text.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "medium",
+  },
+  {
+    id: "il-17",
+    topic: "indian-literature",
+    question:
+      "Jayadeva\\'s Gita Govinda (12th century) is a lyrical poem about:",
+    options: [
+      "The Mahabharata war",
+      "The love of Radha and Krishna",
+      "The life of the Buddha",
+      "The philosophy of Advaita Vedanta",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Gita Govinda by Jayadeva (12th century, Odisha) is a Sanskrit lyrical poem celebrating the divine love of Radha and Krishna. It is divided into 12 cantos with 24 songs (ashtapadis). It had a profound influence on Bhakti literature and art, and is still sung as a devotional hymn in the Jagannath Temple at Puri.",
+    examName: "RRB NTPC",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "il-18",
+    topic: "indian-literature",
+    question:
+      "Tulsidas\\'s Ramcharitmanas is written in:",
+    options: ["Sanskrit", "Pali", "Awadhi", "Braj Bhasha"],
+    correctIndex: 2,
+    explanation:
+      "Ramcharitmanas by Tulsidas (1574 CE) is written in Awadhi, a dialect of Hindi spoken in the Awadh region. It retells the story of the Ramayana and is one of the most widely read devotional texts in North India. Tulsidas composed it at Varanasi. Surdas wrote in Braj Bhasha, and the original Ramayana by Valmiki is in Sanskrit.",
+    examName: "SSC CGL",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "il-19",
+    topic: "indian-literature",
+    question:
+      "Consider the following statements about Bhakti literature:\n1. Kabir wrote in a mixed language called Sadhukkadi.\n2. Mirabai\\'s poetry is devoted to Lord Krishna.\n3. Namdev and Tukaram wrote in Marathi.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three are correct. Kabir\\'s dohas (couplets) are in Sadhukkadi (a mixed/colloquial Hindi drawing on Awadhi, Braj, Bhojpuri, and Rajasthani). Mirabai (16th century, Rajasthan) composed devotional poems (padas) dedicated to Lord Krishna. Namdev (13th-14th century) and Tukaram (17th century) wrote abhangas (devotional poems) in Marathi, central to the Varkari movement.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "il-20",
+    topic: "indian-literature",
+    question:
+      "The Jain canonical texts (Agamas) are written in which language?",
+    options: ["Sanskrit", "Pali", "Ardhamagadhi Prakrit", "Tamil"],
+    correctIndex: 2,
+    explanation:
+      "The Jain canonical texts (Agamas) of the Shvetambara sect are written in Ardhamagadhi Prakrit, the language believed to have been used by Mahavira for his teachings. There are traditionally 12 Angas (limbs) forming the core canon. The Digambara sect believes the original Agamas have been lost. Later Jain texts were also written in Sanskrit and regional languages.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "il-21",
+    topic: "indian-literature",
+    question:
+      "Which of the following is a Dharmashastra text?",
+    options: ["Arthashastra", "Manusmriti", "Ashtadhyayi", "Natyashastra"],
+    correctIndex: 1,
+    explanation:
+      "Manusmriti (Laws of Manu, c. 2nd century BCE - 3rd century CE) is the most important Dharmashastra text. It lays down rules for social conduct, varnashrama dharma, the legal system, and governance. Other important Dharmashastras include Yajnavalkya Smriti and Narada Smriti. The Arthashastra deals with statecraft, Ashtadhyayi with grammar, and Natyashastra with performing arts.",
+    examName: "SSC CHSL",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "il-22",
+    topic: "indian-literature",
+    question:
+      "Assertion (A): Premchand is considered the greatest Hindi novelist of the 20th century.\nReason (R): His novels like Godan and Gaban realistically portrayed the struggles of Indian peasants and the poor.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. Premchand (1880-1936) is called the \\u2018Upanyas Samrat\\u2019 (Emperor of Novels) of Hindi literature. His masterpiece Godan (The Gift of a Cow, 1936) realistically depicted the exploitation of Indian peasants by landlords and moneylenders. Gaban portrayed middle-class corruption. His realistic portrayal of rural and urban poverty established him as Hindi\\'s greatest novelist.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "medium",
+  },
+  {
+    id: "il-23",
+    topic: "indian-literature",
+    question:
+      "Consider the following about the Sangam epics:\n1. Silappadikaram was written by Ilango Adigal, a Jain prince.\n2. Manimekalai was written by Sittalai Sattanar, a Buddhist.\n3. They are set in the Chola and Pandya kingdoms.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three are correct. Silappadikaram (The Ankle Bracelet) by Ilango Adigal (a Chera prince who became a Jain monk) tells the story of Kannagi and Kovalan in the Chola and Pandya kingdoms. Manimekalai by Sittalai Sattanar (a Buddhist merchant) is its sequel, set in Puhar and exploring Buddhist philosophy. Together they are the twin Tamil epics.",
+    examName: "SSC CGL",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "il-24",
+    topic: "indian-literature",
+    question:
+      "The Rig Vedic hymn \\u2018Purusha Sukta\\u2019 (Mandala 10, Hymn 90) is significant because it:",
+    options: [
+      "Describes the creation of the universe from the cosmic sacrifice of Purusha",
+      "Contains the Gayatri Mantra",
+      "Lists the sixteen Mahajanapadas",
+      "Describes the Battle of Ten Kings",
+    ],
+    correctIndex: 0,
+    explanation:
+      "The Purusha Sukta (Rig Veda 10.90) describes the creation of the universe through the cosmic sacrifice of the primeval being Purusha. It is also the earliest reference to the four varnas — Brahmana, Kshatriya, Vaishya, and Shudra — described as originating from different parts of Purusha\\'s body. The Gayatri Mantra is in Mandala 3, and the Battle of Ten Kings (Dasharajna) in Mandala 7.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "hard",
+  },
+  {
+    id: "il-25",
+    topic: "indian-literature",
+    question:
+      "Which of the following pairs of Vedangas and their subjects is INCORRECT?",
+    options: [
+      "Shiksha — Phonetics",
+      "Kalpa — Rituals",
+      "Jyotisha — Medicine",
+      "Chhanda — Metre/Prosody",
+    ],
+    correctIndex: 2,
+    explanation:
+      "Jyotisha deals with astronomy/astrology, not medicine. The six Vedangas are: Shiksha (phonetics), Kalpa (rituals), Vyakarana (grammar — Panini\\'s Ashtadhyayi), Nirukta (etymology — Yaska\\'s Nirukta), Chhanda (metre/prosody — Pingala\\'s Chhandas Sutra), and Jyotisha (astronomy). Medicine (Ayurveda) is classified as an Upaveda, not a Vedanga.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "hard",
+  },
 ]

@@ -200,4 +200,238 @@ export const reformMovementsProblems: HistoryProblem[] = [
     examYear: 2023,
     difficulty: "easy",
   },
+  {
+    id: "rm-13",
+    topic: "reform-movements",
+    question:
+      "The Prarthana Samaj was founded in 1867 at Bombay under the inspiration of:",
+    options: [
+      "Raja Ram Mohan Roy",
+      "Keshab Chandra Sen",
+      "Swami Dayanand Saraswati",
+      "M.G. Ranade",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Prarthana Samaj was founded in 1867 at Bombay under the inspiration of Keshab Chandra Sen of the Brahmo Samaj. M.G. Ranade later became its most prominent leader. The Prarthana Samaj shared many ideals with the Brahmo Samaj — opposing caste restrictions, child marriage, and promoting widow remarriage and women\\'s education — but was more moderate in its approach.",
+    examName: "SSC CGL",
+    examYear: 2020,
+    difficulty: "medium",
+  },
+  {
+    id: "rm-14",
+    topic: "reform-movements",
+    question:
+      "Consider the following statements about the Aligarh Movement:\n1. Sir Syed Ahmed Khan believed Muslims should adopt Western education.\n2. He founded the All India Muslim League in 1906.\n3. He promoted loyalty to the British government.\n4. His journal Tahzib-ul-Akhlaq advocated social reform.\n\nWhich of the above statements are correct?",
+    options: [
+      "1, 2 and 3 only",
+      "1, 3 and 4 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Statements 1, 3, and 4 are correct. Sir Syed promoted Western education, urged Muslim loyalty to the British, and published Tahzib-ul-Akhlaq (Social Reformer) to promote social modernization. Statement 2 is incorrect — the All India Muslim League was founded in 1906 at Dhaka by Nawab Salimullah Khan, not by Sir Syed Ahmed Khan, who had died in 1898.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "hard",
+  },
+  {
+    id: "rm-15",
+    topic: "reform-movements",
+    question:
+      "The Self-Respect Movement, aimed at eliminating caste discrimination in South India, was started by:",
+    options: [
+      "Jyotirao Phule",
+      "E.V. Ramasamy Periyar",
+      "B.R. Ambedkar",
+      "Sri Narayana Guru",
+    ],
+    correctIndex: 1,
+    explanation:
+      "E.V. Ramasamy Periyar started the Self-Respect Movement in 1925 in Tamil Nadu. The movement rejected Brahminical supremacy, opposed the Hindu caste system, and promoted rationalism, women\\'s rights, and self-respect among lower castes. It later evolved into the Dravidar Kazhagam (DK), which became the parent of the Dravidian political parties (DMK and AIADMK) that dominate Tamil Nadu politics.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "rm-16",
+    topic: "reform-movements",
+    question:
+      "Assertion (A): The Sati Regulation Act (1829) was the first major social reform legislation by the British.\nReason (R): Raja Ram Mohan Roy campaigned vigorously for the abolition of Sati using both scriptural and humanitarian arguments.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. The Sati Regulation Act (Bengal Sati Regulation XVII of 1829) was indeed the first major social reform legislation, passed by Governor-General Lord William Bentinck. Raja Ram Mohan Roy\\'s persistent campaign — using arguments from Hindu scriptures to show that Sati was not sanctioned by original texts, along with humanitarian reasoning — was instrumental in convincing Bentinck to enact the ban.",
+    examName: "UPSC Prelims",
+    examYear: 2020,
+    difficulty: "medium",
+  },
+  {
+    id: "rm-17",
+    topic: "reform-movements",
+    question:
+      "Sri Narayana Guru is associated with the social reform movement in:",
+    options: [
+      "Tamil Nadu",
+      "Maharashtra",
+      "Kerala",
+      "Karnataka",
+    ],
+    correctIndex: 2,
+    explanation:
+      "Sri Narayana Guru (1856-1928) was a social reformer from Kerala who worked for the upliftment of lower castes, particularly the Ezhava community. His famous dictum was 'One Caste, One Religion, One God for Man.' He established the SNDP Yogam (1903) and built temples open to all castes. His teachings inspired the Temple Entry Proclamation of Travancore (1936).",
+    examName: "SSC CHSL",
+    examYear: 2020,
+    difficulty: "easy",
+  },
+  {
+    id: "rm-18",
+    topic: "reform-movements",
+    question:
+      "Consider the following pairs:\n\nReformer — Organization\n1. Raja Ram Mohan Roy — Brahmo Samaj\n2. Jyotirao Phule — Satyashodhak Samaj\n3. Swami Vivekananda — Theosophical Society\n4. Annie Besant — Home Rule League\n\nWhich of the above pairs is/are correctly matched?",
+    options: [
+      "1 and 2 only",
+      "1, 2 and 4 only",
+      "1, 2 and 3 only",
+      "1, 2, 3 and 4",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Pairs 1, 2, and 4 are correctly matched. Raja Ram Mohan Roy founded the Brahmo Samaj (1828), Jyotirao Phule founded the Satyashodhak Samaj (1873), and Annie Besant started the Home Rule League (1916). Pair 3 is incorrect — Swami Vivekananda founded the Ramakrishna Mission (1897), not the Theosophical Society, which was founded by Madame Blavatsky and Colonel Olcott in 1875.",
+    examName: "SSC CGL",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "rm-19",
+    topic: "reform-movements",
+    question:
+      "The Widow Remarriage Association was founded in 1861 by:",
+    options: [
+      "Ishwar Chandra Vidyasagar",
+      "Vishnu Shastri Pandit",
+      "M.G. Ranade",
+      "Keshab Chandra Sen",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Vishnu Shastri Pandit founded the Widow Remarriage Association in 1861 in Bombay (Maharashtra). While Ishwar Chandra Vidyasagar was instrumental in getting the Hindu Widows\\' Remarriage Act passed in 1856, it was Vishnu Shastri Pandit who organized a formal association to promote and support widow remarriage in western India. M.G. Ranade also actively supported this cause.",
+    examName: "CDS",
+    examYear: 2021,
+    difficulty: "hard",
+  },
+  {
+    id: "rm-20",
+    topic: "reform-movements",
+    question:
+      "The Keshab Chandra Sen-led split in the Brahmo Samaj resulted in the formation of:",
+    options: [
+      "Adi Brahmo Samaj",
+      "Brahmo Samaj of India",
+      "Sadharan Brahmo Samaj",
+      "Both Brahmo Samaj of India and Sadharan Brahmo Samaj at different times",
+    ],
+    correctIndex: 3,
+    explanation:
+      "Keshab Chandra Sen caused two splits in the Brahmo Samaj. In 1866, he broke away from Debendranath Tagore\\'s faction (which became the Adi Brahmo Samaj) to form the Brahmo Samaj of India. Later, in 1878, when Keshab married his underage daughter to the minor Maharaja of Cooch Behar, his followers split again to form the Sadharan (General) Brahmo Samaj under Ananda Mohan Bose and Sivanath Sastri.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "hard",
+  },
+  {
+    id: "rm-21",
+    topic: "reform-movements",
+    question:
+      "Pandita Ramabai is best remembered for her work on:",
+    options: [
+      "Abolition of the zamindari system",
+      "Upliftment of widows and women\\'s education",
+      "Promotion of Sanskrit learning",
+      "Anti-untouchability campaigns",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Pandita Ramabai (1858-1922) is best remembered for her pioneering work on the upliftment of widows and women\\'s education. She founded the Arya Mahila Samaj (1882) and the Sharada Sadan (1889) for destitute women and widows. She was one of the first women to receive the title \\'Pandita\\' and \\'Saraswati\\' from the University of Calcutta for her Sanskrit scholarship. She also wrote \\'The High Caste Hindu Woman\\' (1887).",
+    examName: "SSC CHSL",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "rm-22",
+    topic: "reform-movements",
+    question:
+      "The Ahmadiyya Movement was founded in 1889 by:",
+    options: [
+      "Sir Syed Ahmed Khan",
+      "Mirza Ghulam Ahmad",
+      "Muhammad Iqbal",
+      "Maulana Abul Kalam Azad",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Ahmadiyya Movement was founded in 1889 by Mirza Ghulam Ahmad in Qadian, Punjab. He claimed to be the Messiah (Mahdi) and a prophet, which was rejected by mainstream Islam. The movement emphasized the peaceful propagation of Islam and opposed jihad as violent warfare. The Ahmadiyya community is considered non-Muslim by many Islamic scholars and faces persecution in several countries.",
+    examName: "RRB NTPC",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "rm-23",
+    topic: "reform-movements",
+    question:
+      "Consider the following statements about Swami Dayanand Saraswati:\n1. He supported the concept of Shuddhi (reconversion to Hinduism).\n2. He believed in the infallibility of all Hindu scriptures.\n3. He promoted Swadeshi and Hindi as the national language.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Statements 1 and 3 are correct. Swami Dayanand Saraswati supported Shuddhi (reconversion of people who had converted to other religions back to Hinduism) and promoted the use of Hindi and Swadeshi goods. Statement 2 is incorrect — he rejected all post-Vedic Hindu scriptures (Puranas, epics) and accepted only the four Vedas as infallible. His motto was \\'Go back to the Vedas.\\' He rejected idol worship, caste by birth, and superstitions found in later Hindu texts.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "hard",
+  },
+  {
+    id: "rm-24",
+    topic: "reform-movements",
+    question:
+      "The Servants of India Society was founded by:",
+    options: [
+      "Bal Gangadhar Tilak",
+      "Gopal Krishna Gokhale",
+      "Dadabhai Naoroji",
+      "Surendranath Banerjee",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Servants of India Society was founded by Gopal Krishna Gokhale in 1905 at Pune. Its members dedicated their lives to serving India through social work, education, and political reform. The society promoted education among the masses, worked for the upliftment of depressed classes, and provided humanitarian relief. Mahatma Gandhi was deeply influenced by Gokhale, whom he called his political guru.",
+    examName: "SSC CGL",
+    examYear: 2021,
+    difficulty: "easy",
+  },
+  {
+    id: "rm-25",
+    topic: "reform-movements",
+    question:
+      "The Ramakrishna Mission, founded in 1897, is based on the teachings of:",
+    options: [
+      "Swami Vivekananda alone",
+      "Ramakrishna Paramahamsa",
+      "Raja Ram Mohan Roy",
+      "Ishwar Chandra Vidyasagar",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Ramakrishna Mission, founded by Swami Vivekananda in 1897 at Belur Math, is based on the teachings of his guru Ramakrishna Paramahamsa (1836-1886). Ramakrishna taught the essential unity of all religions through personal spiritual experience. While Vivekananda was the founder and organizer of the mission, its philosophical foundation rests on Ramakrishna\\'s spiritual teachings of universal tolerance and harmony of religions.",
+    examName: "RRB NTPC",
+    examYear: 2021,
+    difficulty: "easy",
+  },
 ]

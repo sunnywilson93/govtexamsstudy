@@ -258,4 +258,184 @@ export const mughalEmpireProblems: HistoryProblem[] = [
     examYear: 2019,
     difficulty: "medium",
   },
+  {
+    id: "me-16",
+    topic: "mughal-empire",
+    question:
+      "Akbar\\'s Navratnas (Nine Jewels) included which of the following?",
+    options: [
+      "Birbal, Todar Mal, Tansen, and Abul Fazl",
+      "Amir Khusrau, Ibn Battuta, and Malik Kafur",
+      "Shah Jahan, Mumtaz Mahal, and Ustad Ahmad",
+      "Sher Shah Suri, Hemu, and Bairam Khan",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Akbar\\'s Navratnas included Birbal (wit and humor), Raja Todar Mal (revenue administration), Tansen (music), Abul Fazl (historian), Faizi (poet), Raja Man Singh (military commander), Abdul Rahim Khan-i-Khanan (poet-general), Fakir Aziao-Din (Sufi adviser), and Mullah Do-Piaza (adviser). Amir Khusrau and Ibn Battuta belonged to the Delhi Sultanate era, and Sher Shah Suri was Humayun\\'s adversary.",
+    examName: "SSC CGL",
+    examYear: 2021,
+    difficulty: "easy",
+  },
+  {
+    id: "me-17",
+    topic: "mughal-empire",
+    question:
+      "Consider the following statements about Sher Shah Suri:\n1. He introduced the silver Rupia and copper Paisa.\n2. He built the Grand Trunk Road from Sonargaon to Peshawar.\n3. He introduced the land measurement system (Rai).\n4. He built sarais (rest houses) at regular intervals along highways.\n\nWhich of the above statements are correct?",
+    options: [
+      "1, 2 and 4 only",
+      "1 and 2 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All four statements are correct. Sher Shah Suri (1540-1545), despite his brief reign, introduced significant reforms: the silver Rupia coin (precursor to the modern rupee), the Grand Trunk Road (Sadak-e-Azam) from Sonargaon (Bengal) to Peshawar, a systematic land measurement and revenue assessment (which later influenced Akbar\\'s Zabti system), and sarais (rest houses) at regular intervals for travelers, with separate accommodations for Hindus and Muslims.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "me-18",
+    topic: "mughal-empire",
+    question:
+      "Humayun was helped to regain his throne by the Shah of:",
+    options: [
+      "Ottoman Turkey",
+      "Persia (Safavid Iran)",
+      "Afghanistan",
+      "Uzbekistan",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Humayun was helped to regain his Indian throne by Shah Tahmasp of Safavid Persia. After 15 years of exile (1540-1555), Humayun took refuge at the Persian court. Shah Tahmasp provided him with military support (about 14,000 troops) in exchange for Humayun\\'s conversion to Shia Islam (which was likely nominal) and the promise of Kandahar. Humayun reconquered Delhi in 1555 but died in 1556 from a fall down the stairs of his library.",
+    examName: "SSC CHSL",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "me-19",
+    topic: "mughal-empire",
+    question:
+      "Assertion (A): Aurangzeb\\'s Deccan campaigns weakened the Mughal Empire.\nReason (R): The prolonged 27-year campaign (1681-1707) drained the treasury, over-extended the army, and the guerrilla warfare of the Marathas proved impossible to suppress.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. Aurangzeb\\'s Deccan campaigns (1681-1707) were catastrophic for the Mughal Empire. Although he conquered the Deccani sultanates of Bijapur (1686) and Golconda (1687), the Maratha guerrilla resistance under Rajaram and Tarabai proved impossible to crush. The 27-year campaign drained the treasury, demoralized the army, and the emperor\\'s prolonged absence from Delhi weakened central authority across the empire.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "hard",
+  },
+  {
+    id: "me-20",
+    topic: "mughal-empire",
+    question:
+      "The Battle of Haldighati (1576) was fought between Akbar\\'s forces and:",
+    options: [
+      "Rana Sanga of Mewar",
+      "Maharana Pratap of Mewar",
+      "Ibrahim Lodi",
+      "Hemu",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Battle of Haldighati (June 18, 1576) was fought between the Mughal forces (led by Man Singh I of Amber) and Maharana Pratap of Mewar. Though Pratap was defeated and wounded, he managed to escape on his legendary horse Chetak and continued guerrilla resistance from the Aravalli hills until his death in 1597. Rana Sanga (his grandfather) had fought Babur at the Battle of Khanwa (1527), and Hemu was defeated at the Second Battle of Panipat (1556).",
+    examName: "RRB NTPC",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "me-21",
+    topic: "mughal-empire",
+    question:
+      "The Mughal painting style reached its zenith during the reign of:",
+    options: [
+      "Akbar",
+      "Jahangir",
+      "Shah Jahan",
+      "Aurangzeb",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Mughal miniature painting reached its zenith during the reign of Jahangir (1605-1627), who was a great connoisseur of art. He claimed he could identify any painter\\'s work at a glance. His court painters like Mansur (specialist in flora and fauna, titled \\'Nadir-ul-Asr\\'), Bishandas, and Abu\\'l-Hasan (titled \\'Nadir-uz-Zaman\\') created masterpieces of naturalistic detail. While Akbar initiated the imperial painting workshop, and Shah Jahan continued patronage, Jahangir\\'s personal interest elevated the art to its finest expression.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "me-22",
+    topic: "mughal-empire",
+    question:
+      "The Second Battle of Panipat (1556) was fought between Akbar\\'s forces and:",
+    options: [
+      "Ibrahim Lodi",
+      "Sher Shah Suri",
+      "Hemu",
+      "Rana Sanga",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Second Battle of Panipat (November 5, 1556) was fought between the forces of the young Mughal emperor Akbar (led by his regent Bairam Khan) and Hemu (also known as Hemachandra Vikramaditya), the Hindu general and de facto ruler of the Sur territories. Hemu was on the verge of winning when he was struck in the eye by an arrow and fell unconscious. His leaderless army fled. Hemu was captured and executed. This battle secured the Mughal throne for Akbar.",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "me-23",
+    topic: "mughal-empire",
+    question:
+      "Consider the following statements about Mughal architecture:\n1. Akbar introduced the use of red sandstone.\n2. Shah Jahan shifted to white marble and pietra dura.\n3. Aurangzeb was the greatest Mughal builder.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "1 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Statements 1 and 2 are correct. Akbar\\'s buildings (Fatehpur Sikri, Agra Fort) primarily used red sandstone with some marble. Shah Jahan shifted to white Makrana marble and introduced elaborate pietra dura (semi-precious stone inlay) work, as seen in the Taj Mahal and the Red Fort. Statement 3 is incorrect — Aurangzeb was austere and spent little on architecture. Shah Jahan was the greatest Mughal builder, earning the title \\'Engineer King.\\' Aurangzeb\\'s Bibi Ka Maqbara is notably inferior to its inspiration, the Taj Mahal.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "medium",
+  },
+  {
+    id: "me-24",
+    topic: "mughal-empire",
+    question:
+      "Akbar abolished the jaziya (poll tax on non-Muslims) in which year?",
+    options: [
+      "1556",
+      "1564",
+      "1575",
+      "1582",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Akbar abolished the jaziya in 1564, as part of his policy of religious tolerance (Sulh-i-Kul or universal peace). This was a significant step in winning the loyalty of his Hindu subjects. He also abolished the pilgrim tax. The jaziya was reimposed by Aurangzeb in 1679, reversing one of Akbar\\'s most important reforms and alienating non-Muslim communities.",
+    examName: "SSC CHSL",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "me-25",
+    topic: "mughal-empire",
+    question:
+      "Consider the following statements about the later Mughals:\n1. After Aurangzeb\\'s death in 1707, the empire rapidly declined.\n2. Bahadur Shah I attempted to reverse Aurangzeb\\'s religious policies.\n3. The Sayyid brothers were called \\'king-makers\\' for installing and deposing emperors.\n4. Muhammad Shah \\'Rangila\\' was the emperor during Nadir Shah\\'s invasion.\n\nWhich of the above statements are correct?",
+    options: [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "1, 3 and 4 only",
+      "1, 2, 3 and 4",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All four statements are correct. After Aurangzeb\\'s death (1707), the empire declined rapidly through wars of succession and the rise of regional powers. Bahadur Shah I (1707-1712) attempted reconciliation by adopting a more tolerant religious policy. The Sayyid Brothers (Hussain Ali Khan and Abdullah Khan) installed and deposed several emperors between 1712-1720, earning the title \\'king-makers.\\' Muhammad Shah \\'Rangila\\' (1719-1748) was emperor when Nadir Shah invaded and sacked Delhi in 1739.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "hard",
+  },
 ]

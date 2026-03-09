@@ -212,4 +212,238 @@ export const southIndianDynastiesProblems: HistoryProblem[] = [
     examYear: 2021,
     difficulty: "hard",
   },
+  {
+    id: "sid-13",
+    topic: "south-indian-dynasties",
+    question:
+      "Rajendra Chola I assumed the title 'Gangaikonda' after conquering which region?",
+    options: [
+      "The Maldives",
+      "Sri Lanka",
+      "The Gangetic plains up to Bengal",
+      "The Malay Peninsula",
+    ],
+    correctIndex: 2,
+    explanation:
+      "Rajendra Chola I assumed the title \\'Gangaikonda\\' (Conqueror of the Ganga) after his successful northern campaign that reached the Gangetic plains up to Bengal. He defeated the Pala king Mahipala I and brought water from the Ganga to his new capital, Gangaikondacholapuram, symbolizing his victory. He also built a grand temple there modeled on the Brihadeshwara Temple.",
+    examName: "UPSC Prelims",
+    examYear: 2020,
+    difficulty: "medium",
+  },
+  {
+    id: "sid-14",
+    topic: "south-indian-dynasties",
+    question:
+      "The Shore Temple at Mamallapuram was built during the reign of which Pallava king?",
+    options: [
+      "Mahendravarman I",
+      "Narasimhavarman I",
+      "Narasimhavarman II (Rajasimha)",
+      "Nandivarman II",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Shore Temple at Mamallapuram (Mahabalipuram) was built during the reign of Narasimhavarman II (Rajasimha) in the early 8th century CE. It is one of the oldest structural (as opposed to rock-cut) stone temples in South India and is a UNESCO World Heritage Site. Narasimhavarman II also built the Kailasanatha Temple at Kanchipuram, another masterpiece of Pallava structural architecture.",
+    examName: "SSC CGL",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "sid-15",
+    topic: "south-indian-dynasties",
+    question:
+      "Consider the following statements about the Chola administration:\n1. The empire was divided into Mandalams (provinces).\n2. Villages were the basic unit of administration.\n3. The Ur was an assembly of non-Brahmin landowners.\n4. The Nagaram was an assembly of merchants.\n\nWhich of the above statements are correct?",
+    options: [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All four statements are correct. The Chola Empire had a well-organized administrative hierarchy: Mandalams (provinces) divided into Valanadus (divisions) and Nadus (districts). Villages were the basic administrative units. The Ur was the general assembly of non-Brahmin landowners, the Sabha was the assembly of Brahmin villages (agraharas), and the Nagaram was the assembly of merchants in trading centres.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "hard",
+  },
+  {
+    id: "sid-16",
+    topic: "south-indian-dynasties",
+    question:
+      "The Pattadakal group of temples in Karnataka is a UNESCO World Heritage Site associated primarily with the:",
+    options: [
+      "Pallavas",
+      "Badami Chalukyas",
+      "Rashtrakutas",
+      "Hoysalas",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Pattadakal group of temples in Bagalkot district, Karnataka, is primarily associated with the Badami Chalukyas (6th-8th centuries CE). It served as the coronation city of the Chalukya kings and showcases both Nagara (North Indian) and Dravida (South Indian) temple styles. The most important temple is the Virupaksha Temple, built by Queen Lokamahadevi to commemorate Vikramaditya II\\'s victory over the Pallavas.",
+    examName: "SSC CHSL",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "sid-17",
+    topic: "south-indian-dynasties",
+    question:
+      "The Kalyani Chalukyas (Western Chalukyas) are distinct from the Badami Chalukyas. Who was their most famous ruler?",
+    options: [
+      "Pulakeshin II",
+      "Vikramaditya VI",
+      "Krishna I",
+      "Amoghavarsha I",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Vikramaditya VI (1076-1126 CE) was the most famous ruler of the Kalyani Chalukyas (Western Chalukyas). He introduced the Vikrama Chalukya Era and patronized the great Sanskrit poet Bilhana, who wrote the Vikramankadeva Charita. His court also hosted Vijnanesvara, who wrote the Mitakshara, a celebrated commentary on Hindu law. Pulakeshin II was a Badami Chalukya, while Krishna I and Amoghavarsha I were Rashtrakutas.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "hard",
+  },
+  {
+    id: "sid-18",
+    topic: "south-indian-dynasties",
+    question:
+      "Assertion (A): The Rashtrakutas were patrons of both Hindu and Jain art and architecture.\nReason (R): Several Rashtrakuta kings were Jains who also patronized Hindu temples.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. The Rashtrakutas showed remarkable religious tolerance. Amoghavarsha I was a devout Jain, yet Krishna I built the magnificent Hindu Kailasa Temple at Ellora. The Rashtrakutas also patronized Buddhist art at Ellora (Caves 1-12 are Buddhist). Their religious eclecticism produced some of India\\'s finest art and architecture.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "medium",
+  },
+  {
+    id: "sid-19",
+    topic: "south-indian-dynasties",
+    question:
+      "The Hoysala dynasty, known for their distinctive temple architecture, had their capital at:",
+    options: [
+      "Badami",
+      "Hampi",
+      "Dwarasamudra (Halebidu)",
+      "Tanjore",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Hoysala dynasty (11th-14th centuries CE) had their capital at Dwarasamudra, modern Halebidu in Karnataka. They are famous for their distinctive star-shaped temple architecture with intricate sculptural detail. The Hoysaleshwara Temple at Halebidu and the Chennakeshava Temple at Belur are their most celebrated architectural achievements. The Hoysalas were eventually absorbed by the Vijayanagara Empire.",
+    examName: "RRB NTPC",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "sid-20",
+    topic: "south-indian-dynasties",
+    question:
+      "Consider the following statements about the Sangam Age:\n1. The three Sangam kingdoms were Chera, Chola, and Pandya.\n2. Madurai was the capital of the Pandyas.\n3. The Sangam literature is primarily in Sanskrit.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Statements 1 and 2 are correct. The three ancient Tamil kingdoms of the Sangam Age (3rd century BCE to 3rd century CE) were Chera (capital Vanji/Karur), Chola (capital Uraiyur/Puhar), and Pandya (capital Madurai). Statement 3 is incorrect — Sangam literature is primarily in Tamil, not Sanskrit. It is one of the oldest extant bodies of secular literature in India.",
+    examName: "SSC CGL",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "sid-21",
+    topic: "south-indian-dynasties",
+    question:
+      "The Dantidurga was the founder of which dynasty?",
+    options: [
+      "Pallava",
+      "Rashtrakuta",
+      "Chalukya of Badami",
+      "Chola",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Dantidurga (c. 735-756 CE) was the founder of the Rashtrakuta dynasty. He overthrew the last Badami Chalukya ruler Kirtivarman II and established the Rashtrakuta power in the Deccan with its capital at Manyakheta (modern Malkhed in Karnataka). The Rashtrakutas went on to become one of the most powerful dynasties of medieval India, rivaling the Pratiharas in the north.",
+    examName: "CDS",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "sid-22",
+    topic: "south-indian-dynasties",
+    question:
+      "The tripartite struggle for control of Kannauj in early medieval India involved the Pratiharas, the Rashtrakutas, and the:",
+    options: [
+      "Chalukyas",
+      "Palas",
+      "Cholas",
+      "Pallavas",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The tripartite struggle for Kannauj (8th-10th centuries CE) involved three major powers: the Pratiharas of Rajasthan/Gujarat (north-west), the Rashtrakutas of the Deccan (south), and the Palas of Bengal-Bihar (east). Kannauj was the symbolic seat of power in northern India since Harshavardhana\\'s time. This prolonged conflict weakened all three dynasties and prevented any unified resistance against later invasions.",
+    examName: "UPSC Prelims",
+    examYear: 2019,
+    difficulty: "easy",
+  },
+  {
+    id: "sid-23",
+    topic: "south-indian-dynasties",
+    question:
+      "Which Chola ruler is known for sending an embassy to the Song Dynasty of China?",
+    options: [
+      "Rajaraja Chola I",
+      "Rajendra Chola I",
+      "Kulottunga Chola I",
+      "Vijayalaya Chola",
+    ],
+    correctIndex: 2,
+    explanation:
+      "Kulottunga Chola I (1070-1120 CE) sent an embassy to the Song Dynasty of China in 1077 CE. He is also known for abolishing tolls (sungam), earning the title \\'Sungam Tavirtta Cholan.\\' While Rajendra Chola I is famous for the naval expedition against the Srivijaya, it was Kulottunga I who established formal diplomatic relations with China through this embassy.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "hard",
+  },
+  {
+    id: "sid-24",
+    topic: "south-indian-dynasties",
+    question:
+      "The Nayanars and Alvars were devotional poet-saints associated with which period of South Indian history?",
+    options: [
+      "Sangam Age",
+      "Pallava-Chola period (6th-9th centuries CE)",
+      "Vijayanagara period",
+      "Gupta period",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Nayanars (63 Shaivite poet-saints) and Alvars (12 Vaishnavite poet-saints) flourished during the Pallava-Chola period (6th-9th centuries CE). The Nayanars included Appar, Sundarar, and Sambandar; their hymns were compiled as the Tevaram. The Alvars\\' hymns were compiled as the Nalayira Divya Prabandham. This Bhakti movement in South India later influenced the North Indian Bhakti movement.",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "sid-25",
+    topic: "south-indian-dynasties",
+    question:
+      "Consider the following statements about Vijayalaya Chola:\n1. He captured Thanjavur from the Muttaraiyar chief around 850 CE.\n2. He founded the Imperial Chola dynasty.\n3. He was a feudatory of the Pallavas.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three statements are correct. Vijayalaya Chola (c. 848-871 CE) was a Pallava feudatory who captured Thanjavur from the Muttaraiyar chief around 850 CE, thereby founding the Imperial Chola dynasty. From this base, his successors gradually expanded the Chola kingdom. The Cholas went on to build one of the greatest empires in Indian history under Rajaraja I and Rajendra I.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "hard",
+  },
 ]

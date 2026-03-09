@@ -257,4 +257,184 @@ export const marathaEmpireProblems: HistoryProblem[] = [
     examYear: 2021,
     difficulty: "medium",
   },
+  {
+    id: "ma-16",
+    topic: "maratha-empire",
+    question:
+      "Shivaji\\'s revenue system was based on which assessment method?",
+    options: [
+      "Dahsala system",
+      "Ryotwari system",
+      "Measurement and classification of land (Kathi system)",
+      "Permanent Settlement",
+    ],
+    correctIndex: 2,
+    explanation:
+      "Shivaji\\'s revenue system was based on the measurement and classification of land using the Kathi (a measuring rod). Land was measured using the Kathi and revenue was fixed at a percentage of the estimated produce. He abolished the Jagirdari system in his territories and established a centralized revenue system where officials received cash salaries instead of land grants. He fixed the government\\'s share at 33% (later raised to 40%) of the produce.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "ma-17",
+    topic: "maratha-empire",
+    question:
+      "The Treaty of Bassein (1802) was signed between the British and which Peshwa?",
+    options: [
+      "Balaji Baji Rao",
+      "Madhavrao I",
+      "Baji Rao II",
+      "Raghunathrao",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Treaty of Bassein (December 31, 1802) was signed between the British East India Company and Peshwa Baji Rao II after he was defeated by Yashwantrao Holkar at the Battle of Poona. Under this treaty, the Peshwa accepted a British subsidiary alliance — he agreed to maintain a British Resident and a subsidiary force, cede territories worth Rs 26 lakhs annually, and not negotiate with other powers without British consent. This treaty was a major step toward British supremacy over the Marathas.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "ma-18",
+    topic: "maratha-empire",
+    question:
+      "Consider the following statements about Shivaji\\'s guerrilla warfare:\n1. He called it \\'Ganimi Kava\\' (enemy\\'s tactics).\n2. He used hill forts as the backbone of his defence.\n3. He avoided pitched battles and relied on surprise attacks.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three statements are correct. Shivaji perfected a form of guerrilla warfare called \\'Ganimi Kava,\\' which relied on knowledge of the mountainous terrain, speed of movement, and surprise. His chain of hill forts in the Sahyadris (Western Ghats) — including Raigad, Pratapgad, Sinhagad, and Torna — formed the backbone of his defence. He generally avoided large-scale pitched battles against the numerically superior Mughal armies, preferring ambushes, night attacks, and strategic retreats.",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "ma-19",
+    topic: "maratha-empire",
+    question:
+      "Assertion (A): The Peshwas gradually became more powerful than the Chhatrapati.\nReason (R): Starting from Balaji Vishwanath, the Peshwas made the office hereditary and centralized administrative and military power in Pune.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. The Peshwas, starting from Balaji Vishwanath (1713-1720), made the office hereditary and gradually concentrated all real power in their hands at Pune. The Chhatrapati at Satara became a mere figurehead. Baji Rao I (1720-1740) expanded Maratha power across India, and Balaji Baji Rao (Nana Saheb) completed the shift of power from Satara to Pune. This concentration of power also meant that the fall of the Peshwa meant the fall of the empire.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "hard",
+  },
+  {
+    id: "ma-20",
+    topic: "maratha-empire",
+    question:
+      "The Battle of Sinhagad (1670) is famous for:",
+    options: [
+      "Shivaji\\'s escape from Aurangzeb\\'s court",
+      "Tanaji Malusare\\'s heroic capture of the fort from the Mughals",
+      "Shivaji\\'s coronation ceremony",
+      "The assassination of Afzal Khan",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Battle of Sinhagad (February 1670) is famous for Tanaji Malusare\\'s heroic capture of the Kondana Fort from Mughal commander Udaybhan Rathod. Tanaji led a daring night raid, using monitor lizards (ghorpad) to scale the sheer cliff face. Though Tanaji was killed in the battle, his forces won. Shivaji reportedly said \\'Gad ala, pan Sinh gela\\' (The fort is won, but the lion is lost), and renamed the fort Sinhagad (Lion Fort) in Tanaji\\'s honor.",
+    examName: "RRB NTPC",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "ma-21",
+    topic: "maratha-empire",
+    question:
+      "Which of the following was NOT one of the three Anglo-Maratha Wars?",
+    options: [
+      "First Anglo-Maratha War (1775-1782)",
+      "Second Anglo-Maratha War (1803-1805)",
+      "Third Anglo-Maratha War (1817-1818)",
+      "Fourth Anglo-Maratha War (1835-1837)",
+    ],
+    correctIndex: 3,
+    explanation:
+      "There were only three Anglo-Maratha Wars. The Fourth Anglo-Maratha War is fictitious. The First Anglo-Maratha War (1775-1782) ended with the Treaty of Salbai. The Second Anglo-Maratha War (1803-1805) resulted in British victories over the Scindias and Bhonsles. The Third Anglo-Maratha War (1817-1818) resulted in the final defeat and exile of the last Peshwa, Baji Rao II, ending the Maratha Empire.",
+    examName: "SSC CGL",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "ma-22",
+    topic: "maratha-empire",
+    question:
+      "The Treaty of Salbai (1782) ended which conflict?",
+    options: [
+      "The Second Anglo-Maratha War",
+      "The First Anglo-Maratha War",
+      "The Third Anglo-Maratha War",
+      "The Maratha-Mughal conflict",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Treaty of Salbai (May 1782) ended the First Anglo-Maratha War (1775-1782). The treaty restored the status quo — Britain returned Bassein and other territories to the Marathas, and the Marathas recognized Raghunathrao\\'s right to a pension but not to the Peshwaship. The treaty maintained peace between the British and Marathas for 20 years until the Second Anglo-Maratha War in 1803.",
+    examName: "CDS",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "ma-23",
+    topic: "maratha-empire",
+    question:
+      "Consider the following statements about Tarabai:\n1. She was the wife of Rajaram (Shivaji\\'s younger son).\n2. She acted as regent for her infant son Shivaji II after Rajaram\\'s death.\n3. She led Maratha resistance against the Mughals during Aurangzeb\\'s Deccan campaign.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three statements are correct. Tarabai was the wife of Rajaram (Shivaji\\'s younger son) and the daughter-in-law of Shivaji. After Rajaram\\'s death in 1700, she became regent for her infant son Shivaji II and led the Maratha resistance against Aurangzeb\\'s prolonged Deccan campaign (1681-1707). She was a remarkable warrior-queen who kept the Maratha spirit alive during the empire\\'s darkest hour, continuing guerrilla warfare until Aurangzeb\\'s death in 1707.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "hard",
+  },
+  {
+    id: "ma-24",
+    topic: "maratha-empire",
+    question:
+      "The Maratha Confederacy was governed by the Peshwa from:",
+    options: [
+      "Raigad",
+      "Satara",
+      "Pune",
+      "Kolhapur",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Maratha Confederacy was governed by the Peshwa from Pune (also called Poona). While the Chhatrapati was based at Satara as the nominal head, the Peshwa exercised real power from Pune, which became the political and administrative capital of the Maratha Empire. The Shaniwar Wada palace in Pune was the seat of the Peshwa government from 1730 until the final defeat in 1818.",
+    examName: "SSC CHSL",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "ma-25",
+    topic: "maratha-empire",
+    question:
+      "Nana Sahib (Nana Fadnavis), the famous Maratha statesman and diplomat, is often called:",
+    options: [
+      "The Lion of Maharashtra",
+      "The Indian Machiavelli",
+      "The Sword of the Marathas",
+      "The Father of the Maratha Navy",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Nana Fadnavis (Balaji Janardan Bhanu, 1742-1800) is often called the \\'Indian Machiavelli\\' or the \\'Maratha Machiavelli\\' for his exceptional diplomatic skills and political cunning. He was the chief minister and regent during the minority of Madhavrao Narayan (Peshwa from 1774-1795). He skillfully navigated the complex politics of the Maratha Confederacy and maintained a balance of power among the various Maratha chiefs. His death in 1800 removed the last capable statesman from the Maratha political scene.",
+    examName: "UPSC Prelims",
+    examYear: 2020,
+    difficulty: "hard",
+  },
 ]

@@ -190,4 +190,223 @@ export const nationBuildingProblems: HistoryProblem[] = [
     examYear: 2022,
     difficulty: "medium",
   },
+  {
+    id: "nb-13",
+    topic: "nation-building",
+    question:
+      "Consider the following statements about the integration of princely states:\n1. Sardar Patel and V.P. Menon were primarily responsible.\n2. Hyderabad was integrated through Operation Polo (police action).\n3. Junagadh acceded through a plebiscite.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three are correct. Sardar Patel (as Deputy PM and Home Minister) and V.P. Menon (his secretary) integrated 562 princely states. Hyderabad\\'s Nizam refused to accede, so India launched Operation Polo (September 1948), a military action. Junagadh\\'s Nawab fled to Pakistan, and a plebiscite (February 1948) overwhelmingly favoured accession to India.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "nb-14",
+    topic: "nation-building",
+    question:
+      "The Community Development Programme was launched in India on:",
+    options: [
+      "26 January 1950",
+      "2 October 1952",
+      "15 August 1953",
+      "1 April 1955",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Community Development Programme (CDP) was launched on 2 October 1952 (Gandhi Jayanti) to promote rural development through village-level workers. It initially covered 55 community development blocks. The programme aimed at improving agriculture, health, education, housing, and roads in rural areas. It was supplemented by the National Extension Service (1953).",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "nb-15",
+    topic: "nation-building",
+    question:
+      "Assertion (A): The States Reorganisation Act of 1956 redrew India\\'s internal boundaries.\nReason (R): The reorganisation was primarily based on linguistic lines.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. The States Reorganisation Act (1956) reorganised Indian states primarily on linguistic lines, based on the recommendations of the States Reorganisation Commission (SRC, 1953-55), headed by Fazl Ali. This followed the agitation for Andhra Pradesh (and the death of Potti Sriramulu in 1952) which forced the creation of linguistic states.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "nb-16",
+    topic: "nation-building",
+    question:
+      "The Balwantrai Mehta Committee (1957) recommended:",
+    options: [
+      "Abolition of the Planning Commission",
+      "Three-tier Panchayati Raj system",
+      "Privatisation of heavy industries",
+      "Bank nationalisation",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Balwantrai Mehta Committee (1957) recommended a three-tier Panchayati Raj system: Gram Panchayat (village level), Panchayat Samiti (block level), and Zila Parishad (district level). This was implemented first in Rajasthan (Nagaur district, 2 October 1959). The system aimed at democratic decentralisation and community participation in development.",
+    examName: "SSC CHSL",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "nb-17",
+    topic: "nation-building",
+    question:
+      "Consider the following statements about the 1991 economic crisis:\n1. India\\'s foreign exchange reserves fell to a level covering only about two weeks of imports.\n2. India had to pledge its gold reserves to the IMF and Bank of England.\n3. The crisis led to the adoption of LPG reforms.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three are correct. India\\'s foreign exchange reserves fell to about $1.2 billion (two weeks of imports) by June 1991. India was forced to airlift 47 tonnes of gold to the Bank of England and pledge 20 tonnes to the Union Bank of Switzerland as collateral for emergency loans. This crisis triggered the comprehensive LPG reforms under Finance Minister Manmohan Singh.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "medium",
+  },
+  {
+    id: "nb-18",
+    topic: "nation-building",
+    question:
+      "The Bhilai Steel Plant was established with assistance from:",
+    options: ["USA", "UK", "Soviet Union", "Germany"],
+    correctIndex: 2,
+    explanation:
+      "The Bhilai Steel Plant (Chhattisgarh) was established with Soviet assistance during the Second Five Year Plan. The three major steel plants of this plan were: Bhilai (Soviet assistance), Durgapur (British assistance), and Rourkela (German/West German assistance). Bhilai became the most successful of the three and remains one of India\\'s largest steel producers.",
+    examName: "SSC CGL",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "nb-19",
+    topic: "nation-building",
+    question:
+      "Who is known as the \\u2018Metro Man of India\\u2019?",
+    options: ["Sam Pitroda", "E. Sreedharan", "Vikram Sarabhai", "Homi Bhabha"],
+    correctIndex: 1,
+    explanation:
+      "E. Sreedharan is known as the \\u2018Metro Man of India\\u2019 for his role in building the Delhi Metro and the Konkan Railway. He was the Managing Director of the Delhi Metro Rail Corporation (DMRC). His emphasis on project management, time discipline, and cost control made Delhi Metro a model for urban rapid transit in India. He received the Padma Vibhushan in 2008.",
+    examName: "RRB NTPC",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "nb-20",
+    topic: "nation-building",
+    question:
+      "Consider the following about India\\'s space programme:\n1. The Indian Space Research Organisation (ISRO) was founded by Vikram Sarabhai.\n2. India\\'s first satellite was Aryabhata (1975).\n3. Chandrayaan-1 discovered water molecules on the Moon.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three are correct. ISRO was founded in 1969 by Dr. Vikram Sarabhai, the \\u2018Father of the Indian Space Programme.\\u2019 Aryabhata, India\\'s first satellite, was launched by the Soviet Union on 19 April 1975. Chandrayaan-1 (2008) discovered water/hydroxyl molecules on the Moon\\'s surface using its Moon Mineralogy Mapper (M3) instrument, a landmark scientific finding.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "nb-21",
+    topic: "nation-building",
+    question:
+      "Assertion (A): The License Raj was a system of industrial licensing and regulation in India.\nReason (R): The 1991 reforms largely dismantled the License Raj by removing the requirement for government permits for most industries.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Both A and R are true, but R does not explain what the License Raj was — it describes what happened to it. The License Raj was the elaborate system of licences, regulations, and red tape that governed setting up industries in India (Industries Development and Regulation Act, 1951). The 1991 reforms abolished licensing for most industries (retaining it for only 6 industries), but that abolition is a consequence, not an explanation of what it was.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "nb-22",
+    topic: "nation-building",
+    question:
+      "India\\'s first nuclear test (Pokhran-I, code-named \\u2018Smiling Buddha\\u2019) was conducted in:",
+    options: ["1971", "1974", "1988", "1998"],
+    correctIndex: 1,
+    explanation:
+      "India\\'s first nuclear test (Pokhran-I), code-named \\u2018Smiling Buddha,\\u2019 was conducted on 18 May 1974 at Pokhran, Rajasthan, under PM Indira Gandhi. It was described as a \\u2018peaceful nuclear explosion.\\u2019 India\\'s second series of nuclear tests (Pokhran-II, \\u2018Operation Shakti\\u2019) was conducted in May 1998 under PM Atal Bihari Vajpayee, after which India declared itself a nuclear weapons state.",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "nb-23",
+    topic: "nation-building",
+    question:
+      "Consider the following about the Green Revolution\\'s impact on nation-building:\n1. It made India self-sufficient in food grains.\n2. It was concentrated in Punjab, Haryana, and western UP.\n3. It widened regional disparities.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 3,
+    explanation:
+      "All three are correct. The Green Revolution made India broadly self-sufficient in food grains (especially wheat), transforming India from a food-importing nation to a food-surplus one. However, it was concentrated in irrigated areas of Punjab, Haryana, and western UP, and widened the gap between these prosperous regions and eastern/central India, which remained largely bypassed.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "medium",
+  },
+  {
+    id: "nb-24",
+    topic: "nation-building",
+    question:
+      "The Mahalanobis model, which guided India\\'s Second Five Year Plan, prioritized:",
+    options: [
+      "Agriculture and rural development",
+      "Heavy industrialization and the public sector",
+      "Export-led growth",
+      "Service sector development",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Mahalanobis model prioritized heavy industrialization and the development of the public sector, inspired partly by the Soviet model. The Second Plan (1956-61) invested heavily in capital goods industries — steel (Bhilai, Durgapur, Rourkela), heavy machinery (Ranchi), and mining equipment. The idea was that heavy industry would generate long-term economic growth.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "nb-25",
+    topic: "nation-building",
+    question:
+      "Consider the following events in chronological order:\n1. Bank nationalisation\n2. Green Revolution begins\n3. LPG reforms\n4. First Five Year Plan\n\nSelect the correct chronological order:",
+    options: [
+      "4, 2, 1, 3",
+      "4, 1, 2, 3",
+      "2, 4, 1, 3",
+      "4, 2, 3, 1",
+    ],
+    correctIndex: 0,
+    explanation:
+      "The correct order is: First Five Year Plan (1951-56), Green Revolution begins (mid-1960s), Bank nationalisation (1969), LPG reforms (1991). This sequence traces India\\'s economic trajectory from planned development through agricultural transformation, financial restructuring, and finally economic liberalisation.",
+    examName: "SSC CGL",
+    examYear: 2023,
+    difficulty: "easy",
+  },
 ]

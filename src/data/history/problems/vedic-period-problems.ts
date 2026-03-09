@@ -181,4 +181,238 @@ export const vedicPeriodProblems: HistoryProblem[] = [
     examYear: 2021,
     difficulty: "easy",
   },
+  {
+    id: "vp-13",
+    topic: "vedic-period",
+    question:
+      "Consider the following statements about the Later Vedic Period:\n1. The king\\'s power increased and became hereditary.\n2. The Sabhas and Samitis lost their importance.\n3. Trade and commerce declined compared to the Early Vedic Period.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "1 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Statements 1 and 2 are correct. During the Later Vedic Period, kingship became hereditary and the king\\'s power increased through elaborate rituals like Rajasuya, Ashvamedha, and Vajapeya. The Sabhas and Samitis declined in importance as royal authority grew. Statement 3 is incorrect — trade and commerce actually expanded during the Later Vedic Period with the growth of settlements in the Gangetic plains and the use of copper and iron.",
+    examName: "UPSC Prelims",
+    examYear: 2020,
+    difficulty: "medium",
+  },
+  {
+    id: "vp-14",
+    topic: "vedic-period",
+    question:
+      "The term 'Jana' in the Rig Vedic context refers to:",
+    options: [
+      "A caste group",
+      "A tribal community/people",
+      "A religious sect",
+      "A village assembly",
+    ],
+    correctIndex: 1,
+    explanation:
+      "In the Rig Vedic context, \\'Jana\\' refers to a tribal community or people. The Rig Veda mentions several Janas including the Bharatas, Purus, Yadus, Turvashas, Anus, Druhyus, and others. These were pastoral-nomadic tribal groups. The term later evolved into \\'Janapada\\' (foothold of a Jana/tribe) in the post-Vedic period, referring to settled territorial units.",
+    examName: "SSC CGL",
+    examYear: 2021,
+    difficulty: "easy",
+  },
+  {
+    id: "vp-15",
+    topic: "vedic-period",
+    question:
+      "Which of the following Upanishads contains the conversation between Yama (god of death) and Nachiketa?",
+    options: [
+      "Chandogya Upanishad",
+      "Brihadaranyaka Upanishad",
+      "Katha Upanishad",
+      "Mundaka Upanishad",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Katha Upanishad contains the famous dialogue between Yama (the god of death) and the young boy Nachiketa about the nature of the soul, death, and the path to immortality. The Chandogya and Brihadaranyaka are the largest and oldest Upanishads. The Mundaka Upanishad contains the concept of \\'Satyameva Jayate\\' (Truth alone triumphs), India\\'s national motto.",
+    examName: "RRB NTPC",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "vp-16",
+    topic: "vedic-period",
+    question:
+      "The Bogaz-koi inscription (c. 1400 BCE) found in Turkey is significant for Indian history because it:",
+    options: [
+      "Mentions the Harappan trade with Mesopotamia",
+      "Lists Vedic gods like Indra, Mitra, Varuna, and Nasatya",
+      "Contains the earliest reference to the caste system",
+      "Describes Alexander\\'s invasion plan for India",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Bogaz-koi inscription (c. 1400 BCE), found in Turkey (Asia Minor), is significant because it mentions Vedic gods — Indra, Mitra, Varuna, and Nasatya (Ashvins) — in the context of a treaty between the Hittite king and the Mitanni king. This is the oldest non-Indian evidence of Vedic culture and supports the existence of Indo-Aryan groups in West Asia.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "hard",
+  },
+  {
+    id: "vp-17",
+    topic: "vedic-period",
+    question:
+      "Assertion (A): Women had a relatively higher status in the Early Vedic Period compared to the Later Vedic Period.\nReason (R): Women could attend Vidatha and Sabha assemblies and participate in religious rituals in the Early Vedic Period.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. In the Early Vedic Period, women had considerable freedom — they could participate in assemblies (Vidatha, Sabha), compose hymns (e.g., Lopamudra, Ghosa, Apala, Vishvavara), receive education (Upanayana), and choose their husbands (Swayamvara). In the Later Vedic Period, women\\'s status declined — they lost access to assemblies, education was restricted, and customs like child marriage emerged.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "vp-18",
+    topic: "vedic-period",
+    question:
+      "The term 'Nishka' in Vedic literature refers to:",
+    options: [
+      "A type of pottery",
+      "A gold ornament used as a unit of value",
+      "A priest class",
+      "A type of sacrifice",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Nishka was a gold ornament (neckpiece) that was also used as a unit of value or medium of exchange in the Vedic period. It is one of the earliest references to a monetary standard in Indian history. The Rig Veda mentions gifts of Nishkas to priests, indicating that gold ornaments served economic as well as decorative purposes. Coins proper (punched-marked) came later, around the 6th century BCE.",
+    examName: "SSC CHSL",
+    examYear: 2021,
+    difficulty: "hard",
+  },
+  {
+    id: "vp-19",
+    topic: "vedic-period",
+    question:
+      "Which of the following is the correct chronological order of Vedic texts?",
+    options: [
+      "Vedas → Brahmanas → Aranyakas → Upanishads",
+      "Upanishads → Vedas → Brahmanas → Aranyakas",
+      "Brahmanas → Vedas → Upanishads → Aranyakas",
+      "Vedas → Aranyakas → Brahmanas → Upanishads",
+    ],
+    correctIndex: 0,
+    explanation:
+      "The correct chronological order of Vedic literature is: Vedas (Samhitas) → Brahmanas → Aranyakas → Upanishads. The Vedas contain hymns and prayers. The Brahmanas explain the rituals and their significance. The Aranyakas (\\'forest texts\\') serve as a transitional link between ritualistic and philosophical thought. The Upanishads contain philosophical speculations on the nature of Brahman, Atman, and liberation (moksha).",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "easy",
+  },
+  {
+    id: "vp-20",
+    topic: "vedic-period",
+    question:
+      "Consider the following statements about the Rig Vedic economy:\n1. The primary occupation was agriculture.\n2. Cattle rearing was the main economic activity.\n3. The cow was the standard unit of exchange.\n4. Money lending and trade were well-developed.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 4 only",
+      "2, 3 and 4 only",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Statements 2 and 3 are correct. The primary occupation in the Early Vedic (Rig Vedic) Period was cattle rearing (pastoral economy), not agriculture. The cow was the standard unit of exchange — terms like \\'godhuli\\' (dust raised by cattle) and \\'gavishti\\' (search for cattle, i.e., war) reflect cattle\\'s importance. Statement 1 is incorrect because settled agriculture became dominant only in the Later Vedic Period. Statement 4 is also incorrect — money lending and organized trade developed in the later period.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "vp-21",
+    topic: "vedic-period",
+    question:
+      "The Satapatha Brahmana is associated with which Veda?",
+    options: [
+      "Rig Veda",
+      "Sama Veda",
+      "Yajur Veda (Shukla)",
+      "Atharva Veda",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Satapatha Brahmana is associated with the Shukla (White) Yajur Veda. It is one of the most important Brahmana texts and contains 100 chapters (satapatha = hundred paths). It describes in detail the Vedic rituals and their symbolism. It also contains the famous flood legend of Manu and the story of Pururavas and Urvashi. The Aitareya Brahmana is associated with the Rig Veda.",
+    examName: "CDS",
+    examYear: 2022,
+    difficulty: "hard",
+  },
+  {
+    id: "vp-22",
+    topic: "vedic-period",
+    question:
+      "The principal deities of the Early Vedic Period were primarily associated with:",
+    options: [
+      "Fertility and earth worship",
+      "Natural forces and phenomena",
+      "Abstract philosophical concepts",
+      "Ancestor worship",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The principal deities of the Early Vedic Period were primarily associated with natural forces and phenomena. Indra was the god of thunder and war, Agni was the god of fire, Varuna was the god of water and cosmic order (Rita), Surya was the sun god, Vayu was the wind god, and Usha was the goddess of dawn. In the Later Vedic Period, deities like Brahma, Vishnu, and Rudra (later Shiva) gained prominence, reflecting more abstract religious thought.",
+    examName: "RRB NTPC",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "vp-23",
+    topic: "vedic-period",
+    question:
+      "The term 'Gotra' system, which became rigid in the Later Vedic Period, originally referred to:",
+    options: [
+      "A territorial division",
+      "A cow-pen or common ancestor of a clan",
+      "A priestly school",
+      "A type of marriage custom",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The term \\'Gotra\\' literally means \\'cow-pen\\' and originally referred to a common ancestor of a clan or lineage group. In the Early Vedic Period, it was a loose clan identity. By the Later Vedic Period, the Gotra system became rigid — marriage within the same Gotra was prohibited (exogamy), and Gotras became associated with specific sage-ancestors (like Bharadwaja, Vasishtha, Vishvamitra). This system continues to influence Hindu marriage customs today.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "medium",
+  },
+  {
+    id: "vp-24",
+    topic: "vedic-period",
+    question:
+      "Which of the following archaeological cultures is associated with the Early Vedic Period?",
+    options: [
+      "Painted Grey Ware (PGW)",
+      "Northern Black Polished Ware (NBPW)",
+      "Ochre Coloured Pottery (OCP)",
+      "Black and Red Ware (BRW)",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Ochre Coloured Pottery (OCP) culture is generally associated with the Early Vedic Period (c. 2000-1500 BCE). It is found in the upper Gangetic-Yamuna doab region. The Painted Grey Ware (PGW) is associated with the Later Vedic Period (c. 1000-600 BCE). The Northern Black Polished Ware (NBPW) is associated with the later Mahajanapada/Maurya period (c. 600-200 BCE).",
+    examName: "UPSC Prelims",
+    examYear: 2020,
+    difficulty: "hard",
+  },
+  {
+    id: "vp-25",
+    topic: "vedic-period",
+    question:
+      "The concept of 'Rita' in the Rig Veda refers to:",
+    options: [
+      "A type of sacrifice",
+      "The cosmic order or moral law governing the universe",
+      "A river in the Sapta Sindhu region",
+      "A class of priests",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Rita in the Rig Veda refers to the cosmic order or moral law that governs the universe. It represents the natural order that regulates the seasons, the movement of celestial bodies, and moral conduct. Varuna was considered the chief guardian of Rita. The concept is considered a precursor to the later concept of Dharma. Any violation of Rita was believed to bring divine punishment.",
+    examName: "SSC CGL",
+    examYear: 2023,
+    difficulty: "medium",
+  },
 ]

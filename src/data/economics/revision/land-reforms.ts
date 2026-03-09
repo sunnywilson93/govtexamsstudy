@@ -3,64 +3,130 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const landReformsRevision: SubjectRevision = {
   topic: 'land-reforms',
   bullets: [
-    "Zamindari abolition (1950s): Most comprehensive reform. 20 million tenants became owners. First Amendment (1951) — Articles 31A, 31B, Ninth Schedule.",
-    "Tenancy reforms: Security of tenure, rent regulation, ownership transfer to tenants. Best implementation: Kerala, West Bengal.",
-    "Operation Barga (West Bengal, 1978): 1.5 million sharecroppers registered with inheritable rights. India's most successful tenancy reform.",
-    "Land ceiling: Maximum landholding limit. Guidelines (1972): 10-18 acres irrigated, 27-54 acres dry land. 6.4 million acres declared surplus.",
-    "Only 5.4 million acres redistributed to 5.5 million beneficiaries (mostly tiny plots <1 acre). Limited impact on inequality.",
-    "LARR Act 2013: Replaced Land Acquisition Act 1894. Consent 70% (PPP), 80% (private). Compensation 2-4x market value.",
-    "SIA (Social Impact Assessment) mandatory before acquisition. Multi-crop irrigated land — last resort only.",
-    "DILRMP (2008): Computerise land records, digitise cadastral maps, integrate registration+mutation. ULPIN (14-digit ID for land parcels).",
-    "SVAMITVA (2020): Drone-based survey of village residential areas. Property cards for rural households. 3.17 lakh villages surveyed.",
-    "Forest Rights Act 2006: Individual rights (up to 4 hectares) and Community Forest Rights for forest-dwelling tribals.",
-    "FRA implementation: 23.6 lakh individual titles, 1 lakh community titles issued. MP, Chhattisgarh, Maharashtra lead.",
-    "MSP for Minor Forest Produce: 87 items covered. Van Dhan Vikas Kendras (5,000+) for value addition.",
-    "Land litigation: 67% of civil cases. Average resolution: 25+ years. Conclusive titling would reduce disputes.",
-    "India's land fragmentation: Average holding 1.08 hectares. 86.2% holdings are small/marginal (<2 hectares).",
-    "NITI Aayog model land leasing law (2016, T. Haque Committee): Legalise tenancy, give tenants access to credit and insurance."
-],
+    'Colonial systems: Zamindari (Cornwallis, 1793, Bengal), Ryotwari (Munro, 1820, Madras/Bombay), Mahalwari (Mackenzie, 1822, NW Provinces/Punjab).',
+    'Zamindari abolition (1950s): Most comprehensive reform. 20 million tenants became owners of ~250 million acres.',
+    'First Amendment (1951): Articles 31A, 31B + Ninth Schedule inserted to protect land reform laws from judicial review.',
+    'Article 31A: Land acquisition laws immune from Art. 14/19 challenge. Art. 31B: Ninth Schedule protection. I.R. Coelho (2007): Post-1973 entries reviewable for basic structure.',
+    'Article 300A (44th Amendment, 1978): "No person deprived of property save by authority of law." Property right \u2014 constitutional, not fundamental.',
+    'Tenancy reforms: Security of tenure, rent regulation (1/4th-1/5th of produce), ownership conferment. Best: Kerala, West Bengal.',
+    'Operation Barga (West Bengal, 1978-82): 1.5 million sharecroppers registered with inheritable rights. India\'s best tenancy reform.',
+    'Kerala Land Reforms Act 1969: Virtually eliminated tenancy. Empowered hutment dwellers (kudikidappukar). Most radical reform.',
+    'Land ceiling (1972 guidelines): 10-18 acres irrigated, 27-54 acres dry. Family of 5 as unit.',
+    '6.4 million acres surplus. 5.4 million acres distributed to 5.5 million beneficiaries. SC/ST got ~40%. Most plots <1 acre.',
+    'Bhoodan movement (Vinoba Bhave, 1951): 4.5 million acres donated. Much land unusable. Gramdan: 150,000 villages declared.',
+    'Land is a State subject \u2014 Entry 18, List II (Seventh Schedule). States enact land reform laws.',
+    'LARR Act 2013: Replaced colonial 1894 Act. Consent: 80% (private), 70% (PPP). Compensation: 2x (urban), 4x (rural) market value + 100% solatium.',
+    'SIA mandatory before acquisition. Multi-crop irrigated land \u2014 last resort. Unused land returned in 5 years.',
+    '2015 Amendment Bill: Remove consent/SIA for 5 categories. Ordinances issued 3 times. Bill lapsed.',
+    'DILRMP (2008): Computerise land records, digitise cadastral maps, integrate registration+mutation. ULPIN (14-digit land ID).',
+    'DILRMP progress: 92% RoR computerised, 75% maps digitised, survey in 30-40% villages. ULPIN pilot in 10 states.',
+    'SVAMITVA (2020): Drone-based village residential survey. Property cards for rural households. 3.17 lakh villages, 2.6 crore cards.',
+    'SVAMITVA benefits: Legal document for bank collateral, dispute reduction, panchayat planning, women empowerment (joint cards).',
+    'Forest Rights Act 2006: Individual rights up to 4 hectares. Community Forest Rights (CFR) for grazing, MFP, water. Habitat rights for PVTGs.',
+    'FRA implementation: 23.6 lakh individual titles (47 lakh acres), 1 lakh community titles (54 lakh acres). Top: MP, Chhattisgarh, Maharashtra.',
+    'MSP for 87 Minor Forest Produce items. Van Dhan Vikas Kendras (5,000+). TRIFED manages procurement. 5 crore tribal households benefited.',
+    'Land litigation: 67% of civil cases. 25+ years average resolution. 4+ crore property cases pending.',
+    'Average holding: 1.08 hectares. 86.2% small/marginal (<2 ha) cultivating 47.3% area. Top 9.4% operate 52.7%.',
+    'Consolidation of holdings (chakbandi): Best in Punjab, Haryana, UP (western). 50%+ area consolidated in Punjab/Haryana.',
+    'FPOs (Farmer Producer Organisations): 10,000 target. Rs 6,865 crore. Collective marketing, input purchase, value addition.',
+    'Women own only 12.8% of agricultural land (Ag Census 2015-16). SVAMITVA joint cards, state inheritance reforms are steps.',
+    'NITI Aayog model land leasing law (T. Haque, 2016): Legalise tenancy, give tenants access to credit, insurance, MSP.',
+    'Informal tenancy: 10-12% of agricultural land. Tenants lack access to institutional credit, crop insurance, MSP procurement.',
+    'Land pooling: Alternative to acquisition \u2014 landowners pool land, receive developed plots + compensation. Used in Amaravati (33,000 acres).',
+    'Industrial Land Bank portal (2020): 5.5 lakh hectares mapped for investment across states.',
+    'Singur-Nandigram (2006-07, West Bengal): SEZ land acquisition protests. Highlighted tension between industry and farmer rights.',
+    'Fifth Schedule + PESA (1996): Tribal land protection. Gram Sabha empowered to prevent tribal land alienation.',
+    'Conclusive titling (Torrens system): Government guarantees title. Ultimate goal of DILRMP. Rajasthan Urban Land Title Act 2016.',
+    '6-7 crore people displaced since independence by development projects (dams, mines, highways). Tribals disproportionately affected.',
+    'Urban Land Ceiling Act 1976: Limited success. Repealed 1999. FSI restrictions limit vertical urban growth.',
+    'Tribal land alienation: 8-10 lakh acres alienated in Jharkhand alone. Samata Judgement (SC 1997): Only govt can mine in Scheduled Areas.',
+    'Average holding: 2.28 ha (1970-71) \u2192 1.08 ha (2015-16). Fragmentation due to inheritance divisions. Consolidation best in Punjab/Haryana.',
+    'Japan post-1945 land reform: 80% owner-operated by 1950 (from 46%). 3 ha ceiling. US occupation drove swift reform in 3 years.',
+    'CAMPA Fund: Rs 54,000+ crore collected. Companies pay for compensatory afforestation + NPV (Rs 6-10 lakh/ha) for forest diversion.',
+    'JFM: 1.18 lakh committees managing 23+ million hectares. Community protects forest in exchange for share of produce.',
+    'Stamp duty: 5-10% of property value. State revenue Rs 2-3 lakh crore/year. Under-reporting widespread (40-50% black economy in real estate).',
+    'Registration Act 1908: All property transactions >Rs 100 must be registered. Registration and mutation are separate \u2014 DILRMP aims to integrate.',
+    'India: World\'s largest groundwater user \u2014 25% of global extraction. 60% irrigation, 85% drinking water. 54% wells declining (NITI Aayog).',
+  ],
   comparisons: [
     {
-        "title": "Phases of Land Reform",
-        "headers": [
-            "Phase",
-            "Period",
-            "Focus",
-            "Impact"
-        ],
-        "rows": [
-            [
-                "Zamindari Abolition",
-                "1950s",
-                "Abolish intermediaries",
-                "20 million tenants became owners — most successful"
-            ],
-            [
-                "Tenancy Reforms",
-                "1950s-70s",
-                "Protect tenant rights",
-                "Varied — best in Kerala, West Bengal; poor in Bihar, UP"
-            ],
-            [
-                "Land Ceiling",
-                "1960s-70s",
-                "Redistribute excess land",
-                "5.4 million acres distributed — limited impact"
-            ],
-            [
-                "Digitisation",
-                "2008-present",
-                "Modernise records",
-                "DILRMP, SVAMITVA — ongoing"
-            ]
-        ]
-    }
-],
+      title: 'Colonial Land Revenue Systems',
+      headers: ['System', 'Year/Architect', 'Region', 'Key Feature'],
+      rows: [
+        ['Zamindari / Permanent Settlement', '1793, Cornwallis', 'Bengal, Bihar, Odisha', 'Revenue fixed permanently; zamindars as intermediaries'],
+        ['Ryotwari', '1820, Munro', 'Madras, Bombay', 'Direct with cultivators; periodic reassessment'],
+        ['Mahalwari', '1822, Mackenzie', 'NW Provinces, Punjab', 'Village-level collective settlement'],
+      ],
+    },
+    {
+      title: 'Phases of Land Reform',
+      headers: ['Phase', 'Period', 'Focus', 'Impact'],
+      rows: [
+        ['Zamindari Abolition', '1950s', 'Abolish intermediaries', '20 million tenants became owners \u2014 most successful'],
+        ['Tenancy Reforms', '1950s-70s', 'Protect tenant rights', 'Varied \u2014 best in Kerala, WB; poor in Bihar, UP'],
+        ['Land Ceiling', '1960s-70s', 'Redistribute excess land', '5.4M acres distributed \u2014 limited impact on inequality'],
+        ['Digitisation', '2008-present', 'Modernise records', 'DILRMP, SVAMITVA, ULPIN \u2014 ongoing'],
+      ],
+    },
+    {
+      title: 'State-Wise Land Reform Success',
+      headers: ['State', 'Key Reform', 'Achievement', 'Limitation'],
+      rows: [
+        ['Kerala', 'Land Reforms Act 1969', 'Eliminated tenancy, strict ceiling, hutment rights', 'Small holdings, low industrialisation'],
+        ['West Bengal', 'Operation Barga (1978-82)', '1.5M sharecroppers registered, 2.5M beneficiaries', 'Industrial decline, Singur/Nandigram backlash'],
+        ['J&K', 'Big Landed Estates Abolition 1950', '4.5 lakh tillers benefited, 22-acre ceiling', 'Limited to Valley, less impact in Jammu/Ladakh'],
+        ['Punjab/Haryana', 'Consolidation of holdings', '50%+ area consolidated', 'Green Revolution beneficiaries, not redistributive'],
+        ['Bihar/UP', 'Ceiling legislation', 'Weak implementation', 'Benami holdings, political capture by landed castes'],
+      ],
+    },
+    {
+      title: 'India vs East Asian Land Reforms',
+      headers: ['Feature', 'India', 'Japan (post-1945)', 'South Korea', 'Taiwan'],
+      rows: [
+        ['Ceiling', '10-54 acres', '3 hectares', '3 hectares', '2.9 hectares (paddy)'],
+        ['Speed', 'Decades (1950s-ongoing)', '3 years', '2-3 years', '4 years'],
+        ['Owner-operated %', '~85% (but tiny plots)', '80% (from 46%)', '94%', '87%'],
+        ['External pressure', 'None', 'US occupation', 'US influence', 'KMT relocation'],
+        ['Industrialisation', 'Slow, services-led', 'Rapid post-reform', 'Rapid (chaebols)', 'Rapid (SMEs)'],
+      ],
+    },
+    {
+      title: 'LARR Act 2013 vs Old Act 1894',
+      headers: ['Feature', 'Act 1894', 'LARR Act 2013'],
+      rows: [
+        ['Consent', 'Not required', '80% (private), 70% (PPP)'],
+        ['Compensation', 'At circle rate', '2-4x market value + 100% solatium'],
+        ['Rehabilitation', 'Not mandatory', 'Mandatory for each affected family'],
+        ['SIA', 'Not required', 'Mandatory Social Impact Assessment'],
+        ['Food security', 'No protection', 'Multi-crop irrigated land \u2014 last resort'],
+      ],
+    },
+  ],
   mnemonics: [
     {
-        "title": "Land Reform Constitutional Articles — \"31A-31B-9th\"",
-        "mnemonic": "Article 31A: Protects land reform laws from challenge. Article 31B: Ninth Schedule protection. First Amendment 1951",
-        "explanation": "Three constitutional provisions protecting land reform legislation from judicial review under fundamental rights."
-    }
-],
+      title: 'Constitutional Articles for Land \u2014 "31A-31B-9th-300A"',
+      mnemonic: '31A (estate acquisition immune), 31B (Ninth Schedule immune), 300A (property = legal right, not fundamental)',
+      explanation: 'Article 31A protects land reform laws. 31B + Ninth Schedule gives additional shield. 300A (44th Amdt) made property a constitutional right. I.R. Coelho (2007): Post-1973 entries can be reviewed for basic structure.',
+    },
+    {
+      title: 'Colonial Systems \u2014 "ZRM: B-M-P"',
+      mnemonic: 'Zamindari (Bengal), Ryotwari (Madras), Mahalwari (Punjab/NW)',
+      explanation: 'Z = Zamindari/Permanent Settlement (1793, Cornwallis, Bengal). R = Ryotwari (1820, Munro, Madras/Bombay). M = Mahalwari (1822, Mackenzie, NW Provinces/Punjab).',
+    },
+    {
+      title: 'LARR Consent \u2014 "80-70-SIA"',
+      mnemonic: '80% for Private, 70% for PPP, SIA for Government projects',
+      explanation: 'Private projects need 80% landowner consent. PPP projects need 70%. Government projects: no consent but mandatory Social Impact Assessment. Compensation: 4x (rural), 2x (urban) market value.',
+    },
+    {
+      title: 'FRA Rights \u2014 "IFR + CFR + Habitat"',
+      mnemonic: 'Individual (4 ha), Community (grazing/MFP/water), Habitat (PVTGs, 73 groups)',
+      explanation: 'Three types of rights under Forest Rights Act 2006. IFR: up to 4 hectares for families cultivating for 3 generations. CFR: community rights over forest resources. Habitat rights for Particularly Vulnerable Tribal Groups.',
+    },
+    {
+      title: 'SVAMITVA Benefits \u2014 "CDPW"',
+      mnemonic: 'Collateral for bank loans, Dispute reduction, Panchayat planning/tax, Women empowerment (joint cards)',
+      explanation: 'Four key benefits of SVAMITVA property cards for rural households. Drone-based survey creates legal documents that unlock financial, governance, and gender benefits.',
+    },
+  ],
 }

@@ -241,4 +241,202 @@ export const medievalKingdomsProblems: HistoryProblem[] = [
     examYear: 2022,
     difficulty: "medium",
   },
+  {
+    id: "mk-15",
+    topic: "medieval-kingdoms",
+    question:
+      "The Tripartite Struggle for supremacy over Kannauj in early medieval India involved the Pratiharas, Rashtrakutas, and:",
+    options: [
+      "Cholas",
+      "Palas",
+      "Chalukyas",
+      "Pallavas",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Tripartite Struggle (8th-10th centuries CE) for control of Kannauj involved the Gurjara-Pratiharas of Rajasthan (west), the Palas of Bengal-Bihar (east), and the Rashtrakutas of the Deccan (south). Kannauj was the symbolic seat of north Indian power since Harshavardhana. This prolonged conflict weakened all three powers and prevented unified resistance against later invasions.",
+    examName: "SSC CGL",
+    examYear: 2020,
+    difficulty: "easy",
+  },
+  {
+    id: "mk-16",
+    topic: "medieval-kingdoms",
+    question:
+      "The Rajput kingdoms adopted which system of administration?",
+    options: [
+      "The Mansabdari system",
+      "The feudal system based on land grants to chiefs (samantas)",
+      "The republican system of governance",
+      "The centralized bureaucratic system",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Rajput kingdoms adopted a feudal system of administration based on land grants to subordinate chiefs (samantas). The king granted land to feudal lords in exchange for military service and loyalty. These samantas had considerable autonomy in their territories and maintained their own armies. This decentralized feudal structure, while ensuring local loyalty, often made it difficult to mount a unified defence against external invaders.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "medium",
+  },
+  {
+    id: "mk-17",
+    topic: "medieval-kingdoms",
+    question:
+      "Consider the following statements about the Sikh Misls:\n1. They were independent Sikh confederacies that emerged in the 18th century.\n2. There were 12 Misls in total.\n3. Maharaja Ranjit Singh unified all the Misls.\n\nWhich of the above statements is/are correct?",
+    options: [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Statements 1 and 2 are correct. The Misls were 12 independent Sikh confederacies that emerged after the decline of Mughal power in Punjab in the mid-18th century. Statement 3 is not entirely correct — Ranjit Singh unified most of the Misls (particularly the Cis-Sutlej Misls and Sukerchakia Misl) but did not unify all of them. The Cis-Sutlej states (Patiala, Nabha, Jind) came under British protection through treaties and were not part of Ranjit Singh\\'s empire.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "hard",
+  },
+  {
+    id: "mk-18",
+    topic: "medieval-kingdoms",
+    question:
+      "Alberuni (Al-Biruni) visited India with which invader and wrote the famous 'Kitab-ul-Hind'?",
+    options: [
+      "Muhammad of Ghor",
+      "Mahmud of Ghazni",
+      "Timur",
+      "Genghis Khan",
+    ],
+    correctIndex: 1,
+    explanation:
+      "Alberuni (Abu Rayhan al-Biruni) accompanied Mahmud of Ghazni to India and wrote \\'Kitab-ul-Hind\\' (Tarikh al-Hind), a comprehensive account of Indian society, philosophy, science, and culture around 1030 CE. Despite being associated with an invader, Alberuni approached his study of India with scholarly objectivity. He learned Sanskrit and studied Indian philosophy, mathematics (including the works of Brahmagupta), and astronomy. His work remains an invaluable primary source.",
+    examName: "SSC CHSL",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "mk-19",
+    topic: "medieval-kingdoms",
+    question:
+      "The Pala Dynasty, which ruled Bengal and Bihar, is best known for patronizing which religious tradition?",
+    options: [
+      "Shaivism",
+      "Jainism",
+      "Buddhism (Mahayana/Vajrayana)",
+      "Vaishnavism",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Pala Dynasty (8th-12th centuries CE) is best known for patronizing Mahayana and Vajrayana Buddhism. They founded and maintained the great Buddhist universities of Nalanda, Vikramashila, Odantapuri, and Somapura. Dharmapala (770-810 CE) founded Vikramashila University. The famous Buddhist teacher Atisha (Dipankara Srijnana) was born in the Pala kingdom and later spread Buddhism to Tibet. The Palas were the last major dynasty to patronize Buddhism in India.",
+    examName: "UPSC Prelims",
+    examYear: 2023,
+    difficulty: "medium",
+  },
+  {
+    id: "mk-20",
+    topic: "medieval-kingdoms",
+    question:
+      "Assertion (A): The Chola Empire had a highly efficient system of local self-government.\nReason (R): The Uttaramerur inscriptions describe the detailed functioning of village assemblies and committee selection.\n\nSelect the correct answer:",
+    options: [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Both A and R are true, and R correctly explains A. The Chola Empire had one of the most sophisticated systems of local self-government in the ancient world. The Uttaramerur inscriptions (10th century CE) describe in detail the functioning of the Sabha (village assembly of Brahmin villages), the Kudavolai (lottery) system for selecting committee members, and the various Variyam committees responsible for different aspects of village administration.",
+    examName: "UPSC Prelims",
+    examYear: 2024,
+    difficulty: "medium",
+  },
+  {
+    id: "mk-21",
+    topic: "medieval-kingdoms",
+    question:
+      "Mahmud of Ghazni raided the famous Somnath Temple in which year?",
+    options: [
+      "1000 CE",
+      "1014 CE",
+      "1025 CE",
+      "1030 CE",
+    ],
+    correctIndex: 2,
+    explanation:
+      "Mahmud of Ghazni raided the Somnath Temple in Gujarat in 1025 CE during his 16th (or 17th, by some accounts) and most famous raid on India. The temple was enormously wealthy and was one of the most revered Hindu shrines. Mahmud looted its vast treasure and destroyed the Shiva lingam. This was the most devastating of his 17 raids (1000-1027 CE). He died in 1030 CE at Ghazni.",
+    examName: "RRB NTPC",
+    examYear: 2021,
+    difficulty: "easy",
+  },
+  {
+    id: "mk-22",
+    topic: "medieval-kingdoms",
+    question:
+      "The Dilwara Jain Temples at Mount Abu (Rajasthan) were built during the rule of which dynasty?",
+    options: [
+      "Chauhans of Ajmer",
+      "Solankis (Chalukyas) of Gujarat",
+      "Pratiharas of Kannauj",
+      "Paramaras of Malwa",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Dilwara Jain Temples at Mount Abu were primarily built during the rule of the Solanki (Chalukya) dynasty of Gujarat (11th-13th centuries CE). They are renowned for their exquisite marble carvings that are considered among the finest in India. The two most famous temples are the Vimal Vasahi Temple (built by Vimal Shah in 1031 CE) and the Luna Vasahi Temple (built by Tejpal and Vastupal in 1230 CE). Both were ministers under the Solanki rulers.",
+    examName: "SSC CGL",
+    examYear: 2022,
+    difficulty: "medium",
+  },
+  {
+    id: "mk-23",
+    topic: "medieval-kingdoms",
+    question:
+      "Consider the following pairs:\n\nRajput Clan — Kingdom\n1. Chauhans — Ajmer and Delhi\n2. Chandellas — Bundelkhand\n3. Paramaras — Gujarat\n4. Pratiharas — Kannauj\n\nWhich of the above pairs is/are correctly matched?",
+    options: [
+      "1, 2 and 4 only",
+      "1 and 2 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4",
+    ],
+    correctIndex: 0,
+    explanation:
+      "Pairs 1, 2, and 4 are correctly matched. The Chauhans ruled Ajmer and Delhi, the Chandellas ruled Bundelkhand (and built the Khajuraho temples), and the Pratiharas ruled Kannauj. Pair 3 is incorrect — the Paramaras ruled Malwa (with Dhar as their capital), not Gujarat. Gujarat was ruled by the Solankis (Chalukyas of Gujarat). King Bhoja of the Paramara dynasty was a famous scholar-king.",
+    examName: "UPSC Prelims",
+    examYear: 2022,
+    difficulty: "hard",
+  },
+  {
+    id: "mk-24",
+    topic: "medieval-kingdoms",
+    question:
+      "The Gurmukhi script used in writing Punjabi was standardized by:",
+    options: [
+      "Guru Nanak",
+      "Guru Angad Dev",
+      "Guru Arjan Dev",
+      "Guru Gobind Singh",
+    ],
+    correctIndex: 1,
+    explanation:
+      "The Gurmukhi script was standardized by Guru Angad Dev (the 2nd Sikh Guru, 1539-1552). \\'Gurmukhi\\' means \\'from the mouth of the Guru.\\' While the script existed in earlier forms, Guru Angad Dev systematized and popularized it to make Sikh scripture accessible to common people who could not read Devanagari or Persian. The Guru Granth Sahib is written in Gurmukhi script.",
+    examName: "SSC CGL",
+    examYear: 2023,
+    difficulty: "easy",
+  },
+  {
+    id: "mk-25",
+    topic: "medieval-kingdoms",
+    question:
+      "The Ganga Dynasty of Odisha is best known for building which famous temple?",
+    options: [
+      "Jagannath Temple, Puri",
+      "Lingaraj Temple, Bhubaneswar",
+      "Sun Temple, Konark",
+      "Mukteshwar Temple, Bhubaneswar",
+    ],
+    correctIndex: 2,
+    explanation:
+      "The Eastern Ganga Dynasty of Odisha is best known for building the Sun Temple at Konark (c. 1250 CE), built by King Narasimhadeva I. Designed in the form of a colossal chariot with 24 carved stone wheels pulled by seven horses, it is a masterpiece of Kalinga (Odishan) architecture and a UNESCO World Heritage Site. The Jagannath Temple at Puri was also built by the Gangas (Anantavarman Chodaganga), but Konark is their most famous architectural achievement.",
+    examName: "UPSC Prelims",
+    examYear: 2021,
+    difficulty: "medium",
+  },
 ]
