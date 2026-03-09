@@ -673,6 +673,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
     },
+    alternates: {
+      canonical: `https://govtexamsstudy.org/geography/${topic}`,
+    },
   }
 }
 

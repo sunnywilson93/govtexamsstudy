@@ -316,9 +316,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { topic } = await params
   const data = TOPIC_DATA[topic]
   if (!data) return {}
+  const title = `${data.label} — Concepts, Tricks & Problems | GovtExamsStudy`
+  const description = `${data.description} Free concepts, shortcuts, and practice problems for SSC CGL, IBPS PO, and government exams.`
   return {
-    title: `${data.label} — Concepts, Tricks & Problems | GovtExams`,
-    description: data.description,
+    title,
+    description,
+    keywords: [`${data.label}`, `${data.label} tricks`, `${data.label} reasoning`, 'Reasoning & Logic', 'reasoning for SSC CGL', 'logical reasoning tricks', `${data.label} problems`],
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      siteName: 'GovtExamsStudy',
+    },
+    twitter: {
+      card: 'summary',
+      title,
+      description,
+    },
+    alternates: {
+      canonical: `https://govtexamsstudy.org/reasoning/${topic}`,
+    },
   }
 }
 

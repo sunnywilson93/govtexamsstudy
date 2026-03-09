@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'GovtExamsStudy',
   },
+  alternates: {
+    canonical: 'https://govtexamsstudy.org/polity',
+  },
 }
 
 interface Topic {
