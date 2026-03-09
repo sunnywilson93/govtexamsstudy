@@ -3,64 +3,120 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const disinvestmentRevision: SubjectRevision = {
   topic: 'disinvestment',
   bullets: [
-    "Disinvestment: Government selling stake in PSU. Minority (retains control) vs Strategic (51%+ with management transfer = privatisation).",
-    "First disinvestment: 1991 — minority stakes in 31 PSUs raising Rs 3,038 crore.",
-    "DIPAM (Dept of Investment & Public Asset Management): Under MoF. Manages disinvestment. Established 2016.",
-    "Air India privatisation (2021): Sold to Tata Group for Rs 18,000 crore enterprise value. Returned to Tata after 69 years.",
-    "LIC IPO (2022): India's largest IPO at Rs 21,008 crore. Government sold 3.5% stake.",
-    "New PSE Policy (2021): Government in strategic sectors only (defence, atomic energy, transport, banking, power, minerals). Privatise rest.",
-    "Maharatna CPSEs (12): BHEL, BPCL, Coal India, GAIL, HPCL, IOC, NTPC, ONGC, Power Grid, SAIL + Oil India, NHPC, REC, PFC.",
-    "Total CPSEs: 389 (260 operational). CPSE turnover: Rs 35+ lakh crore. Profit: Rs 3.2 lakh crore (FY24).",
-    "OFS: Offer for Sale through stock exchange. ETF route: CPSE ETF and Bharat 22 ETF raised Rs 74,000+ crore.",
-    "NMP (National Monetisation Pipeline 2021): Rs 6 lakh crore target FY22-25. InvITs, TOT, airport leasing, warehousing.",
-    "NITI Aayog identifies PSUs for strategic sale → CGD recommends → AM (GoI Ministers) approves → Transaction advisor manages.",
-    "IDBI Bank strategic sale: In process. Government + LIC selling 60.72% stake. RBI approved 'fit and proper' assessment.",
-    "Cumulative disinvestment receipts (1991-2024): Over Rs 5 lakh crore.",
-    "Hindustan Zinc controversy: Sold for Rs 445 crore (2002). Market cap now Rs 1.5+ lakh crore — undervaluation criticism.",
-    "Strategic sectors: Atomic energy, space, defence, transport, telecom, power, petroleum, coal, minerals, banking, insurance, financial services."
-],
+    'Disinvestment: Government selling stake in PSU. Minority (retains control) vs Strategic (51%+ with management transfer = privatisation).',
+    'First disinvestment: 1991 — minority stakes in 31 PSUs raising Rs 3,038 crore during LPG reforms.',
+    'DIPAM (Dept of Investment & Public Asset Management): Under MoF. Manages disinvestment. Established 2016 (renamed from Dept of Disinvestment).',
+    'Rangarajan Committee (1993): Retain 51% in strategic sectors, reduce to 26% in non-strategic. First formal disinvestment framework.',
+    'Arun Shourie era (1999-2004): Aggressive privatisation — VSNL, IPCL, Maruti, BALCO, Hindustan Zinc. Rs 15,871 crore from strategic sales.',
+    'Air India privatisation (2021): Sold to Tata Group (Talace Pvt Ltd) for Rs 18,000 crore enterprise value. Returned after 69 years.',
+    'LIC IPO (2022): India\'s largest IPO at Rs 21,008 crore. 3.5% stake sold at Rs 949/share. Market cap: Rs 6 lakh crore at listing.',
+    'LIC post-IPO: Shares fell 40% initially (Rs 550), recovered to Rs 900+ by 2024. Concerns: government interference, persistency ratio.',
+    'New PSE Policy (2021): Government in strategic sectors only (4 broad areas). Privatise, merge, or close in non-strategic sectors.',
+    'Strategic sectors: (1) Atomic energy/space/defence, (2) Transport/telecom, (3) Power/petroleum/coal/minerals, (4) Banking/insurance/financial services.',
+    'Maharatna CPSEs (14): BHEL, BPCL, Coal India, GAIL, HPCL, IOC, NTPC, ONGC, Power Grid, SAIL, Oil India, NHPC, REC, PFC.',
+    'Maharatna powers: Board can invest up to Rs 5,000 crore, enter JVs, establish overseas offices — without government approval.',
+    'Navratna CPSEs (14): HAL, BEL, NALCO, NLC, NMDC, RITES, IRCON, EIL, CONCOR, RCF, MTNL, MDL, BEML, NBCC. Powers: up to Rs 1,000 crore.',
+    'Miniratna I: Profit 3+ years, positive net worth. Invest up to Rs 500 crore. 72 companies. Miniratna II: Up to Rs 300 crore. ~40 companies.',
+    'Total CPSEs: 389 (260 operational). Turnover: Rs 35+ lakh crore. Profit: Rs 3.2 lakh crore. Market cap (listed): Rs 43+ lakh crore (FY24).',
+    'Government equity in CPSEs: Rs 16.9 lakh crore (book value). CPSEs paid Rs 5.06 lakh crore to exchequer (dividends+taxes+interest, FY24).',
+    'OFS: Offer for Sale through stock exchange. ETF route: CPSE ETF (2014) and Bharat 22 ETF (2017) raised Rs 74,000+ crore combined.',
+    'NMP (National Monetisation Pipeline 2021): Rs 6 lakh crore target FY22-25. Roads (27%), Railways (25%), Power (14%).',
+    'NMP models: TOT (highways), InvITs (transmission, highways), PPP (airports), OMD (railway stations/trains).',
+    'NMP achievement: Rs 3.9 lakh crore monetised in FY22-24 against Rs 4.5 lakh crore target — 87% achievement. Roads performed best.',
+    'NITI Aayog identifies → CGD (Cabinet Secretary) recommends → AM (Group of Ministers, FM chairs) approves → Transaction advisor manages.',
+    'IDBI Bank strategic sale: Government (45.48%) + LIC (49.24%) selling 60.72%. RBI approved fit-and-proper assessment. Estimated Rs 60,000-80,000 crore.',
+    'BPCL sale: Government holds 52.98%. Announced 2019, paused repeatedly. If completed, would be India\'s largest disinvestment by value.',
+    'CONCOR sale: Complicated by land ownership (Railway land). BEML: Defence component complicates sale. Pawan Hans: Star9 deal fell through.',
+    'Cumulative disinvestment receipts (1991-2024): Over Rs 5 lakh crore. Peak year: FY18 Rs 1,00,057 crore (included HPCL-ONGC PSU-to-PSU sale).',
+    'Recent underperformance: FY24 actual Rs 16,507 crore vs target Rs 51,000 crore. FY21: Rs 32,835 crore (COVID). Targets consistently missed.',
+    'PSU-to-PSU criticism: HPCL to ONGC (Rs 36,915 crore, FY18) counted as disinvestment but no transfer to private sector.',
+    'NIF (National Investment Fund, 2005): Disinvestment proceeds to NIF for social sector spending. Used for bank recapitalisation (Rs 3.1 lakh crore).',
+    'Hindustan Zinc: Sold for Rs 445 crore (2002). Market cap now Rs 1.5+ lakh crore — undervaluation criticism.',
+    'BALCO controversy: 51% sold to Sterlite (Vedanta) for Rs 551 crore (2001). Challenged in Chhattisgarh HC — upheld.',
+    'Industrial Policy Resolution 1956: Schedule A (state monopoly), Schedule B (state + private), Schedule C (private). Basis of PSU dominance.',
+    'Listed CPSE index: Outperformed Nifty 50 in FY24 (73% vs 28%) — driven by defence, energy, infrastructure stocks.',
+    'VRS (Voluntary Retirement Scheme): Standard practice before privatisation. Air India: Employees reduced 18,000 to ~12,000 post-sale.',
+    'CPSE corporate governance: DPE guidelines mandate board composition, audit committee, independent directors — enforcement remains weak.',
+    'UK privatisation model (Thatcher 1979-97): BT, British Gas, BA, railways. Mixed results. India avoided mass privatisation approach.',
+    'Singapore model: GLCs managed commercially via Temasek Holdings. India moving toward similar approach with Maharatna autonomy.',
+  ],
   comparisons: [
     {
-        "title": "Minority Disinvestment vs Strategic Disinvestment",
-        "headers": [
-            "Feature",
-            "Minority Disinvestment",
-            "Strategic Disinvestment"
-        ],
-        "rows": [
-            [
-                "Stake sold",
-                "5-10% (small)",
-                "51%+ (majority)"
-            ],
-            [
-                "Management control",
-                "Retained by government",
-                "Transferred to private buyer"
-            ],
-            [
-                "Purpose",
-                "Revenue generation (fiscal deficit)",
-                "Efficiency, governance improvement"
-            ],
-            [
-                "Example",
-                "ONGC OFS, Coal India buyback",
-                "Air India to Tata, VSNL to Tata"
-            ],
-            [
-                "Government role post-sale",
-                "Remains majority owner",
-                "Exits or becomes minority"
-            ]
-        ]
-    }
-],
+      title: 'Minority Disinvestment vs Strategic Disinvestment',
+      headers: ['Feature', 'Minority Disinvestment', 'Strategic Disinvestment'],
+      rows: [
+        ['Stake sold', '5-10% (small)', '51%+ (majority)'],
+        ['Management control', 'Retained by government', 'Transferred to private buyer'],
+        ['Purpose', 'Revenue generation (fiscal deficit)', 'Efficiency, governance improvement'],
+        ['Example', 'ONGC OFS, Coal India buyback', 'Air India to Tata, VSNL to Tata'],
+        ['Government role post-sale', 'Remains majority owner', 'Exits or becomes minority'],
+      ],
+    },
+    {
+      title: 'Disinvestment Methods Comparison',
+      headers: ['Method', 'Mechanism', 'Example', 'Revenue Raised'],
+      rows: [
+        ['OFS', 'Shares sold via exchange auction', 'ONGC, Coal India', 'Rs 5,000-15,000 crore per transaction'],
+        ['IPO', 'New listing of PSU', 'LIC (2022), Coal India (2010)', 'LIC Rs 21,008 crore'],
+        ['ETF', 'Bundled stakes in ETF fund', 'CPSE ETF, Bharat 22 ETF', 'Rs 74,000+ crore cumulative'],
+        ['Strategic sale', '51%+ stake + management transfer', 'Air India, VSNL', 'Rs 18,000 crore (Air India)'],
+        ['Buyback', 'PSU buys back own shares', 'Coal India, NMDC', 'Rs 30,000+ crore (FY17-19)'],
+      ],
+    },
+    {
+      title: 'Phases of India\'s Disinvestment',
+      headers: ['Phase', 'Period', 'Approach', 'Key Transactions'],
+      rows: [
+        ['Phase 1', '1991-1999', 'Token minority sales', '31 PSUs, Rs 18,000 crore raised'],
+        ['Phase 2', '1999-2004', 'Strategic privatisation (Shourie era)', 'VSNL, IPCL, Maruti, BALCO, HZL'],
+        ['Phase 3', '2004-2014', 'Slowdown, focus on IPOs/OFS', 'Coal India IPO (Rs 15,199 crore)'],
+        ['Phase 4', '2014-present', 'Renewed push + NMP', 'Air India, LIC IPO, NMP Rs 6 lakh crore'],
+      ],
+    },
+    {
+      title: 'Maharatna vs Navratna vs Miniratna',
+      headers: ['Feature', 'Maharatna', 'Navratna', 'Miniratna I'],
+      rows: [
+        ['Investment power', 'Up to Rs 5,000 crore', 'Up to Rs 1,000 crore', 'Up to Rs 500 crore'],
+        ['Count', '14', '14', '72'],
+        ['Turnover criteria', '> Rs 25,000 crore (avg)', 'Schedule A status', 'Profit 3+ years'],
+        ['JV/overseas office', 'Yes (board-level)', 'With government nod', 'Limited'],
+        ['Examples', 'ONGC, NTPC, IOC, Coal India', 'HAL, BEL, NALCO, NMDC', 'IRCTC, MECL, EIL'],
+      ],
+    },
+    {
+      title: 'NMP Sector-wise Allocation',
+      headers: ['Sector', 'Target (Rs lakh crore)', '% Share', 'Monetisation Model'],
+      rows: [
+        ['Roads/Highways', '1.60', '27%', 'TOT, InvIT'],
+        ['Railways', '1.52', '25%', 'OMD, PPP for stations'],
+        ['Power', '0.85', '14%', 'InvIT, TBCB'],
+        ['Telecom', '0.35', '6%', 'Fibre leasing'],
+        ['Mining', '0.29', '5%', 'Auction, revenue sharing'],
+        ['Aviation', '0.21', '4%', 'PPP lease'],
+      ],
+    },
+  ],
   mnemonics: [
     {
-        "title": "Maharatna Status — \"BINGO CHPS\"",
-        "mnemonic": "BHEL, IOC, NTPC, GAIL, ONGC, Coal India, HPCL, Power Grid, SAIL + BPCL, Oil India, NHPC, REC, PFC",
-        "explanation": "12 Maharatna CPSEs (as of 2024) — most autonomous, can invest up to Rs 5,000 crore without government approval."
-    }
-],
+      title: 'Maharatna CPSEs — "BINGO CHOPS + ONRP"',
+      mnemonic: 'BHEL, IOC, NTPC, GAIL, ONGC, Coal India, HPCL, Oil India, Power Grid, SAIL + NHPC, REC, PFC, BPCL',
+      explanation: '14 Maharatna CPSEs (as of 2024). Most autonomous — board can invest up to Rs 5,000 crore without government approval.',
+    },
+    {
+      title: 'NMP Models — "TIPO"',
+      mnemonic: 'TOT (Toll-Operate-Transfer), InvIT (Infrastructure Investment Trust), PPP (Public-Private Partnership), OMD (Operate-Maintain-Develop)',
+      explanation: 'Four monetisation models used under the National Monetisation Pipeline for brownfield asset recycling.',
+    },
+    {
+      title: 'Strategic Sale Process — "NCAT"',
+      mnemonic: 'NITI Aayog identifies → CGD recommends → AM approves → Transaction advisor manages',
+      explanation: 'Four-step process for strategic disinvestment. CGD = Core Group of Secretaries. AM = Alternative Mechanism (GoM headed by FM).',
+    },
+    {
+      title: 'Pending Strategic Sales — "IBBC-PS"',
+      mnemonic: 'IDBI Bank, BPCL, BEML, CONCOR, Pawan Hans, Shipping Corp',
+      explanation: 'Major pending strategic disinvestment transactions as of 2025 — each delayed for different reasons.',
+    },
+  ],
 }

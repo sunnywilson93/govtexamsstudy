@@ -3,70 +3,145 @@ import type { SubjectRevision } from '@/types/subject-notes'
 export const directTaxesRevision: SubjectRevision = {
   topic: 'direct-taxes',
   bullets: [
-    "Income Tax Act 1961 — governing statute. CBDT administers. Central tax (Union List Entry 82).",
-    "5 heads of income: Salary, House Property, Business/Profession, Capital Gains, Other Sources.",
-    "New Tax Regime (default from FY23-24): Lower rates, fewer deductions. Budget 2025-26: Nil up to Rs 4L, then 5/10/15/20/25/30%.",
-    "Rebate u/s 87A: Zero tax for income up to Rs 12 lakh under new regime (Budget 2025-26).",
-    "Corporate tax: 22% (effective 25.17%) for existing companies. 15% (17.16%) for new manufacturing companies (from Oct 2019).",
-    "MAT: 15% of book profits — ensures minimum tax payment. Companies under 22% regime exempt from MAT.",
-    "DDT abolished from FY 2020-21 — dividends now taxed in shareholders' hands at slab rates.",
-    "Capital gains (Budget 2024-25): STCG on listed equity: 20% (from 15%). LTCG: 12.5% (from 10%). Exemption Rs 1.25 lakh.",
-    "Indexation benefit removed for all assets from Budget 2024-25 — rate reduced to uniform 12.5% LTCG.",
-    "STT on F&O increased in Budget 2024-25: Options 0.1% (from 0.0625%), Futures 0.02% (from 0.0125%).",
-    "Total direct tax collection FY24: Rs 19.58 lakh crore. Direct taxes = 56% of total tax revenue.",
-    "ITR filers: 7.28 crore (AY 2024-25) — doubled from 3.36 crore (AY 2014-15). Base broadening achieved.",
-    "Agricultural income exempt from income tax under Section 10(1) — colonial-era provision.",
-    "Faceless assessment (2020): Scrutiny done remotely, random allocation — reduces corruption and harassment.",
-    "Vivad Se Vishwas: Dispute resolution scheme. VSV 2020: 1.5 lakh cases settled. VSV 2.0 launched 2024.",
-    "BEPS: India part of OECD/G20 Inclusive Framework. Pillar 2: Global minimum tax 15%. India withdrew equalisation levy (2024)."
-],
+    'Income Tax Act 1961 — governing statute. CBDT administers. Central tax (Union List Entry 82). First income tax: 1860 by James Wilson.',
+    '5 heads of income (Section 14): Salary, House Property, Business/Profession, Capital Gains, Other Sources.',
+    'New Tax Regime (default from FY23-24): Lower rates, fewer deductions. Budget 2025-26: Nil up to Rs 4L, then 5/10/15/20/25/30%.',
+    'Rebate u/s 87A: Zero tax for income up to Rs 12 lakh under new regime (Budget 2025-26). Standard deduction Rs 75,000.',
+    'Old regime deductions: 80C (Rs 1.5L — PPF, ELSS, NSC, EPF), 80D (health insurance Rs 25K/50K), 80E (education loan interest).',
+    'HRA exemption under Section 10(13A): Lowest of — actual HRA, rent - 10% salary, or 50%/40% of salary (metro/non-metro).',
+    'Section 24: Home loan interest deduction up to Rs 2 lakh (self-occupied). Entire interest deductible for let-out property.',
+    'Corporate tax: 22% (effective 25.17%) for existing companies. 15% (17.16%) for new manufacturing companies (from Oct 2019).',
+    'MAT: 15% of book profits — ensures minimum tax payment. Companies under 22% regime exempt from MAT.',
+    'DDT abolished from FY 2020-21 — dividends now taxed in shareholders\' hands at slab rates.',
+    'Capital gains (Budget 2024-25): STCG on listed equity: 20% (from 15%). LTCG: 12.5% (from 10%). Exemption Rs 1.25 lakh.',
+    'Indexation benefit removed for all assets from Budget 2024-25 — rate reduced to uniform 12.5% LTCG.',
+    'STT on F&O increased in Budget 2024-25: Options 0.1% (from 0.0625%), Futures 0.02% (from 0.0125%).',
+    'Total direct tax collection FY24: Rs 19.58 lakh crore. Direct taxes = 56% of total tax revenue. PIT exceeded CIT for first time.',
+    'ITR filers: 8.61 crore (AY 2025-26 est.) — nearly tripled from 3.36 crore (AY 2014-15). Base broadening via PAN-Aadhaar, GST linkage.',
+    'Agricultural income exempt under Section 10(1) — Entry 46 State List. KN Raj Committee (1972) recommended taxing it; never implemented.',
+    'Faceless assessment (2020): Scrutiny done remotely, random allocation — reduces corruption. Faceless CIT(A) from 2021.',
+    'Vivad Se Vishwas 1.0 (2020): 1.5 lakh cases settled, Rs 54,000 crore collected. VSV 2.0 (2024): disputes up to Rs 50 crore.',
+    'GAAR (effective April 2017): Denies tax benefit for impermissible avoidance arrangements lacking commercial substance.',
+    'Transfer Pricing (Sections 92-92F): Arm\'s length pricing for associated enterprises (26%+ holding). TNMM most used method.',
+    'Advance Pricing Agreements (APAs): 500+ signed since 2013. Pre-agreed transfer pricing methodology for 5+4 years.',
+    'POEM (Place of Effective Management): Foreign company managed from India deemed resident — prevents shell company abuse.',
+    'BEPS: India part of OECD/G20 Inclusive Framework. Pillar 2: Global minimum tax 15%. India withdrew equalisation levy (2024).',
+    'Equalisation Levy 1.0 (2016): 6% on digital advertising. EL 2.0 (2020): 2% on e-commerce. EL 2.0 withdrawn August 2024.',
+    'DTAAs with 100+ countries. India-Mauritius amended 2016 — capital gains now taxable. Treaty shopping curbed by GAAR + PPT.',
+    'Health & Education Cess: 4% on tax+surcharge. Surcharges: 10-37% based on income. Not shared with states via FC formula.',
+    'Cess + surcharges: Rs 5.88 lakh crore (FY25 BE) — ~22% of gross tax revenue. Not in divisible pool — Centre-state tension.',
+    'SEZ units: Section 10AA — 100%/50% export profit exemption. GIFT IFSC: Section 80LA — 100% for 10/15 years.',
+    'Startup tax incentive: Section 80-IAC — 100% exemption for 3/10 years for DPIIT-recognised startups (turnover < Rs 100 crore).',
+    'Black Money Act 2015: Undisclosed foreign assets — 120% penalty + 10 years imprisonment. One-time compliance: Rs 4,164 crore.',
+    'IDS 2016 (pre-demonetisation): 45% tax on disclosed income. Rs 65,250 crore disclosed.',
+    'Vodafone case (2012): SC ruled indirect transfer not taxable. Government\'s retrospective amendment (2012) repealed in 2021.',
+    'Direct tax disputes: Rs 10.5 lakh crore locked in litigation (FY24). 5 lakh+ cases pending across appellate forums.',
+    'Wealth Tax abolished AY 2016-17 (revenue only Rs 1,008 crore). Gift Tax abolished 1998. Estate Duty abolished 1985.',
+    'Annual Information Statement (AIS): 360-degree view of taxpayer\'s financial transactions — property, shares, FDs, foreign remittances.',
+    'TDS contributes ~53% of gross direct tax collections. Key sections: 192 (salary), 194A (interest), 194C (contractors), 194-IA (property).',
+    'Advance tax: 4 instalments — 15% (Jun 15), 45% (Sep 15), 75% (Dec 15), 100% (Mar 15). Threshold: Rs 10,000 tax liability.',
+    'Section 54: LTCG exemption on house sale if reinvested in house within 2 years. Section 54EC: Investment in NHAI/REC bonds (Rs 50 lakh max).',
+    'Country-by-Country Reporting: MNEs with revenue > Rs 5,500 crore must report income/taxes/employees per country.',
+    'Tax-to-GDP (direct): 6.7% (FY24). Total tax-to-GDP: ~11.7%. OECD average: ~34%. Significant room for base broadening.',
+    'Kelkar Task Force (2002): Recommended DTC, fewer exemptions, moderate rates. Akhilesh Ranjan Committee (2019): Revised DTC draft.',
+    'New simplified Income Tax Act announced in Budget 2025-26 to replace the 1961 Act — expected introduction in Parliament.',
+    'Chelliah Committee (1991-92): Recommended reducing top rate from 56% to 40%, broadening base — foundational post-LPG tax reform.',
+  ],
   comparisons: [
     {
-        "title": "Old Tax Regime vs New Tax Regime",
-        "headers": [
-            "Feature",
-            "Old Regime",
-            "New Regime (FY 2025-26)"
-        ],
-        "rows": [
-            [
-                "Rates",
-                "5%, 20%, 30%",
-                "5%, 10%, 15%, 20%, 25%, 30%"
-            ],
-            [
-                "Deductions",
-                "Section 80C (Rs 1.5L), 80D, HRA, LTA etc.",
-                "Very limited (NPS 80CCD(2), standard deduction Rs 75K)"
-            ],
-            [
-                "Rebate limit",
-                "Rs 5 lakh",
-                "Rs 12 lakh (Budget 2025-26)"
-            ],
-            [
-                "Default",
-                "Optional",
-                "Default from FY 2023-24"
-            ],
-            [
-                "Best for",
-                "High deduction claimers",
-                "Most salaried individuals"
-            ]
-        ]
-    }
-],
-  mnemonics: [
-    {
-        "title": "Heads of Income — \"SHBCO\"",
-        "mnemonic": "Salary, House property, Business/Profession, Capital gains, Other sources",
-        "explanation": "Five heads of income under Income Tax Act 1961 — Section 14."
+      title: 'Old Tax Regime vs New Tax Regime',
+      headers: ['Feature', 'Old Regime', 'New Regime (FY 2025-26)'],
+      rows: [
+        ['Rates', '5%, 20%, 30%', '5%, 10%, 15%, 20%, 25%, 30%'],
+        ['Deductions', 'Section 80C (Rs 1.5L), 80D, HRA, LTA etc.', 'Very limited (NPS 80CCD(2), standard deduction Rs 75K)'],
+        ['Rebate limit', 'Rs 5 lakh', 'Rs 12 lakh (Budget 2025-26)'],
+        ['Default', 'Optional', 'Default from FY 2023-24'],
+        ['Best for', 'High deduction claimers', 'Most salaried individuals'],
+      ],
     },
     {
-        "title": "Capital Gains Rates — \"20-12.5\"",
-        "mnemonic": "STCG listed equity: 20%. LTCG all assets: 12.5% (no indexation)",
-        "explanation": "Post-Budget 2024-25 rates: STCG on listed equity 20%, LTCG uniformly 12.5% without indexation benefit."
-    }
-],
+      title: 'Capital Gains Tax — Pre vs Post Budget 2024-25',
+      headers: ['Asset', 'Earlier Rate', 'New Rate (July 2024)'],
+      rows: [
+        ['Listed equity STCG', '15%', '20%'],
+        ['Listed equity LTCG', '10% (exempt Rs 1L)', '12.5% (exempt Rs 1.25L)'],
+        ['Debt MFs/Gold/Property LTCG', '20% with indexation', '12.5% without indexation'],
+        ['Unlisted shares LTCG', '20% with indexation', '12.5% without indexation'],
+        ['STT on F&O options', '0.0625%', '0.1% on premium'],
+      ],
+    },
+    {
+      title: 'Corporate Tax Rates Comparison',
+      headers: ['Category', 'Rate', 'Effective (with surcharge+cess)', 'MAT applicable?'],
+      rows: [
+        ['Existing (opted 22%)', '22%', '25.17%', 'No (exempt)'],
+        ['New manufacturing (15%)', '15%', '17.16%', 'No (exempt)'],
+        ['Not opted (turnover ≤ Rs 400Cr)', '25%', '~29.12%', 'Yes (15%)'],
+        ['Not opted (turnover > Rs 400Cr)', '30%', '~34.94%', 'Yes (15%)'],
+        ['Foreign companies', '40%', '~43.68%', 'Yes (15%)'],
+      ],
+    },
+    {
+      title: 'Direct Tax Reform Committees',
+      headers: ['Committee', 'Year', 'Key Recommendation'],
+      rows: [
+        ['Nicholas Kaldor', '1956', 'Comprehensive income tax + wealth + gift + expenditure taxes'],
+        ['Mahavir Tyagi', '1958', 'Administrative reforms — led to IT Act 1961'],
+        ['Raja Chelliah', '1991-92', 'Reduce top rate to 40%, broaden base, simplify (post-LPG)'],
+        ['Vijay Kelkar', '2002', 'Direct Tax Code, moderate rates, eliminate exemptions'],
+        ['Parthasarathi Shome', '2012', 'Against retrospective taxation (Vodafone case context)'],
+        ['Akhilesh Ranjan', '2019', 'Revised DTC draft — not adopted; incremental reform preferred'],
+      ],
+    },
+    {
+      title: 'Abolished Direct Taxes in India',
+      headers: ['Tax', 'Period', 'Reason for Abolition'],
+      rows: [
+        ['Estate Duty', '1953-1985', 'Easy evasion via lifetime gifting, negligible revenue'],
+        ['Gift Tax', '1958-1998', 'Low revenue; replaced by Section 56(2)(x) deeming provision'],
+        ['Wealth Tax', '1957-2015', 'Revenue only Rs 1,008 crore; replaced by surcharge on super-rich'],
+        ['Fringe Benefit Tax', '2005-2009', 'Double taxation concern — perks already taxable u/s 17'],
+        ['Expenditure Tax', '1987-1999', 'Low revenue; service tax introduced as alternative'],
+      ],
+    },
+    {
+      title: 'India vs Global Corporate Tax Rates',
+      headers: ['Country', 'Standard Rate', 'Effective Rate'],
+      rows: [
+        ['India (new mfg)', '15%', '17.16%'],
+        ['Singapore', '17%', '~17%'],
+        ['Vietnam', '20%', '~20%'],
+        ['India (existing)', '22%', '25.17%'],
+        ['USA', '21%', '21% (federal) + state'],
+        ['China', '25%', '~25%'],
+      ],
+    },
+  ],
+  mnemonics: [
+    {
+      title: 'Heads of Income — "SHBCO"',
+      mnemonic: 'Salary, House property, Business/Profession, Capital gains, Other sources',
+      explanation: 'Five heads of income under Income Tax Act 1961 — Section 14.',
+    },
+    {
+      title: 'Capital Gains Rates — "20-12.5"',
+      mnemonic: 'STCG listed equity: 20%. LTCG all assets: 12.5% (no indexation)',
+      explanation: 'Post-Budget 2024-25 rates: STCG on listed equity 20%, LTCG uniformly 12.5% without indexation benefit.',
+    },
+    {
+      title: 'Section 80C Investments — "PELNS"',
+      mnemonic: 'PPF, ELSS, Life insurance, NSC, SSY (+ EPF, tuition fees, home loan principal)',
+      explanation: 'Major instruments eligible for Section 80C deduction up to Rs 1.5 lakh. ELSS has 3-year lock-in (shortest among tax-saving instruments).',
+    },
+    {
+      title: 'Advance Tax Instalments — "15-45-75-100"',
+      mnemonic: '15% by Jun 15, 45% by Sep 15, 75% by Dec 15, 100% by Mar 15',
+      explanation: 'Four quarterly advance tax instalments for taxpayers with liability above Rs 10,000.',
+    },
+    {
+      title: 'Anti-Avoidance Framework — "GTP"',
+      mnemonic: 'GAAR (General Anti-Avoidance Rules), Transfer Pricing, POEM (Place of Effective Management)',
+      explanation: 'Three pillars of India\'s anti-tax avoidance framework — all effective from April 2017.',
+    },
+  ],
 }
