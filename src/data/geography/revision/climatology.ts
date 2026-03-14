@@ -14,7 +14,18 @@ export const climatologyRevision: SubjectRevision = {
     "Koeppen classified world climates into 5 groups: A (Tropical), B (Dry), C (Temperate), D (Cold), E (Polar).",
     "Gulf Stream keeps NW Europe warm; Humboldt Current keeps Peru coast cool and dry.",
     "Mixing zones of warm and cold currents are rich fishing grounds (e.g., Grand Banks).",
-    "Indian Ocean Dipole (IOD): Positive IOD increases Indian monsoon rainfall."
+    "Indian Ocean Dipole (IOD): Positive IOD increases Indian monsoon rainfall.",
+    "Insolation varies with latitude, angle of incidence, day length, and atmospheric transparency.",
+    "Albedo is the fraction of solar radiation reflected by a surface — highest for fresh snow (~80-90%), lowest for water (~6-10%).",
+    "Temperature inversion: temperature increases with altitude instead of decreasing; common in valleys during winter.",
+    "Jet streams are narrow high-velocity wind bands at 9-12 km altitude; subtropical westerly jet influences Indian monsoon onset.",
+    "Cyclones rotate anticlockwise in Northern Hemisphere and clockwise in Southern Hemisphere due to Coriolis Effect.",
+    "Tropical cyclones need sea surface temperature above 27°C, Coriolis force, and low wind shear to form.",
+    "Ferrel Cell is the mid-latitude atmospheric circulation cell (30-60°); drives westerly winds and weather fronts.",
+    "Hadley Cell is the tropical circulation cell (0-30°); rising air at equator, descending at subtropical highs.",
+    "Orographic rainfall occurs on the windward side of mountains; leeward side creates rain shadow (e.g., Deccan Plateau).",
+    "Continental climate has large temperature range; oceanic climate has moderate range — nearness to coast is key factor.",
+    "Smog forms when temperature inversion traps pollutants near ground level — common in Delhi winters."
   ],
   "comparisons": [
     {

@@ -14,7 +14,17 @@ export const migrationRevision: SubjectRevision = {
     "India receives the highest remittances globally (about  billion in 2023).",
     "COVID-19 lockdown (2020) triggered massive reverse migration — exposed migrant vulnerability.",
     "One Nation One Ration Card (2019) enables PDS access for migrants in any state.",
-    "e-Shram Portal (2021) registers unorganized workers including migrants; 29+ crore registrations."
+    "e-Shram Portal (2021) registers unorganized workers including migrants; 29+ crore registrations.",
+    "Interstate Migrant Workmen Act 1979 mandates registration of interstate migrants and provision of basic amenities by contractors.",
+    "Ravenstein's Laws of Migration: most migrants travel short distances; long-distance migrants prefer cities; migration occurs in waves.",
+    "Step migration — rural to small town to city — is a common pattern in India's urbanization process.",
+    "Brain drain refers to emigration of highly skilled professionals — India loses doctors, engineers, and IT professionals to USA, UK, Canada.",
+    "Kerala and Goa are top states for emigration to Gulf countries — remittances form significant share of state GDP.",
+    "Push factors include drought, unemployment, agrarian distress; pull factors include better jobs, education, healthcare in cities.",
+    "Distress migration from drought-prone regions like Bundelkhand, Marathwada, and western Rajasthan is seasonal.",
+    "Gender-selective migration: males dominate rural-to-urban economic migration; females dominate rural-to-rural marriage migration.",
+    "PM-SVANidhi scheme (2020) provides micro-credit to street vendors — many are urban migrants.",
+    "Census defines a migrant as a person enumerated at a place different from their place of birth or last usual residence."
   ],
   "comparisons": [
     {

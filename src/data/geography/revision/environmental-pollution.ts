@@ -14,7 +14,18 @@ export const environmentalPollutionRevision: SubjectRevision = {
     "CPCB and SPCBs are statutory bodies for pollution monitoring and control.",
     "SWM Rules 2016 mandate source segregation of waste into wet, dry, and hazardous.",
     "India is the 3rd largest e-waste generator globally (about 3.2 million tonnes/year).",
-    "Stubble burning in Punjab and Haryana is a major cause of Delhi's winter smog."
+    "Stubble burning in Punjab and Haryana is a major cause of Delhi's winter smog.",
+    "PM2.5 particles (diameter < 2.5 micrometres) penetrate deep into lungs — most dangerous for health.",
+    "BOD (Biochemical Oxygen Demand) measures organic pollution in water; higher BOD means more polluted.",
+    "Eutrophication occurs when excess nutrients (nitrogen, phosphorus) cause algal blooms, depleting dissolved oxygen.",
+    "Noise level standards: residential zones 55 dB (day), 45 dB (night); industrial zones 75 dB (day), 70 dB (night).",
+    "Fly ash from thermal power plants is a major solid waste — used in brick-making and cement production.",
+    "India's FAME scheme (Faster Adoption and Manufacturing of EVs) promotes electric vehicles to reduce vehicular pollution.",
+    "Ozone at ground level is a secondary pollutant formed by reaction of NOx and VOCs in sunlight — causes smog.",
+    "Central Pollution Control Board (CPCB) monitors air quality at 800+ stations across India under NAAQM programme.",
+    "Biomagnification — concentration of pollutants (like DDT, mercury) increases at each trophic level in the food chain.",
+    "Thermal pollution from power plants raises water temperature, reducing dissolved oxygen and harming aquatic life.",
+    "GRAP (Graded Response Action Plan) for Delhi-NCR activates progressively stricter measures as AQI worsens."
   ],
   "comparisons": [
     {

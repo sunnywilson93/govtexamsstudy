@@ -14,7 +14,18 @@ export const mineralsRevision: SubjectRevision = {
     "Gold: Kolar Gold Fields (Karnataka) — now largely exhausted.",
     "Petroleum: Bombay High (offshore Mumbai) — largest; Digboi (Assam) — oldest.",
     "MMDR Act 1957 (amended 2015, 2021) governs mining; mineral blocks now auctioned.",
-    "India's critical mineral strategy (2023) identifies 30 minerals critical for economic security."
+    "India's critical mineral strategy (2023) identifies 30 minerals critical for economic security.",
+    "Minerals are classified into metallic (iron, copper, bauxite), non-metallic (limestone, mica, gypsum), and energy (coal, petroleum, uranium).",
+    "Limestone is India's most abundant non-metallic mineral — used primarily in cement production; found in Rajasthan, AP, Karnataka.",
+    "Manganese is essential for steel-making; Odisha leads production followed by Maharashtra and Madhya Pradesh.",
+    "Uranium is mined at Jaduguda, Jharkhand (India's oldest uranium mine); new deposits found in Tummalapalle, Andhra Pradesh.",
+    "Thorium reserves — India has about 25% of world's thorium (monazite sands of Kerala, Tamil Nadu coast).",
+    "National Mineral Policy 2019 aims for sustainable mining, encourages private participation, and introduces mineral auction.",
+    "District Mineral Foundation (DMF) collects funds from mining for welfare of mining-affected communities.",
+    "India depends on imports for about 80% of crude oil and 50% of natural gas requirements.",
+    "Natural gas: Krishna-Godavari (KG) Basin is the largest offshore gas producer; Mumbai High also significant.",
+    "Coal India Limited (CIL) is the world's largest coal producer — accounts for over 80% of India's coal production.",
+    "Rare earth elements (REEs) — India has 6% of global reserves; IREL (India Rare Earths Ltd) processes monazite for REEs."
   ],
   "comparisons": [
     {

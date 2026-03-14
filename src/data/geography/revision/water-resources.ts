@@ -14,7 +14,18 @@ export const waterResourcesRevision: SubjectRevision = {
     "Ken-Betwa Link is the first river interlinking project approved (2021).",
     "Rajendra Singh is called \"Waterman of India\" — revived johads in Rajasthan.",
     "Dam Safety Act 2021 established National Dam Safety Authority.",
-    "Interstate water disputes adjudicated by tribunals under ISRWD Act 1956."
+    "Interstate water disputes adjudicated by tribunals under ISRWD Act 1956.",
+    "Ganga is India's longest river within the country (2,525 km); Godavari is the longest peninsular river (1,465 km).",
+    "Brahmaputra has the largest catchment area in India; carries the highest volume of water among Indian rivers.",
+    "India has about 5,745 large dams — 3rd highest in the world after China and USA.",
+    "Bhakra Nangal Dam (Sutlej, HP-Punjab border) is the highest gravity dam in India at 226 m.",
+    "Watershed management programmes like IWMP integrate soil conservation, water harvesting, and afforestation at micro-basin level.",
+    "India's canal irrigation has declined from 40% to about 24% of irrigated area; groundwater (tubewell) irrigation has risen to 64%.",
+    "Atal Bhujal Yojana (2020) promotes community-led groundwater management in 7 states with critical/over-exploited aquifers.",
+    "Rooftop rainwater harvesting is mandatory in Tamil Nadu for all buildings — first state to legislate this.",
+    "Indus Waters Treaty (1960) between India and Pakistan allocates 3 eastern rivers (Sutlej, Beas, Ravi) to India and 3 western (Indus, Jhelum, Chenab) to Pakistan.",
+    "CGWB (Central Ground Water Board) monitors groundwater levels — 17% of assessment units are over-exploited.",
+    "Micro-irrigation (drip and sprinkler) saves 30-70% water over flood irrigation — PMKSY promotes per drop more crop."
   ],
   "comparisons": [
     {

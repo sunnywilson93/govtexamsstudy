@@ -14,7 +14,18 @@ export const urbanizationRevision: SubjectRevision = {
     "Kolkata Metro (1984) was the first metro rail in India.",
     "India generates about 62 million tonnes of solid waste annually in urban areas.",
     "Swachh Bharat Mission Urban targets ODF cities and scientific waste management.",
-    "74th Amendment (1992) established Municipal Corporations, Municipalities, Nagar Panchayats."
+    "74th Amendment (1992) established Municipal Corporations, Municipalities, Nagar Panchayats.",
+    "Counter-urbanization — movement of people from cities to rural areas — is emerging in some developed regions.",
+    "Primate city pattern — one dominant city (like Mumbai or Delhi) disproportionately larger than the second-largest city in a region.",
+    "Ribbon or linear urbanization occurs along highways, railway lines, and river banks — common in Indian industrial corridors.",
+    "Urban heat island effect — cities are 2-5°C warmer than surrounding rural areas due to concrete, vehicles, and reduced vegetation.",
+    "Slum population in India: about 65 million (2011 Census) — Maharashtra has the highest number of slum dwellers.",
+    "JNNURM (2005-2014) was the first major urban renewal scheme; succeeded by AMRUT and Smart Cities Mission.",
+    "National Urban Transport Policy (2006) promotes public transport, NMT (walking, cycling), and transit-oriented development.",
+    "Delhi NCR and Mumbai Metropolitan Region are India's two largest urban agglomerations with populations exceeding 20 million.",
+    "India's urbanization is expected to reach 40% by 2030 — will add about 200 million urban residents.",
+    "Rurban Mission (Shyama Prasad Mukherji Rurban Mission, 2016) develops clusters of rural areas with urban amenities.",
+    "Census defines urban area: statutory town (municipality/corporation) or census town (population >5,000, density >400, 75%+ non-farm work)."
   ],
   "comparisons": [
     {

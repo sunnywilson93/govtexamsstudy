@@ -14,7 +14,18 @@ export const worldMappingRevision: SubjectRevision = {
     "Andes (7,000 km) is the longest mountain range; Himalayas is the highest.",
     "Angel Falls (979 m, Venezuela) is the highest waterfall in the world.",
     "Great Barrier Reef (2,300 km, Australia) is the largest coral reef system.",
-    "Atacama Desert (Chile) is the driest desert; Mawsynram (India) is the wettest place."
+    "Atacama Desert (Chile) is the driest desert; Mawsynram (India) is the wettest place.",
+    "Caspian Sea is the largest lake in the world by area (371,000 sq km); Lake Baikal (Russia) is the deepest (1,642 m).",
+    "Dead Sea (~430 m below sea level) is the lowest point on Earth's land surface; Mariana Trench (11,034 m) is deepest ocean point.",
+    "Tropic of Cancer (23.5°N) passes through 8 Indian states: Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, WB, Tripura, Mizoram.",
+    "International Date Line roughly follows 180° meridian with zigzag deviations to avoid splitting island nations.",
+    "Indian Standard Time (IST) is UTC+5:30 based on 82.5°E longitude passing through Mirzapur (UP).",
+    "Ring of Fire encircles the Pacific Ocean — 75% of world's active volcanoes and 90% of earthquakes occur here.",
+    "Palk Strait and Palk Bay separate India from Sri Lanka; Adam's Bridge (Ram Setu) is a chain of limestone shoals.",
+    "Exclusive Economic Zone (EEZ) extends 200 nautical miles from coast; India's EEZ is about 2.37 million sq km.",
+    "Horn of Africa (Somalia, Ethiopia, Eritrea, Djibouti) controls access to Bab-el-Mandeb strait — strategic for global shipping.",
+    "Mediterranean Sea connects to the Atlantic via Strait of Gibraltar (14 km wide) and to Red Sea via Suez Canal.",
+    "Sahel region in Africa (south of Sahara) faces desertification, drought, and food insecurity — frequently in UPSC Prelims."
   ],
   "comparisons": [
     {

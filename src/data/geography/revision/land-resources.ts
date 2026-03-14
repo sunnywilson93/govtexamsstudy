@@ -14,7 +14,18 @@ export const landResourcesRevision: SubjectRevision = {
     "SVAMITVA (2020) uses drone technology to provide property cards to rural homeowners.",
     "UNCCD COP14 was held in New Delhi (2019); India committed to restore 26 million hectares by 2030.",
     "Cropping intensity (GCA/NSA × 100) in India is about 142%.",
-    "National Mission for Sustainable Agriculture (NMSA) promotes climate-resilient land management."
+    "National Mission for Sustainable Agriculture (NMSA) promotes climate-resilient land management.",
+    "Laterite soils are found in areas of heavy rainfall — rich in iron and aluminium, poor in nitrogen and humus.",
+    "Black (Regur) soil is ideal for cotton; formed from Deccan basalt; rich in lime, iron, magnesia; self-ploughing when dry.",
+    "Alluvial soils cover about 40% of India — most fertile; divided into Bangar (old) and Khadar (new) types.",
+    "Red soils are found in Tamil Nadu, Karnataka, and Odisha — rich in iron (giving red colour), deficient in nitrogen and phosphorus.",
+    "Shifting cultivation (jhum/podu) leads to forest depletion and soil erosion — practiced in NE India and tribal hill areas.",
+    "Contour ploughing, terracing, and strip cropping are mechanical methods to prevent soil erosion on slopes.",
+    "Wasteland Atlas of India (ISRO + DoLR) maps degraded lands — identifies areas for reclamation and afforestation.",
+    "Bhoodan and Gramdan movements by Vinoba Bhave (1951) promoted voluntary land redistribution.",
+    "National Land Records Modernisation Programme (NLRMP) aims to digitize land records and create conclusive titles.",
+    "Fallow land has increased in states like Madhya Pradesh and Rajasthan due to declining water tables.",
+    "Green Revolution shifted land use toward wheat and rice monoculture, reducing cultivation of pulses, millets, and oilseeds."
   ],
   "comparisons": [
     {

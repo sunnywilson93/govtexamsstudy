@@ -14,7 +14,17 @@ export const climateChangeRevision: SubjectRevision = {
     "India's Updated NDCs (2022): 45% emission intensity reduction by 2030; 50% non-fossil capacity.",
     "IPCC AR6 warns of 1.5°C breach by early 2030s under current trajectory.",
     "Himalayan glaciers are retreating — threatens water supply for Indo-Gangetic Plain.",
-    "Loss and Damage Fund established at COP27 (2022) for vulnerable countries."
+    "Loss and Damage Fund established at COP27 (2022) for vulnerable countries.",
+    "Kyoto Protocol (1997) set binding emission targets for developed countries; Clean Development Mechanism allowed carbon credit trading.",
+    "UNFCCC (1992) introduced Common But Differentiated Responsibilities (CBDR) — developing nations have lesser obligations.",
+    "India's Panchamrit pledge (COP26): 500 GW non-fossil capacity by 2030, 50% renewable energy share, 1 billion tonne CO2 reduction by 2030.",
+    "Global Methane Pledge (COP26): 100+ countries committed to 30% methane cut by 2030 — India did not sign.",
+    "Sea level rise threatens Indian cities — Mumbai, Kolkata, Chennai among most vulnerable coastal cities globally.",
+    "India's forest carbon sink absorbs about 15% of its CO2 emissions annually.",
+    "Carbon Border Adjustment Mechanism (CBAM) by EU imposes carbon tariffs on imports — affects Indian steel, cement, aluminium exports.",
+    "National Adaptation Fund for Climate Change (NAFCC, 2015) funds state-level adaptation projects in vulnerable sectors.",
+    "Perform Achieve and Trade (PAT) scheme under NMEEE is India's cap-and-trade system for energy-intensive industries.",
+    "Green Climate Fund (GCF) was established under UNFCCC to assist developing nations — target $100 billion/year."
   ],
   "comparisons": [
     {

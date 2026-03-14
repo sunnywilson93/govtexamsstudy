@@ -14,7 +14,17 @@ export const climateMonsoonRevision: SubjectRevision = {
     "Tamil Nadu receives most of its rainfall from the NE Monsoon (October-December), not SW Monsoon.",
     "Western Disturbances — temperate cyclones from Mediterranean — bring winter rainfall to NW India.",
     "'Loo' are hot, dry winds blowing over north-western India during summer.",
-    "'Mango Showers' are pre-monsoon showers in Kerala and Karnataka that aid mango ripening."
+    "'Mango Showers' are pre-monsoon showers in Kerala and Karnataka that aid mango ripening.",
+    "ITCZ (Inter-Tropical Convergence Zone) shifts northward over Ganga Plain in summer, drawing SW monsoon winds.",
+    "Monsoon breaks (dry spells) occur when ITCZ moves northward to Himalayas or southward over ocean temporarily.",
+    "Somali Jet (Findlater Jet) — strong cross-equatorial low-level jet that drives moisture to India during SW monsoon.",
+    "October Heat — post-monsoon high humidity and temperatures in northern India due to retreating monsoon.",
+    "Nor'westers (Kalbaisakhi) — thunderstorms in eastern India (April-May) caused by local convection; vital for tea, jute, rice.",
+    "Monsoon trough — low-pressure zone along Ganga Plain; its position determines rainfall distribution across India.",
+    "Arabian Sea branch and Bay of Bengal branch are two arms of the SW monsoon; they merge over NW India by mid-July.",
+    "Rainfall variability is highest in western Rajasthan (>50%) and lowest along the Western Ghats (<15%).",
+    "Indian monsoon onset date has shifted by about 6-8 days in recent decades due to climate change effects.",
+    "Jet streams — subtropical westerly jet moves north of Himalayas in summer, allowing monsoon onset; returns south in winter, causing monsoon withdrawal."
 ],
   comparisons: [
     {
