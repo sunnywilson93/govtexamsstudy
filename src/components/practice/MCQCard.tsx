@@ -36,6 +36,25 @@ const stateStyles: Record<string, string> = {
 export function MCQCard({ mcq, onAnswer, showResult = false, selectedIndex }: MCQCardProps) {
   return (
     <div className="rounded-lg border border-border-primary bg-bg-elevated p-5">
+      {(mcq.examName || mcq.difficulty) && (
+        <div className="mb-3 flex items-center gap-2">
+          {mcq.examName && (
+            <span className="rounded-full bg-primary-50 px-2.5 py-0.5 text-xs font-medium text-primary">
+              {mcq.examName}{mcq.examYear ? ` ${mcq.examYear}` : ''}
+            </span>
+          )}
+          {mcq.difficulty && (
+            <span className={clsx(
+              'rounded-full px-2.5 py-0.5 text-xs font-medium',
+              mcq.difficulty === 'easy' && 'bg-green-50 text-green-700',
+              mcq.difficulty === 'medium' && 'bg-amber-50 text-amber-700',
+              mcq.difficulty === 'hard' && 'bg-red-50 text-red-700'
+            )}>
+              {mcq.difficulty.charAt(0).toUpperCase() + mcq.difficulty.slice(1)}
+            </span>
+          )}
+        </div>
+      )}
       <p className="mb-5 text-base font-medium leading-relaxed text-text-primary">
         {mcq.question}
       </p>
