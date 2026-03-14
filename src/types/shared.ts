@@ -25,4 +25,7 @@ export interface MCQ {
   explanation: string
   topic: string
   subject: Subject
+  examName?: string
+  examYear?: number
+  difficulty?: 'easy' | 'medium' | 'hard'
 }
