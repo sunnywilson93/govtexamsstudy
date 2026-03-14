@@ -136,17 +136,17 @@ Legend: 🟢 Good+ | 🟡 Minimum | 🔴 Below minimum
 | biodiversity | 🟢 18 | 🟢 15 | 🟢 41 | 🟢 6 | 🟢 5 | 🟢 28 |
 | biosphere-reserves | 🟢 15 | 🟢 15 | 🟢 38 | 🟢 5 | 🟢 5 | 🟢 25 |
 | census-demographics | 🟢 8 | 🟢 9 | 🟡 16 | 🟡 2 | 🟡 2 | 🟢 25 |
-| climate-change | 🟡 5 | 🟢 8 | 🔴 12 | 🟡 1 | 🟡 1 | 🟢 25 |
-| climate-monsoon | 🟡 5 | 🟢 8 | 🔴 12 | 🟡 1 | 🟡 1 | 🟢 25 |
-| climatology | 🟡 5 | 🟡 7 | 🔴 12 | 🟡 1 | 🟡 1 | 🟢 25 |
+| climate-change | 🟡 5 | 🟢 8 | 🟡 22 | 🟡 1 | 🟡 1 | 🟢 25 |
+| climate-monsoon | 🟡 5 | 🟢 8 | 🟡 22 | 🟡 1 | 🟡 1 | 🟢 25 |
+| climatology | 🟡 5 | 🟡 7 | 🟡 23 | 🟡 1 | 🟡 1 | 🟢 25 |
 | coral-reefs | 🟢 17 | 🟢 14 | 🟢 39 | 🟢 6 | 🟢 5 | 🟢 25 |
 | cyclones | 🟢 16 | 🟢 14 | 🟢 40 | 🟢 5 | 🟢 5 | 🟢 25 |
 | disaster-management | 🟢 16 | 🟢 13 | 🟢 41 | 🟢 6 | 🟢 5 | 🟢 25 |
 | drainage-systems | 🟢 15 | 🟢 13 | 🟢 40 | 🟢 5 | 🟢 5 | 🟢 25 |
 | ecosystems | 🟢 14 | 🟢 13 | 🟢 41 | 🟢 6 | 🟢 5 | 🟢 25 |
 | energy | 🟢 12 | 🟢 14 | 🟢 41 | 🟢 6 | 🟢 5 | 🟢 25 |
-| environmental-legislation | 🟢 12 | 🟢 14 | 🔴 12 | 🟡 1 | 🟡 1 | 🟢 25 |
-| environmental-pollution | 🟢 12 | 🟢 13 | 🔴 12 | 🟡 1 | 🟡 1 | 🟢 25 |
+| environmental-legislation | 🟢 12 | 🟢 14 | 🟡 23 | 🟡 1 | 🟡 1 | 🟢 25 |
+| environmental-pollution | 🟢 12 | 🟢 13 | 🟡 23 | 🟡 1 | 🟡 1 | 🟢 25 |
 | fluvial-landforms | 🟢 15 | 🟢 13 | 🟡 16 | 🟡 2 | 🟡 2 | 🟢 25 |
 | forest-types-india | 🟢 14 | 🟢 14 | 🟡 15 | 🟡 2 | 🟡 2 | 🟢 25 |
 | geomorphology | 🟢 16 | 🟢 14 | 🟢 41 | 🟢 5 | 🟢 5 | 🟢 28 |
@@ -155,9 +155,9 @@ Legend: 🟢 Good+ | 🟡 Minimum | 🔴 Below minimum
 | irrigation | 🟢 16 | 🟢 15 | 🟢 41 | 🟢 5 | 🟢 5 | 🟢 28 |
 | islands-coasts | 🟢 16 | 🟢 14 | 🟢 40 | 🟢 5 | 🟢 5 | 🟢 28 |
 | lakes-india | 🟡 7 | 🟢 8 | 🟢 40 | 🟢 5 | 🟢 5 | 🟢 25 |
-| land-resources | 🟡 5 | 🟡 7 | 🔴 12 | 🟡 1 | 🟡 1 | 🟢 25 |
-| migration | 🟡 5 | 🟡 7 | 🔴 12 | 🟡 1 | 🟡 1 | 🟢 25 |
-| minerals | 🟡 5 | 🟡 7 | 🔴 12 | 🟡 1 | 🟡 1 | 🟢 25 |
+| land-resources | 🟡 5 | 🟡 7 | 🟡 23 | 🟡 1 | 🟡 1 | 🟢 25 |
+| migration | 🟡 5 | 🟡 7 | 🟡 22 | 🟡 1 | 🟡 1 | 🟢 25 |
+| minerals | 🟡 5 | 🟡 7 | 🟡 23 | 🟡 1 | 🟡 1 | 🟢 25 |
 | mountain-passes | 🟡 6 | 🟢 8 | 🟡 15 | 🟡 2 | 🟡 2 | 🟢 25 |
 | national-parks-sanctuaries | 🟢 17 | 🟢 15 | 🟢 38 | 🟢 5 | 🟢 5 | 🟢 25 |
 | natural-vegetation | 🟢 16 | 🟢 13 | 🟢 36 | 🟢 5 | 🟢 5 | 🟢 25 |
@@ -174,11 +174,11 @@ Legend: 🟢 Good+ | 🟡 Minimum | 🔴 Below minimum
 | soils | 🟢 15 | 🟢 13 | 🟢 38 | 🟢 6 | 🟢 5 | 🟢 25 |
 | transport | 🟢 15 | 🟢 14 | 🟢 38 | 🟢 6 | 🟢 5 | 🟢 25 |
 | tribes | 🟢 14 | 🟢 14 | 🟢 38 | 🟢 6 | 🟢 5 | 🟢 25 |
-| urbanization | 🟢 14 | 🟢 13 | 🔴 12 | 🟡 1 | 🟡 1 | 🟢 25 |
-| water-resources | 🟢 13 | 🟢 14 | 🔴 12 | 🟡 1 | 🟡 1 | 🟢 25 |
+| urbanization | 🟢 14 | 🟢 13 | 🟡 23 | 🟡 1 | 🟡 1 | 🟢 25 |
+| water-resources | 🟢 13 | 🟢 14 | 🟡 23 | 🟡 1 | 🟡 1 | 🟢 25 |
 | weathering-erosion | 🟢 15 | 🟢 13 | 🟡 16 | 🟡 2 | 🟡 2 | 🟢 25 |
 | world-climate-regions | 🟢 13 | 🟢 13 | 🟡 15 | 🟡 2 | 🟡 2 | 🟢 25 |
-| world-mapping | 🟢 13 | 🟢 13 | 🔴 12 | 🟡 1 | 🟡 1 | 🟢 25 |
+| world-mapping | 🟢 13 | 🟢 13 | 🟡 23 | 🟡 1 | 🟡 1 | 🟢 25 |
 
 ## Economics
 
@@ -239,5 +239,5 @@ Legend: 🟢 Good+ | 🟡 Minimum | 🔴 Below minimum
 
 - **Total topics:** 200
 - 🟢 **Green:** 1088 (91%)
-- 🟡 **Yellow:** 101 (8%)
-- 🔴 **Red:** 11 (1%)
+- 🟡 **Yellow:** 112 (9%)
+- 🔴 **Red:** 0 (0%)

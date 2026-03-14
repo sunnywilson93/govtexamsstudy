@@ -11,7 +11,7 @@ export const migrationRevision: SubjectRevision = {
     "Maharashtra and Delhi are the top destination states for interstate migrants.",
     "About 100+ million seasonal/circular migrants move annually for construction, agriculture, brick kilns.",
     "India has the largest diaspora in the world (about 18 million overseas Indians).",
-    "India receives the highest remittances globally (about  billion in 2023).",
+    "India receives the highest remittances globally (about $125 billion in 2023).",
     "COVID-19 lockdown (2020) triggered massive reverse migration — exposed migrant vulnerability.",
     "One Nation One Ration Card (2019) enables PDS access for migrants in any state.",
     "e-Shram Portal (2021) registers unorganized workers including migrants; 29+ crore registrations.",
