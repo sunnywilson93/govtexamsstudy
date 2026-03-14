@@ -22,6 +22,7 @@ interface Topic {
   title: string
   description: string
   hasTabs: boolean
+  comingSoon?: boolean
 }
 
 interface Section {
@@ -445,14 +446,7 @@ export default function PolityPage() {
                 href={topic.href}
                 className="rounded-lg border border-border-primary bg-bg-elevated p-4 no-underline transition-shadow hover:shadow-md"
               >
-                <div className="mb-1 flex items-center gap-2">
-                  <h3 className="text-sm font-semibold text-text-primary">{topic.title}</h3>
-                  {!topic.hasTabs && (
-                    <span className="rounded-full bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary">
-                      Coming Soon
-                    </span>
-                  )}
-                </div>
+                <h3 className="mb-1 text-sm font-semibold text-text-primary">{topic.title}</h3>
                 <p className="mb-2 text-xs leading-relaxed text-text-secondary">{topic.description}</p>
                 {topic.hasTabs && (
                   <p className="text-xs text-text-muted">Notes · Revision · PYQs</p>

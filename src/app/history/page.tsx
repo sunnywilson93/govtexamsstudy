@@ -22,6 +22,7 @@ interface Topic {
   title: string
   description: string
   hasTabs: boolean
+  comingSoon?: boolean
 }
 
 interface Section {
@@ -405,7 +406,7 @@ export default function HistoryPage() {
               >
                 <div className="mb-1 flex items-center gap-2">
                   <h3 className="text-sm font-semibold text-text-primary">{topic.title}</h3>
-                  {!topic.hasTabs && (
+                  {topic.comingSoon && (
                     <span className="rounded-full bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary">
                       Coming Soon
                     </span>

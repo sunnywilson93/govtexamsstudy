@@ -22,6 +22,7 @@ interface Topic {
   title: string
   description: string
   hasTabs: boolean
+  comingSoon?: boolean
 }
 
 interface Section {
