@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { AdUnit } from '@/components/ads/AdUnit'
+import { AD_SLOTS } from '@/components/ads/AdSlots'
 import {
   Calculator,
   Brain,
@@ -72,8 +74,11 @@ export default function PracticePage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-8">
       <h1 className="mb-2 text-2xl font-bold text-text-primary">Practice Arena</h1>
-      <p className="mb-8 text-text-secondary">
+      <p className="mb-4 text-text-secondary">
         Choose a subject to start practicing topic-wise MCQs.
+      </p>
+      <p className="mb-8 text-center text-xs text-text-muted">
+        Original practice questions designed for exam preparation — not from any official examination paper.
       </p>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -100,6 +105,8 @@ export default function PracticePage() {
           )
         })}
       </div>
+
+      <AdUnit slot={AD_SLOTS.practiceHubBanner} format="horizontal" className="mt-8" />
     </div>
   )
 }

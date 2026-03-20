@@ -89,6 +89,17 @@ export function Footer() {
         </div>
 
         <div className="mt-8 border-t border-gray-800 pt-6 text-center">
+          <div className="mb-2 flex justify-center gap-4">
+            <Link href="/terms" className="text-xs text-gray-500 underline-offset-2 transition-colors hover:text-gray-300">
+              Terms &amp; Disclaimer
+            </Link>
+            <Link href="/privacy" className="text-xs text-gray-500 underline-offset-2 transition-colors hover:text-gray-300">
+              Privacy Policy
+            </Link>
+          </div>
+          <p className="mb-1 text-xs text-gray-600">
+            Statistical data sourced from legislative.gov.in, indiabudget.gov.in, censusindia.gov.in, and mospi.gov.in (public domain).
+          </p>
           <p className="text-xs text-gray-500">
             &copy; {new Date().getFullYear()} GovtExamsStudy. Free for all aspirants. Made in India.
           </p>

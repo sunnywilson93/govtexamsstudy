@@ -301,6 +301,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/science/periodic-table',
     '/science/human-body',
     '/practice',
+    '/terms',
+    '/privacy',
   ]
 
   const quantRoutes = QUANT_TOPICS.map((slug) => `/quant/${slug}`)
@@ -318,7 +320,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}${route}`,
       lastModified: now,
       changeFrequency: route === '/' ? 'daily' : 'weekly',
-      priority: route === '/' ? 1.0 : depth === 1 ? 0.8 : 0.6,
+      priority:
+        route === '/'
+          ? 1.0
+          : route === '/terms' || route === '/privacy'
+            ? 0.3
+            : depth === 1
+              ? 0.8
+              : 0.6,
     }
   })
 }
