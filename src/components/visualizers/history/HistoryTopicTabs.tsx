@@ -5,14 +5,14 @@ import { motion } from 'framer-motion'
 import type { HistoryConcept, HistoryRevision, HistoryProblem } from '@/types/history'
 import { HistoryNotesPanel } from './HistoryNotesPanel'
 import { HistoryRevisionPanel } from './HistoryRevisionPanel'
-import { HistoryPYQSolver } from './HistoryPYQSolver'
+import { HistoryPracticeSolver } from './HistoryPracticeSolver'
 
-type Tab = 'notes' | 'revision' | 'pyq'
+type Tab = 'notes' | 'revision' | 'practice'
 
 const TABS: { id: Tab; label: string }[] = [
   { id: 'notes', label: 'Notes' },
   { id: 'revision', label: 'Revision' },
-  { id: 'pyq', label: 'PYQ Practice' },
+  { id: 'practice', label: 'Practice' },
 ]
 
 interface HistoryTopicTabsProps {
@@ -50,7 +50,7 @@ export function HistoryTopicTabs({ concept, revision, problems }: HistoryTopicTa
       >
         {activeTab === 'notes' && <HistoryNotesPanel concept={concept} />}
         {activeTab === 'revision' && <HistoryRevisionPanel revision={revision} />}
-        {activeTab === 'pyq' && <HistoryPYQSolver problems={problems} />}
+        {activeTab === 'practice' && <HistoryPracticeSolver problems={problems} />}
       </motion.div>
     </div>
   )

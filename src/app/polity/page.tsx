@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Indian Polity — Notes, Revision & PYQs for UPSC, SSC | GovtExamsStudy',
+  title: 'Indian Polity — Notes, Revision & Practice for UPSC, SSC | GovtExamsStudy',
   description:
-    'Complete Indian Polity and Constitution study material for UPSC, SSC CGL, IBPS PO, and government exams. 50 topics covering constitutional foundations, rights, executive, judiciary, local governance with notes, revision tricks, and PYQ practice.',
+    'Complete Indian Polity and Constitution study material for UPSC, SSC CGL, IBPS PO, and government exams. 50 topics covering constitutional foundations, rights, executive, judiciary, local governance with notes, revision tricks, and practice questions.',
   keywords: ['Indian Polity', 'Indian Constitution', 'polity notes UPSC', 'polity for SSC CGL', 'constitutional articles', 'fundamental rights notes', 'Indian polity study material', 'Laxmikanth polity notes'],
   openGraph: {
-    title: 'Indian Polity — 50 Topics with Notes, Revision & PYQs',
+    title: 'Indian Polity — 50 Topics with Notes, Revision & Practice',
     description: 'Complete Indian Polity and Constitution study material for UPSC, SSC CGL, IBPS PO, and government exams.',
     type: 'website',
     siteName: 'GovtExamsStudy',
@@ -449,7 +449,7 @@ export default function PolityPage() {
                 <h3 className="mb-1 text-sm font-semibold text-text-primary">{topic.title}</h3>
                 <p className="mb-2 text-xs leading-relaxed text-text-secondary">{topic.description}</p>
                 {topic.hasTabs && (
-                  <p className="text-xs text-text-muted">Notes · Revision · PYQs</p>
+                  <p className="text-xs text-text-muted">Notes · Revision · Practice</p>
                 )}
               </Link>
             ))}

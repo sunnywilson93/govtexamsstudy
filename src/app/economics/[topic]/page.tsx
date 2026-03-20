@@ -192,7 +192,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: basicConceptsProblems,
     label: 'Basic Economic Concepts',
     description:
-      'Basic economic concepts for UPSC, SSC & banking exams. GDP, GNP, demand-supply, market types with notes, revision, and PYQs.',
+      'Basic economic concepts for UPSC, SSC & banking exams. GDP, GNP, demand-supply, market types with notes, revision, and practice questions.',
   },
   'national-income': {
     concept: nationalIncomeConcept,
@@ -200,7 +200,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: nationalIncomeProblems,
     label: 'National Income Accounting',
     description:
-      'National income accounting for government exams. GDP, NDP, NNP, methods of measurement with notes, revision, and PYQs.',
+      'National income accounting for government exams. GDP, NDP, NNP, methods of measurement with notes, revision, and practice questions.',
   },
   'money-supply': {
     concept: moneySupplyConcept,
@@ -208,7 +208,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: moneySupplyProblems,
     label: 'Money & Money Supply',
     description:
-      'Money supply for UPSC & SSC. M0-M3 aggregates, money multiplier, velocity of circulation with notes, revision, and PYQs.',
+      'Money supply for UPSC & SSC. M0-M3 aggregates, money multiplier, velocity of circulation with notes, revision, and practice questions.',
   },
   inflation: {
     concept: inflationConcept,
@@ -216,7 +216,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: inflationProblems,
     label: 'Inflation & Price Indices',
     description:
-      'Inflation for government exams. CPI, WPI, demand-pull, cost-push, inflation targeting with notes, revision, and PYQs.',
+      'Inflation for government exams. CPI, WPI, demand-pull, cost-push, inflation targeting with notes, revision, and practice questions.',
   },
   'poverty-unemployment': {
     concept: povertyUnemploymentConcept,
@@ -224,7 +224,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: povertyUnemploymentProblems,
     label: 'Poverty & Unemployment',
     description:
-      'Poverty and unemployment for UPSC & SSC. Poverty lines, MGNREGA, employment surveys with notes, revision, and PYQs.',
+      'Poverty and unemployment for UPSC & SSC. Poverty lines, MGNREGA, employment surveys with notes, revision, and practice questions.',
   },
   rbi: {
     concept: rbiConcept,
@@ -232,7 +232,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: rbiProblems,
     label: 'Reserve Bank of India',
     description:
-      'RBI for government exams. Monetary policy, repo rate, CRR, SLR, MPC, LAF corridor with notes, revision, and PYQs.',
+      'RBI for government exams. Monetary policy, repo rate, CRR, SLR, MPC, LAF corridor with notes, revision, and practice questions.',
   },
   'banking-system': {
     concept: bankingSystemConcept,
@@ -240,7 +240,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: bankingSystemProblems,
     label: 'Indian Banking System',
     description:
-      'Indian banking system for UPSC & SSC. PSBs, private banks, SFBs, payments banks, RRBs with notes, revision, and PYQs.',
+      'Indian banking system for UPSC & SSC. PSBs, private banks, SFBs, payments banks, RRBs with notes, revision, and practice questions.',
   },
   'financial-markets': {
     concept: financialMarketsConcept,
@@ -248,7 +248,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: financialMarketsProblems,
     label: 'Financial Markets & SEBI',
     description:
-      'Financial markets for government exams. Stock exchanges, SEBI, bonds, derivatives with notes, revision, and PYQs.',
+      'Financial markets for government exams. Stock exchanges, SEBI, bonds, derivatives with notes, revision, and practice questions.',
   },
   'banking-npas': {
     concept: bankingNpasConcept,
@@ -256,7 +256,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: bankingNpasProblems,
     label: 'Banking Reforms & NPAs',
     description:
-      'Banking NPAs and reforms for UPSC & SSC. Bad loans, IBC, SARFAESI, recapitalisation with notes, revision, and PYQs.',
+      'Banking NPAs and reforms for UPSC & SSC. Bad loans, IBC, SARFAESI, recapitalisation with notes, revision, and practice questions.',
   },
   insurance: {
     concept: insuranceConcept,
@@ -264,7 +264,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: insuranceProblems,
     label: 'Insurance & Pension',
     description:
-      'Insurance sector for government exams. IRDAI, LIC, PM insurance schemes, NPS with notes, revision, and PYQs.',
+      'Insurance sector for government exams. IRDAI, LIC, PM insurance schemes, NPS with notes, revision, and practice questions.',
   },
   'union-budget': {
     concept: unionBudgetConcept,
@@ -272,7 +272,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: unionBudgetProblems,
     label: 'Union Budget',
     description:
-      'Union Budget for UPSC & SSC. Revenue/capital receipts, expenditure, budget documents with notes, revision, and PYQs.',
+      'Union Budget for UPSC & SSC. Revenue/capital receipts, expenditure, budget documents with notes, revision, and practice questions.',
   },
   'fiscal-policy': {
     concept: fiscalPolicyConcept,
@@ -280,7 +280,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: fiscalPolicyProblems,
     label: 'Fiscal Policy & Deficits',
     description:
-      'Fiscal policy for government exams. Fiscal deficit, FRBM Act, revenue deficit with notes, revision, and PYQs.',
+      'Fiscal policy for government exams. Fiscal deficit, FRBM Act, revenue deficit with notes, revision, and practice questions.',
   },
   'tax-system': {
     concept: taxSystemConcept,
@@ -288,7 +288,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: taxSystemProblems,
     label: 'Indian Tax System',
     description:
-      'Indian tax system for UPSC & SSC. GST, income tax, corporate tax, direct vs indirect with notes, revision, and PYQs.',
+      'Indian tax system for UPSC & SSC. GST, income tax, corporate tax, direct vs indirect with notes, revision, and practice questions.',
   },
   'public-debt': {
     concept: publicDebtConcept,
@@ -296,7 +296,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: publicDebtProblems,
     label: 'Public Debt',
     description:
-      'Public debt for government exams. Internal vs external debt, debt-GDP ratio, G-Secs with notes, revision, and PYQs.',
+      'Public debt for government exams. Internal vs external debt, debt-GDP ratio, G-Secs with notes, revision, and practice questions.',
   },
   'public-expenditure': {
     concept: publicExpenditureConcept,
@@ -304,7 +304,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: publicExpenditureProblems,
     label: 'Public Expenditure',
     description:
-      'Public expenditure for UPSC & SSC. Plan vs non-plan, subsidies, Centrally Sponsored Schemes with notes, revision, and PYQs.',
+      'Public expenditure for UPSC & SSC. Plan vs non-plan, subsidies, Centrally Sponsored Schemes with notes, revision, and practice questions.',
   },
   'foreign-trade': {
     concept: foreignTradeConcept,
@@ -312,7 +312,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: foreignTradeProblems,
     label: 'Foreign Trade & BoP',
     description:
-      'Foreign trade for government exams. Exports, imports, trade deficit, balance of payments with notes, revision, and PYQs.',
+      'Foreign trade for government exams. Exports, imports, trade deficit, balance of payments with notes, revision, and practice questions.',
   },
   'exchange-rate': {
     concept: exchangeRateConcept,
@@ -320,7 +320,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: exchangeRateProblems,
     label: 'Exchange Rate & Forex',
     description:
-      'Exchange rate for UPSC & SSC. Fixed vs floating, NEER, REER, forex reserves with notes, revision, and PYQs.',
+      'Exchange rate for UPSC & SSC. Fixed vs floating, NEER, REER, forex reserves with notes, revision, and practice questions.',
   },
   'international-organizations': {
     concept: internationalOrganizationsConcept,
@@ -328,7 +328,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: internationalOrganizationsProblems,
     label: 'International Economic Organizations',
     description:
-      'International organisations for government exams. IMF, World Bank, WTO, ADB, BRICS with notes, revision, and PYQs.',
+      'International organisations for government exams. IMF, World Bank, WTO, ADB, BRICS with notes, revision, and practice questions.',
   },
   'fdi-fii': {
     concept: fdiFiiConcept,
@@ -336,7 +336,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: fdiFiiProblems,
     label: 'FDI & FII',
     description:
-      'FDI and FII for UPSC & SSC. Automatic vs approval route, sectoral caps, FPI with notes, revision, and PYQs.',
+      'FDI and FII for UPSC & SSC. Automatic vs approval route, sectoral caps, FPI with notes, revision, and practice questions.',
   },
   planning: {
     concept: planningConcept,
@@ -344,7 +344,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: planningProblems,
     label: 'Economic Planning in India',
     description:
-      'Economic planning for government exams. Five Year Plans, Planning Commission, NITI Aayog with notes, revision, and PYQs.',
+      'Economic planning for government exams. Five Year Plans, Planning Commission, NITI Aayog with notes, revision, and practice questions.',
   },
   'economic-reforms': {
     concept: economicReformsConcept,
@@ -352,7 +352,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: economicReformsProblems,
     label: 'LPG Reforms (1991)',
     description:
-      'Economic reforms for UPSC & SSC. Liberalisation, privatisation, globalisation, BoP crisis with notes, revision, and PYQs.',
+      'Economic reforms for UPSC & SSC. Liberalisation, privatisation, globalisation, BoP crisis with notes, revision, and practice questions.',
   },
   'agriculture-economy': {
     concept: agricultureEconomyConcept,
@@ -360,7 +360,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: agricultureEconomyProblems,
     label: 'Agriculture & Food Security',
     description:
-      'Agriculture economy for government exams. MSP, PDS, Green Revolution, crop insurance with notes, revision, and PYQs.',
+      'Agriculture economy for government exams. MSP, PDS, Green Revolution, crop insurance with notes, revision, and practice questions.',
   },
   'industry-policy': {
     concept: industryPolicyConcept,
@@ -368,7 +368,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: industryPolicyProblems,
     label: 'Industrial Policy & MSMEs',
     description:
-      'Industrial policy for UPSC & SSC. Make in India, PLI, MSME classification with notes, revision, and PYQs.',
+      'Industrial policy for UPSC & SSC. Make in India, PLI, MSME classification with notes, revision, and practice questions.',
   },
   infrastructure: {
     concept: infrastructureConcept,
@@ -376,7 +376,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: infrastructureProblems,
     label: 'Infrastructure & Energy',
     description:
-      'Infrastructure for government exams. NIP, Bharatmala, Sagarmala, power sector with notes, revision, and PYQs.',
+      'Infrastructure for government exams. NIP, Bharatmala, Sagarmala, power sector with notes, revision, and practice questions.',
   },
   'inclusive-growth': {
     concept: inclusiveGrowthConcept,
@@ -384,7 +384,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: inclusiveGrowthProblems,
     label: 'Inclusive Growth & Financial Inclusion',
     description:
-      'Inclusive growth for UPSC & SSC. Jan Dhan, SHGs, priority sector lending with notes, revision, and PYQs.',
+      'Inclusive growth for UPSC & SSC. Jan Dhan, SHGs, priority sector lending with notes, revision, and practice questions.',
   },
   'government-schemes': {
     concept: governmentSchemesConcept,
@@ -392,7 +392,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: governmentSchemesProblems,
     label: 'Government Schemes',
     description:
-      'Government schemes for government exams. PM-KISAN, Ayushman Bharat, Ujjwala, MUDRA with notes, revision, and PYQs.',
+      'Government schemes for government exams. PM-KISAN, Ayushman Bharat, Ujjwala, MUDRA with notes, revision, and practice questions.',
   },
   'digital-economy': {
     concept: digitalEconomyConcept,
@@ -400,7 +400,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: digitalEconomyProblems,
     label: 'Digital Economy & FinTech',
     description:
-      'Digital economy for UPSC & SSC. UPI, Digital Rupee, India Stack, ONDC with notes, revision, and PYQs.',
+      'Digital economy for UPSC & SSC. UPI, Digital Rupee, India Stack, ONDC with notes, revision, and practice questions.',
   },
   'sustainable-development': {
     concept: sustainableDevelopmentConcept,
@@ -408,7 +408,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: sustainableDevelopmentProblems,
     label: 'Sustainable Development & Climate',
     description:
-      'Sustainable development for government exams. SDGs, Paris Agreement, green finance with notes, revision, and PYQs.',
+      'Sustainable development for government exams. SDGs, Paris Agreement, green finance with notes, revision, and practice questions.',
   },
   'social-security': {
     concept: socialSecurityConcept,
@@ -416,7 +416,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: socialSecurityProblems,
     label: 'Social Security & Labour',
     description:
-      'Social security for UPSC & SSC. Labour codes, EPFO, ESIC, pension schemes with notes, revision, and PYQs.',
+      'Social security for UPSC & SSC. Labour codes, EPFO, ESIC, pension schemes with notes, revision, and practice questions.',
   },
   'demographic-dividend': {
     concept: demographicDividendConcept,
@@ -424,7 +424,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: demographicDividendProblems,
     label: 'Demographic Dividend & Human Capital',
     description:
-      'Demographic dividend for government exams. Population dynamics, skill development, education with notes, revision, and PYQs.',
+      'Demographic dividend for government exams. Population dynamics, skill development, education with notes, revision, and practice questions.',
   },
   'demand-supply': {
     concept: demandSupplyConcept,
@@ -432,7 +432,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: demandSupplyProblems,
     label: 'Demand, Supply & Elasticity',
     description:
-      'Demand, supply and elasticity for UPSC & SSC. Law of demand, price floors, ceilings, PED, cross elasticity with notes, revision, and PYQs.',
+      'Demand, supply and elasticity for UPSC & SSC. Law of demand, price floors, ceilings, PED, cross elasticity with notes, revision, and practice questions.',
   },
   'market-structures': {
     concept: marketStructuresConcept,
@@ -440,7 +440,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: marketStructuresProblems,
     label: 'Market Structures & Competition',
     description:
-      'Market structures for government exams. Perfect competition, monopoly, oligopoly, CCI, anti-trust with notes, revision, and PYQs.',
+      'Market structures for government exams. Perfect competition, monopoly, oligopoly, CCI, anti-trust with notes, revision, and practice questions.',
   },
   sebi: {
     concept: sebiConcept,
@@ -448,7 +448,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: sebiProblems,
     label: 'SEBI & Capital Market Regulation',
     description:
-      'SEBI for UPSC & banking exams. Capital market regulation, IPO norms, insider trading, mutual funds with notes, revision, and PYQs.',
+      'SEBI for UPSC & banking exams. Capital market regulation, IPO norms, insider trading, mutual funds with notes, revision, and practice questions.',
   },
   'nabard-sidbi': {
     concept: nabardSidbiConcept,
@@ -456,7 +456,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: nabardSidbiProblems,
     label: 'NABARD, SIDBI & Development Finance',
     description:
-      'NABARD and SIDBI for government exams. Rural credit, MSME financing, RIDF, refinancing with notes, revision, and PYQs.',
+      'NABARD and SIDBI for government exams. Rural credit, MSME financing, RIDF, refinancing with notes, revision, and practice questions.',
   },
   'microfinance-shgs': {
     concept: microfinanceShgsConcept,
@@ -464,7 +464,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: microfinanceShgsProblems,
     label: 'Microfinance & Self-Help Groups',
     description:
-      'Microfinance and SHGs for UPSC & SSC. SHG-bank linkage, MFIs, NRLM, financial inclusion with notes, revision, and PYQs.',
+      'Microfinance and SHGs for UPSC & SSC. SHG-bank linkage, MFIs, NRLM, financial inclusion with notes, revision, and practice questions.',
   },
   'gst-detail': {
     concept: gstDetailConcept,
@@ -472,7 +472,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: gstDetailProblems,
     label: 'GST — Detailed Analysis',
     description:
-      'GST detailed analysis for government exams. CGST, SGST, IGST, GST Council, ITC, compensation cess with notes, revision, and PYQs.',
+      'GST detailed analysis for government exams. CGST, SGST, IGST, GST Council, ITC, compensation cess with notes, revision, and practice questions.',
   },
   'direct-taxes': {
     concept: directTaxesConcept,
@@ -480,7 +480,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: directTaxesProblems,
     label: 'Direct Taxes & Tax Reforms',
     description:
-      'Direct taxes for UPSC & SSC. Income tax, corporate tax, new regime, Vivad se Vishwas, faceless assessment with notes, revision, and PYQs.',
+      'Direct taxes for UPSC & SSC. Income tax, corporate tax, new regime, Vivad se Vishwas, faceless assessment with notes, revision, and practice questions.',
   },
   'balance-of-payments': {
     concept: balanceOfPaymentsConcept,
@@ -488,7 +488,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: balanceOfPaymentsProblems,
     label: 'Balance of Payments',
     description:
-      'Balance of payments for government exams. Current account, capital account, CAD, forex reserves, BoP crisis with notes, revision, and PYQs.',
+      'Balance of payments for government exams. Current account, capital account, CAD, forex reserves, BoP crisis with notes, revision, and practice questions.',
   },
   'wto-india': {
     concept: wtoIndiaConcept,
@@ -496,7 +496,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: wtoIndiaProblems,
     label: 'WTO & India',
     description:
-      'WTO and India for UPSC & SSC. Doha Round, dispute settlement, AoA, TRIPS, trade facilitation with notes, revision, and PYQs.',
+      'WTO and India for UPSC & SSC. Doha Round, dispute settlement, AoA, TRIPS, trade facilitation with notes, revision, and practice questions.',
   },
   'regional-trade': {
     concept: regionalTradeConcept,
@@ -504,7 +504,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: regionalTradeProblems,
     label: 'Regional Trade & FTAs',
     description:
-      'Regional trade agreements for government exams. ASEAN FTA, SAFTA, RCEP, CEPA, trade blocs with notes, revision, and PYQs.',
+      'Regional trade agreements for government exams. ASEAN FTA, SAFTA, RCEP, CEPA, trade blocs with notes, revision, and practice questions.',
   },
   'external-debt': {
     concept: externalDebtConcept,
@@ -512,7 +512,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: externalDebtProblems,
     label: 'External Debt Management',
     description:
-      'External debt for UPSC & SSC. ECBs, NRI deposits, debt sustainability, multilateral borrowings with notes, revision, and PYQs.',
+      'External debt for UPSC & SSC. ECBs, NRI deposits, debt sustainability, multilateral borrowings with notes, revision, and practice questions.',
   },
   disinvestment: {
     concept: disinvestmentConcept,
@@ -520,7 +520,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: disinvestmentProblems,
     label: 'Disinvestment & Privatisation',
     description:
-      'Disinvestment for government exams. Strategic sale, DIPAM, OFS, Air India, LIC IPO with notes, revision, and PYQs.',
+      'Disinvestment for government exams. Strategic sale, DIPAM, OFS, Air India, LIC IPO with notes, revision, and practice questions.',
   },
   'ppp-model': {
     concept: pppModelConcept,
@@ -528,7 +528,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: pppModelProblems,
     label: 'PPP Model & Infrastructure Finance',
     description:
-      'PPP model for UPSC & SSC. BOT, DBOT, HAM, VGF, NaBFID, infrastructure financing with notes, revision, and PYQs.',
+      'PPP model for UPSC & SSC. BOT, DBOT, HAM, VGF, NaBFID, infrastructure financing with notes, revision, and practice questions.',
   },
   'sez-corridors': {
     concept: sezCorridorsConcept,
@@ -536,7 +536,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: sezCorridorsProblems,
     label: 'SEZs & Industrial Corridors',
     description:
-      'SEZs and industrial corridors for government exams. DMIC, Bharatmala, Sagarmala, PLI, NIMZ with notes, revision, and PYQs.',
+      'SEZs and industrial corridors for government exams. DMIC, Bharatmala, Sagarmala, PLI, NIMZ with notes, revision, and practice questions.',
   },
   'land-reforms': {
     concept: landReformsConcept,
@@ -544,7 +544,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: landReformsProblems,
     label: 'Land Reforms & Agrarian Relations',
     description:
-      'Land reforms for UPSC & SSC. Zamindari abolition, land ceiling, tenancy reforms, SVAMITVA, digitisation with notes, revision, and PYQs.',
+      'Land reforms for UPSC & SSC. Zamindari abolition, land ceiling, tenancy reforms, SVAMITVA, digitisation with notes, revision, and practice questions.',
   },
   'msme-sector': {
     concept: msmeSectorConcept,
@@ -552,7 +552,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: msmeSectorProblems,
     label: 'MSME Sector',
     description:
-      'MSME sector for government exams. Udyam registration, MUDRA, CGTMSE, PM Vishwakarma, GeM procurement with notes, revision, and PYQs.',
+      'MSME sector for government exams. Udyam registration, MUDRA, CGTMSE, PM Vishwakarma, GeM procurement with notes, revision, and practice questions.',
   },
   'hdi-mpi': {
     concept: hdiMpiConcept,
@@ -560,7 +560,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: hdiMpiProblems,
     label: 'HDI, MPI & Development Indicators',
     description:
-      'HDI and MPI for UPSC & SSC. Human development, multidimensional poverty, gender indices, UNDP rankings with notes, revision, and PYQs.',
+      'HDI and MPI for UPSC & SSC. Human development, multidimensional poverty, gender indices, UNDP rankings with notes, revision, and practice questions.',
   },
   'food-security': {
     concept: foodSecurityConcept,
@@ -568,7 +568,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: foodSecurityProblems,
     label: 'Food Security & PDS',
     description:
-      'Food security for government exams. NFSA, PDS, FCI, One Nation One Ration Card, PM Garib Kalyan with notes, revision, and PYQs.',
+      'Food security for government exams. NFSA, PDS, FCI, One Nation One Ration Card, PM Garib Kalyan with notes, revision, and practice questions.',
   },
   'labour-reforms': {
     concept: labourReformsConcept,
@@ -576,7 +576,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: labourReformsProblems,
     label: 'Labour Reforms & Labour Codes',
     description:
-      'Labour reforms for UPSC & SSC. Four labour codes, wages, social security, industrial relations, OSH with notes, revision, and PYQs.',
+      'Labour reforms for UPSC & SSC. Four labour codes, wages, social security, industrial relations, OSH with notes, revision, and practice questions.',
   },
   'startup-innovation': {
     concept: startupInnovationConcept,
@@ -584,7 +584,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: startupInnovationProblems,
     label: 'Startup India & Innovation',
     description:
-      'Startup ecosystem for government exams. DPIIT, unicorns, Fund of Funds, AIM, patents, GII rankings with notes, revision, and PYQs.',
+      'Startup ecosystem for government exams. DPIIT, unicorns, Fund of Funds, AIM, patents, GII rankings with notes, revision, and practice questions.',
   },
 }
 
@@ -596,12 +596,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { topic } = await params
   const data = TOPIC_DATA[topic]
   if (!data) return {}
-  const title = `${data.label} — Notes, Revision & PYQs | GovtExamsStudy`
+  const title = `${data.label} — Notes, Revision & Practice | GovtExamsStudy`
   const description = `${data.description} Free notes, revision tricks, and previous year questions for UPSC, SSC CGL, and government exams.`
   return {
     title,
     description,
-    keywords: [`${data.label}`, `${data.label} UPSC`, `${data.label} notes`, 'Indian Economy', 'economics for UPSC', 'SSC CGL economics', `${data.label} PYQ`],
+    keywords: [`${data.label}`, `${data.label} UPSC`, `${data.label} notes`, 'Indian Economy', 'economics for UPSC', 'SSC CGL economics', `${data.label} Practice`],
     openGraph: {
       title,
       description,

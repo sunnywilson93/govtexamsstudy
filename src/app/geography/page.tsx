@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Indian Geography — Notes, Revision & PYQs for UPSC, SSC | GovtExamsStudy',
+  title: 'Indian Geography — Notes, Revision & Practice for UPSC, SSC | GovtExamsStudy',
   description:
-    'Complete Indian Geography study material for UPSC, SSC CGL, IBPS PO, and government exams. 50 topics covering Physical, Economic, Human, World Geography, and Environment & Ecology with notes, revision tricks, and PYQ practice.',
+    'Complete Indian Geography study material for UPSC, SSC CGL, IBPS PO, and government exams. 50 topics covering Physical, Economic, Human, World Geography, and Environment & Ecology with notes, revision tricks, and practice questions.',
   keywords: ['Indian Geography', 'geography for UPSC', 'physical geography India', 'environment ecology UPSC', 'NCERT geography', 'Indian geography study material', 'geography notes SSC'],
   openGraph: {
-    title: 'Indian Geography — 50 Topics with Notes, Revision & PYQs',
+    title: 'Indian Geography — 50 Topics with Notes, Revision & Practice',
     description: 'Complete Indian Geography study material for UPSC, SSC CGL, IBPS PO, and government exams.',
     type: 'website',
     siteName: 'GovtExamsStudy',
@@ -406,7 +406,7 @@ export default function GeographyPage() {
                   <p className="mt-1 text-sm text-text-secondary">{topic.description}</p>
                   {topic.hasTabs && (
                     <p className="mt-2 text-xs text-subject-geography">
-                      Notes &middot; Revision &middot; PYQ Practice
+                      Notes &middot; Revision &middot; Practice
                     </p>
                   )}
                 </Link>

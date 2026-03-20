@@ -6,14 +6,14 @@ import type { SubjectConcept, SubjectRevision, SubjectProblem } from '@/types/su
 import { SUBJECT_CLASSES, type SubjectSlug } from './subject-classes'
 import { SubjectNotesPanel } from './SubjectNotesPanel'
 import { SubjectRevisionPanel } from './SubjectRevisionPanel'
-import { SubjectPYQSolver } from './SubjectPYQSolver'
+import { SubjectPracticeSolver } from './SubjectPracticeSolver'
 
-type Tab = 'notes' | 'revision' | 'pyq'
+type Tab = 'notes' | 'revision' | 'practice'
 
 const TABS: { id: Tab; label: string }[] = [
   { id: 'notes', label: 'Notes' },
   { id: 'revision', label: 'Revision' },
-  { id: 'pyq', label: 'PYQ Practice' },
+  { id: 'practice', label: 'Practice' },
 ]
 
 interface SubjectTopicTabsProps {
@@ -53,7 +53,7 @@ export function SubjectTopicTabs({ concept, revision, problems, subject }: Subje
       >
         {activeTab === 'notes' && <SubjectNotesPanel concept={concept} subject={subject} />}
         {activeTab === 'revision' && <SubjectRevisionPanel revision={revision} subject={subject} />}
-        {activeTab === 'pyq' && <SubjectPYQSolver problems={problems} subject={subject} />}
+        {activeTab === 'practice' && <SubjectPracticeSolver problems={problems} subject={subject} />}
       </motion.div>
     </div>
   )

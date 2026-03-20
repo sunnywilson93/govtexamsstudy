@@ -241,7 +241,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: physiographyProblems,
     label: 'Physiography of India',
     description:
-      'Physiographic divisions of India for UPSC, SSC & banking exams. Himalayas, Northern Plains, Peninsular Plateau with notes, revision, and PYQs.',
+      'Physiographic divisions of India for UPSC, SSC & banking exams. Himalayas, Northern Plains, Peninsular Plateau with notes, revision, and practice questions.',
   },
   'drainage-systems': {
     concept: drainageSystemsConcept,
@@ -249,7 +249,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: drainageSystemsProblems,
     label: 'Drainage Systems of India',
     description:
-      'Indian drainage systems for government exams. Himalayan and Peninsular rivers, river basins with notes, revision, and PYQs.',
+      'Indian drainage systems for government exams. Himalayan and Peninsular rivers, river basins with notes, revision, and practice questions.',
   },
   'climate-monsoon': {
     concept: climateMonsoonConcept,
@@ -257,7 +257,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: climateMonsoonProblems,
     label: 'Climate & Indian Monsoon',
     description:
-      'Indian climate and monsoon system for UPSC & SSC. Seasons, monsoon mechanism, rainfall distribution with notes, revision, and PYQs.',
+      'Indian climate and monsoon system for UPSC & SSC. Seasons, monsoon mechanism, rainfall distribution with notes, revision, and practice questions.',
   },
   soils: {
     concept: soilsConcept,
@@ -265,7 +265,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: soilsProblems,
     label: 'Soils of India',
     description:
-      'Indian soil types for government exams. Alluvial, black, laterite, red soils with notes, revision, and PYQs.',
+      'Indian soil types for government exams. Alluvial, black, laterite, red soils with notes, revision, and practice questions.',
   },
   'natural-vegetation': {
     concept: naturalVegetationConcept,
@@ -273,7 +273,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: naturalVegetationProblems,
     label: 'Natural Vegetation & Forests',
     description:
-      'Natural vegetation of India for UPSC & SSC. Forest types, forest cover, Champion & Seth classification with notes, revision, and PYQs.',
+      'Natural vegetation of India for UPSC & SSC. Forest types, forest cover, Champion & Seth classification with notes, revision, and practice questions.',
   },
   biodiversity: {
     concept: biodiversityConcept,
@@ -281,7 +281,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: biodiversityProblems,
     label: 'Biodiversity of India',
     description:
-      'Indian biodiversity for government exams. Hotspots, endemic species, megadiversity status with notes, revision, and PYQs.',
+      'Indian biodiversity for government exams. Hotspots, endemic species, megadiversity status with notes, revision, and practice questions.',
   },
   'islands-coasts': {
     concept: islandsCoastsConcept,
@@ -289,7 +289,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: islandsCoastsProblems,
     label: 'Islands & Coastal Features',
     description:
-      'Indian islands and coastline for UPSC & SSC. Andaman-Nicobar, Lakshadweep, coastal geomorphology with notes, revision, and PYQs.',
+      'Indian islands and coastline for UPSC & SSC. Andaman-Nicobar, Lakshadweep, coastal geomorphology with notes, revision, and practice questions.',
   },
   // Economic Geography
   agriculture: {
@@ -298,7 +298,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: agricultureProblems,
     label: 'Indian Agriculture',
     description:
-      'Indian agriculture for government exams. Cropping patterns, Green Revolution, food security with notes, revision, and PYQs.',
+      'Indian agriculture for government exams. Cropping patterns, Green Revolution, food security with notes, revision, and practice questions.',
   },
   irrigation: {
     concept: irrigationConcept,
@@ -306,7 +306,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: irrigationProblems,
     label: 'Irrigation in India',
     description:
-      'Indian irrigation for UPSC & SSC. Canal, well, tank irrigation, major projects with notes, revision, and PYQs.',
+      'Indian irrigation for UPSC & SSC. Canal, well, tank irrigation, major projects with notes, revision, and practice questions.',
   },
   minerals: {
     concept: mineralsConcept,
@@ -314,7 +314,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: mineralsProblems,
     label: 'Minerals & Mining',
     description:
-      'Indian minerals for government exams. Iron ore, coal, mica, bauxite distribution with notes, revision, and PYQs.',
+      'Indian minerals for government exams. Iron ore, coal, mica, bauxite distribution with notes, revision, and practice questions.',
   },
   energy: {
     concept: energyConcept,
@@ -322,7 +322,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: energyProblems,
     label: 'Energy Resources',
     description:
-      'Indian energy resources for UPSC & SSC. Conventional and renewable energy, power generation with notes, revision, and PYQs.',
+      'Indian energy resources for UPSC & SSC. Conventional and renewable energy, power generation with notes, revision, and practice questions.',
   },
   industries: {
     concept: industriesConcept,
@@ -330,7 +330,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: industriesProblems,
     label: 'Industries of India',
     description:
-      'Indian industries for government exams. Iron-steel, textiles, IT, industrial corridors with notes, revision, and PYQs.',
+      'Indian industries for government exams. Iron-steel, textiles, IT, industrial corridors with notes, revision, and practice questions.',
   },
   transport: {
     concept: transportConcept,
@@ -338,7 +338,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: transportProblems,
     label: 'Transport & Communication',
     description:
-      'Indian transport network for UPSC & SSC. Railways, roads, ports, airways with notes, revision, and PYQs.',
+      'Indian transport network for UPSC & SSC. Railways, roads, ports, airways with notes, revision, and practice questions.',
   },
   // Human Geography
   population: {
@@ -347,7 +347,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: populationProblems,
     label: 'Population Geography',
     description:
-      'Indian population for government exams. Census data, density, growth, demographic transition with notes, revision, and PYQs.',
+      'Indian population for government exams. Census data, density, growth, demographic transition with notes, revision, and practice questions.',
   },
   urbanization: {
     concept: urbanizationConcept,
@@ -355,7 +355,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: urbanizationProblems,
     label: 'Urbanization in India',
     description:
-      'Indian urbanization for UPSC & SSC. Urban growth, smart cities, metro classification with notes, revision, and PYQs.',
+      'Indian urbanization for UPSC & SSC. Urban growth, smart cities, metro classification with notes, revision, and practice questions.',
   },
   tribes: {
     concept: tribesConcept,
@@ -363,7 +363,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: tribesProblems,
     label: 'Tribes of India',
     description:
-      'Indian tribal communities for government exams. PVTGs, scheduled areas, tribal distribution with notes, revision, and PYQs.',
+      'Indian tribal communities for government exams. PVTGs, scheduled areas, tribal distribution with notes, revision, and practice questions.',
   },
   migration: {
     concept: migrationConcept,
@@ -371,7 +371,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: migrationProblems,
     label: 'Migration Patterns',
     description:
-      'Indian migration for UPSC & SSC. Internal migration, urbanization push-pull, Census data with notes, revision, and PYQs.',
+      'Indian migration for UPSC & SSC. Internal migration, urbanization push-pull, Census data with notes, revision, and practice questions.',
   },
   // World Geography
   geomorphology: {
@@ -380,7 +380,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: geomorphologyProblems,
     label: 'Geomorphology',
     description:
-      'Geomorphology for government exams. Plate tectonics, landforms, weathering, erosion cycles with notes, revision, and PYQs.',
+      'Geomorphology for government exams. Plate tectonics, landforms, weathering, erosion cycles with notes, revision, and practice questions.',
   },
   climatology: {
     concept: climatologyConcept,
@@ -388,7 +388,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: climatologyProblems,
     label: 'Climatology',
     description:
-      'World climatology for UPSC & SSC. Atmospheric circulation, pressure belts, wind systems with notes, revision, and PYQs.',
+      'World climatology for UPSC & SSC. Atmospheric circulation, pressure belts, wind systems with notes, revision, and practice questions.',
   },
   oceanography: {
     concept: oceanographyConcept,
@@ -396,7 +396,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: oceanographyProblems,
     label: 'Oceanography',
     description:
-      'Oceanography for government exams. Ocean currents, salinity, tides, marine resources with notes, revision, and PYQs.',
+      'Oceanography for government exams. Ocean currents, salinity, tides, marine resources with notes, revision, and practice questions.',
   },
   'world-mapping': {
     concept: worldMappingConcept,
@@ -404,7 +404,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: worldMappingProblems,
     label: 'World Mapping & Key Locations',
     description:
-      'World mapping for UPSC & SSC. Straits, passes, deserts, volcanoes, important global locations with notes, revision, and PYQs.',
+      'World mapping for UPSC & SSC. Straits, passes, deserts, volcanoes, important global locations with notes, revision, and practice questions.',
   },
   // Environment & Ecology
   ecosystems: {
@@ -413,7 +413,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: ecosystemsProblems,
     label: 'Ecosystems',
     description:
-      'Ecosystems for government exams. Types, food chains, ecological pyramids, biomes with notes, revision, and PYQs.',
+      'Ecosystems for government exams. Types, food chains, ecological pyramids, biomes with notes, revision, and practice questions.',
   },
   'environmental-pollution': {
     concept: environmentalPollutionConcept,
@@ -421,7 +421,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: environmentalPollutionProblems,
     label: 'Environmental Pollution',
     description:
-      'Environmental pollution for UPSC & SSC. Air, water, soil, noise pollution, control measures with notes, revision, and PYQs.',
+      'Environmental pollution for UPSC & SSC. Air, water, soil, noise pollution, control measures with notes, revision, and practice questions.',
   },
   'climate-change': {
     concept: climateChangeConcept,
@@ -429,7 +429,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: climateChangeProblems,
     label: 'Climate Change',
     description:
-      'Climate change for government exams. Global warming, UNFCCC, Paris Agreement, IPCC with notes, revision, and PYQs.',
+      'Climate change for government exams. Global warming, UNFCCC, Paris Agreement, IPCC with notes, revision, and practice questions.',
   },
   'protected-areas': {
     concept: protectedAreasConcept,
@@ -437,7 +437,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: protectedAreasProblems,
     label: 'Protected Areas & National Parks',
     description:
-      'Protected areas for UPSC & SSC. National parks, sanctuaries, biosphere reserves, Ramsar sites with notes, revision, and PYQs.',
+      'Protected areas for UPSC & SSC. National parks, sanctuaries, biosphere reserves, Ramsar sites with notes, revision, and practice questions.',
   },
   'biodiversity-conservation': {
     concept: biodiversityConservationConcept,
@@ -445,7 +445,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: biodiversityConservationProblems,
     label: 'Biodiversity Conservation',
     description:
-      'Biodiversity conservation for government exams. In-situ, ex-situ, IUCN, CBD, CITES with notes, revision, and PYQs.',
+      'Biodiversity conservation for government exams. In-situ, ex-situ, IUCN, CBD, CITES with notes, revision, and practice questions.',
   },
   'disaster-management': {
     concept: disasterManagementConcept,
@@ -453,7 +453,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: disasterManagementProblems,
     label: 'Disaster Management',
     description:
-      'Disaster management for UPSC & SSC. NDMA, NDRF, Sendai Framework, earthquake zones with notes, revision, and PYQs.',
+      'Disaster management for UPSC & SSC. NDMA, NDRF, Sendai Framework, earthquake zones with notes, revision, and practice questions.',
   },
   'environmental-legislation': {
     concept: environmentalLegislationConcept,
@@ -461,7 +461,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: environmentalLegislationProblems,
     label: 'Environmental Legislation',
     description:
-      'Environmental laws for government exams. EPA, WLPA, FCA, FRA, NGT, EIA with notes, revision, and PYQs.',
+      'Environmental laws for government exams. EPA, WLPA, FCA, FRA, NGT, EIA with notes, revision, and practice questions.',
   },
   // Resource Geography
   'water-resources': {
@@ -470,7 +470,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: waterResourcesProblems,
     label: 'Water Resources',
     description:
-      'Water resources for UPSC & SSC. Availability, groundwater, river linking, Jal Jeevan Mission with notes, revision, and PYQs.',
+      'Water resources for UPSC & SSC. Availability, groundwater, river linking, Jal Jeevan Mission with notes, revision, and practice questions.',
   },
   'land-resources': {
     concept: landResourcesConcept,
@@ -478,7 +478,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: landResourcesProblems,
     label: 'Land Resources & Land Use',
     description:
-      'Land resources for government exams. Land use, degradation, reform, SVAMITVA with notes, revision, and PYQs.',
+      'Land resources for government exams. Land use, degradation, reform, SVAMITVA with notes, revision, and practice questions.',
   },
   // Geomorphic Processes
   'plate-tectonics': {
@@ -487,7 +487,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: plateTectonicsProblems,
     label: 'Plate Tectonics & Continental Drift',
     description:
-      'Plate tectonics for UPSC & SSC. Continental drift, sea floor spreading, boundary types, Indian plate movement with notes, revision, and PYQs.',
+      'Plate tectonics for UPSC & SSC. Continental drift, sea floor spreading, boundary types, Indian plate movement with notes, revision, and practice questions.',
   },
   'rocks-minerals-types': {
     concept: rocksMineralsTypesConcept,
@@ -495,7 +495,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: rocksMineralsTypesProblems,
     label: 'Rocks & Minerals',
     description:
-      'Rocks and minerals for government exams. Igneous, sedimentary, metamorphic rocks, rock cycle, mineral classification with notes, revision, and PYQs.',
+      'Rocks and minerals for government exams. Igneous, sedimentary, metamorphic rocks, rock cycle, mineral classification with notes, revision, and practice questions.',
   },
   'weathering-erosion': {
     concept: weatheringErosionConcept,
@@ -503,7 +503,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: weatheringErosionProblems,
     label: 'Weathering & Erosion',
     description:
-      'Weathering and erosion for UPSC & SSC. Physical, chemical, biological weathering, mass wasting, erosion agents with notes, revision, and PYQs.',
+      'Weathering and erosion for UPSC & SSC. Physical, chemical, biological weathering, mass wasting, erosion agents with notes, revision, and practice questions.',
   },
   'glacial-landforms': {
     concept: glacialLandformsConcept,
@@ -511,7 +511,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: glacialLandformsProblems,
     label: 'Glacial Landforms',
     description:
-      'Glacial landforms for government exams. Cirques, moraines, drumlins, fjords, Indian glaciers with notes, revision, and PYQs.',
+      'Glacial landforms for government exams. Cirques, moraines, drumlins, fjords, Indian glaciers with notes, revision, and practice questions.',
   },
   'fluvial-landforms': {
     concept: fluvialLandformsConcept,
@@ -519,7 +519,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: fluvialLandformsProblems,
     label: 'Fluvial Landforms',
     description:
-      'Fluvial landforms for UPSC & SSC. River valleys, meanders, deltas, floodplains, drainage patterns with notes, revision, and PYQs.',
+      'Fluvial landforms for UPSC & SSC. River valleys, meanders, deltas, floodplains, drainage patterns with notes, revision, and practice questions.',
   },
   'aeolian-landforms': {
     concept: aeolianLandformsConcept,
@@ -527,7 +527,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: aeolianLandformsProblems,
     label: 'Aeolian & Desert Landforms',
     description:
-      'Aeolian landforms for government exams. Sand dunes, yardangs, pediments, desert features, Thar Desert with notes, revision, and PYQs.',
+      'Aeolian landforms for government exams. Sand dunes, yardangs, pediments, desert features, Thar Desert with notes, revision, and practice questions.',
   },
   // Atmosphere & Climate
   'atmospheric-composition': {
@@ -536,7 +536,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: atmosphericCompositionProblems,
     label: 'Atmosphere & Weather',
     description:
-      'Atmospheric composition and weather for UPSC & SSC. Atmosphere layers, insolation, heat budget, weather elements with notes, revision, and PYQs.',
+      'Atmospheric composition and weather for UPSC & SSC. Atmosphere layers, insolation, heat budget, weather elements with notes, revision, and practice questions.',
   },
   'pressure-belts-winds': {
     concept: pressureBeltsWindsConcept,
@@ -544,7 +544,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: pressureBeltsWindsProblems,
     label: 'Pressure Belts & Winds',
     description:
-      'Pressure belts and wind systems for government exams. Trade winds, westerlies, jet streams, local winds with notes, revision, and PYQs.',
+      'Pressure belts and wind systems for government exams. Trade winds, westerlies, jet streams, local winds with notes, revision, and practice questions.',
   },
   cyclones: {
     concept: cyclonesConcept,
@@ -552,7 +552,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: cyclonesProblems,
     label: 'Cyclones — Tropical & Temperate',
     description:
-      'Cyclones for UPSC & SSC. Tropical cyclones, temperate cyclones, IMD warnings, cyclone naming, Indian cyclones with notes, revision, and PYQs.',
+      'Cyclones for UPSC & SSC. Tropical cyclones, temperate cyclones, IMD warnings, cyclone naming, Indian cyclones with notes, revision, and practice questions.',
   },
   // Additional Physical Geography
   'forest-types-india': {
@@ -561,7 +561,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: forestTypesIndiaProblems,
     label: 'Forest Types of India',
     description:
-      'Forest types of India for government exams. Champion & Seth classification, tropical, subtropical, montane forests with notes, revision, and PYQs.',
+      'Forest types of India for government exams. Champion & Seth classification, tropical, subtropical, montane forests with notes, revision, and practice questions.',
   },
   'mountain-passes': {
     concept: mountainPassesConcept,
@@ -569,7 +569,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: mountainPassesProblems,
     label: 'Important Mountain Passes',
     description:
-      'Mountain passes of India for UPSC & SSC. Himalayan passes, Western Ghat passes, strategic passes with notes, revision, and PYQs.',
+      'Mountain passes of India for UPSC & SSC. Himalayan passes, Western Ghat passes, strategic passes with notes, revision, and practice questions.',
   },
   'lakes-india': {
     concept: lakesIndiaConcept,
@@ -577,7 +577,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: lakesIndiaProblems,
     label: 'Lakes of India',
     description:
-      'Lakes of India for government exams. Freshwater, saltwater, glacial, tectonic, artificial lakes with notes, revision, and PYQs.',
+      'Lakes of India for government exams. Freshwater, saltwater, glacial, tectonic, artificial lakes with notes, revision, and practice questions.',
   },
   // Additional World Geography
   'ocean-currents': {
@@ -586,7 +586,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: oceanCurrentsProblems,
     label: 'Ocean Currents',
     description:
-      'Ocean currents for UPSC & SSC. Warm and cold currents, thermohaline circulation, upwelling, El Nino with notes, revision, and PYQs.',
+      'Ocean currents for UPSC & SSC. Warm and cold currents, thermohaline circulation, upwelling, El Nino with notes, revision, and practice questions.',
   },
   'world-climate-regions': {
     concept: worldClimateRegionsConcept,
@@ -594,7 +594,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: worldClimateRegionsProblems,
     label: 'World Climate Regions',
     description:
-      'World climate regions for government exams. Köppen classification, tropical, temperate, polar climates, biomes with notes, revision, and PYQs.',
+      'World climate regions for government exams. Köppen classification, tropical, temperate, polar climates, biomes with notes, revision, and practice questions.',
   },
   'remote-sensing-gis': {
     concept: remoteSensingGisConcept,
@@ -602,7 +602,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: remoteSensingGisProblems,
     label: 'Remote Sensing & GIS',
     description:
-      'Remote sensing and GIS for UPSC & SSC. ISRO satellites, NavIC, Bhuvan, GIS applications, RS principles with notes, revision, and PYQs.',
+      'Remote sensing and GIS for UPSC & SSC. ISRO satellites, NavIC, Bhuvan, GIS applications, RS principles with notes, revision, and practice questions.',
   },
   // Additional Environment & Ecology
   'coral-reefs': {
@@ -611,7 +611,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: coralReefsProblems,
     label: 'Coral Reefs & Marine Ecosystems',
     description:
-      'Coral reefs for government exams. Fringing, barrier, atoll reefs, coral bleaching, Indian coral reefs with notes, revision, and PYQs.',
+      'Coral reefs for government exams. Fringing, barrier, atoll reefs, coral bleaching, Indian coral reefs with notes, revision, and practice questions.',
   },
   'national-parks-sanctuaries': {
     concept: nationalParksSanctuariesConcept,
@@ -619,7 +619,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: nationalParksSanctuariesProblems,
     label: 'National Parks & Wildlife Sanctuaries',
     description:
-      'National parks and wildlife sanctuaries for UPSC & SSC. Tiger reserves, elephant reserves, bird sanctuaries with notes, revision, and PYQs.',
+      'National parks and wildlife sanctuaries for UPSC & SSC. Tiger reserves, elephant reserves, bird sanctuaries with notes, revision, and practice questions.',
   },
   'ramsar-wetlands': {
     concept: ramsarWetlandsConcept,
@@ -627,7 +627,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: ramsarWetlandsProblems,
     label: 'Wetlands & Ramsar Sites',
     description:
-      'Wetlands and Ramsar sites for government exams. India Ramsar sites, wetland conservation, Montreux Record with notes, revision, and PYQs.',
+      'Wetlands and Ramsar sites for government exams. India Ramsar sites, wetland conservation, Montreux Record with notes, revision, and practice questions.',
   },
   'biosphere-reserves': {
     concept: biosphereReservesConcept,
@@ -635,7 +635,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: biosphereReservesProblems,
     label: 'Biosphere Reserves',
     description:
-      'Biosphere reserves for UPSC & SSC. UNESCO MAB programme, Indian biosphere reserves, zonation with notes, revision, and PYQs.',
+      'Biosphere reserves for UPSC & SSC. UNESCO MAB programme, Indian biosphere reserves, zonation with notes, revision, and practice questions.',
   },
   // Additional Human Geography
   'census-demographics': {
@@ -644,7 +644,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: censusDemographicsProblems,
     label: 'Census & Demographics',
     description:
-      'Census and demographics for government exams. Census 2011 data, population growth, sex ratio, literacy, demographic dividend with notes, revision, and PYQs.',
+      'Census and demographics for government exams. Census 2011 data, population growth, sex ratio, literacy, demographic dividend with notes, revision, and practice questions.',
   },
 }
 
@@ -656,12 +656,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { topic } = await params
   const data = TOPIC_DATA[topic]
   if (!data) return {}
-  const title = `${data.label} — Notes, Revision & PYQs | GovtExamsStudy`
+  const title = `${data.label} — Notes, Revision & Practice | GovtExamsStudy`
   const description = `${data.description} Free notes, revision tricks, and previous year questions for UPSC, SSC CGL, and government exams.`
   return {
     title,
     description,
-    keywords: [`${data.label}`, `${data.label} UPSC`, `${data.label} notes`, 'Indian Geography', 'geography for UPSC', 'SSC CGL geography', `${data.label} PYQ`],
+    keywords: [`${data.label}`, `${data.label} UPSC`, `${data.label} notes`, 'Indian Geography', 'geography for UPSC', 'SSC CGL geography', `${data.label} Practice`],
     openGraph: {
       title,
       description,

@@ -31,7 +31,7 @@ const COURSE_SCHEMA = JSON.stringify({
     {
       '@type': 'Course',
       name: 'Indian Polity for Government Exams',
-      description: 'Complete Indian Polity and Constitution — 50 topics with notes, revision, and PYQs',
+      description: 'Complete Indian Polity and Constitution — 50 topics with notes, revision, and practice questions',
       provider: { '@type': 'Organization', name: 'GovtExamsStudy' },
       url: 'https://govtexamsstudy.org/polity',
       educationalLevel: 'Competitive Examination',
@@ -40,7 +40,7 @@ const COURSE_SCHEMA = JSON.stringify({
     {
       '@type': 'Course',
       name: 'Indian History for Government Exams',
-      description: 'Complete Indian History — 50 topics with notes, revision, and PYQs',
+      description: 'Complete Indian History — 50 topics with notes, revision, and practice questions',
       provider: { '@type': 'Organization', name: 'GovtExamsStudy' },
       url: 'https://govtexamsstudy.org/history',
       educationalLevel: 'Competitive Examination',
@@ -49,7 +49,7 @@ const COURSE_SCHEMA = JSON.stringify({
     {
       '@type': 'Course',
       name: 'Indian Geography for Government Exams',
-      description: 'Complete Indian Geography — 50 topics with notes, revision, and PYQs',
+      description: 'Complete Indian Geography — 50 topics with notes, revision, and practice questions',
       provider: { '@type': 'Organization', name: 'GovtExamsStudy' },
       url: 'https://govtexamsstudy.org/geography',
       educationalLevel: 'Competitive Examination',
@@ -58,7 +58,7 @@ const COURSE_SCHEMA = JSON.stringify({
     {
       '@type': 'Course',
       name: 'Indian Economy for Government Exams',
-      description: 'Complete Indian Economy — 50 topics with notes, revision, and PYQs',
+      description: 'Complete Indian Economy — 50 topics with notes, revision, and practice questions',
       provider: { '@type': 'Organization', name: 'GovtExamsStudy' },
       url: 'https://govtexamsstudy.org/economics',
       educationalLevel: 'Competitive Examination',

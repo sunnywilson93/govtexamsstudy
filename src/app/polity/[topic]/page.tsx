@@ -226,7 +226,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: historicalBackgroundProblems,
     label: 'Historical Background of the Constitution',
     description:
-      'Historical background of the Indian Constitution for UPSC, SSC & banking exams. British Acts, constitutional evolution with notes, revision, and PYQs.',
+      'Historical background of the Indian Constitution for UPSC, SSC & banking exams. British Acts, constitutional evolution with notes, revision, and practice questions.',
   },
   'constituent-assembly': {
     concept: constituentAssemblyConcept,
@@ -234,7 +234,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: constituentAssemblyProblems,
     label: 'Constituent Assembly',
     description:
-      'Constituent Assembly for UPSC, SSC & banking exams. Formation, key committees, Drafting Committee with notes, revision, and PYQs.',
+      'Constituent Assembly for UPSC, SSC & banking exams. Formation, key committees, Drafting Committee with notes, revision, and practice questions.',
   },
   preamble: {
     concept: preambleConcept,
@@ -242,7 +242,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: preambleProblems,
     label: 'Preamble to the Constitution',
     description:
-      'Preamble for UPSC, SSC & banking exams. Key terms, amendments, landmark cases with notes, revision, and PYQs.',
+      'Preamble for UPSC, SSC & banking exams. Key terms, amendments, landmark cases with notes, revision, and practice questions.',
   },
   'union-territory': {
     concept: unionTerritoryConcept,
@@ -250,7 +250,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: unionTerritoryProblems,
     label: 'Union & Its Territory',
     description:
-      'Union and its territory for UPSC, SSC & banking exams. States, UTs, reorganisation with notes, revision, and PYQs.',
+      'Union and its territory for UPSC, SSC & banking exams. States, UTs, reorganisation with notes, revision, and practice questions.',
   },
   citizenship: {
     concept: citizenshipConcept,
@@ -258,7 +258,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: citizenshipProblems,
     label: 'Citizenship',
     description:
-      'Citizenship for UPSC, SSC & banking exams. Acquisition, termination, CAA with notes, revision, and PYQs.',
+      'Citizenship for UPSC, SSC & banking exams. Acquisition, termination, CAA with notes, revision, and practice questions.',
   },
   'fundamental-rights': {
     concept: fundamentalRightsConcept,
@@ -266,7 +266,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: fundamentalRightsProblems,
     label: 'Fundamental Rights',
     description:
-      'Fundamental Rights (Art 12-35) for UPSC, SSC & banking exams. Six categories, key articles, landmark cases with notes, revision, and PYQs.',
+      'Fundamental Rights (Art 12-35) for UPSC, SSC & banking exams. Six categories, key articles, landmark cases with notes, revision, and practice questions.',
   },
   dpsp: {
     concept: dpspConcept,
@@ -274,7 +274,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: dpspProblems,
     label: 'Directive Principles of State Policy',
     description:
-      'DPSPs (Art 36-51) for UPSC, SSC & banking exams. Classification, implementation, DPSP vs FR with notes, revision, and PYQs.',
+      'DPSPs (Art 36-51) for UPSC, SSC & banking exams. Classification, implementation, DPSP vs FR with notes, revision, and practice questions.',
   },
   'fundamental-duties': {
     concept: fundamentalDutiesConcept,
@@ -282,7 +282,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: fundamentalDutiesProblems,
     label: 'Fundamental Duties',
     description:
-      'Fundamental Duties (Art 51A) for UPSC, SSC & banking exams. All 11 duties, Swaran Singh Committee with notes, revision, and PYQs.',
+      'Fundamental Duties (Art 51A) for UPSC, SSC & banking exams. All 11 duties, Swaran Singh Committee with notes, revision, and practice questions.',
   },
   'president-vp': {
     concept: presidentVpConcept,
@@ -290,7 +290,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: presidentVpProblems,
     label: 'President & Vice-President',
     description:
-      'President and Vice-President for UPSC, SSC & banking exams. Election, powers, impeachment with notes, revision, and PYQs.',
+      'President and Vice-President for UPSC, SSC & banking exams. Election, powers, impeachment with notes, revision, and practice questions.',
   },
   'prime-minister': {
     concept: primeMinisterConcept,
@@ -298,7 +298,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: primeMinisterProblems,
     label: 'Prime Minister & Council of Ministers',
     description:
-      'PM and CoM for UPSC, SSC & banking exams. Appointment, powers, collective responsibility with notes, revision, and PYQs.',
+      'PM and CoM for UPSC, SSC & banking exams. Appointment, powers, collective responsibility with notes, revision, and practice questions.',
   },
   parliament: {
     concept: parliamentConcept,
@@ -306,7 +306,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: parliamentProblems,
     label: 'Parliament of India',
     description:
-      'Parliament for UPSC, SSC & banking exams. Lok Sabha, Rajya Sabha, sessions, legislation with notes, revision, and PYQs.',
+      'Parliament for UPSC, SSC & banking exams. Lok Sabha, Rajya Sabha, sessions, legislation with notes, revision, and practice questions.',
   },
   governor: {
     concept: governorConcept,
@@ -314,7 +314,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: governorProblems,
     label: 'Governor',
     description:
-      'Governor for UPSC, SSC & banking exams. Appointment, powers, discretionary role with notes, revision, and PYQs.',
+      'Governor for UPSC, SSC & banking exams. Appointment, powers, discretionary role with notes, revision, and practice questions.',
   },
   'chief-minister': {
     concept: chiefMinisterConcept,
@@ -322,7 +322,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: chiefMinisterProblems,
     label: 'Chief Minister & State Council of Ministers',
     description:
-      'CM and state CoM for UPSC, SSC & banking exams. Appointment, powers, CM vs PM with notes, revision, and PYQs.',
+      'CM and state CoM for UPSC, SSC & banking exams. Appointment, powers, CM vs PM with notes, revision, and practice questions.',
   },
   'state-legislature': {
     concept: stateLegislatureConcept,
@@ -330,7 +330,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: stateLegislatureProblems,
     label: 'State Legislature',
     description:
-      'State Legislature for UPSC, SSC & banking exams. Vidhan Sabha, Vidhan Parishad, legislation with notes, revision, and PYQs.',
+      'State Legislature for UPSC, SSC & banking exams. Vidhan Sabha, Vidhan Parishad, legislation with notes, revision, and practice questions.',
   },
   'supreme-court': {
     concept: supremeCourtConcept,
@@ -338,7 +338,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: supremeCourtProblems,
     label: 'Supreme Court of India',
     description:
-      'Supreme Court for UPSC, SSC & banking exams. Jurisdiction, composition, judicial review with notes, revision, and PYQs.',
+      'Supreme Court for UPSC, SSC & banking exams. Jurisdiction, composition, judicial review with notes, revision, and practice questions.',
   },
   'high-courts': {
     concept: highCourtsConcept,
@@ -346,7 +346,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: highCourtsProblems,
     label: 'High Courts',
     description:
-      'High Courts for UPSC, SSC & banking exams. Jurisdiction, writ powers, SC vs HC with notes, revision, and PYQs.',
+      'High Courts for UPSC, SSC & banking exams. Jurisdiction, writ powers, SC vs HC with notes, revision, and practice questions.',
   },
   tribunals: {
     concept: tribunalsConcept,
@@ -354,7 +354,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: tribunalsProblems,
     label: 'Tribunals',
     description:
-      'Tribunals for UPSC, SSC & banking exams. CAT, SAT, NCLT, Art 323A & 323B with notes, revision, and PYQs.',
+      'Tribunals for UPSC, SSC & banking exams. CAT, SAT, NCLT, Art 323A & 323B with notes, revision, and practice questions.',
   },
   'centre-state-relations': {
     concept: centreStateRelationsConcept,
@@ -362,7 +362,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: centreStateRelationsProblems,
     label: 'Centre-State Relations',
     description:
-      'Centre-State relations for UPSC, SSC & banking exams. Three lists, legislative, administrative, financial relations with notes, revision, and PYQs.',
+      'Centre-State relations for UPSC, SSC & banking exams. Three lists, legislative, administrative, financial relations with notes, revision, and practice questions.',
   },
   'inter-state-relations': {
     concept: interStateRelationsConcept,
@@ -370,7 +370,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: interStateRelationsProblems,
     label: 'Inter-State Relations',
     description:
-      'Inter-State relations for UPSC, SSC & banking exams. ISC, water disputes, zonal councils with notes, revision, and PYQs.',
+      'Inter-State relations for UPSC, SSC & banking exams. ISC, water disputes, zonal councils with notes, revision, and practice questions.',
   },
   'emergency-provisions': {
     concept: emergencyProvisionsConcept,
@@ -378,7 +378,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: emergencyProvisionsProblems,
     label: 'Emergency Provisions',
     description:
-      'Emergency provisions for UPSC, SSC & banking exams. Art 352, 356, 360, three types with notes, revision, and PYQs.',
+      'Emergency provisions for UPSC, SSC & banking exams. Art 352, 356, 360, three types with notes, revision, and practice questions.',
   },
   'amendment-procedure': {
     concept: amendmentProcedureConcept,
@@ -386,7 +386,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: amendmentProcedureProblems,
     label: 'Amendment Procedure',
     description:
-      'Amendment procedure (Art 368) for UPSC, SSC & banking exams. Three types, key amendments, basic structure with notes, revision, and PYQs.',
+      'Amendment procedure (Art 368) for UPSC, SSC & banking exams. Three types, key amendments, basic structure with notes, revision, and practice questions.',
   },
   'panchayati-raj': {
     concept: panchayatiRajConcept,
@@ -394,7 +394,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: panchayatiRajProblems,
     label: 'Panchayati Raj',
     description:
-      'Panchayati Raj (73rd Amendment) for UPSC, SSC & banking exams. Three-tier system, Gram Sabha, PESA with notes, revision, and PYQs.',
+      'Panchayati Raj (73rd Amendment) for UPSC, SSC & banking exams. Three-tier system, Gram Sabha, PESA with notes, revision, and practice questions.',
   },
   municipalities: {
     concept: municipalitiesConcept,
@@ -402,7 +402,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: municipalitiesProblems,
     label: 'Municipalities',
     description:
-      'Municipalities (74th Amendment) for UPSC, SSC & banking exams. Types, 12th Schedule, ward committees with notes, revision, and PYQs.',
+      'Municipalities (74th Amendment) for UPSC, SSC & banking exams. Types, 12th Schedule, ward committees with notes, revision, and practice questions.',
   },
   'election-commission': {
     concept: electionCommissionConcept,
@@ -410,7 +410,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: electionCommissionProblems,
     label: 'Election Commission of India',
     description:
-      'Election Commission for UPSC, SSC & banking exams. Art 324, composition, powers, EVM with notes, revision, and PYQs.',
+      'Election Commission for UPSC, SSC & banking exams. Art 324, composition, powers, EVM with notes, revision, and practice questions.',
   },
   cag: {
     concept: cagConcept,
@@ -418,7 +418,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: cagProblems,
     label: 'Comptroller & Auditor General',
     description:
-      'CAG (Art 148-151) for UPSC, SSC & banking exams. Appointment, duties, audit reports with notes, revision, and PYQs.',
+      'CAG (Art 148-151) for UPSC, SSC & banking exams. Appointment, duties, audit reports with notes, revision, and practice questions.',
   },
   'upsc-spsc': {
     concept: upscSpscConcept,
@@ -426,7 +426,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: upscSpscProblems,
     label: 'UPSC & State PSCs',
     description:
-      'UPSC and State PSCs (Art 315-323) for UPSC, SSC & banking exams. Composition, functions, role with notes, revision, and PYQs.',
+      'UPSC and State PSCs (Art 315-323) for UPSC, SSC & banking exams. Composition, functions, role with notes, revision, and practice questions.',
   },
   'finance-commission': {
     concept: financeCommissionConcept,
@@ -434,7 +434,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: financeCommissionProblems,
     label: 'Finance Commission',
     description:
-      'Finance Commission (Art 280) for UPSC, SSC & banking exams. Composition, recommendations, devolution with notes, revision, and PYQs.',
+      'Finance Commission (Art 280) for UPSC, SSC & banking exams. Composition, recommendations, devolution with notes, revision, and practice questions.',
   },
   'statutory-bodies': {
     concept: statutoryBodiesConcept,
@@ -442,7 +442,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: statutoryBodiesProblems,
     label: 'Statutory & Quasi-Judicial Bodies',
     description:
-      'Statutory bodies for UPSC, SSC & banking exams. NHRC, NCW, CIC, Lokpal with notes, revision, and PYQs.',
+      'Statutory bodies for UPSC, SSC & banking exams. NHRC, NCW, CIC, Lokpal with notes, revision, and practice questions.',
   },
   'anti-defection': {
     concept: antiDefectionConcept,
@@ -450,7 +450,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: antiDefectionProblems,
     label: 'Anti-Defection Law',
     description:
-      'Anti-Defection Law (10th Schedule) for UPSC, SSC & banking exams. Provisions, exceptions, landmark cases with notes, revision, and PYQs.',
+      'Anti-Defection Law (10th Schedule) for UPSC, SSC & banking exams. Provisions, exceptions, landmark cases with notes, revision, and practice questions.',
   },
   'scheduled-tribal-areas': {
     concept: scheduledTribalAreasConcept,
@@ -458,7 +458,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: scheduledTribalAreasProblems,
     label: 'Scheduled & Tribal Areas',
     description:
-      'Fifth and Sixth Schedules for UPSC, SSC & banking exams. ADCs, PESA, Forest Rights Act with notes, revision, and PYQs.',
+      'Fifth and Sixth Schedules for UPSC, SSC & banking exams. ADCs, PESA, Forest Rights Act with notes, revision, and practice questions.',
   },
   'attorney-general': {
     concept: attorneyGeneralConcept,
@@ -466,7 +466,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: attorneyGeneralProblems,
     label: 'Attorney General of India',
     description:
-      'Attorney General (Art 76) for UPSC, SSC & banking exams. Appointment, duties, rights in Parliament with notes, revision, and PYQs.',
+      'Attorney General (Art 76) for UPSC, SSC & banking exams. Appointment, duties, rights in Parliament with notes, revision, and practice questions.',
   },
   'advocate-general': {
     concept: advocateGeneralConcept,
@@ -474,7 +474,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: advocateGeneralProblems,
     label: 'Advocate General of State',
     description:
-      'Advocate General (Art 165) for UPSC, SSC & banking exams. Appointment, duties, comparison with AG with notes, revision, and PYQs.',
+      'Advocate General (Art 165) for UPSC, SSC & banking exams. Appointment, duties, comparison with AG with notes, revision, and practice questions.',
   },
   'official-language': {
     concept: officialLanguageConcept,
@@ -482,7 +482,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: officialLanguageProblems,
     label: 'Official Language',
     description:
-      'Official Language (Part XVII, Art 343-351) for UPSC, SSC & banking exams. Eighth Schedule, three-language formula with notes, revision, and PYQs.',
+      'Official Language (Part XVII, Art 343-351) for UPSC, SSC & banking exams. Eighth Schedule, three-language formula with notes, revision, and practice questions.',
   },
   'special-provisions-states': {
     concept: specialProvisionsStatesConcept,
@@ -490,7 +490,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: specialProvisionsStatesProblems,
     label: 'Special Provisions for States',
     description:
-      'Special provisions (Art 371-371J) for UPSC, SSC & banking exams. Nagaland, Sikkim, Mizoram, Art 370 with notes, revision, and PYQs.',
+      'Special provisions (Art 371-371J) for UPSC, SSC & banking exams. Nagaland, Sikkim, Mizoram, Art 370 with notes, revision, and practice questions.',
   },
   'cooperative-societies': {
     concept: cooperativeSocietiesConcept,
@@ -498,7 +498,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: cooperativeSocietiesProblems,
     label: 'Cooperative Societies',
     description:
-      'Cooperative Societies (97th Amendment, Part IXB) for UPSC, SSC & banking exams. SC judgment, types, reforms with notes, revision, and PYQs.',
+      'Cooperative Societies (97th Amendment, Part IXB) for UPSC, SSC & banking exams. SC judgment, types, reforms with notes, revision, and practice questions.',
   },
   'niti-aayog': {
     concept: nitiAayogConcept,
@@ -506,7 +506,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: nitiAayogProblems,
     label: 'NITI Aayog',
     description:
-      'NITI Aayog for UPSC, SSC & banking exams. Composition, functions, comparison with Planning Commission with notes, revision, and PYQs.',
+      'NITI Aayog for UPSC, SSC & banking exams. Composition, functions, comparison with Planning Commission with notes, revision, and practice questions.',
   },
   'national-commissions': {
     concept: nationalCommissionsConcept,
@@ -514,7 +514,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: nationalCommissionsProblems,
     label: 'National Commissions',
     description:
-      'National Commissions (NCSC, NCST, NCBC, NHRC, NCW) for UPSC, SSC & banking exams. Constitutional vs statutory with notes, revision, and PYQs.',
+      'National Commissions (NCSC, NCST, NCBC, NHRC, NCW) for UPSC, SSC & banking exams. Constitutional vs statutory with notes, revision, and practice questions.',
   },
   'lokpal-lokayuktas': {
     concept: lokpalLokayuktasConcept,
@@ -522,7 +522,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: lokpalLokayuktasProblems,
     label: 'Lokpal & Lokayuktas',
     description:
-      'Lokpal and Lokayuktas Act 2013 for UPSC, SSC & banking exams. Composition, jurisdiction, Anna movement with notes, revision, and PYQs.',
+      'Lokpal and Lokayuktas Act 2013 for UPSC, SSC & banking exams. Composition, jurisdiction, Anna movement with notes, revision, and practice questions.',
   },
   'rti-act': {
     concept: rtiActConcept,
@@ -530,7 +530,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: rtiActProblems,
     label: 'Right to Information',
     description:
-      'RTI Act 2005 for UPSC, SSC & banking exams. Section 4, 8, CIC, penalties, 2019 Amendment with notes, revision, and PYQs.',
+      'RTI Act 2005 for UPSC, SSC & banking exams. Section 4, 8, CIC, penalties, 2019 Amendment with notes, revision, and practice questions.',
   },
   'judicial-review': {
     concept: judicialReviewConcept,
@@ -538,7 +538,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: judicialReviewProblems,
     label: 'Judicial Review & PIL',
     description:
-      'Judicial Review and PIL for UPSC, SSC & banking exams. Articles 13, 32, 226, landmark PIL cases with notes, revision, and PYQs.',
+      'Judicial Review and PIL for UPSC, SSC & banking exams. Articles 13, 32, 226, landmark PIL cases with notes, revision, and practice questions.',
   },
   'basic-structure': {
     concept: basicStructureConcept,
@@ -546,7 +546,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: basicStructureProblems,
     label: 'Basic Structure Doctrine',
     description:
-      'Basic Structure Doctrine for UPSC, SSC & banking exams. Kesavananda Bharati, elements, Minerva Mills, I.R. Coelho with notes, revision, and PYQs.',
+      'Basic Structure Doctrine for UPSC, SSC & banking exams. Kesavananda Bharati, elements, Minerva Mills, I.R. Coelho with notes, revision, and practice questions.',
   },
   'political-parties': {
     concept: politicalPartiesConcept,
@@ -554,7 +554,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: politicalPartiesProblems,
     label: 'Political Parties',
     description:
-      'Political Parties for UPSC, SSC & banking exams. Recognition criteria, electoral bonds, party regulation with notes, revision, and PYQs.',
+      'Political Parties for UPSC, SSC & banking exams. Recognition criteria, electoral bonds, party regulation with notes, revision, and practice questions.',
   },
   'pressure-groups': {
     concept: pressureGroupsConcept,
@@ -562,7 +562,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: pressureGroupsProblems,
     label: 'Pressure Groups',
     description:
-      'Pressure Groups for UPSC, SSC & banking exams. Types, movements, trade unions, environmental groups with notes, revision, and PYQs.',
+      'Pressure Groups for UPSC, SSC & banking exams. Types, movements, trade unions, environmental groups with notes, revision, and practice questions.',
   },
   'representation-people': {
     concept: representationPeopleConcept,
@@ -570,7 +570,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: representationPeopleProblems,
     label: 'Representation of People Acts',
     description:
-      'RPA 1950 & 1951 for UPSC, SSC & banking exams. Electoral rolls, corrupt practices, disqualification, delimitation with notes, revision, and PYQs.',
+      'RPA 1950 & 1951 for UPSC, SSC & banking exams. Electoral rolls, corrupt practices, disqualification, delimitation with notes, revision, and practice questions.',
   },
   'parliamentary-committees': {
     concept: parliamentaryCommitteesConcept,
@@ -578,7 +578,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: parliamentaryCommitteesProblems,
     label: 'Parliamentary Committees',
     description:
-      'Parliamentary Committees for UPSC, SSC & banking exams. PAC, Estimates, DRSCs, COPU with notes, revision, and PYQs.',
+      'Parliamentary Committees for UPSC, SSC & banking exams. PAC, Estimates, DRSCs, COPU with notes, revision, and practice questions.',
   },
   'parliamentary-privileges': {
     concept: parliamentaryPrivilegesConcept,
@@ -586,7 +586,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: parliamentaryPrivilegesProblems,
     label: 'Parliamentary Privileges',
     description:
-      'Parliamentary Privileges (Art 105, 194) for UPSC, SSC & banking exams. Free speech, arrest immunity, Sita Soren with notes, revision, and PYQs.',
+      'Parliamentary Privileges (Art 105, 194) for UPSC, SSC & banking exams. Free speech, arrest immunity, Sita Soren with notes, revision, and practice questions.',
   },
   'subordinate-courts': {
     concept: subordinateCourtsConcept,
@@ -594,7 +594,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: subordinateCourtsProblems,
     label: 'Subordinate Courts',
     description:
-      'Subordinate Courts (Art 233-237) for UPSC, SSC & banking exams. District courts, Lok Adalats, E-Courts, AIJS with notes, revision, and PYQs.',
+      'Subordinate Courts (Art 233-237) for UPSC, SSC & banking exams. District courts, Lok Adalats, E-Courts, AIJS with notes, revision, and practice questions.',
   },
   'governance-reforms': {
     concept: governanceReformsConcept,
@@ -602,7 +602,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: governanceReformsProblems,
     label: 'Governance Reforms',
     description:
-      'Governance Reforms for UPSC, SSC & banking exams. ARCs, Digital India, DBT, JAM Trinity, Mission Karmayogi with notes, revision, and PYQs.',
+      'Governance Reforms for UPSC, SSC & banking exams. ARCs, Digital India, DBT, JAM Trinity, Mission Karmayogi with notes, revision, and practice questions.',
   },
   'rights-issues': {
     concept: rightsIssuesConcept,
@@ -610,7 +610,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: rightsIssuesProblems,
     label: 'Rights Issues',
     description:
-      'Contemporary Rights Issues for UPSC, SSC & banking exams. Art 21 expansion, privacy, LGBTQ+, CAA, RTE, NFSA with notes, revision, and PYQs.',
+      'Contemporary Rights Issues for UPSC, SSC & banking exams. Art 21 expansion, privacy, LGBTQ+, CAA, RTE, NFSA with notes, revision, and practice questions.',
   },
   'comparison-constitutions': {
     concept: comparisonConstitutionsConcept,
@@ -618,7 +618,7 @@ const TOPIC_DATA: Record<string, TopicData> = {
     problems: comparisonConstitutionsProblems,
     label: 'Comparison of Constitutions',
     description:
-      'Comparison of Constitutions for UPSC, SSC & banking exams. Features borrowed from UK, USA, Ireland, Canada, Australia with notes, revision, and PYQs.',
+      'Comparison of Constitutions for UPSC, SSC & banking exams. Features borrowed from UK, USA, Ireland, Canada, Australia with notes, revision, and practice questions.',
   },
 }
 
@@ -630,12 +630,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { topic } = await params
   const data = TOPIC_DATA[topic]
   if (!data) return {}
-  const title = `${data.label} — Notes, Revision & PYQs | GovtExamsStudy`
+  const title = `${data.label} — Notes, Revision & Practice | GovtExamsStudy`
   const description = `${data.description} Free notes, revision tricks, and previous year questions for UPSC, SSC CGL, and government exams.`
   return {
     title,
     description,
-    keywords: [`${data.label}`, `${data.label} UPSC`, `${data.label} notes`, 'Indian Polity', 'polity for UPSC', 'SSC CGL polity', `${data.label} PYQ`],
+    keywords: [`${data.label}`, `${data.label} UPSC`, `${data.label} notes`, 'Indian Polity', 'polity for UPSC', 'SSC CGL polity', `${data.label} Practice`],
     openGraph: {
       title,
       description,

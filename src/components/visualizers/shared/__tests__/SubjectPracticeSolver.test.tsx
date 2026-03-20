@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import { SubjectPYQSolver } from '../SubjectPYQSolver'
+import { SubjectPracticeSolver } from '../SubjectPracticeSolver'
 import type { SubjectProblem } from '@/types/subject-notes'
 
 const mockProblems: SubjectProblem[] = [
@@ -27,14 +27,14 @@ const mockProblems: SubjectProblem[] = [
   },
 ]
 
-describe('SubjectPYQSolver', () => {
+describe('SubjectPracticeSolver', () => {
   it('renders the first question', () => {
-    render(<SubjectPYQSolver problems={mockProblems} subject="polity" />)
+    render(<SubjectPracticeSolver problems={mockProblems} subject="polity" />)
     expect(screen.getByText('Which article guarantees equality before law?')).toBeInTheDocument()
   })
 
   it('renders all options for the current question', () => {
-    render(<SubjectPYQSolver problems={mockProblems} subject="polity" />)
+    render(<SubjectPracticeSolver problems={mockProblems} subject="polity" />)
     expect(screen.getByText('Article 12')).toBeInTheDocument()
     expect(screen.getByText('Article 14')).toBeInTheDocument()
     expect(screen.getByText('Article 19')).toBeInTheDocument()
@@ -42,41 +42,41 @@ describe('SubjectPYQSolver', () => {
   })
 
   it('renders exam badge', () => {
-    render(<SubjectPYQSolver problems={mockProblems} subject="polity" />)
+    render(<SubjectPracticeSolver problems={mockProblems} subject="polity" />)
     expect(screen.getByText('UPSC Prelims 2023')).toBeInTheDocument()
   })
 
   it('renders question counter', () => {
-    render(<SubjectPYQSolver problems={mockProblems} subject="polity" />)
+    render(<SubjectPracticeSolver problems={mockProblems} subject="polity" />)
     expect(screen.getByText(/1\s*\/\s*2/)).toBeInTheDocument()
   })
 
   it('shows explanation after selecting correct answer', () => {
-    render(<SubjectPYQSolver problems={mockProblems} subject="polity" />)
+    render(<SubjectPracticeSolver problems={mockProblems} subject="polity" />)
     fireEvent.click(screen.getByText('Article 14'))
     expect(screen.getByText(/equality before law and equal protection/)).toBeInTheDocument()
   })
 
   it('shows explanation after selecting incorrect answer', () => {
-    render(<SubjectPYQSolver problems={mockProblems} subject="polity" />)
+    render(<SubjectPracticeSolver problems={mockProblems} subject="polity" />)
     fireEvent.click(screen.getByText('Article 12'))
     expect(screen.getByText(/equality before law and equal protection/)).toBeInTheDocument()
   })
 
   it('navigates to next question', () => {
-    render(<SubjectPYQSolver problems={mockProblems} subject="polity" />)
+    render(<SubjectPracticeSolver problems={mockProblems} subject="polity" />)
     fireEvent.click(screen.getByText('Article 14'))
     fireEvent.click(screen.getByRole('button', { name: /next/i }))
     expect(screen.getByText('Right to property was removed by which amendment?')).toBeInTheDocument()
   })
 
   it('renders exam filter dropdown', () => {
-    render(<SubjectPYQSolver problems={mockProblems} subject="polity" />)
+    render(<SubjectPracticeSolver problems={mockProblems} subject="polity" />)
     expect(screen.getByLabelText(/filter by exam/i)).toBeInTheDocument()
   })
 
   it('filters questions by exam name', () => {
-    render(<SubjectPYQSolver problems={mockProblems} subject="polity" />)
+    render(<SubjectPracticeSolver problems={mockProblems} subject="polity" />)
     fireEvent.change(screen.getByLabelText(/filter by exam/i), { target: { value: 'SSC CGL' } })
     expect(screen.getByText('Right to property was removed by which amendment?')).toBeInTheDocument()
     expect(screen.getByText(/1\s*\/\s*1/)).toBeInTheDocument()

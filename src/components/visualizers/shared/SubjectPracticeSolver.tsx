@@ -5,12 +5,12 @@ import { motion } from 'framer-motion'
 import type { SubjectProblem } from '@/types/subject-notes'
 import { SUBJECT_CLASSES, type SubjectSlug } from './subject-classes'
 
-interface SubjectPYQSolverProps {
+interface SubjectPracticeSolverProps {
   problems: SubjectProblem[]
   subject: SubjectSlug
 }
 
-export function SubjectPYQSolver({ problems, subject }: SubjectPYQSolverProps) {
+export function SubjectPracticeSolver({ problems, subject }: SubjectPracticeSolverProps) {
   const c = SUBJECT_CLASSES[subject]
 
   const [examFilter, setExamFilter] = useState('')

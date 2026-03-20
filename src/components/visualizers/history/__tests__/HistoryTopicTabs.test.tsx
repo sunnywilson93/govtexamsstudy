@@ -45,9 +45,9 @@ describe('HistoryTopicTabs', () => {
     expect(screen.getByRole('button', { name: 'Revision' })).toBeInTheDocument()
   })
 
-  it('renders PYQ Practice tab button', () => {
+  it('renders Practice tab button', () => {
     render(<HistoryTopicTabs concept={mockConcept} revision={mockRevision} problems={mockProblems} />)
-    expect(screen.getByRole('button', { name: 'PYQ Practice' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Practice' })).toBeInTheDocument()
   })
 
   it('shows Notes content by default', () => {
@@ -62,9 +62,9 @@ describe('HistoryTopicTabs', () => {
     expect(screen.getByText('Key fact one.')).toBeInTheDocument()
   })
 
-  it('switches to PYQ Practice tab on click', () => {
+  it('switches to Practice tab on click', () => {
     render(<HistoryTopicTabs concept={mockConcept} revision={mockRevision} problems={mockProblems} />)
-    fireEvent.click(screen.getByRole('button', { name: 'PYQ Practice' }))
+    fireEvent.click(screen.getByRole('button', { name: 'Practice' }))
     expect(screen.getByText('Test question?')).toBeInTheDocument()
   })
 })

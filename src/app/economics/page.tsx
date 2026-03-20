@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Indian Economy — Notes, Revision & PYQs for UPSC, SSC | GovtExamsStudy',
+  title: 'Indian Economy — Notes, Revision & Practice for UPSC, SSC | GovtExamsStudy',
   description:
-    'Complete Indian Economy study material for UPSC, SSC CGL, IBPS PO, and government exams. 50 topics covering Banking, Fiscal Policy, Trade, Planning, and Government Schemes with notes, revision tricks, and PYQ practice.',
+    'Complete Indian Economy study material for UPSC, SSC CGL, IBPS PO, and government exams. 50 topics covering Banking, Fiscal Policy, Trade, Planning, and Government Schemes with notes, revision tricks, and practice questions.',
   keywords: ['Indian Economy', 'economics for UPSC', 'Indian economy notes SSC', 'banking awareness', 'fiscal policy India', 'Ramesh Singh economics', 'Indian economy study material'],
   openGraph: {
-    title: 'Indian Economy — 50 Topics with Notes, Revision & PYQs',
+    title: 'Indian Economy — 50 Topics with Notes, Revision & Practice',
     description: 'Complete Indian Economy study material for UPSC, SSC CGL, IBPS PO, and government exams.',
     type: 'website',
     siteName: 'GovtExamsStudy',
@@ -420,7 +420,7 @@ export default function EconomicsPage() {
                 </div>
                 <p className="mb-2 text-xs leading-relaxed text-text-secondary">{topic.description}</p>
                 {topic.hasTabs && (
-                  <p className="text-xs text-text-muted">Notes · Revision · PYQs</p>
+                  <p className="text-xs text-text-muted">Notes · Revision · Practice</p>
                 )}
               </Link>
             ))}

@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import { HistoryPYQSolver } from '../HistoryPYQSolver'
+import { HistoryPracticeSolver } from '../HistoryPracticeSolver'
 import type { HistoryProblem } from '@/types/history'
 
 const mockProblems: HistoryProblem[] = [
@@ -27,14 +27,14 @@ const mockProblems: HistoryProblem[] = [
   },
 ]
 
-describe('HistoryPYQSolver', () => {
+describe('HistoryPracticeSolver', () => {
   it('renders the first question', () => {
-    render(<HistoryPYQSolver problems={mockProblems} />)
+    render(<HistoryPracticeSolver problems={mockProblems} />)
     expect(screen.getByText('Which site had a dockyard?')).toBeInTheDocument()
   })
 
   it('renders all options for the current question', () => {
-    render(<HistoryPYQSolver problems={mockProblems} />)
+    render(<HistoryPracticeSolver problems={mockProblems} />)
     expect(screen.getByText('Harappa')).toBeInTheDocument()
     expect(screen.getByText('Lothal')).toBeInTheDocument()
     expect(screen.getByText('Kalibangan')).toBeInTheDocument()
@@ -42,41 +42,41 @@ describe('HistoryPYQSolver', () => {
   })
 
   it('renders exam badge', () => {
-    render(<HistoryPYQSolver problems={mockProblems} />)
+    render(<HistoryPracticeSolver problems={mockProblems} />)
     expect(screen.getByText('UPSC Prelims 2023')).toBeInTheDocument()
   })
 
   it('renders question counter', () => {
-    render(<HistoryPYQSolver problems={mockProblems} />)
+    render(<HistoryPracticeSolver problems={mockProblems} />)
     expect(screen.getByText(/1\s*\/\s*2/)).toBeInTheDocument()
   })
 
   it('shows explanation after selecting correct answer', () => {
-    render(<HistoryPYQSolver problems={mockProblems} />)
+    render(<HistoryPracticeSolver problems={mockProblems} />)
     fireEvent.click(screen.getByText('Lothal'))
     expect(screen.getByText(/first known dockyard/)).toBeInTheDocument()
   })
 
   it('shows explanation after selecting incorrect answer', () => {
-    render(<HistoryPYQSolver problems={mockProblems} />)
+    render(<HistoryPracticeSolver problems={mockProblems} />)
     fireEvent.click(screen.getByText('Harappa'))
     expect(screen.getByText(/first known dockyard/)).toBeInTheDocument()
   })
 
   it('navigates to next question', () => {
-    render(<HistoryPYQSolver problems={mockProblems} />)
+    render(<HistoryPracticeSolver problems={mockProblems} />)
     fireEvent.click(screen.getByText('Lothal'))
     fireEvent.click(screen.getByRole('button', { name: /next/i }))
     expect(screen.getByText('Who discovered Mohenjo-daro?')).toBeInTheDocument()
   })
 
   it('renders exam filter dropdown', () => {
-    render(<HistoryPYQSolver problems={mockProblems} />)
+    render(<HistoryPracticeSolver problems={mockProblems} />)
     expect(screen.getByLabelText(/filter by exam/i)).toBeInTheDocument()
   })
 
   it('filters questions by exam name', () => {
-    render(<HistoryPYQSolver problems={mockProblems} />)
+    render(<HistoryPracticeSolver problems={mockProblems} />)
     fireEvent.change(screen.getByLabelText(/filter by exam/i), { target: { value: 'SSC CGL' } })
     expect(screen.getByText('Who discovered Mohenjo-daro?')).toBeInTheDocument()
     expect(screen.getByText(/1\s*\/\s*1/)).toBeInTheDocument()

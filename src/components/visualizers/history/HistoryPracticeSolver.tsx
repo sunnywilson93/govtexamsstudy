@@ -4,11 +4,11 @@ import { useMemo, useState } from 'react'
 import { motion } from 'framer-motion'
 import type { HistoryProblem } from '@/types/history'
 
-interface HistoryPYQSolverProps {
+interface HistoryPracticeSolverProps {
   problems: HistoryProblem[]
 }
 
-export function HistoryPYQSolver({ problems }: HistoryPYQSolverProps) {
+export function HistoryPracticeSolver({ problems }: HistoryPracticeSolverProps) {
   const [examFilter, setExamFilter] = useState('')
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedOption, setSelectedOption] = useState<number | null>(null)

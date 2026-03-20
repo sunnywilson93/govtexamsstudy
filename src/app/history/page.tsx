@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Indian History — Notes, Revision & PYQs for UPSC, SSC | GovtExamsStudy',
+  title: 'Indian History — Notes, Revision & Practice for UPSC, SSC | GovtExamsStudy',
   description:
-    'Complete Indian History study material for UPSC, SSC CGL, IBPS PO, and government exams. 50 topics covering Ancient, Medieval, Modern India, Post-Independence, and Art & Culture with notes, revision tricks, and PYQ practice.',
+    'Complete Indian History study material for UPSC, SSC CGL, IBPS PO, and government exams. 50 topics covering Ancient, Medieval, Modern India, Post-Independence, and Art & Culture with notes, revision tricks, and practice questions.',
   keywords: ['Indian History', 'ancient India UPSC', 'medieval India notes', 'modern India freedom movement', 'history for SSC', 'Bipin Chandra notes', 'NCERT history', 'Indian history study material'],
   openGraph: {
-    title: 'Indian History — 50 Topics with Notes, Revision & PYQs',
+    title: 'Indian History — 50 Topics with Notes, Revision & Practice',
     description: 'Complete Indian History study material for UPSC, SSC CGL, IBPS PO, and government exams.',
     type: 'website',
     siteName: 'GovtExamsStudy',
@@ -414,7 +414,7 @@ export default function HistoryPage() {
                 </div>
                 <p className="mb-2 text-xs leading-relaxed text-text-secondary">{topic.description}</p>
                 {topic.hasTabs && (
-                  <p className="text-xs text-text-muted">Notes · Revision · PYQs</p>
+                  <p className="text-xs text-text-muted">Notes · Revision · Practice</p>
                 )}
               </Link>
             ))}
