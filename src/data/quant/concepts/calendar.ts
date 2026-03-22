@@ -4,19 +4,19 @@ export const calendarConcept: QuantConcept = {
   topic: "calendar",
   title: "Calendar",
   description:
-    "Calendar problems involve finding the day of the week for a given date, identifying leap years, or determining when two years share the same calendar. The core technique is counting 'odd days' — the extra days beyond complete weeks in a given period.",
+    "Count odd days (extra days beyond complete weeks) to find the weekday of any date. Exams also test leap-year identification and same-calendar-year detection. SSC CGL, CHSL, and RRB NTPC carry 1\\u20132 calendar questions per paper \\u2014 fast to solve once you memorize century odd-day values.",
   keyIdea:
     "Count odd days for the entire period, take mod 7, map to day name. Memorise odd days for 100/200/300/400 year periods — they're always the same.",
   formulas: [
     {
       name: "Ordinary year odd days",
       formula: "365 days = 52 weeks + 1 odd day",
-      whenToUse: "Counting extra days in an ordinary year",
+      whenToUse: "Add 1 odd day for every ordinary year when counting forward or backward from a known date",
     },
     {
       name: "Leap year odd days",
       formula: "366 days = 52 weeks + 2 odd days",
-      whenToUse: "Counting extra days in a leap year",
+      whenToUse: "Add 2 odd days for every leap year in the range \\u2014 the extra February day produces the second odd day",
     },
     {
       name: "Century odd days",

@@ -4,19 +4,19 @@ export const averageConcept: QuantConcept = {
   topic: "average",
   title: "Average",
   description:
-    "Average (Arithmetic Mean) is the sum of all values divided by the count. Most exam problems twist this by adding/removing members, replacing a wrong entry, or combining two groups.",
+    "Average equals Sum divided by Count. Exams twist this with member additions, removals, replacements, and group merges. Banking and SSC papers carry 2\\u20133 average questions per paper, and the replacement variant appears most frequently.",
   keyIdea:
     "Work backwards from Average: Sum = Average × Count. This single formula solves 80% of average problems.",
   formulas: [
     {
       name: "Average",
       formula: "Average = Sum / Count  →  Sum = Average × Count",
-      whenToUse: "First step in any average problem — compute the total sum from given average and count.",
+      whenToUse: "Start every average problem here \\u2014 compute the total sum first, then manipulate it based on the condition given.",
     },
     {
       name: "Weighted Average",
       formula: "Combined Avg = (n₁×a₁ + n₂×a₂) / (n₁ + n₂)",
-      whenToUse: "When two groups of different sizes are merged and you need the overall average.",
+      whenToUse: "Merge two groups of different sizes into one and compute the combined average directly.",
     },
     {
       name: "Effect of Adding a New Term",

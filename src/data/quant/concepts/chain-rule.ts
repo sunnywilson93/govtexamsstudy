@@ -4,19 +4,19 @@ export const chainRuleConcept: QuantConcept = {
   topic: "chain-rule",
   title: "Chain Rule / Direct & Inverse Proportion",
   description:
-    "The chain rule links multiple quantities through direct and inverse proportion. Unitary method — finding the value of one unit first, then scaling — is the foundation of all chain rule problems. When more than two quantities are involved, classify each relationship as direct or inverse and set up a fraction chain.",
+    "Link multiple quantities through direct and inverse proportion by finding the value of one unit first, then scaling. SSC and RRB papers test 2\\u20133 chain-rule questions per exam, often combining work, speed, and cost in a single problem. Classify each relationship as direct or inverse before setting up the fraction chain.",
   keyIdea:
     "Classify each relationship as Direct (same direction) or Inverse (opposite direction). Then multiply the ratio for Direct, invert and multiply for Inverse.",
   formulas: [
     {
       name: "Unitary method",
       formula: "Value of n units = (Value of 1 unit) × n",
-      whenToUse: "When value of one unit is known",
+      whenToUse: "Divide total value by total units to get the per-unit rate, then multiply by the required number of units",
     },
     {
       name: "Direct proportion",
       formula: "A₁/A₂ = B₁/B₂ → B₂ = B₁ × (A₂/A₁)",
-      whenToUse: "When quantities vary directly",
+      whenToUse: "Apply when both quantities increase or decrease together \\u2014 more workers produce more output, more hours cover more distance",
     },
     {
       name: "Inverse proportion",

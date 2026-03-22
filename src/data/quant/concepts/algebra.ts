@@ -4,7 +4,7 @@ export const algebraConcept: QuantConcept = {
   topic: "algebra",
   title: "Algebra",
   description:
-    "Algebra covers equations, identities, and inequalities. Exam questions test linear and quadratic equations, standard algebraic identities, polynomial remainder theorem, and inequality rules.",
+    "Algebra spans linear and quadratic equations, standard identities, the remainder theorem, and inequality rules. SSC CGL and banking papers dedicate 3\\u20135 questions to this topic. Master the sum/product-of-roots shortcut and identity recognition to solve most questions without full expansion.",
   keyIdea:
     "Convert word problems into equations, then solve. For quadratics, use the discriminant (b²−4ac) to determine the nature of roots without fully solving.",
   formulas: [
@@ -13,14 +13,14 @@ export const algebraConcept: QuantConcept = {
       formula:
         "ax + b = 0  →  x = −b/a  |  For two variables: solve one equation for x, substitute into the other",
       whenToUse:
-        "One variable: direct substitution. Two variables: use elimination when coefficients can be matched, substitution otherwise.",
+        "Solve single-variable equations by direct substitution. For two variables, match coefficients for elimination or isolate one variable for substitution.",
     },
     {
       name: "Quadratic Formula",
       formula:
         "x = (−b ± √(b²−4ac)) / 2a  |  Sum of roots = −b/a  |  Product of roots = c/a",
       whenToUse:
-        "Find roots of ax²+bx+c=0. Use sum/product shortcuts to answer questions about roots without fully solving.",
+        "Find roots of ax\\u00B2+bx+c=0. Apply sum/product shortcuts to answer root-relationship questions without computing each root separately.",
     },
     {
       name: "Key Algebraic Identities",

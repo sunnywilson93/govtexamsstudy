@@ -4,19 +4,19 @@ export const boatsStreamsConcept: QuantConcept = {
   topic: "boats-streams",
   title: "Boats & Streams",
   description:
-    "Boats & Streams problems involve a boat (or swimmer) moving through a river with a current. The current aids motion downstream and opposes it upstream. Downstream speed = boat speed + stream speed; upstream speed = boat speed − stream speed. Still water speed and stream speed can be recovered from downstream and upstream speeds using simple averaging.",
+    "Add current speed for downstream, subtract it for upstream. Recover still-water speed and stream speed by averaging and halving the difference. SSC and banking papers test 2\\u20133 questions per exam, typically asking for boat speed, stream speed, or round-trip time.",
   keyIdea:
     "Downstream = add current; Upstream = subtract current. Still water speed = average of D and U. Stream speed = half their difference. These two formulas solve 80% of boat problems.",
   formulas: [
     {
       name: "Downstream speed",
       formula: "D = u + v (boat speed + stream speed)",
-      whenToUse: "Speed when travelling with the current",
+      whenToUse: "Calculate effective speed when the boat moves with the current \\u2014 the stream pushes it faster",
     },
     {
       name: "Upstream speed",
       formula: "U = u − v (boat speed − stream speed)",
-      whenToUse: "Speed when travelling against the current",
+      whenToUse: "Calculate effective speed when the boat moves against the current \\u2014 the stream slows it down",
     },
     {
       name: "Still water speed",

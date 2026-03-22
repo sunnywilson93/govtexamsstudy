@@ -4,19 +4,19 @@ export const decimalFractionsConcept: QuantConcept = {
   topic: "decimal-fractions",
   title: "Decimal Fractions",
   description:
-    "A decimal fraction is a fraction whose denominator is a power of 10. The number of decimal places equals the power of 10 in the denominator (0.375 = 375/1000). To convert a fraction to a decimal, divide numerator by denominator. To convert a terminating decimal to a fraction, write the digits over the appropriate power of 10 and simplify (0.125 = 125/1000 = 1/8). A recurring decimal repeats infinitely — 1/3 = 0.333… — and can be converted to a fraction by multiplying by the appropriate power of 10 and subtracting. For comparison, align decimal points and compare digit by digit from the left. For arithmetic: addition and subtraction require aligned decimal points; multiplication requires counting total decimal places in both factors; division requires making the divisor a whole number first.",
+    "Convert between decimals, fractions, and recurring decimals fluently \\u2014 this skill underpins every percentage, ratio, and interest calculation. SSC CHSL and RRB papers test direct decimal simplification, while banking exams embed decimal operations inside larger DI and approximation sets. Master terminating-vs-recurring recognition and the multiply-subtract trick for recurring decimals.",
   keyIdea:
     "Decimals are just fractions with powers of 10 as denominator. Every decimal operation maps to a fraction operation — use whichever is more convenient.",
   formulas: [
     {
       name: "Decimal to Fraction",
       formula: "Move digits over power of 10, simplify. 0.ab = ab/100",
-      whenToUse: "To convert terminating decimal to fraction",
+      whenToUse: "Place the decimal digits over the matching power of 10 and simplify \\u2014 use this whenever a question gives a terminating decimal and asks for the fraction form",
     },
     {
       name: "Fraction to Decimal",
       formula: "Divide numerator by denominator",
-      whenToUse: "To convert fraction to decimal",
+      whenToUse: "Divide directly to convert any fraction into its decimal equivalent \\u2014 stop once the remainder repeats or terminates",
     },
     {
       name: "Recurring decimal",

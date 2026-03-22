@@ -4,7 +4,7 @@ export const dataInterpretationConcept: QuantConcept = {
   topic: "data-interpretation",
   title: "Data Interpretation",
   description:
-    "Data Interpretation (DI) involves reading and analysing data presented as tables, bar charts, pie charts, line graphs, or text caselets. Exam questions test speed and accuracy in extracting the right numbers and applying basic percentage, ratio, or change formulas.",
+    "Read and analyse data from tables, bar charts, pie charts, line graphs, and caselets, then apply percentage, ratio, or change formulas. DI is the single highest-weight section in IBPS PO and SBI PO (15\\u201320 marks) and carries similar weight in SSC CGL Tier II. Speed on approximation and ratio shortcuts directly determines the score.",
   keyIdea:
     "Identify the 'total' and the 'unit' of the data before touching the options — 90 % of DI errors come from reading the wrong row, column, or scale.",
   formulas: [
@@ -12,13 +12,13 @@ export const dataInterpretationConcept: QuantConcept = {
       name: "Percentage Share (Table / Bar DI)",
       formula: "Percentage = (Part / Whole) × 100",
       whenToUse:
-        "When asked what share a row or bar holds in the overall total — identify the correct 'whole' from headers first.",
+        "Identify the correct total from column/row headers first, then divide the part by that total to get the share.",
     },
     {
       name: "Bar Chart Visual Ratio",
       formula: "Ratio = Height of Bar A : Height of Bar B  (no absolute values needed)",
       whenToUse:
-        "For ratio or comparison questions from bar charts; read relative heights visually and avoid computing absolute figures when both bars share the same scale.",
+        "Compare bar heights directly for ratio questions \\u2014 skip absolute-value computation when both bars share the same scale.",
     },
     {
       name: "Pie Chart Sector Value",
