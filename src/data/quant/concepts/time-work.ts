@@ -4,19 +4,19 @@ export const timeWorkConcept: QuantConcept = {
   topic: "time-work",
   title: "Time & Work",
   description:
-    "Time & Work problems quantify how fast people or machines complete tasks. If A finishes a job in n days, A's one-day work is 1/n. Combined rates add together. Pipes & Cisterns follow the same logic with fill (positive) and drain (negative) rates.",
+    "Time and Work problems measure how fast people or machines finish tasks by converting days into fractional rates that add together. Pipes and Cisterns use the same logic with positive fill rates and negative drain rates. Banking exams (IBPS PO, SBI PO) and SSC CGL test this topic every session, so mastering the LCM method to eliminate fractions gives you a decisive speed edge.",
   keyIdea:
     "Use the LCM method: assume total work = LCM of all given days. Each person's daily work becomes an integer, eliminating fractions entirely.",
   formulas: [
     {
       name: "Work Rate",
       formula: "One day's work of A = 1 / (number of days A takes alone)",
-      whenToUse: "First step in any Time & Work problem — convert days to rate.",
+      whenToUse: "Convert each worker\\u2019s completion time into a daily rate before combining or comparing.",
     },
     {
       name: "Two people together",
       formula: "Time together = (A × B) / (A + B)",
-      whenToUse: "When only two people work together and you need the combined time.",
+      whenToUse: "Plug in both individual completion times to get the combined time when exactly two workers collaborate.",
     },
     {
       name: "Efficiency ratio",

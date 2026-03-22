@@ -4,7 +4,7 @@ export const trueDiscountConcept: QuantConcept = {
   topic: "true-discount",
   title: "True Discount",
   description:
-    "True Discount (TD) is the difference between the face value (amount due in the future) and its Present Worth (PW) today. Unlike banker's discount, true discount is the fair reduction — calculated on the present worth, not the face value. Understanding this distinction is critical for TD vs BD questions.",
+    "True Discount represents the fair deduction on a future sum, calculated on the present worth rather than the face value. This distinction from Banker\\u2019s Discount is the core trap examiners exploit. SSC CGL Tier 2 and IBPS PO both test TD\\u2013PW\\u2013rate triangles, so drilling the direct formula PW = (A \\u00d7 100)/(100 + RT) lets you skip intermediate steps entirely.",
   keyIdea:
     "Present Worth is what you'd pay today to settle a future debt. True Discount = Amount − PW. The formula PW = (A × 100) / (100 + R × T) removes the need to compute TD and PW separately.",
   formulas: [
@@ -12,13 +12,13 @@ export const trueDiscountConcept: QuantConcept = {
       name: "Present Worth",
       formula: "PW = (A × 100) / (100 + R × T)",
       whenToUse:
-        "To find the equivalent value today of a sum due in the future at simple interest rate R% for T years.",
+        "Convert a future amount to its present-day value at a given simple interest rate and time period.",
     },
     {
       name: "True Discount",
       formula: "TD = (A × R × T) / (100 + R × T)   |   or   TD = A − PW",
       whenToUse:
-        "To find the discount (reduction) on a future sum. Use the direct formula when PW is not yet computed.",
+        "Compute the fair discount directly from face value, rate, and time without first calculating PW.",
     },
     {
       name: "Rate from TD and PW",

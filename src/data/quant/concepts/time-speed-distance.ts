@@ -4,19 +4,19 @@ export const tsdConcept: QuantConcept = {
   topic: "time-speed-distance",
   title: "Time, Speed & Distance",
   description:
-    "Speed, Distance, and Time are related by one fundamental equation. All TSD problems — trains, boats, races — are variations on this single relationship combined with relative speed logic.",
+    "Every TSD problem \\u2014 trains, boats, races \\u2014 traces back to one equation: Distance = Speed \\u00d7 Time. Exams layer relative speed, average speed traps, and unit conversions on top of this core relationship. SSC CGL, RRB NTPC, and UPSC CSAT each carry 3\\u20135 TSD questions per paper, so drilling the harmonic-mean shortcut and same-direction vs. opposite-direction logic pays off fast.",
   keyIdea:
     "Average speed for equal distances is the harmonic mean (2S1S2)/(S1+S2) — NOT the arithmetic average. This is the most common trap in TSD questions.",
   formulas: [
     {
       name: "Fundamental Relationship",
       formula: "Speed = Distance / Time  (Distance = S × T, Time = D / S)",
-      whenToUse: "Always — this triangle connects all three values.",
+      whenToUse: "Start every TSD problem here \\u2014 identify which two values you have and solve for the third.",
     },
     {
       name: "Average Speed (equal distances)",
       formula: "Avg Speed = 2 × S1 × S2 / (S1 + S2)",
-      whenToUse: "When a journey is split into two equal-distance halves at different speeds.",
+      whenToUse: "Apply the harmonic mean whenever someone travels equal distances at two different speeds.",
     },
     {
       name: "Relative Speed",

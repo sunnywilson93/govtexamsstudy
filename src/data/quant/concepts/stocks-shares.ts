@@ -4,19 +4,19 @@ export const stocksSharesConcept: QuantConcept = {
   topic: "stocks-shares",
   title: "Stocks & Shares",
   description:
-    "Stocks and shares problems involve computing dividend income, yield percentage, and comparing investments. Dividend is always calculated on face value (typically ₹100), while yield is calculated on the market price at which the stock is purchased.",
+    "Stocks and shares questions ask you to compute dividend income, compare yields, and decide which investment pays more. Remember that dividend always applies to face value (usually \\u20b9100), not market price. Banking exams test this distinction directly, so locking the face-value vs. market-price split eliminates the most common trap.",
   keyIdea:
     "Dividend is on face value (usually ₹100). Yield is on market price. Invest in the stock with higher yield for the same dividend %, meaning lower market price gives higher yield.",
   formulas: [
     {
       name: "Annual income",
       formula: "Income = (Dividend% × Face Value) / 100",
-      whenToUse: "Dividend earned on stock investment",
+      whenToUse: "Calculate the annual dividend earned by multiplying the dividend rate by face value.",
     },
     {
       name: "Yield/Return",
       formula: "Yield% = (Annual income / Market price) × 100",
-      whenToUse: "Return on investment at market price",
+      whenToUse: "Find the actual return percentage based on what you paid (market price), not face value.",
     },
     {
       name: "Investment",

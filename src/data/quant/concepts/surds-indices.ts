@@ -4,19 +4,19 @@ export const surdsConcept: QuantConcept = {
   topic: "surds-indices",
   title: "Surds & Indices",
   description:
-    "Indices (exponents) express repeated multiplication; surds are irrational roots that cannot be simplified to rational numbers. Together they appear in simplification, comparison, and algebraic manipulation questions across competitive exams.",
+    "Surds and indices questions boil down to five index laws plus rationalization. SSC CGL Tier 1 and Tier 2 each carry 2\\u20133 direct questions that test simplification, comparison of powers, and conversion between radical and exponential form. Nail the laws and you convert every problem into a single-step base-matching exercise.",
   keyIdea:
     "Master the 5 index laws and rationalisation — every surd/indices question is a combination of these.",
   formulas: [
     {
       name: "Product Rule",
       formula: "a^m × a^n = a^(m+n)",
-      whenToUse: "When multiplying same base powers",
+      whenToUse: "Combine two powers that share the same base into one term by adding exponents.",
     },
     {
       name: "Division Rule",
       formula: "a^m ÷ a^n = a^(m-n)",
-      whenToUse: "When dividing same base powers",
+      whenToUse: "Reduce a fraction of same-base powers into one term by subtracting exponents.",
     },
     {
       name: "Power Rule",

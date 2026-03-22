@@ -4,19 +4,19 @@ export const simplificationConcept: QuantConcept = {
   topic: "simplification",
   title: "Simplification & BODMAS",
   description:
-    "Simplification is the process of reducing a complex arithmetic expression to its simplest value by applying BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction) in strict order. Mastery of fraction, decimal, and percentage conversions makes this process fast and error-free.",
+    "Simplification tests how quickly you reduce a multi-operation expression using strict BODMAS order. Banking prelims pack 5+ questions of this type, making it one of the highest-scoring sections if you drill fraction-decimal-percent conversions. Approximate aggressively when answer choices are spaced apart \\u2014 rounding to the nearest 5 still locks the correct option.",
   keyIdea:
     "BODMAS is non-negotiable. In banking exams, approximate aggressively — the answer choices are spaced wide enough that rounding to nearest 5 still uniquely identifies the correct answer.",
   formulas: [
     {
       name: "BODMAS Order",
       formula: "B → O → D → M → A → S (Brackets, Orders, Divide, Multiply, Add, Subtract)",
-      whenToUse: "When evaluating any mixed arithmetic expression",
+      whenToUse: "Follow this order for every mixed-operation expression before attempting any shortcut.",
     },
     {
       name: "LCM for fractions",
       formula: "a/b ± c/d = (ad ± bc)/(bd); simplify by GCD",
-      whenToUse: "When adding or subtracting fractions",
+      whenToUse: "Apply this to combine fractions with different denominators, then reduce by GCD.",
     },
     {
       name: "Approximation tolerance",

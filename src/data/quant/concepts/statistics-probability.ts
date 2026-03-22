@@ -4,7 +4,7 @@ export const statisticsProbabilityConcept: QuantConcept = {
   topic: "statistics-probability",
   title: "Statistics & Probability",
   description:
-    "Statistics covers measures of central tendency (mean, median, mode) and dispersion (range, variance, SD). Probability quantifies the likelihood of events and extends to combined and conditional events, permutations, and combinations.",
+    "Statistics tests your grasp of central tendency (mean, median, mode) and dispersion (range, variance, SD), while probability problems measure how well you count favorable outcomes. SSC CGL Tier 2 and banking mains routinely combine both areas in a single paper. Drill the complement shortcut P(at least one) = 1 \\u2212 P(none) and the Sum = Mean \\u00d7 n back-calculation to cover the highest-frequency patterns.",
   keyIdea:
     "For statistics: Sum = Mean × n — use this to work backwards from a given average. For probability: P(at least one) = 1 − P(none) is almost always faster than direct counting.",
   formulas: [
@@ -13,14 +13,14 @@ export const statisticsProbabilityConcept: QuantConcept = {
       formula:
         "Mean = Sum / n  |  Median = middle value (sorted); even n → avg of n/2 and n/2+1 positions  |  Mode = most frequent",
       whenToUse:
-        "Use mean when all values are needed; median when outliers are present; mode for the most common value.",
+        "Pick mean for aggregate calculations, median when data has outliers, and mode when the question asks for the most frequent value.",
     },
     {
       name: "Dispersion",
       formula:
         "Range = Max − Min  |  Variance = Σ(xᵢ − Mean)² / n  |  Standard Deviation = √Variance",
       whenToUse:
-        "Range gives a quick spread estimate; SD/Variance are used when the question asks about consistency or variation.",
+        "Compute range for a quick spread check; switch to SD or variance when the question asks about consistency or data spread.",
     },
     {
       name: "Basic Probability",

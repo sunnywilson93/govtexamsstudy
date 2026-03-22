@@ -4,19 +4,19 @@ export const trigonometryConcept: QuantConcept = {
   topic: "trigonometry",
   title: "Trigonometry",
   description:
-    "Trigonometry deals with the relationship between angles and sides of a right triangle. Exam questions test standard values, identity manipulation, and heights-and-distances applications.",
+    "Trigonometry links angles to side lengths in a right triangle and branches into identity simplification and heights-and-distances word problems. SSC CGL Tier 1 carries 3\\u20135 questions while Tier 2 can go up to 10, making it the single highest-weighted quant sub-topic. Memorize the standard-value table and three Pythagorean identities \\u2014 they unlock nearly every exam question.",
   keyIdea:
     "SOHCAHTOA: sin=P/H, cos=B/H, tan=P/B. Memorise the standard value table for 0°–90° and the three Pythagorean identities — they unlock almost every exam question.",
   formulas: [
     {
       name: "Basic Ratios (SOHCAHTOA)",
       formula: "sin θ = P/H;  cos θ = B/H;  tan θ = P/B;  cosec θ = H/P;  sec θ = H/B;  cot θ = B/P",
-      whenToUse: "First step in any right-triangle problem — identify Perpendicular (P), Base (B) and Hypotenuse (H).",
+      whenToUse: "Label the Perpendicular (P), Base (B), and Hypotenuse (H) first, then pick the ratio that connects the two known or needed sides.",
     },
     {
       name: "Standard Values Table",
       formula: "sin: 0°=0, 30°=½, 45°=1/√2, 60°=√3/2, 90°=1  |  cos: reverse of sin row  |  tan: 0°=0, 30°=1/√3, 45°=1, 60°=√3, 90°=∞",
-      whenToUse: "Whenever a specific angle is given — substitute directly to get an exact numerical value.",
+      whenToUse: "Substitute the exact value the moment you see a specific standard angle in the expression.",
     },
     {
       name: "Pythagorean Identities",
