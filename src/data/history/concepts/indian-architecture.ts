@@ -4,7 +4,7 @@ export const indianArchitectureConcept: HistoryConcept = {
   topic: "indian-architecture",
   title: "Indian Architecture",
   description:
-    "Indian architecture spans over 5,000 years, from the planned cities of the Harappan civilization to the colonial-era buildings of British India. The three major styles of Hindu temple architecture — Nagara (North), Dravida (South), and Vesara (Deccan hybrid) — form the core of architectural study, alongside Indo-Islamic architecture, Mughal masterpieces, rock-cut caves, and colonial buildings.",
+    "Indian architecture spans over 5,000 years, from Harappan planned cities to Lutyens\\u2019 New Delhi. UPSC Prelims regularly tests Nagara vs Dravida vs Vesara distinctions, specific temple-patron pairings, rock-cut cave chronology, and Mughal architectural innovations (true arch, double dome, pietra dura). SSC exams ask factual recall on monuments, their builders, and key features. Knowing the Kailasa Temple (largest monolith), Brihadeshwara (tallest vimana at 66m), and Khajuraho (Chandela, Nagara style) covers the highest-frequency questions in Art and Culture.",
   period: "Art & Culture",
   keyDates: [
     {
@@ -47,17 +47,17 @@ export const indianArchitectureConcept: HistoryConcept = {
     {
       section: "Nagara Style (North Indian)",
       content:
-        "Characterized by a curvilinear tower (shikhara) that tapers as it rises. The temple plan includes the garbhagriha (sanctum), antarala (vestibule), mandapa (hall), and ardha-mandapa (entrance porch). No boundary walls or elaborate gateways. The shikhara has several sub-spires (urushringas). Regional variations: Odisha sub-style (Lingaraja Temple, Jagannath Temple, Konark Sun Temple); Khajuraho sub-style (Kandariya Mahadeva with 85 shikharas); Solanki/Gujarati sub-style (Modhera Sun Temple, Dilwara Temples at Mount Abu). The Nagara style evolved from the 5th century Gupta temples and reached its peak between the 9th-13th centuries.",
+        "The Nagara style features a curvilinear shikhara that tapers as it rises. A standard plan includes the garbhagriha (sanctum), antarala (vestibule), mandapa (hall), and ardha-mandapa (entrance porch), with no boundary walls or elaborate gateways. The shikhara carries several sub-spires (urushringas). Regional variations include the Odisha sub-style (Lingaraja, Jagannath, Konark Sun Temple), Khajuraho sub-style (Kandariya Mahadeva with 85 shikharas), and Solanki/Gujarati sub-style (Modhera Sun Temple, Dilwara Temples at Mount Abu). The style evolved from 5th-century Gupta temples and peaked between the 9th and 13th centuries.",
     },
     {
       section: "Dravida Style (South Indian)",
       content:
-        "Characterized by a pyramidal tower (vimana) over the sanctum, composed of progressively smaller storeys (talas). Distinctive features: enclosed within a boundary wall (prakara), elaborate entrance gateways (gopurams) that became progressively taller and more ornate, a water tank within the temple complex, and a separate mandapa (hall). Major examples: Shore Temple at Mamallapuram (Pallavas, 8th c.), Brihadeshwara Temple at Thanjavur (Chola, 1010 CE — a UNESCO World Heritage Site, 66m vimana), Meenakshi Temple at Madurai (Nayakas), and Ranganathaswamy Temple at Srirangam (largest temple complex in India).",
+        "The Dravida style places a pyramidal vimana over the sanctum, built from progressively smaller storeys (talas). Temples sit within a boundary wall (prakara), use elaborate gopuram entrance gateways that grew taller and more ornate over time, contain a water tank, and have a separate mandapa (hall). Key examples: Shore Temple at Mamallapuram (Pallavas, 8th c.), Brihadeshwara Temple at Thanjavur (Chola, 1010 CE \\u2014 UNESCO site, 66m vimana), Meenakshi Temple at Madurai (Nayakas), and Ranganathaswamy Temple at Srirangam (India\\u2019s largest temple complex).",
     },
     {
       section: "Vesara Style (Deccan Hybrid)",
       content:
-        "A hybrid style blending Nagara and Dravida elements, primarily found in the Deccan region (Karnataka, Maharashtra). Patronized by the Chalukyas of Badami, Rashtrakutas, and Hoysalas. Features include stellate (star-shaped) plans, highly ornate walls with intricate carvings, and towers that combine elements of both shikhara and vimana. Key examples: Durga Temple at Aihole (apsidal plan), Virupaksha Temple at Pattadakal (UNESCO site), and the Hoysala temples at Belur, Halebidu, and Somnathpur (Chennakesava, Hoysaleswara, Keshava temples) known for their soapstone carvings of extraordinary detail.",
+        "The Vesara style blends Nagara and Dravida elements and appears primarily in the Deccan (Karnataka, Maharashtra). The Chalukyas of Badami, Rashtrakutas, and Hoysalas patronized it. Features include stellate (star-shaped) plans, highly ornate walls with intricate carvings, and towers combining shikhara and vimana elements. Key examples: Durga Temple at Aihole (apsidal plan), Virupaksha Temple at Pattadakal (UNESCO site), and the Hoysala temples at Belur, Halebidu, and Somnathpur (Chennakesava, Hoysaleswara, Keshava) famed for soapstone carvings of extraordinary detail.",
     },
     {
       section: "Rock-Cut Architecture",
