@@ -4,7 +4,7 @@ export const britishExpansionConcept: HistoryConcept = {
   topic: "british-expansion",
   title: "British Conquest & Expansion in India",
   description:
-    "The British conquest of India was a gradual process spanning over a century (1757-1857). Starting with the Battle of Plassey, the East India Company used a combination of military force, diplomatic cunning, and administrative policies like Subsidiary Alliance and Doctrine of Lapse to bring the entire Indian subcontinent under its control.",
+    "The East India Company conquered India over a century (1757-1857) through military force, diplomatic manipulation, the Subsidiary Alliance, and the Doctrine of Lapse. Exams test Plassey vs Buxar significance, which states fell to which policy, and Governor-General associations (Cornwallis\\u2014Third Mysore War, Wellesley\\u2014Subsidiary Alliance, Dalhousie\\u2014Doctrine of Lapse). Dalhousie\\u2019s annexation of Awadh on grounds of \\u2018misgovernance\\u2019 (not Doctrine of Lapse) and the Treaty of Allahabad\\u2019s Diwani-Nizamat distinction are perennial traps.",
   period: "Modern India",
   keyDates: [
     {
@@ -82,17 +82,17 @@ export const britishExpansionConcept: HistoryConcept = {
     {
       section: "Battle of Plassey (1757)",
       content:
-        "The Battle of Plassey was fought on 23 June 1757 between the forces of the East India Company led by Robert Clive and the Nawab of Bengal, Siraj-ud-Daulah. The real cause was the Company's abuse of trade privileges (dastak) and fortification of Calcutta without permission. The battle was won through conspiracy — Mir Jafar (Siraj's commander-in-chief), Rai Durlabh, Jagat Seth, and Omichand betrayed the Nawab. Siraj was killed, and Mir Jafar was installed as the puppet Nawab. Plassey was more of a 'transaction' than a battle — it established British political control over Bengal and gave them enormous wealth.",
+        "Robert Clive fought the Battle of Plassey on 23 June 1757 against Nawab Siraj-ud-Daulah. The Company had abused its trade privileges (dastak) and fortified Calcutta without permission. Mir Jafar (Siraj\\u2019s commander-in-chief), Rai Durlabh, Jagat Seth, and Omichand conspired with Clive; their betrayal decided the outcome. Siraj was killed, and Clive installed Mir Jafar as a puppet Nawab. Plassey functioned more as a transaction than a battle \\u2014 it handed political control of Bengal and its enormous wealth to the Company.",
     },
     {
       section: "Battle of Buxar (1764)",
       content:
-        "The Battle of Buxar (22 October 1764) was fought between the British under Major Hector Munro and the combined forces of Mir Qasim (deposed Nawab of Bengal), Shuja-ud-Daulah (Nawab of Awadh), and Shah Alam II (Mughal Emperor). Mir Qasim had been installed as Nawab after Mir Jafar was deposed but turned hostile when he tried to abolish the Company's trade privileges. Buxar was far more militarily significant than Plassey — it established the Company as an unrivalled military power in northern India. The subsequent Treaty of Allahabad (1765) gave the Company Diwani rights over Bengal, Bihar, and Orissa.",
+        "Major Hector Munro defeated the combined forces of Mir Qasim (deposed Nawab of Bengal), Shuja-ud-Daulah (Nawab of Awadh), and Mughal Emperor Shah Alam II at the Battle of Buxar on 22 October 1764. Mir Qasim had turned hostile after attempting to abolish the Company\\u2019s trade privileges. Buxar proved far more significant militarily than Plassey \\u2014 it established the Company as the unchallenged military power in northern India. The Treaty of Allahabad (1765) that followed gave the Company Diwani (revenue collection) rights over Bengal, Bihar, and Orissa.",
     },
     {
       section: "Subsidiary Alliance System",
       content:
-        "Introduced by Lord Wellesley (Governor-General, 1798-1805), the Subsidiary Alliance system required Indian rulers to maintain a British Resident at their courts, accept a British subsidiary force for 'protection,' pay for the maintenance of this force (or cede territory in lieu), and surrender control of their foreign affairs. In return, the British promised protection from external aggression. States that accepted: Hyderabad (1798, first to accept), Mysore (1799), Tanjore (1799), Awadh (1801), Peshwa (1802, Treaty of Bassein), Sindhia (1804), Jodhpur, Jaipur, Macheri, Bundi, and Bharatpur. This system was a masterstroke — it disarmed Indian states, isolated them diplomatically, and made them financially dependent on the British without the need for direct conquest.",
+        "Lord Wellesley (Governor-General, 1798-1805) designed the Subsidiary Alliance to disarm Indian states without direct conquest. Each ruler accepted a British Resident, maintained a British subsidiary force (or ceded territory to pay for it), and surrendered foreign affairs. States that signed: Hyderabad (1798, the first), Mysore (1799), Tanjore (1799), Awadh (1801), the Peshwa (1802, Treaty of Bassein), Scindia (1804), Jodhpur, Jaipur, Macheri, Bundi, and Bharatpur. The system isolated each state diplomatically, drained its treasury, and made it financially dependent on the Company.",
     },
     {
       section: "Doctrine of Lapse",

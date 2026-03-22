@@ -4,7 +4,7 @@ export const congressNationalMovementConcept: HistoryConcept = {
   topic: "congress-national-movement",
   title: "Indian National Congress & the National Movement",
   description:
-    "The Indian National Congress (INC), founded in 1885, became the principal vehicle of India's freedom struggle. The movement evolved through distinct phases — the Moderate phase (1885-1905), the Extremist phase (1905-1919), and the Gandhian phase (1919-1947). The early Congress leaders pioneered constitutional agitation, while later leaders adopted mass mobilization and revolutionary methods.",
+    "The Indian National Congress (founded 1885) drove India\\u2019s freedom struggle through three phases: Moderate (1885-1905), Extremist (1905-1919), and Gandhian (1919-1947). Exams test Congress session details (year, president, resolution), the Moderate-Extremist divide, and landmark events like the Salt March, Quit India, and the Jallianwala Bagh Massacre. Questions on the Surat Split, Home Rule Leagues, and the INA trials appear across UPSC, SSC, and RRB papers.",
   period: "Modern India",
   keyDates: [
     {
@@ -82,12 +82,12 @@ export const congressNationalMovementConcept: HistoryConcept = {
     {
       section: "Foundation of the INC",
       content:
-        "The Indian National Congress was founded in December 1885 at Bombay. Allan Octavian Hume (a retired British civil servant) is credited as the principal founder, though Indian leaders like Dadabhai Naoroji, Pherozeshah Mehta, Dinshaw Wacha, and W.C. Bonnerjee played key roles. The first session (28-31 December 1885) was attended by 72 delegates. W.C. Bonnerjee (Womesh Chunder Bonnerjee) was the first president. The 'Safety Valve' theory suggests Hume founded the Congress to provide a safe outlet for Indian grievances and prevent a revolution like 1857. Lord Dufferin (Viceroy) initially encouraged the Congress. The first few sessions discussed issues like civil service reform, reduction of military expenditure, and economic exploitation.",
+        "Allan Octavian Hume, a retired British civil servant, organised the Indian National Congress at Bombay in December 1885; Indian leaders Dadabhai Naoroji, Pherozeshah Mehta, Dinshaw Wacha, and W.C. Bonnerjee played key roles. The first session (28-31 December 1885) drew 72 delegates and elected W.C. Bonnerjee as president. The \\u2018Safety Valve\\u2019 theory holds that Hume created the Congress to channel Indian grievances and prevent another revolt like 1857. Viceroy Lord Dufferin initially encouraged the body. Early sessions focused on civil service reform, reducing military expenditure, and documenting economic exploitation.",
     },
     {
       section: "Moderate Phase (1885-1905)",
       content:
-        "The Moderates believed in constitutional methods — petitions, memorials, resolutions, and delegations to Britain. Key leaders: Dadabhai Naoroji ('Grand Old Man of India,' first Indian MP in the British Parliament — Finsbury Central, 1892), Gopal Krishna Gokhale ('Political Guru of Gandhi,' founded the Servants of India Society in 1905), Surendranath Banerjee ('Indian Burke,' founder of the Indian National Association, 1876), Pherozeshah Mehta ('Lion of Bombay'), Dinshaw Wacha, Madan Mohan Malaviya, and R.C. Dutt. Achievements: articulated the economic critique of British rule (Drain of Wealth), demanded Indianization of civil services, and created political awareness. Limitations: their methods were described as 'political mendicancy' by Extremists; they represented the educated elite and had no mass base.",
+        "The Moderates relied on constitutional methods \\u2014 petitions, memorials, resolutions, and delegations to Britain. Key leaders: Dadabhai Naoroji (\\u2018Grand Old Man of India,\\u2019 first Indian MP in the British Parliament \\u2014 Finsbury Central, 1892), Gopal Krishna Gokhale (\\u2018Political Guru of Gandhi,\\u2019 founded Servants of India Society, 1905), Surendranath Banerjee (\\u2018Indian Burke,\\u2019 founder of Indian National Association, 1876), Pherozeshah Mehta (\\u2018Lion of Bombay\\u2019), Dinshaw Wacha, Madan Mohan Malaviya, and R.C. Dutt. They articulated the Drain of Wealth critique, demanded Indianization of civil services, and built early political awareness. Extremists dismissed their approach as \\u2018political mendicancy\\u2019; the Moderates represented the educated elite and lacked a mass base.",
     },
     {
       section: "Extremist Phase (1905-1919)",

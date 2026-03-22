@@ -4,7 +4,7 @@ export const delhiSultanateConcept: HistoryConcept = {
   topic: "delhi-sultanate",
   title: "Delhi Sultanate",
   description:
-    "The Delhi Sultanate (1206-1526 CE) was a series of five successive Muslim dynasties that ruled from Delhi over large parts of the Indian subcontinent. Established after Muhammad of Ghor's conquests, the Sultanate transformed India's political landscape, introduced new administrative systems, and facilitated Indo-Islamic cultural synthesis.",
+    "Five successive dynasties \\u2014 Slave, Khalji, Tughlaq, Sayyid, and Lodi \\u2014 ruled from Delhi between 1206 and 1526 CE, reshaping India\\u2019s political landscape. Exams test Alauddin Khalji\\u2019s market reforms, Muhammad bin Tughlaq\\u2019s failed experiments (capital transfer, token currency), and the Iqta system. The Sultanate introduced Indo-Islamic architecture, the silver tanka, and administrative structures that later influenced the Mughal and British periods.",
   period: "Medieval India",
   keyDates: [
     {
@@ -72,12 +72,12 @@ export const delhiSultanateConcept: HistoryConcept = {
     {
       section: "Slave (Mamluk) Dynasty (1206-1290)",
       content:
-        "Founded by Qutbuddin Aibak, a Turkish slave-general of Muhammad of Ghor. Aibak began construction of the Qutub Minar and the Quwwat-ul-Islam mosque in Delhi. Iltutmish (1210-1236) was the real consolidator — he introduced the silver tanka and copper jital, organized the Iqta system, and received investiture from the Abbasid Caliph. Razia Sultana (1236-1240) was the only female ruler; she was competent but faced opposition from the Turkish nobility (the Chalisa/Turkan-i-Chahalgani — the group of forty). Balban (1266-1287) strengthened the sultanate with an iron-fist policy, established the theory of divine right of kings (Niyabat-i-Khudai), destroyed the power of the Forty nobles, and created an efficient spy system (barids).",
+        "Qutbuddin Aibak, a Turkish slave-general of Muhammad of Ghor, founded the dynasty and began the Qutub Minar and Quwwat-ul-Islam mosque in Delhi. Iltutmish (1210-1236) consolidated the Sultanate: he introduced the silver tanka and copper jital, organised the Iqta system, and secured investiture from the Abbasid Caliph. Razia Sultana (1236-1240), the only female ruler, governed competently but faced relentless opposition from the Turkish nobility (Chalisa/Turkan-i-Chahalgani \\u2014 the group of forty). Balban (1266-1287) crushed the Forty nobles, imposed the theory of divine kingship (Niyabat-i-Khudai), and built an efficient spy network (barids).",
     },
     {
       section: "Khalji Dynasty (1290-1320)",
       content:
-        "Jalaluddin Khalji (1290-1296) founded the dynasty but was murdered by his ambitious nephew Alauddin Khalji. Alauddin Khalji (1296-1316) was the most powerful Khalji ruler. He introduced revolutionary market control reforms (four separate markets for grain, cloth, horses, and cattle/slaves) enforced by controllers (shahna-i-mandi), secret reporters (munhiyans), and harsh punishments. He successfully repelled multiple Mongol invasions (1299, 1303, 1306). His military commander Malik Kafur led expeditions to the Deccan and South India, bringing back enormous wealth. Alauddin also introduced the system of branding horses (dagh) and maintaining descriptive rolls of soldiers (chehra/huliya) to prevent fraud in the army.",
+        "Jalaluddin Khalji (1290-1296) founded the dynasty; his nephew Alauddin Khalji murdered him and seized the throne. Alauddin (1296-1316) set up four regulated markets (grain, cloth, horses, cattle/slaves), enforced prices through controllers (shahna-i-mandi), secret reporters (munhiyans), and harsh penalties. He repelled multiple Mongol invasions (1299, 1303, 1306) and sent Malik Kafur on expeditions to the Deccan and South India that brought back enormous plunder. He also introduced horse-branding (dagh) and descriptive soldier rolls (chehra/huliya) to eliminate fraud in the army.",
     },
     {
       section: "Tughlaq Dynasty (1320-1414)",
