@@ -4,7 +4,7 @@ export const soilsConcept: SubjectConcept = {
   topic: 'soils',
   title: 'Soils of India',
   description:
-    'India has diverse soil types due to its varied relief, climate, vegetation, and parent rock. The Indian Council of Agricultural Research (ICAR) has classified Indian soils into 8 major types. Soils directly influence agricultural productivity and are a critical topic for government exams.',
+    'India\'s varied relief, climate, vegetation, and parent rock produce 8 major soil types under the ICAR classification. Soil type directly controls crop suitability — alluvial soils anchor the wheat-rice belt, black soils support cotton, and laterites sustain tea and coffee. Exams test soil-crop-region associations, formation processes (pedogenesis), the Soil Health Card Scheme, and conservation measures.',
   category: 'Physical Geography',
   keyDates: [
     { year: '1956', event: 'Soil Survey of India established under the Ministry of Agriculture — maps soil types and produces soil resource inventories' },
@@ -25,17 +25,17 @@ export const soilsConcept: SubjectConcept = {
     {
       section: 'Alluvial Soils',
       content:
-        'Alluvial soils are the most widespread and important soils in India, covering about 43% of the total area. Found mainly in the Northern Plains (Indo-Gangetic-Brahmaputra Plain), river valleys, and deltas of peninsular rivers. Two types: (1) Bhangar — older alluvium, found on elevated terraces away from river banks, contains calcareous nodules (kankar), less fertile; (2) Khadar — newer alluvium, found on floodplains, renewed annually by floods, more fertile. Rich in potash and lime but deficient in nitrogen, phosphorus, and humus. These soils are ideal for growing rice, wheat, sugarcane, maize, pulses, and oilseeds. The colour varies from light grey to ash grey (depending on depth of deposition). The alluvial soils of the Ganga-Yamuna Doab are among the most fertile in the world.',
+        'Alluvial soils cover about 43% of India and form the backbone of its agriculture. Rivers deposit them across the Northern Plains (Indo-Gangetic-Brahmaputra Plain), river valleys, and peninsular deltas. Two sub-types matter: Bhangar (older alluvium on elevated terraces, contains calcareous kankar nodules, less fertile) and Khadar (newer alluvium on floodplains, renewed by annual floods, more fertile). These soils carry abundant potash and lime but lack nitrogen, phosphorus, and humus. They support rice, wheat, sugarcane, maize, pulses, and oilseeds. Colour ranges from light grey to ash grey depending on deposition depth. The Ganga-Yamuna Doab alluvial soils rank among the most fertile on Earth.',
     },
     {
       section: 'Black Soils (Regur)',
       content:
-        'Black soils or Regur soils are derived from the weathering of Deccan Trap basalt (lava). They are also called "Black Cotton Soil" because cotton is the main crop grown on them. Found predominantly in Maharashtra, Gujarat, western Madhya Pradesh, northern Karnataka, parts of Telangana, and Andhra Pradesh. Key properties: high clay content (montmorillonite), self-ploughing nature (develop deep cracks in summer, swell when wet), high moisture retention capacity, rich in iron, magnesium, calcium, and aluminium but deficient in nitrogen, phosphorus, and organic matter. These soils are ideal for dry farming due to their moisture-retaining capacity. The black colour is due to titaniferous magnetite (iron and titanium compounds). Thickness varies from a thin layer on uplands to 6 metres in valleys.',
+        'Black soils (Regur) weather from Deccan Trap basalt and dominate Maharashtra, Gujarat, western MP, northern Karnataka, and parts of Telangana and AP. Farmers call them "Black Cotton Soil" because cotton thrives on them. High montmorillonite clay content gives these soils their defining traits: they crack deeply in summer, swell when wet, and effectively plough themselves. They retain moisture well, making them ideal for dry farming. Chemically, they carry iron, magnesium, calcium, and aluminium but lack nitrogen, phosphorus, and organic matter. Titaniferous magnetite — not humus — produces the black colour. Thickness ranges from a thin veneer on uplands to 6 metres in valleys.',
     },
     {
       section: 'Red and Yellow Soils',
       content:
-        'Red soils cover about 18.5% of India and develop on crystalline igneous rocks (granite, gneiss) in areas of low rainfall. Found in Tamil Nadu, parts of Karnataka, Andhra Pradesh, Odisha, Jharkhand, Chhattisgarh, and Madhya Pradesh. The red colour is due to diffusion of iron oxide (haematite) in crystalline and metamorphic rocks. Yellow colour appears in hydrated form (goethite). Properties: sandy to loamy texture, porous, friable, poor in nitrogen, phosphorus, and humus but rich in iron and potash. Less fertile than alluvial and black soils. With irrigation and fertilizers, these soils can support millets, pulses, oilseeds, and tobacco. In hilly areas, they are thin and gravelly; in plains, they are deeper and more fertile.',
+        'Red soils spread across about 18.5% of India, forming on crystalline igneous rocks (granite, gneiss) under low rainfall. Tamil Nadu, parts of Karnataka, AP, Odisha, Jharkhand, Chhattisgarh, and MP all carry them. Iron oxide (haematite) gives the red colour; the hydrated form (goethite) turns them yellow. Texture runs sandy to loamy — porous, friable, poor in nitrogen, phosphorus, and humus but rich in iron and potash. They fall below alluvial and black soils in fertility, yet irrigation and fertilizers enable millets, pulses, oilseeds, and tobacco. In hilly terrain they stay thin and gravelly; on plains they deepen and become more productive.',
     },
     {
       section: 'Laterite, Forest & Other Soils',
