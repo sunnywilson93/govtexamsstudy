@@ -4,7 +4,7 @@ export const postMauryaConcept: HistoryConcept = {
   topic: "post-maurya",
   title: "Post-Maurya Period",
   description:
-    "The Post-Maurya Period (c. 185 BCE - 320 CE) witnessed the rise of several dynasties that filled the power vacuum left by the Mauryan decline. This era saw significant foreign invasions (Indo-Greeks, Shakas, Parthians, Kushanas), the rise of indigenous dynasties (Sungas, Kanvas, Satavahanas), and remarkable developments in art, trade, and cultural synthesis between Indian and Hellenistic traditions.",
+    "The Post-Maurya period (c. 185 BCE-320 CE) produced the Gandhara and Mathura art schools, the Shaka Era (78 CE), and the Indo-Roman trade network, all heavily tested in UPSC Prelims. Exams ask candidates to sequence the foreign invaders (Greeks, Shakas, Parthians, Kushanas), identify Rudradaman\\'s Junagarh inscription as the first long Sanskrit inscription, and recall Kanishka\\'s Fourth Buddhist Council. SSC/RRB focus on the Shaka Era, Milinda Panho, and matching rulers to dynasties.",
   period: "Ancient India",
   keyDates: [
     {
@@ -77,12 +77,12 @@ export const postMauryaConcept: HistoryConcept = {
     {
       section: "Shunga Dynasty (c. 185-73 BCE)",
       content:
-        "Pushyamitra Shunga, a Brahmin general of the Mauryan army, founded the dynasty by killing the last Maurya king Brihadratha during a military parade. The Shungas are credited with the revival of Brahmanical Hinduism — Pushyamitra performed two Ashvamedha yajnas. He is accused by Buddhist sources of persecuting Buddhists, though this is debated — archaeological evidence shows that Buddhist monuments (Sanchi, Bharhut) were actually expanded during the Shunga period. He successfully repelled the Greek invasion of Menander. The Shunga period saw the development of the Bhagavata cult (Vaishnavism) — the Heliodorus Pillar at Besnagar (Vidisha) erected by a Greek ambassador who became a devotee of Vasudeva. Important art: expansion of the Sanchi Stupa (toranas/gateways added), Bharhut Stupa sculptures, and Sunga terracotta art. The dynasty lasted about 112 years through 10 rulers.",
+        "Pushyamitra Shunga, a Brahmin general in the Mauryan army, seized power by killing King Brihadratha during a military parade and founded the Shunga dynasty. He revived Brahmanical Hinduism by performing two Ashvamedha yajnas. Buddhist sources accuse him of persecuting Buddhists, but archaeological evidence shows that Sanchi and Bharhut monuments actually expanded under Shunga rule. He repelled Menander\\'s Greek invasion. The Bhagavata cult (Vaishnavism) grew during this period: the Greek ambassador Heliodorus erected a pillar at Besnagar (Vidisha) declaring himself a devotee of Vasudeva. Artisans added the toranas (gateways) at Sanchi, carved the Bharhut Stupa reliefs, and produced distinctive Shunga terracottas. The dynasty lasted about 112 years across 10 rulers.",
     },
     {
       section: "Kanva Dynasty & Transition",
       content:
-        "The Kanva dynasty (c. 73-28 BCE) was founded by Vasudeva Kanva, a Brahmin minister who overthrew the last Shunga ruler Devabhuti. The Kanvas were a minor dynasty ruling only Magadha and eastern India, lasting about 45 years through four rulers. Their political significance is limited, but they maintained the Brahmanical religious tradition established by the Shungas. They were overthrown by the Satavahanas, who claimed to have destroyed the Kanva line. The Puranas provide the primary literary evidence for the Kanvas. The transition from Shungas to Kanvas and then to Satavahana dominance represents the gradual shift of political power from the Gangetic plains to the Deccan.",
+        "Vasudeva Kanva, a Brahmin minister, overthrew the last Shunga ruler Devabhuti and founded the Kanva dynasty (c. 73-28 BCE). The Kanvas controlled only Magadha and eastern India, ruling for about 45 years across four kings. They carried forward the Brahmanical tradition the Shungas had established. The Satavahanas eventually destroyed the Kanva line, as their own inscriptions claim. The Puranas supply the main literary evidence for the dynasty. The shift from Shungas to Kanvas and then to Satavahana dominance traces the gradual migration of political power from the Gangetic plains to the Deccan.",
     },
     {
       section: "Indo-Greeks (Yavanas)",

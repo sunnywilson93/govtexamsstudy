@@ -4,7 +4,7 @@ export const princelyStatesConcept: HistoryConcept = {
   topic: "princely-states",
   title: "Integration of Princely States",
   description:
-    "At the time of independence, India had 565 princely states covering about 40% of the land area and 23% of the population. The integration of these states into the Indian Union was a monumental task accomplished primarily by Sardar Vallabhbhai Patel (as Deputy PM and Home Minister) and V.P. Menon (Secretary, Ministry of States), through diplomacy, persuasion, and in a few cases, military action.",
+    "Sardar Patel and V.P. Menon integrated 565 princely states (40% of India\\'s land, 23% of its population) into the Indian Union through diplomacy, privy purses, and selective military action. UPSC Prelims and Mains regularly test Operation Polo (Hyderabad, 1948), Kashmir\\'s Instrument of Accession (October 26, 1947), and the Junagadh plebiscite. SSC and CDS exams ask about the Instrument of Accession framework, Part A/B/C state classification, and the 26th Amendment (1971) that abolished privy purses.",
   period: "Post-Independence",
   keyDates: [
     {
@@ -47,17 +47,17 @@ export const princelyStatesConcept: HistoryConcept = {
     {
       section: "Background & Legal Framework",
       content:
-        "Under British paramountcy, princely states had internal autonomy but their external affairs were controlled by the Crown. The Indian Independence Act 1947 stated that British paramountcy over princely states would lapse on 15 August 1947, leaving them technically free to join India, Pakistan, or remain independent. Mountbatten advised the princes to accede to the dominion contiguous to their states and on the basis of their subjects' wishes. The Instrument of Accession was the legal document by which a princely state agreed to merge with India, initially ceding only three subjects — defence, external affairs, and communications.",
+        "Under British paramountcy, princely states ran their internal affairs but the Crown controlled their external relations. The Indian Independence Act 1947 declared that paramountcy would lapse on August 15, 1947, leaving each state technically free to join India, join Pakistan, or stay independent. Mountbatten advised the princes to accede to the dominion contiguous to their territory and aligned with their subjects\\' wishes. Each state signed an Instrument of Accession that initially ceded only three subjects to the Indian Union: defence, external affairs, and communications.",
     },
     {
       section: "Sardar Patel & V.P. Menon's Strategy",
       content:
-        "Sardar Patel adopted a carrot-and-stick approach. He offered generous privy purses, guaranteed rights and privileges to the rulers, and assured them of dignified positions. V.P. Menon handled the administrative and legal aspects. They used a combination of persuasion, popular pressure from subjects, and the implicit threat of force. Most princes recognized the inevitability of joining India, especially after Mountbatten's personal appeals. By 15 August 1947, 562 of 565 states had signed the Instrument of Accession, a remarkable diplomatic achievement completed in just a few weeks.",
+        "Patel deployed a carrot-and-stick strategy: he offered generous privy purses, guaranteed rulers\\' rights and privileges, and assured them dignified positions, while V.P. Menon managed the administrative and legal mechanics. The duo combined persuasion, popular pressure from subjects, and the implicit threat of force. Most princes recognised that joining India was inevitable, especially after Mountbatten personally appealed to them. By August 15, 1947, 562 of 565 states had signed the Instrument of Accession, a diplomatic feat completed in just weeks.",
     },
     {
       section: "Hyderabad — Operation Polo",
       content:
-        "Hyderabad, ruled by Nizam Osman Ali Khan, was the largest and richest princely state. The Nizam declared independence and sought to remain as an independent country. He was supported by the Razakars, a paramilitary militia led by Qasim Razvi, which terrorized the Hindu population. After diplomatic negotiations failed and violence escalated, Sardar Patel authorized Operation Polo (13-17 September 1948). The Indian Army entered Hyderabad and the Nizam surrendered after five days. The action was described as a 'police action' to restore order, not a military invasion.",
+        "Nizam Osman Ali Khan ruled Hyderabad, the largest and richest princely state, and declared independence rather than accede to India. The Razakars, a paramilitary militia under Qasim Razvi, terrorized the Hindu population to enforce the Nizam\\'s stance. When diplomacy collapsed and violence intensified, Patel authorized Operation Polo (September 13-17, 1948). The Indian Army entered Hyderabad and the Nizam surrendered within five days. The government described the operation as a \\'police action\\' to restore order, not a military invasion.",
     },
     {
       section: "Jammu & Kashmir — Accession & Conflict",
