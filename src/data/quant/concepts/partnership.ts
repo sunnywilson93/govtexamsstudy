@@ -4,19 +4,19 @@ export const partnershipConcept: QuantConcept = {
   topic: "partnership",
   title: "Partnership",
   description:
-    "Partnership problems involve two or more people who invest capital in a business and share the resulting profit (or loss). The key principle is that profit is divided in proportion to each partner's equivalent capital — the product of investment and time.",
+    "Partnership problems split profit among investors in proportion to their equivalent capital (investment \\u00D7 time). SSC CGL and IBPS PO carry 2\\u20133 partnership questions per paper, often paired with ratio concepts. Compound partnership \\u2014 where partners join or leave at different times \\u2014 is the most tested variant. Always convert to monthly equivalent capital before computing the ratio.",
   keyIdea:
     "Profit is split in ratio of equivalent capital (investment × time). Simple partnership: same duration → use capital only. Compound partnership: different durations → multiply capital × months.",
   formulas: [
     {
       name: "Simple Partnership Ratio",
       formula: "Profit ratio = Investment_A : Investment_B",
-      whenToUse: "When all partners invest for equal time periods.",
+      whenToUse: "Use directly when all partners invest for equal time \\u2014 time cancels out, so compare capital amounts alone.",
     },
     {
       name: "Compound Partnership",
       formula: "Equivalent capital = Investment × Time (months)",
-      whenToUse: "When partners invest for different durations.",
+      whenToUse: "Multiply each partner\\u2019s capital by the number of months they stayed invested, then compare the products to get the profit-sharing ratio.",
     },
     {
       name: "Profit Share",

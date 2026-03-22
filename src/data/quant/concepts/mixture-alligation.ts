@@ -4,19 +4,19 @@ export const mixtureAlligationConcept: QuantConcept = {
   topic: "mixture-alligation",
   title: "Mixture & Alligation",
   description:
-    "Mixture problems involve combining two or more ingredients at different values (price, concentration, strength). Alligation is the shortcut method that finds the mixing ratio directly from the values without setting up equations.",
+    "Mixture problems combine ingredients at different prices or concentrations; alligation finds the mixing ratio without equations. SSC CGL Tier 1, Tier 2, and banking exams each carry 1\\u20132 mixture questions. Repeated dilution and profit-based alligation are the hardest and most frequently tested variants. Draw the alligation cross every time \\u2014 it eliminates algebra entirely.",
   keyIdea:
     "Draw the alligation cross: put C1 top-left, C2 top-right, mean price Cm in centre. The diagonal differences give the mixing ratio: (C2 − Cm) : (Cm − C1).",
   formulas: [
     {
       name: "Alligation Rule (Mixing Ratio)",
       formula: "Ratio = (C2 − Cm) : (Cm − C1)  where Cm is the mean/target value",
-      whenToUse: "To find in what ratio two ingredients must be mixed to achieve a target price or concentration.",
+      whenToUse: "Find the mixing ratio of two ingredients at different prices or concentrations \\u2014 place the target value in the centre of the alligation cross and read off the ratio from the diagonal differences.",
     },
     {
       name: "Repeated Dilution",
       formula: "Pure liquid remaining = V × ((V − x) / V)ⁿ",
-      whenToUse: "When x litres are removed and replaced with water n times from a V-litre container.",
+      whenToUse: "Apply when x litres are removed and replaced with water n times from a V-litre container \\u2014 plug values directly into the formula instead of tracking each round separately.",
     },
     {
       name: "Weighted Average (Mixed Mixture)",

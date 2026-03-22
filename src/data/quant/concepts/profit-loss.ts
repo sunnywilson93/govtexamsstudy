@@ -4,19 +4,19 @@ export const profitLossConcept: QuantConcept = {
   topic: "profit-loss",
   title: "Profit, Loss & Discount",
   description:
-    "Profit and Loss problems involve buying and selling goods. The base is always the Cost Price (CP). Marked Price (MP) is the labelled price; Selling Price (SP) is what the buyer actually pays after any discount.",
+    "Profit & Loss tests buying, selling, and discounting. Every SSC and banking paper carries P&L questions \\u2014 dishonest dealer and successive discount variants dominate SSC CGL Tier 2. Always calculate profit% and loss% on Cost Price, never on Selling Price or Marked Price. Master the CP\\u2013MP\\u2013SP chain: CP decides profit/loss, MP decides discount, SP is what the buyer pays.",
   keyIdea:
     "Profit% and Loss% are always calculated on Cost Price (CP) — never on Selling Price or Marked Price.",
   formulas: [
     {
       name: "Profit / Loss Percentage",
       formula: "P% or L% = (Profit or Loss / CP) × 100",
-      whenToUse: "To find what percentage of profit or loss was made on the cost price.",
+      whenToUse: "Divide profit (or loss) by CP and multiply by 100 \\u2014 never use SP as the base, even if the problem gives SP first.",
     },
     {
       name: "Selling Price from CP and P%",
       formula: "SP = CP × (100 + P%) / 100",
-      whenToUse: "To find SP when CP and profit percentage are known.",
+      whenToUse: "Compute the selling price directly from cost price and desired profit% \\u2014 use the multiplier (100 + P%)/100 to skip intermediate steps.",
     },
     {
       name: "Selling Price from CP and L%",

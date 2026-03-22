@@ -4,7 +4,7 @@ export const logarithmsConcept: QuantConcept = {
   topic: "logarithms",
   title: "Logarithms",
   description:
-    "Logarithms express exponents: log_b(x) = y means b^y = x. They convert multiplication to addition and division to subtraction, making large-number calculations manageable in competitive exams.",
+    "Logarithms reverse exponentiation: log_b(x) = y means b^y = x. Exams test simplification using product, quotient, and power rules, along with base-conversion and standard log values. SSC CGL Tier 1 and Tier 2 each carry 1\\u20132 log questions. Memorize log 2, log 3, and log 7 to solve numerical evaluations within seconds.",
   keyIdea:
     "If log_b(x) = y, then b^y = x. Logarithm is the inverse of exponentiation — log_10(1000) = 3 because 10^3 = 1000.",
   formulas: [
@@ -12,13 +12,13 @@ export const logarithmsConcept: QuantConcept = {
       name: "Product Rule",
       formula: "log(m × n) = log m + log n",
       whenToUse:
-        "When multiplying two numbers under a single log",
+        "Split a product inside a log into a sum \\u2014 use this to break down log(12) into log 4 + log 3 or similar.",
     },
     {
       name: "Quotient Rule",
       formula: "log(m / n) = log m − log n",
       whenToUse:
-        "When dividing numbers under a log",
+        "Convert a division inside a log into a subtraction \\u2014 apply when simplifying expressions like log(50/2).",
     },
     {
       name: "Power Rule",

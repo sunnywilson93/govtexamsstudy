@@ -4,19 +4,19 @@ export const sequencesSeriesConcept: QuantConcept = {
   topic: "sequences-series",
   title: "Sequences & Series (AP/GP)",
   description:
-    "Sequences & Series covers Arithmetic Progressions (AP) and Geometric Progressions (GP) — two fundamental patterns found in competitive exam number series, word problems, and sum questions. Identifying which type applies is the first and most important step.",
+    "Sequences & Series covers AP (constant difference) and GP (constant ratio) \\u2014 the two patterns behind number series and sum-based word problems. SSC CGL Tier 1 and banking exams carry 3\\u20135 questions per paper; IBPS PO Prelims tests 5 patterns per set. Identify AP vs GP first: check if consecutive differences are equal (AP) or consecutive ratios are equal (GP), then apply the matching formula.",
   keyIdea:
     "AP: constant difference. GP: constant ratio. Check which one applies first. For AP sum, the fastest form is n/2 × (first + last).",
   formulas: [
     {
       name: "AP nth term",
       formula: "aₙ = a + (n−1)d",
-      whenToUse: "To find any term of an arithmetic progression",
+      whenToUse: "Plug in first term (a), common difference (d), and position (n) to compute any AP term directly without listing all terms.",
     },
     {
       name: "AP Sum",
       formula: "Sₙ = n/2 × (first + last) or n/2 × [2a + (n−1)d]",
-      whenToUse: "To find sum of n terms of AP",
+      whenToUse: "Use the (first + last) form when both endpoints are known; use the 2a + (n\\u22121)d form when only the first term and common difference are given.",
     },
     {
       name: "GP nth term",

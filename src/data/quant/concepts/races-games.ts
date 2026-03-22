@@ -4,7 +4,7 @@ export const racesGamesConcept: QuantConcept = {
   topic: "races-games",
   title: "Races & Games of Skill",
   description:
-    "Races & Games questions test proportional reasoning about speeds, distances, and head starts. In a race, competitors cover the same distance in different times (or different distances in the same time). Games of skill (like billiards) follow the same ratio logic — 'A gives B n points in a game of 100' means when A scores 100, B scores 100−n.",
+    "Races & Games tests proportional reasoning about speed, distance, and head starts. SSC CGL Tier 1 carries a guaranteed 1-mark question; RRB NTPC also tests this topic regularly. Every race problem reduces to a single speed ratio: when A finishes L metres, B has covered L\\u2212x metres. Games of skill (billiards) follow the same ratio logic \\u2014 treat points scored as distance covered.",
   keyIdea:
     "Speed ratio = Distance ratio (for equal time). If A beats B by x metres in a race of L metres, then when A finishes (L metres), B has run only L−x metres. So Speed_A / Speed_B = L / (L−x). All race and game problems reduce to this one ratio.",
   formulas: [
@@ -12,13 +12,13 @@ export const racesGamesConcept: QuantConcept = {
       name: "Speed Ratio from Race Distance",
       formula: "S_A / S_B = L / (L − x)   where L = race length, x = margin A beats B by",
       whenToUse:
-        "Whenever A beats B by a distance x in a race of L metres. Gives the speed ratio for any further comparisons.",
+        "Derive the speed ratio first from the margin \\u2014 once you have S_A/S_B = L/(L\\u2212x), use it to solve head-start, three-runner, and dead-heat follow-ups.",
     },
     {
       name: "Beat by Time",
       formula: "S_A / S_B = T_B / T_A   |   Margin in time = T_B − T_A",
       whenToUse:
-        "When competitors cover the same distance in different times. Ratio of speeds equals inverse ratio of times.",
+        "Invert the time ratio to get the speed ratio when the problem gives finishing times instead of distance margins.",
     },
     {
       name: "Head Start Equivalence",

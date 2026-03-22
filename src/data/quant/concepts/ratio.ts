@@ -4,19 +4,19 @@ export const ratioConcept: QuantConcept = {
   topic: "ratio",
   title: "Ratio & Proportion",
   description:
-    "A ratio a:b expresses the relative magnitude of two quantities — it is the fraction a/b. A proportion states that two ratios are equal: a:b :: c:d means a/b = c/d.",
+    "Ratio compares two quantities; proportion equates two ratios. SSC CGL, RRB NTPC, and IBPS Clerk test ratio in almost every paper, often embedded inside age, partnership, and mixture problems. Always reduce a ratio to lowest terms before solving. Cross-multiplication resolves any proportion with one unknown in a single step.",
   keyIdea:
     "A ratio gives relative size, not absolute size. Always reduce to lowest terms (divide by GCD) before working with a ratio.",
   formulas: [
     {
       name: "Proportion (Cross-multiplication)",
       formula: "a:b :: c:d → a × d = b × c",
-      whenToUse: "To find a missing term when three of four values in a proportion are known.",
+      whenToUse: "Cross-multiply to find the missing term when the problem gives three of four values in a proportion.",
     },
     {
       name: "Divide quantity in ratio a:b",
       formula: "First part = Total × a/(a+b); Second = Total × b/(a+b)",
-      whenToUse: "To split a total amount between two people in a given ratio.",
+      whenToUse: "Split any total (money, weight, mixture) into parts \\u2014 divide each part\\u2019s ratio share by the sum of ratio terms, then multiply by the total.",
     },
     {
       name: "Compounded Ratio",

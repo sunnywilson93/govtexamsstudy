@@ -4,19 +4,19 @@ export const numberSystemConcept: QuantConcept = {
   topic: "number-system",
   title: "Number System",
   description:
-    "Number System covers the properties of integers — divisibility, HCF, LCM, remainders, and factorization. These rules underpin nearly all arithmetic reasoning in competitive exams.",
+    "Number System tests divisibility, HCF, LCM, remainders, and prime factorization. SSC and RRB papers repeat HCF/LCM and remainder problems almost every session. Trailing-zeros-in-factorial is a guaranteed one-mark question in SSC CGL Tier 1. Build speed on factor counting and cyclicity \\u2014 these two skills unlock the hardest variants.",
   keyIdea:
     "HCF × LCM = Product of two numbers (valid for exactly two numbers only). Always verify divisibility before computing HCF/LCM.",
   formulas: [
     {
       name: "HCF × LCM Relationship",
       formula: "HCF(a, b) × LCM(a, b) = a × b",
-      whenToUse: "When given two numbers and asked for HCF or LCM — find one from the other instantly.",
+      whenToUse: "Compute one value from the other instantly \\u2014 if the exam gives HCF and the product of two numbers, divide to get LCM (or vice versa).",
     },
     {
       name: "Number of Factors",
       formula: "If n = p₁^a × p₂^b × p₃^c, factors = (a+1)(b+1)(c+1)",
-      whenToUse: "To count how many divisors a number has after prime factorisation.",
+      whenToUse: "Prime-factorise the number first, then multiply incremented exponents \\u2014 this counts all divisors including 1 and the number itself.",
     },
     {
       name: "Trailing Zeros in n!",

@@ -4,19 +4,19 @@ export const mensurationConcept: QuantConcept = {
   topic: "mensuration",
   title: "Mensuration",
   description:
-    "Mensuration is the measurement of geometric shapes — area, perimeter, surface area, and volume. Questions involve standard 2D and 3D shapes, cost of fencing/painting, and shape conversions (melting and recasting).",
+    "Mensuration covers area, perimeter, surface area, and volume of 2D and 3D shapes. SSC CGL Tier 2 alone carries 4\\u20136 questions, making it one of the highest-weightage quant topics. Exams test direct formula application, melting-and-recasting conversions, and fencing/painting cost calculations. Master the scaling rule \\u2014 it instantly solves every \\u201Cradius increases by x%, find new area\\u201D variant.",
   keyIdea:
     "When all linear dimensions are scaled by factor k, area scales by k² and volume by k³. This single rule solves all 'percentage increase in radius → percentage increase in area/volume' problems.",
   formulas: [
     {
       name: "2D Shapes",
       formula: "Triangle: ½bh (or √s(s−a)(s−b)(s−c))  |  Circle: πr², 2πr  |  Rectangle: lb, 2(l+b)  |  Trapezium: ½(a+b)h",
-      whenToUse: "For area and perimeter of standard flat shapes — identify the shape and apply the right formula.",
+      whenToUse: "Pick the matching shape formula and plug in dimensions \\u2014 most 2D questions are one-step calculations.",
     },
     {
       name: "3D Volumes",
       formula: "Cube: a³  |  Cuboid: lbh  |  Cylinder: πr²h  |  Cone: ⅓πr²h  |  Sphere: (4/3)πr³",
-      whenToUse: "For volume of solid objects — melting/recasting problems equate volumes of the two shapes.",
+      whenToUse: "Compute volume of any solid object. In melting/recasting problems, equate the old volume to the new shape\\u2019s volume and solve for the unknown dimension.",
     },
     {
       name: "Surface Areas",
