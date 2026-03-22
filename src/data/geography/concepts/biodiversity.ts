@@ -4,7 +4,7 @@ export const biodiversityConcept: SubjectConcept = {
   topic: 'biodiversity',
   title: 'Biodiversity of India',
   description:
-    'India is one of the 17 megadiverse countries of the world, hosting about 7-8% of the world\'s recorded species in just 2.4% of the global land area. India has 4 biodiversity hotspots, diverse ecosystems, and a rich heritage of endemic flora and fauna.',
+    'India ranks among the 17 megadiverse countries, hosting 7-8% of recorded global species on just 2.4% of land area. Four biodiversity hotspots (Western Ghats, Eastern Himalayas, Indo-Burma, Sundaland) drive high endemism, with 33% of Indian flora found nowhere else. UPSC Prelims tests hotspot identification, endemic species-location matching, IUCN categories, and biogeographic zones, while SSC/RRB asks about national symbols, wildlife reserves, and Ramsar site updates.',
   category: 'Physical Geography',
   keyDates: [
     { year: 'Species Count', event: 'India has about 1,00,000+ animal species and 45,500+ plant species documented' },
@@ -27,12 +27,12 @@ export const biodiversityConcept: SubjectConcept = {
     {
       section: 'India as a Megadiverse Country',
       content:
-        'India is one of 17 megadiverse countries identified by the World Conservation Monitoring Centre (WCMC). It harbours about 7-8% of all globally recorded species: over 50,000 plant species (including about 18,000 flowering plants), over 1,00,000 animal species (including about 2,500+ fish, 240+ amphibians, 530+ reptiles, 1,350+ birds, and 430+ mammals). India lies at the confluence of three biogeographic realms: Palearctic (Himalayan), Indo-Malayan (peninsular), and Afrotropical (western India), which contributes to this extraordinary diversity. India also has high genetic diversity in crops and their wild relatives — it is a centre of origin/diversity for rice, mango, citrus, sugarcane, banana, pepper, turmeric, and many pulses. About 33% of Indian flora is endemic — found nowhere else in the world.',
+        'The World Conservation Monitoring Centre (WCMC) identifies India among 17 megadiverse countries, and for good reason: India harbours 7-8% of all globally recorded species, including over 50,000 plant species (18,000+ flowering), 2,500+ fish, 240+ amphibians, 530+ reptiles, 1,350+ birds, and 430+ mammals. Three biogeographic realms converge here: Palearctic (Himalayan), Indo-Malayan (peninsular), and Afrotropical (western India), fuelling this extraordinary species count. India also serves as a Vavilov Centre of origin for rice, mango, citrus, sugarcane, banana, pepper, turmeric, and many pulses, preserving high genetic diversity in crops and their wild relatives. About 33% of Indian flora grows nowhere else in the world.',
     },
     {
       section: 'Biodiversity Hotspots in India',
       content:
-        'India has 4 of the world\'s 36 biodiversity hotspots (areas with at least 1,500 endemic vascular plant species and having lost at least 70% of original habitat): (1) Western Ghats — stretches from Gujarat to Kerala; exceptionally high endemism with about 5,000+ flowering plants (1,700+ endemic), 508 bird species, 179 amphibians (80%+ endemic); Lion-tailed Macaque, Malabar Giant Squirrel, Nilgiri Tahr are flagship species; UNESCO World Heritage Site; (2) Eastern Himalayas — covers NE India, Bhutan, southern China; known for rhododendrons (about 30 species), orchids, and rare animals like Red Panda, Snow Leopard, Golden Langur; (3) Indo-Burma — covers NE India (Manipur, Mizoram, Nagaland), Myanmar, Thailand; rich in freshwater turtle diversity and endemic fish; includes Loktak Lake wetland; (4) Sundaland — extends to the Nicobar Islands; hosts the Nicobar Megapode, Nicobar Pigeon, and saltwater crocodiles.',
+        'Four of the world\'s 36 biodiversity hotspots (each requiring 1,500+ endemic vascular plants and 70%+ habitat loss) fall within India. The Western Ghats stretch from Gujarat to Kerala with 5,000+ flowering plants (1,700+ endemic), 508 bird species, and 179 amphibians (80%+ endemic); Lion-tailed Macaque, Malabar Giant Squirrel, and Nilgiri Tahr serve as flagship species, and UNESCO recognizes it as a World Heritage Site. The Eastern Himalayas span NE India, Bhutan, and southern China, harbouring about 30 rhododendron species, orchids, Red Panda, Snow Leopard, and Golden Langur. Indo-Burma covers Manipur, Mizoram, Nagaland, Myanmar, and Thailand, supporting rich freshwater turtle diversity, endemic fish, and the Loktak Lake wetland. Sundaland extends to the Nicobar Islands, hosting the Nicobar Megapode, Nicobar Pigeon, and saltwater crocodiles.',
     },
     {
       section: 'Biogeographic Zones of India',
