@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
+import { SubjectHubPage } from '@/components/ui/SubjectHubPage'
 
 export const metadata: Metadata = {
   title: 'Quantitative Aptitude — Interactive Visual Learning',
@@ -7,20 +7,7 @@ export const metadata: Metadata = {
     'Master quantitative aptitude for SSC CGL, IBPS PO, and other government exams. Concepts, shortcut tricks, and step-by-step animated problem solvers.',
 }
 
-interface Topic {
-  href: string
-  title: string
-  description: string
-  hasTabs: boolean
-}
-
-interface Section {
-  heading: string
-  subheading: string
-  topics: Topic[]
-}
-
-const SECTIONS: Section[] = [
+const SECTIONS = [
   {
     heading: 'Arithmetic',
     subheading: 'Core topics asked in every exam',
@@ -259,36 +246,11 @@ const SECTIONS: Section[] = [
 
 export default function QuantPage() {
   return (
-    <div className="space-y-8">
-      <h1 className="text-2xl font-bold" style={{ color: '#3b82f6' }}>Quantitative Aptitude</h1>
-      <p className="text-text-secondary">
-        Master arithmetic, algebra, and geometry with step-by-step visual solvers. Each topic
-        covers core concepts, exam shortcuts, and animated practice problems.
-      </p>
-
-      {SECTIONS.map((section) => (
-        <section key={section.heading}>
-          <div className="mb-3">
-            <h2 className="text-base font-semibold text-text-primary">{section.heading}</h2>
-            <p className="text-xs text-text-muted">{section.subheading}</p>
-          </div>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {section.topics.map((topic) => (
-              <Link
-                key={topic.href}
-                href={topic.href}
-                className="rounded-lg border border-border-primary bg-bg-elevated p-4 no-underline transition-shadow hover:shadow-md"
-              >
-                <h3 className="mb-1 text-sm font-semibold text-text-primary">{topic.title}</h3>
-                <p className="mb-2 text-xs leading-relaxed text-text-secondary">{topic.description}</p>
-                {topic.hasTabs && (
-                  <p className="text-xs text-text-muted">5 concepts · 5 tricks · 30 problems</p>
-                )}
-              </Link>
-            ))}
-          </div>
-        </section>
-      ))}
-    </div>
+    <SubjectHubPage
+      subjectName="Quantitative Aptitude"
+      subjectColor="#3b82f6"
+      description="Master arithmetic, algebra, and geometry with step-by-step visual solvers. Each topic covers core concepts, exam shortcuts, and animated practice problems."
+      sections={SECTIONS}
+    />
   )
 }

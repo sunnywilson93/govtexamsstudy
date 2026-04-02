@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
+import { SubjectHubPage } from '@/components/ui/SubjectHubPage'
 
 export const metadata: Metadata = {
   title: 'Indian Polity — Notes, Revision & Practice for UPSC, SSC | GovtExamsStudy',
@@ -17,21 +17,7 @@ export const metadata: Metadata = {
   },
 }
 
-interface Topic {
-  href: string
-  title: string
-  description: string
-  hasTabs: boolean
-  comingSoon?: boolean
-}
-
-interface Section {
-  heading: string
-  subheading: string
-  topics: Topic[]
-}
-
-const SECTIONS: Section[] = [
+const SECTIONS = [
   {
     heading: 'Constitutional Foundations',
     subheading: 'Historical evolution, Constituent Assembly, Preamble, and basic framework',
@@ -426,36 +412,12 @@ const SECTIONS: Section[] = [
 
 export default function PolityPage() {
   return (
-    <div className="space-y-8">
-      <h1 className="text-2xl font-bold" style={{ color: '#ef4444' }}>Indian Polity</h1>
-      <p className="text-text-secondary">
-        Explore the Indian Constitution and Polity with visual notes, revision tricks, and previous
-        year questions for UPSC, SSC, and other government exams.
-      </p>
-
-      {SECTIONS.map((section) => (
-        <section key={section.heading}>
-          <div className="mb-3">
-            <h2 className="text-base font-semibold text-text-primary">{section.heading}</h2>
-            <p className="text-xs text-text-muted">{section.subheading}</p>
-          </div>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {section.topics.map((topic) => (
-              <Link
-                key={topic.href}
-                href={topic.href}
-                className="rounded-lg border border-border-primary bg-bg-elevated p-4 no-underline transition-shadow hover:shadow-md"
-              >
-                <h3 className="mb-1 text-sm font-semibold text-text-primary">{topic.title}</h3>
-                <p className="mb-2 text-xs leading-relaxed text-text-secondary">{topic.description}</p>
-                {topic.hasTabs && (
-                  <p className="text-xs text-text-muted">Notes · Revision · Practice</p>
-                )}
-              </Link>
-            ))}
-          </div>
-        </section>
-      ))}
-    </div>
+    <SubjectHubPage
+      subjectName="Indian Polity"
+      subjectColor="#ef4444"
+      description="Complete Indian Polity and Constitution study material. 50 topics covering constitutional foundations, rights, executive, judiciary, and local governance with notes, revision tricks, and practice questions."
+      sections={SECTIONS}
+      tabsLabel="Notes · Revision · Practice"
+    />
   )
 }

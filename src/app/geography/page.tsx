@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
+import { SubjectHubPage } from '@/components/ui/SubjectHubPage'
 
 export const metadata: Metadata = {
   title: 'Indian Geography — Notes, Revision & Practice for UPSC, SSC | GovtExamsStudy',
@@ -17,21 +17,7 @@ export const metadata: Metadata = {
   },
 }
 
-interface Topic {
-  href: string
-  title: string
-  description: string
-  hasTabs: boolean
-  comingSoon?: boolean
-}
-
-interface Section {
-  heading: string
-  subheading: string
-  topics: Topic[]
-}
-
-const SECTIONS: Section[] = [
+const SECTIONS = [
   {
     heading: 'Physical Geography',
     subheading: 'Landforms, rivers, climate, soils, vegetation & biodiversity of India',
@@ -384,37 +370,12 @@ const SECTIONS: Section[] = [
 
 export default function GeographyPage() {
   return (
-    <div>
-      <h1 className="mb-2 text-2xl font-bold text-text-primary">Indian Geography</h1>
-      <p className="mb-8 text-text-secondary">
-        Physical, economic, human & world geography with environment and ecology. Notes, revision sheets, and previous year questions for UPSC, SSC, and banking exams.
-      </p>
-
-      <div className="space-y-10">
-        {SECTIONS.map((section) => (
-          <section key={section.heading}>
-            <h2 className="mb-1 text-lg font-semibold text-text-primary">{section.heading}</h2>
-            <p className="mb-4 text-sm text-text-secondary">{section.subheading}</p>
-            <div className="grid gap-3 sm:grid-cols-2">
-              {section.topics.map((topic) => (
-                <Link
-                  key={topic.href}
-                  href={topic.href}
-                  className="rounded-lg border border-border-primary bg-bg-elevated p-4 transition-colors hover:border-subject-geography"
-                >
-                  <h3 className="font-medium text-text-primary">{topic.title}</h3>
-                  <p className="mt-1 text-sm text-text-secondary">{topic.description}</p>
-                  {topic.hasTabs && (
-                    <p className="mt-2 text-xs text-subject-geography">
-                      Notes &middot; Revision &middot; Practice
-                    </p>
-                  )}
-                </Link>
-              ))}
-            </div>
-          </section>
-        ))}
-      </div>
-    </div>
+    <SubjectHubPage
+      subjectName="Indian Geography"
+      subjectColor="#22c55e"
+      description="Complete Indian Geography study material covering Physical, Economic, Human, and World Geography plus Environment & Ecology with notes, revision tricks, and practice questions."
+      sections={SECTIONS}
+      tabsLabel="Notes · Revision · Practice"
+    />
   )
 }

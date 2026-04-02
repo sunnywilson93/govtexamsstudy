@@ -10,6 +10,8 @@ import {
   Globe2,
   TrendingUp,
   Atom,
+  ChevronRight,
+  Target,
 } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -72,14 +74,32 @@ const PRACTICE_SUBJECTS = [
 
 export default function PracticePage() {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-8">
-      <h1 className="mb-2 text-2xl font-bold text-text-primary">Practice Arena</h1>
-      <p className="mb-4 text-text-secondary">
-        Choose a subject to start practicing topic-wise MCQs.
-      </p>
-      <p className="mb-8 text-center text-xs text-text-muted">
-        Original practice questions designed for exam preparation — not from any official examination paper.
-      </p>
+    <div className="mx-auto max-w-5xl px-4 py-8">
+      {/* Hero */}
+      <div className="mb-8 rounded-2xl border border-border-primary bg-gradient-to-br from-gray-900 to-gray-800 p-6 sm:p-8">
+        <div className="flex items-center gap-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10">
+            <Target size={20} className="text-white" />
+          </div>
+          <h1 className="text-2xl font-bold text-white sm:text-3xl">Practice Arena</h1>
+        </div>
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-gray-300">
+          Choose a subject to start practicing topic-wise MCQs with instant feedback and visual explanations.
+        </p>
+        <p className="mt-2 text-xs text-gray-500">
+          Original practice questions designed for exam preparation — not from any official examination paper.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          <div className="rounded-lg bg-white/10 px-3 py-2">
+            <p className="text-lg font-bold text-white">7</p>
+            <p className="text-[10px] uppercase tracking-wider text-gray-400">Subjects</p>
+          </div>
+          <div className="rounded-lg bg-white/10 px-3 py-2">
+            <p className="text-lg font-bold text-white">100%</p>
+            <p className="text-[10px] uppercase tracking-wider text-gray-400">Free</p>
+          </div>
+        </div>
+      </div>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {PRACTICE_SUBJECTS.map((subject) => {
@@ -88,19 +108,28 @@ export default function PracticePage() {
             <Link
               key={subject.slug}
               href={`/practice/${subject.slug}`}
-              className="rounded-lg border border-border-primary bg-bg-elevated p-5 no-underline transition-shadow hover:shadow-md"
-              style={{ borderLeftWidth: '4px', borderLeftColor: subject.color }}
+              className="group relative cursor-pointer rounded-xl border border-border-primary bg-bg-elevated p-5 no-underline transition-all duration-200 hover:border-border-secondary hover:shadow-lg"
             >
-              <div className="mb-2 flex items-center gap-3">
-                <div
-                  className="flex h-9 w-9 items-center justify-center rounded-lg"
-                  style={{ backgroundColor: `${subject.color}15`, color: subject.color }}
-                >
-                  <Icon size={20} />
+              <div
+                className="absolute left-0 top-0 h-full w-1 rounded-l-xl"
+                style={{ backgroundColor: subject.color }}
+              />
+              <div className="mb-3 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div
+                    className="flex h-9 w-9 items-center justify-center rounded-lg"
+                    style={{ backgroundColor: `${subject.color}15`, color: subject.color }}
+                  >
+                    <Icon size={18} />
+                  </div>
+                  <h3 className="text-sm font-semibold text-text-primary">{subject.name}</h3>
                 </div>
-                <h3 className="text-base font-semibold text-text-primary">{subject.name}</h3>
+                <ChevronRight
+                  size={14}
+                  className="shrink-0 text-text-muted transition-transform duration-200 group-hover:translate-x-0.5"
+                />
               </div>
-              <p className="text-sm leading-relaxed text-text-secondary">{subject.description}</p>
+              <p className="text-xs leading-relaxed text-text-secondary">{subject.description}</p>
             </Link>
           )
         })}

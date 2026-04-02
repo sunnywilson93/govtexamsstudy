@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
+import { SubjectHubPage } from '@/components/ui/SubjectHubPage'
 
 export const metadata: Metadata = {
   title: 'Indian History — Notes, Revision & Practice for UPSC, SSC | GovtExamsStudy',
@@ -17,21 +17,7 @@ export const metadata: Metadata = {
   },
 }
 
-interface Topic {
-  href: string
-  title: string
-  description: string
-  hasTabs: boolean
-  comingSoon?: boolean
-}
-
-interface Section {
-  heading: string
-  subheading: string
-  topics: Topic[]
-}
-
-const SECTIONS: Section[] = [
+const SECTIONS = [
   {
     heading: 'Ancient India',
     subheading: 'Indus Valley to Gupta Empire — foundation of Indian civilization',
@@ -384,43 +370,12 @@ const SECTIONS: Section[] = [
 
 export default function HistoryPage() {
   return (
-    <div className="space-y-8">
-      <h1 className="text-2xl font-bold" style={{ color: '#f59e0b' }}>Indian History</h1>
-      <p className="text-text-secondary">
-        Explore Indian history from ancient civilizations to modern India with visual notes,
-        revision tricks, and previous year questions for UPSC, SSC, and other government exams.
-      </p>
-
-      {SECTIONS.map((section) => (
-        <section key={section.heading}>
-          <div className="mb-3">
-            <h2 className="text-base font-semibold text-text-primary">{section.heading}</h2>
-            <p className="text-xs text-text-muted">{section.subheading}</p>
-          </div>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {section.topics.map((topic) => (
-              <Link
-                key={topic.href}
-                href={topic.href}
-                className="rounded-lg border border-border-primary bg-bg-elevated p-4 no-underline transition-shadow hover:shadow-md"
-              >
-                <div className="mb-1 flex items-center gap-2">
-                  <h3 className="text-sm font-semibold text-text-primary">{topic.title}</h3>
-                  {topic.comingSoon && (
-                    <span className="rounded-full bg-primary-100 px-2 py-0.5 text-xs font-medium text-primary">
-                      Coming Soon
-                    </span>
-                  )}
-                </div>
-                <p className="mb-2 text-xs leading-relaxed text-text-secondary">{topic.description}</p>
-                {topic.hasTabs && (
-                  <p className="text-xs text-text-muted">Notes · Revision · Practice</p>
-                )}
-              </Link>
-            ))}
-          </div>
-        </section>
-      ))}
-    </div>
+    <SubjectHubPage
+      subjectName="Indian History"
+      subjectColor="#f59e0b"
+      description="Complete Indian History from ancient civilisations to post-independence India. 50 topics covering Ancient, Medieval, Modern India, and Art & Culture with notes, revision tricks, and practice questions."
+      sections={SECTIONS}
+      tabsLabel="Notes · Revision · Practice"
+    />
   )
 }
