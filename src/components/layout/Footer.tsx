@@ -74,16 +74,27 @@ export function Footer() {
               Exams Covered
             </p>
             <div className="flex flex-wrap gap-1.5">
-              {['UPSC', 'SSC CGL', 'SSC CHSL', 'Banking PO', 'Railways', 'State PSC', 'NDA', 'CDS', 'CTET'].map(
-                (exam) => (
-                  <span
-                    key={exam}
-                    className="rounded bg-gray-800 px-2 py-0.5 text-xs text-gray-400"
-                  >
-                    {exam}
-                  </span>
-                )
-              )}
+              {([
+                { label: 'UPSC', href: '/exams/upsc-cse' },
+                { label: 'SSC CGL', href: '/exams/ssc-cgl' },
+                { label: 'SSC CHSL', href: '/exams/ssc-chsl' },
+                { label: 'Banking PO', href: '/exams/ibps-po' },
+                { label: 'Railways', href: '/exams/rrb-ntpc' },
+                { label: 'NDA', href: '/exams/nda' },
+                { label: 'CDS', href: '/exams/cds' },
+                { label: 'CTET', href: '/exams/ctet' },
+              ] as const).map((exam) => (
+                <Link
+                  key={exam.href}
+                  href={exam.href}
+                  className="rounded bg-gray-800 px-2 py-0.5 text-xs text-gray-400 no-underline transition-colors hover:bg-gray-700 hover:text-gray-200"
+                >
+                  {exam.label}
+                </Link>
+              ))}
+              <span className="rounded bg-gray-800 px-2 py-0.5 text-xs text-gray-400">
+                State PSC
+              </span>
             </div>
           </div>
         </div>

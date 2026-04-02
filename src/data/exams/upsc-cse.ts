@@ -1,0 +1,88 @@
+import type { ExamInfo } from '@/types/exam'
+
+export const upscCse: ExamInfo = {
+  id: 'upsc-cse',
+  name: 'UPSC CSE',
+  fullName: 'Union Public Service Commission — Civil Services Examination',
+  conductingBody: 'Union Public Service Commission (UPSC)',
+  category: 'upsc',
+  frequency: 'Annual',
+  description:
+    'India\'s most prestigious competitive examination, the UPSC Civil Services Examination selects candidates for the Indian Administrative Service (IAS), Indian Police Service (IPS), Indian Foreign Service (IFS), and 20+ allied Group A and Group B Central Services. The exam tests breadth of knowledge, analytical depth, and decision-making aptitude.',
+  officialWebsite: 'https://upsc.gov.in',
+  notificationUrl: 'https://upsc.gov.in/examinations/active-examinations',
+  stages: [
+    {
+      name: 'Preliminary Examination (Prelims)',
+      mode: 'OMR-based objective test',
+      duration: '2 hours per paper',
+      totalMarks: 400,
+      sections: [
+        { name: 'General Studies Paper I', questions: 100, marks: 200 },
+        { name: 'General Studies Paper II (CSAT — qualifying)', questions: 80, marks: 200 },
+      ],
+      negativeMarking: '0.66 marks per wrong answer (1/3rd of marks)',
+    },
+    {
+      name: 'Main Examination (Mains)',
+      mode: 'Written descriptive',
+      duration: '3 hours per paper',
+      totalMarks: 1750,
+      sections: [
+        { name: 'Essay (Paper I)', questions: 2, marks: 250 },
+        { name: 'General Studies I — History, Geography, Society', questions: 20, marks: 250 },
+        { name: 'General Studies II — Governance, Polity, IR', questions: 20, marks: 250 },
+        { name: 'General Studies III — Economy, Environment, Science', questions: 20, marks: 250 },
+        { name: 'General Studies IV — Ethics, Integrity, Aptitude', questions: 20, marks: 250 },
+        { name: 'Optional Subject Paper I', questions: 8, marks: 250 },
+        { name: 'Optional Subject Paper II', questions: 8, marks: 250 },
+      ],
+    },
+    {
+      name: 'Personality Test (Interview)',
+      mode: 'In-person interview panel',
+      duration: '~30–45 minutes',
+      totalMarks: 275,
+      sections: [
+        { name: 'Personality Test', questions: 0, marks: 275 },
+      ],
+    },
+  ],
+  syllabus: [
+    'Indian History & Culture',
+    'Indian and World Geography',
+    'Indian Polity & Governance',
+    'Economic & Social Development',
+    'Environment & Ecology',
+    'Science & Technology',
+    'Current Events of National & International Importance',
+    'General Mental Ability (CSAT)',
+    'Optional Subject (chosen from 48 listed subjects)',
+    'Essay Writing',
+    'Ethics, Integrity & Aptitude',
+  ],
+  eligibility: {
+    education: "Bachelor's degree in any discipline from a recognised university",
+    ageMin: 21,
+    ageMax: 32,
+    ageRelaxation: '5 years for SC/ST; 3 years for OBC; 10 years for PwD; ex-servicemen get additional relaxation as per rules',
+    attempts: '6 attempts for General; 9 for OBC; unlimited for SC/ST (within age limit)',
+    nationality: 'Indian (IAS/IPS/IFS); Indian/Nepal/Bhutan/Tibetan refugee for other services',
+  },
+  cutoffs: [
+    { year: 2024, category: 'General', score: 105, stage: 'Prelims GS Paper I' },
+    { year: 2024, category: 'OBC', score: 98, stage: 'Prelims GS Paper I' },
+    { year: 2024, category: 'SC', score: 87, stage: 'Prelims GS Paper I' },
+    { year: 2024, category: 'ST', score: 84, stage: 'Prelims GS Paper I' },
+    { year: 2023, category: 'General', score: 107, stage: 'Prelims GS Paper I' },
+    { year: 2023, category: 'OBC', score: 100, stage: 'Prelims GS Paper I' },
+    { year: 2023, category: 'SC', score: 90, stage: 'Prelims GS Paper I' },
+    { year: 2022, category: 'General', score: 98, stage: 'Prelims GS Paper I' },
+    { year: 2022, category: 'OBC', score: 91, stage: 'Prelims GS Paper I' },
+  ],
+  importantNotes: [
+    'CSAT (Paper II) is purely qualifying — you must score at least 33% (66 out of 200), but marks are not counted in the merit list.',
+    'Choice of optional subject significantly influences final rank — select based on graduation background and available study material.',
+    'Mains marks + Interview marks together determine final ranking and service/cadre allocation.',
+  ],
+}

@@ -21,6 +21,7 @@ const NAV_LINKS: NavLink[] = [
   { href: '/geography', label: 'Geography', colorClass: 'hover:text-subject-geography' },
   { href: '/economics', label: 'Economics', colorClass: 'hover:text-subject-economics' },
   { href: '/science', label: 'Science', colorClass: 'hover:text-subject-science' },
+  { href: '/exams', label: 'Exams', colorClass: 'hover:text-orange-500' },
 ]
 
 const UTIL_LINKS: NavLink[] = [

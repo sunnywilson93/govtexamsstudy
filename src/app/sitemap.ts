@@ -278,6 +278,19 @@ const ECONOMICS_TOPICS = [
   'startup-innovation',
 ]
 
+const EXAM_SLUGS = [
+  'upsc-cse',
+  'ssc-cgl',
+  'ssc-chsl',
+  'ibps-po',
+  'sbi-po',
+  'rrb-ntpc',
+  'rrb-group-d',
+  'cds',
+  'nda',
+  'ctet',
+]
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
 
@@ -301,6 +314,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/science/periodic-table',
     '/science/human-body',
     '/practice',
+    '/exams',
     '/terms',
     '/privacy',
   ]
@@ -311,8 +325,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const historyRoutes = HISTORY_TOPICS.map((slug) => `/history/${slug}`)
   const geographyRoutes = GEOGRAPHY_TOPICS.map((slug) => `/geography/${slug}`)
   const economicsRoutes = ECONOMICS_TOPICS.map((slug) => `/economics/${slug}`)
+  const examRoutes = EXAM_SLUGS.map((slug) => `/exams/${slug}`)
 
-  const allRoutes = [...staticRoutes, ...quantRoutes, ...reasoningRoutes, ...polityRoutes, ...historyRoutes, ...geographyRoutes, ...economicsRoutes]
+  const allRoutes = [...staticRoutes, ...quantRoutes, ...reasoningRoutes, ...polityRoutes, ...historyRoutes, ...geographyRoutes, ...economicsRoutes, ...examRoutes]
 
   return allRoutes.map((route) => {
     const depth = route.split('/').filter(Boolean).length
