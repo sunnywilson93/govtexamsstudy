@@ -55,8 +55,8 @@ const CATEGORY_CONFIG: Record<ExamCategory, {
     label: 'Defence',
     description: 'Armed Forces officer entry',
     icon: Shield,
-    color: '#d97706',
-    lightBg: '#fffbeb',
+    color: '#475569',
+    lightBg: '#f1f5f9',
   },
   teaching: {
     label: 'Teaching',

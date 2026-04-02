@@ -20,7 +20,7 @@ const CATEGORY_COLORS: Record<ExamCategory, string> = {
   ssc: '#2563eb',
   banking: '#0d9488',
   railway: '#16a34a',
-  defence: '#d97706',
+  defence: '#475569',
   teaching: '#7c3aed',
 }
 
