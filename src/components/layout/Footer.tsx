@@ -12,9 +12,10 @@ const SUBJECT_LINKS = [
 
 const TOOL_LINKS = [
   { href: '/practice', label: 'Practice MCQs' },
+  { href: '/current-affairs', label: 'Daily Current Affairs' },
   { href: '/quant/step-solver', label: 'Math Solver' },
   { href: '/polity/articles', label: 'Article Explorer' },
-{ href: '/science/periodic-table', label: 'Periodic Table' },
+  { href: '/science/periodic-table', label: 'Periodic Table' },
 ]
 
 export function Footer() {

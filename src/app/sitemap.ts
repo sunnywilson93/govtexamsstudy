@@ -278,6 +278,12 @@ const ECONOMICS_TOPICS = [
   'startup-innovation',
 ]
 
+const CURRENT_AFFAIRS_DATES = [
+  '2026-04-03',
+  '2026-04-02',
+  '2026-04-01',
+]
+
 const EXAM_SLUGS = [
   'upsc-cse',
   'ssc-cgl',
@@ -315,6 +321,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/science/human-body',
     '/practice',
     '/exams',
+    '/current-affairs',
     '/terms',
     '/privacy',
   ]
@@ -326,23 +333,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const geographyRoutes = GEOGRAPHY_TOPICS.map((slug) => `/geography/${slug}`)
   const economicsRoutes = ECONOMICS_TOPICS.map((slug) => `/economics/${slug}`)
   const examRoutes = EXAM_SLUGS.map((slug) => `/exams/${slug}`)
+  const currentAffairsRoutes = CURRENT_AFFAIRS_DATES.map((d) => `/current-affairs/${d}`)
 
-  const allRoutes = [...staticRoutes, ...quantRoutes, ...reasoningRoutes, ...polityRoutes, ...historyRoutes, ...geographyRoutes, ...economicsRoutes, ...examRoutes]
+  const allRoutes = [...staticRoutes, ...quantRoutes, ...reasoningRoutes, ...polityRoutes, ...historyRoutes, ...geographyRoutes, ...economicsRoutes, ...examRoutes, ...currentAffairsRoutes]
 
   return allRoutes.map((route) => {
     const depth = route.split('/').filter(Boolean).length
     return {
       url: `${baseUrl}${route}`,
       lastModified: now,
-      changeFrequency: route === '/' ? 'daily' : 'weekly',
+      changeFrequency: route === '/' || route === '/current-affairs' ? 'daily' : 'weekly',
       priority:
         route === '/'
           ? 1.0
-          : route === '/terms' || route === '/privacy'
-            ? 0.3
-            : depth === 1
-              ? 0.8
-              : 0.6,
+          : route === '/current-affairs'
+            ? 0.9
+            : route.startsWith('/current-affairs/')
+              ? 0.7
+              : route === '/terms' || route === '/privacy'
+                ? 0.3
+                : depth === 1
+                  ? 0.8
+                  : 0.6,
     }
   })
 }

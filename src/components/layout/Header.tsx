@@ -26,6 +26,7 @@ const NAV_LINKS: NavLink[] = [
 
 const UTIL_LINKS: NavLink[] = [
   { href: '/practice', label: 'Practice', colorClass: 'hover:text-primary' },
+  { href: '/current-affairs', label: 'Current Affairs', colorClass: 'hover:text-primary' },
 ]
 
 export function Header() {
