@@ -9,7 +9,7 @@ export const digest20260318: DailyDigest = {
       summary:
         'The Ministry of Finance released an Interim Fiscal Consolidation Roadmap targeting a fiscal deficit of 4.0% of GDP in FY27, reducing to 3.0% by FY30 in line with the FRBM Act target. The roadmap projects revenue receipts growing at 11.2% CAGR, assumes continued GST buoyancy, and emphasises capital expenditure at 3.4% of GDP throughout the period.',
       category: 'economics',
-      sourceUrl: 'https://finmin.nic.in/news',
+      sourceUrl: 'https://finmin.nic.in',
       sourceName: 'Ministry of Finance',
       examRelevance: 'Prelims: Economy – FRBM, Fiscal Deficit | Mains: GS3 – Fiscal Policy, Budget',
     },
@@ -19,7 +19,7 @@ export const digest20260318: DailyDigest = {
       summary:
         'A seven-judge Constitution Bench of the Supreme Court upheld the 2019 abrogation of Article 370, ruling 6:1 that Parliament\'s power to act as the Constituent Assembly of Jammu & Kashmir was temporary and that the President\'s proclamation under Article 356 in August 2019 was constitutionally valid. The ruling interprets the transitional nature of Article 370.',
       category: 'polity',
-      sourceUrl: 'https://main.sci.gov.in/judgments',
+      sourceUrl: 'https://main.sci.gov.in',
       sourceName: 'Supreme Court of India',
       examRelevance: 'Prelims: Polity – Article 370, J&K | Mains: GS2 – Federalism, Constitutional Law',
     },
@@ -29,7 +29,7 @@ export const digest20260318: DailyDigest = {
       summary:
         'DRDO\'s Defence Materials and Stores Research and Development Establishment (DMSRDE) and IIT Madras jointly developed a T-800 grade carbon fibre with tensile strength of 5,600 MPa, meeting aerospace-grade specifications. India currently imports 90% of its carbon fibre requirement; indigenous production reduces dependency for LCA Tejas Mk-2 and AMCA programmes.',
       category: 'science',
-      sourceUrl: 'https://drdo.gov.in/press-release',
+      sourceUrl: 'https://www.drdo.gov.in',
       sourceName: 'Defence Research and Development Organisation',
       examRelevance: 'Prelims: Science – Materials, Aerospace | Mains: GS3 – Technology, Indigenisation',
     },
@@ -39,7 +39,7 @@ export const digest20260318: DailyDigest = {
       summary:
         'India launched Phase II of Mission LiFE (Lifestyle for Environment), targeting behavioural change in 1 billion citizens through 75 pro-planet actions across energy, water, food, and waste domains. Phase II introduces a digital LiFE dashboard and district-level implementation through gram panchayats and urban local bodies. Mission LiFE was proposed by PM Modi at COP26, Glasgow.',
       category: 'environment',
-      sourceUrl: 'https://moef.gov.in/whats-new',
+      sourceUrl: 'https://moef.gov.in',
       sourceName: 'Ministry of Environment, Forest and Climate Change',
       examRelevance: 'Prelims: Environment – Mission LiFE, Climate Action | Mains: GS3 – Climate Change, Sustainability',
     },
@@ -49,7 +49,7 @@ export const digest20260318: DailyDigest = {
       summary:
         'INS Vikrant, India\'s first indigenous aircraft carrier, completed its first overseas operational deployment — a 45-day mission in the Gulf of Aden as part of Operation Sankalp, India\'s anti-piracy and maritime security mission in the Western Indian Ocean. INS Vikrant was commissioned in September 2022 and is powered by four General Electric LM2500 gas turbines.',
       category: 'defence',
-      sourceUrl: 'https://pib.gov.in/PressReleasePage.aspx',
+      sourceUrl: 'https://pib.gov.in',
       sourceName: 'Press Information Bureau',
       examRelevance: 'Prelims: Defence – Navy, Aircraft Carrier | Mains: GS3 – Maritime Security, Indigenisation',
     },
@@ -59,7 +59,7 @@ export const digest20260318: DailyDigest = {
       summary:
         'India and the European Union concluded the seventh round of Free Trade Agreement negotiations in Brussels, with substantive progress on market access for goods (automotive, dairy, wines) and Government Procurement chapters. The India-EU FTA talks were relaunched in 2022 after a 9-year hiatus; bilateral trade stands at €120 billion annually.',
       category: 'international',
-      sourceUrl: 'https://commerce.gov.in/press-release',
+      sourceUrl: 'https://commerce.gov.in',
       sourceName: 'Ministry of Commerce and Industry',
       examRelevance: 'Prelims: International – India-EU, FTA | Mains: GS2 – International Relations; GS3 – Trade',
     },
@@ -69,7 +69,7 @@ export const digest20260318: DailyDigest = {
       summary:
         'The National Commission for Scheduled Tribes (NCST) sent a recommendation to the Ministry of Tribal Affairs to examine the inclusion of the Meitei community of Manipur in the Scheduled Tribes list, noting constitutional provisions under Article 342. The NCST, a constitutional body under Article 338-A, also recommended expedited resolution of Manipur\'s tribal identity dispute.',
       category: 'polity',
-      sourceUrl: 'https://tribal.nic.in/pressrelease',
+      sourceUrl: 'https://tribal.nic.in',
       sourceName: 'Ministry of Tribal Affairs',
       examRelevance: 'Prelims: Polity – Scheduled Tribes, NCST, Article 342 | Mains: GS2 – Social Justice; GS1 – Society',
     },
@@ -79,7 +79,7 @@ export const digest20260318: DailyDigest = {
       summary:
         'The National Disaster Management Authority (NDMA) and Wadia Institute of Himalayan Geology completed a comprehensive Glacial Lake Outburst Flood (GLOF) risk assessment for 475 glacial lakes in Uttarakhand and Sikkim. Of these, 67 were categorised as High Risk — requiring monitoring stations, early warning systems, and downstream evacuation planning.',
       category: 'geography',
-      sourceUrl: 'https://pib.gov.in/PressReleasePage.aspx',
+      sourceUrl: 'https://pib.gov.in',
       sourceName: 'Press Information Bureau',
       examRelevance: 'Prelims: Geography – Glaciers, GLOF, Himalayas | Mains: GS1 – Climatology; GS3 – Disaster Management',
     },
@@ -89,7 +89,7 @@ export const digest20260318: DailyDigest = {
       summary:
         'The Ministry of Rural Development announced that PMAY-Grameen has surpassed the completion of 3.5 crore houses since its launch in 2016, with 98.7% of sanctioned units completed. The scheme targets Below Poverty Line (BPL) rural households with unit assistance of ₹1.20 lakh in plains and ₹1.30 lakh in hilly/NE regions. Beneficiaries are selected via the Socio-Economic Caste Census (SECC).',
       category: 'schemes',
-      sourceUrl: 'https://rural.nic.in/press-release',
+      sourceUrl: 'https://rural.nic.in',
       sourceName: 'Ministry of Rural Development',
       examRelevance: 'Prelims: Schemes – PMAY-G, Rural Housing | Mains: GS2 – Social Justice; GS3 – Rural Development',
     },
@@ -99,7 +99,7 @@ export const digest20260318: DailyDigest = {
       summary:
         'The President of India appointed Smt. Preeti Sudan, former Health Secretary, as Chairperson of the Union Public Service Commission (UPSC). UPSC is a constitutional body under Articles 315–323, conducting civil services examinations (CSE, CAPF, CDS, NDA). The Chairperson has a 6-year tenure or until age 65, whichever is earlier.',
       category: 'appointments',
-      sourceUrl: 'https://upsc.gov.in/announcements',
+      sourceUrl: 'https://upsc.gov.in',
       sourceName: 'Union Public Service Commission',
       examRelevance: 'Prelims: Appointments – UPSC, Constitutional Bodies | Mains: GS2 – Constitutional Bodies, Governance',
     },

@@ -9,7 +9,7 @@ export const digest20260402: DailyDigest = {
       summary:
         'Rajya Sabha passed the Coastal Shipping Bill, 2026, which replaces the Coasting Trade Act, 1987 and opens India\'s coastal routes to foreign-flagged vessels under licence, aiming to reduce logistics costs by 15–20%. The legislation complements the Sagarmala Programme and aligns with India\'s National Maritime Policy 2030.',
       category: 'polity',
-      sourceUrl: 'https://pib.gov.in/PressReleasePage.aspx',
+      sourceUrl: 'https://pib.gov.in',
       sourceName: 'Press Information Bureau',
       examRelevance: 'Prelims: Polity – Parliament, Maritime | Mains: GS2 – Governance; GS3 – Infrastructure',
     },
@@ -19,7 +19,7 @@ export const digest20260402: DailyDigest = {
       summary:
         'The Index of Industrial Production (IIP) grew 6.2% in February 2026 (year-on-year), driven by manufacturing (+6.8%) and electricity (+7.1%). Mining output rose 3.9%. Capital goods output surged 11.4%, indicating strong investment activity. IIP is released by the Central Statistical Office (CSO) under MoSPI.',
       category: 'economics',
-      sourceUrl: 'https://mospi.gov.in/publication',
+      sourceUrl: 'https://mospi.gov.in',
       sourceName: 'Ministry of Statistics and Programme Implementation',
       examRelevance: 'Prelims: Economy – IIP, Indices | Mains: GS3 – Industrial Growth',
     },
@@ -29,7 +29,7 @@ export const digest20260402: DailyDigest = {
       summary:
         'India crossed the landmark of 500 GW installed non-fossil fuel capacity, achieving the target set under Nationally Determined Contributions (NDCs) four years ahead of schedule. Solar and wind account for 425 GW of the total. The Ministry of New and Renewable Energy attributed the milestone to the Production Linked Incentive (PLI) scheme for solar modules.',
       category: 'environment',
-      sourceUrl: 'https://mnre.gov.in/press-releases',
+      sourceUrl: 'https://mnre.gov.in',
       sourceName: 'Ministry of New and Renewable Energy',
       examRelevance: 'Prelims: Environment – Renewable Energy, NDCs | Mains: GS3 – Energy, Climate',
     },
@@ -39,7 +39,7 @@ export const digest20260402: DailyDigest = {
       summary:
         'INS Nilgiri, the lead ship of the Project 17A stealth frigates, completed its Sea Acceptance Trials (SAT) in the Bay of Bengal, validating advanced stealth features, BRAHMOS supersonic cruise missile integration, and indigenous sonar suite HUMSA-NG. The frigate is built at MDL Mumbai and represents the highest level of indigenous warship construction.',
       category: 'defence',
-      sourceUrl: 'https://pib.gov.in/PressReleasePage.aspx',
+      sourceUrl: 'https://pib.gov.in',
       sourceName: 'Press Information Bureau',
       examRelevance: 'Prelims: Defence – Navy, Indigenisation | Mains: GS3 – Defence Technology',
     },
@@ -49,7 +49,7 @@ export const digest20260402: DailyDigest = {
       summary:
         'The Prime Minister launched Phase II of the Pradhan Mantri Janjati Unnat Gram Abhiyan, extending coverage to 36,000 tribal villages in 30 states. The scheme focuses on infrastructure, livelihood, education, and health for Particularly Vulnerable Tribal Groups (PVTGs) and is administered by the Ministry of Tribal Affairs under Article 46 of the Constitution.',
       category: 'schemes',
-      sourceUrl: 'https://tribal.nic.in/pressrelease',
+      sourceUrl: 'https://tribal.nic.in',
       sourceName: 'Ministry of Tribal Affairs',
       examRelevance: 'Prelims: Schemes – Tribal, PVTG | Mains: GS2 – Social Justice; GS1 – Society',
     },
@@ -59,7 +59,7 @@ export const digest20260402: DailyDigest = {
       summary:
         'India and Japan formalised a Semiconductor Supply Chain Partnership during the 14th India-Japan Annual Summit. Japan committed USD 500 million in technical cooperation and equipment support for the India Semiconductor Mission. The partnership targets the design, testing, and packaging segments of the value chain.',
       category: 'international',
-      sourceUrl: 'https://mea.gov.in/press-releases.htm',
+      sourceUrl: 'https://mea.gov.in',
       sourceName: 'Ministry of External Affairs',
       examRelevance: 'Prelims: International – India-Japan | Mains: GS2 – India\'s Foreign Policy; GS3 – Technology',
     },
@@ -69,7 +69,7 @@ export const digest20260402: DailyDigest = {
       summary:
         'The India Meteorological Department (IMD) released its pre-cyclone season outlook for 2026, predicting above-normal cyclonic activity in the Bay of Bengal. IMD has upgraded Doppler Weather Radar coverage to 56 stations along both coastlines. The guidelines are issued under the National Disaster Management Plan 2019.',
       category: 'geography',
-      sourceUrl: 'https://imd.gov.in/pressrelease',
+      sourceUrl: 'https://mausam.imd.gov.in',
       sourceName: 'India Meteorological Department',
       examRelevance: 'Prelims: Geography – Cyclones, Climate | Mains: GS1 – Climatology; GS3 – Disaster Management',
     },
@@ -79,7 +79,7 @@ export const digest20260402: DailyDigest = {
       summary:
         'The Department of Biotechnology (DBT) granted approval for Phase I/II clinical trials of an indigenously developed mRNA vaccine platform by Serum Institute and Pune-based startup Genova Biopharmaceuticals. The platform, supported under the National Biopharma Mission, positions India for rapid pandemic response capability.',
       category: 'science',
-      sourceUrl: 'https://dbtindia.gov.in/latest-announcement',
+      sourceUrl: 'https://dbtindia.gov.in',
       sourceName: 'Department of Biotechnology',
       examRelevance: 'Prelims: Science – Biotechnology, Vaccines | Mains: GS3 – Science & Technology',
     },
@@ -89,7 +89,7 @@ export const digest20260402: DailyDigest = {
       summary:
         'The Supreme Court in a 3-2 majority upheld the 2016 amendments to the Benami Transactions (Prohibition) Act, 1988, ruling that retrospective application of confiscation provisions is constitutionally valid. The judgment interprets Article 20(1) of the Constitution (protection against ex post facto laws) and Article 300A (right to property).',
       category: 'polity',
-      sourceUrl: 'https://main.sci.gov.in/judgments',
+      sourceUrl: 'https://main.sci.gov.in',
       sourceName: 'Supreme Court of India',
       examRelevance: 'Prelims: Polity – Fundamental Rights, Property | Mains: GS2 – Judiciary',
     },
@@ -99,7 +99,7 @@ export const digest20260402: DailyDigest = {
       summary:
         'The Government of India appointed Smt. Kavitha Rao as Chairperson of the National Commission for Women (NCW), a statutory body established under the National Commission for Women Act, 1990. NCW advises the government on legislation and policies affecting women, and investigates complaints relating to constitutional and legal safeguards.',
       category: 'appointments',
-      sourceUrl: 'https://pib.gov.in/PressReleasePage.aspx',
+      sourceUrl: 'https://pib.gov.in',
       sourceName: 'Press Information Bureau',
       examRelevance: 'Prelims: Appointments – NCW | Mains: GS2 – Social Justice, Institutions',
     },
