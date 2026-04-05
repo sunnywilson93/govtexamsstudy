@@ -1,4 +1,5 @@
 import type { DailyDigest } from '@/types/current-affairs'
+import { digest20260404 } from './2026-04-04'
 import { digest20260403 } from './2026-04-03'
 import { digest20260402 } from './2026-04-02'
 import { digest20260401 } from './2026-04-01'
@@ -31,6 +32,7 @@ import { digest20260306 } from './2026-03-06'
 import { digest20260305 } from './2026-03-05'
 
 const DIGEST_REGISTRY: Record<string, DailyDigest> = {
+  '2026-04-04': digest20260404,
   '2026-04-03': digest20260403,
   '2026-04-02': digest20260402,
   '2026-04-01': digest20260401,
