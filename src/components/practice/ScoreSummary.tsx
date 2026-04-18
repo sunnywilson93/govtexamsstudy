@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Badge } from '@/components/ui/Badge'
 import { useProgressStore } from '@/store/progressStore'
+import { AdUnit } from '@/components/ads/AdUnit'
+import { AD_SLOTS } from '@/components/ads/AdSlots'
 
 interface ScoreSummaryProps {
   total: number
@@ -80,6 +82,8 @@ export function ScoreSummary({ total, correct, subject, topic, onRetry }: ScoreS
           Practice Another Topic
         </Link>
       </div>
+
+      <AdUnit slot={AD_SLOTS.practiceResultRect} format="rectangle" className="mt-8" />
     </div>
   )
 }

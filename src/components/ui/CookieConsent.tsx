@@ -35,7 +35,7 @@ export function CookieConsent() {
     >
       <div className="mx-auto flex max-w-4xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-sm text-text-secondary">
-          We use cookies for analytics and ads to keep this platform free. See our{' '}
+          We use cookies for analytics and ads to keep this platform free. Read our{' '}
           <Link href="/privacy" className="text-indigo-600 underline hover:text-indigo-700">
             Privacy Policy
           </Link>

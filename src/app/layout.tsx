@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
+import Script from 'next/script'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { JsonLd } from '@/components/JsonLd'
-import { ConsentGate } from '@/components/ui/ConsentGate'
 import { CookieConsent } from '@/components/ui/CookieConsent'
 import './globals.css'
 
@@ -108,6 +108,22 @@ export default function RootLayout({
     <html lang="en-IN">
       <head>
         <JsonLd />
+        {isProduction && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_MEASUREMENT_ID}');
+              `}
+            </Script>
+          </>
+        )}
         {isProduction && ADSENSE_CLIENT && (
           <script
             async
@@ -120,9 +136,6 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        {isProduction && (
-          <ConsentGate gaId={GA_MEASUREMENT_ID} adsenseClient={ADSENSE_CLIENT} />
-        )}
         {isProduction && <CookieConsent />}
       </body>
     </html>
