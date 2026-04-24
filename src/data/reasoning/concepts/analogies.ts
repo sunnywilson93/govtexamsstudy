@@ -4,19 +4,19 @@ export const analogiesConcept: ReasoningConcept = {
   topic: "analogies",
   title: "Analogies",
   description:
-    "Analogies test the ability to identify a relationship between a given pair and find another pair sharing the exact same relationship. Types include semantic (meaning-based), alphabetical (letter-position-based), and symbolic (coded pattern) analogies.",
+    "SSC CGL Tier-I and RRB NTPC carry 2-4 analogy questions that test your ability to identify a relationship in a given pair and match it to another pair. UPSC CSAT embeds analogies inside reading-comprehension reasoning sets. You will encounter semantic, alphabetical, and symbolic subtypes across papers. Classifying the relationship type before scanning options saves 30-40 seconds per question.",
   keyIdea:
     "First identify the precise nature of the relationship in the given pair — tool:user, part:whole, cause:effect, synonym, antonym — then apply the same logic to find the answer pair.",
   rules: [
     {
       name: "Semantic Relationship Identification",
       rule: "Categorise the pair as: tool→user, product→source, action→doer, part→whole, cause→effect, or degree (hot→warm)",
-      whenToUse: "When both words carry meaning and the link is conceptual or factual.",
+      whenToUse: "Start here when both items in the pair carry meaning and the link is conceptual or factual.",
     },
     {
       name: "Alphabetical Position Rule",
       rule: "Find position of each letter (A=1, B=2, … Z=26); compute the gap or operation (e.g., +3, ×2, reverse) and apply identically to the answer pair",
-      whenToUse: "When the analogy pair consists of letters or letter groups with no obvious semantic link.",
+      whenToUse: "Switch to this method when the pair consists of letters or letter groups with no obvious semantic connection.",
     },
     {
       name: "Mirror / Reverse Pair Rule",

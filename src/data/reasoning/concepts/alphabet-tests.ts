@@ -4,19 +4,19 @@ export const alphabetTestsConcept: ReasoningConcept = {
   topic: "alphabet-tests",
   title: "Alphabet Tests",
   description:
-    "Alphabet tests include letter-position questions, letter series completion, dictionary ordering of words, and word formation from given letters. Positional shortcuts dramatically reduce calculation time.",
+    "SSC CGL and RRB NTPC dedicate 3-5 questions to alphabet tests covering letter positions, series completion, dictionary ordering, and word formation. Candidates who memorize the EJOTY anchors solve position questions in under 10 seconds. Series and dictionary-order variants repeat across SSC CHSL and IBPS Clerk papers with minor twists. Mastering all four subtypes turns this into a guaranteed scoring area.",
   keyIdea:
     "Memorise the EJOTY positions (E=5, J=10, O=15, T=20, Y=25) as anchors — any letter's position can be found in one step using the nearest anchor.",
   rules: [
     {
       name: "EJOTY Anchor Rule",
       rule: "E=5, J=10, O=15, T=20, Y=25; to find any letter, pick the nearest anchor and count forward or backward (e.g., R = T−2 = 18)",
-      whenToUse: "For any question requiring the numerical position of a letter — eliminates counting from A every time.",
+      whenToUse: "Apply whenever a question asks for the numerical position of any letter instead of counting from A each time.",
     },
     {
       name: "Nth Letter from Right",
       rule: "Position from right = 27 − (position from left); equivalently, the letter at position n from right is the letter at position (26 − n + 1) from left",
-      whenToUse: "When asked for the 3rd letter from the right of an alphabet or a given word.",
+      whenToUse: "Use this formula when a question specifies a position from the right end of the alphabet or a rearranged word.",
     },
     {
       name: "Dictionary Order Rule",

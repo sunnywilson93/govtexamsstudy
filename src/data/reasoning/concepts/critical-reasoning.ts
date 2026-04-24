@@ -4,7 +4,7 @@ export const criticalReasoningConcept: ReasoningConcept = {
   topic: "critical-reasoning",
   title: "Critical Reasoning",
   description:
-    "Critical reasoning tests the ability to evaluate arguments — identifying assumptions, finding what strengthens or weakens an argument, and determining the best course of action.",
+    "UPSC CSAT dedicates 4-5 questions to critical reasoning, and banking mains papers test it heavily as well. You must evaluate arguments by identifying hidden assumptions, spotting what strengthens or weakens a conclusion, and judging courses of action. The negation test alone solves most assumption questions in under 60 seconds. CAT and CLAT also feature this topic in their logical reasoning sections.",
   keyIdea:
     "Every argument has a premise (given facts) and a conclusion (what is claimed). The gap between them is the assumption. Strengthening fills the gap; weakening exploits it.",
   rules: [
@@ -12,13 +12,13 @@ export const criticalReasoningConcept: ReasoningConcept = {
       name: "Assumption Identification",
       rule: "The assumption is the unstated premise that MUST be true for the conclusion to hold",
       whenToUse:
-        "When asked \"Which of the following is an assumption?\" — negate each option and check if the argument collapses.",
+        "Look for the unstated premise whenever a question asks \\\"Which of the following is an assumption?\\\" and negate each option to verify.",
     },
     {
       name: "Negation Test",
       rule: "Negate the option: if the argument breaks down, that option IS the assumption",
       whenToUse:
-        "Fastest way to confirm an assumption — used in UPSC CSAT and banking exams.",
+        "Apply this as your fastest verification step — negate the candidate assumption and check whether the argument collapses.",
     },
     {
       name: "Strengthen/Weaken",

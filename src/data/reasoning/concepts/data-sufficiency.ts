@@ -4,20 +4,20 @@ export const dataSufficiencyConcept: ReasoningConcept = {
   topic: "data-sufficiency",
   title: "Data Sufficiency",
   description:
-    "Data sufficiency questions test whether given statements provide enough information to answer a question — you do not need to solve the problem, only determine if it can be solved.",
+    "IBPS PO typically includes a set of 5 data sufficiency questions, and SBI PO follows the same pattern. You determine whether given statements provide enough information to answer a question without actually solving it. Speed comes from recognizing sufficiency patterns early and stopping as soon as the answer becomes determinable. Banking aspirants who master the five-option framework gain a reliable edge in this section.",
   keyIdea:
     "Focus on sufficiency, not the actual answer. Check each statement independently first, then together. Stop as soon as you know the answer is determinable.",
   rules: [
     {
       name: "Statement Independence",
       rule: "First check Statement I alone, then Statement II alone, before combining",
-      whenToUse: "Always — this is the standard evaluation order.",
+      whenToUse: "Follow this order on every question — evaluate Statement I alone, then Statement II alone, before combining them.",
     },
     {
       name: "Five-Option Framework",
       rule: "(a) I alone sufficient, (b) II alone sufficient, (c) Both together needed, (d) Either alone sufficient, (e) Both together not sufficient",
       whenToUse:
-        "Standard answer choices in banking exams (IBPS PO/SBI PO).",
+        "Map your findings to these five standard answer choices used in IBPS PO and SBI PO papers.",
     },
     {
       name: "Uniqueness Test",

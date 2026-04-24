@@ -4,7 +4,7 @@ export const embeddedFiguresConcept: ReasoningConcept = {
   topic: "embedded-figures",
   title: "Embedded Figures",
   description:
-    "Embedded figure problems require identifying a given simple figure hidden within a complex figure. The target figure may be rotated or positioned anywhere but its proportions remain unchanged.",
+    "SSC CGL non-verbal reasoning includes 2-3 embedded figure questions where you identify a simple target figure hidden inside a complex one. The target figure retains its proportions but may appear rotated or repositioned anywhere within the complex design. Training your eye to lock onto the most distinctive edge or angle accelerates your scan significantly. Timed practice sets build the visual pattern recognition needed to solve these under exam pressure.",
   keyIdea:
     "Focus on the most distinctive edge or angle of the target figure and scan the complex figure for that specific feature. The target figure never changes size ratio — only position and orientation may differ.",
   rules: [
@@ -12,13 +12,13 @@ export const embeddedFiguresConcept: ReasoningConcept = {
       name: "Distinctive Feature First",
       rule: "Identify the most unique line, angle, or curve in the target figure and search for it in the complex figure",
       whenToUse:
-        "Always — start with the feature that appears least often in the complex figure.",
+        "Start every question by picking the line, angle, or curve that appears least often in the complex figure and search for it first.",
     },
     {
       name: "Rotation Awareness",
       rule: "The target figure may be rotated by any angle — mentally rotate the target before matching",
       whenToUse:
-        "When the target does not seem to appear at first glance.",
+        "Mentally rotate the target figure when your initial scan finds no match — the exam often rotates the embedded shape to increase difficulty.",
     },
     {
       name: "Line-by-Line Verification",

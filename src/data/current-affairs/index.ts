@@ -1,4 +1,10 @@
 import type { DailyDigest } from '@/types/current-affairs'
+import { digest20260424 } from './2026-04-24'
+import { digest20260423 } from './2026-04-23'
+import { digest20260422 } from './2026-04-22'
+import { digest20260421 } from './2026-04-21'
+import { digest20260420 } from './2026-04-20'
+import { digest20260419 } from './2026-04-19'
 import { digest20260418 } from './2026-04-18'
 import { digest20260417 } from './2026-04-17'
 import { digest20260416 } from './2026-04-16'
@@ -46,6 +52,12 @@ import { digest20260306 } from './2026-03-06'
 import { digest20260305 } from './2026-03-05'
 
 const DIGEST_REGISTRY: Record<string, DailyDigest> = {
+  '2026-04-24': digest20260424,
+  '2026-04-23': digest20260423,
+  '2026-04-22': digest20260422,
+  '2026-04-21': digest20260421,
+  '2026-04-20': digest20260420,
+  '2026-04-19': digest20260419,
   '2026-04-18': digest20260418,
   '2026-04-17': digest20260417,
   '2026-04-16': digest20260416,
