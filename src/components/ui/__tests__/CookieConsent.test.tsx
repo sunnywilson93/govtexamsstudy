@@ -10,13 +10,16 @@ const localStorageMock = (() => {
     setItem: (key: string, value: string) => {
       store[key] = value
     },
+    removeItem: (key: string) => {
+      delete store[key]
+    },
     clear: () => {
       store = {}
     },
   }
 })()
 
-Object.defineProperty(window, 'localStorage', { value: localStorageMock })
+Object.defineProperty(window, 'localStorage', { configurable: true, value: localStorageMock })
 
 beforeEach(() => {
   localStorageMock.clear()

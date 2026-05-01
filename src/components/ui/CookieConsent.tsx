@@ -2,26 +2,24 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { CONSENT_KEY, type ConsentValue } from './consentKey'
+import { readStoredConsent, saveStoredConsent } from '@/lib/consent'
 
 export function CookieConsent() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    const stored = localStorage.getItem(CONSENT_KEY)
-    if (!stored) {
+    if (!readStoredConsent()) {
       setVisible(true)
     }
   }, [])
 
   function handleAccept() {
-    localStorage.setItem(CONSENT_KEY, 'accepted' satisfies ConsentValue)
+    saveStoredConsent('accepted')
     setVisible(false)
-    window.location.reload()
   }
 
   function handleDecline() {
-    localStorage.setItem(CONSENT_KEY, 'declined' satisfies ConsentValue)
+    saveStoredConsent('declined')
     setVisible(false)
   }
 

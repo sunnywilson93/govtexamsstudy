@@ -1,12 +1,14 @@
 /**
  * Centralized ad slot IDs.
- * Replace placeholder values with real AdSense slot IDs from your account.
+ * Set these in the deployment environment with real AdSense ad unit slot IDs.
  */
+const getSlot = (envValue: string | undefined, fallback: string) => envValue?.trim() || fallback
+
 export const AD_SLOTS = {
   /** Horizontal banner below the practice hub subject grid */
-  practiceHubBanner: '1234567890',
+  practiceHubBanner: getSlot(process.env.NEXT_PUBLIC_ADSENSE_PRACTICE_HUB_SLOT, '1726114430'),
   /** Horizontal banner below the topic list grid */
-  practiceSubjectBanner: '1234567891',
+  practiceSubjectBanner: getSlot(process.env.NEXT_PUBLIC_ADSENSE_PRACTICE_SUBJECT_SLOT, '9323291019'),
   /** Rectangle ad shown after quiz completion (ScoreSummary) */
-  practiceResultRect: '1234567892',
+  practiceResultRect: getSlot(process.env.NEXT_PUBLIC_ADSENSE_PRACTICE_RESULT_SLOT, '9695878458'),
 } as const

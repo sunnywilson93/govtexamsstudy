@@ -1,14 +1,16 @@
 import type { Metadata } from 'next'
 import { Inter, JetBrains_Mono } from 'next/font/google'
-import Script from 'next/script'
 import { Header } from '@/components/layout/Header'
 import { Footer } from '@/components/layout/Footer'
 import { JsonLd } from '@/components/JsonLd'
 import { CookieConsent } from '@/components/ui/CookieConsent'
+import { ConsentScripts } from '@/components/ui/ConsentScripts'
 import './globals.css'
 
 const GA_MEASUREMENT_ID = 'G-GPQEH3V7KN'
-const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? ''
+const ADSENSE_CLIENT = (
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? 'ca-pub-2076517097071570'
+).trim()
 const isProduction = process.env.NODE_ENV === 'production'
 
 const inter = Inter({
@@ -108,34 +110,16 @@ export default function RootLayout({
     <html lang="en-IN">
       <head>
         <JsonLd />
-        {isProduction && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-              strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${GA_MEASUREMENT_ID}');
-              `}
-            </Script>
-          </>
-        )}
-        {isProduction && ADSENSE_CLIENT && (
-          <script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
-            crossOrigin="anonymous"
-          />
-        )}
       </head>
       <body className={`${inter.variable} ${jetbrainsMono.variable} flex min-h-screen flex-col antialiased`}>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <ConsentScripts
+          enabled={isProduction}
+          gaId={GA_MEASUREMENT_ID}
+          adsenseClient={ADSENSE_CLIENT}
+        />
         {isProduction && <CookieConsent />}
       </body>
     </html>
