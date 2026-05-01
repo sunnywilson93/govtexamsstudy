@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect } from 'react'
 import Script from 'next/script'
 import { useConsentValue } from '@/hooks/useConsentValue'
 
@@ -11,8 +12,26 @@ interface ConsentScriptsProps {
 
 export function ConsentScripts({ enabled, gaId, adsenseClient }: ConsentScriptsProps) {
   const consent = useConsentValue()
+  const canLoadScripts = enabled && consent === 'accepted'
+  const trimmedAdsenseClient = adsenseClient.trim()
+  const adsenseSrc = trimmedAdsenseClient
+    ? `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${trimmedAdsenseClient}`
+    : ''
 
-  if (!enabled || consent !== 'accepted') return null
+  useEffect(() => {
+    if (!canLoadScripts || !adsenseSrc) return
+
+    const alreadyLoaded = Array.from(document.scripts).some((script) => script.src === adsenseSrc)
+    if (alreadyLoaded) return
+
+    const script = document.createElement('script')
+    script.async = true
+    script.src = adsenseSrc
+    script.crossOrigin = 'anonymous'
+    document.head.appendChild(script)
+  }, [adsenseSrc, canLoadScripts])
+
+  if (!canLoadScripts) return null
 
   return (
     <>
@@ -31,13 +50,6 @@ export function ConsentScripts({ enabled, gaId, adsenseClient }: ConsentScriptsP
             `}
           </Script>
         </>
-      )}
-      {adsenseClient && (
-        <Script
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
-          strategy="afterInteractive"
-          crossOrigin="anonymous"
-        />
       )}
     </>
   )

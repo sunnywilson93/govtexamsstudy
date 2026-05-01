@@ -21,6 +21,12 @@ const localStorageMock = (() => {
 
 Object.defineProperty(window, 'localStorage', { configurable: true, value: localStorageMock })
 
+const ADSENSE_SRC = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-test'
+
+function getAdsenseScript() {
+  return Array.from(document.scripts).find((script) => script.src === ADSENSE_SRC)
+}
+
 vi.mock('next/script', () => ({
   default: ({
     id,
@@ -39,6 +45,7 @@ vi.mock('next/script', () => ({
 
 beforeEach(() => {
   window.localStorage.clear()
+  document.querySelectorAll(`script[src="${ADSENSE_SRC}"]`).forEach((script) => script.remove())
 })
 
 describe('ConsentScripts', () => {
@@ -50,10 +57,8 @@ describe('ConsentScripts', () => {
       screen.queryByTestId('https://www.googletagmanager.com/gtag/js?id=G-TEST')
     ).not.toBeInTheDocument()
     expect(
-      screen.queryByTestId(
-        'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-test'
-      )
-    ).not.toBeInTheDocument()
+      getAdsenseScript()
+    ).toBeUndefined()
   })
 
   it('does not load GA or AdSense when consent is declined', () => {
@@ -66,24 +71,20 @@ describe('ConsentScripts', () => {
       screen.queryByTestId('https://www.googletagmanager.com/gtag/js?id=G-TEST')
     ).not.toBeInTheDocument()
     expect(
-      screen.queryByTestId(
-        'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-test'
-      )
-    ).not.toBeInTheDocument()
+      getAdsenseScript()
+    ).toBeUndefined()
   })
 
-  it('loads GA and AdSense when accepted consent is stored', () => {
+  it('loads GA and AdSense when accepted consent is stored', async () => {
     window.localStorage.setItem(CONSENT_KEY, 'accepted')
 
     render(<ConsentScripts enabled gaId="G-TEST" adsenseClient="ca-pub-test" />)
 
     expect(screen.getByTestId('google-analytics')).toBeInTheDocument()
     expect(screen.getByTestId('https://www.googletagmanager.com/gtag/js?id=G-TEST')).toBeInTheDocument()
-    expect(
-      screen.getByTestId(
-        'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-test'
-      )
-    ).toBeInTheDocument()
+    await waitFor(() => {
+      expect(getAdsenseScript()).toBeDefined()
+    })
   })
 
   it('loads scripts after consent changes to accepted in the current tab', async () => {
@@ -96,6 +97,7 @@ describe('ConsentScripts', () => {
 
     await waitFor(() => {
       expect(screen.getByTestId('google-analytics')).toBeInTheDocument()
+      expect(getAdsenseScript()).toBeDefined()
     })
   })
 })
