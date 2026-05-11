@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next'
+import { getAllDates } from '@/data/current-affairs'
 
 const baseUrl = 'https://govtexamsstudy.org'
 
@@ -278,14 +279,6 @@ const ECONOMICS_TOPICS = [
   'startup-innovation',
 ]
 
-const CURRENT_AFFAIRS_DATES = [
-  '2026-04-04', '2026-04-03', '2026-04-02', '2026-04-01',
-  '2026-03-31', '2026-03-30', '2026-03-29', '2026-03-28', '2026-03-27', '2026-03-26', '2026-03-25',
-  '2026-03-24', '2026-03-23', '2026-03-22', '2026-03-21', '2026-03-20', '2026-03-19', '2026-03-18',
-  '2026-03-17', '2026-03-16', '2026-03-15', '2026-03-14', '2026-03-13', '2026-03-12', '2026-03-11',
-  '2026-03-10', '2026-03-09', '2026-03-08', '2026-03-07', '2026-03-06', '2026-03-05',
-]
-
 const EXAM_SLUGS = [
   'upsc-cse',
   'ssc-cgl',
@@ -335,7 +328,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const geographyRoutes = GEOGRAPHY_TOPICS.map((slug) => `/geography/${slug}`)
   const economicsRoutes = ECONOMICS_TOPICS.map((slug) => `/economics/${slug}`)
   const examRoutes = EXAM_SLUGS.map((slug) => `/exams/${slug}`)
-  const currentAffairsRoutes = CURRENT_AFFAIRS_DATES.map((d) => `/current-affairs/${d}`)
+  const currentAffairsRoutes = getAllDates().map((d) => `/current-affairs/${d}`)
 
   const allRoutes = [...staticRoutes, ...quantRoutes, ...reasoningRoutes, ...polityRoutes, ...historyRoutes, ...geographyRoutes, ...economicsRoutes, ...examRoutes, ...currentAffairsRoutes]
 

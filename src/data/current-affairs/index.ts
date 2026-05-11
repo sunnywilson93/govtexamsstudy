@@ -1,4 +1,21 @@
 import type { DailyDigest } from '@/types/current-affairs'
+import { digest20260511 } from './2026-05-11'
+import { digest20260510 } from './2026-05-10'
+import { digest20260509 } from './2026-05-09'
+import { digest20260508 } from './2026-05-08'
+import { digest20260507 } from './2026-05-07'
+import { digest20260506 } from './2026-05-06'
+import { digest20260505 } from './2026-05-05'
+import { digest20260504 } from './2026-05-04'
+import { digest20260503 } from './2026-05-03'
+import { digest20260502 } from './2026-05-02'
+import { digest20260501 } from './2026-05-01'
+import { digest20260430 } from './2026-04-30'
+import { digest20260429 } from './2026-04-29'
+import { digest20260428 } from './2026-04-28'
+import { digest20260427 } from './2026-04-27'
+import { digest20260426 } from './2026-04-26'
+import { digest20260425 } from './2026-04-25'
 import { digest20260424 } from './2026-04-24'
 import { digest20260423 } from './2026-04-23'
 import { digest20260422 } from './2026-04-22'
@@ -52,6 +69,23 @@ import { digest20260306 } from './2026-03-06'
 import { digest20260305 } from './2026-03-05'
 
 const DIGEST_REGISTRY: Record<string, DailyDigest> = {
+  '2026-05-11': digest20260511,
+  '2026-05-10': digest20260510,
+  '2026-05-09': digest20260509,
+  '2026-05-08': digest20260508,
+  '2026-05-07': digest20260507,
+  '2026-05-06': digest20260506,
+  '2026-05-05': digest20260505,
+  '2026-05-04': digest20260504,
+  '2026-05-03': digest20260503,
+  '2026-05-02': digest20260502,
+  '2026-05-01': digest20260501,
+  '2026-04-30': digest20260430,
+  '2026-04-29': digest20260429,
+  '2026-04-28': digest20260428,
+  '2026-04-27': digest20260427,
+  '2026-04-26': digest20260426,
+  '2026-04-25': digest20260425,
   '2026-04-24': digest20260424,
   '2026-04-23': digest20260423,
   '2026-04-22': digest20260422,
