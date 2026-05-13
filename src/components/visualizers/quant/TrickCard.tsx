@@ -12,43 +12,113 @@ const TYPE_LABEL: Record<QuantTrick['type'], string> = {
   'mental-math': 'Mental Math',
 }
 
-const TYPE_STYLE: Record<QuantTrick['type'], string> = {
-  'formula-shortcut': 'bg-blue-100 text-blue-700',
-  'mental-math': 'bg-amber-100 text-amber-700',
+const TYPE_BADGE_STYLE: Record<QuantTrick['type'], { bg: string; fg: string }> = {
+  'formula-shortcut': { bg: '#dbeafe', fg: '#1d4ed8' },
+  'mental-math': { bg: '#fef3c7', fg: '#b45309' },
 }
 
 export function TrickCard({ trick }: TrickCardProps) {
+  const badge = TYPE_BADGE_STYLE[trick.type]
   return (
     <motion.div
-      className="rounded-lg border border-border-primary bg-bg-elevated p-5 flex flex-col gap-3"
       whileHover={{ scale: 1.01 }}
       transition={{ duration: 0.15 }}
+      style={{
+        background: 'var(--paper)',
+        border: '.5px solid var(--rule)',
+        borderRadius: 'var(--r-md)',
+        boxShadow: 'var(--sh-1)',
+        padding: 16,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 10,
+      }}
     >
-      <div className="flex items-start justify-between gap-3">
-        <h4 className="text-sm font-semibold text-text-primary">{trick.title}</h4>
+      <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 12 }}>
+        <h4 style={{ fontSize: 14, fontWeight: 700, color: 'var(--ink)', lineHeight: 1.35 }}>
+          {trick.title}
+        </h4>
         <span
-          className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-medium ${TYPE_STYLE[trick.type]}`}
+          style={{
+            flexShrink: 0,
+            fontSize: 10.5,
+            fontWeight: 700,
+            padding: '3px 8px',
+            borderRadius: 999,
+            background: badge.bg,
+            color: badge.fg,
+            letterSpacing: '-.005em',
+          }}
         >
           {TYPE_LABEL[trick.type]}
         </span>
       </div>
 
-      <p className="text-sm text-text-secondary">{trick.description}</p>
+      <p style={{ fontSize: 13, color: 'var(--ink-2)', lineHeight: 1.5 }}>{trick.description}</p>
 
       {trick.formula && (
-        <div className="rounded-md bg-bg-secondary px-3 py-2">
-          <p className="font-mono text-sm text-subject-quant">{trick.formula}</p>
+        <div
+          style={{
+            background: 'var(--paper-2)',
+            borderRadius: 'var(--r-sm)',
+            padding: '10px 12px',
+          }}
+        >
+          <p
+            className="mono"
+            style={{
+              fontSize: 13,
+              fontWeight: 600,
+              color: 'var(--subj-quant)',
+            }}
+          >
+            {trick.formula}
+          </p>
         </div>
       )}
 
-      <div className="rounded-md border border-border-secondary bg-bg-secondary p-3 flex flex-col gap-1">
-        <p className="text-xs font-semibold text-text-muted uppercase tracking-wider">Example</p>
-        <p className="text-xs text-text-secondary">{trick.example.problem}</p>
-        <p className="text-xs font-medium text-text-primary">{trick.example.solution}</p>
+      <div
+        style={{
+          background: 'var(--paper-2)',
+          borderRadius: 'var(--r-sm)',
+          padding: 12,
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 4,
+        }}
+      >
+        <p
+          className="mono"
+          style={{
+            fontSize: 10,
+            fontWeight: 700,
+            letterSpacing: '0.08em',
+            textTransform: 'uppercase',
+            color: 'var(--ink-3)',
+          }}
+        >
+          Example
+        </p>
+        <p style={{ fontSize: 12.5, color: 'var(--ink-2)', lineHeight: 1.45 }}>
+          {trick.example.problem}
+        </p>
+        <p style={{ fontSize: 12.5, fontWeight: 600, color: 'var(--ink)', lineHeight: 1.45 }}>
+          {trick.example.solution}
+        </p>
       </div>
 
       {trick.timeSaved && (
-        <span className="self-start rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700">
+        <span
+          style={{
+            alignSelf: 'flex-start',
+            fontSize: 10.5,
+            fontWeight: 700,
+            padding: '3px 8px',
+            borderRadius: 999,
+            background: '#dcfce7',
+            color: '#15803d',
+          }}
+        >
           Saves {trick.timeSaved}
         </span>
       )}

@@ -1,17 +1,14 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { ChevronRight, ChevronLeft, Calendar } from 'lucide-react'
 import { getAllDates, getDigest } from '@/data/current-affairs'
 import { DigestFilter } from './DigestFilter'
+import { DateSelector } from '../_components/DateSelector'
+import { DayStrip } from '../_components/DayStrip'
+import { formatDateEyebrow, formatDateShort } from '../_components/categories'
 
 export function generateStaticParams() {
   return getAllDates().map((date) => ({ date }))
-}
-
-function formatDateLong(dateStr: string): string {
-  const d = new Date(dateStr + 'T00:00:00')
-  return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })
 }
 
 export async function generateMetadata({
@@ -20,9 +17,9 @@ export async function generateMetadata({
   params: Promise<{ date: string }>
 }): Promise<Metadata> {
   const { date } = await params
-  const formatted = formatDateLong(date)
+  const formatted = formatDateEyebrow(date)
   return {
-    title: `${formatted} — Daily Current Affairs for UPSC, SSC | GovtExamsStudy`,
+    title: `${formatDateShort(date)} — Daily Current Affairs | GovtExamsStudy`,
     description: `Current affairs for ${formatted}. Exam-relevant news from official government sources for UPSC, SSC CGL, IBPS PO preparation.`,
   }
 }
@@ -42,75 +39,180 @@ export default async function DailyDigestPage({
   const nextDate = currentIndex > 0 ? allDates[currentIndex - 1] : null
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
-      {/* Breadcrumb */}
-      <nav className="mb-6 flex items-center gap-1 text-xs text-text-muted" aria-label="Breadcrumb">
-        <Link href="/" className="text-text-muted no-underline hover:text-text-primary">Home</Link>
-        <ChevronRight size={12} />
-        <Link href="/current-affairs" className="text-text-muted no-underline hover:text-text-primary">Current Affairs</Link>
-        <ChevronRight size={12} />
-        <span className="text-text-primary">{formatDateLong(date)}</span>
-      </nav>
+    <main style={{ background: 'var(--paper)' }}>
+      <section
+        className="dot-bg"
+        style={{
+          position: 'relative',
+          background: 'var(--paper-2)',
+          borderBottom: '.5px solid var(--rule)',
+          overflow: 'hidden',
+        }}
+      >
+        <div
+          style={{
+            position: 'absolute',
+            inset: 0,
+            background:
+              'radial-gradient(100% 80% at 0% 0%, rgba(99,102,241,.10), transparent 55%), radial-gradient(80% 80% at 100% 100%, rgba(245,158,11,.08), transparent 60%)',
+            pointerEvents: 'none',
+          }}
+        />
+        <div
+          className="mx-auto max-w-6xl px-4 pb-7 pt-10 sm:px-6 sm:pb-9 sm:pt-14 lg:px-10"
+          style={{ position: 'relative' }}
+        >
+          <nav
+            className="mono"
+            aria-label="Breadcrumb"
+            style={{
+              fontSize: 10.5,
+              fontWeight: 700,
+              color: 'var(--ink-3)',
+              letterSpacing: '.1em',
+              textTransform: 'uppercase',
+              marginBottom: 14,
+              display: 'inline-flex',
+              gap: 8,
+              alignItems: 'center',
+              flexWrap: 'wrap',
+            }}
+          >
+            <Link href="/" style={{ color: 'var(--ink-3)', textDecoration: 'none' }}>
+              Home
+            </Link>
+            <span aria-hidden style={{ color: 'var(--ink-4)' }}>
+              /
+            </span>
+            <Link
+              href="/current-affairs"
+              style={{ color: 'var(--ink-3)', textDecoration: 'none' }}
+            >
+              Current Affairs
+            </Link>
+            <span aria-hidden style={{ color: 'var(--ink-4)' }}>
+              /
+            </span>
+            <span style={{ color: 'var(--ink-2)' }}>{formatDateShort(date)}</span>
+          </nav>
 
-      {/* Header */}
-      <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-        <div className="flex items-center gap-3">
-          <Calendar size={20} className="text-primary" />
-          <div>
-            <h1 className="text-xl font-bold text-text-primary sm:text-2xl">{formatDateLong(date)}</h1>
-            <p className="text-xs text-text-muted">{digest.items.length} items from official sources</p>
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              alignItems: 'flex-end',
+              justifyContent: 'space-between',
+              gap: 18,
+            }}
+          >
+            <div style={{ flex: '1 1 320px', minWidth: 0 }}>
+              <div
+                className="mono"
+                style={{
+                  fontSize: 11,
+                  fontWeight: 700,
+                  letterSpacing: '.14em',
+                  color: 'var(--ink-3)',
+                  textTransform: 'uppercase',
+                }}
+              >
+                {formatDateEyebrow(date)}
+              </div>
+              <h1
+                style={{
+                  margin: '8px 0 0',
+                  fontSize: 'var(--t-display)',
+                  fontWeight: 800,
+                  letterSpacing: '-.03em',
+                  lineHeight: 1,
+                  color: 'var(--ink)',
+                }}
+              >
+                Daily Current Affairs
+              </h1>
+              <p
+                style={{
+                  margin: '12px 0 0',
+                  fontSize: 14.5,
+                  color: 'var(--ink-2)',
+                  maxWidth: 560,
+                  lineHeight: 1.55,
+                }}
+              >
+                <span className="mono" style={{ fontWeight: 700, color: 'var(--ink)' }}>
+                  PIB-sourced
+                </span>{' '}
+                · {digest.items.length} items · filter by topic below.
+              </p>
+            </div>
+
+            <DateSelector dates={allDates} active={date} basePath="/current-affairs/date" />
+          </div>
+
+          <div style={{ marginTop: 22 }}>
+            <DayStrip dates={allDates} active={date} basePath="/current-affairs/date" />
           </div>
         </div>
-        <div className="flex gap-2">
-          {prevDate && (
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-20 pt-8 sm:px-6 sm:pt-10 lg:px-10">
+        <DigestFilter items={digest.items} />
+
+        <nav
+          style={{
+            marginTop: 32,
+            paddingTop: 18,
+            borderTop: '.5px solid var(--rule)',
+            display: 'flex',
+            justifyContent: 'space-between',
+            gap: 10,
+            flexWrap: 'wrap',
+          }}
+        >
+          {prevDate ? (
             <Link
               href={`/current-affairs/${prevDate}`}
-              className="inline-flex items-center gap-1 rounded-lg border border-border-primary bg-bg-elevated px-3 py-1.5 text-xs font-medium text-text-primary no-underline transition-colors hover:bg-bg-tertiary"
+              className="mono"
+              style={{
+                fontSize: 11.5,
+                fontWeight: 700,
+                color: 'var(--indigo-600)',
+                letterSpacing: '.06em',
+                textDecoration: 'none',
+                textTransform: 'uppercase',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 6,
+              }}
             >
-              <ChevronLeft size={12} />
-              Prev
+              <span aria-hidden>←</span> {formatDateShort(prevDate)}
             </Link>
+          ) : (
+            <span />
           )}
-          {nextDate && (
+          {nextDate ? (
             <Link
               href={`/current-affairs/${nextDate}`}
-              className="inline-flex items-center gap-1 rounded-lg border border-border-primary bg-bg-elevated px-3 py-1.5 text-xs font-medium text-text-primary no-underline transition-colors hover:bg-bg-tertiary"
+              className="mono"
+              style={{
+                fontSize: 11.5,
+                fontWeight: 700,
+                color: 'var(--indigo-600)',
+                letterSpacing: '.06em',
+                textDecoration: 'none',
+                textTransform: 'uppercase',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 6,
+              }}
             >
-              Next
-              <ChevronRight size={12} />
+              {formatDateShort(nextDate)} <span aria-hidden>→</span>
             </Link>
+          ) : (
+            <span />
           )}
-        </div>
-      </div>
-
-      {/* Filter + Items (client component) */}
-      <DigestFilter items={digest.items} />
-
-      {/* Bottom Navigation */}
-      <div className="mt-8 flex items-center justify-between border-t border-border-primary pt-4">
-        {prevDate ? (
-          <Link
-            href={`/current-affairs/${prevDate}`}
-            className="inline-flex items-center gap-1 text-xs font-medium text-primary no-underline hover:underline"
-          >
-            <ChevronLeft size={12} />
-            {formatDateLong(prevDate)}
-          </Link>
-        ) : (
-          <span />
-        )}
-        {nextDate ? (
-          <Link
-            href={`/current-affairs/${nextDate}`}
-            className="inline-flex items-center gap-1 text-xs font-medium text-primary no-underline hover:underline"
-          >
-            {formatDateLong(nextDate)}
-            <ChevronRight size={12} />
-          </Link>
-        ) : (
-          <span />
-        )}
-      </div>
-    </div>
+        </nav>
+      </section>
+    </main>
   )
 }

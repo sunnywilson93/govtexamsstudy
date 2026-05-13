@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { ChevronRight } from 'lucide-react'
-import { clsx } from 'clsx'
 
 interface NavLink {
   href: string
@@ -23,7 +22,6 @@ interface SubjectLayoutProps {
 function groupLinks(links: NavLink[]) {
   const groups: { name: string | null; links: NavLink[] }[] = []
   let currentGroup: string | null | undefined = undefined
-
   links.forEach((link) => {
     const group = link.group ?? null
     if (group !== currentGroup) {
@@ -33,7 +31,6 @@ function groupLinks(links: NavLink[]) {
       groups[groups.length - 1].links.push(link)
     }
   })
-
   return groups
 }
 
@@ -51,23 +48,28 @@ export function SubjectLayout({
   const hasGroups = links.some((l) => l.group)
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-6">
-      <nav aria-label="Breadcrumb" className="mb-4 flex items-center gap-1 text-sm">
+    <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
+      <nav
+        aria-label="Breadcrumb"
+        className="mb-5 flex items-center gap-1.5 text-sm"
+        style={{ color: 'var(--ink-3)' }}
+      >
         <Link
           href="/"
-          className="text-text-secondary no-underline transition-colors hover:text-text-primary"
+          className="no-underline transition-colors"
+          style={{ color: 'var(--ink-3)' }}
         >
           Home
         </Link>
-        <ChevronRight size={14} className="text-text-muted" />
+        <ChevronRight size={14} style={{ color: 'var(--ink-4)' }} />
         {pathname === `/${subjectSlug}` ? (
-          <span className="font-medium" style={{ color: subjectColor }}>
+          <span className="font-semibold" style={{ color: subjectColor }}>
             {subjectName}
           </span>
         ) : (
           <Link
             href={`/${subjectSlug}`}
-            className="font-medium no-underline transition-colors hover:opacity-80"
+            className="font-semibold no-underline"
             style={{ color: subjectColor }}
           >
             {subjectName}
@@ -76,61 +78,92 @@ export function SubjectLayout({
       </nav>
 
       {showHeading && (
-        <h1 className="mb-6 text-2xl font-bold text-text-primary">
+        <h1
+          className="mb-6 text-[28px] font-extrabold sm:text-[34px]"
+          style={{ color: 'var(--ink)', letterSpacing: '-.025em' }}
+        >
           <span style={{ color: subjectColor }}>{subjectName}</span>
         </h1>
       )}
 
-      <div className="flex gap-6">
+      <div className="flex gap-6 lg:gap-8">
         {/* Desktop sidebar */}
-        <aside className="hidden w-56 shrink-0 lg:block" aria-label="Subject navigation">
+        <aside
+          className="hidden w-60 shrink-0 lg:block"
+          aria-label="Subject navigation"
+        >
           <div className="sticky top-20">
-          <nav className="overflow-y-auto rounded-lg border border-border-primary bg-bg-secondary p-3" style={{ maxHeight: 'calc(100vh - 5rem)' }}>
-            {groups.map((group, gi) => (
-              <div key={gi} className={gi > 0 ? 'mt-3' : undefined}>
-                {group.name && (
-                  <p className="mb-1 px-3 text-[10px] font-semibold uppercase tracking-widest text-text-muted">
-                    {group.name}
-                  </p>
-                )}
-                <ul className="flex flex-col gap-0.5">
-                  {group.links.map((link) => (
-                    <li key={link.href}>
-                      <Link
-                        href={link.href}
-                        className={clsx(
-                          'block rounded-md px-3 py-1 text-sm no-underline transition-colors',
-                          pathname === link.href
-                            ? 'font-medium text-text-primary'
-                            : 'text-text-secondary hover:bg-bg-tertiary hover:text-text-primary'
-                        )}
-                        style={
-                          pathname === link.href
-                            ? { backgroundColor: `${subjectColor}15` }
-                            : undefined
-                        }
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </nav>
+            <nav
+              className="overflow-y-auto rounded-2xl border p-3.5"
+              style={{
+                background: 'var(--paper-2)',
+                borderColor: 'var(--rule)',
+                maxHeight: 'calc(100vh - 5rem)',
+              }}
+            >
+              {groups.map((group, gi) => (
+                <div key={gi} className={gi > 0 ? 'mt-4' : undefined}>
+                  {group.name && (
+                    <p
+                      className="mono mb-1.5 px-2 text-[10px] font-bold uppercase"
+                      style={{
+                        color: 'var(--ink-3)',
+                        letterSpacing: '.1em',
+                      }}
+                    >
+                      {group.name}
+                    </p>
+                  )}
+                  <ul className="flex flex-col gap-0.5">
+                    {group.links.map((link) => {
+                      const active = pathname === link.href
+                      return (
+                        <li key={link.href}>
+                          <Link
+                            href={link.href}
+                            className="block rounded-md px-2.5 py-1.5 text-[13px] no-underline transition-colors"
+                            style={
+                              active
+                                ? {
+                                    background: `color-mix(in oklch, ${subjectColor} 12%, transparent)`,
+                                    color: 'var(--ink)',
+                                    fontWeight: 700,
+                                  }
+                                : {
+                                    color: 'var(--ink-2)',
+                                    fontWeight: 500,
+                                  }
+                            }
+                          >
+                            {link.label}
+                          </Link>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </div>
+              ))}
+            </nav>
           </div>
         </aside>
 
         <div className="min-w-0 flex-1">
           {/* Mobile nav */}
-          <div className="mb-4 lg:hidden">
+          <div className="mb-5 lg:hidden">
             {hasGroups ? (
               <select
                 aria-label="Navigate to topic"
                 value={pathname}
                 onChange={(e) => router.push(e.target.value)}
-                className="w-full rounded-lg border border-border-primary bg-bg-elevated px-3 py-2 text-sm text-text-primary focus:outline-none focus:ring-2"
-                style={{ '--tw-ring-color': subjectColor } as React.CSSProperties}
+                className="w-full rounded-xl border px-3 py-2.5 text-sm focus:outline-none focus:ring-2"
+                style={
+                  {
+                    background: 'var(--paper)',
+                    borderColor: 'var(--rule)',
+                    color: 'var(--ink)',
+                    '--tw-ring-color': subjectColor,
+                  } as React.CSSProperties
+                }
               >
                 {groups.map((group, gi) => (
                   <optgroup key={gi} label={group.name ?? subjectName}>
@@ -148,25 +181,31 @@ export function SubjectLayout({
                 aria-label="Subject navigation mobile"
               >
                 <div className="flex gap-2 pb-2">
-                  {links.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className={clsx(
-                        'shrink-0 rounded-full border px-3 py-1.5 text-xs font-medium no-underline transition-colors',
-                        pathname === link.href
-                          ? 'border-transparent text-white'
-                          : 'border-border-primary text-text-secondary hover:border-border-secondary hover:text-text-primary'
-                      )}
-                      style={
-                        pathname === link.href
-                          ? { backgroundColor: subjectColor }
-                          : undefined
-                      }
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+                  {links.map((link) => {
+                    const active = pathname === link.href
+                    return (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        className="shrink-0 rounded-full border px-3 py-1.5 text-xs font-semibold no-underline transition-colors"
+                        style={
+                          active
+                            ? {
+                                background: subjectColor,
+                                color: 'var(--paper)',
+                                borderColor: 'transparent',
+                              }
+                            : {
+                                background: 'var(--paper)',
+                                color: 'var(--ink-2)',
+                                borderColor: 'var(--rule)',
+                              }
+                        }
+                      >
+                        {link.label}
+                      </Link>
+                    )
+                  })}
                 </div>
               </nav>
             )}

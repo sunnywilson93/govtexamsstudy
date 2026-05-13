@@ -1,0 +1,17 @@
+# Sensitive — never deploy these
+ssh
+ssh.pub
+*.pem
+*.key
+
+# Design / planning artifacts — not used at runtime
+ux/
+docs/
+AGENTS.md
+
+# Test + tooling logs
+.playwright-mcp/
+coverage/
+
+# Local tooling state
+.claude/

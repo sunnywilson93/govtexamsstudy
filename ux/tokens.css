@@ -1,0 +1,184 @@
+/* Govtstudy design tokens — shared visual language
+   Inter (body) + JetBrains Mono (numbers, equations, code).
+   Inter is locked; we own the SCALE. */
+
+:root {
+  /* — Brand — */
+  --indigo-50:  #eef2ff;
+  --indigo-100: #e0e7ff;
+  --indigo-200: #c7d2fe;
+  --indigo-500: #6366f1;
+  --indigo-600: #4f46e5;
+  --indigo-700: #4338ca;
+  --indigo-900: #312e81;
+  --amber-100: #fef3c7;
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+  --amber-700: #b45309;   /* contrast-safe tag text */
+
+  /* — Subjects — */
+  --subj-quant:      #3b82f6;
+  --subj-quant-ink:  #1d4ed8;
+  --subj-reasoning:  #a855f7;
+  --subj-reasoning-ink: #7e22ce;
+  --subj-polity:     #ef4444;
+  --subj-polity-ink: #b91c1c;
+  --subj-history:    #f59e0b;
+  --subj-history-ink:#b45309;  /* flagged contrast variant */
+  --subj-geography:  #10b981;
+  --subj-geography-ink: #047857;
+  --subj-economics:  #14b8a6;
+  --subj-economics-ink:#0f766e;
+  --subj-science:    #06b6d4;
+  --subj-science-ink:#0e7490;
+
+  /* — Neutrals (slightly warm) — */
+  --paper:   #fbfaf7;     /* near-white, warm */
+  --paper-2: #f5f3ee;
+  --ink:     #1c1917;
+  --ink-2:   #44403c;
+  --ink-3:   #78716c;
+  --ink-4:   #a8a29e;
+  --rule:    #e7e5e0;
+  --rule-2:  #d6d3cd;
+
+  /* — Motion — */
+  --ease-out-soft: cubic-bezier(.22,.61,.36,1);
+  --ease-in-out-snap: cubic-bezier(.5,0,.2,1);
+  --dur-fast: 220ms;
+  --dur-base: 380ms;
+  --dur-slow: 700ms;
+
+  /* — Type scale — */
+  --t-display: clamp(28px, 6vw, 44px);
+  --t-h1: clamp(22px, 4.4vw, 30px);
+  --t-h2: clamp(18px, 3.6vw, 22px);
+  --t-h3: 16px;
+  --t-body: 14.5px;
+  --t-small: 12.5px;
+  --t-micro: 11px;
+
+  /* — Radii — */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+
+  /* — Shadow — */
+  --sh-1: 0 1px 0 rgba(0,0,0,.04), 0 1px 2px rgba(28,25,23,.05);
+  --sh-2: 0 4px 14px rgba(28,25,23,.07), 0 1px 2px rgba(28,25,23,.04);
+  --sh-3: 0 18px 42px -16px rgba(28,25,23,.18), 0 4px 10px rgba(28,25,23,.06);
+
+  /* — Density — */
+  --pad-x: 16px;
+  --pad-y: 14px;
+  --gap:   12px;
+}
+
+/* Dark theme — keep palette identity; darken paper, invert ink */
+[data-theme="dark"] {
+  --paper:   #14131a;
+  --paper-2: #1c1b24;
+  --ink:     #f5f5f4;
+  --ink-2:   #d6d3cd;
+  --ink-3:   #a8a29e;
+  --ink-4:   #78716c;
+  --rule:    #2c2a34;
+  --rule-2:  #393644;
+  --indigo-50:  #1c1d3a;
+  --indigo-100: #232450;
+  --amber-100:  #3a2a0a;
+  --sh-1: 0 1px 0 rgba(0,0,0,.4);
+  --sh-2: 0 4px 18px rgba(0,0,0,.45);
+  --sh-3: 0 22px 60px -18px rgba(0,0,0,.65), 0 6px 16px rgba(0,0,0,.4);
+}
+
+/* Density variants */
+[data-density="compact"] { --pad-x: 12px; --pad-y: 10px; --gap: 8px; }
+[data-density="comfy"]   { --pad-x: 20px; --pad-y: 18px; --gap: 16px; }
+
+/* — Motion intensity — */
+[data-motion="subtle"] { --dur-fast: 160ms; --dur-base: 240ms; --dur-slow: 420ms; }
+[data-motion="lively"] { --dur-fast: 260ms; --dur-base: 440ms; --dur-slow: 900ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    transition-duration: .001ms !important;
+  }
+}
+
+/* — Base — */
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'cv11', 'ss01', 'ss03';
+}
+.mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-feature-settings: 'zero', 'ss03'; }
+
+/* — Utilities — */
+.dot-bg {
+  background-image: radial-gradient(rgba(28,25,23,.08) 1px, transparent 1px);
+  background-size: 14px 14px;
+  background-position: 0 0;
+}
+[data-theme="dark"] .dot-bg {
+  background-image: radial-gradient(rgba(255,255,255,.06) 1px, transparent 1px);
+}
+
+.hero-gradient {
+  background:
+    radial-gradient(120% 80% at 0% 0%, rgba(99,102,241,.18), transparent 55%),
+    radial-gradient(80% 80% at 100% 100%, rgba(245,158,11,.10), transparent 60%),
+    linear-gradient(180deg, var(--paper), var(--paper-2));
+}
+
+.glass {
+  background: color-mix(in oklch, var(--paper) 70%, transparent);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  border: .5px solid color-mix(in oklch, var(--ink) 8%, transparent);
+}
+
+.dashed-rule {
+  background-image: linear-gradient(90deg, var(--rule-2) 50%, transparent 0);
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+}
+.dashed-vert {
+  background-image: linear-gradient(180deg, var(--rule-2) 50%, transparent 0);
+  background-size: 1px 8px;
+  background-repeat: repeat-y;
+}
+
+/* Tag (exam pill) */
+.tag {
+  display: inline-flex; align-items: center; gap: 4px;
+  font: 600 11px/1 'JetBrains Mono', ui-monospace, monospace;
+  letter-spacing: .04em; text-transform: uppercase;
+  padding: 5px 7px 4px; border-radius: 5px;
+  background: color-mix(in oklch, var(--ink) 6%, transparent);
+  color: var(--ink-2);
+}
+
+/* Subject pill */
+.subj-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  font: 600 12px/1 'Inter', sans-serif;
+  padding: 6px 10px; border-radius: 999px;
+  background: color-mix(in oklch, var(--subj) 14%, var(--paper));
+  color: var(--subj-ink);
+}
+
+/* Stop button-on-button hover noise */
+button { font-family: inherit; }
+
+/* Reduce-motion still-frame indicator (educational) */
+@media (prefers-reduced-motion: reduce) {
+  .motion-only { display: none; }
+}

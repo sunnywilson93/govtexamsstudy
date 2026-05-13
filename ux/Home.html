@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Govtstudy · Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" />
+<link rel="stylesheet" href="tokens.css" />
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<style>
+  html, body { height: 100%; }
+  body { overflow: hidden; }
+  #root { height: 100%; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="bill-visualizer.jsx"></script>
+<script type="text/babel">
+  // MiniBill is defined in app.jsx; reproduce it here so Home can load standalone.
+  window.MiniBill = function ({ stamped, progress }) {
+    const tints = ['#9ca3af', '#fbbf24', '#fb923c', '#16a34a'];
+    return (
+      <svg width="40" height="48" viewBox="0 0 40 48">
+        <defs>
+          <linearGradient id={`gh-${progress}`} x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stopColor="#fdfbf3"/>
+            <stop offset="1" stopColor="#f1ecd9"/>
+          </linearGradient>
+        </defs>
+        <path d="M4 3 L30 3 L36 9 L36 45 L4 45 Z" fill={`url(#gh-${progress})`} stroke="#2d2a25" strokeWidth="1.2" strokeLinejoin="round" />
+        <path d="M30 3 L30 9 L36 9" fill="none" stroke="#2d2a25" strokeWidth="1.2" />
+        <rect x="9"  y="15" width="18" height="1.6" fill="#2d2a25" opacity=".5" />
+        <rect x="9"  y="20" width="22" height="1.6" fill="#2d2a25" opacity=".4" />
+        <rect x="9"  y="25" width="14" height="1.6" fill="#2d2a25" opacity=".4" />
+        <rect x="9"  y="30" width="20" height="1.6" fill="#2d2a25" opacity=".4" />
+        <rect x="9"  y="35" width="11" height="1.6" fill="#2d2a25" opacity=".4" />
+        <rect x="22" y="-2" width="5" height="14" fill={tints[progress]} />
+        <path d="M22 12 L24.5 9 L27 12 Z" fill={tints[progress]} />
+        {stamped && (
+          <g transform="translate(20,30) rotate(-14)">
+            <circle r="9" fill="none" stroke="#dc2626" strokeWidth="1.4" />
+            <text textAnchor="middle" y="-1" fill="#dc2626" fontSize="4.2" fontWeight="800" fontFamily="JetBrains Mono">ASSENT</text>
+            <text textAnchor="middle" y="4" fill="#dc2626" fontSize="3" fontFamily="JetBrains Mono">PRESIDENT</text>
+          </g>
+        )}
+      </svg>
+    );
+  };
+</script>
+<script type="text/babel" src="home-page.jsx"></script>
+<script type="text/babel" src="home-app.jsx"></script>
+</body>
+</html>

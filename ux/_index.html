@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Govtstudy · Full UX revamp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" />
+<link rel="stylesheet" href="tokens.css" />
+<style>
+  html, body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Inter', sans-serif; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 56px 32px 96px; }
+  .eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--ink-3); }
+  h1 { font-size: clamp(34px, 6vw, 56px); font-weight: 800; letter-spacing: -.03em; line-height: 1.02; margin: 14px 0 18px; }
+  h1 em { color: var(--indigo-600); font-style: normal; }
+  .lede { font-size: 17px; line-height: 1.55; color: var(--ink-2); max-width: 640px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+  .pill { font-family: 'JetBrains Mono', monospace; font-size: 11px; padding: 4px 10px; border-radius: 999px; background: var(--paper-2); color: var(--ink-2); border: .5px solid var(--rule); font-weight: 600; letter-spacing: .04em; }
+  .system { margin-top: 56px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; border-top: .5px solid var(--rule); padding-top: 28px; }
+  .system h3 { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: var(--ink-3); margin: 0 0 10px; }
+  .swatches { display: flex; gap: 6px; flex-wrap: wrap; }
+  .sw { width: 28px; height: 28px; border-radius: 8px; border: .5px solid rgba(0,0,0,.08); }
+  .modules { margin-top: 56px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  a.card { display: block; text-decoration: none; color: inherit; background: var(--paper); border: .5px solid var(--rule); border-radius: 16px; padding: 22px; transition: all .22s var(--ease-out-soft); position: relative; overflow: hidden; }
+  a.card:hover { transform: translateY(-2px); box-shadow: 0 22px 50px -22px rgba(28,25,23,.22); border-color: var(--indigo-200); }
+  .num { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 800; color: var(--indigo-600); letter-spacing: .1em; }
+  .ttl { font-size: 22px; font-weight: 800; letter-spacing: -.015em; margin: 6px 0 4px; }
+  .sub { font-size: 13px; color: var(--ink-3); line-height: 1.45; }
+  .tags { display: flex; gap: 6px; margin-top: 14px; flex-wrap: wrap; }
+  .tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 3px 7px; border-radius: 6px; background: var(--paper-2); color: var(--ink-2); font-weight: 600; }
+  .wow { margin-top: 14px; padding: 10px 12px; border-left: 3px solid var(--amber-500); background: color-mix(in oklch, var(--amber-500) 7%, transparent); font-size: 12.5px; color: var(--ink-2); border-radius: 0 8px 8px 0; }
+  .wow b { color: var(--ink); }
+  footer { margin-top: 64px; padding-top: 24px; border-top: .5px solid var(--rule); font-size: 12px; color: var(--ink-3); line-height: 1.55; }
+  @media (max-width: 720px) {
+    .system { grid-template-columns: repeat(2, 1fr); }
+    .modules { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Govtstudy · UX revamp · v1.0</div>
+  <h1>Don't memorize.<br/><em>Watch it happen.</em></h1>
+  <p class="lede">Full UX revamp for govtexamsstudy.org — the only Indian exam-prep site betting on interactive visual learning. Six modules, all mobile-first with desktop adaptations, sharing one design language.</p>
+  <div class="meta">
+    <span class="pill">7 HTML files</span>
+    <span class="pill">Mobile + Desktop</span>
+    <span class="pill">Light + Dark</span>
+    <span class="pill">Tweaks panel</span>
+    <span class="pill">Inter + JetBrains Mono</span>
+    <span class="pill">prefers-reduced-motion ✓</span>
+  </div>
+
+  <div class="system">
+    <div>
+      <h3>Brand</h3>
+      <div class="swatches">
+        <div class="sw" style="background:#4f46e5"></div>
+        <div class="sw" style="background:#f59e0b"></div>
+        <div class="sw" style="background:#fbfaf7"></div>
+        <div class="sw" style="background:#1c1917"></div>
+      </div>
+    </div>
+    <div>
+      <h3>Subjects</h3>
+      <div class="swatches">
+        <div class="sw" style="background:#3b82f6" title="Quant"></div>
+        <div class="sw" style="background:#a855f7" title="Reasoning"></div>
+        <div class="sw" style="background:#ef4444" title="Polity"></div>
+        <div class="sw" style="background:#f59e0b" title="History"></div>
+        <div class="sw" style="background:#10b981" title="Geography"></div>
+        <div class="sw" style="background:#14b8a6" title="Economics"></div>
+        <div class="sw" style="background:#06b6d4" title="Science"></div>
+      </div>
+    </div>
+    <div>
+      <h3>Type</h3>
+      <div style="font-weight:800;font-size:22px;letter-spacing:-.02em">Inter</div>
+      <div class="mono" style="font-size:13px;color:var(--ink-3);margin-top:2px">JetBrains Mono · 218</div>
+    </div>
+    <div>
+      <h3>Motion</h3>
+      <div class="mono" style="font-size:12px;color:var(--ink-2);line-height:1.55">220ms · 380ms · 700ms<br/><span style="color:var(--ink-3)">cubic-bezier(.22,.61,.36,1)</span></div>
+    </div>
+  </div>
+
+  <div class="modules">
+    <a class="card" href="Home.html">
+      <div class="num">01 / 06 · ENTRY</div>
+      <div class="ttl">Home</div>
+      <div class="sub">Sell the visual paradigm in 5 seconds. Live Bill→Law visualizer in the hero, 7 subjects, concept-of-the-day, swipeable current affairs.</div>
+      <div class="wow"><b>Wow:</b> auto-cycling animated visualizer playing in the hero, not a static screenshot.</div>
+      <div class="tags"><span class="tag">Mobile</span><span class="tag">Desktop</span><span class="tag">3 wordmark options</span></div>
+    </a>
+    <a class="card" href="Topic Visualizer - Bill to Law.html">
+      <div class="num">02 / 06 · CORE PRODUCT</div>
+      <div class="ttl">Topic Visualizer</div>
+      <div class="sub">Polity · How a Bill becomes Law. Three tabs: Concept (animated 7-step flow), Tricks (mnemonics + Money vs Ordinary), Problems (MCQs).</div>
+      <div class="wow"><b>Wow:</b> the Bill document physically travels Lok Sabha → Rajya Sabha → Rashtrapati Bhavan, ending with a stamp animation.</div>
+      <div class="tags"><span class="tag">3 mobile artboards</span><span class="tag">Desktop</span></div>
+    </a>
+    <a class="card" href="Subject Hub - Polity.html">
+      <div class="num">03 / 06 · NAVIGATION</div>
+      <div class="ttl">Subject Hub · Polity</div>
+      <div class="sub">8 modules, per-topic mini-diagrams, status dots, article callouts (Art. 107–111), exam tags, path-to-mastery progress.</div>
+      <div class="wow"><b>Wow:</b> every topic shows a diagram of what's inside before you click — no walls of text.</div>
+      <div class="tags"><span class="tag">Mobile</span><span class="tag">Desktop</span></div>
+    </a>
+    <a class="card" href="Current Affairs - Daily Digest.html">
+      <div class="num">04 / 06 · DAILY</div>
+      <div class="ttl">Current Affairs</div>
+      <div class="sub">10 PIB-sourced items per day, each with its own visual — repo-rate towers, CPI sparkline, ₹ basket, NDC bar, flow diagrams.</div>
+      <div class="wow"><b>Wow:</b> every news item has a 4-second visual instead of a paragraph. Reads like a daily paper.</div>
+      <div class="tags"><span class="tag">Mobile</span><span class="tag">Desktop</span><span class="tag">EN / हिं</span></div>
+    </a>
+    <a class="card" href="Practice Arena.html">
+      <div class="num">05 / 06 · DRILL</div>
+      <div class="ttl">Practice Arena</div>
+      <div class="sub">MCQ with correct/wrong states and an animated explainer instead of a text dump. Single non-intrusive ad slot between questions.</div>
+      <div class="wow"><b>Wow:</b> the Money-Bill fan-out explainer — Bill spreads to 4 authorities, only the Speaker stamps it.</div>
+      <div class="tags"><span class="tag">Mobile</span><span class="tag">Desktop</span><span class="tag">Ads here only</span></div>
+    </a>
+    <a class="card" href="Dashboard.html">
+      <div class="num">06 / 06 · PROGRESS</div>
+      <div class="ttl">Streak & Progress</div>
+      <div class="sub">Anonymous (cookie-based). Streak ring, 12-week heatmap, subject radar, spaced-repetition revisit cards, badge case.</div>
+      <div class="wow"><b>Wow:</b> "Day 7" framing with the heatmap's current column ringed amber — impossible not to notice your chain.</div>
+      <div class="tags"><span class="tag">Mobile</span><span class="tag">Desktop</span><span class="tag">No auth</span></div>
+    </a>
+    <a class="card" href="Exam Intelligence.html" style="grid-column: span 2; background: linear-gradient(135deg, var(--paper) 0%, color-mix(in oklch, var(--indigo-600) 4%, var(--paper)) 100%);">
+      <div class="num" style="color:var(--indigo-700)">+1 BONUS · DECISIONS</div>
+      <div class="ttl">Exam Intelligence</div>
+      <div class="sub">Calendar, cutoff workbench, match-me. Year-ring calendar plots 9 exams on a 12-month clock face; match-me lands a "YOU" dot in a 2D fit map.</div>
+      <div class="wow"><b>Wow:</b> the Year Ring — today's indigo arrow sweeps a countdown arc to the next exam. Tap a dot, jump to its cutoffs.</div>
+      <div class="tags"><span class="tag">3 mobile artboards</span><span class="tag">Desktop</span><span class="tag">Sortable table</span></div>
+    </a>
+  </div>
+
+  <footer>
+    <div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between">
+      <div>
+        Shared by every file: <span class="mono">tokens.css</span> · <span class="mono">design-canvas.jsx</span> · <span class="mono">tweaks-panel.jsx</span> · <span class="mono">bill-visualizer.jsx</span>
+      </div>
+      <div>Built May 11, 2026 · for govtexamsstudy.org Phase 1</div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

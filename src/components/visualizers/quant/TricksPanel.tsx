@@ -5,19 +5,28 @@ interface TricksPanelProps {
   tricks: QuantTrick[]
 }
 
+const sectionLabelStyle: React.CSSProperties = {
+  fontSize: 10.5,
+  fontWeight: 700,
+  letterSpacing: '0.08em',
+  textTransform: 'uppercase',
+  color: 'var(--ink-3)',
+  marginBottom: 12,
+}
+
 export function TricksPanel({ tricks }: TricksPanelProps) {
-  const formulaShortcuts = tricks.filter(t => t.type === 'formula-shortcut')
-  const mentalMath = tricks.filter(t => t.type === 'mental-math')
+  const formulaShortcuts = tricks.filter((t) => t.type === 'formula-shortcut')
+  const mentalMath = tricks.filter((t) => t.type === 'mental-math')
 
   return (
     <div className="flex flex-col gap-8">
       {formulaShortcuts.length > 0 && (
         <section>
-          <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-text-muted">
+          <h3 className="mono" style={sectionLabelStyle}>
             Formula Shortcuts
           </h3>
           <div className="flex flex-col gap-3">
-            {formulaShortcuts.map(trick => (
+            {formulaShortcuts.map((trick) => (
               <TrickCard key={trick.id} trick={trick} />
             ))}
           </div>
@@ -26,11 +35,11 @@ export function TricksPanel({ tricks }: TricksPanelProps) {
 
       {mentalMath.length > 0 && (
         <section>
-          <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-text-muted">
+          <h3 className="mono" style={sectionLabelStyle}>
             Mental Math
           </h3>
           <div className="flex flex-col gap-3">
-            {mentalMath.map(trick => (
+            {mentalMath.map((trick) => (
               <TrickCard key={trick.id} trick={trick} />
             ))}
           </div>
