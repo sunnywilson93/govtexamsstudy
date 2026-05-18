@@ -1,16 +1,14 @@
 'use client'
 
 import { useEffect } from 'react'
-import Script from 'next/script'
 import { useConsentValue } from '@/hooks/useConsentValue'
 
 interface ConsentScriptsProps {
   enabled: boolean
-  gaId: string
   adsenseClient: string
 }
 
-export function ConsentScripts({ enabled, gaId, adsenseClient }: ConsentScriptsProps) {
+export function ConsentScripts({ enabled, adsenseClient }: ConsentScriptsProps) {
   const consent = useConsentValue()
   const canLoadScripts = enabled && consent === 'accepted'
   const trimmedAdsenseClient = adsenseClient.trim()
@@ -31,26 +29,5 @@ export function ConsentScripts({ enabled, gaId, adsenseClient }: ConsentScriptsP
     document.head.appendChild(script)
   }, [adsenseSrc, canLoadScripts])
 
-  if (!canLoadScripts) return null
-
-  return (
-    <>
-      {gaId && (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
-            strategy="afterInteractive"
-          />
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${gaId}');
-            `}
-          </Script>
-        </>
-      )}
-    </>
-  )
+  return null
 }

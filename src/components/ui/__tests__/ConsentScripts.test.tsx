@@ -1,5 +1,5 @@
-import { act, render, screen, waitFor } from '@testing-library/react'
-import { describe, it, expect, beforeEach, vi } from 'vitest'
+import { act, render, waitFor } from '@testing-library/react'
+import { describe, it, expect, beforeEach } from 'vitest'
 import { CONSENT_CHANGED_EVENT, CONSENT_KEY } from '../consentKey'
 import { ConsentScripts } from '../ConsentScripts'
 
@@ -27,68 +27,38 @@ function getAdsenseScript() {
   return Array.from(document.scripts).find((script) => script.src === ADSENSE_SRC)
 }
 
-vi.mock('next/script', () => ({
-  default: ({
-    id,
-    src,
-    children,
-  }: {
-    id?: string
-    src?: string
-    children?: React.ReactNode
-  }) => (
-    <div data-testid={id ?? src} data-src={src}>
-      {children}
-    </div>
-  ),
-}))
-
 beforeEach(() => {
   window.localStorage.clear()
   document.querySelectorAll(`script[src="${ADSENSE_SRC}"]`).forEach((script) => script.remove())
 })
 
 describe('ConsentScripts', () => {
-  it('does not load GA or AdSense before consent is accepted', () => {
-    render(<ConsentScripts enabled gaId="G-TEST" adsenseClient="ca-pub-test" />)
+  it('does not load AdSense before consent is accepted', () => {
+    render(<ConsentScripts enabled adsenseClient="ca-pub-test" />)
 
-    expect(screen.queryByTestId('google-analytics')).not.toBeInTheDocument()
-    expect(
-      screen.queryByTestId('https://www.googletagmanager.com/gtag/js?id=G-TEST')
-    ).not.toBeInTheDocument()
-    expect(
-      getAdsenseScript()
-    ).toBeUndefined()
+    expect(getAdsenseScript()).toBeUndefined()
   })
 
-  it('does not load GA or AdSense when consent is declined', () => {
+  it('does not load AdSense when consent is declined', () => {
     window.localStorage.setItem(CONSENT_KEY, 'declined')
 
-    render(<ConsentScripts enabled gaId="G-TEST" adsenseClient="ca-pub-test" />)
+    render(<ConsentScripts enabled adsenseClient="ca-pub-test" />)
 
-    expect(screen.queryByTestId('google-analytics')).not.toBeInTheDocument()
-    expect(
-      screen.queryByTestId('https://www.googletagmanager.com/gtag/js?id=G-TEST')
-    ).not.toBeInTheDocument()
-    expect(
-      getAdsenseScript()
-    ).toBeUndefined()
+    expect(getAdsenseScript()).toBeUndefined()
   })
 
-  it('loads GA and AdSense when accepted consent is stored', async () => {
+  it('loads AdSense when accepted consent is stored', async () => {
     window.localStorage.setItem(CONSENT_KEY, 'accepted')
 
-    render(<ConsentScripts enabled gaId="G-TEST" adsenseClient="ca-pub-test" />)
+    render(<ConsentScripts enabled adsenseClient="ca-pub-test" />)
 
-    expect(screen.getByTestId('google-analytics')).toBeInTheDocument()
-    expect(screen.getByTestId('https://www.googletagmanager.com/gtag/js?id=G-TEST')).toBeInTheDocument()
     await waitFor(() => {
       expect(getAdsenseScript()).toBeDefined()
     })
   })
 
-  it('loads scripts after consent changes to accepted in the current tab', async () => {
-    render(<ConsentScripts enabled gaId="G-TEST" adsenseClient="ca-pub-test" />)
+  it('loads AdSense after consent changes to accepted in the current tab', async () => {
+    render(<ConsentScripts enabled adsenseClient="ca-pub-test" />)
 
     act(() => {
       window.localStorage.setItem(CONSENT_KEY, 'accepted')
@@ -96,7 +66,6 @@ describe('ConsentScripts', () => {
     })
 
     await waitFor(() => {
-      expect(screen.getByTestId('google-analytics')).toBeInTheDocument()
       expect(getAdsenseScript()).toBeDefined()
     })
   })
